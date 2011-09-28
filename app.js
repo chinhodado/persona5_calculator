@@ -35,16 +35,16 @@ CalcCtrl.prototype.getRecipes = function() {
       sources[combo.source[1]] = 1;
     }
   }
+
   // Brute force over every combination!
   var recipes = [];
   for (var i = 0, combo = null; combo = combos[i]; i++) {
-    console.log(combo.source[0], combo.source[1]);
-
     var personae1 = personaeByArcana[combo.source[0]];
     for (var j = 0, persona1 = null; persona1 = personae1[j]; j++) {
       if (persona1.name == personaName) continue;
       var personae2 = personaeByArcana[combo.source[1]];
       for (var k = 0, persona2 = null; persona2 = personae2[k]; k++) {
+        if (persona1.arcana == persona2.arcana && k <=j) continue;
         if (persona2.name == personaName) continue;
         if (persona1 == persona2) continue;
         var result = fuse(persona1, persona2, combo);
