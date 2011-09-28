@@ -63,13 +63,26 @@ function CalcCtrl() {
   this.persona = personaeByName[this.params.persona_name];
   if (!this.persona) return;
 
-  this.allRecipes = angular.Array.orderBy(this.getRecipes(), 'cost');
+  this.allRecipes = [];
+  this.getRecipes();
+  this.allRecipes = angular.Array.orderBy(this.allRecipes, 'cost');
   this.perPage = 100;
   this.lastPage = Math.floor(this.allRecipes.length / this.perPage);
 
   this.paginateTo(0);
 }
 CalcCtrl.$inject = [];
+
+CalcCtrl.prototype.addRecipe = function(recipe) {
+  recipe.cost = angular.Array.sum(recipe.sources, 'level');
+  recipe.cost = 0;
+  for (var i = 0, source = null; source = recipe.sources[i]; i++) {
+    var level = source.level;
+    recipe.cost += Math.sin( level / (10 * Math.PI) - Math.PI / 2 ) + 1;
+  }
+  recipe.cost = Math.floor(recipe.cost * 1000) / 100;
+  this.allRecipes.push(recipe);
+};
 
 CalcCtrl.prototype.fuse2 = function(arcana, persona1, persona2) {
   var level = 1 + Math.floor((persona1.level + persona2.level) / 2);
@@ -124,8 +137,7 @@ CalcCtrl.prototype.getRecipes = function(personaName) {
       for (var j = 0, source = null; source = combo.sources[j]; j++) {
         recipe.sources.push(personaeByName[source]);
       }
-      recipe.cost = angular.Array.sum(recipe.sources, 'level');
-      recipes.push(recipe);
+      this.addRecipe(recipe);
     }
   }
   // ?? If there is a special recipe, assume that's the only option.
@@ -178,10 +190,8 @@ CalcCtrl.prototype.getRecipes = function(personaName) {
                 this.persona.arcana, persona1, persona2, persona3);
             if (!result || result.name != this.persona.name) continue;
 
-            var recipe = {'sources': [
-                step1Recipe.sources[0], step1Recipe.sources[1], persona3]};
-            recipe.cost = angular.Array.sum(recipe.sources, 'level');
-            recipes.push(recipe);
+            this.addRecipe({'sources': [
+                step1Recipe.sources[0], step1Recipe.sources[1], persona3]});
           }
         }
       }
@@ -210,9 +220,7 @@ CalcCtrl.prototype.getArcanaRecipes = function(arcanaName, filterCallback) {
           continue;
         }
 
-        var recipe = {'sources': [persona1, persona2]};
-        recipe.cost = angular.Array.sum(recipe.sources, 'level');
-        recipes.push(recipe);
+        recipes.push({'sources': [persona1, persona2]});
       }
     }
   }
