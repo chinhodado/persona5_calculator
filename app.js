@@ -50,8 +50,7 @@ CalcCtrl.prototype.getRecipes = function() {
         var result = fuse(persona1, persona2, combo);
         if (result && result.name == personaName) {
           recipes.push({
-            'persona1': persona1,
-            'persona2': persona2,
+            'sources': [persona1, persona2],
             'result': result,
             });
         }

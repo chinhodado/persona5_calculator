@@ -8,9 +8,7 @@
 <tbody ng:show="recipes">
   <tr ng:repeat="recipe in recipes">
     <td>{{$index + 1}}</td>
-    <td>{{formatPersona(recipe.persona1)}}</td>
-    <td>+</td>
-    <td>{{formatPersona(recipe.persona2)}}</td>
+    <td ng:repeat="persona in recipe.sources">{{formatPersona(persona)}}</td>
     <td>=</td>
     <td>{{formatPersona(recipe.result)}}</td>
   </tr>
