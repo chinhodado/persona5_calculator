@@ -71,9 +71,9 @@ function CalcCtrl() {
 }
 CalcCtrl.$inject = [];
 
-CalcCtrl.prototype.fuse2 = function(combo, persona1, persona2) {
+CalcCtrl.prototype.fuse2 = function(arcana, persona1, persona2) {
   var level = 1 + Math.floor((persona1.level + persona2.level) / 2);
-  var personae = personaeByArcana[combo.result];
+  var personae = personaeByArcana[arcana];
 
   for (var i = 0, persona = null; persona = personae[i]; i++) {
     if (persona.level >= level) {
@@ -91,20 +91,23 @@ CalcCtrl.prototype.fuse2 = function(combo, persona1, persona2) {
   return personae[i];
 }
 
-CalcCtrl.prototype.fuse3 = function(combo, persona1, persona2, persona3) {
+CalcCtrl.prototype.fuse3 = function(arcana, persona1, persona2, persona3) {
   var level = 5 + Math.floor(
     (persona1.level + persona2.level + persona3.level) / 3);
-  var personae = personaeByArcana[combo.result];
+  var personae = personaeByArcana[arcana];
 
+  var found = false;
   for (var i = 0, persona = null; persona = personae[i]; i++) {
     if (persona.level >= level) {
+      found = true;
       break;
     }
   }
+  if (!found) return null;
 
-  if (persona1.arcana == combo.result
-      || persona2.arcana == combo.result
-      || persona3.arcana == combo.result) {
+  if (persona1.arcana == arcana
+      || persona2.arcana == arcana
+      || persona3.arcana == arcana) {
     if (personae[i + 1]) i++;
   }
 
@@ -133,7 +136,6 @@ CalcCtrl.prototype.getRecipes = function(personaName) {
     if (persona1.arcana == persona2.arcana && pastHalf) return true;
     if (persona1.name == this.persona.name) return true;
     if (persona2.name == this.persona.name) return true;
-    if (persona1 == persona2) return true;
     if (result.name == this.persona.name) return false;
     return true;
   }
@@ -172,6 +174,10 @@ CalcCtrl.prototype.getRecipes = function(personaName) {
         var personae = personaeByArcana[arcana2];
         for (var j = 0, persona3 = null; persona3 = personae[j]; j++) {
           if (persona3IsValid(persona1, persona2, persona3)) {
+            var result = this.fuse3(
+                this.persona.arcana, persona1, persona2, persona3);
+            if (!result || result.name != this.persona.name) continue;
+            
             var recipe = {'sources': [
                 step1Recipe.sources[0], step1Recipe.sources[1], persona3]};
             recipe.cost = angular.Array.sum(recipe.sources, 'level');
@@ -196,7 +202,8 @@ CalcCtrl.prototype.getArcanaRecipes = function(arcanaName, filterCallback) {
     for (var j = 0, persona1 = null; persona1 = personae1[j]; j++) {
       var personae2 = personaeByArcana[combo.source[1]];
       for (var k = 0, persona2 = null; persona2 = personae2[k]; k++) {
-        var result = this.fuse2(combo, persona1, persona2);
+        if (persona1 == persona2) continue;
+        var result = this.fuse2(combo.result, persona1, persona2);
         if (!result) continue;
         if (filterCallback
             && filterCallback.call(this, persona1, persona2, k <= j, result)) {
