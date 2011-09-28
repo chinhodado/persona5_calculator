@@ -1,11 +1,18 @@
 <br><br>
 
-<table id="recipes">
+<table id="recipes" border="1">
 <caption>Recipes</caption>
 <thead ng:hide="recipes">
   <tr><th>None found!</th></tr>
 </thead>
 <tbody ng:show="recipes">
-  <tr><td>to do</td></tr>
+  <tr ng:repeat="recipe in recipes">
+    <td>{{$index + 1}}</td>
+    <td>{{formatPersona(recipe.persona1)}}</td>
+    <td>+</td>
+    <td>{{formatPersona(recipe.persona2)}}</td>
+    <td>=</td>
+    <td>{{formatPersona(recipe.result)}}</td>
+  </tr>
 </tbody>
 </table>

@@ -180,6 +180,7 @@ const personaeNames = (function() {
   for (var i = 0, persona = null; persona = personae[i]; i++) {
     personaeNames_.push(persona.name);
   }
+  personaeNames_.sort();
   return personaeNames_;
 })();
 
@@ -189,6 +190,17 @@ const personaeByName = (function() {
     personaeByName_[persona.name] = persona;
   }
   return personaeByName_;
+})();
+
+const personaeByArcana = (function() {
+  var personaeByArcana_ = {};
+  for (var i = 0, persona = null; persona = personae[i]; i++) {
+    if (!personaeByArcana_[persona.arcana]) {
+      personaeByArcana_[persona.arcana] = [];
+    }
+    personaeByArcana_[persona.arcana].push(persona);
+  }
+  return personaeByArcana_;
 })();
 
 const arcana = (function() {

@@ -4,10 +4,8 @@ angular.directive('my:autocomplete', function(expression, element) {
   return function(element) {
     var currentScope = this;
     element.autocomplete({'source': window[expression], 'select': function(a,b,c) {
-      //console.log('comp select', currentScope, currentScope.$root);
-      //console.log(a, b, c);
-      //currentScope.$eval('produce_persona="'+b.value+'"');
-      // ARGH HOW??
+      // Grr.  I can't make it work when clicking autocomplete.  Why?
+      console.log('>>> autocomplete on select ...');
     }});
   }
 });
@@ -16,10 +14,75 @@ function CalcCtrl() {
 }
 CalcCtrl.$inject = [];
 
+CalcCtrl.prototype.formatPersona = function(persona) {
+  return persona.name + ' (' + persona.level + ' / ' + persona.arcana + ')';
+};
+
 CalcCtrl.prototype.getRecipes = function() {
   if ('undefined' == typeof personaeByName[this.produce_persona]) {
     return [];
   }
+  var personaName = this.produce_persona;
+  var arcana = personaeByName[personaName].arcana;
 
-  return ['a'];
+  // Find the arcana combos (and thieir sources) that can make this persona.
+  var sources = {};
+  var combos = [];
+  for (var i = 0, combo = null; combo = arcana2Combos[i]; i++) {
+    if (arcana == combo.result) {
+      combos.push(combo);
+      sources[combo.source[0]] = 1;
+      sources[combo.source[1]] = 1;
+    }
+  }
+  // Brute force over every combination!
+  var recipes = [];
+  for (var i = 0, combo = null; combo = combos[i]; i++) {
+    console.log(combo.source[0], combo.source[1]);
+
+    var personae1 = personaeByArcana[combo.source[0]];
+    for (var j = 0, persona1 = null; persona1 = personae1[j]; j++) {
+      if (persona1.name == personaName) continue;
+      var personae2 = personaeByArcana[combo.source[1]];
+      for (var k = 0, persona2 = null; persona2 = personae2[k]; k++) {
+        if (persona2.name == personaName) continue;
+        if (persona1 == persona2) continue;
+        var result = fuse(persona1, persona2, combo);
+        if (result && result.name == personaName) {
+          recipes.push({
+            'persona1': persona1,
+            'persona2': persona2,
+            'result': result,
+            });
+        }
+      }
+    }
+  }
+
+  return recipes;
 };
+
+function fuse(persona1, persona2, combo) {
+  if (!combo) {
+    throw new Error('For now, fusion must specify combo!');
+  }
+
+  var level = 1 + Math.floor(
+    (persona1.level + persona2.level) / 2
+    );
+  var arcana = combo.result;
+
+  var personae = personaeByArcana[arcana];
+  for (var i = 0, persona = null; persona = personae[i]; i++) {
+    if (persona.level >= level) {
+      break;
+    }
+  }
+  if (persona1.arcana == persona2.arcana) {
+    i--;
+  }
+  if (personae[i] == persona1 || personae[i] == persona2) {
+    i--;
+  }
+  return personae[i];
+}
