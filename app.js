@@ -62,7 +62,7 @@ function CalcCtrl() {
 
   this.persona = personaeByName[this.params.persona_name];
   if (!this.persona) return;
-  
+
   this.allRecipes = angular.Array.orderBy(this.getRecipes(), 'cost');
   this.perPage = 100;
   this.lastPage = Math.floor(this.allRecipes.length / this.perPage);
@@ -177,7 +177,7 @@ CalcCtrl.prototype.getRecipes = function(personaName) {
             var result = this.fuse3(
                 this.persona.arcana, persona1, persona2, persona3);
             if (!result || result.name != this.persona.name) continue;
-            
+
             var recipe = {'sources': [
                 step1Recipe.sources[0], step1Recipe.sources[1], persona3]};
             recipe.cost = angular.Array.sum(recipe.sources, 'level');
