@@ -91,16 +91,24 @@ CalcCtrl.prototype.getRecipes = function(personaName) {
         if (persona1 == persona2) continue;
         var result = this.fuse(combo, persona1, persona2);
         if (result && result.name == this.persona.name) {
-          var recipe = {
-              'sources': [persona1, persona2],
-              'result': result,
-              };
+          var recipe = {'sources': [persona1, persona2]};
           recipe.cost = angular.Array.sum(recipe.sources, 'level');
           recipes.push(recipe);
         } else {
           // TODO: 3-way fusion.
         }
       }
+    }
+  }
+
+  for (var i = 0, combo = null; combo = specialCombos[i]; i++) {
+    if (this.persona.name == combo.result) {
+      var recipe = {'sources': [], 'cost': '!!'};
+      for (var j = 0, source = null; source = combo.sources[j]; j++) {
+        recipe.sources.push(personaeByName[source]);
+      }
+      recipe.cost = angular.Array.sum(recipe.sources, 'level');
+      recipes.push(recipe);
     }
   }
 

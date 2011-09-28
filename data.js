@@ -640,3 +640,28 @@ const arcana3Combos = [
     {'source': ['Judgment',   'Aeon'        ], 'result': 'Fool'        },
     {'source': ['Aeon',       'Aeon'        ], 'result': 'Aeon'        },
     ];
+
+const specialCombos = [
+    {'result': 'Alice', 'sources': ['Pixie', 'Lilim', 'Narcissus', 'Nata Taishi']},
+    {'result': 'Arahabaki', 'sources': ['Omoikane', 'Take-minakata', 'Okuninushi', 'Kikuri-hime']},
+    {'result': 'Asura', 'sources': ['Yatagarasu', 'Quetzalcoatl', 'Jatayu', 'Horus', 'Sparna', 'Vishnu']},
+    {'result': 'Attis', 'sources': ['Inugami', 'Take-minakata', 'Orthrus', 'Vasuki', 'Ubelluris']},
+    {'result': 'Beelzebub', 'sources': ['Incubus', 'Succubus', 'Pazuzu', 'Lilith', 'Abaddon', 'Baal Zebul']},
+    {'result': 'Black Frost', 'sources': ['Jack Frost', 'Pyro Jack', 'King Frost', 'Queen Mab']},
+    {'result': 'Daisoujou', 'sources': ['Mithra', 'Ara Mitama', 'Nigi Mitama', 'Kusi Mitama', 'Saki Mitama']},
+    {'result': 'Girimehkala', 'sources': ['Gurr', 'Vetala', 'Taraka', 'Rangda']},
+    {'result': 'Kohryu', 'sources': ['Genbu', 'Seiryuu', 'Suzaku', 'Byakko']},
+    {'result': 'Lilith', 'sources': ['Lilim', 'Vetala', 'Incubus', 'Succubus']},
+    {'result': 'Lucifer', 'sources': ['Samael', 'Abaddon', 'Beelzebub', 'Satan', 'Helel']},
+    {'result': 'Mara', 'sources': ['Incubus', 'Pazuzu', 'Mot', 'Kumbhanda', 'Attis']},
+    {'result': 'Masakado', 'sources': ['Zouchouten', 'Jikokuten', 'Koumokuten', 'Bishamonten']},
+    {'result': 'Messiah', 'sources': ['Orpheus', 'Thanatos']},
+    {'result': 'Metatron', 'sources': ['Uriel', 'Raphael', 'Gabriel', 'Michael']},
+    {'result': 'Norn', 'sources': ['Clotho', 'Lachesis', 'Atropos']},
+    {'result': 'Orpheus Telos', 'sources': ['Thanatos', 'Chi You', 'Helel', 'Asura', 'Messiah', 'Metatron']},
+    {'result': 'Pixie', 'sources': ['Alp', 'Narcissus']},
+    {'result': 'Sandalphon', 'sources': ['Gurr', 'Suzaku', 'Yatagarasu', 'Horus', 'Garuda']},
+    {'result': 'Shiva', 'sources': ['Barong', 'Rangda']},
+    {'result': 'Susano-o', 'sources': ['Orpheus', 'Legion', 'Black Frost', 'Ose', 'Decarabia', 'Loki']},
+    {'result': 'Thanatos', 'sources': ['Ghoul', 'Pale Rider', 'Loa', 'Samael', 'Mot', 'Alice']},
+    ];
