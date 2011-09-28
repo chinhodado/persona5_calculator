@@ -175,47 +175,6 @@ const personae = [
     {'name': 'Metatron',        'level': 87, 'arcana': 'Aeon'},
     ];
 
-const personaeNames = (function() {
-  var personaeNames_ = [];
-  for (var i = 0, persona = null; persona = personae[i]; i++) {
-    personaeNames_.push(persona.name);
-  }
-  personaeNames_.sort();
-  return personaeNames_;
-})();
-
-const personaeByName = (function() {
-  var personaeByName_ = {};
-  for (var i = 0, persona = null; persona = personae[i]; i++) {
-    personaeByName_[persona.name.toLowerCase()] = persona;
-  }
-  return personaeByName_;
-})();
-
-const personaeByArcana = (function() {
-  var personaeByArcana_ = {};
-  for (var i = 0, persona = null; persona = personae[i]; i++) {
-    if (!personaeByArcana_[persona.arcana]) {
-      personaeByArcana_[persona.arcana] = [];
-    }
-    personaeByArcana_[persona.arcana].push(persona);
-  }
-  return personaeByArcana_;
-})();
-
-const arcana = (function() {
-  var arcana_ = [];
-  var arcanaNum = 0;
-  var lastArcana = null;
-  for (var i = 0, persona = null; persona = personae[i]; i++) {
-    if (persona.arcana != lastArcana) {
-      lastArcana = persona.arcana;
-      arcana_.push(persona.arcana);
-    }
-  }
-  return arcana_;
-})();
-
 const arcana2Combos = [
     {'source': ['Fool',       'Fool'        ], 'result': 'Fool'        },
     {'source': ['Fool',       'Magician'    ], 'result': 'Hierophant'  },
