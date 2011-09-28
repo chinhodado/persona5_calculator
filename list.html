@@ -1,0 +1,17 @@
+<table id="list">
+<caption>Personae</caption>
+<thead>
+<tr>
+  <th><a href='#/list/level'>Level</a></th>
+  <th><a href='#/list/name'>Name</a></th>
+  <th><a href='#/list/arcana'>Arcana</a></th>
+</tr>
+</thead>
+<tbody>
+<tr ng:repeat="persona in personae.$orderBy(sortBy)">
+  <td>{{persona.level}}</td>
+  <td><a href='#/persona/{{persona.name}}'>{{persona.name}}</a></td>
+  <td>{{persona.arcana}}</td>
+</tr>
+</tbody>
+</table>

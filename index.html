@@ -2,40 +2,18 @@
 <html>
 <head>
 <title>Persona 3 FES: Fusion Calculator</title>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
-<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
 <script src="angular-0.9.19.min.js" ng:autobind></script>
 <script src="data.js"></script>
 <script src="app.js"></script>
-<link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/ui-lightness/jquery-ui.css" rel="stylesheet" type="text/css" />
 <style>
-#desired tbody th { text-align: right; }
 table caption { font-weight: bold; }
 td { padding: 0 0.25em; }
+#list th { cursor: pointer; }
 </style>
 </head>
-<body ng:controller="CalcCtrl">
+<body>
 
-<table id="desired">
-<thead>
-<tr><td></td><th>Producing</th><th>Using</th></tr>
-</thead>
-<tbody>
-<tr>
-  <th>Persona</th>
-  <td><input name="produce_persona" my:autocomplete="personaeNames"></td>
-  <td><input disabled name="use_persona" class="persona_name"></td>
-</tr>
-<tr>
-  <th>Arcana</th>
-  <td><input disabled name="produce_arcana" class="arcana_name"></td>
-  <td><input disabled name="use_arcana" class="arcana_name"></td>
-</tr>
-</tbody>
-</table>
-<button ng:click='reset()'>Reset</button>
-
-<ng:include src="'view.html'"></ng:include>
+<ng:view></ng:view>
 
 </body>
 </html>

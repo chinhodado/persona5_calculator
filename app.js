@@ -1,17 +1,8 @@
 // Derive data:
-const personaeNames = (function() {
-  var personaeNames_ = [];
-  for (var i = 0, persona = null; persona = personae[i]; i++) {
-    personaeNames_.push(persona.name);
-  }
-  personaeNames_.sort();
-  return personaeNames_;
-})();
-
 const personaeByName = (function() {
   var personaeByName_ = {};
   for (var i = 0, persona = null; persona = personae[i]; i++) {
-    personaeByName_[persona.name.toLowerCase()] = persona;
+    personaeByName_[persona.name] = persona;
   }
   return personaeByName_;
 })();
@@ -27,49 +18,60 @@ const personaeByArcana = (function() {
   return personaeByArcana_;
 })();
 
-const arcana = (function() {
-  var arcana_ = [];
-  var arcanaNum = 0;
-  var lastArcana = null;
-  for (var i = 0, persona = null; persona = personae[i]; i++) {
-    if (persona.arcana != lastArcana) {
-      lastArcana = persona.arcana;
-      arcana_.push(persona.arcana);
-    }
-  }
-  return arcana_;
-})();
+// \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ //
 
-// http://polishinggems.blogspot.com/2011/09/building-angularjs-directive-for-jquery_01.html
-angular.directive('my:autocomplete', function(expression, element) {
-  var compiler = this;
-  return function(element) {
-    var currentScope = this;
-    element.autocomplete({'source': window[expression], 'select': function(a,b,c) {
-      // Grr.  I can't make it work when clicking autocomplete.  Why?
-      console.log('>>> autocomplete on select ...');
-    }});
-  }
-});
+angular.service('myAngularApp', function($route, $location, $window) {
+  $route.when(
+      '/list',
+      {template: 'list.html', controller: ListCtrl});
+  $route.when(
+      '/list/:sort_by',
+      {template: 'list.html', controller: ListCtrl});
+  $route.when(
+      '/persona/:persona_name',
+      {template: 'calc.html', controller: CalcCtrl});
+
+  var self = this;
+  $route.onChange(function() {
+    if (!$route.current) {
+      $location.updateHash('/list/name');
+      self.$eval();
+    } else {
+      $route.current.scope.params = $route.current.params;
+      $window.scrollTo(0, 0);
+    }
+  });
+}, {$inject:['$route', '$location', '$window'], $eager: true});
+
+// \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ //
 
 function CalcCtrl() {
-  this.$watch('produce_persona', 'recipes = getRecipes()', null, false);
-  this.$watch('use_persona', 'recipes = getRecipes()', null, false);
-  this.$watch('produce_arcana', 'recipes = getRecipes()', null, false);
-  this.$watch('use_arcana', 'recipes = getRecipes()', null, false);
+  this.recipes = this.getRecipes(this.params.persona_name);
 }
 CalcCtrl.$inject = [];
 
-CalcCtrl.prototype.formatPersona = function(persona) {
-  return persona.name + ' (' + persona.level + ' / ' + persona.arcana + ')';
-};
+CalcCtrl.prototype.fuse = function(combo, persona1, persona2) {
+  var level = 1 + Math.floor((persona1.level + persona2.level) / 2);
+  var personae = personaeByArcana[combo.result];
 
-CalcCtrl.prototype.getRecipes = function() {
-  try {
-    var persona = personaeByName[this.produce_persona.toLowerCase()];
-  } catch (e) {
-    return [];
+  for (var i = 0, persona = null; persona = personae[i]; i++) {
+    if (persona.level >= level) {
+      break;
+    }
   }
+
+  if (persona1.arcana == persona2.arcana) {
+    i--;
+  }
+  if (personae[i] == persona1 || personae[i] == persona2) {
+    i--;
+  }
+
+  return personae[i];
+}
+
+CalcCtrl.prototype.getRecipes = function(personaName) {
+  var persona = personaeByName[personaName];
   if (!persona) return [];
 
   // Find the arcana combos that can make this persona.
@@ -87,12 +89,14 @@ CalcCtrl.prototype.getRecipes = function() {
         if (persona1.arcana == persona2.arcana && k <=j) continue;
         if (persona2.name == persona.name) continue;
         if (persona1 == persona2) continue;
-        var result = fuse(persona1, persona2, combo);
+        var result = this.fuse(combo, persona1, persona2);
         if (result && result.name == persona.name) {
-          recipes.push({
-            'sources': [persona1, persona2],
-            'result': result,
-            });
+          var recipe = {
+              'sources': [persona1, persona2],
+              'result': result,
+              };
+          recipe.cost = angular.Array.sum(recipe.sources, 'level');
+          recipes.push(recipe);
         }
       }
     }
@@ -101,39 +105,10 @@ CalcCtrl.prototype.getRecipes = function() {
   return recipes;
 };
 
-CalcCtrl.prototype.reset = function() {
-  this.produce_persona = '';
-  this.use_persona = '';
-  this.produce_arcana = '';
-  this.use_arcana = '';
+// \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ //
+
+function ListCtrl() {
+  this.personae = personae;
+  this.sortBy = this.params.sort_by || 'name';
 }
-
-CalcCtrl.prototype.setMakePersona = function(persona) {
-  this.reset();
-  this.produce_persona = persona.name;
-}
-
-function fuse(persona1, persona2, combo) {
-  if (!combo) {
-    throw new Error('For now, fusion must specify combo!');
-  }
-
-  var level = 1 + Math.floor(
-    (persona1.level + persona2.level) / 2
-    );
-  var arcana = combo.result;
-
-  var personae = personaeByArcana[arcana];
-  for (var i = 0, persona = null; persona = personae[i]; i++) {
-    if (persona.level >= level) {
-      break;
-    }
-  }
-  if (persona1.arcana == persona2.arcana) {
-    i--;
-  }
-  if (personae[i] == persona1 || personae[i] == persona2) {
-    i--;
-  }
-  return personae[i];
-}
+ListCtrl.$inject = [];
