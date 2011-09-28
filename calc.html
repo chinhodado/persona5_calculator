@@ -1,8 +1,17 @@
 <p ng:hide="recipes">Not found!</p>
 <p ng:show="recipes">
 <label>Filter: <input type="text" size="30" name="filter"></label>
+(Broken across pages for now.)
+
 <table id="recipes">
-<caption>Recipes - {{persona.name}} ({{persona.level}} / {{persona.arcana}})</caption>
+<caption>
+  Recipes - {{persona.name}} ({{persona.level}} / {{persona.arcana}})
+  <div class="pagination" ng:show="allRecipes.length > perPage">
+    <span ng:click="paginateTo(pageNum - 1)">◀</span>
+    Page {{pageNum + 1}} / {{ceil(allRecipes.length / perPage)}}
+    <span ng:click="paginateTo(pageNum + 1)">▶</span>
+  </div>
+</caption>
 <thead>
   <th>#</th>
   <th>Cost</th>

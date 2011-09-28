@@ -18,6 +18,18 @@ const personaeByArcana = (function() {
   return personaeByArcana_;
 })();
 
+const arcanaRank = (function() {
+  var arcanaRank_ = {};
+  var rank = 0;
+  var lastArcana = null;
+  for (var i = 0, persona = null; persona = personae[i]; i++) {
+    if (persona.arcana == lastArcana) continue;
+    lastArcana = persona.arcana;
+    arcanaRank_[persona.arcana] = rank++;
+  }
+  return arcanaRank_;
+})();
+
 // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ //
 
 angular.service('myAngularApp', function($route, $location, $window) {
@@ -46,13 +58,20 @@ angular.service('myAngularApp', function($route, $location, $window) {
 // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ //
 
 function CalcCtrl() {
+  this.ceil = Math.ceil;
+
   this.persona = personaeByName[this.params.persona_name];
   if (!this.persona) return;
-  this.recipes = this.getRecipes();
+  
+  this.allRecipes = angular.Array.orderBy(this.getRecipes(), 'cost');
+  this.perPage = 100;
+  this.lastPage = Math.floor(this.allRecipes.length / this.perPage);
+
+  this.paginateTo(0);
 }
 CalcCtrl.$inject = [];
 
-CalcCtrl.prototype.fuse = function(combo, persona1, persona2) {
+CalcCtrl.prototype.fuse2 = function(combo, persona1, persona2) {
   var level = 1 + Math.floor((persona1.level + persona2.level) / 2);
   var personae = personaeByArcana[combo.result];
 
@@ -67,6 +86,26 @@ CalcCtrl.prototype.fuse = function(combo, persona1, persona2) {
   }
   if (personae[i] == persona1 || personae[i] == persona2) {
     i--;
+  }
+
+  return personae[i];
+}
+
+CalcCtrl.prototype.fuse3 = function(combo, persona1, persona2, persona3) {
+  var level = 5 + Math.floor(
+    (persona1.level + persona2.level + persona3.level) / 3);
+  var personae = personaeByArcana[combo.result];
+
+  for (var i = 0, persona = null; persona = personae[i]; i++) {
+    if (persona.level >= level) {
+      break;
+    }
+  }
+
+  if (persona1.arcana == combo.result
+      || persona2.arcana == combo.result
+      || persona3.arcana == combo.result) {
+    if (personae[i + 1]) i++;
   }
 
   return personae[i];
@@ -89,32 +128,97 @@ CalcCtrl.prototype.getRecipes = function(personaName) {
   // ?? If there is a special recipe, assume that's the only option.
   if (recipes.length) return recipes;
 
-  // Find the arcana combos that can make this persona.
-  var arcana = this.persona.arcana;  // for closure across broken this reference
-  var combos = angular.Array.filter(
-    arcana2Combos, function(x) { return x.result == arcana; });
+  // Consider straight fusion.
+  function filter2Way(persona1, persona2, pastHalf, result) {
+    if (persona1.arcana == persona2.arcana && pastHalf) return true;
+    if (persona1.name == this.persona.name) return true;
+    if (persona2.name == this.persona.name) return true;
+    if (persona1 == persona2) return true;
+    if (result.name == this.persona.name) return false;
+    return true;
+  }
+  recipes = recipes.concat(
+      this.getArcanaRecipes(this.persona.arcana, filter2Way));
 
-  // Brute force over every 2-way combination.
+  // Consider triangle fusion.
+  var arcana_ = this.persona.arcana; // closure ref.; broken this in callback
+  var combos = angular.Array.filter(
+      arcana3Combos, function(x) { return x.result == arcana_; });
   for (var i = 0, combo = null; combo = combos[i]; i++) {
-    var personae1 = personaeByArcana[combo.source[0]];
-    for (var j = 0, persona1 = null; persona1 = personae1[j]; j++) {
-      if (persona1.name == this.persona.name) continue;
-      var personae2 = personaeByArcana[combo.source[1]];
-      for (var k = 0, persona2 = null; persona2 = personae2[k]; k++) {
-        if (persona1.arcana == persona2.arcana && k <=j) continue;
-        if (persona2.name == this.persona.name) continue;
-        if (persona1 == persona2) continue;
-        var result = this.fuse(combo, persona1, persona2);
-        if (result && result.name == this.persona.name) {
-          var recipe = {'sources': [persona1, persona2]};
-          recipe.cost = angular.Array.sum(recipe.sources, 'level');
-          recipes.push(recipe);
+    // For every possible 3-way fusion, consider all recipes to produce
+    // arcana A, plus an arcana B if it's higher, plus vice versa.
+    function persona3IsValid(persona1, persona2, persona3) {
+      if (persona3 == persona1) return false;
+      if (persona3 == persona2) return false;
+
+      if (persona3.level < persona1.level) return false;
+      if (persona3.level < persona2.level) return false;
+
+      if (persona3.level == persona1.level) {
+        return arcanaRank[persona3.arcana] < arcanaRank[persona1.arcana];
+      }
+      if (persona3.level == persona2.level) {
+        return arcanaRank[persona3.arcana] < arcanaRank[persona2.arcana];
+      }
+
+      return true;
+    }
+
+    function find3WayRecipes(arcana1, arcana2) {
+      var step1Recipes = this.getArcanaRecipes(arcana1);
+      for (var i = 0, step1Recipe = null; step1Recipe = step1Recipes[i]; i++) {
+        var persona1 = step1Recipe.sources[0];
+        var persona2 = step1Recipe.sources[1];
+        var personae = personaeByArcana[arcana2];
+        for (var j = 0, persona3 = null; persona3 = personae[j]; j++) {
+          if (persona3IsValid(persona1, persona2, persona3)) {
+            var recipe = {'sources': [
+                step1Recipe.sources[0], step1Recipe.sources[1], persona3]};
+            recipe.cost = angular.Array.sum(recipe.sources, 'level');
+            recipes.push(recipe);
+          }
         }
       }
     }
+    find3WayRecipes.call(this, combo.source[0], combo.source[1]);
+    find3WayRecipes.call(this, combo.source[1], combo.source[0]);
   }
 
   return recipes;
+};
+
+CalcCtrl.prototype.getArcanaRecipes = function(arcanaName, filterCallback) {
+  var recipes = [];
+  var combos = angular.Array.filter(
+    arcana2Combos, function(x) { return x.result == arcanaName; });
+  for (var i = 0, combo = null; combo = combos[i]; i++) {
+    var personae1 = personaeByArcana[combo.source[0]];
+    for (var j = 0, persona1 = null; persona1 = personae1[j]; j++) {
+      var personae2 = personaeByArcana[combo.source[1]];
+      for (var k = 0, persona2 = null; persona2 = personae2[k]; k++) {
+        var result = this.fuse2(combo, persona1, persona2);
+        if (!result) continue;
+        if (filterCallback
+            && filterCallback.call(this, persona1, persona2, k <= j, result)) {
+          continue;
+        }
+
+        var recipe = {'sources': [persona1, persona2]};
+        recipe.cost = angular.Array.sum(recipe.sources, 'level');
+        recipes.push(recipe);
+      }
+    }
+  }
+  return recipes;
+};
+
+CalcCtrl.prototype.paginateTo = function(pageNum) {
+  if (pageNum < 0) pageNum = 0;
+  if (pageNum > this.lastPage) pageNum = this.lastPage;
+
+  this.recipes = this.allRecipes.slice(
+      pageNum * this.perPage, pageNum * this.perPage + this.perPage);
+  this.pageNum = pageNum;
 };
 
 // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ //
