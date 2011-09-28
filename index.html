@@ -10,8 +10,8 @@
 <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/ui-lightness/jquery-ui.css" rel="stylesheet" type="text/css" />
 <style>
 #desired tbody th { text-align: right; }
-
 table caption { font-weight: bold; }
+td { padding: 0 0.25em; }
 </style>
 </head>
 <body ng:controller="CalcCtrl">
@@ -23,16 +23,18 @@ table caption { font-weight: bold; }
 <tbody>
 <tr>
   <th>Persona</th>
-  <td><input name="produce_persona" my:autocomplete="personaeNames" ng:change="recipes = getRecipes()"></td>
-  <td><input disabled name="use_persona" class="persona_name" ng:change="recipes = getRecipes()"></td>
+  <td><input name="produce_persona" my:autocomplete="personaeNames"></td>
+  <td><input disabled name="use_persona" class="persona_name"></td>
 </tr>
 <tr>
   <th>Arcana</th>
-  <td><input disabled name="produce_arcana" class="arcana_name" ng:change="recipes = getRecipes()"></td>
-  <td><input disabled name="use_arcana" class="arcana_name" ng:change="recipes = getRecipes()"></td>
+  <td><input disabled name="produce_arcana" class="arcana_name"></td>
+  <td><input disabled name="use_arcana" class="arcana_name"></td>
 </tr>
 </tbody>
 </table>
+<button ng:click='reset()'>Reset</button>
+
 <ng:include src="'view.html'"></ng:include>
 
 </body>

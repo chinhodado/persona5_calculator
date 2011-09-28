@@ -187,7 +187,7 @@ const personaeNames = (function() {
 const personaeByName = (function() {
   var personaeByName_ = {};
   for (var i = 0, persona = null; persona = personae[i]; i++) {
-    personaeByName_[persona.name] = persona;
+    personaeByName_[persona.name.toLowerCase()] = persona;
   }
   return personaeByName_;
 })();

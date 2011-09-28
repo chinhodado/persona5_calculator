@@ -11,6 +11,10 @@ angular.directive('my:autocomplete', function(expression, element) {
 });
 
 function CalcCtrl() {
+  this.$watch('produce_persona', 'recipes = getRecipes()', null, false);
+  this.$watch('use_persona', 'recipes = getRecipes()', null, false);
+  this.$watch('produce_arcana', 'recipes = getRecipes()', null, false);
+  this.$watch('use_arcana', 'recipes = getRecipes()', null, false);
 }
 CalcCtrl.$inject = [];
 
@@ -19,36 +23,30 @@ CalcCtrl.prototype.formatPersona = function(persona) {
 };
 
 CalcCtrl.prototype.getRecipes = function() {
-  if ('undefined' == typeof personaeByName[this.produce_persona]) {
+  try {
+    var persona = personaeByName[this.produce_persona.toLowerCase()];
+  } catch (e) {
     return [];
   }
-  var personaName = this.produce_persona;
-  var arcana = personaeByName[personaName].arcana;
+  if (!persona) return [];
 
-  // Find the arcana combos (and thieir sources) that can make this persona.
-  var sources = {};
-  var combos = [];
-  for (var i = 0, combo = null; combo = arcana2Combos[i]; i++) {
-    if (arcana == combo.result) {
-      combos.push(combo);
-      sources[combo.source[0]] = 1;
-      sources[combo.source[1]] = 1;
-    }
-  }
+  // Find the arcana combos that can make this persona.
+  var combos = angular.Array.filter(
+    arcana2Combos, function(x) { return x.result == persona.arcana; });
 
   // Brute force over every combination!
   var recipes = [];
   for (var i = 0, combo = null; combo = combos[i]; i++) {
     var personae1 = personaeByArcana[combo.source[0]];
     for (var j = 0, persona1 = null; persona1 = personae1[j]; j++) {
-      if (persona1.name == personaName) continue;
+      if (persona1.name == persona.name) continue;
       var personae2 = personaeByArcana[combo.source[1]];
       for (var k = 0, persona2 = null; persona2 = personae2[k]; k++) {
         if (persona1.arcana == persona2.arcana && k <=j) continue;
-        if (persona2.name == personaName) continue;
+        if (persona2.name == persona.name) continue;
         if (persona1 == persona2) continue;
         var result = fuse(persona1, persona2, combo);
-        if (result && result.name == personaName) {
+        if (result && result.name == persona.name) {
           recipes.push({
             'sources': [persona1, persona2],
             'result': result,
@@ -60,6 +58,18 @@ CalcCtrl.prototype.getRecipes = function() {
 
   return recipes;
 };
+
+CalcCtrl.prototype.reset = function() {
+  this.produce_persona = '';
+  this.use_persona = '';
+  this.produce_arcana = '';
+  this.use_arcana = '';
+}
+
+CalcCtrl.prototype.setMakePersona = function(persona) {
+  this.reset();
+  this.produce_persona = persona.name;
+}
 
 function fuse(persona1, persona2, combo) {
   if (!combo) {

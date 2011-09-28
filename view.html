@@ -1,6 +1,6 @@
 <br><br>
 
-<table id="recipes" border="1">
+<table id="recipes">
 <caption>Recipes</caption>
 <thead ng:hide="recipes">
   <tr><th>None found!</th></tr>
@@ -8,9 +8,12 @@
 <tbody ng:show="recipes">
   <tr ng:repeat="recipe in recipes">
     <td>{{$index + 1}}</td>
-    <td ng:repeat="persona in recipe.sources">{{formatPersona(persona)}}</td>
+    <td ng:repeat="persona in recipe.sources">
+      <a href='#{{persona.name}}' ng:click="setMakePersona(persona)">{{persona.name}}</a>
+      ({{persona.level}} / {{persona.arcana}})
+    </td>
     <td>=</td>
-    <td>{{formatPersona(recipe.result)}}</td>
+    <td>{{recipe.result.name}}</td>
   </tr>
 </tbody>
 </table>
