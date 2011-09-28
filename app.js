@@ -46,7 +46,9 @@ angular.service('myAngularApp', function($route, $location, $window) {
 // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ //
 
 function CalcCtrl() {
-  this.recipes = this.getRecipes(this.params.persona_name);
+  this.persona = personaeByName[this.params.persona_name];
+  if (!this.persona) return;
+  this.recipes = this.getRecipes();
 }
 CalcCtrl.$inject = [];
 
@@ -71,32 +73,32 @@ CalcCtrl.prototype.fuse = function(combo, persona1, persona2) {
 }
 
 CalcCtrl.prototype.getRecipes = function(personaName) {
-  var persona = personaeByName[personaName];
-  if (!persona) return [];
-
   // Find the arcana combos that can make this persona.
+  var arcana = this.persona.arcana;  // for closure across broken this reference
   var combos = angular.Array.filter(
-    arcana2Combos, function(x) { return x.result == persona.arcana; });
+    arcana2Combos, function(x) { return x.result == arcana; });
 
   // Brute force over every combination!
   var recipes = [];
   for (var i = 0, combo = null; combo = combos[i]; i++) {
     var personae1 = personaeByArcana[combo.source[0]];
     for (var j = 0, persona1 = null; persona1 = personae1[j]; j++) {
-      if (persona1.name == persona.name) continue;
+      if (persona1.name == this.persona.name) continue;
       var personae2 = personaeByArcana[combo.source[1]];
       for (var k = 0, persona2 = null; persona2 = personae2[k]; k++) {
         if (persona1.arcana == persona2.arcana && k <=j) continue;
-        if (persona2.name == persona.name) continue;
+        if (persona2.name == this.persona.name) continue;
         if (persona1 == persona2) continue;
         var result = this.fuse(combo, persona1, persona2);
-        if (result && result.name == persona.name) {
+        if (result && result.name == this.persona.name) {
           var recipe = {
               'sources': [persona1, persona2],
               'result': result,
               };
           recipe.cost = angular.Array.sum(recipe.sources, 'level');
           recipes.push(recipe);
+        } else {
+          // TODO: 3-way fusion.
         }
       }
     }
