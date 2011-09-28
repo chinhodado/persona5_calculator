@@ -73,13 +73,28 @@ CalcCtrl.prototype.fuse = function(combo, persona1, persona2) {
 }
 
 CalcCtrl.prototype.getRecipes = function(personaName) {
+  var recipes = [];
+
+  // Check special recipes.
+  for (var i = 0, combo = null; combo = specialCombos[i]; i++) {
+    if (this.persona.name == combo.result) {
+      var recipe = {'sources': [], 'cost': '!!'};
+      for (var j = 0, source = null; source = combo.sources[j]; j++) {
+        recipe.sources.push(personaeByName[source]);
+      }
+      recipe.cost = angular.Array.sum(recipe.sources, 'level');
+      recipes.push(recipe);
+    }
+  }
+  // ?? If there is a special recipe, assume that's the only option.
+  if (recipes.length) return recipes;
+
   // Find the arcana combos that can make this persona.
   var arcana = this.persona.arcana;  // for closure across broken this reference
   var combos = angular.Array.filter(
     arcana2Combos, function(x) { return x.result == arcana; });
 
-  // Brute force over every combination!
-  var recipes = [];
+  // Brute force over every 2-way combination.
   for (var i = 0, combo = null; combo = combos[i]; i++) {
     var personae1 = personaeByArcana[combo.source[0]];
     for (var j = 0, persona1 = null; persona1 = personae1[j]; j++) {
@@ -94,21 +109,8 @@ CalcCtrl.prototype.getRecipes = function(personaName) {
           var recipe = {'sources': [persona1, persona2]};
           recipe.cost = angular.Array.sum(recipe.sources, 'level');
           recipes.push(recipe);
-        } else {
-          // TODO: 3-way fusion.
         }
       }
-    }
-  }
-
-  for (var i = 0, combo = null; combo = specialCombos[i]; i++) {
-    if (this.persona.name == combo.result) {
-      var recipe = {'sources': [], 'cost': '!!'};
-      for (var j = 0, source = null; source = combo.sources[j]; j++) {
-        recipe.sources.push(personaeByName[source]);
-      }
-      recipe.cost = angular.Array.sum(recipe.sources, 'level');
-      recipes.push(recipe);
     }
   }
 
