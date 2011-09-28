@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Persona 3 FES: Fusion Calculator</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+<script src="angular-0.9.19.min.js" ng:autobind></script>
+<script src="data.js"></script>
+<script src="app.js"></script>
+<link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/ui-lightness/jquery-ui.css" rel="stylesheet" type="text/css" />
+<style>
+#desired tbody th { text-align: right; }
+</style>
+</head>
+<body ng:controller="CalcCtrl">
+
+<table id="desired">
+<thead>
+<tr><td></td><th>Producing</th><th>Using</th></tr>
+</thead>
+<tbody>
+<tr>
+  <th>Persona</th>
+  <td><input name="produce_persona" class="persona_name" ng:change="recipes = getRecipes()"></td>
+  <td><input name="use_persona" class="persona_name" ng:change="recipes = getRecipes()"></td>
+</tr>
+<tr>
+  <th>Arcana</th>
+  <td><input name="produce_arcana" class="arcana_name" ng:change="recipes = getRecipes()"></td>
+  <td><input name="use_arcana" class="arcana_name" ng:change="recipes = getRecipes()"></td>
+</tr>
+</tbody>
+</table>
+<ng:include src="'view.html'"></ng:include>
+
+<script>
+$('input.persona_name').autocomplete({'source': personaeNames});
+$('input.arcana_name').autocomplete({'source': arcana});
+</script>
+</body>
+</html>
