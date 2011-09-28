@@ -21,21 +21,17 @@
 <tbody>
 <tr>
   <th>Persona</th>
-  <td><input name="produce_persona" class="persona_name" ng:change="recipes = getRecipes()"></td>
-  <td><input name="use_persona" class="persona_name" ng:change="recipes = getRecipes()"></td>
+  <td><input name="produce_persona" my:autocomplete="personaeNames" ng:change="recipes = getRecipes()"></td>
+  <td><input disabled name="use_persona" class="persona_name" ng:change="recipes = getRecipes()"></td>
 </tr>
 <tr>
   <th>Arcana</th>
-  <td><input name="produce_arcana" class="arcana_name" ng:change="recipes = getRecipes()"></td>
-  <td><input name="use_arcana" class="arcana_name" ng:change="recipes = getRecipes()"></td>
+  <td><input disabled name="produce_arcana" class="arcana_name" ng:change="recipes = getRecipes()"></td>
+  <td><input disabled name="use_arcana" class="arcana_name" ng:change="recipes = getRecipes()"></td>
 </tr>
 </tbody>
 </table>
 <ng:include src="'view.html'"></ng:include>
 
-<script>
-$('input.persona_name').autocomplete({'source': personaeNames});
-$('input.arcana_name').autocomplete({'source': arcana});
-</script>
 </body>
 </html>
