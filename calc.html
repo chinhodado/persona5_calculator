@@ -1,6 +1,7 @@
 <p ng:hide="recipes">Not found!</p>
-
-<table id="recipes" ng:show="recipes">
+<p ng:show="recipes">
+<label>Filter: <input type="text" size="30" name="filter"></label>
+<table id="recipes">
 <caption>Recipes - {{persona.name}} ({{persona.level}} / {{persona.arcana}})</caption>
 <thead>
   <th>#</th>
@@ -8,7 +9,7 @@
   <th colspan="6">Ingredients</th>
 </thead>
 <tbody>
-  <tr ng:repeat="recipe in recipes.$orderBy('cost')">
+  <tr ng:repeat="recipe in recipes.$orderBy('cost').$filter(filter)">
     <td>{{$index + 1}}</td>
     <td>{{recipe.cost}}</td>
     <td ng:repeat="persona in recipe.sources">
@@ -18,3 +19,4 @@
   </tr>
 </tbody>
 </table>
+</p>

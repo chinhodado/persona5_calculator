@@ -1,4 +1,4 @@
-<label>Filter: <input type="text" size="30" name="name_filter"></label>
+<label>Filter: <input type="text" size="30" name="filter"></label>
 
 <table id="list">
 <caption>Personae</caption>
@@ -10,7 +10,7 @@
 </tr>
 </thead>
 <tbody>
-<tr ng:repeat="persona in personae.$orderBy(sortBy).$filter(name_filter)">
+<tr ng:repeat="persona in personae.$orderBy(sortBy).$filter(filter)">
   <td>{{persona.level}}</td>
   <td><a href='#/persona/{{persona.name}}'>{{persona.name}}</a></td>
   <td>{{persona.arcana}}</td>
