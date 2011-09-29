@@ -151,8 +151,10 @@ CalcCtrl.prototype.getRecipes = function(personaName) {
     if (result.name == this.persona.name) return false;
     return true;
   }
-  recipes = recipes.concat(
-      this.getArcanaRecipes(this.persona.arcana, filter2Way));
+  var recipes = this.getArcanaRecipes(this.persona.arcana, filter2Way);
+  for (var i = 0, recipe = null; recipe = recipes[i]; i++) {
+    this.addRecipe(recipe);
+  }
 
   // Consider triangle fusion.
   var arcana_ = this.persona.arcana; // closure ref.; broken this in callback
@@ -199,8 +201,6 @@ CalcCtrl.prototype.getRecipes = function(personaName) {
     find3WayRecipes.call(this, combo.source[0], combo.source[1]);
     find3WayRecipes.call(this, combo.source[1], combo.source[0]);
   }
-
-  return recipes;
 };
 
 CalcCtrl.prototype.getArcanaRecipes = function(arcanaName, filterCallback) {
