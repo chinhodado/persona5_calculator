@@ -20,7 +20,7 @@
 <tbody>
   <tr ng:repeat="recipe in recipes.$orderBy('cost').$filter(filter)">
     <td>{{recipe.num + 1}}</td>
-    <td>{{recipe.cost}}</td>
+    <td>{{(100 * recipe.cost / maxCost) | number:2}}%</td>
     <td ng:repeat="persona in recipe.sources">
       <a href='#/persona/{{persona.name}}'>{{persona.name}}</a>
       ({{persona.level}} / {{persona.arcana}})

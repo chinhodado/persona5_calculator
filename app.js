@@ -67,8 +67,10 @@ function CalcCtrl() {
   this.allRecipes = [];
   this.getRecipes();
   this.allRecipes = angular.Array.orderBy(this.allRecipes, 'cost');
+  this.maxCost = 0;
   for (var i = 0, recipe = null; recipe = this.allRecipes[i]; i++) {
     recipe.num = i;
+    this.maxCost = Math.max(this.maxCost, recipe.cost);
   }
 
   this.perPage = 100;
@@ -79,13 +81,13 @@ function CalcCtrl() {
 CalcCtrl.$inject = [];
 
 CalcCtrl.prototype.addRecipe = function(recipe) {
-  recipe.cost = angular.Array.sum(recipe.sources, 'level');
   recipe.cost = 0;
   for (var i = 0, source = null; source = recipe.sources[i]; i++) {
     var level = source.level;
-    recipe.cost += Math.sin( level / (10 * Math.PI) - Math.PI / 2 ) + 1;
+    recipe.cost += Math.pow(level, 2);
   }
-  recipe.cost = Math.floor(recipe.cost * 1000) / 100;
+
+  recipe.sources = angular.Array.orderBy(recipe.sources, '-level');
   this.allRecipes.push(recipe);
 };
 
