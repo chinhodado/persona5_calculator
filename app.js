@@ -66,6 +66,10 @@ function CalcCtrl() {
   this.allRecipes = [];
   this.getRecipes();
   this.allRecipes = angular.Array.orderBy(this.allRecipes, 'cost');
+  for (var i = 0, recipe = null; recipe = this.allRecipes[i]; i++) {
+    recipe.num = i;
+  }
+
   this.perPage = 100;
   this.lastPage = Math.floor(this.allRecipes.length / this.perPage);
 
