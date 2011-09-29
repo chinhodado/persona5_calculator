@@ -5,8 +5,7 @@
 <button ng:click="filter = ''">Ⓧ</button>
 </p>
 
-<table id="recipes">
-<caption>
+<div class="caption">
   {{numRecipes}} Recipes - {{persona.name}} ({{persona.level}} / {{persona.arcana}})
   <div class="pagination" ng:show="numRecipes > perPage">
     <span ng:click="pageNum = 0">◀<span style="position: relative; left: -0.4em;">◀</span></span>
@@ -15,7 +14,8 @@
     <span ng:click="pageNum = pageNum + 1">▶</span>
     <span ng:click="pageNum = lastPage"><span style="position: relative; right: -0.4em;">▶</span>▶</span>
   </div>
-</caption>
+</div>
+<table id="recipes">
 <thead>
   <th>#</th>
   <th>Cost</th>
