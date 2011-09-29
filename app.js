@@ -142,6 +142,7 @@ CalcCtrl.prototype.getRecipes = function(personaName) {
         recipe.sources.push(personaeByName[source]);
       }
       this.addRecipe(recipe);
+      return;
     }
   }
   // ?? If there is a special recipe, assume that's the only option.
