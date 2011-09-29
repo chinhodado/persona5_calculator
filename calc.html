@@ -1,12 +1,12 @@
-<p ng:hide="recipes">Not found!</p>
-<p ng:show="recipes">
+<p ng:hide="allRecipes">"{{params.persona_name}}" not found!</p>
+<div ng:show="allRecipes">
 <label>Filter: <input type="text" size="30" name="filter"></label>
 <button ng:click="filter = ''">Ⓧ</button>
 
 <table id="recipes">
 <caption>
   {{numRecipes}} Recipes - {{persona.name}} ({{persona.level}} / {{persona.arcana}})
-  <div class="pagination" ng:show="allRecipes.length > perPage">
+  <div class="pagination" ng:show="numRecipes > perPage">
     <span ng:click="pageNum = 0">◀<span style="position: relative; left: -0.4em;">◀</span></span>
     <span ng:click="pageNum = pageNum - 1">◀</span>
     Page {{pageNum + 1}} / {{ceil(numRecipes / perPage)}}
@@ -30,4 +30,4 @@
   </tr>
 </tbody>
 </table>
-</p>
+</div>
