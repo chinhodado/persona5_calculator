@@ -659,7 +659,6 @@ const specialCombos = [
     {'result': 'Metatron', 'sources': ['Uriel', 'Raphael', 'Gabriel', 'Michael']},
     {'result': 'Norn', 'sources': ['Clotho', 'Lachesis', 'Atropos']},
     {'result': 'Orpheus Telos', 'sources': ['Thanatos', 'Chi You', 'Helel', 'Asura', 'Messiah', 'Metatron']},
-    {'result': 'Pixie', 'sources': ['Alp', 'Narcissus']},
     {'result': 'Sandalphon', 'sources': ['Gurr', 'Suzaku', 'Yatagarasu', 'Horus', 'Garuda']},
     {'result': 'Shiva', 'sources': ['Barong', 'Rangda']},
     {'result': 'Susano-o', 'sources': ['Orpheus', 'Legion', 'Black Frost', 'Ose', 'Decarabia', 'Loki']},

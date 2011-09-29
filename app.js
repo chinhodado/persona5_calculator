@@ -58,6 +58,7 @@ angular.service('myAngularApp', function($route, $location, $window) {
 // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ //
 
 function CalcCtrl() {
+  window.calc=this;
   this.ceil = Math.ceil;
 
   this.persona = personaeByName[this.params.persona_name];
@@ -145,8 +146,6 @@ CalcCtrl.prototype.getRecipes = function(personaName) {
       return;
     }
   }
-  // ?? If there is a special recipe, assume that's the only option.
-  if (recipes.length) return recipes;
 
   // Consider straight fusion.
   function filter2Way(persona1, persona2, pastHalf, result) {
