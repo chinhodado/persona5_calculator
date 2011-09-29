@@ -75,8 +75,9 @@ function CalcCtrl() {
 
   this.perPage = 100;
   this.lastPage = Math.floor(this.allRecipes.length / this.perPage);
-
-  this.paginateTo(0);
+  this.pageNum = 0;
+  this.$watch('filter', this.paginateAndFilter);
+  this.$watch('pageNum', this.paginateAndFilter, false);
 }
 CalcCtrl.$inject = [];
 
@@ -243,13 +244,15 @@ CalcCtrl.prototype.getArcanaRecipes = function(arcanaName, filterCallback) {
   return recipes;
 };
 
-CalcCtrl.prototype.paginateTo = function(pageNum) {
-  if (pageNum < 0) pageNum = 0;
-  if (pageNum > this.lastPage) pageNum = this.lastPage;
+CalcCtrl.prototype.paginateAndFilter = function() {
+  if (this.pageNum < 0) this.pageNum = 0;
+  if (this.pageNum > this.lastPage) this.pageNum = this.lastPage;
 
-  this.recipes = this.allRecipes.slice(
-      pageNum * this.perPage, pageNum * this.perPage + this.perPage);
-  this.pageNum = pageNum;
+  this.recipes = angular.Array.filter(this.allRecipes, this.filter);
+  this.numRecipes = this.recipes.length;
+  this.recipes = this.recipes.slice(
+      this.pageNum * this.perPage,
+      this.pageNum * this.perPage + this.perPage);
 };
 
 // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ //

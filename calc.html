@@ -1,15 +1,17 @@
 <p ng:hide="recipes">Not found!</p>
 <p ng:show="recipes">
 <label>Filter: <input type="text" size="30" name="filter"></label>
-(Broken across pages for now.)
+<button ng:click="filter = ''">Ⓧ</button>
 
 <table id="recipes">
 <caption>
-  {{allRecipes.length}} Recipes - {{persona.name}} ({{persona.level}} / {{persona.arcana}})
+  {{numRecipes}} Recipes - {{persona.name}} ({{persona.level}} / {{persona.arcana}})
   <div class="pagination" ng:show="allRecipes.length > perPage">
-    <span ng:click="paginateTo(pageNum - 1)">◀</span>
-    Page {{pageNum + 1}} / {{ceil(allRecipes.length / perPage)}}
-    <span ng:click="paginateTo(pageNum + 1)">▶</span>
+    <span ng:click="pageNum = 0">◀<span style="position: relative; left: -0.4em;">◀</span></span>
+    <span ng:click="pageNum = pageNum - 1">◀</span>
+    Page {{pageNum + 1}} / {{ceil(numRecipes / perPage)}}
+    <span ng:click="pageNum = pageNum + 1">▶</span>
+    <span ng:click="pageNum = lastPage"><span style="position: relative; right: -0.4em;">▶</span>▶</span>
   </div>
 </caption>
 <thead>
@@ -18,7 +20,7 @@
   <th colspan="6">Ingredients</th>
 </thead>
 <tbody>
-  <tr ng:repeat="recipe in recipes.$orderBy('cost').$filter(filter)">
+  <tr ng:repeat="recipe in recipes">
     <td>{{recipe.num + 1}}</td>
     <td>{{(100 * recipe.cost / maxCost) | number:2}}%</td>
     <td ng:repeat="persona in recipe.sources">
