@@ -85,7 +85,7 @@ CalcCtrl.prototype.addRecipe = function(recipe) {
   recipe.cost = 0;
   for (var i = 0, source = null; source = recipe.sources[i]; i++) {
     var level = source.level;
-    recipe.cost += Math.pow(level, 2);
+    recipe.cost += (27 * level * level) + (126 * level) + 2147;
   }
 
   recipe.sources = angular.Array.orderBy(recipe.sources, '-level');
