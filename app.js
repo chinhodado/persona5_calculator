@@ -98,6 +98,7 @@ CalcCtrl.prototype.fuse2 = function(arcana, persona1, persona2) {
 
   for (var i = 0, persona = null; persona = personae[i]; i++) {
     if (persona.level >= level) {
+      if (persona.special) continue;
       break;
     }
   }
@@ -120,6 +121,7 @@ CalcCtrl.prototype.fuse3 = function(arcana, persona1, persona2, persona3) {
   var found = false;
   for (var i = 0, persona = null; persona = personae[i]; i++) {
     if (persona.level >= level) {
+      if (persona.special) continue;
       found = true;
       break;
     }
@@ -149,14 +151,16 @@ CalcCtrl.prototype.getRecipes = function(personaName) {
   var recipes = [];
 
   // Check special recipes.
-  for (var i = 0, combo = null; combo = specialCombos[i]; i++) {
-    if (this.persona.name == combo.result) {
-      var recipe = {'sources': [], 'cost': '!!'};
-      for (var j = 0, source = null; source = combo.sources[j]; j++) {
-        recipe.sources.push(personaeByName[source]);
+  if (this.persona.special) {
+    for (var i = 0, combo = null; combo = specialCombos[i]; i++) {
+      if (this.persona.name == combo.result) {
+        var recipe = {'sources': []};
+        for (var j = 0, source = null; source = combo.sources[j]; j++) {
+          recipe.sources.push(personaeByName[source]);
+        }
+        this.addRecipe(recipe);
+        return;
       }
-      this.addRecipe(recipe);
-      return;
     }
   }
 
@@ -226,8 +230,8 @@ CalcCtrl.prototype.getArcanaRecipes = function(arcanaName, filterCallback) {
     arcana2Combos, function(x) { return x.result == arcanaName; });
   for (var i = 0, combo = null; combo = combos[i]; i++) {
     var personae1 = personaeByArcana[combo.source[0]];
+    var personae2 = personaeByArcana[combo.source[1]];
     for (var j = 0, persona1 = null; persona1 = personae1[j]; j++) {
-      var personae2 = personaeByArcana[combo.source[1]];
       for (var k = 0, persona2 = null; persona2 = personae2[k]; k++) {
         if (persona1 == persona2) continue;
         var result = this.fuse2(combo.result, persona1, persona2);
