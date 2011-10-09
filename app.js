@@ -57,11 +57,11 @@ angular.service('myAngularApp', function($route, $location, $window) {
 
 // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ // \\ //
 
-function CalcCtrl() {
+function CalcCtrl(persona_name) {
   window.calc=this;
   this.ceil = Math.ceil;
 
-  this.persona = personaeByName[this.params.persona_name];
+  this.persona = personaeByName[persona_name || this.params.persona_name];
   if (!this.persona) return;
 
   this.allRecipes = [];
