@@ -593,7 +593,7 @@ const arcana3Combos = [
     {'source': ['Hanged Man', 'Sun'         ], 'result': 'Judgment'    },
     {'source': ['Hanged Man', 'Judgment'    ], 'result': 'Aeon'        },
     {'source': ['Hanged Man', 'Aeon'        ], 'result': 'Temperance'  },
-    {'source': ['Death',      'Chariot'     ], 'result': 'Judgment'    },
+    {'source': ['Death',      'Chariot'     ], 'result': 'Fool'        },
     {'source': ['Death',      'Death'       ], 'result': 'Death'       },
     {'source': ['Death',      'Temperance'  ], 'result': 'Tower'       },
     {'source': ['Death',      'Devil'       ], 'result': 'Judgment'    },
