@@ -81,6 +81,10 @@ function CalcCtrl(persona_name) {
 }
 CalcCtrl.$inject = [];
 
+CalcCtrl.prototype.getRank = function(persona) {
+    return arcanaRank[persona.arcana];
+}
+
 CalcCtrl.prototype.addRecipe = function(recipe) {
   recipe.cost = 0;
   for (var i = 0, source = null; source = recipe.sources[i]; i++) {
@@ -88,7 +92,11 @@ CalcCtrl.prototype.addRecipe = function(recipe) {
     recipe.cost += (27 * level * level) + (126 * level) + 2147;
   }
 
-  recipe.sources = angular.Array.orderBy(recipe.sources, '-level');
+  // Sort so that the "3rd persona" in triangle fusion (the one that needs
+  // to have the highest current level) is always listed first.  In case
+  // of a tie in level, the persona with the lowest arcana rank is used.
+  recipe.sources = angular.Array.orderBy(recipe.sources,
+					 [ '-level', this.getRank ]);
   this.allRecipes.push(recipe);
 };
 
