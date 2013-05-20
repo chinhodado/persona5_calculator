@@ -136,21 +136,17 @@ CalcCtrl.prototype.fuse3 = function(arcana, persona1, persona2, persona3) {
   }
   if (!found) return null;
 
-  /*
-  // This was described in FAQs but does not seem to be accurate.
+  // In same arcana fusion, skip over the ingredients.
   if (persona1.arcana == arcana
       && persona2.arcana == arcana
       && persona3.arcana == arcana) {
-    if (personae[i + 1]) {
+    while (persona1.name == personae[i].name
+           || persona2.name == personae[i].name
+           || persona3.name == personae[i].name) {
       i++;
-      if (persona1.name == personae[i].name
-          || persona2.name == personae[i].name
-          || persona3.name == personae[i].name) {
-        if (personae[i + 1]) i++;
-      }
+      if (!personae[i]) return null;
     }
   }
-  */
 
   return personae[i];
 }
