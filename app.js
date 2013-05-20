@@ -169,8 +169,7 @@ CalcCtrl.prototype.getRecipes = function(personaName) {
   }
 
   // Consider straight fusion.
-  function filter2Way(persona1, persona2, pastHalf, result) {
-    if (persona1.arcana == persona2.arcana && pastHalf) return true;
+  function filter2Way(persona1, persona2, result) {
     if (persona1.name == this.persona.name) return true;
     if (persona2.name == this.persona.name) return true;
     if (result.name == this.persona.name) return false;
@@ -224,7 +223,9 @@ CalcCtrl.prototype.getRecipes = function(personaName) {
       }
     }
     find3WayRecipes.call(this, combo.source[0], combo.source[1]);
-    find3WayRecipes.call(this, combo.source[1], combo.source[0]);
+    if (combo.source[1] != combo.source[0]) {
+      find3WayRecipes.call(this, combo.source[1], combo.source[0]);
+    }
   }
 };
 
@@ -237,11 +238,11 @@ CalcCtrl.prototype.getArcanaRecipes = function(arcanaName, filterCallback) {
     var personae2 = personaeByArcana[combo.source[1]];
     for (var j = 0, persona1 = null; persona1 = personae1[j]; j++) {
       for (var k = 0, persona2 = null; persona2 = personae2[k]; k++) {
-        if (persona1 == persona2) continue;
+        if (persona1.arcana == persona2.arcana && k <= j) continue;
         var result = this.fuse2(combo.result, persona1, persona2);
         if (!result) continue;
         if (filterCallback
-            && filterCallback.call(this, persona1, persona2, k <= j, result)) {
+            && filterCallback.call(this, persona1, persona2, result)) {
           continue;
         }
 
