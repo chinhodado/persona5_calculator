@@ -10,11 +10,11 @@
   <span style='color: red;' ng:show='persona.max'>Social link must be maxed!</span>
   <span style='color: slateblue;' ng:show='persona.item'>Requires an item from one of Elizabeth's requests!</span>
   <div class="pagination" ng:show="numRecipes > perPage">
-    <span ng:click="pageNum = 0">◀<span style="position: relative; left: -0.4em;">◀</span></span>
-    <span ng:click="pageNum = pageNum - 1">◀</span>
+    <span ng:click="pageNum = 0">&#x25c4;<span style="position: relative; left: -0.4em;">&#x25c4;</span></span>
+    <span ng:click="pageNum = pageNum - 1">&#x25c4;</span>
     Page {{pageNum + 1}} / {{ceil(numRecipes / perPage)}}
-    <span ng:click="pageNum = pageNum + 1">▶</span>
-    <span ng:click="pageNum = lastPage"><span style="position: relative; right: -0.4em;">▶</span>▶</span>
+    <span ng:click="pageNum = pageNum + 1">&#x25ba;</span>
+    <span ng:click="pageNum = lastPage"><span style="position: relative; right: -0.4em;">&#x25ba;</span>&#x25ba;</span>
   </div>
 </div>
 <table id="recipes">
