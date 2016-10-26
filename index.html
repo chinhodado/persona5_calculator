@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Persona Fusion Calculator</title>
+    <meta charset="utf-8">
+    <title>Persona 5 Fusion Calculator</title>
+    <script src="angular-0.9.19.min.js" ng:autobind></script>
+    <script src="data5.js"></script>
+    <script src="app.js"></script>
+    <style>
+        div.caption { text-align: center; width: 100%; }
+        td { padding: 0 0.25em; }
+        #list th { cursor: pointer; }
+        th { text-align: left; }
+        .pagination span { cursor: pointer; }
+    </style>
 </head>
 <body>
 
-<p>Please choose:</p>
-<ul>
-<li><a href='3fes.html'>Persona 3: FES</a></li>
-<li><a href='3portable.html'>Persona 3: Portable</a></li>
-<li><a href='4.html'>Persona 4</a></li>
-<li><a href='4golden.html'>Persona 4: Golden</a></li>
-</ul>
+<ng:view></ng:view>
 
 </body>
 </html>
