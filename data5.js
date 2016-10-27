@@ -679,9 +679,6 @@ var arcana2Combos = [
     {'source': ['Judgement',  'Judgement'   ], 'result': 'Judgement'   }
 ];
 
-var arcana3Combos = [
-];
-
 var specialCombos = [
     {'result': 'Alice', 'sources': ['Nebiros', 'Belial']},
     {'result': 'Ardha', 'sources': ['Parvati', 'Shiva']},
@@ -703,5 +700,5 @@ var specialCombos = [
     {'result': 'Throne', 'sources': ['Power', 'Melchizedek', 'Dominion']},
     {'result': 'Trumpeter', 'sources': ['White Rider', 'Red Rider', 'Black Rider', 'Pale Rider']},
     {'result': 'Vasuki', 'sources': ['Naga', 'Raja Naga', 'Ananta']},
-    {'result': 'Yoshitsune', 'sources': ['Okuninushi', 'Shiki-Ouji', 'Arahabaki', 'Yatagarasu', 'Futsunushi']},
+    {'result': 'Yoshitsune', 'sources': ['Okuninushi', 'Shiki-Ouji', 'Arahabaki', 'Yatagarasu', 'Futsunushi']}
 ];
