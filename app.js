@@ -99,6 +99,25 @@ CalcCtrl.prototype.addRecipe = function(recipe) {
   this.allRecipes.push(recipe);
 };
 
+CalcCtrl.prototype.fuseRare = function(rarePersona, mainPersona) {
+  var modifier = rareCombos[mainPersona.arcana][rarePersonae.indexOf(rarePersona.name)];
+  var personae = personaeByArcana[mainPersona.arcana];
+  var mainPersonaIndex = personae.indexOf(mainPersona);
+  var newPersona = personae[mainPersonaIndex + modifier];
+
+  if (!newPersona) {
+    return null;
+  }
+
+  if (newPersona.special) {
+    if (modifier > 0) modifier++;
+    else if (modifier < 0) modifier--;
+
+    newPersona = personae[mainPersonaIndex + modifier];
+  }
+  return newPersona;
+};
+
 CalcCtrl.prototype.fuse2 = function(arcana, persona1, persona2) {
   var level = 1 + Math.floor((persona1.level + persona2.level) / 2);
   var personae = personaeByArcana[arcana];
@@ -186,6 +205,8 @@ CalcCtrl.prototype.getArcanaRecipes = function(arcanaName, filterCallback) {
     for (var j = 0, persona1 = null; persona1 = personae1[j]; j++) {
       for (var k = 0, persona2 = null; persona2 = personae2[k]; k++) {
         if (persona1.arcana == persona2.arcana && k <= j) continue;
+        if (persona1.rare && !persona2.rare) continue;
+        if (persona2.rare && !persona1.rare) continue;
         var result = this.fuse2(combo.result, persona1, persona2);
         if (!result) continue;
         if (filterCallback
@@ -197,6 +218,24 @@ CalcCtrl.prototype.getArcanaRecipes = function(arcanaName, filterCallback) {
       }
     }
   }
+
+  for (var i = 0; i < rarePersonae.length; i++) {
+    var rarePersona = personaeByName[rarePersonae[i]];
+    var personae = personaeByArcana[this.persona.arcana];
+    for (var j = 0; j < personae.length; j++) {
+      var mainPersona = personae[j];
+      if (rarePersona == mainPersona) continue;
+      var result = this.fuseRare(rarePersona, mainPersona);
+      if (!result) continue;
+      if (filterCallback
+          && filterCallback.call(this, rarePersona, mainPersona, result)) {
+        continue;
+      }
+
+      recipes.push({'sources': [rarePersona, mainPersona]});
+    }
+  }
+
   return recipes;
 };
 

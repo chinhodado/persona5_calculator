@@ -211,239 +211,30 @@ var personae = [
   {"arcana": "Judgement",  "level": 92, "name": "Satan",             'max': true }
 ];
 
-var rareCombos = [
-  {"arcana": "Fool",  "comboList": [
-        {"gem": "Regent",               "result": -1},
-        {"gem": "Queen's Necklace",     "result": +1},
-        {"gem": "Stone of Scone",       "result": -1},
-        {"gem": "Koh-i-Noor",           "result": +1},
-        {"gem": "Orlov",                "result": -1},
-        {"gem": "Emperor's Amulet",     "result": -1},
-        {"gem": "Hope Diamond",         "result": +1},
-        {"gem": "Crystal Skull",        "result": +2}
-    ]
-  },
-  {"arcana": "Magician",  "comboList": [
-        {"gem": "Regent",               "result": +1},
-        {"gem": "Queen's Necklace",     "result": -1},
-        {"gem": "Stone of Scone",       "result": +2},
-        {"gem": "Koh-i-Noor",           "result": -1},
-        {"gem": "Orlov",                "result": +1},
-        {"gem": "Emperor's Amulet",     "result": +1},
-        {"gem": "Hope Diamond",         "result": +1},
-        {"gem": "Crystal Skull",        "result": +1}
-    ]
-  },
-  {"arcana": "Priestess",  "comboList": [
-        {"gem": "Regent",               "result": -1},
-        {"gem": "Queen's Necklace",     "result": +1},
-        {"gem": "Stone of Scone",       "result": -1},
-        {"gem": "Koh-i-Noor",           "result": +2},
-        {"gem": "Orlov",                "result": +1},
-        {"gem": "Emperor's Amulet",     "result": -1},
-        {"gem": "Hope Diamond",         "result": +1},
-        {"gem": "Crystal Skull",        "result": +1}
-    ]
-  },
-  {"arcana": "Empress",  "comboList": [
-        {"gem": "Regent",               "result": -1},
-        {"gem": "Queen's Necklace",     "result": +2},
-        {"gem": "Stone of Scone",       "result": -1},
-        {"gem": "Koh-i-Noor",           "result": +1},
-        {"gem": "Orlov",                "result": +1},
-        {"gem": "Emperor's Amulet",     "result": +1},
-        {"gem": "Hope Diamond",         "result": -1},
-        {"gem": "Crystal Skull",        "result": +1}
-    ]
-  },
-  {"arcana": "Emperor",  "comboList": [
-        {"gem": "Regent",               "result": +2},
-        {"gem": "Queen's Necklace",     "result": -1},
-        {"gem": "Stone of Scone",       "result": +1},
-        {"gem": "Koh-i-Noor",           "result": -1},
-        {"gem": "Orlov",                "result": -1},
-        {"gem": "Emperor's Amulet",     "result": +1},
-        {"gem": "Hope Diamond",         "result": +1},
-        {"gem": "Crystal Skull",        "result": -1}
-    ]
-  },
-  {"arcana": "Hierophant",  "comboList": [
-        {"gem": "Regent",               "result": +1},
-        {"gem": "Queen's Necklace",     "result": -1},
-        {"gem": "Stone of Scone",       "result": +1},
-        {"gem": "Koh-i-Noor",           "result": -2},
-        {"gem": "Orlov",                "result": +1},
-        {"gem": "Emperor's Amulet",     "result": -1},
-        {"gem": "Hope Diamond",         "result": -1},
-        {"gem": "Crystal Skull",        "result": -1}
-    ]
-  },
-  {"arcana": "Lovers",  "comboList": [
-        {"gem": "Regent",               "result": -1},
-        {"gem": "Queen's Necklace",     "result": +1},
-        {"gem": "Stone of Scone",       "result": -1},
-        {"gem": "Koh-i-Noor",           "result": +1},
-        {"gem": "Orlov",                "result": -1},
-        {"gem": "Emperor's Amulet",     "result": -1},
-        {"gem": "Hope Diamond",         "result": -2},
-        {"gem": "Crystal Skull",        "result": +1}
-    ]
-  },
-  {"arcana": "Chariot",  "comboList": [
-        {"gem": "Regent",               "result": +1},
-        {"gem": "Queen's Necklace",     "result": -1},
-        {"gem": "Stone of Scone",       "result": +1},
-        {"gem": "Koh-i-Noor",           "result": -1},
-        {"gem": "Orlov",                "result": +1},
-        {"gem": "Emperor's Amulet",     "result": -2},
-        {"gem": "Hope Diamond",         "result": -1},
-        {"gem": "Crystal Skull",        "result": -1}
-    ]
-  },
-  {"arcana": "Justice",  "comboList": [
-        {"gem": "Regent",               "result": +1},
-        {"gem": "Queen's Necklace",     "result": -1},
-        {"gem": "Stone of Scone",       "result": -1},
-        {"gem": "Koh-i-Noor",           "result": +2},
-        {"gem": "Orlov",                "result": +1},
-        {"gem": "Emperor's Amulet",     "result": +1},
-        {"gem": "Hope Diamond",         "result": -1},
-        {"gem": "Crystal Skull",        "result": +1}
-    ]
-  },
-  {"arcana": "Hermit",  "comboList": [
-        {"gem": "Regent",               "result": +2},
-        {"gem": "Queen's Necklace",     "result": -1},
-        {"gem": "Stone of Scone",       "result": -1},
-        {"gem": "Koh-i-Noor",           "result": +1},
-        {"gem": "Orlov",                "result": +1},
-        {"gem": "Emperor's Amulet",     "result": +1},
-        {"gem": "Hope Diamond",         "result": +1},
-        {"gem": "Crystal Skull",        "result": -2}
-    ]
-  },
-  {"arcana": "Fortune",  "comboList": [
-        {"gem": "Regent",               "result": +1},
-        {"gem": "Queen's Necklace",     "result": -1},
-        {"gem": "Stone of Scone",       "result": +2},
-        {"gem": "Koh-i-Noor",           "result": -1},
-        {"gem": "Orlov",                "result": -2},
-        {"gem": "Emperor's Amulet",     "result": -1},
-        {"gem": "Hope Diamond",         "result": +1},
-        {"gem": "Crystal Skull",        "result": -1}
-    ]
-  },
-  {"arcana": "Strength",  "comboList": [
-        {"gem": "Regent",               "result": -1},
-        {"gem": "Queen's Necklace",     "result": +1},
-        {"gem": "Stone of Scone",       "result": -2},
-        {"gem": "Koh-i-Noor",           "result": +1},
-        {"gem": "Orlov",                "result": +1},
-        {"gem": "Emperor's Amulet",     "result": +1},
-        {"gem": "Hope Diamond",         "result": -1},
-        {"gem": "Crystal Skull",        "result": -1}
-    ]
-  },
-  {"arcana": "Hanged Man",  "comboList": [
-        {"gem": "Regent",               "result": +1},
-        {"gem": "Queen's Necklace",     "result": +1},
-        {"gem": "Stone of Scone",       "result": -1},
-        {"gem": "Koh-i-Noor",           "result": -1},
-        {"gem": "Orlov",                "result": +1},
-        {"gem": "Emperor's Amulet",     "result": +2},
-        {"gem": "Hope Diamond",         "result": -1},
-        {"gem": "Crystal Skull",        "result": -1}
-    ]
-  },
-  {"arcana": "Death",  "comboList": [
-        {"gem": "Regent",               "result": +1},
-        {"gem": "Queen's Necklace",     "result": -1},
-        {"gem": "Stone of Scone",       "result": +1},
-        {"gem": "Koh-i-Noor",           "result": +1},
-        {"gem": "Orlov",                "result": -1},
-        {"gem": "Emperor's Amulet",     "result": -1},
-        {"gem": "Hope Diamond",         "result": +2},
-        {"gem": "Crystal Skull",        "result": +1}
-    ]
-  },
-  {"arcana": "Temperance",  "comboList": [
-        {"gem": "Regent",               "result": -1},
-        {"gem": "Queen's Necklace",     "result": +1},
-        {"gem": "Stone of Scone",       "result": -1},
-        {"gem": "Koh-i-Noor",           "result": -1},
-        {"gem": "Orlov",                "result": +1},
-        {"gem": "Emperor's Amulet",     "result": +1},
-        {"gem": "Hope Diamond",         "result": -1},
-        {"gem": "Crystal Skull",        "result": +2}
-    ]
-  },
-  {"arcana": "Devil",  "comboList": [
-        {"gem": "Regent",               "result": -2},
-        {"gem": "Queen's Necklace",     "result": +1},
-        {"gem": "Stone of Scone",       "result": -1},
-        {"gem": "Koh-i-Noor",           "result": +1},
-        {"gem": "Orlov",                "result": +1},
-        {"gem": "Emperor's Amulet",     "result": +2},
-        {"gem": "Hope Diamond",         "result": -1},
-        {"gem": "Crystal Skull",        "result": -1}
-    ]
-  },
-  {"arcana": "Tower",  "comboList": [
-        {"gem": "Regent",               "result": -1},
-        {"gem": "Queen's Necklace",     "result": -2},
-        {"gem": "Stone of Scone",       "result": +1},
-        {"gem": "Koh-i-Noor",           "result": +1},
-        {"gem": "Orlov",                "result": +1},
-        {"gem": "Emperor's Amulet",     "result": +1},
-        {"gem": "Hope Diamond",         "result": -1},
-        {"gem": "Crystal Skull",        "result": -1}
-    ]
-  },
-  {"arcana": "Star",  "comboList": [
-        {"gem": "Regent",               "result": +1},
-        {"gem": "Queen's Necklace",     "result": -1},
-        {"gem": "Stone of Scone",       "result": +1},
-        {"gem": "Koh-i-Noor",           "result": -1},
-        {"gem": "Orlov",                "result": +1},
-        {"gem": "Emperor's Amulet",     "result": -1},
-        {"gem": "Hope Diamond",         "result": +1},
-        {"gem": "Crystal Skull",        "result": -1}
-    ]
-  },
-  {"arcana": "Moon",  "comboList": [
-        {"gem": "Regent",               "result": -1},
-        {"gem": "Queen's Necklace",     "result": +2},
-        {"gem": "Stone of Scone",       "result": +1},
-        {"gem": "Koh-i-Noor",           "result": -1},
-        {"gem": "Orlov",                "result": +1},
-        {"gem": "Emperor's Amulet",     "result": -1},
-        {"gem": "Hope Diamond",         "result": -1},
-        {"gem": "Crystal Skull",        "result": -1}
-    ]
-  },
-  {"arcana": "Sun",  "comboList": [
-        {"gem": "Regent",               "result": +1},
-        {"gem": "Queen's Necklace",     "result": -1},
-        {"gem": "Stone of Scone",       "result": -1},
-        {"gem": "Koh-i-Noor",           "result": +1},
-        {"gem": "Orlov",                "result": +1},
-        {"gem": "Emperor's Amulet",     "result": -1},
-        {"gem": "Hope Diamond",         "result": +2},
-        {"gem": "Crystal Skull",        "result": +1}
-    ]
-  },
-  {"arcana": "Judgement",  "comboList": [
-        {"gem": "Regent",               "result": -1},
-        {"gem": "Queen's Necklace",     "result": -1},
-        {"gem": "Stone of Scone",       "result": +1},
-        {"gem": "Koh-i-Noor",           "result": -1},
-        {"gem": "Orlov",                "result": +1},
-        {"gem": "Emperor's Amulet",     "result": +1},
-        {"gem": "Hope Diamond",         "result": -1},
-        {"gem": "Crystal Skull",        "result": -1}
-    ]
-  }
-];
+var rarePersonae = ["Regent", "Queen's Necklace", "Stone of Scone", "Koh-i-Noor", "Orlov", "Emperor's Amulet", "Hope Diamond", "Crystal Skull"];
+var rareCombos = {
+  "Fool":       [-1, +1, -1, +1, -1, -1, +1, +2],
+  "Magician":   [+1, -1, +2, -1, +1, +1, +1, +1],
+  "Priestess":  [-1, +1, -1, +2, +1, -1, +1, +1],
+  "Empress":    [-1, +2, -1, +1, +1, +1, -1, +1],
+  "Emperor":    [+2, -1, +1, -1, -1, +1, +1, -1],
+  "Hierophant": [+1, -1, +1, -2, +1, -1, -1, -1],
+  "Lovers":     [-1, +1, -1, +1, -1, -1, -2, +1],
+  "Chariot":    [+1, -1, +1, -1, +1, -2, -1, -1],
+  "Justice":    [+1, -1, -1, +2, +1, +1, -1, +1],
+  "Hermit":     [+2, -1, -1, +1, +1, +1, +1, -2],
+  "Fortune":    [+1, -1, +2, -1, -2, -1, +1, -1],
+  "Strength":   [-1, +1, -2, +1, +1, +1, -1, -1],
+  "Hanged Man": [+1, +1, -1, -1, +1, +2, -1, -1],
+  "Death":      [+1, -1, +1, +1, -1, -1, +2, +1],
+  "Temperance": [-1, +1, -1, -1, +1, +1, -1, +2],
+  "Devil":      [-2, +1, -1, +1, +1, +2, -1, -1],
+  "Tower":      [-1, -2, +1, +1, +1, +1, -1, -1],
+  "Star":       [+1, -1, +1, -1, +1, -1, +1, -1],
+  "Moon":       [-1, +2, +1, -1, +1, -1, -1, -1],
+  "Sun":        [+1, -1, -1, +1, +1, -1, +2, +1],
+  "Judgement":  [-1, -1, +1, -1, +1, +1, -1, -1]
+};
 
 var arcana2Combos = [
     {'source': ['Fool',       'Fool'        ], 'result': 'Fool'        },
