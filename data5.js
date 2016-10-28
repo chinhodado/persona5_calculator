@@ -51,7 +51,7 @@ var personae = [
   {"arcana": "Emperor",    "level": 66, "name": "Oberon"             },
   {"arcana": "Emperor",    "level": 75, "name": "Baal"               },
   {"arcana": "Emperor",    "level": 82, "name": "Odin",              'max': true },
-  {"arcana": "Hierophant", "level": 10, "name": "Berith"             },
+  {"arcana": "Hierophant", "level": 9,  "name": "Berith"             },
   {"arcana": "Hierophant", "level": 17, "name": "Orobas"             },
   {"arcana": "Hierophant", "level": 22, "name": "Feng Huang"         },
   {"arcana": "Hierophant", "level": 25, "name": "Anzu"               },
@@ -230,7 +230,7 @@ var rareCombos = {
   "Temperance": [-1, +1, -1, -1, +1, +1, -1, +2],
   "Devil":      [-2, +1, -1, +1, +1, +2, -1, -1],
   "Tower":      [-1, -2, +1, +1, +1, +1, -1, -1],
-  "Star":       [+1, -1, +1, -1, +1, -1, +1, -1],
+  "Star":       [+1, -1, +1, -1, +1, -1, +1, +1],
   "Moon":       [-1, +2, +1, -1, +1, -1, -1, -1],
   "Sun":        [+1, -1, -1, +1, +1, -1, +2, +1],
   "Judgement":  [-1, -1, +1, -1, +1, +1, -1, -1]
