@@ -347,7 +347,7 @@ var arcana2Combos = [
     {'source': ['Hierophant', 'Star'        ], 'result': 'Tower'       },
     {'source': ['Hierophant', 'Moon'        ], 'result': 'Priestess'   },
     {'source': ['Hierophant', 'Sun'         ], 'result': 'Lovers'      },
-    {'source': ['Hierophant', 'Judgement'   ], 'result': 'Emperor'     },
+    {'source': ['Hierophant', 'Judgement'   ], 'result': 'Empress'     },
     {'source': ['Lovers',     'Lovers'      ], 'result': 'Lovers'      },
     {'source': ['Lovers',     'Chariot'     ], 'result': 'Temperance'  },
     {'source': ['Lovers',     'Justice'     ], 'result': 'Judgement'   },
