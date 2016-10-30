@@ -122,18 +122,22 @@ CalcCtrl.prototype.fuse2 = function(arcana, persona1, persona2) {
   var level = 1 + Math.floor((persona1.level + persona2.level) / 2);
   var personae = personaeByArcana[arcana];
 
-  for (var i = 0, persona = null; persona = personae[i]; i++) {
-    if (persona.level >= level) {
-      if (persona.special) continue;
-      break;
+  if (persona1.arcana == persona2.arcana) {
+    // same-arcana down-rank fusion
+    for (var i = personae.length - 1, persona = null; persona = personae[i]; i--) {
+      if (persona.level <= level) {
+        if (persona.special || persona.rare || persona == persona1 || persona == persona2) continue;
+        break;
+      }
     }
   }
-
-  if (persona1.arcana == persona2.arcana) {
-    i--;
-  }
-  if (personae[i] == persona1 || personae[i] == persona2) {
-    i--;
+  else {
+    for (var i = 0, persona = null; persona = personae[i]; i++) {
+      if (persona.level >= level) {
+        if (persona.special || persona.rare) continue;
+        break;
+      }
+    }
   }
 
   // these are 2-persona-special fusions, so remove them from normal fusion
