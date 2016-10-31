@@ -119,6 +119,9 @@ CalcCtrl.prototype.fuseRare = function(rarePersona, mainPersona) {
 };
 
 CalcCtrl.prototype.fuse2 = function(arcana, persona1, persona2) {
+  if (persona1.rare && !persona2.rare) return null;
+  if (persona2.rare && !persona1.rare) return null;
+
   var level = 1 + Math.floor((persona1.level + persona2.level) / 2);
   var personae = personaeByArcana[arcana];
 
