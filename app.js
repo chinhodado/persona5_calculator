@@ -78,6 +78,8 @@ function CalcCtrl(persona_name) {
   this.pageNum = 0;
   this.$watch('filter', this.paginateAndFilter);
   this.$watch('pageNum', this.paginateAndFilter, false);
+
+  // this.runFuse2Tests();
 }
 CalcCtrl.$inject = [];
 
@@ -263,4 +265,59 @@ function ListCtrl() {
   this.personae = personae;
   this.sortBy = this.params.sort_by || 'level';
 }
+
+CalcCtrl.prototype.runFuse2Tests = function() {
+  console.log("Testing fuse2()...");
+  var tests = [
+    //same arcana
+    {ingredients: ["Obariyon", "Arsène"], result: null},                 // two lowest ranks
+    {ingredients: ["Beelzebub", "Belial"], result: "Nebiros"},           // two highest ranks
+    {ingredients: ["Ananta", "Kaiwan"], result: "Fuu-Ki"},               // skip special below 2 ingredients
+    {ingredients: ["Moloch", "Hecatoncheir"], result: "Take-Minakata"},  // skip rare below 2 ingredients
+    {ingredients: ["Dionysus", "Black Frost"], result: "Ose"},           // skip rare and special below 2 ingredients
+    {ingredients: ["Shiki-Ouji", "Slime"], result: "Shiisaa"},           // midway, right on level
+    {ingredients: ["Raja Naga", "Makami"], result: "Mithra"},            // midway, have to go down
+    {ingredients: ["Take-Minakata", "Hecatoncheir"], result: "Orthrus"}, // skip rare midway, skip ingredient
+
+    // different arcana
+    {ingredients: ["Vishnu", "Yoshitsune"], result: null},               // tower 79 + fool 83 -> empress 81 -> null
+    {ingredients: ["Satan", "Forneus"], result: "Mother Harlot"},        // judgement 92 + hierophant 63 -> empress 80
+    {ingredients: ["Lucifer", "Genbu"], result: "Ganesha"},              // star 93 + temperance 7 -> sun 53
+    {ingredients: ["Crystal Skull", "Regent"], result: "Mithra"},        // 2 rares: fool 50 + emperor 10 -> temperance 30
+
+    // rare fusion: not handled by fuse2()
+    {ingredients: ["Obariyon", "Regent"], result: null},
+    {ingredients: ["Nekomata", "Stone of Scone"], result: null},
+
+    // special formula: not handled by fuse2()
+    {ingredients: ["Nebiros", "Belial"], result: null},                  // 2-way special
+    {ingredients: ["Rangda", "Barong"], result: null},                   // 2-way special
+  ];
+
+  var getResultArcana = (arcana1, arcana2) => {
+    for (var i = 0; i < arcana2Combos.length; i++) {
+      var combo = arcana2Combos[i];
+      if ((combo.source[0] == arcana1 && combo.source[1] == arcana2) ||
+          (combo.source[0] == arcana2 && combo.source[1] == arcana1)) {
+        return combo.result;
+      }
+    }
+  };
+
+  for (var i = 0; i < tests.length; i++) {
+    var test = tests[i];
+    var result = personaeByName[test.result];
+    var persona1 = personaeByName[test.ingredients[0]];
+    var persona2 = personaeByName[test.ingredients[1]];
+    var resultArcana = getResultArcana(persona1.arcana, persona2.arcana);
+    var actualResult = this.fuse2(resultArcana, persona1, persona2);
+    if (actualResult == result) {
+      console.log("Passed: " + persona1.name + " + " + persona2.name + " = " + (result? result.name : "null"));
+    }
+    else {
+      console.error("Failed: " + persona1.name + " + " + persona2.name + " = " + (result? result.name : "null") +
+          ", got " + (actualResult? actualResult.name : "null") + " instead.");
+    }
+  }
+};
 ListCtrl.$inject = [];
