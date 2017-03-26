@@ -7,3 +7,15 @@ Forked from:
  - https://github.com/Heimdall409/persona4-fusion-calculator
 
 Note: the cost is estimated and is not accurate.
+
+How it works:
+
+In general, fusion in Persona 5 is still mostly the same as in Persona 3 and 4, with a few additional rules:
+
+ - There are rare persona (Regent, Queen's Necklace, Stone of Scone, Koh-i-Noor, Orlov, Emperor's Amulet, Hope Diamond and Crystal Skull) that when fused with a normal persona X will result in a another persona either one or two ranks above or below X's current rank. Whether to move up or down rank and whether to move one or two steps depending on the rare persona and X's arcana.
+ 
+ - Rare persona cannot be the result of a fusion.
+ 
+ - When doing a fusion, either a normal one, a same-arcana-downrank one or a rare one, if the result is a rare persona, it will be skipped.
+ 
+ - There is no longer 3-way fusion.
