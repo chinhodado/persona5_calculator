@@ -5,6 +5,7 @@
     <title>Persona 5 Fusion Calculator</title>
     <script src="angular-0.9.19.min.js" ng:autobind></script>
     <script src="data/Data5.js"></script>
+    <script src="data/Compendium.js"></script>
     <script src="src/DataUtil.js"></script>
     <script src="src/FusionCalculator.js"></script>
     <script src="tests/FusionTest.js"></script>
@@ -17,6 +18,16 @@
         #list th { cursor: pointer; }
         th { text-align: left; }
         .pagination span { cursor: pointer; }
+
+        .infoTable {
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        .infoTable th, .infoTable td {
+            border: 1px solid black;
+            padding: 3px;
+        }
     </style>
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

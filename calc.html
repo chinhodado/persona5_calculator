@@ -4,6 +4,20 @@
 <label>Filter: <input type="text" size="30" name="filter"></label>
 <button ng:click="filter = ''">Clear</button>
 </p>
+  <h2>{{params.persona_name}} ({{persona.level}} / {{persona.arcana}})</h2>
+  <div id="infoDiv">
+    <h3>Stats</h3>
+    <table id="statsTable" class="infoTable">
+      <tr><th ng:repeat="s in persona.statsHeader">{{s}}</th></tr>
+      <tr><td ng:repeat="i in persona.stats">{{i}}</td></tr>
+    </table>
+
+    <h3>Elementals</h3>
+    <table id="elemsTable" class="infoTable">
+      <tr><th ng:repeat="s in persona.elemsHeader">{{s}}</th></tr>
+      <tr><td ng:repeat="s in persona.elems">{{s}}</td></tr>
+    </table>
+  </div>
 
 <div class="caption">
   {{numRecipes}} Recipes - {{persona.name}} ({{persona.level}} / {{persona.arcana}})

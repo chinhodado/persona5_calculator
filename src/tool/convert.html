@@ -1,0 +1,64 @@
+<style>
+    pre {
+        white-space: pre-wrap;
+    }
+</style>
+<script src="srcCompendium.js"></script>
+<script src="../../data/Data5.js"></script>
+<script src="../DataUtil.js"></script>
+<pre id="result"></pre>
+<script>
+    var converted = {};
+    for (var key in _FULL_COMPENDIUM) {
+        if (_FULL_COMPENDIUM.hasOwnProperty(key)) {
+            var personaName = key;
+            var data = _FULL_COMPENDIUM[key];
+            var persona = {
+                arcana: data.arcana,
+                level: data.lvl,
+                stats: [data.st, data.ma, data.en, data.ag, data.lu],
+                elems: [data.phys, data.gun, data.fire, data.ice, data.electric, data.wind, data.psy, data.nuclear, data.bless, data.curse],
+                skills: data.skills,
+                personality: data.personality,
+
+// unused
+//                drop: data.drop,
+//                item: data.item,
+//                notes: data.notes,
+//                shadow: data.shadow,
+//                negotiations: data.negotiations
+            };
+            converted[key] = persona;
+        }
+    }
+    document.getElementById("result").innerHTML = JSON.stringify(converted);
+
+    function compareSources() {
+        for (var key in _FULL_COMPENDIUM) {
+            if (_FULL_COMPENDIUM.hasOwnProperty(key)) {
+                if (!personaeByName[key]) {
+                    console.error("Not found in Data5.js: " + key);
+                }
+                else {
+                    if (_FULL_COMPENDIUM[key].lvl !== personaeByName[key].level) {
+                        console.error("Different level: " + key);
+                    }
+
+                    if (_FULL_COMPENDIUM[key].arcana !== personaeByName[key].arcana) {
+                        console.error("Different arcana: " + key);
+                    }
+                }
+            }
+        }
+
+        for (var i = 0; i < personae.length; i++) {
+            if (!_FULL_COMPENDIUM[personae[i].name]) {
+                console.error("Not found in srcCompendium: " + personae[i].name);
+            }
+        }
+
+        console.log("Compare/validation done");
+    }
+
+    compareSources();
+</script>

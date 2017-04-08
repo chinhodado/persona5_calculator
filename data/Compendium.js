@@ -1,0 +1,2856 @@
+// derived from https://github.com/aqiu384/aqiu384.github.io/blob/master/p5-tool/js/full_compendium.js
+var compendium = {
+    "Abaddon": {
+        "arcana": "Judgement",
+        "level": 74,
+        "stats": ["51", "38", "58", "43", "39"],
+        "elems": ["ab", "ab", "-", "-", "-", "-", "wk", "wk", "-", "ab"],
+        "skills": {
+            "Absorb Phys": 79,
+            "Deathbound": 0,
+            "Gigantomachia": 80,
+            "Makarakarn": 0,
+            "Spirit Drain": 0,
+            "Survival Trick": 77
+        }
+    },
+    "Agathion": {
+        "arcana": "Chariot",
+        "level": 3,
+        "stats": ["4", "6", "9", "12", "3"],
+        "elems": ["-", "rs", "-", "-", "rs", "wk", "-", "-", "-", "-"],
+        "skills": { "Baisudi": 0, "Dia": 0, "Dodge Electric": 8, "Lunge": 4, "Rakukaja": 6, "Zio": 0 },
+        "personality": "Timid"
+    },
+    "Alice": {
+        "arcana": "Death",
+        "level": 79,
+        "stats": ["43", "59", "40", "57", "45"],
+        "elems": ["-", "-", "-", "-", "-", "-", "rs", "rs", "wk", "rp"],
+        "skills": {
+            "Dekunda": 0,
+            "Die For Me!": 81,
+            "Mamudoon": 0,
+            "Megidolaon": 82,
+            "Mind Charge": 83,
+            "Mudo Boost": 0,
+            "Survival Trick": 84
+        }
+    },
+    "Ame no Uzume": {
+        "arcana": "Lovers",
+        "level": 29,
+        "stats": ["15", "22", "19", "20", "18"],
+        "elems": ["-", "-", "ab", "-", "-", "-", "wk", "-", "-", "-"],
+        "skills": { "Bufula": 0, "Diarama": 0, "Divine Grace": 32, "Mazio": 0, "Shock Boost": 34, "Tentarafoo": 31 }
+    },
+    "Ananta": {
+        "arcana": "Star",
+        "level": 43,
+        "stats": ["24", "30", "31", "26", "25"],
+        "elems": ["-", "-", "-", "ab", "wk", "-", "-", "-", "-", "-"],
+        "skills": {
+            "Banishing Wave": 45,
+            "Defense Master": 0,
+            "Electric Wall": 0,
+            "Freidyne": 48,
+            "Growth 2": 46,
+            "Mafreila": 0,
+            "Marakukaja": 47,
+            "Nuclear Boost": 49
+        }
+    },
+    "Andras": {
+        "arcana": "Devil",
+        "level": 10,
+        "stats": ["5", "9", "7", "10", "6"],
+        "elems": ["-", "wk", "wk", "rs", "-", "-", "-", "-", "-", "-"],
+        "skills": { "Apt Pupil": 13, "Bufu": 0, "Ice Break": 15, "Mabufu": 14, "Rakunda": 0, "Tarukaja": 11 },
+        "personality": "Timid"
+    },
+    "Angel": {
+        "arcana": "Justice",
+        "level": 12,
+        "stats": ["7", "9", "9", "9", "9"],
+        "elems": ["-", "-", "-", "-", "rs", "-", "-", "-", "nu", "wk"],
+        "skills": { "Baisudi": 14, "Dazzler": 0, "Dekunda": 17, "Dia": 0, "Dodge Curseness": 15, "Hama": 0, "Kouha": 13 },
+        "personality": "Irritable"
+    },
+    "Anubis": {
+        "arcana": "Judgement",
+        "level": 37,
+        "stats": ["23", "26", "24", "22", "23"],
+        "elems": ["-", "-", "-", "-", "-", "-", "-", "-", "nu", "nu"],
+        "skills": {
+            "Dekunda": 40,
+            "Eiga": 43,
+            "Hamaon": 0,
+            "Makouha": 0,
+            "Mudoon": 0,
+            "Null Fear": 39,
+            "Resist Bless": 41
+        },
+        "personality": "Gloomy"
+    },
+    "Anzu": {
+        "arcana": "Hierophant",
+        "level": 25,
+        "stats": ["14", "18", "15", "21", "14"],
+        "elems": ["-", "wk", "-", "-", "rs", "rp", "-", "wk", "-", "-"],
+        "skills": { "Assault Dive": 27, "Dekaja": 28, "Garula": 0, "Masukukaja": 0, "Null Forget": 29, "Wind Break": 0 },
+        "personality": "Irritable"
+    },
+    "Apsaras": {
+        "arcana": "Priestess",
+        "level": 11,
+        "stats": ["7", "11", "6", "10", "6"],
+        "elems": ["-", "-", "-", "rs", "wk", "-", "-", "-", "-", "-"],
+        "skills": { "Bufu": 0, "Electric Wall": 14, "Ice Wall": 0, "Media": 13, "Rebellion": 0, "Wind Wall": 16 },
+        "personality": "Upbeat"
+    },
+    "Ara Mitama": {
+        "arcana": "Chariot",
+        "level": 31,
+        "stats": ["20", "19", "20", "20", "21"],
+        "elems": ["rs", "-", "-", "wk", "-", "-", "-", "-", "-", "-"],
+        "skills": { "Freila": 0, "Marakunda": 33, "Miracle Punch": 0, "Taunt": 0, "Rage Boost": 35, "Rebellion": 32 }
+    },
+    "Arahabaki": {
+        "arcana": "Hermit",
+        "level": 35,
+        "stats": ["21", "23", "22", "24", "22"],
+        "elems": ["rp", "rp", "-", "-", "-", "-", "wk", "wk", "rs", "rs"],
+        "skills": {
+            "Banishing Wave": 0,
+            "Defense Master": 39,
+            "Maeiga": 38,
+            "Makarakarn": 0,
+            "Null Brainwash": 0,
+            "Spirit Drain": 37
+        },
+        "personality": "Gloomy"
+    },
+    "Archangel": {
+        "arcana": "Justice",
+        "level": 16,
+        "stats": ["13", "10", "13", "12", "7"],
+        "elems": ["-", "-", "-", "-", "wk", "-", "-", "-", "nu", "wk"],
+        "skills": { "Dazzler": 0, "Hama": 0, "Vajra Blast": 21, "Makouha": 19, "Psy": 0, "Rebellion": 18 },
+        "personality": "Irritable"
+    },
+    "Ardha": {
+        "arcana": "Temperance",
+        "level": 84,
+        "stats": ["54", "56", "55", "54", "40"],
+        "elems": ["rs", "-", "-", "nu", "nu", "-", "-", "-", "-", "-"],
+        "skills": {
+            "Agneyastra": 87,
+            "Auto-Masuku": 88,
+            "Cosmic Flare": 0,
+            "God's Hand": 0,
+            "High Voltage": 89,
+            "Invigorate 3": 0,
+            "Salvation": 90
+        }
+    },
+    "Ariadne": {
+        "arcana": "Fortune",
+        "level": 30,
+        "stats": ["23", "19", "20", "17", "18"],
+        "elems": ["-", "rs", "-", "-", "-", "-", "wk", "nu", "rs", "-"],
+        "skills": {
+            "Apt Pupil": 0,
+            "Attack Master": 31,
+            "Evade Physical": 34,
+            "High Voltage": 32,
+            "Miracle Punch": 0,
+            "Power Charge": 36,
+            "String Art Beast": 0
+        }
+    },
+    "Ariadne Picaro": {
+        "arcana": "Fortune",
+        "level": 42,
+        "stats": ["36", "23", "29", "24", "21"],
+        "elems": ["-", "rs", "-", "-", "-", "-", "wk", "nu", "rs", "-"],
+        "skills": {
+            "Apt Pupil": 0,
+            "Auto-Mataru": 43,
+            "Evade Physical": 46,
+            "Heat Up": 44,
+            "Miracle Punch": 0,
+            "Power Charge": 48,
+            "String Art Beast": 0
+        }
+    },
+    "Arsene": {
+        "arcana": "Fool",
+        "level": 1,
+        "stats": ["2", "2", "2", "3", "1"],
+        "elems": ["-", "-", "-", "wk", "-", "-", "-", "-", "wk", "rs"],
+        "skills": { "Cleave": 2, "Adverse Resolve": 7, "Dream Needle": 5, "Eiha": 1, "Sukunda": 4 }
+    },
+    "Asterius": {
+        "arcana": "Fortune",
+        "level": 56,
+        "stats": ["43", "43", "32", "32", "25"],
+        "elems": ["-", "-", "rs", "wk", "-", "-", "rs", "-", "-", "nu"],
+        "skills": {
+            "Auto-Mataru": 57,
+            "Burn Boost": 0,
+            "Fire Amp": 59,
+            "Gigantomachia": 62,
+            "Maragidyne": 0,
+            "Tetrakarn": 60,
+            "Titanomachia": 0
+        }
+    },
+    "Asterius Picaro": {
+        "arcana": "Fortune",
+        "level": 62,
+        "stats": ["46", "46", "36", "36", "29"],
+        "elems": ["-", "-", "rs", "wk", "-", "-", "rs", "-", "-", "nu"],
+        "skills": {
+            "Auto-Masuku": 63,
+            "Burn Boost": 0,
+            "Fire Amp": 65,
+            "Gigantomachia": 68,
+            "Makarakarn": 66,
+            "Maragidyne": 0,
+            "Titanomachia": 0
+        }
+    },
+    "Asura-Ou": {
+        "arcana": "Sun",
+        "level": 76,
+        "stats": ["52", "48", "51", "49", "35"],
+        "elems": ["-", "-", "nu", "-", "-", "-", "wk", "rp", "-", "-"],
+        "skills": {
+            "Atomic Flare": 0,
+            "Auto-Mataru": 78,
+            "High Counter": 80,
+            "Mafreidyne": 79,
+            "Mahamaon": 0,
+            "Marakukaja": 0,
+            "Unshaken Will": 81
+        }
+    },
+    "Atropos": {
+        "arcana": "Fortune",
+        "level": 39,
+        "stats": ["23", "30", "22", "27", "22"],
+        "elems": ["-", "-", "wk", "-", "-", "nu", "-", "-", "-", "-"],
+        "skills": {
+            "Dodge Fire": 44,
+            "Electric Boost": 43,
+            "Electric Break": 0,
+            "Fire Wall": 0,
+            "Mazionga": 0,
+            "Mediarama": 41,
+            "Mind Charge": 45
+        }
+    },
+    "Attis": {
+        "arcana": "Hanged Man",
+        "level": 82,
+        "stats": ["56", "50", "48", "51", "48"],
+        "elems": ["-", "-", "nu", "-", "-", "rp", "-", "-", "-", "wk"],
+        "skills": {
+            "Absorb Curse": 86,
+            "Enduring Soul": 84,
+            "Incineration": 88,
+            "Maragidyne": 0,
+            "Salvation": 0,
+            "Samarecarm": 85,
+            "Thermopylae": 0
+        }
+    },
+    "Baal": {
+        "arcana": "Emperor",
+        "level": 75,
+        "stats": ["48", "50", "47", "47", "40"],
+        "elems": ["-", "-", "rs", "-", "-", "ab", "-", "-", "rs", "rs"],
+        "skills": {
+            "Magarudyne": 0,
+            "Matarukaja": 0,
+            "Panta Rhei": 77,
+            "Power Charge": 79,
+            "Revolution": 0,
+            "Tetraja": 78,
+            "Thunderbolt": 80
+        }
+    },
+    "Baphomet": {
+        "arcana": "Devil",
+        "level": 58,
+        "stats": ["34", "42", "36", "38", "31"],
+        "elems": ["-", "-", "rs", "-", "-", "-", "-", "-", "wk", "nu"],
+        "skills": {
+            "Agidyne": 0,
+            "Bufudyne": 59,
+            "Burn Boost": 0,
+            "Evade Fire": 0,
+            "Freeze Boost": 63,
+            "Shock Boost": 62,
+            "Ziodyne": 61
+        }
+    },
+    "Barong": {
+        "arcana": "Emperor",
+        "level": 52,
+        "stats": ["33", "35", "33", "37", "25"],
+        "elems": ["-", "rs", "-", "-", "rs", "wk", "-", "-", "nu", "wk"],
+        "skills": {
+            "Electric Break": 0,
+            "Invigorate 2": 54,
+            "Maziodyne": 57,
+            "Null Electric": 55,
+            "Wage War": 0,
+            "Ziodyne": 0
+        }
+    },
+    "Beelzebub": {
+        "arcana": "Devil",
+        "level": 84,
+        "stats": ["55", "60", "54", "56", "34"],
+        "elems": ["-", "-", "ab", "-", "-", "-", "-", "-", "wk", "rp"],
+        "skills": {
+            "Curse Amp": 85,
+            "Devil Smile": 0,
+            "Evil Judgement": 87,
+            "Maeigaon": 0,
+            "Mamudoon": 0,
+            "Megidolaon": 89,
+            "Mind Charge": 86,
+            "Repel Ice": 88
+        }
+    },
+    "Belial": {
+        "arcana": "Devil",
+        "level": 68,
+        "stats": ["45", "41", "46", "43", "36"],
+        "elems": ["-", "-", "-", "-", "-", "-", "-", "-", "-", "nu"],
+        "skills": {
+            "Agidyne": 0,
+            "Heat Up": 72,
+            "Mamudoon": 0,
+            "Maragidyne": 71,
+            "Matarunda": 0,
+            "Rainy Death": 74,
+            "Survival Trick": 70
+        }
+    },
+    "Belphegor": {
+        "arcana": "Tower",
+        "level": 37,
+        "stats": ["25", "27", "24", "23", "19"],
+        "elems": ["-", "-", "wk", "rs", "rs", "-", "-", "rs", "-", "rp"],
+        "skills": { "Bufula": 0, "Dodge Fire": 0, "Ice Break": 39, "Mabufula": 41, "Mind Charge": 44, "Null Rage": 38 },
+        "personality": "Irritable"
+    },
+    "Berith": {
+        "arcana": "Hierophant",
+        "level": 9,
+        "stats": ["8", "6", "7", "9", "7"],
+        "elems": ["-", "nu", "rs", "wk", "-", "-", "-", "-", "-", "-"],
+        "skills": { "Cleave": 0, "Dodge Fire": 11, "Double Fangs": 10, "Rakukaja": 0, "Sledgehammer": 13 },
+        "personality": "Irritable"
+    },
+    "Bicorn": {
+        "arcana": "Hermit",
+        "level": 4,
+        "stats": ["5", "3", "3", "5", "3"],
+        "elems": ["-", "-", "-", "-", "wk", "-", "-", "-", "-", "rs"],
+        "skills": { "Apt Pupil": 8, "Garu": 6, "Ice Wall": 7, "Lunge": 0, "Tarunda": 0 },
+        "personality": "Irritable"
+    },
+    "Bishamonten": {
+        "arcana": "Hierophant",
+        "level": 67,
+        "stats": ["49", "37", "42", "45", "35"],
+        "elems": ["-", "-", "ab", "wk", "-", "-", "-", "-", "rs", "rs"],
+        "skills": {
+            "Deadly Fury": 68,
+            "Diarahan": 0,
+            "Freidyne": 0,
+            "God's Hand": 73,
+            "Mafreidyne": 69,
+            "Nuclear Amp": 71,
+            "Tetrakarn": 72
+        }
+    },
+    "Black Frost": {
+        "arcana": "Fool",
+        "level": 67,
+        "stats": ["44", "46", "41", "42", "35"],
+        "elems": ["-", "-", "rp", "ab", "-", "-", "-", "nu", "-", "rp"],
+        "skills": {
+            "Diamond Dust": 72,
+            "Ice Amp": 70,
+            "Mabufudyne": 0,
+            "Miracle Punch": 0,
+            "One Shot Kill": 0,
+            "Repel Fire": 71
+        }
+    },
+    "Black Ooze": {
+        "arcana": "Moon",
+        "level": 29,
+        "stats": ["19", "18", "20", "16", "21"],
+        "elems": ["rs", "rs", "-", "rs", "wk", "-", "wk", "-", "wk", "nu"],
+        "skills": {
+            "Brain Jack": 34,
+            "Ambient Aid": 31,
+            "Devil Touch": 0,
+            "Flash Bomb": 35,
+            "Headbutt": 32,
+            "Matarunda": 0,
+            "Stagnant Air": 0
+        },
+        "personality": "Irritable"
+    },
+    "Black Rider": {
+        "arcana": "Tower",
+        "level": 59,
+        "stats": ["38", "43", "37", "45", "30"],
+        "elems": ["-", "-", "wk", "ab", "-", "-", "-", "-", "rs", "rs"],
+        "skills": {
+            "Bloodbath": 61,
+            "Ambient Aid": 60,
+            "Flash Bomb": 0,
+            "Ghastly Wail": 63,
+            "Maeigaon": 0,
+            "Mamudoon": 0,
+            "Megidola": 64
+        }
+    },
+    "Bugs": {
+        "arcana": "Fool",
+        "level": 49,
+        "stats": ["35", "33", "30", "32", "24"],
+        "elems": ["-", "-", "-", "-", "-", "-", "rs", "wk", "-", "nu"],
+        "skills": {
+            "Auto-Mataru": 51,
+            "Evade Physical": 54,
+            "Fast Heal": 55,
+            "Masukunda": 0,
+            "Miracle Punch": 0,
+            "Psydyne": 0,
+            "Triple Down": 52
+        }
+    },
+    "Byakko": {
+        "arcana": "Temperance",
+        "level": 49,
+        "stats": ["32", "32", "31", "32", "27"],
+        "elems": ["-", "-", "wk", "ab", "-", "-", "-", "wk", "-", "rs"],
+        "skills": {
+            "Bufudyne": 55,
+            "Counterstrike": 0,
+            "Evade Fire": 52,
+            "Ice Boost": 51,
+            "Mabufula": 0,
+            "Null Rage": 54,
+            "Swift Strike": 0
+        }
+    },
+    "Cerberus": {
+        "arcana": "Chariot",
+        "level": 55,
+        "stats": ["39", "35", "32", "39", "27"],
+        "elems": ["-", "-", "ab", "wk", "-", "-", "-", "rs", "-", "-"],
+        "skills": {
+            "Agidyne": 0,
+            "Enduring Soul": 60,
+            "High Counter": 57,
+            "Megaton Raid": 0,
+            "Rebellion": 56,
+            "Regenerate 2": 58
+        },
+        "personality": "Unknown"
+    },
+    "Chernobog": {
+        "arcana": "Death",
+        "level": 62,
+        "stats": ["40", "37", "39", "38", "39"],
+        "elems": ["-", "rs", "wk", "ab", "nu", "-", "-", "-", "wk", "rp"],
+        "skills": {
+            "Bloodbath": 0,
+            "Deadly Fury": 0,
+            "Deathbound": 64,
+            "Fear Boost": 66,
+            "Mudoon": 0,
+            "Rainy Death": 67,
+            "Stagnant Air": 63
+        }
+    },
+    "Chi You": {
+        "arcana": "Chariot",
+        "level": 86,
+        "stats": ["54", "56", "53", "52", "50"],
+        "elems": ["rs", "rs", "-", "-", "-", "-", "nu", "wk", "-", "-"],
+        "skills": {
+            "Absorb Psy": 90,
+            "Gigantomachia": 0,
+            "Mind Charge": 92,
+            "Psycho Force": 89,
+            "Psychokinesis": 0,
+            "Repel Phys": 0,
+            "Resist Ailment": 88
+        }
+    },
+    "Choronzon": {
+        "arcana": "Magician",
+        "level": 28,
+        "stats": ["16", "19", "19", "18", "19"],
+        "elems": ["-", "-", "ab", "-", "-", "-", "-", "-", "wk", "-"],
+        "skills": {
+            "Bloodsuck": 0,
+            "Curse Boost": 32,
+            "Dodge Electric": 30,
+            "Eiga": 31,
+            "Maeiha": 29,
+            "Pulinpa": 0,
+            "Rainy Play": 33,
+            "Rampage": 0
+        },
+        "personality": "Timid"
+    },
+    "Clotho": {
+        "arcana": "Fortune",
+        "level": 26,
+        "stats": ["14", "19", "17", "20", "15"],
+        "elems": ["-", "-", "-", "wk", "-", "nu", "-", "wk", "-", "-"],
+        "skills": {
+            "Energy Shower": 30,
+            "Invigorate 1": 32,
+            "Mahama": 0,
+            "Makajam": 0,
+            "Makajamon": 29,
+            "Me Patra": 0,
+            "Tetraja": 27
+        }
+    },
+    "Crystal Skull": {
+        "arcana": "Fool",
+        "level": 50,
+        "stats": ["50", "50", "50", "50", "50"],
+        "elems": ["rs", "nu", "rp", "rp", "rp", "rp", "rp", "rp", "-", "rp"],
+        "skills": {
+            "Mabufudyne": 0,
+            "Maeigaon": 0,
+            "Mafreidyne": 0,
+            "Magarudyne": 0,
+            "Makougaon": 0,
+            "Mapsydyne": 0,
+            "Maragidyne": 0,
+            "Maziodyne": 0
+        }
+    },
+    "Cu Chulainn": {
+        "arcana": "Star",
+        "level": 67,
+        "stats": ["47", "36", "44", "47", "34"],
+        "elems": ["rs", "rs", "-", "-", "wk", "rp", "-", "-", "nu", "-"],
+        "skills": {
+            "Deadly Fury": 0,
+            "Dekunda": 70,
+            "Enduring Soul": 72,
+            "Ice Wall": 0,
+            "Matarukaja": 69,
+            "Oni Kagura": 0,
+            "Power Charge": 71
+        }
+    },
+    "Cybele": {
+        "arcana": "Priestess",
+        "level": 73,
+        "stats": ["44", "48", "45", "51", "38"],
+        "elems": ["-", "-", "rs", "-", "wk", "-", "-", "-", "nu", "-"],
+        "skills": {
+            "Absorb Bless": 77,
+            "Auto-Maraku": 76,
+            "Bless Amp": 74,
+            "Makougaon": 0,
+            "Mediarahan": 0,
+            "Salvation": 79,
+            "Samarecarm": 0
+        }
+    },
+    "Daisoujou": {
+        "arcana": "Hierophant",
+        "level": 42,
+        "stats": ["22", "33", "24", "25", "29"],
+        "elems": ["-", "rs", "-", "-", "-", "-", "-", "-", "nu", "wk"],
+        "skills": {
+            "Diarahan": 45,
+            "Bless Boost": 44,
+            "Makouga": 0,
+            "Me Patra": 46,
+            "Null Rage": 47,
+            "Samsara": 43,
+            "Spirit Drain": 0
+        }
+    },
+    "Dakini": {
+        "arcana": "Empress",
+        "level": 50,
+        "stats": ["34", "32", "34", "28", "29"],
+        "elems": ["-", "-", "rs", "-", "-", "-", "-", "-", "-", "-"],
+        "skills": {
+            "Bad Beat": 0,
+            "Deathbound": 53,
+            "Giant Slice": 0,
+            "High Counter": 52,
+            "Power Charge": 55,
+            "Rising Slash": 0,
+            "Rebellion": 54
+        },
+        "personality": "Unknown"
+    },
+    "Decarabia": {
+        "arcana": "Fool",
+        "level": 32,
+        "stats": ["21", "23", "19", "22", "18"],
+        "elems": ["wk", "-", "rp", "-", "-", "-", "-", "rs", "-", "rs"],
+        "skills": {
+            "Agilao": 0,
+            "Devil Smile": 37,
+            "Fire Boost": 35,
+            "Maragion": 33,
+            "Null Fire": 36,
+            "Tetrakarn": 38,
+            "Word of Calamity": 0
+        },
+        "personality": "Gloomy"
+    },
+    "Dionysus": {
+        "arcana": "Fool",
+        "level": 61,
+        "stats": ["35", "41", "38", "40", "36"],
+        "elems": ["-", "-", "-", "-", "rp", "-", "-", "-", "rs", "rs"],
+        "skills": {
+            "Ailment Boost": 63,
+            "Amrita Shower": 66,
+            "Banishing Wave": 0,
+            "Heat Wave": 0,
+            "Maragidyne": 65,
+            "Psydyne": 0,
+            "Thermopylae": 62
+        }
+    },
+    "Dominion": {
+        "arcana": "Justice",
+        "level": 68,
+        "stats": ["46", "47", "45", "48", "40"],
+        "elems": ["-", "wk", "-", "-", "-", "-", "-", "rp", "nu", "rs"],
+        "skills": {
+            "Blinding Flash": 0,
+            "Evade Curseness": 73,
+            "Hama Boost": 71,
+            "Hamaon": 0,
+            "Kougaon": 0,
+            "Mahamaon": 72,
+            "Makougaon": 70
+        },
+        "personality": "Unknown"
+    },
+    "Eligor": {
+        "arcana": "Emperor",
+        "level": 16,
+        "stats": ["12", "10", "13", "10", "10"],
+        "elems": ["-", "rs", "rs", "-", "wk", "-", "-", "-", "-", "-"],
+        "skills": {
+            "Memory Blow": 20,
+            "Sharp Student": 0,
+            "Double Fangs": 18,
+            "Maragi": 0,
+            "Sukunda": 19,
+            "Tarukaja": 0
+        },
+        "personality": "Unknown"
+    },
+    "Emperor's Amulet": {
+        "arcana": "Hanged Man",
+        "level": 35,
+        "stats": ["35", "35", "35", "35", "35"],
+        "elems": ["rs", "nu", "-", "ab", "ab", "ab", "ab", "ab", "nu", "nu"],
+        "skills": {
+            "Agidyne": 0,
+            "Bufudyne": 0,
+            "Eigaon": 0,
+            "Freidyne": 0,
+            "Garudyne": 0,
+            "Kougaon": 0,
+            "Psydyne": 0,
+            "Ziodyne": 0
+        }
+    },
+    "Feng Huang": {
+        "arcana": "Hierophant",
+        "level": 22,
+        "stats": ["14", "15", "15", "18", "11"],
+        "elems": ["-", "-", "-", "rs", "wk", "nu", "-", "-", "-", "-"],
+        "skills": { "Diarama": 23, "Dream Needle": 0, "Freila": 0, "Nuclear Boost": 27, "Recarm": 25 }
+    },
+    "Flauros": {
+        "arcana": "Devil",
+        "level": 25,
+        "stats": ["19", "14", "18", "18", "13"],
+        "elems": ["-", "-", "nu", "wk", "-", "rs", "-", "rs", "-", "-"],
+        "skills": {
+            "Assault Dive": 29,
+            "Dekaja": 0,
+            "Dodge Physical": 26,
+            "Dormin Rush": 0,
+            "Giant Slice": 0,
+            "Heat Up": 30
+        }
+    },
+    "Forneus": {
+        "arcana": "Hierophant",
+        "level": 63,
+        "stats": ["41", "39", "40", "42", "34"],
+        "elems": ["-", "-", "-", "ab", "wk", "-", "nu", "-", "-", "-"],
+        "skills": {
+            "Evade Psy": 68,
+            "Mapsydyne": 67,
+            "Marin Karin": 0,
+            "Masukunda": 0,
+            "Psydyne": 0,
+            "Stagnant Air": 66,
+            "Survival Trick": 65
+        },
+        "personality": "Unknown"
+    },
+    "Fortuna": {
+        "arcana": "Fortune",
+        "level": 46,
+        "stats": ["23", "32", "29", "34", "27"],
+        "elems": ["-", "-", "nu", "-", "wk", "nu", "-", "-", "-", "-"],
+        "skills": {
+            "Amrita Drop": 50,
+            "Evade Electric": 51,
+            "Garudyne": 47,
+            "Magarula": 0,
+            "Masukukaja": 0,
+            "Tetraja": 0,
+            "Touch and Go": 49
+        }
+    },
+    "Futsunushi": {
+        "arcana": "Magician",
+        "level": 76,
+        "stats": ["54", "48", "47", "49", "37"],
+        "elems": ["rs", "-", "-", "-", "-", "-", "-", "wk", "-", "-"],
+        "skills": {
+            "Ali Dance": 0,
+            "Apt Pupil": 80,
+            "Brave Blade": 82,
+            "Firm Stance": 81,
+            "Matarukaja": 0,
+            "Power Charge": 78,
+            "Rainy Death": 0,
+            "Regenerate 3": 79
+        }
+    },
+    "Fuu-Ki": {
+        "arcana": "Star",
+        "level": 23,
+        "stats": ["14", "17", "16", "15", "14"],
+        "elems": ["-", "-", "-", "-", "wk", "ab", "-", "-", "-", "-"],
+        "skills": { "Dodge Wind": 26, "Garula": 0, "Resist Psy": 27, "Tarukaja": 0, "Tetra Break": 0, "Wind Boost": 25 },
+        "personality": "Unknown"
+    },
+    "Gabriel": {
+        "arcana": "Temperance",
+        "level": 77,
+        "stats": ["43", "51", "48", "54", "42"],
+        "elems": ["-", "-", "-", "-", "-", "-", "nu", "-", "ab", "-"],
+        "skills": {
+            "Ali Dance": 79,
+            "Divine Judgement": 78,
+            "Evade Curseness": 80,
+            "Ice Amp": 82,
+            "Mabufudyne": 0,
+            "Maziodyne": 0,
+            "Salvation": 83,
+            "Touch and Go": 81
+        }
+    },
+    "Ganesha": {
+        "arcana": "Sun",
+        "level": 53,
+        "stats": ["39", "31", "37", "33", "26"],
+        "elems": ["rs", "-", "-", "-", "-", "ab", "wk", "-", "-", "-"],
+        "skills": {
+            "Endure": 56,
+            "Giant Slice": 0,
+            "Masukunda": 57,
+            "Miracle Punch": 0,
+            "Power Charge": 60,
+            "Rebellion": 0,
+            "Tetraja": 55
+        },
+        "personality": "Unknown"
+    },
+    "Garuda": {
+        "arcana": "Star",
+        "level": 52,
+        "stats": ["30", "36", "29", "39", "29"],
+        "elems": ["-", "wk", "-", "-", "-", "rs", "-", "-", "rp", "-"],
+        "skills": {
+            "Amrita Shower": 0,
+            "Evade Electric": 55,
+            "Garudyne": 0,
+            "Heat Wave": 0,
+            "Magarudyne": 57,
+            "Masukukaja": 54,
+            "Wind Amp": 59
+        },
+        "personality": "Unknown"
+    },
+    "Genbu": {
+        "arcana": "Temperance",
+        "level": 7,
+        "stats": ["5", "6", "7", "6", "4"],
+        "elems": ["-", "-", "-", "nu", "wk", "-", "rs", "-", "-", "-"],
+        "skills": { "Bufu": 0, "Defense Master": 12, "Mabufu": 10, "Patra": 8, "Rakunda": 0, "Resist Forget": 11 }
+    },
+    "Girimehkala": {
+        "arcana": "Moon",
+        "level": 44,
+        "stats": ["36", "24", "32", "32", "15"],
+        "elems": ["rp", "rp", "rs", "-", "-", "-", "-", "-", "wk", "nu"],
+        "skills": { "Foul Breath": 46, "Marakunda": 0, "Mudoon": 0, "Repel Phys": 51, "Swift Strike": 0, "Wage War": 48 },
+        "personality": "Gloomy"
+    },
+    "Hanuman": {
+        "arcana": "Star",
+        "level": 64,
+        "stats": ["43", "38", "40", "40", "38"],
+        "elems": ["-", "-", "-", "wk", "-", "-", "rs", "-", "rs", "-"],
+        "skills": {
+            "Deathbound": 65,
+            "Matarunda": 0,
+            "Regenerate 3": 69,
+            "Revolution": 0,
+            "Tempest Slash": 0,
+            "Tetra Break": 67
+        },
+        "personality": "Unknown"
+    },
+    "Hariti": {
+        "arcana": "Empress",
+        "level": 40,
+        "stats": ["24", "29", "25", "26", "23"],
+        "elems": ["-", "-", "-", "-", "-", "wk", "rs", "-", "rs", "-"],
+        "skills": {
+            "Blinding Flash": 42,
+            "Dizzy Boost": 45,
+            "Energy Shower": 0,
+            "Mabaisudi": 0,
+            "Mediarama": 44,
+            "Samarecarm": 41,
+            "Spirit Drain": 46,
+            "Zionga": 0
+        },
+        "personality": "Unknown"
+    },
+    "Hecatoncheir": {
+        "arcana": "Hanged Man",
+        "level": 42,
+        "stats": ["29", "25", "30", "25", "24"],
+        "elems": ["-", "rs", "-", "-", "-", "-", "-", "-", "wk", "nu"],
+        "skills": {
+            "Endure": 43,
+            "Foul Breath": 45,
+            "High Voltage": 46,
+            "Power Charge": 48,
+            "Regenerate 2": 0,
+            "Swift Strike": 0,
+            "Tarukaja": 0
+        }
+    },
+    "Hell Biker": {
+        "arcana": "Death",
+        "level": 39,
+        "stats": ["26", "27", "24", "30", "17"],
+        "elems": ["-", "-", "rp", "-", "-", "rs", "-", "-", "wk", "-"],
+        "skills": {
+            "Agilao": 0,
+            "Fire Boost": 40,
+            "Mamudoon": 44,
+            "Maragion": 42,
+            "Mudoon": 0,
+            "Speed Master": 0,
+            "Tentarafoo": 41,
+            "Trigger Happy": 43
+        }
+    },
+    "High Pixie": {
+        "arcana": "Fool",
+        "level": 16,
+        "stats": ["8", "14", "10", "13", "10"],
+        "elems": ["-", "wk", "-", "-", "rs", "rs", "-", "wk", "-", "-"],
+        "skills": { "Diarama": 18, "Dormina": 0, "Garu": 0, "Magaru": 20, "Media": 0, "Taunt": 19 },
+        "personality": "Irritable"
+    },
+    "Hope Diamond": {
+        "arcana": "Death",
+        "level": 40,
+        "stats": ["40", "40", "40", "40", "40"],
+        "elems": ["rs", "nu", "rp", "rp", "rp", "-", "rp", "rp", "nu", "nu"],
+        "skills": {
+            "Auto-Maraku": 0,
+            "Auto-Masuku": 0,
+            "Auto-Mataru": 0,
+            "Endure": 0,
+            "Fast Heal": 0,
+            "High Counter": 0,
+            "Invigorate 2": 0,
+            "Regenerate 2": 0
+        }
+    },
+    "Horus": {
+        "arcana": "Sun",
+        "level": 49,
+        "stats": ["30", "32", "32", "35", "25"],
+        "elems": ["-", "-", "wk", "-", "nu", "-", "-", "-", "rp", "-"],
+        "skills": {
+            "Diarama": 0,
+            "Hama Boost": 54,
+            "Hamaon": 53,
+            "Kougaon": 0,
+            "Masukukaja": 52,
+            "Megido": 0,
+            "Touch and Go": 51
+        }
+    },
+    "Hua Po": {
+        "arcana": "Hanged Man",
+        "level": 9,
+        "stats": ["4", "10", "4", "8", "8"],
+        "elems": ["-", "wk", "rp", "wk", "-", "-", "-", "-", "-", "-"],
+        "skills": { "Agi": 0, "Burn Boost": 15, "Dormina": 0, "Maragi": 13, "Resist Forget": 12, "Tarunda": 11 },
+        "personality": "Upbeat"
+    },
+    "Incubus": {
+        "arcana": "Devil",
+        "level": 5,
+        "stats": ["4", "6", "4", "5", "3"],
+        "elems": ["-", "wk", "-", "-", "rs", "-", "-", "-", "wk", "-"],
+        "skills": { "Bloodsuck": 0, "Devil Touch": 0, "Dodge Curseness": 9, "Eiha": 7, "Tarunda": 8 },
+        "personality": "Timid"
+    },
+    "Inugami": {
+        "arcana": "Hanged Man",
+        "level": 14,
+        "stats": ["12", "11", "9", "12", "8"],
+        "elems": ["-", "-", "nu", "-", "-", "wk", "-", "-", "-", "nu"],
+        "skills": {
+            "Brain Shake": 18,
+            "Dream Needle": 15,
+            "Giant Slice": 0,
+            "Lucky Punch": 17,
+            "Panic Boost": 19,
+            "Pulinpa": 0,
+            "Tarukaja": 0
+        },
+        "personality": "Timid"
+    },
+    "Ippon-Datara": {
+        "arcana": "Hermit",
+        "level": 13,
+        "stats": ["11", "7", "14", "6", "8"],
+        "elems": ["-", "-", "rs", "wk", "-", "rp", "-", "-", "rs", "rs"],
+        "skills": {
+            "Sharp Student": 16,
+            "Counter": 18,
+            "Rampage": 15,
+            "Resist Dizzy": 0,
+            "Sledgehammer": 0,
+            "Tarukaja": 0
+        },
+        "personality": "Unknown"
+    },
+    "Ishtar": {
+        "arcana": "Lovers",
+        "level": 85,
+        "stats": ["48", "59", "49", "58", "48"],
+        "elems": ["-", "-", "-", "-", "nu", "wk", "-", "-", "-", "-"],
+        "skills": {
+            "Absorb Wind": 0,
+            "Insta-Heal": 87,
+            "Maziodyne": 88,
+            "Mediarahan": 0,
+            "Salvation": 90,
+            "Samarecarm": 0,
+            "Spell Master": 89
+        }
+    },
+    "Isis": {
+        "arcana": "Priestess",
+        "level": 26,
+        "stats": ["15", "21", "16", "18", "15"],
+        "elems": ["-", "-", "-", "-", "-", "-", "wk", "-", "nu", "nu"],
+        "skills": {
+            "Agilao": 0,
+            "Diarama": 0,
+            "Garula": 30,
+            "Makarakarn": 32,
+            "Resist Forget": 27,
+            "Sukukaja": 0,
+            "Zionga": 29
+        },
+        "personality": "Timid"
+    },
+    "Izanagi": {
+        "arcana": "Fool",
+        "level": 20,
+        "stats": ["14", "13", "13", "14", "13"],
+        "elems": ["-", "-", "-", "-", "rs", "wk", "-", "-", "-", "nu"],
+        "skills": {
+            "Cross Slash": 0,
+            "Dodge Physical": 22,
+            "Growth 3": 25,
+            "Mazionga": 24,
+            "Rising Slash": 21,
+            "Tarukaja": 0,
+            "Zionga": 0
+        }
+    },
+    "Izanagi Picaro": {
+        "arcana": "Fool",
+        "level": 23,
+        "stats": ["16", "15", "15", "16", "14"],
+        "elems": ["-", "-", "-", "-", "nu", "wk", "-", "-", "-", "nu"],
+        "skills": {
+            "Cross Slash": 0,
+            "Growth 3": 28,
+            "Mazionga": 27,
+            "Null Phys": 25,
+            "Rising Slash": 24,
+            "Rakukaja": 0,
+            "Zionga": 0
+        }
+    },
+    "Jack Frost": {
+        "arcana": "Magician",
+        "level": 11,
+        "stats": ["8", "9", "7", "9", "7"],
+        "elems": ["-", "-", "wk", "nu", "-", "-", "-", "-", "-", "-"],
+        "skills": { "Baisudi": 0, "Bufu": 0, "Freeze Boost": 15, "Ice Break": 0, "Mabufu": 12, "Rakunda": 13 },
+        "personality": "Timid"
+    },
+    "Jack O'Lantern": {
+        "arcana": "Magician",
+        "level": 2,
+        "stats": ["2", "3", "3", "3", "2"],
+        "elems": ["-", "wk", "ab", "wk", "-", "wk", "-", "-", "-", "-"],
+        "skills": { "Agi": 0, "Dazzler": 5, "Sharp Student": 4, "Rakunda": 0, "Resist Sleep": 7 },
+        "personality": "Gloomy"
+    },
+    "Jatayu": {
+        "arcana": "Tower",
+        "level": 32,
+        "stats": ["18", "21", "20", "27", "17"],
+        "elems": ["-", "-", "-", "-", "-", "ab", "wk", "-", "-", "-"],
+        "skills": {
+            "Dodge Psy": 33,
+            "Flash Bomb": 0,
+            "Garula": 0,
+            "Masukukaja": 0,
+            "Rainy Play": 36,
+            "Sharpshooter": 35,
+            "Speed Master": 38
+        }
+    },
+    "Jikokuten": {
+        "arcana": "Temperance",
+        "level": 25,
+        "stats": ["19", "12", "19", "17", "15"],
+        "elems": ["rs", "-", "-", "-", "-", "-", "-", "-", "rs", "wk"],
+        "skills": {
+            "Memory Blow": 0,
+            "Counter": 28,
+            "Adverse Resolve": 31,
+            "Defense Master": 0,
+            "Dekunda": 27,
+            "Matarukaja": 30,
+            "Rakunda": 0
+        }
+    },
+    "Kaguya": {
+        "arcana": "Moon",
+        "level": 16,
+        "stats": ["11", "15", "12", "11", "6"],
+        "elems": ["-", "-", "wk", "-", "-", "rs", "-", "-", "nu", "nu"],
+        "skills": {
+            "Amrita Shower": 18,
+            "Counterstrike": 0,
+            "Diarahan": 21,
+            "Divine Grace": 17,
+            "Mediarama": 0,
+            "Shining Arrows": 0,
+            "Repel Phys": 22
+        }
+    },
+    "Kaguya Picaro": {
+        "arcana": "Moon",
+        "level": 25,
+        "stats": ["17", "20", "19", "15", "11"],
+        "elems": ["-", "-", "wk", "-", "-", "-", "-", "-", "nu", "nu"],
+        "skills": {
+            "Amrita Shower": 27,
+            "Diarahan": 30,
+            "Divine Grace": 26,
+            "High Counter": 0,
+            "Mediarama": 0,
+            "Shining Arrows": 0,
+            "Repel Phys": 31
+        }
+    },
+    "Kaiwan": {
+        "arcana": "Star",
+        "level": 36,
+        "stats": ["23", "26", "24", "22", "20"],
+        "elems": ["-", "nu", "-", "-", "-", "-", "nu", "wk", "-", "-"],
+        "skills": {
+            "Forget Boost": 37,
+            "Makajam": 0,
+            "Makajamon": 39,
+            "Mapsyo": 40,
+            "Marakunda": 41,
+            "Psyo": 0,
+            "Speed Master": 38
+        },
+        "personality": "Timid"
+    },
+    "Kali": {
+        "arcana": "Empress",
+        "level": 77,
+        "stats": ["53", "45", "46", "53", "41"],
+        "elems": ["-", "-", "nu", "-", "-", "-", "rp", "-", "-", "rs"],
+        "skills": {
+            "Absorb Nuclear": 82,
+            "Evade Ice": 79,
+            "High Counter": 80,
+            "Mapsydyne": 81,
+            "Psydyne": 0,
+            "Tentarafoo": 0,
+            "Vorpal Blade": 0
+        }
+    },
+    "Kelpie": {
+        "arcana": "Strength",
+        "level": 6,
+        "stats": ["5", "5", "5", "6", "4"],
+        "elems": ["-", "-", "-", "rs", "wk", "-", "-", "-", "-", "-"],
+        "skills": { "Garu": 0, "Lunge": 0, "Resist Brainwash": 8, "Sukukaja": 9, "Terror Claw": 10 },
+        "personality": "Upbeat"
+    },
+    "Kikuri-Hime": {
+        "arcana": "Priestess",
+        "level": 40,
+        "stats": ["22", "31", "24", "28", "22"],
+        "elems": ["-", "-", "wk", "-", "-", "nu", "-", "-", "rs", "-"],
+        "skills": { "Divine Grace": 45, "Energy Drop": 0, "Lullaby": 0, "Marakukaja": 0, "Mediarama": 41, "Tetraja": 43 },
+        "personality": "Unknown"
+    },
+    "Kin-Ki": {
+        "arcana": "Chariot",
+        "level": 25,
+        "stats": ["21", "13", "21", "15", "12"],
+        "elems": ["rs", "rs", "-", "-", "-", "-", "wk", "-", "-", "-"],
+        "skills": {
+            "Bad Beat": 30,
+            "Counterstrike": 31,
+            "Dodge Psy": 27,
+            "Vajra Blast": 0,
+            "Rakukaja": 0,
+            "Regenerate 1": 0,
+            "Sledgehammer": 28
+        },
+        "personality": "Gloomy"
+    },
+    "King Frost": {
+        "arcana": "Emperor",
+        "level": 61,
+        "stats": ["38", "39", "45", "33", "35"],
+        "elems": ["-", "-", "-", "ab", "-", "-", "-", "-", "nu", "-"],
+        "skills": {
+            "Auto-Mataru": 64,
+            "Bufudyne": 0,
+            "Freeze Boost": 62,
+            "Ice Amp": 67,
+            "Ice Break": 0,
+            "Megaton Raid": 0,
+            "Null Distress": 65
+        },
+        "personality": "Unknown"
+    },
+    "Kodama": {
+        "arcana": "Star",
+        "level": 11,
+        "stats": ["9", "11", "8", "10", "4"],
+        "elems": ["-", "-", "wk", "rs", "-", "-", "-", "-", "-", "-"],
+        "skills": {
+            "Devil Touch": 13,
+            "Fear Boost": 15,
+            "Garu": 0,
+            "Psy": 12,
+            "Rakunda": 0,
+            "Resist Fear": 17,
+            "Tarukaja": 14
+        },
+        "personality": "Upbeat"
+    },
+    "Koh-i-Noor": {
+        "arcana": "Priestess",
+        "level": 25,
+        "stats": ["25", "25", "25", "25", "25"],
+        "elems": ["rs", "rs", "rs", "rs", "rs", "rs", "rs", "-", "nu", "nu"],
+        "skills": {
+            "Dodge Curseness": 0,
+            "Dodge Electric": 0,
+            "Dodge Fire": 0,
+            "Dodge Ice": 0,
+            "Dodge Bless": 0,
+            "Dodge Nuclear": 0,
+            "Dodge Psy": 0,
+            "Dodge Wind": 0
+        }
+    },
+    "Kohryu": {
+        "arcana": "Hierophant",
+        "level": 76,
+        "stats": ["43", "51", "50", "53", "38"],
+        "elems": ["-", "-", "-", "-", "rp", "-", "wk", "nu", "nu", "-"],
+        "skills": {
+            "Cool Breeze": 78,
+            "Mapsydyne": 0,
+            "Mediarahan": 0,
+            "Mind Charge": 79,
+            "Psy Amp": 80,
+            "Psychokinesis": 0,
+            "Spell Master": 82
+        }
+    },
+    "Koppa Tengu": {
+        "arcana": "Temperance",
+        "level": 11,
+        "stats": ["7", "8", "8", "11", "6"],
+        "elems": ["-", "-", "-", "wk", "-", "rs", "-", "-", "wk", "-"],
+        "skills": { "Snap": 0, "Garu": 0, "Growth 1": 12, "Taunt": 13, "Rage Boost": 14, "Wage War": 15 },
+        "personality": "Upbeat"
+    },
+    "Koropokkuru": {
+        "arcana": "Hermit",
+        "level": 9,
+        "stats": ["5", "8", "6", "9", "6"],
+        "elems": ["-", "rs", "wk", "rs", "-", "rs", "-", "-", "-", "-"],
+        "skills": { "Bufu": 0, "Dodge Ice": 11, "Fire Wall": 13, "Mabufu": 14, "Makajam": 0, "Rakunda": 12 },
+        "personality": "Timid"
+    },
+    "Koumokuten": {
+        "arcana": "Hermit",
+        "level": 49,
+        "stats": ["37", "32", "34", "31", "25"],
+        "elems": ["rs", "-", "-", "wk", "-", "-", "-", "-", "rs", "-"],
+        "skills": {
+            "Assault Dive": 0,
+            "Attack Master": 51,
+            "Deadly Fury": 55,
+            "Enduring Soul": 54,
+            "Matarukaja": 52,
+            "Nuclear Wall": 53,
+            "Regenerate 2": 0,
+            "Revolution": 0
+        }
+    },
+    "Kumbhanda": {
+        "arcana": "Hermit",
+        "level": 42,
+        "stats": ["29", "25", "27", "26", "26"],
+        "elems": ["-", "-", "nu", "wk", "-", "-", "-", "-", "-", "rs"],
+        "skills": {
+            "Dekaja": 45,
+            "Hysterical Slap": 0,
+            "Rage Boost": 46,
+            "Revolution": 47,
+            "Stagnant Air": 0,
+            "Tempest Slash": 43,
+            "Wage War": 0
+        }
+    },
+    "Kurama Tengu": {
+        "arcana": "Hermit",
+        "level": 56,
+        "stats": ["34", "38", "34", "42", "27"],
+        "elems": ["-", "-", "-", "wk", "-", "rp", "-", "-", "rs", "rs"],
+        "skills": { "Brain Buster": 0, "Garudyne": 57, "Growth 3": 58, "Heat Wave": 0, "Magarudyne": 60, "Masukunda": 0 }
+    },
+    "Kushinada-Hime": {
+        "arcana": "Lovers",
+        "level": 42,
+        "stats": ["24", "30", "26", "28", "25"],
+        "elems": ["-", "-", "-", "-", "-", "-", "-", "wk", "rp", "-"],
+        "skills": {
+            "Amrita Shower": 47,
+            "Hysterical Slap": 0,
+            "Mabufula": 0,
+            "Matarukaja": 44,
+            "Mediarama": 0,
+            "Null Sleep": 45,
+            "Wind Wall": 46
+        }
+    },
+    "Kusi Mitama": {
+        "arcana": "Strength",
+        "level": 14,
+        "stats": ["8", "12", "11", "9", "9"],
+        "elems": ["-", "-", "wk", "-", "-", "rs", "-", "-", "-", "-"],
+        "skills": {
+            "Bufu": 0,
+            "Forget Boost": 18,
+            "Garu": 0,
+            "Makajam": 0,
+            "Media": 0,
+            "Regenerate 1": 15,
+            "Wind Wall": 16
+        }
+    },
+    "Lachesis": {
+        "arcana": "Fortune",
+        "level": 34,
+        "stats": ["18", "25", "22", "25", "19"],
+        "elems": ["-", "-", "-", "nu", "wk", "rs", "-", "-", "-", "-"],
+        "skills": {
+            "Bufula": 0,
+            "Electric Wall": 36,
+            "Growth 2": 0,
+            "Ice Boost": 40,
+            "Mabaisudi": 0,
+            "Mabufula": 38,
+            "Marakukaja": 35
+        }
+    },
+    "Lakshmi": {
+        "arcana": "Fortune",
+        "level": 69,
+        "stats": ["40", "47", "43", "46", "38"],
+        "elems": ["-", "-", "wk", "rs", "-", "-", "-", "-", "rs", "-"],
+        "skills": {
+            "Amrita Shower": 72,
+            "Bufudyne": 0,
+            "Cool Breeze": 74,
+            "Diarahan": 0,
+            "Lullaby": 0,
+            "Mediarahan": 70,
+            "Rainy Play": 71
+        }
+    },
+    "Lamia": {
+        "arcana": "Empress",
+        "level": 26,
+        "stats": ["21", "15", "18", "19", "12"],
+        "elems": ["-", "rs", "-", "wk", "rs", "-", "-", "-", "-", "nu"],
+        "skills": {
+            "Agilao": 0,
+            "Distress Boost": 31,
+            "Foul Breath": 28,
+            "Maragion": 30,
+            "Rising Slash": 0,
+            "Rakukaja": 0,
+            "Word of Calamity": 27
+        },
+        "personality": "Gloomy"
+    },
+    "Leanan Sidhe": {
+        "arcana": "Lovers",
+        "level": 19,
+        "stats": ["9", "17", "12", "16", "10"],
+        "elems": ["-", "-", "wk", "-", "-", "rs", "rs", "-", "-", "-"],
+        "skills": { "Eiga": 23, "Mamudo": 21, "Mapsy": 22, "Marin Karin": 20, "Psyo": 0, "Rakunda": 0 },
+        "personality": "Irritable"
+    },
+    "Legion": {
+        "arcana": "Fool",
+        "level": 38,
+        "stats": ["24", "24", "30", "23", "20"],
+        "elems": ["rs", "rs", "rs", "-", "-", "-", "rs", "-", "wk", "nu"],
+        "skills": { "Bloodsuck": 0, "Negative Pile": 0, "Null Dizzy": 42, "Psyo": 39, "Rampage": 0, "Tetra Break": 40 },
+        "personality": "Unknown"
+    },
+    "Lilim": {
+        "arcana": "Devil",
+        "level": 32,
+        "stats": ["17", "23", "18", "25", "20"],
+        "elems": ["-", "wk", "-", "rs", "-", "wk", "-", "-", "wk", "nu"],
+        "skills": {
+            "Bufula": 0,
+            "Devil Smile": 0,
+            "Dodge Bless": 35,
+            "Freeze Boost": 34,
+            "Mabufula": 37,
+            "Masukunda": 0,
+            "Spirit Drain": 36
+        },
+        "personality": "Gloomy"
+    },
+    "Lilith": {
+        "arcana": "Moon",
+        "level": 60,
+        "stats": ["33", "43", "37", "39", "35"],
+        "elems": ["-", "-", "wk", "rp", "-", "-", "-", "-", "-", "nu"],
+        "skills": {
+            "Mabufudyne": 0,
+            "Magarudyne": 62,
+            "Makara Break": 0,
+            "Mamudoon": 64,
+            "Maragidyne": 65,
+            "Mudoon": 0,
+            "Spirit Drain": 63
+        }
+    },
+    "Lucifer": {
+        "arcana": "Star",
+        "level": 93,
+        "stats": ["61", "59", "59", "56", "51"],
+        "elems": ["-", "-", "-", "-", "-", "-", "-", "-", "wk", "-"],
+        "skills": {
+            "Absorb Phys": 99,
+            "Gigantomachia": 0,
+            "Heat Riser": 96,
+            "High Voltage": 97,
+            "Incineration": 0,
+            "Insta-Heal": 98,
+            "Morning Star": 94,
+            "Spell Master": 95
+        }
+    },
+    "Mada": {
+        "arcana": "Tower",
+        "level": 85,
+        "stats": ["52", "51", "58", "56", "45"],
+        "elems": ["-", "-", "ab", "wk", "-", "-", "rs", "nu", "-", "-"],
+        "skills": {
+            "Agidyne": 0,
+            "Amrita Shower": 88,
+            "Burn Boost": 0,
+            "Enduring Soul": 90,
+            "Fire Amp": 0,
+            "Incineration": 87,
+            "Spell Master": 91,
+            "Unshaken Will": 86
+        }
+    },
+    "Magatsu-Izanagi": {
+        "arcana": "Tower",
+        "level": 44,
+        "stats": ["37", "35", "32", "25", "10"],
+        "elems": ["-", "rs", "-", "-", "-", "-", "-", "wk", "nu", "nu"],
+        "skills": {
+            "Attack Master": 48,
+            "Bloodbath": 46,
+            "Ghastly Wail": 0,
+            "Heat Riser": 50,
+            "Magatsu Mandala": 0,
+            "Maziodyne": 45,
+            "Megidola": 0
+        }
+    },
+    "Magatsu-Izanagi Picaro": {
+        "arcana": "Tower",
+        "level": 48,
+        "stats": ["40", "38", "35", "27", "11"],
+        "elems": ["-", "rs", "-", "-", "-", "-", "-", "wk", "nu", "nu"],
+        "skills": {
+            "Bloodbath": 50,
+            "Ghastly Wail": 0,
+            "Heat Riser": 54,
+            "Magarudyne": 49,
+            "Magatsu Mandala": 0,
+            "Megidola": 0,
+            "Speed Master": 52
+        }
+    },
+    "Makami": {
+        "arcana": "Temperance",
+        "level": 15,
+        "stats": ["13", "12", "8", "11", "8"],
+        "elems": ["-", "-", "-", "-", "wk", "rs", "-", "rs", "nu", "-"],
+        "skills": {
+            "Dodge Electric": 20,
+            "Double Fangs": 0,
+            "Energy Drop": 0,
+            "Frei": 0,
+            "Mafrei": 17,
+            "Makajam": 18,
+            "Resist Distress": 19
+        },
+        "personality": "Upbeat"
+    },
+    "Mandrake": {
+        "arcana": "Death",
+        "level": 3,
+        "stats": ["2", "3", "3", "4", "4"],
+        "elems": ["-", "-", "wk", "-", "rs", "-", "-", "-", "-", "-"],
+        "skills": { "Energy Drop": 0, "Lunge": 4, "Pulinpa": 0, "Skull Cracker": 7, "Sukunda": 5 },
+        "personality": "Upbeat"
+    },
+    "Mara": {
+        "arcana": "Tower",
+        "level": 73,
+        "stats": ["47", "46", "49", "45", "39"],
+        "elems": ["-", "nu", "ab", "wk", "-", "-", "-", "-", "rs", "rp"],
+        "skills": {
+            "Firm Stance": 78,
+            "Heat Up": 77,
+            "Maeigaon": 76,
+            "Maragidyne": 0,
+            "One Shot Kill": 0,
+            "Power Charge": 74,
+            "Tetra Break": 0
+        }
+    },
+    "Matador": {
+        "arcana": "Death",
+        "level": 19,
+        "stats": ["12", "13", "12", "16", "11"],
+        "elems": ["-", "-", "-", "-", "wk", "nu", "-", "-", "-", "-"],
+        "skills": { "Garula": 23, "Null Dizzy": 0, "Psy": 0, "Sukukaja": 0, "Swift Strike": 20, "Trigger Happy": 22 }
+    },
+    "Melchizedek": {
+        "arcana": "Justice",
+        "level": 60,
+        "stats": ["37", "38", "41", "39", "32"],
+        "elems": ["-", "-", "-", "-", "-", "wk", "rs", "-", "ab", "nu"],
+        "skills": {
+            "Amrita Drop": 65,
+            "God's Hand": 67,
+            "Hama Boost": 61,
+            "Hamaon": 0,
+            "Mahamaon": 64,
+            "Megaton Raid": 0,
+            "Revolution": 62
+        }
+    },
+    "Messiah": {
+        "arcana": "Judgement",
+        "level": 81,
+        "stats": ["50", "50", "50", "50", "50"],
+        "elems": ["-", "-", "rs", "rs", "rs", "rs", "rs", "rs", "rp", "wk"],
+        "skills": {
+            "Absorb Phys": 85,
+            "Almighty Boost": 87,
+            "Enduring Soul": 83,
+            "God's Hand": 0,
+            "Invigorate 3": 84,
+            "Megidolaon": 0,
+            "Oratorio": 0,
+            "Regenerate 3": 82
+        }
+    },
+    "Messiah Picaro": {
+        "arcana": "Judgement",
+        "level": 90,
+        "stats": ["56", "56", "55", "55", "55"],
+        "elems": ["-", "-", "rs", "rs", "rs", "rs", "rs", "rs", "rp", "wk"],
+        "skills": {
+            "Agneyastra": 0,
+            "Almighty Boost": 96,
+            "Cool Breeze": 93,
+            "Enduring Soul": 92,
+            "Firm Stance": 94,
+            "Insta-Heal": 91,
+            "Megidolaon": 0,
+            "Oratorio": 0
+        }
+    },
+    "Metatron": {
+        "arcana": "Justice",
+        "level": 89,
+        "stats": ["54", "61", "60", "57", "42"],
+        "elems": ["-", "-", "-", "-", "wk", "rp", "ab", "ab", "-", "wk"],
+        "skills": {
+            "Dancing Blades": 0,
+            "Divine Judgement": 95,
+            "Hama Boost": 92,
+            "Bless Amp": 94,
+            "Mahamaon": 0,
+            "Makougaon": 0,
+            "Megidolaon": 91,
+            "Mind Charge": 93
+        }
+    },
+    "Michael": {
+        "arcana": "Judgement",
+        "level": 87,
+        "stats": ["57", "54", "55", "56", "46"],
+        "elems": ["-", "rs", "-", "-", "-", "-", "-", "-", "rp", "nu"],
+        "skills": {
+            "Cosmic Flare": 92,
+            "Dancing Blades": 89,
+            "Debilitate": 0,
+            "Divine Judgement": 0,
+            "Mabufudyne": 0,
+            "Mahamaon": 90,
+            "Megidolaon": 91
+        }
+    },
+    "Mithra": {
+        "arcana": "Temperance",
+        "level": 33,
+        "stats": ["19", "26", "19", "24", "18"],
+        "elems": ["-", "-", "-", "nu", "wk", "-", "-", "-", "nu", "-"],
+        "skills": {
+            "Dekunda": 35,
+            "Diarama": 0,
+            "Kouga": 0,
+            "Bless Boost": 36,
+            "Mahama": 0,
+            "Makouga": 34,
+            "Thermopylae": 38
+        }
+    },
+    "Mithras": {
+        "arcana": "Sun",
+        "level": 39,
+        "stats": ["27", "25", "27", "25", "20"],
+        "elems": ["rs", "-", "ab", "-", "-", "-", "wk", "nu", "-", "-"],
+        "skills": {
+            "Freidyne": 45,
+            "Mafreila": 0,
+            "Nuclear Break": 42,
+            "Vicious Strike": 0,
+            "Tentarafoo": 0,
+            "Tetra Break": 41
+        },
+        "personality": "Gloomy"
+    },
+    "Mokoi": {
+        "arcana": "Death",
+        "level": 9,
+        "stats": ["9", "5", "6", "10", "4"],
+        "elems": ["-", "-", "-", "-", "rs", "wk", "-", "-", "-", "-"],
+        "skills": {
+            "Dazzler": 0,
+            "Dekunda": 14,
+            "Dodge Electric": 13,
+            "Marin Karin": 11,
+            "Skull Cracker": 0,
+            "Tarukaja": 0
+        },
+        "personality": "Gloomy"
+    },
+    "Moloch": {
+        "arcana": "Hanged Man",
+        "level": 60,
+        "stats": ["32", "45", "42", "31", "37"],
+        "elems": ["-", "-", "rp", "wk", "rs", "rs", "ab", "-", "-", "nu"],
+        "skills": {
+            "Absorb Fire": 64,
+            "Agidyne": 62,
+            "Devil Smile": 0,
+            "Ghastly Wail": 63,
+            "Nuclear Amp": 65,
+            "Psydyne": 0,
+            "Stagnant Air": 0
+        }
+    },
+    "Mot": {
+        "arcana": "Death",
+        "level": 72,
+        "stats": ["43", "51", "48", "42", "39"],
+        "elems": ["-", "rs", "-", "-", "ab", "wk", "-", "-", "-", "rp"],
+        "skills": {
+            "Matarukaja": 0,
+            "Maziodyne": 0,
+            "Megidola": 0,
+            "Megidolaon": 76,
+            "Mind Charge": 74,
+            "Repel Electric": 77
+        }
+    },
+    "Mother Harlot": {
+        "arcana": "Empress",
+        "level": 80,
+        "stats": ["55", "48", "46", "49", "49"],
+        "elems": ["-", "-", "-", "-", "rp", "-", "-", "-", "wk", "nu"],
+        "skills": {
+            "Debilitate": 85,
+            "Ice Age": 81,
+            "Ice Amp": 82,
+            "Mabufudyne": 0,
+            "Mamudoon": 0,
+            "Mudo Boost": 0,
+            "Null Bless": 83
+        }
+    },
+    "Mothman": {
+        "arcana": "Moon",
+        "level": 33,
+        "stats": ["21", "24", "16", "24", "21"],
+        "elems": ["-", "wk", "-", "-", "nu", "-", "rs", "-", "-", "-"],
+        "skills": {
+            "Ambient Aid": 36,
+            "Makajamon": 37,
+            "Mazionga": 0,
+            "Shock Boost": 0,
+            "Skull Cracker": 0,
+            "Tentarafoo": 35
+        },
+        "personality": "Timid"
+    },
+    "Naga": {
+        "arcana": "Hermit",
+        "level": 24,
+        "stats": ["15", "17", "15", "17", "15"],
+        "elems": ["-", "-", "-", "-", "nu", "wk", "-", "-", "-", "-"],
+        "skills": {
+            "Memory Blow": 0,
+            "Dazzler": 27,
+            "Double Fangs": 0,
+            "Electric Boost": 26,
+            "Marakukaja": 29,
+            "Mazionga": 28,
+            "Zionga": 0
+        },
+        "personality": "Gloomy"
+    },
+    "Narcissus": {
+        "arcana": "Lovers",
+        "level": 50,
+        "stats": ["27", "36", "29", "35", "30"],
+        "elems": ["-", "-", "wk", "-", "nu", "rs", "-", "-", "rs", "-"],
+        "skills": {
+            "Blinding Flash": 0,
+            "Ambient Aid": 55,
+            "Dizzy Boost": 53,
+            "Energy Drop": 0,
+            "Growth 3": 52,
+            "Magarula": 0,
+            "Mediarama": 54
+        }
+    },
+    "Nebiros": {
+        "arcana": "Devil",
+        "level": 62,
+        "stats": ["39", "40", "42", "36", "36"],
+        "elems": ["-", "-", "-", "-", "-", "-", "rs", "-", "wk", "rp"],
+        "skills": {
+            "Curse Amp": 65,
+            "Eigaon": 0,
+            "Evade Bless": 66,
+            "Maeigaon": 64,
+            "Mamudoon": 0,
+            "Marin Karin": 0,
+            "Megidolaon": 68
+        }
+    },
+    "Neko Shogun": {
+        "arcana": "Star",
+        "level": 30,
+        "stats": ["19", "20", "19", "21", "18"],
+        "elems": ["rs", "-", "-", "-", "rs", "wk", "-", "-", "nu", "rs"],
+        "skills": {
+            "Defense Master": 34,
+            "Diarama": 0,
+            "High Voltage": 36,
+            "Invigorate 1": 31,
+            "Masukukaja": 0,
+            "Psyo": 0,
+            "Rat Fang": 33
+        }
+    },
+    "Nekomata": {
+        "arcana": "Magician",
+        "level": 17,
+        "stats": ["13", "10", "12", "15", "8"],
+        "elems": ["-", "-", "-", "-", "wk", "-", "rs", "-", "-", "-"],
+        "skills": {
+            "Devil Touch": 0,
+            "Dodge Electric": 22,
+            "Electric Wall": 21,
+            "Hysterical Slap": 18,
+            "Magaru": 0,
+            "Terror Claw": 0,
+            "Wind Break": 20
+        },
+        "personality": "Upbeat"
+    },
+    "Nigi Mitama": {
+        "arcana": "Temperance",
+        "level": 20,
+        "stats": ["12", "14", "14", "15", "12"],
+        "elems": ["-", "-", "-", "-", "wk", "-", "-", "-", "rs", "rs"],
+        "skills": { "Baisudi": 0, "Divine Grace": 22, "Makouha": 0, "Me Patra": 23, "Media": 0, "Rainy Play": 24 }
+    },
+    "Norn": {
+        "arcana": "Fortune",
+        "level": 52,
+        "stats": ["30", "38", "33", "34", "28"],
+        "elems": ["-", "-", "-", "rs", "-", "ab", "-", "-", "-", "-"],
+        "skills": {
+            "Amrita Drop": 55,
+            "Blinding Flash": 0,
+            "Diarahan": 54,
+            "Garudyne": 0,
+            "Samarecarm": 57,
+            "Tetraja": 56,
+            "Ziodyne": 0
+        }
+    },
+    "Nue": {
+        "arcana": "Moon",
+        "level": 20,
+        "stats": ["16", "10", "17", "14", "10"],
+        "elems": ["-", "-", "wk", "rs", "-", "-", "-", "-", "-", "nu"],
+        "skills": {
+            "Assault Dive": 25,
+            "Curse Boost": 26,
+            "Maeiha": 0,
+            "Mamudo": 24,
+            "Mudo": 21,
+            "Pulinpa": 22,
+            "Skull Cracker": 0
+        },
+        "personality": "Irritable"
+    },
+    "Obariyon": {
+        "arcana": "Fool",
+        "level": 8,
+        "stats": ["7", "3", "9", "8", "4"],
+        "elems": ["rs", "-", "-", "-", "wk", "-", "-", "-", "-", "-"],
+        "skills": { "Dekaja": 12, "Snap": 0, "Lucky Punch": 9, "Resist Fear": 10, "Sukunda": 0 },
+        "personality": "Unknown"
+    },
+    "Oberon": {
+        "arcana": "Emperor",
+        "level": 66,
+        "stats": ["40", "44", "43", "43", "35"],
+        "elems": ["-", "-", "-", "-", "rs", "-", "nu", "wk", "-", "-"],
+        "skills": {
+            "Brain Jack": 0,
+            "Electric Amp": 72,
+            "Heat Wave": 0,
+            "Matarukaja": 68,
+            "Maziodyne": 69,
+            "Psy Wall": 70,
+            "Samarecarm": 71,
+            "Ziodyne": 0
+        },
+        "personality": "Unknown"
+    },
+    "Odin": {
+        "arcana": "Emperor",
+        "level": 82,
+        "stats": ["53", "52", "54", "52", "42"],
+        "elems": ["-", "-", "-", "-", "nu", "ab", "-", "-", "rp", "rp"],
+        "skills": {
+            "El Jihad": 84,
+            "Electric Amp": 87,
+            "Fast Heal": 86,
+            "Marakukaja": 0,
+            "Mind Charge": 85,
+            "Rainy Death": 0,
+            "Thunder Reign": 0
+        }
+    },
+    "Okuninushi": {
+        "arcana": "Emperor",
+        "level": 44,
+        "stats": ["30", "28", "29", "28", "24"],
+        "elems": ["-", "-", "-", "-", "rp", "wk", "nu", "wk", "-", "-"],
+        "skills": {
+            "Evade Nuclear": 47,
+            "Heat Wave": 49,
+            "Mapsyo": 0,
+            "Matarukaja": 0,
+            "Psy Boost": 45,
+            "Psy Break": 46,
+            "Tempest Slash": 0
+        }
+    },
+    "Ongyo-Ki": {
+        "arcana": "Hermit",
+        "level": 75,
+        "stats": ["56", "42", "47", "48", "39"],
+        "elems": ["rs", "rs", "-", "-", "-", "-", "-", "-", "rp", "rp"],
+        "skills": {
+            "Agneyastra": 81,
+            "Arms Master": 77,
+            "Firm Stance": 79,
+            "Makajamon": 0,
+            "Pressing Stance": 0,
+            "Rainy Death": 0,
+            "Regenerate 3": 78
+        }
+    },
+    "Oni": {
+        "arcana": "Strength",
+        "level": 19,
+        "stats": ["17", "8", "16", "13", "10"],
+        "elems": ["rs", "rs", "-", "-", "-", "-", "-", "-", "-", "-"],
+        "skills": { "Memory Blow": 23, "Sharp Student": 22, "Counter": 0, "Snap": 0, "Giant Slice": 21, "Rampage": 0 },
+        "personality": "Upbeat"
+    },
+    "Onmoraki": {
+        "arcana": "Moon",
+        "level": 12,
+        "stats": ["9", "12", "7", "10", "5"],
+        "elems": ["-", "wk", "rs", "-", "-", "-", "-", "-", "wk", "nu"],
+        "skills": { "Agi": 13, "Ice Wall": 0, "Mudo": 0, "Panic Boost": 15, "Pulinpa": 14, "Resist Fear": 17 },
+        "personality": "Gloomy"
+    },
+    "Orlov": {
+        "arcana": "Strength",
+        "level": 30,
+        "stats": ["30", "30", "30", "30", "30"],
+        "elems": ["rs", "nu", "nu", "nu", "-", "nu", "nu", "nu", "nu", "nu"],
+        "skills": {
+            "Mabufula": 0,
+            "Maeiga": 0,
+            "Mafreila": 0,
+            "Magarula": 0,
+            "Makouga": 0,
+            "Mapsyo": 0,
+            "Maragion": 0,
+            "Mazionga": 0
+        }
+    },
+    "Orobas": {
+        "arcana": "Hierophant",
+        "level": 17,
+        "stats": ["11", "14", "15", "12", "6"],
+        "elems": ["-", "-", "-", "-", "-", "rs", "-", "-", "wk", "rs"],
+        "skills": { "Dekaja": 0, "Fire Break": 20, "Makajamon": 21, "Maragi": 0, "Marakunda": 19, "Sukukaja": 0 },
+        "personality": "Timid"
+    },
+    "Orpheus": {
+        "arcana": "Fool",
+        "level": 26,
+        "stats": ["17", "17", "17", "17", "17"],
+        "elems": ["-", "-", "-", "-", "wk", "-", "-", "-", "rs", "wk"],
+        "skills": {
+            "Agilao": 0,
+            "Cadenza": 0,
+            "Endure": 27,
+            "Fire Boost": 32,
+            "Maragion": 29,
+            "Marakukaja": 30,
+            "Tarunda": 0
+        }
+    },
+    "Orpheus Picaro": {
+        "arcana": "Fool",
+        "level": 29,
+        "stats": ["19", "19", "19", "19", "19"],
+        "elems": ["-", "-", "-", "-", "wk", "-", "-", "-", "rs", "wk"],
+        "skills": {
+            "Agidyne": 32,
+            "Cadenza": 0,
+            "Endure": 30,
+            "Fire Boost": 35,
+            "Maragion": 0,
+            "Matarukaja": 33,
+            "Matarunda": 0
+        }
+    },
+    "Orthrus": {
+        "arcana": "Hanged Man",
+        "level": 21,
+        "stats": ["16", "14", "14", "19", "7"],
+        "elems": ["-", "-", "ab", "wk", "-", "-", "-", "rs", "-", "-"],
+        "skills": { "Agilao": 0, "Burn Boost": 22, "Dodge Ice": 0, "Double Fangs": 0, "Matarukaja": 26, "Rat Fang": 24 },
+        "personality": "Irritable"
+    },
+    "Ose": {
+        "arcana": "Fool",
+        "level": 42,
+        "stats": ["32", "24", "25", "31", "21"],
+        "elems": ["-", "-", "rs", "-", "-", "-", "-", "-", "wk", "nu"],
+        "skills": { "Counterstrike": 0, "Heat Wave": 47, "Matarukaja": 45, "Oni Kagura": 0, "Tempest Slash": 43 },
+        "personality": "Unknown"
+    },
+    "Pale Rider": {
+        "arcana": "Death",
+        "level": 53,
+        "stats": ["34", "34", "33", "39", "26"],
+        "elems": ["-", "-", "-", "-", "-", "rs", "-", "-", "wk", "rp"],
+        "skills": {
+            "Banishing Wave": 0,
+            "Brain Shake": 0,
+            "Curse Boost": 55,
+            "Deathbound": 58,
+            "Eigaon": 0,
+            "Evade Bless": 57,
+            "Megidola": 54
+        }
+    },
+    "Parvati": {
+        "arcana": "Lovers",
+        "level": 56,
+        "stats": ["33", "39", "33", "39", "31"],
+        "elems": ["-", "-", "-", "rp", "-", "-", "rs", "-", "rs", "wk"],
+        "skills": {
+            "Diarahan": 58,
+            "Diarama": 0,
+            "Energy Shower": 57,
+            "Hama Boost": 61,
+            "Hamaon": 0,
+            "Mapsydyne": 59,
+            "Psydyne": 0
+        },
+        "personality": "Unknown"
+    },
+    "Pazuzu": {
+        "arcana": "Devil",
+        "level": 43,
+        "stats": ["29", "30", "27", "26", "24"],
+        "elems": ["-", "-", "-", "-", "-", "rs", "-", "-", "wk", "nu"],
+        "skills": {
+            "Bad Beat": 47,
+            "Ambient Aid": 45,
+            "Devil Smile": 46,
+            "Eigaon": 48,
+            "Maeiga": 0,
+            "Mudoon": 0,
+            "Tentarafoo": 0
+        }
+    },
+    "Pisaca": {
+        "arcana": "Death",
+        "level": 29,
+        "stats": ["19", "21", "21", "17", "16"],
+        "elems": ["-", "-", "wk", "-", "rs", "-", "-", "-", "wk", "nu"],
+        "skills": {
+            "Banishing Wave": 32,
+            "Distress Boost": 33,
+            "Dream Needle": 0,
+            "Mamudo": 30,
+            "Mudoon": 34,
+            "Rampage": 0,
+            "Stagnant Air": 0
+        },
+        "personality": "Unknown"
+    },
+    "Pixie": {
+        "arcana": "Lovers",
+        "level": 2,
+        "stats": ["1", "3", "3", "4", "2"],
+        "elems": ["-", "wk", "-", "wk", "rs", "-", "-", "-", "rs", "wk"],
+        "skills": { "Dia": 0, "Patra": 3, "Resist Panic": 6, "Tarukaja": 5, "Zio": 0 },
+        "personality": "Timid"
+    },
+    "Power": {
+        "arcana": "Justice",
+        "level": 41,
+        "stats": ["30", "26", "28", "25", "21"],
+        "elems": ["-", "wk", "-", "-", "-", "rs", "-", "-", "nu", "wk"],
+        "skills": {
+            "Diarama": 44,
+            "Hamaon": 0,
+            "Makouga": 43,
+            "Masukukaja": 45,
+            "Null Curseness": 46,
+            "Sukukaja": 0,
+            "Swift Strike": 42
+        },
+        "personality": "Unknown"
+    },
+    "Principality": {
+        "arcana": "Justice",
+        "level": 29,
+        "stats": ["17", "19", "18", "21", "19"],
+        "elems": ["-", "-", "rs", "-", "-", "-", "-", "-", "nu", "wk"],
+        "skills": { "Bless Boost": 34, "Mabaisudi": 32, "Makajamon": 0, "Makouga": 0, "Mediarama": 31, "Tetraja": 0 }
+    },
+    "Queen Mab": {
+        "arcana": "Magician",
+        "level": 43,
+        "stats": ["23", "35", "26", "30", "22"],
+        "elems": ["-", "-", "nu", "-", "rs", "wk", "-", "-", "-", "-"],
+        "skills": { "Agidyne": 48, "Makajamon": 0, "Makara Break": 46, "Matarunda": 44, "Mazionga": 0, "Wind Wall": 0 },
+        "personality": "Unknown"
+    },
+    "Quetzalcoatl": {
+        "arcana": "Sun",
+        "level": 63,
+        "stats": ["38", "42", "41", "41", "34"],
+        "elems": ["-", "-", "nu", "-", "-", "rs", "wk", "-", "-", "-"],
+        "skills": {
+            "Memory Blow": 0,
+            "Garudyne": 0,
+            "Growth 3": 65,
+            "Magarudyne": 67,
+            "Magarula": 0,
+            "Regenerate 3": 66,
+            "Wind Amp": 68
+        }
+    },
+    "Raja Naga": {
+        "arcana": "Temperance",
+        "level": 55,
+        "stats": ["33", "37", "36", "35", "31"],
+        "elems": ["-", "-", "-", "-", "nu", "-", "-", "-", "-", "-"],
+        "skills": {
+            "Electric Break": 0,
+            "Evade Wind": 60,
+            "Makarakarn": 58,
+            "Maziodyne": 59,
+            "Shock Boost": 57,
+            "Tentarafoo": 0,
+            "Ziodyne": 0
+        }
+    },
+    "Rakshasa": {
+        "arcana": "Strength",
+        "level": 24,
+        "stats": ["20", "15", "18", "17", "9"],
+        "elems": ["rs", "-", "rs", "-", "-", "wk", "-", "-", "wk", "rs"],
+        "skills": {
+            "Counterstrike": 28,
+            "Adverse Resolve": 30,
+            "Giant Slice": 0,
+            "Mind Slice": 27,
+            "Regenerate 1": 26,
+            "Tarukaja": 0,
+            "Wind Wall": 0
+        },
+        "personality": "Irritable"
+    },
+    "Rangda": {
+        "arcana": "Magician",
+        "level": 48,
+        "stats": ["28", "34", "30", "33", "26"],
+        "elems": ["rp", "rp", "nu", "-", "wk", "-", "-", "-", "wk", "nu"],
+        "skills": { "Bloodbath": 0, "Counterstrike": 0, "Eigaon": 49, "Matarunda": 51, "Mudoon": 53, "Swift Strike": 0 },
+        "personality": "Unknown"
+    },
+    "Raphael": {
+        "arcana": "Lovers",
+        "level": 78,
+        "stats": ["57", "45", "49", "55", "35"],
+        "elems": ["-", "-", "-", "ab", "-", "-", "nu", "-", "nu", "-"],
+        "skills": {
+            "Arms Master": 83,
+            "Adverse Resolve": 82,
+            "Dancing Blades": 0,
+            "Dekaja": 0,
+            "Growth 3": 81,
+            "Heat Riser": 80,
+            "Power Charge": 0
+        }
+    },
+    "Red Rider": {
+        "arcana": "Tower",
+        "level": 41,
+        "stats": ["26", "27", "25", "29", "23"],
+        "elems": ["-", "-", "-", "-", "-", "-", "-", "-", "wk", "nu"],
+        "skills": {
+            "Mapsyo": 0,
+            "Negative Pile": 42,
+            "Pressing Stance": 45,
+            "Psy Break": 0,
+            "Rage Boost": 46,
+            "Rising Slash": 0,
+            "Resist Panic": 44
+        }
+    },
+    "Regent": {
+        "arcana": "Emperor",
+        "level": 10,
+        "stats": ["10", "10", "10", "10", "10"],
+        "elems": ["rs", "rs", "rs", "rs", "rs", "rs", "wk", "wk", "nu", "nu"],
+        "skills": {
+            "Mabufu": 0,
+            "Maeiha": 0,
+            "Mafrei": 0,
+            "Magaru": 0,
+            "Makouha": 0,
+            "Mapsy": 0,
+            "Maragi": 0,
+            "Mazio": 0
+        }
+    },
+    "Saki Mitama": {
+        "arcana": "Lovers",
+        "level": 6,
+        "stats": ["4", "6", "5", "6", "4"],
+        "elems": ["-", "-", "-", "rs", "wk", "-", "-", "-", "-", "-"],
+        "skills": { "Bufu": 0, "Energy Drop": 0, "Growth 1": 7, "Rakukaja": 8, "Resist Dizzy": 10, "Wind Wall": 0 }
+    },
+    "Sandalphon": {
+        "arcana": "Moon",
+        "level": 75,
+        "stats": ["46", "51", "49", "48", "38"],
+        "elems": ["rs", "rs", "-", "-", "rs", "-", "-", "-", "rp", "nu"],
+        "skills": {
+            "Amrita Shower": 0,
+            "Angelic Grace": 77,
+            "Dancing Blades": 79,
+            "Mahamaon": 0,
+            "Repel Curseness": 78,
+            "Samarecarm": 0
+        }
+    },
+    "Sandman": {
+        "arcana": "Magician",
+        "level": 24,
+        "stats": ["11", "13", "14", "20", "21"],
+        "elems": ["-", "-", "-", "-", "wk", "rs", "-", "-", "-", "-"],
+        "skills": {
+            "Dormin Rush": 0,
+            "Dormina": 0,
+            "Garula": 0,
+            "Magarula": 28,
+            "Null Sleep": 27,
+            "Sleep Boost": 29,
+            "Sukunda": 25
+        },
+        "personality": "Irritable"
+    },
+    "Sarasvati": {
+        "arcana": "Priestess",
+        "level": 50,
+        "stats": ["30", "35", "32", "33", "27"],
+        "elems": ["-", "-", "-", "nu", "rs", "-", "-", "wk", "-", "-"],
+        "skills": {
+            "Dekaja": 52,
+            "Diarahan": 54,
+            "Matarunda": 53,
+            "Me Patra": 0,
+            "Mediarama": 0,
+            "Null Sleep": 51,
+            "Tentarafoo": 0
+        }
+    },
+    "Satan": {
+        "arcana": "Judgement",
+        "level": 92,
+        "stats": ["62", "59", "55", "52", "55"],
+        "elems": ["-", "rs", "-", "rp", "-", "-", "-", "-", "-", "rp"],
+        "skills": {
+            "Absorb Ice": 98,
+            "Black Viper": 94,
+            "Diamond Dust": 0,
+            "Ice Age": 0,
+            "Invigorate 3": 95,
+            "Mind Charge": 97,
+            "Regenerate 3": 0,
+            "Resist Ailment": 96
+        }
+    },
+    "Satanael": {
+        "arcana": "Fool",
+        "level": 95,
+        "stats": ["63", "60", "57", "56", "56"],
+        "elems": ["rs", "rs", "rs", "rs", "rs", "rs", "rs", "rs", "nu", "ab"],
+        "skills": {
+            "Cosmic Flare": 96,
+            "Heat Riser": 97,
+            "Maeigaon": 0,
+            "Megidolaon": 0,
+            "Riot Gun": 0,
+            "Survival Trick": 0,
+            "Unshaken Will": 98,
+            "Victory Cry": 99
+        }
+    },
+    "Scathach": {
+        "arcana": "Priestess",
+        "level": 45,
+        "stats": ["29", "30", "28", "30", "25"],
+        "elems": ["-", "-", "-", "rp", "-", "-", "-", "-", "-", "nu"],
+        "skills": {
+            "Attack Master": 49,
+            "Sharp Student": 0,
+            "Endure": 50,
+            "Magarula": 0,
+            "Maragion": 46,
+            "Matarukaja": 48,
+            "Tempest Slash": 0
+        },
+        "personality": "Upbeat"
+    },
+    "Seiryu": {
+        "arcana": "Temperance",
+        "level": 62,
+        "stats": ["38", "41", "43", "37", "34"],
+        "elems": ["-", "-", "-", "rs", "-", "-", "-", "wk", "-", "-"],
+        "skills": {
+            "Amrita Drop": 66,
+            "Bufudyne": 0,
+            "Diarahan": 0,
+            "Mabufudyne": 65,
+            "Makarakarn": 67,
+            "Marakukaja": 0,
+            "Repel Nuclear": 63
+        }
+    },
+    "Setanta": {
+        "arcana": "Emperor",
+        "level": 28,
+        "stats": ["20", "17", "19", "18", "17"],
+        "elems": ["-", "-", "-", "-", "-", "-", "wk", "rs", "-", "-"],
+        "skills": {
+            "Counter": 0,
+            "Dormin Rush": 0,
+            "Giant Slice": 0,
+            "Power Charge": 34,
+            "Rising Slash": 31,
+            "Rebellion": 32
+        }
+    },
+    "Seth": {
+        "arcana": "Tower",
+        "level": 51,
+        "stats": ["34", "37", "33", "37", "31"],
+        "elems": ["-", "-", "rp", "-", "-", "nu", "-", "-", "wk", "rs"],
+        "skills": {
+            "Agidyne": 0,
+            "Fire Break": 54,
+            "Masukukaja": 0,
+            "One Shot Kill": 0,
+            "Resist Ailment": 56,
+            "Weak Spot Aim": 53
+        }
+    },
+    "Shiisaa": {
+        "arcana": "Chariot",
+        "level": 16,
+        "stats": ["13", "9", "12", "13", "8"],
+        "elems": ["rs", "rs", "-", "-", "-", "-", "-", "-", "nu", "wk"],
+        "skills": {
+            "Dodge Curseness": 20,
+            "Dodge Electric": 21,
+            "Double Fangs": 0,
+            "Rampage": 18,
+            "Skull Cracker": 0,
+            "Zio": 0
+        }
+    },
+    "Shiki-Ouji": {
+        "arcana": "Chariot",
+        "level": 21,
+        "stats": ["21", "11", "15", "16", "13"],
+        "elems": ["nu", "nu", "-", "-", "-", "-", "-", "wk", "-", "nu"],
+        "skills": { "Dekaja": 24, "Snap": 0, "Mapsy": 22, "Oni Kagura": 27, "Taunt": 0, "Psyo": 26, "Tarukaja": 0 },
+        "personality": "Irritable"
+    },
+    "Shiva": {
+        "arcana": "Judgement",
+        "level": 82,
+        "stats": ["55", "54", "53", "53", "38"],
+        "elems": ["-", "-", "-", "nu", "rp", "-", "ab", "wk", "nu", "nu"],
+        "skills": {
+            "Auto-Mataru": 87,
+            "Enduring Soul": 0,
+            "Maziodyne": 0,
+            "Megidolaon": 86,
+            "Psycho Force": 88,
+            "Psychokinesis": 0,
+            "Riot Gun": 85
+        }
+    },
+    "Siegfried": {
+        "arcana": "Strength",
+        "level": 69,
+        "stats": ["51", "37", "47", "48", "31"],
+        "elems": ["nu", "-", "-", "rs", "-", "-", "-", "wk", "-", "-"],
+        "skills": {
+            "Auto-Mataru": 72,
+            "High Counter": 0,
+            "Masukukaja": 0,
+            "Megaton Raid": 0,
+            "Power Charge": 70,
+            "Vorpal Blade": 74
+        }
+    },
+    "Silky": {
+        "arcana": "Priestess",
+        "level": 6,
+        "stats": ["4", "7", "4", "5", "5"],
+        "elems": ["-", "-", "wk", "rs", "wk", "-", "-", "-", "-", "-"],
+        "skills": { "Bufu": 0, "Sharp Student": 10, "Dia": 7, "Dormina": 0, "Patra": 9 },
+        "personality": "Gloomy"
+    },
+    "Skadi": {
+        "arcana": "Priestess",
+        "level": 55,
+        "stats": ["35", "39", "34", "34", "30"],
+        "elems": ["-", "-", "-", "rp", "-", "-", "-", "-", "-", "nu"],
+        "skills": {
+            "Bufudyne": 58,
+            "Devil Touch": 0,
+            "Ghastly Wail": 56,
+            "Mabufula": 0,
+            "Null Distress": 0,
+            "Repel Ice": 60,
+            "Spirit Drain": 59
+        }
+    },
+    "Slime": {
+        "arcana": "Chariot",
+        "level": 10,
+        "stats": ["9", "6", "11", "6", "5"],
+        "elems": ["rs", "-", "wk", "-", "-", "wk", "-", "-", "-", "-"],
+        "skills": { "Devil Touch": 0, "Eiha": 11, "Fire Wall": 13, "Headbutt": 14, "Lunge": 0 },
+        "personality": "Timid"
+    },
+    "Sraosha": {
+        "arcana": "Star",
+        "level": 80,
+        "stats": ["47", "56", "45", "56", "43"],
+        "elems": ["-", "-", "-", "-", "ab", "-", "-", "-", "rp", "wk"],
+        "skills": {
+            "Amrita Shower": 84,
+            "Angelic Grace": 83,
+            "Debilitate": 85,
+            "Hama Boost": 0,
+            "Kougaon": 0,
+            "Mahamaon": 0,
+            "Makougaon": 81
+        }
+    },
+    "Stone of Scone": {
+        "arcana": "Fortune",
+        "level": 20,
+        "stats": ["20", "20", "20", "20", "20"],
+        "elems": ["nu", "nu", "nu", "nu", "nu", "nu", "nu", "nu", "nu", "wk"],
+        "skills": { "Agilao": 0, "Bufula": 0, "Eiga": 0, "Freila": 0, "Garula": 0, "Kouga": 0, "Psyo": 0, "Zionga": 0 }
+    },
+    "Succubus": {
+        "arcana": "Moon",
+        "level": 7,
+        "stats": ["4", "7", "5", "8", "4"],
+        "elems": ["-", "wk", "rs", "-", "-", "-", "-", "-", "wk", "nu"],
+        "skills": { "Agi": 8, "Brainwash Boost": 11, "Dekaja": 10, "Marin Karin": 0, "Mudo": 12, "Rebellion": 0 },
+        "personality": "Irritable"
+    },
+    "Sudama": {
+        "arcana": "Hermit",
+        "level": 17,
+        "stats": ["9", "14", "12", "13", "10"],
+        "elems": ["-", "-", "-", "wk", "-", "rp", "-", "wk", "-", "-"],
+        "skills": {
+            "Apt Pupil": 22,
+            "Ambient Aid": 20,
+            "Sharp Student": 0,
+            "Garula": 23,
+            "Lucky Punch": 0,
+            "Magaru": 0,
+            "Wind Wall": 21
+        }
+    },
+    "Sui-Ki": {
+        "arcana": "Moon",
+        "level": 24,
+        "stats": ["16", "15", "15", "18", "15"],
+        "elems": ["-", "-", "-", "ab", "rs", "-", "-", "wk", "-", "-"],
+        "skills": {
+            "Bufula": 0,
+            "Dodge Fire": 29,
+            "Headbutt": 0,
+            "Mabufu": 0,
+            "Mabufula": 28,
+            "Null Nuclear": 26,
+            "Wage War": 27
+        },
+        "personality": "Unknown"
+    },
+    "Surt": {
+        "arcana": "Magician",
+        "level": 59,
+        "stats": ["37", "40", "39", "35", "33"],
+        "elems": ["-", "-", "ab", "wk", "-", "-", "-", "-", "-", "-"],
+        "skills": {
+            "Agidyne": 0,
+            "Fire Break": 0,
+            "High Counter": 61,
+            "Inferno": 64,
+            "Maragidyne": 60,
+            "Megaton Raid": 0
+        }
+    },
+    "Suzaku": {
+        "arcana": "Sun",
+        "level": 19,
+        "stats": ["11", "14", "10", "18", "11"],
+        "elems": ["-", "-", "ab", "wk", "-", "-", "-", "rs", "-", "-"],
+        "skills": {
+            "Frei": 0,
+            "Mafrei": 22,
+            "Marin Karin": 0,
+            "Matarunda": 24,
+            "Speed Master": 23,
+            "Tarunda": 0,
+            "Word of Calamity": 21
+        }
+    },
+    "Take-Minakata": {
+        "arcana": "Hanged Man",
+        "level": 29,
+        "stats": ["20", "22", "21", "18", "13"],
+        "elems": ["-", "-", "-", "-", "rp", "-", "wk", "-", "-", "rs"],
+        "skills": {
+            "Assault Dive": 0,
+            "Defense Master": 32,
+            "Electric Boost": 34,
+            "Electric Break": 0,
+            "Mazionga": 30,
+            "Zionga": 0
+        },
+        "personality": "Gloomy"
+    },
+    "Thanatos": {
+        "arcana": "Death",
+        "level": 65,
+        "stats": ["43", "49", "41", "38", "31"],
+        "elems": ["rs", "-", "-", "-", "-", "-", "-", "-", "wk", "rp"],
+        "skills": {
+            "Curse Amp": 66,
+            "Door of Hades": 0,
+            "Enduring Soul": 70,
+            "High Voltage": 69,
+            "Maeigaon": 0,
+            "Mamudoon": 0,
+            "One Shot Kill": 68
+        }
+    },
+    "Thanatos Picaro": {
+        "arcana": "Death",
+        "level": 69,
+        "stats": ["45", "51", "43", "40", "35"],
+        "elems": ["rs", "-", "-", "-", "-", "-", "-", "-", "wk", "rp"],
+        "skills": {
+            "Adverse Resolve": 73,
+            "Door of Hades": 0,
+            "Enduring Soul": 74,
+            "Maeigaon": 0,
+            "Mamudoon": 0,
+            "Mudo Boost": 70,
+            "One Shot Kill": 72
+        }
+    },
+    "Queen's Necklace": {
+        "arcana": "Empress",
+        "level": 15,
+        "stats": ["15", "15", "15", "15", "15"],
+        "elems": ["rs", "wk", "rs", "rs", "rs", "rs", "rs", "rs", "rs", "rs"],
+        "skills": {
+            "Media": 0,
+            "Rakukaja": 0,
+            "Rakunda": 0,
+            "Recarm": 0,
+            "Sukukaja": 0,
+            "Sukunda": 0,
+            "Tarukaja": 0,
+            "Tarunda": 0
+        }
+    },
+    "Thor": {
+        "arcana": "Chariot",
+        "level": 64,
+        "stats": ["44", "39", "43", "38", "35"],
+        "elems": ["rs", "-", "-", "-", "ab", "-", "wk", "-", "rs", "rs"],
+        "skills": {
+            "Attack Master": 70,
+            "Electric Amp": 66,
+            "Heat Up": 68,
+            "High Counter": 0,
+            "Maziodyne": 67,
+            "Megaton Raid": 0,
+            "Ziodyne": 0
+        }
+    },
+    "Thoth": {
+        "arcana": "Emperor",
+        "level": 36,
+        "stats": ["21", "28", "21", "24", "21"],
+        "elems": ["-", "-", "-", "-", "-", "-", "wk", "nu", "nu", "-"],
+        "skills": {
+            "Freila": 0,
+            "Growth 2": 42,
+            "Mafreila": 40,
+            "Masukunda": 0,
+            "Megido": 37,
+            "Taunt": 0,
+            "Psy Wall": 39
+        },
+        "personality": "Gloomy"
+    },
+    "Throne": {
+        "arcana": "Justice",
+        "level": 71,
+        "stats": ["42", "49", "47", "46", "36"],
+        "elems": ["-", "-", "ab", "-", "-", "-", "-", "rs", "nu", "wk"],
+        "skills": {
+            "Auto-Maraku": 76,
+            "Evade Curseness": 75,
+            "Hama Boost": 0,
+            "Invigorate 3": 0,
+            "Bless Amp": 74,
+            "Mahamaon": 0,
+            "Makougaon": 73
+        }
+    },
+    "Titania": {
+        "arcana": "Empress",
+        "level": 56,
+        "stats": ["32", "40", "35", "38", "30"],
+        "elems": ["-", "-", "-", "-", "-", "-", "wk", "rs", "rs", "rs"],
+        "skills": {
+            "Freidyne": 0,
+            "Lullaby": 0,
+            "Mafreidyne": 58,
+            "Makara Break": 0,
+            "Mediarahan": 61,
+            "Nuclear Amp": 60
+        }
+    },
+    "Trumpeter": {
+        "arcana": "Judgement",
+        "level": 59,
+        "stats": ["33", "42", "40", "38", "31"],
+        "elems": ["-", "-", "-", "ab", "rp", "-", "-", "-", "rp", "nu"],
+        "skills": {
+            "Banishing Wave": 0,
+            "Brain Buster": 0,
+            "Cool Breeze": 64,
+            "Debilitate": 65,
+            "Mafreidyne": 0,
+            "Resist Ailment": 61,
+            "Weak Spot Aim": 62
+        }
+    },
+    "Tsukiyomi": {
+        "arcana": "Moon",
+        "level": 50,
+        "stats": ["38", "32", "33", "37", "17"],
+        "elems": ["rs", "-", "-", "-", "-", "-", "-", "wk", "rs", "rp"],
+        "skills": {
+            "Absorb Curse": 0,
+            "Arms Master": 56,
+            "Bloodsuck": 0,
+            "Curse Amp": 53,
+            "Purgatorial Wing": 0,
+            "Rainy Death": 0,
+            "Vorpal Blade": 55
+        }
+    },
+    "Tsukiyomi Picaro": {
+        "arcana": "Moon",
+        "level": 55,
+        "stats": ["41", "35", "36", "40", "20"],
+        "elems": ["rs", "-", "-", "-", "-", "-", "-", "wk", "rs", "rp"],
+        "skills": {
+            "Absorb Curse": 0,
+            "Curse Amp": 58,
+            "Purgatorial Wing": 0,
+            "Rainy Death": 0,
+            "Spell Master": 61,
+            "Spirit Drain": 0,
+            "Vorpal Blade": 60
+        }
+    },
+    "Unicorn": {
+        "arcana": "Hierophant",
+        "level": 39,
+        "stats": ["20", "27", "25", "28", "24"],
+        "elems": ["-", "-", "-", "nu", "-", "-", "rs", "-", "nu", "wk"],
+        "skills": {
+            "Assault Dive": 0,
+            "Dekunda": 0,
+            "Hamaon": 44,
+            "Kouga": 43,
+            "Mahama": 0,
+            "Samarecarm": 41,
+            "Swift Strike": 42
+        },
+        "personality": "Unknown"
+    },
+    "Uriel": {
+        "arcana": "Justice",
+        "level": 81,
+        "stats": ["50", "54", "49", "55", "42"],
+        "elems": ["-", "-", "nu", "-", "-", "-", "-", "ab", "rp", "-"],
+        "skills": {
+            "Angelic Grace": 85,
+            "Bloodbath": 0,
+            "Deathbound": 0,
+            "Megidolaon": 84,
+            "Rainy Death": 0,
+            "Repel Nuclear": 83,
+            "Spell Master": 86
+        }
+    },
+    "Valkyrie": {
+        "arcana": "Strength",
+        "level": 44,
+        "stats": ["33", "24", "28", "29", "25"],
+        "elems": ["-", "rs", "-", "-", "-", "-", "-", "-", "nu", "-"],
+        "skills": {
+            "Attack Master": 45,
+            "Counterstrike": 0,
+            "Deathbound": 46,
+            "Dodge Physical": 49,
+            "Matarukaja": 47,
+            "Rising Slash": 0
+        }
+    },
+    "Vasuki": {
+        "arcana": "Hanged Man",
+        "level": 68,
+        "stats": ["41", "46", "45", "42", "37"],
+        "elems": ["-", "-", "-", "nu", "nu", "-", "-", "-", "-", "wk"],
+        "skills": {
+            "Brain Jack": 0,
+            "Brainwash Boost": 72,
+            "Evade Wind": 70,
+            "Mahamaon": 0,
+            "Makarakarn": 73,
+            "Trigger Happy": 71,
+            "Triple Down": 0
+        }
+    },
+    "Vishnu": {
+        "arcana": "Fool",
+        "level": 83,
+        "stats": ["56", "51", "49", "57", "43"],
+        "elems": ["-", "-", "wk", "ab", "-", "-", "-", "-", "nu", "nu"],
+        "skills": {
+            "Ali Dance": 0,
+            "Magarudyne": 0,
+            "Megidolaon": 0,
+            "Power Charge": 86,
+            "Repel Fire": 87,
+            "Riot Gun": 90,
+            "Vacuum Wave": 85,
+            "Wind Amp": 88
+        }
+    },
+    "White Rider": {
+        "arcana": "Chariot",
+        "level": 39,
+        "stats": ["24", "24", "25", "26", "25"],
+        "elems": ["-", "-", "nu", "wk", "-", "-", "-", "-", "nu", "rp"],
+        "skills": {
+            "Ailment Boost": 45,
+            "Devil Touch": 0,
+            "Foul Breath": 44,
+            "Maeiga": 42,
+            "Masukukaja": 43,
+            "Oni Kagura": 0,
+            "Sharpshooter": 41,
+            "Triple Down": 0
+        }
+    },
+    "Yaksini": {
+        "arcana": "Empress",
+        "level": 20,
+        "stats": ["14", "11", "13", "16", "13"],
+        "elems": ["-", "-", "-", "rs", "-", "-", "-", "wk", "-", "-"],
+        "skills": {
+            "Attack Master": 23,
+            "Counter": 0,
+            "Hysterical Slap": 0,
+            "Oni Kagura": 22,
+            "Vicious Strike": 24,
+            "Wage War": 0
+        },
+        "personality": "Irritable"
+    },
+    "Yamata no Orochi": {
+        "arcana": "Judgement",
+        "level": 64,
+        "stats": ["44", "38", "48", "36", "33"],
+        "elems": ["-", "-", "-", "nu", "-", "-", "-", "wk", "-", "rs"],
+        "skills": {
+            "Adverse Resolve": 67,
+            "Deathbound": 0,
+            "Mabufudyne": 0,
+            "Oni Kagura": 0,
+            "Repel Fire": 66,
+            "Unshaken Will": 69
+        }
+    },
+    "Yatagarasu": {
+        "arcana": "Sun",
+        "level": 57,
+        "stats": ["35", "41", "30", "40", "32"],
+        "elems": ["-", "-", "-", "-", "-", "rs", "-", "-", "nu", "wk"],
+        "skills": {
+            "Agidyne": 0,
+            "Dekunda": 0,
+            "Makara Break": 0,
+            "Mediarahan": 59,
+            "Null Wind": 62,
+            "Pressing Stance": 60,
+            "Wind Break": 61
+        }
+    },
+    "Yoshitsune": {
+        "arcana": "Tower",
+        "level": 79,
+        "stats": ["58", "47", "45", "53", "41"],
+        "elems": ["nu", "-", "rs", "-", "rp", "-", "-", "-", "rp", "-"],
+        "skills": {
+            "Brave Blade": 0,
+            "Electric Amp": 84,
+            "Fast Heal": 82,
+            "Hassou Tobi": 86,
+            "Power Charge": 0,
+            "Pressing Stance": 81,
+            "Ziodyne": 0
+        }
+    },
+    "Yurlungur": {
+        "arcana": "Sun",
+        "level": 42,
+        "stats": ["26", "29", "28", "27", "23"],
+        "elems": ["-", "-", "-", "-", "nu", "-", "wk", "-", "rs", "-"],
+        "skills": {
+            "Brain Jack": 0,
+            "Electric Boost": 48,
+            "Electric Break": 45,
+            "Mazionga": 0,
+            "Megido": 0,
+            "Revolution": 44,
+            "Tetra Break": 47
+        }
+    },
+    "Zaou-Gongen": {
+        "arcana": "Strength",
+        "level": 80,
+        "stats": ["57", "45", "50", "56", "39"],
+        "elems": ["-", "-", "rp", "-", "wk", "-", "-", "-", "nu", "nu"],
+        "skills": {
+            "Banishing Wave": 0,
+            "Enduring Soul": 83,
+            "Evade Physical": 82,
+            "God's Hand": 0,
+            "Incineration": 86,
+            "Maragidyne": 0,
+            "Weak Spot Aim": 84
+        }
+    },
+    "Zouchouten": {
+        "arcana": "Strength",
+        "level": 31,
+        "stats": ["22", "19", "24", "18", "17"],
+        "elems": ["rs", "-", "-", "-", "-", "wk", "-", "-", "-", "-"],
+        "skills": {
+            "Attack Master": 36,
+            "Sharp Student": 33,
+            "Giant Slice": 0,
+            "Resist Fear": 34,
+            "Swift Strike": 35,
+            "Terror Claw": 32,
+            "Zionga": 0
+        }
+    }
+};

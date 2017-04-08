@@ -1,4 +1,5 @@
 ///<reference path="FusionCalculator.ts"/>
+///<reference path="../data/Compendium.ts"/>
 /**
  * Created by Chin on 08-Apr-17.
  */
@@ -16,6 +17,12 @@ var CalcCtrl = (function () {
             recipe.num = i;
             this.maxCost = Math.max(this.maxCost, recipe.cost);
         }
+        var compediumEntry = compendium[this.params.persona_name];
+        this.persona.stats = compediumEntry.stats;
+        this.persona.statsHeader = ["Strength", "Magic", "Endurance", "Agility", "Luck"];
+        this.persona.elems = this.getElems(this.params.persona_name);
+        this.persona.elemsHeader = ["Physical", "Gun", "Fire", "Ice", "Electric", "Wind", "Psychic", "Nuclear", "Bless", "Curse"];
+        this.persona.skills = compediumEntry.skills;
         this.perPage = 100;
         this.lastPage = Math.floor(this.allRecipes.length / this.perPage);
         this.pageNum = 0;
@@ -35,6 +42,22 @@ var CalcCtrl = (function () {
         this.allRecipes.push(recipe);
     };
     ;
+    CalcCtrl.prototype.getElems = function (personaName) {
+        var elems = compendium[personaName].elems;
+        for (var i = 0; i < elems.length; i++) {
+            if (elems[i] == 'wk')
+                elems[i] = 'Weak';
+            else if (elems[i] == 'rs')
+                elems[i] = 'Resist';
+            else if (elems[i] == 'ab')
+                elems[i] = 'Absorb';
+            else if (elems[i] == 'rp')
+                elems[i] = 'Repel';
+            else if (elems[i] == 'nu')
+                elems[i] = 'Null';
+        }
+        return elems;
+    };
     CalcCtrl.prototype.getRecipes = function () {
         if (this.persona.rare) {
             var recipe = { 'sources': [] };

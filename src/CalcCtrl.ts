@@ -1,4 +1,5 @@
 ///<reference path="FusionCalculator.ts"/>
+///<reference path="../data/Compendium.ts"/>
 declare var angular;
 
 /**
@@ -33,6 +34,13 @@ class CalcCtrl {
             this.maxCost = Math.max(this.maxCost, recipe.cost);
         }
 
+        let compediumEntry = compendium[this.params.persona_name];
+        this.persona.stats = compediumEntry.stats;
+        this.persona.statsHeader = ["Strength", "Magic", "Endurance", "Agility", "Luck"];
+        this.persona.elems = this.getElems(this.params.persona_name);
+        this.persona.elemsHeader = ["Physical", "Gun", "Fire", "Ice", "Electric", "Wind", "Psychic", "Nuclear", "Bless", "Curse"];
+        this.persona.skills = compediumEntry.skills;
+
         this.perPage = 100;
         this.lastPage = Math.floor(this.allRecipes.length / this.perPage);
         this.pageNum = 0;
@@ -53,6 +61,18 @@ class CalcCtrl {
         recipe.sources = angular.Array.orderBy(recipe.sources, ['-level', getRank]);
         this.allRecipes.push(recipe);
     };
+
+    getElems(personaName: string) {
+        let elems = compendium[personaName].elems;
+        for (let i = 0; i < elems.length; i++) {
+            if (elems[i] == 'wk') elems[i] = 'Weak';
+            else if (elems[i] == 'rs') elems[i] = 'Resist';
+            else if (elems[i] == 'ab') elems[i] = 'Absorb';
+            else if (elems[i] == 'rp') elems[i] = 'Repel';
+            else if (elems[i] == 'nu') elems[i] = 'Null';
+        }
+        return elems;
+    }
 
     getRecipes() {
         if (this.persona.rare) {
