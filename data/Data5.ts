@@ -1,4 +1,4 @@
-var personae = [
+const personae = [
   {"arcana": "Fool",       "level": 1,  "name": "Arsène"             },
   {"arcana": "Fool",       "level": 8,  "name": "Obariyon"           },
   {"arcana": "Fool",       "level": 16, "name": "High Pixie"         },
@@ -211,8 +211,9 @@ var personae = [
   {"arcana": "Judgement",  "level": 92, "name": "Satan",             'max': true }
 ];
 
-var rarePersonae = ["Regent", "Queen's Necklace", "Stone of Scone", "Koh-i-Noor", "Orlov", "Emperor's Amulet", "Hope Diamond", "Crystal Skull"];
-var rareCombos = {
+const rarePersonae = ["Regent", "Queen's Necklace", "Stone of Scone", "Koh-i-Noor", "Orlov", "Emperor's Amulet", "Hope Diamond", "Crystal Skull"];
+
+const rareCombos = {
   "Fool":       [-1, +1, -1, +1, -1, -1, +1, +2],
   "Magician":   [+1, -1, +2, -1, +1, +1, +1, +1],
   "Priestess":  [-1, +1, -1, +2, +1, -1, +1, +1],
@@ -236,7 +237,7 @@ var rareCombos = {
   "Judgement":  [-1, -1, +1, -1, +1, +1, -1, -1]
 };
 
-var arcana2Combos = [
+const arcana2Combos = [
     {'source': ['Fool',       'Fool'        ], 'result': 'Fool'        },
     {'source': ['Fool',       'Magician'    ], 'result': 'Death'       },
     {'source': ['Fool',       'Priestess'   ], 'result': 'Moon'        },
@@ -470,7 +471,7 @@ var arcana2Combos = [
     {'source': ['Judgement',  'Judgement'   ], 'result': 'Judgement'   }
 ];
 
-var specialCombos = [
+const specialCombos = [
     {'result': 'Alice', 'sources': ['Nebiros', 'Belial']},
     {'result': 'Ardha', 'sources': ['Parvati', 'Shiva']},
     {'result': 'Asura-Ou', 'sources': ['Zouchouten', 'Jikokuten', 'Koumokuten', 'Bishamonten']},
