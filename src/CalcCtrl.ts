@@ -1,5 +1,6 @@
 ///<reference path="FusionCalculator.ts"/>
 ///<reference path="../data/Compendium.ts"/>
+///<reference path="../data/SkillData.ts"/>
 declare var angular;
 
 /**
@@ -40,7 +41,6 @@ class CalcCtrl {
         this.persona.elems = this.getElems(this.params.persona_name);
         this.persona.elemsHeader = ["Physical", "Gun", "Fire", "Ice", "Electric", "Wind", "Psychic", "Nuclear", "Bless", "Curse"];
         this.persona.skills = this.getSkills(this.params.persona_name);
-        this.persona.skillsHeader = ["Level", "Skill"];
 
         this.perPage = 100;
         this.lastPage = Math.floor(this.allRecipes.length / this.perPage);
@@ -77,16 +77,46 @@ class CalcCtrl {
 
     getSkills(personaName: string) {
         let skills = compendium[personaName].skills;
-        var sortable = [];
+        var sorted = [];
         for (var name in skills) {
-            sortable.push([name, skills[name]]);
+            sorted.push([name, skills[name]]);
         }
 
-        sortable.sort(function(a, b) {
+        sorted.sort(function(a, b) {
             return a[1] - b[1];
         });
 
-        return sortable;
+        let resSkills = [];
+        for (var i = 0; i < sorted.length; i++) {
+            let skillData = FULL_SKILLS[sorted[i][0]];
+            resSkills.push({
+                name: sorted[i][0],
+                level: sorted[i][1],
+                description: skillData.effect,
+                elem: this.capitalizeFirstLetter(skillData.element),
+                cost: this.getSkillCost(skillData)
+            })
+        }
+
+        return resSkills;
+    }
+
+    capitalizeFirstLetter(s: string) {
+        return s.charAt(0).toUpperCase() + s.slice(1);
+    }
+
+    getSkillCost(skill) {
+        if (skill.element != 'passive') {
+            if (skill.cost < 100) {
+                return String(skill.cost) + '% HP'
+            }
+            else {
+                return String(skill.cost / 100) + ' SP';
+            }
+        }
+        else {
+            return "-"
+        }
     }
 
     getRecipes() {

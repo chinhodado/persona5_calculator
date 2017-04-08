@@ -25,11 +25,14 @@
     <h3>Skills</h3>
     <table id="skillTable" class="infoTable">
         <tr>
-            <th ng:repeat="s in persona.skillsHeader">{{s}}</th>
+            <th>Level</th><th>Type</th><th>Name</th><th>Effect</th><th>Cost</th>
         </tr>
         <tr ng:repeat="skill in persona.skills">
-            <td>{{skill[1]}}</td>
-            <td>{{skill[0]}}</td>
+            <td>{{skill.level}}</td>
+            <td>{{skill.elem}}</td>
+            <td>{{skill.name}}</td>
+            <td>{{skill.description}}</td>
+            <td>{{skill.cost}}</td>
         </tr>
     </table>
 
