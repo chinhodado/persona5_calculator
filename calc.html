@@ -1,56 +1,77 @@
 <p ng:hide="allRecipes">"{{params.persona_name}}" not found!</p>
 <div ng:show="allRecipes">
-<p>
-<label>Filter: <input type="text" size="30" name="filter"></label>
-<button ng:click="filter = ''">Clear</button>
-</p>
-  <h2>{{params.persona_name}} ({{persona.level}} / {{persona.arcana}})</h2>
-  <div id="infoDiv">
+    <p>
+        <label>Filter: <input type="text" size="30" name="filter"></label>
+        <button ng:click="filter = ''">Clear</button>
+    </p>
+    <h2>{{params.persona_name}} ({{persona.level}} / {{persona.arcana}})</h2>
+
     <h3>Stats</h3>
     <table id="statsTable" class="infoTable">
-      <tr><th ng:repeat="s in persona.statsHeader">{{s}}</th></tr>
-      <tr><td ng:repeat="i in persona.stats">{{i}}</td></tr>
+        <tr>
+            <th ng:repeat="s in persona.statsHeader">{{s}}</th>
+        </tr>
+        <tr>
+            <td ng:repeat="i in persona.stats">{{i}}</td>
+        </tr>
     </table>
 
     <h3>Elementals</h3>
     <table id="elemsTable" class="infoTable">
-      <tr><th ng:repeat="s in persona.elemsHeader">{{s}}</th></tr>
-      <tr><td ng:repeat="s in persona.elems">{{s}}</td></tr>
+        <tr>
+            <th ng:repeat="s in persona.elemsHeader">{{s}}</th>
+        </tr>
+        <tr>
+            <td ng:repeat="s in persona.elems">{{s}}</td>
+        </tr>
     </table>
-  </div>
 
-<div class="caption">
-  {{numRecipes}} Recipes - {{persona.name}} ({{persona.level}} / {{persona.arcana}})
-  <div>
-    <span style='color: red;' ng:show='persona.max'>Social link must be maxed!</span>
-    <span style='color: slateblue;' ng:show='persona.item'>Requires an item from one of Elizabeth's requests!</span>
-    <span style='color: slateblue;' ng:show='persona.rare'>This is a rare persona and cannot be fused!</span>
-    <span style='color: slateblue;' ng:show='persona.note'>{{persona.note}}</span>
-    <span style='color: slateblue;' ng:show='persona.dlc'>This is a DLC persona!</span>
-  </div>
-  <div class="pagination" ng:show="numRecipes > perPage">
-    <span ng:click="pageNum = 0">&#x25c4;<span style="position: relative; left: -0.4em;">&#x25c4;</span></span>
-    <span ng:click="pageNum = pageNum - 1">&#x25c4;</span>
-    Page {{pageNum + 1}} / {{ceil(numRecipes / perPage)}}
-    <span ng:click="pageNum = pageNum + 1">&#x25ba;</span>
-    <span ng:click="pageNum = lastPage"><span style="position: relative; right: -0.4em;">&#x25ba;</span>&#x25ba;</span>
-  </div>
-</div>
-<table id="recipes">
-<thead>
-  <th>#</th>
-  <th>Cost</th>
-  <th colspan="6">Ingredients</th>
-</thead>
-<tbody>
-  <tr ng:repeat="recipe in recipes">
-    <td>{{recipe.num + 1}}</td>
-    <td>{{recipe.cost | number}} ¥</td>
-    <td ng:repeat="persona in recipe.sources">
-      <a href='#/persona/{{persona.name}}'>{{persona.name}}</a>
-      ({{persona.level}} / {{persona.arcana}})
-    </td>
-  </tr>
-</tbody>
-</table>
+    <h3>Skills</h3>
+    <table id="skillTable" class="infoTable">
+        <tr>
+            <th ng:repeat="s in persona.skillsHeader">{{s}}</th>
+        </tr>
+        <tr ng:repeat="skill in persona.skills">
+            <td>{{skill[1]}}</td>
+            <td>{{skill[0]}}</td>
+        </tr>
+    </table>
+
+    <h3>Fusion ({{numRecipes}} Recipes)</h3>
+    <div class="caption">
+        <div class="pagination" ng:show="numRecipes > perPage">
+            <span ng:click="pageNum = 0">&#x25c4;<span style="position: relative; left: -0.4em;">&#x25c4;</span></span>
+            <span ng:click="pageNum = pageNum - 1">&#x25c4;</span>
+            Page {{pageNum + 1}} / {{ceil(numRecipes / perPage)}}
+            <span ng:click="pageNum = pageNum + 1">&#x25ba;</span>
+            <span ng:click="pageNum = lastPage"><span style="position: relative; right: -0.4em;">&#x25ba;</span>&#x25ba;</span>
+        </div>
+    </div>
+
+    <table id="recipes">
+        <thead>
+        <th>#</th>
+        <th>Cost</th>
+        <th colspan="6">Ingredients</th>
+        </thead>
+        <tbody>
+        <tr ng:repeat="recipe in recipes">
+            <td>{{recipe.num + 1}}</td>
+            <td>{{recipe.cost | number}} ¥</td>
+            <td ng:repeat="persona in recipe.sources">
+                <a href='#/persona/{{persona.name}}'>{{persona.name}}</a>
+                ({{persona.level}} / {{persona.arcana}})
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <div ng:show='persona.max || persona.item || persona.rare || persona.note || persona.dlc'>
+        <h3>Note</h3>
+        <span style='color: red;' ng:show='persona.max'>Social link must be maxed!</span>
+        <span style='color: slateblue;' ng:show='persona.item'>Requires an item from one of Elizabeth's requests!</span>
+        <span style='color: slateblue;' ng:show='persona.rare'>This is a rare persona and cannot be fused!</span>
+        <span style='color: slateblue;' ng:show='persona.note'>{{persona.note}}</span>
+        <span style='color: slateblue;' ng:show='persona.dlc'>This is a DLC persona!</span>
+    </div>
 </div>

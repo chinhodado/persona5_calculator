@@ -22,7 +22,8 @@ var CalcCtrl = (function () {
         this.persona.statsHeader = ["Strength", "Magic", "Endurance", "Agility", "Luck"];
         this.persona.elems = this.getElems(this.params.persona_name);
         this.persona.elemsHeader = ["Physical", "Gun", "Fire", "Ice", "Electric", "Wind", "Psychic", "Nuclear", "Bless", "Curse"];
-        this.persona.skills = compediumEntry.skills;
+        this.persona.skills = this.getSkills(this.params.persona_name);
+        this.persona.skillsHeader = ["Level", "Skill"];
         this.perPage = 100;
         this.lastPage = Math.floor(this.allRecipes.length / this.perPage);
         this.pageNum = 0;
@@ -57,6 +58,17 @@ var CalcCtrl = (function () {
                 elems[i] = 'Null';
         }
         return elems;
+    };
+    CalcCtrl.prototype.getSkills = function (personaName) {
+        var skills = compendium[personaName].skills;
+        var sortable = [];
+        for (var name in skills) {
+            sortable.push([name, skills[name]]);
+        }
+        sortable.sort(function (a, b) {
+            return a[1] - b[1];
+        });
+        return sortable;
     };
     CalcCtrl.prototype.getRecipes = function () {
         if (this.persona.rare) {
