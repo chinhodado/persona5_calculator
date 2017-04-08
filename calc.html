@@ -1,9 +1,5 @@
 <p ng:hide="allRecipes">"{{params.persona_name}}" not found!</p>
 <div ng:show="allRecipes">
-    <p>
-        <label>Filter: <input type="text" size="30" name="filter"></label>
-        <button ng:click="filter = ''">Clear</button>
-    </p>
     <h2>{{params.persona_name}} ({{persona.level}} / {{persona.arcana}})</h2>
 
     <h3>Stats</h3>
@@ -47,6 +43,11 @@
             <span ng:click="pageNum = lastPage"><span style="position: relative; right: -0.4em;">&#x25ba;</span>&#x25ba;</span>
         </div>
     </div>
+
+    <p>
+        <label>Filter: <input type="text" size="30" name="filter"></label>
+        <button ng:click="filter = ''">Clear</button>
+    </p>
 
     <table id="recipes">
         <thead>
