@@ -5,7 +5,9 @@
 var PersonaListController = (function () {
     function PersonaListController($scope, $routeParams) {
         $scope.personae = personae;
-        $scope.sortBy = $routeParams.sort_by || 'level';
+        // set the default sort param
+        $scope.sortBy = 'level';
+        $scope.reverse = false;
     }
     return PersonaListController;
 }());
