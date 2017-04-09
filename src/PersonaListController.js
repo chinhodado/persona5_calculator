@@ -2,10 +2,10 @@
 /**
  * Created by Chin on 08-Apr-17.
  */
-var ListCtrl = (function () {
-    function ListCtrl($scope, $routeParams) {
+var PersonaListController = (function () {
+    function PersonaListController($scope, $routeParams) {
         $scope.personae = personae;
         $scope.sortBy = $routeParams.sort_by || 'level';
     }
-    return ListCtrl;
+    return PersonaListController;
 }());

@@ -3,7 +3,7 @@
 /**
  * Created by Chin on 08-Apr-17.
  */
-class ListCtrl {
+class PersonaListController {
     constructor($scope, $routeParams) {
         $scope.personae = personae;
         $scope.sortBy = $routeParams.sort_by || 'level';

@@ -4,8 +4,8 @@
 /**
  * Created by Chin on 08-Apr-17.
  */
-var CalcCtrl = (function () {
-    function CalcCtrl($scope, $routeParams, $filter) {
+var PersonaController = (function () {
+    function PersonaController($scope, $routeParams, $filter) {
         var personaName = $routeParams.persona_name;
         this.$filter = $filter;
         this.$scope = $scope;
@@ -34,7 +34,7 @@ var CalcCtrl = (function () {
         this.$scope.$watch('filterStr', this.paginateAndFilter.bind(this));
         this.$scope.$watch('pageNum', this.paginateAndFilter.bind(this), false);
     }
-    CalcCtrl.prototype.addRecipe = function (recipe) {
+    PersonaController.prototype.addRecipe = function (recipe) {
         recipe.cost = 0;
         for (var i = 0, source = null; source = recipe.sources[i]; i++) {
             var level = source.level;
@@ -47,7 +47,7 @@ var CalcCtrl = (function () {
         this.$scope.allRecipes.push(recipe);
     };
     ;
-    CalcCtrl.prototype.getElems = function (personaName) {
+    PersonaController.prototype.getElems = function (personaName) {
         var elems = compendium[personaName].elems;
         for (var i = 0; i < elems.length; i++) {
             if (elems[i] == 'wk')
@@ -63,7 +63,7 @@ var CalcCtrl = (function () {
         }
         return elems;
     };
-    CalcCtrl.prototype.getSkills = function (personaName) {
+    PersonaController.prototype.getSkills = function (personaName) {
         var skills = compendium[personaName].skills;
         var sorted = [];
         for (var name_1 in skills) {
@@ -87,10 +87,10 @@ var CalcCtrl = (function () {
         }
         return resSkills;
     };
-    CalcCtrl.prototype.capitalizeFirstLetter = function (s) {
+    PersonaController.prototype.capitalizeFirstLetter = function (s) {
         return s.charAt(0).toUpperCase() + s.slice(1);
     };
-    CalcCtrl.prototype.getSkillCost = function (skill) {
+    PersonaController.prototype.getSkillCost = function (skill) {
         if (skill.element != 'passive') {
             if (skill.cost < 100) {
                 return String(skill.cost) + '% HP';
@@ -103,7 +103,7 @@ var CalcCtrl = (function () {
             return "-";
         }
     };
-    CalcCtrl.prototype.getRecipes = function () {
+    PersonaController.prototype.getRecipes = function () {
         if (this.$scope.persona.rare) {
             var recipe = { 'sources': [] };
             this.addRecipe(recipe);
@@ -138,7 +138,7 @@ var CalcCtrl = (function () {
         }
     };
     ;
-    CalcCtrl.prototype.getArcanaRecipes = function (arcanaName, filterCallback) {
+    PersonaController.prototype.getArcanaRecipes = function (arcanaName, filterCallback) {
         var recipes = [];
         var combos = arcana2Combos.filter(function (x) { return x.result == arcanaName; });
         for (var i = 0, combo = null; combo = combos[i]; i++) {
@@ -187,7 +187,7 @@ var CalcCtrl = (function () {
      * Note: this can the scope that is passed in, or this.$scope.
      * Using the passed in scope for brevity.
      */
-    CalcCtrl.prototype.paginateAndFilter = function (newVal, oldVal, scope) {
+    PersonaController.prototype.paginateAndFilter = function (newVal, oldVal, scope) {
         if (scope.pageNum < 0)
             scope.pageNum = 0;
         if (scope.pageNum > scope.lastPage)
@@ -202,5 +202,5 @@ var CalcCtrl = (function () {
         scope.recipes = scope.recipes.slice(scope.pageNum * scope.perPage, scope.pageNum * scope.perPage + scope.perPage);
     };
     ;
-    return CalcCtrl;
+    return PersonaController;
 }());

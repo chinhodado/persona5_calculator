@@ -5,7 +5,7 @@
 /**
  * Created by Chin on 08-Apr-17.
  */
-class CalcCtrl {
+class PersonaController {
     $scope;
     $filter;
 
