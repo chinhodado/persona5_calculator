@@ -115,8 +115,6 @@ class PersonaController {
 
     getRecipes() {
         if (this.$scope.persona.rare) {
-            let recipe = {'sources': []};
-            this.addRecipe(recipe);
             return;
         }
 

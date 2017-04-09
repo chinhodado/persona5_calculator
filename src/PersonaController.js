@@ -103,8 +103,6 @@ var PersonaController = (function () {
     };
     PersonaController.prototype.getRecipes = function () {
         if (this.$scope.persona.rare) {
-            var recipe = { 'sources': [] };
-            this.addRecipe(recipe);
             return;
         }
         // Check special recipes.
