@@ -1,0 +1,50 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin);
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover, a:visited:hover {
+    text-decoration: underline;
+}
+
+a, a:visited {
+    color: #000;
+}
+
+.category_totals, .td1, .td2, #grand_totals, #copyright {
+    border-width: 0;
+    padding: 2px;
+}
+
+#list td, #list td:HOVER {
+    border-width: 0;
+}
+
+.category_totals:HOVER, .td1:HOVER, .td2:HOVER, #grand_totals:HOVER, #copyright:HOVER {
+    border-width: 0;
+    padding: 2px;
+}
+
+tr:hover td {
+    background: rgba(64, 46, 24, 0.1);
+}
+
+tr:hover td:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+tr:hover td:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
