@@ -1,10 +1,9 @@
-///<reference path="../data/Data5.ts"/>
 /**
  * Created by Chin on 08-Apr-17.
  */
 var PersonaListController = (function () {
-    function PersonaListController($scope, $routeParams) {
-        $scope.personae = personae;
+    function PersonaListController($scope) {
+        $scope.personaList = personaList;
         // set the default sort param
         $scope.sortBy = 'level';
         $scope.reverse = false;

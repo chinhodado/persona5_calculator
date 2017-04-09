@@ -1,3 +1,4 @@
+<meta charset="utf8">
 <style>
     pre {
         white-space: pre-wrap;
@@ -8,18 +9,30 @@
 <script src="../DataUtil.js"></script>
 <pre id="result"></pre>
 <script>
-    var converted = {};
-    for (var key in _FULL_COMPENDIUM) {
-        if (_FULL_COMPENDIUM.hasOwnProperty(key)) {
-            var personaName = key;
-            var data = _FULL_COMPENDIUM[key];
-            var persona = {
-                arcana: data.arcana,
-                level: data.lvl,
-                stats: [data.st, data.ma, data.en, data.ag, data.lu],
-                elems: [data.phys, data.gun, data.fire, data.ice, data.electric, data.wind, data.psy, data.nuclear, data.bless, data.curse],
-                skills: data.skills,
-                personality: data.personality,
+    // NOTE: this file was used with the persona data in Data5.ts. Since that data has been merged with the data
+    // in srcCompendium.js, this file is no longer usable.
+
+    function merge() {
+        var converted = {};
+
+        // data5
+        var personaeByName_ = {};
+        for (var i = 0, tmp = null; tmp = personae[i]; i++) {
+            personaeByName_[tmp.name] = tmp;
+        }
+
+        for (var key in _FULL_COMPENDIUM) {
+            if (_FULL_COMPENDIUM.hasOwnProperty(key)) {
+                var personaName = key;
+                var data = _FULL_COMPENDIUM[key];
+                var data5 = personaeByName_[key];
+                var persona = {
+                    arcana: data.arcana,
+                    level: data.lvl,
+                    stats: [+data.st, +data.ma, +data.en, +data.ag, +data.lu],
+                    elems: [data.phys, data.gun, data.fire, data.ice, data.electric, data.wind, data.psy, data.nuclear, data.bless, data.curse],
+                    skills: data.skills,
+                    personality: data.personality,
 
 // unused
 //                drop: data.drop,
@@ -27,11 +40,21 @@
 //                notes: data.notes,
 //                shadow: data.shadow,
 //                negotiations: data.negotiations
-            };
-            converted[key] = persona;
+                };
+
+                if (data5.dlc) persona.dlc = data5.dlc;
+                if (data5.special) persona.special = data5.special;
+                if (data5.note) persona.note = data5.note;
+                if (data5.rare) persona.rare = data5.rare;
+                if (data5.max) persona.max = data5.max;
+
+                converted[key] = persona;
+            }
         }
+        document.getElementById("result").innerHTML = JSON.stringify(converted);
     }
-    document.getElementById("result").innerHTML = JSON.stringify(converted);
+
+    merge();
 
     function compareSources() {
         for (var key in _FULL_COMPENDIUM) {

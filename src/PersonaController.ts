@@ -1,5 +1,5 @@
 ///<reference path="FusionCalculator.ts"/>
-///<reference path="../data/Compendium.ts"/>
+///<reference path="../data/PersonaData.ts"/>
 ///<reference path="../data/SkillData.ts"/>
 
 /**
@@ -16,7 +16,7 @@ class PersonaController {
         this.$scope.Math = Math;
 
         this.$scope.personaName = personaName;
-        this.$scope.persona = personaeByName[personaName];
+        this.$scope.persona = personaMap[personaName];
         if (!this.$scope.persona) return;
 
         this.$scope.allRecipes = [];
@@ -28,7 +28,7 @@ class PersonaController {
             this.$scope.maxCost = Math.max(this.$scope.maxCost, recipe.cost);
         }
 
-        let compediumEntry = compendium[personaName];
+        let compediumEntry = personaMap[personaName];
         this.$scope.persona.stats = compediumEntry.stats;
         this.$scope.persona.statsHeader = ["Strength", "Magic", "Endurance", "Agility", "Luck"];
         this.$scope.persona.elems = this.getElems(personaName);
@@ -58,7 +58,7 @@ class PersonaController {
     }
 
     getElems(personaName: string) {
-        let elems = compendium[personaName].elems;
+        let elems = personaMap[personaName].elems;
         for (let i = 0; i < elems.length; i++) {
             if (elems[i] == 'wk') elems[i] = 'Weak';
             else if (elems[i] == 'rs') elems[i] = 'Resist';
@@ -70,7 +70,7 @@ class PersonaController {
     }
 
     getSkills(personaName: string) {
-        let skills = compendium[personaName].skills;
+        let skills = personaMap[personaName].skills;
         let sorted = [];
         for (let name in skills) {
             if (skills.hasOwnProperty(name)) {
@@ -128,7 +128,7 @@ class PersonaController {
                 if (this.$scope.persona.name == combo.result) {
                     let recipe = {'sources': []};
                     for (let j = 0, source = null; source = combo.sources[j]; j++) {
-                        recipe.sources.push(personaeByName[source]);
+                        recipe.sources.push(personaMap[source]);
                     }
                     this.addRecipe(recipe);
                     return;
@@ -174,7 +174,7 @@ class PersonaController {
         }
 
         for (let i = 0; i < rarePersonae.length; i++) {
-            let rarePersona = personaeByName[rarePersonae[i]];
+            let rarePersona = personaMap[rarePersonae[i]];
             let personae = personaeByArcana[this.$scope.persona.arcana];
             for (let j = 0; j < personae.length; j++) {
                 let mainPersona = personae[j];

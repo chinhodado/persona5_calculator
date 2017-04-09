@@ -9,7 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.min.js"></script>
     <script src="data/Data5.js"></script>
-    <script src="data/Compendium.js"></script>
+    <script src="data/PersonaData.js"></script>
     <script src="data/SkillData.js"></script>
     <script src="src/DataUtil.js"></script>
     <script src="src/FusionCalculator.js"></script>
@@ -18,20 +18,24 @@
     <script src="src/App.js"></script>
     <script src="tests/FusionTest.js"></script>
     <style>
-        div.caption { text-align: center; width: 100%; }
-        td { padding: 0 0.25em; }
-        #list th { cursor: pointer; }
-        th { text-align: left; }
-        .pagination span { cursor: pointer; }
-
-        body {
-            padding-left: 200px;
+        #list th {
+            cursor: pointer;
+            padding: 5px;
         }
 
-        @media (max-width: 978px) {
-            body {
-                padding:0;
-            }
+        .pagination span {
+            cursor: pointer;
+        }
+
+        #content {
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        body {
+            text-align: center;
+            margin-top: 0;
+            margin-right: 0;
         }
 
         .infoTable, .infoTable th {
@@ -39,9 +43,27 @@
             text-align: center;
         }
 
+        .infoTable, #recipes {
+            margin: 0 auto;
+        }
+
+        #recipes {
+            text-align: left;
+        }
+
+        #recipes td, #recipes th {
+            padding-left: 3px;
+            padding-right: 3px;
+        }
+
         .infoTable th, .infoTable td {
             border: 1px solid black;
             padding: 3px;
+        }
+
+        caption {
+            font-size: large;
+            margin-bottom: 10px;
         }
     </style>
     <script>
@@ -56,12 +78,16 @@
     </script>
 </head>
 <body>
-    <a href="https://github.com/chinhodado/persona5_calculator">
-        <img style="position: absolute; top: 0; right: 0; border: 0;"
-             src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67"
-             alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png">
-    </a>
-    <a href="index.html">Persona 5 Fusion Calculator</a>
-    <ng-view ng-app="myModule"></ng-view>
+    <div style="position:relative; min-width:1080px; border: 0">
+        <a href="https://github.com/chinhodado/persona5_calculator">
+            <img style="position: absolute; top: 0; right: 0; border: 0;"
+                 src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67"
+                 alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png">
+        </a>
+    </div>
+    <div id="content">
+        <a href="index.html">Persona 5 Fusion Calculator</a>
+        <ng-view ng-app="myModule"></ng-view>
+    </div>
 </body>
 </html>

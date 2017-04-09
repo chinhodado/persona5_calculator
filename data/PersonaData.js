@@ -1,9 +1,9 @@
-// derived from https://github.com/aqiu384/aqiu384.github.io/blob/master/p5-tool/js/full_compendium.js
-var compendium = {
+// derived partly from https://github.com/aqiu384/aqiu384.github.io/blob/master/p5-tool/js/full_compendium.js
+var personaMap = {
     "Abaddon": {
         "arcana": "Judgement",
         "level": 74,
-        "stats": ["51", "38", "58", "43", "39"],
+        "stats": [51, 38, 58, 43, 39],
         "elems": ["ab", "ab", "-", "-", "-", "-", "wk", "wk", "-", "ab"],
         "skills": {
             "Absorb Phys": 79,
@@ -17,7 +17,7 @@ var compendium = {
     "Agathion": {
         "arcana": "Chariot",
         "level": 3,
-        "stats": ["4", "6", "9", "12", "3"],
+        "stats": [4, 6, 9, 12, 3],
         "elems": ["-", "rs", "-", "-", "rs", "wk", "-", "-", "-", "-"],
         "skills": { "Baisudi": 0, "Dia": 0, "Dodge Electric": 8, "Lunge": 4, "Rakukaja": 6, "Zio": 0 },
         "personality": "Timid"
@@ -25,7 +25,7 @@ var compendium = {
     "Alice": {
         "arcana": "Death",
         "level": 79,
-        "stats": ["43", "59", "40", "57", "45"],
+        "stats": [43, 59, 40, 57, 45],
         "elems": ["-", "-", "-", "-", "-", "-", "rs", "rs", "wk", "rp"],
         "skills": {
             "Dekunda": 0,
@@ -35,19 +35,21 @@ var compendium = {
             "Mind Charge": 83,
             "Mudo Boost": 0,
             "Survival Trick": 84
-        }
+        },
+        "special": true,
+        "max": true
     },
     "Ame no Uzume": {
         "arcana": "Lovers",
         "level": 29,
-        "stats": ["15", "22", "19", "20", "18"],
+        "stats": [15, 22, 19, 20, 18],
         "elems": ["-", "-", "ab", "-", "-", "-", "wk", "-", "-", "-"],
         "skills": { "Bufula": 0, "Diarama": 0, "Divine Grace": 32, "Mazio": 0, "Shock Boost": 34, "Tentarafoo": 31 }
     },
     "Ananta": {
         "arcana": "Star",
         "level": 43,
-        "stats": ["24", "30", "31", "26", "25"],
+        "stats": [24, 30, 31, 26, 25],
         "elems": ["-", "-", "-", "ab", "wk", "-", "-", "-", "-", "-"],
         "skills": {
             "Banishing Wave": 45,
@@ -63,7 +65,7 @@ var compendium = {
     "Andras": {
         "arcana": "Devil",
         "level": 10,
-        "stats": ["5", "9", "7", "10", "6"],
+        "stats": [5, 9, 7, 10, 6],
         "elems": ["-", "wk", "wk", "rs", "-", "-", "-", "-", "-", "-"],
         "skills": { "Apt Pupil": 13, "Bufu": 0, "Ice Break": 15, "Mabufu": 14, "Rakunda": 0, "Tarukaja": 11 },
         "personality": "Timid"
@@ -71,7 +73,7 @@ var compendium = {
     "Angel": {
         "arcana": "Justice",
         "level": 12,
-        "stats": ["7", "9", "9", "9", "9"],
+        "stats": [7, 9, 9, 9, 9],
         "elems": ["-", "-", "-", "-", "rs", "-", "-", "-", "nu", "wk"],
         "skills": { "Baisudi": 14, "Dazzler": 0, "Dekunda": 17, "Dia": 0, "Dodge Curseness": 15, "Hama": 0, "Kouha": 13 },
         "personality": "Irritable"
@@ -79,7 +81,7 @@ var compendium = {
     "Anubis": {
         "arcana": "Judgement",
         "level": 37,
-        "stats": ["23", "26", "24", "22", "23"],
+        "stats": [23, 26, 24, 22, 23],
         "elems": ["-", "-", "-", "-", "-", "-", "-", "-", "nu", "nu"],
         "skills": {
             "Dekunda": 40,
@@ -95,7 +97,7 @@ var compendium = {
     "Anzu": {
         "arcana": "Hierophant",
         "level": 25,
-        "stats": ["14", "18", "15", "21", "14"],
+        "stats": [14, 18, 15, 21, 14],
         "elems": ["-", "wk", "-", "-", "rs", "rp", "-", "wk", "-", "-"],
         "skills": { "Assault Dive": 27, "Dekaja": 28, "Garula": 0, "Masukukaja": 0, "Null Forget": 29, "Wind Break": 0 },
         "personality": "Irritable"
@@ -103,7 +105,7 @@ var compendium = {
     "Apsaras": {
         "arcana": "Priestess",
         "level": 11,
-        "stats": ["7", "11", "6", "10", "6"],
+        "stats": [7, 11, 6, 10, 6],
         "elems": ["-", "-", "-", "rs", "wk", "-", "-", "-", "-", "-"],
         "skills": { "Bufu": 0, "Electric Wall": 14, "Ice Wall": 0, "Media": 13, "Rebellion": 0, "Wind Wall": 16 },
         "personality": "Upbeat"
@@ -111,14 +113,14 @@ var compendium = {
     "Ara Mitama": {
         "arcana": "Chariot",
         "level": 31,
-        "stats": ["20", "19", "20", "20", "21"],
+        "stats": [20, 19, 20, 20, 21],
         "elems": ["rs", "-", "-", "wk", "-", "-", "-", "-", "-", "-"],
         "skills": { "Freila": 0, "Marakunda": 33, "Miracle Punch": 0, "Taunt": 0, "Rage Boost": 35, "Rebellion": 32 }
     },
     "Arahabaki": {
         "arcana": "Hermit",
         "level": 35,
-        "stats": ["21", "23", "22", "24", "22"],
+        "stats": [21, 23, 22, 24, 22],
         "elems": ["rp", "rp", "-", "-", "-", "-", "wk", "wk", "rs", "rs"],
         "skills": {
             "Banishing Wave": 0,
@@ -133,7 +135,7 @@ var compendium = {
     "Archangel": {
         "arcana": "Justice",
         "level": 16,
-        "stats": ["13", "10", "13", "12", "7"],
+        "stats": [13, 10, 13, 12, 7],
         "elems": ["-", "-", "-", "-", "wk", "-", "-", "-", "nu", "wk"],
         "skills": { "Dazzler": 0, "Hama": 0, "Vajra Blast": 21, "Makouha": 19, "Psy": 0, "Rebellion": 18 },
         "personality": "Irritable"
@@ -141,7 +143,7 @@ var compendium = {
     "Ardha": {
         "arcana": "Temperance",
         "level": 84,
-        "stats": ["54", "56", "55", "54", "40"],
+        "stats": [54, 56, 55, 54, 40],
         "elems": ["rs", "-", "-", "nu", "nu", "-", "-", "-", "-", "-"],
         "skills": {
             "Agneyastra": 87,
@@ -151,12 +153,14 @@ var compendium = {
             "High Voltage": 89,
             "Invigorate 3": 0,
             "Salvation": 90
-        }
+        },
+        "special": true,
+        "max": true
     },
     "Ariadne": {
         "arcana": "Fortune",
         "level": 30,
-        "stats": ["23", "19", "20", "17", "18"],
+        "stats": [23, 19, 20, 17, 18],
         "elems": ["-", "rs", "-", "-", "-", "-", "wk", "nu", "rs", "-"],
         "skills": {
             "Apt Pupil": 0,
@@ -166,12 +170,13 @@ var compendium = {
             "Miracle Punch": 0,
             "Power Charge": 36,
             "String Art Beast": 0
-        }
+        },
+        "dlc": true
     },
     "Ariadne Picaro": {
         "arcana": "Fortune",
         "level": 42,
-        "stats": ["36", "23", "29", "24", "21"],
+        "stats": [36, 23, 29, 24, 21],
         "elems": ["-", "rs", "-", "-", "-", "-", "wk", "nu", "rs", "-"],
         "skills": {
             "Apt Pupil": 0,
@@ -181,19 +186,20 @@ var compendium = {
             "Miracle Punch": 0,
             "Power Charge": 48,
             "String Art Beast": 0
-        }
+        },
+        "dlc": true
     },
     "Arsene": {
         "arcana": "Fool",
         "level": 1,
-        "stats": ["2", "2", "2", "3", "1"],
+        "stats": [2, 2, 2, 3, 1],
         "elems": ["-", "-", "-", "wk", "-", "-", "-", "-", "wk", "rs"],
         "skills": { "Cleave": 2, "Adverse Resolve": 7, "Dream Needle": 5, "Eiha": 1, "Sukunda": 4 }
     },
     "Asterius": {
         "arcana": "Fortune",
         "level": 56,
-        "stats": ["43", "43", "32", "32", "25"],
+        "stats": [43, 43, 32, 32, 25],
         "elems": ["-", "-", "rs", "wk", "-", "-", "rs", "-", "-", "nu"],
         "skills": {
             "Auto-Mataru": 57,
@@ -203,12 +209,13 @@ var compendium = {
             "Maragidyne": 0,
             "Tetrakarn": 60,
             "Titanomachia": 0
-        }
+        },
+        "dlc": true
     },
     "Asterius Picaro": {
         "arcana": "Fortune",
         "level": 62,
-        "stats": ["46", "46", "36", "36", "29"],
+        "stats": [46, 46, 36, 36, 29],
         "elems": ["-", "-", "rs", "wk", "-", "-", "rs", "-", "-", "nu"],
         "skills": {
             "Auto-Masuku": 63,
@@ -218,12 +225,13 @@ var compendium = {
             "Makarakarn": 66,
             "Maragidyne": 0,
             "Titanomachia": 0
-        }
+        },
+        "dlc": true
     },
     "Asura-Ou": {
         "arcana": "Sun",
         "level": 76,
-        "stats": ["52", "48", "51", "49", "35"],
+        "stats": [52, 48, 51, 49, 35],
         "elems": ["-", "-", "nu", "-", "-", "-", "wk", "rp", "-", "-"],
         "skills": {
             "Atomic Flare": 0,
@@ -233,12 +241,14 @@ var compendium = {
             "Mahamaon": 0,
             "Marakukaja": 0,
             "Unshaken Will": 81
-        }
+        },
+        "special": true,
+        "max": true
     },
     "Atropos": {
         "arcana": "Fortune",
         "level": 39,
-        "stats": ["23", "30", "22", "27", "22"],
+        "stats": [23, 30, 22, 27, 22],
         "elems": ["-", "-", "wk", "-", "-", "nu", "-", "-", "-", "-"],
         "skills": {
             "Dodge Fire": 44,
@@ -253,7 +263,7 @@ var compendium = {
     "Attis": {
         "arcana": "Hanged Man",
         "level": 82,
-        "stats": ["56", "50", "48", "51", "48"],
+        "stats": [56, 50, 48, 51, 48],
         "elems": ["-", "-", "nu", "-", "-", "rp", "-", "-", "-", "wk"],
         "skills": {
             "Absorb Curse": 86,
@@ -263,12 +273,13 @@ var compendium = {
             "Salvation": 0,
             "Samarecarm": 85,
             "Thermopylae": 0
-        }
+        },
+        "max": true
     },
     "Baal": {
         "arcana": "Emperor",
         "level": 75,
-        "stats": ["48", "50", "47", "47", "40"],
+        "stats": [48, 50, 47, 47, 40],
         "elems": ["-", "-", "rs", "-", "-", "ab", "-", "-", "rs", "rs"],
         "skills": {
             "Magarudyne": 0,
@@ -283,7 +294,7 @@ var compendium = {
     "Baphomet": {
         "arcana": "Devil",
         "level": 58,
-        "stats": ["34", "42", "36", "38", "31"],
+        "stats": [34, 42, 36, 38, 31],
         "elems": ["-", "-", "rs", "-", "-", "-", "-", "-", "wk", "nu"],
         "skills": {
             "Agidyne": 0,
@@ -298,7 +309,7 @@ var compendium = {
     "Barong": {
         "arcana": "Emperor",
         "level": 52,
-        "stats": ["33", "35", "33", "37", "25"],
+        "stats": [33, 35, 33, 37, 25],
         "elems": ["-", "rs", "-", "-", "rs", "wk", "-", "-", "nu", "wk"],
         "skills": {
             "Electric Break": 0,
@@ -312,7 +323,7 @@ var compendium = {
     "Beelzebub": {
         "arcana": "Devil",
         "level": 84,
-        "stats": ["55", "60", "54", "56", "34"],
+        "stats": [55, 60, 54, 56, 34],
         "elems": ["-", "-", "ab", "-", "-", "-", "-", "-", "wk", "rp"],
         "skills": {
             "Curse Amp": 85,
@@ -323,12 +334,13 @@ var compendium = {
             "Megidolaon": 89,
             "Mind Charge": 86,
             "Repel Ice": 88
-        }
+        },
+        "max": true
     },
     "Belial": {
         "arcana": "Devil",
         "level": 68,
-        "stats": ["45", "41", "46", "43", "36"],
+        "stats": [45, 41, 46, 43, 36],
         "elems": ["-", "-", "-", "-", "-", "-", "-", "-", "-", "nu"],
         "skills": {
             "Agidyne": 0,
@@ -343,7 +355,7 @@ var compendium = {
     "Belphegor": {
         "arcana": "Tower",
         "level": 37,
-        "stats": ["25", "27", "24", "23", "19"],
+        "stats": [25, 27, 24, 23, 19],
         "elems": ["-", "-", "wk", "rs", "rs", "-", "-", "rs", "-", "rp"],
         "skills": { "Bufula": 0, "Dodge Fire": 0, "Ice Break": 39, "Mabufula": 41, "Mind Charge": 44, "Null Rage": 38 },
         "personality": "Irritable"
@@ -351,7 +363,7 @@ var compendium = {
     "Berith": {
         "arcana": "Hierophant",
         "level": 9,
-        "stats": ["8", "6", "7", "9", "7"],
+        "stats": [8, 6, 7, 9, 7],
         "elems": ["-", "nu", "rs", "wk", "-", "-", "-", "-", "-", "-"],
         "skills": { "Cleave": 0, "Dodge Fire": 11, "Double Fangs": 10, "Rakukaja": 0, "Sledgehammer": 13 },
         "personality": "Irritable"
@@ -359,7 +371,7 @@ var compendium = {
     "Bicorn": {
         "arcana": "Hermit",
         "level": 4,
-        "stats": ["5", "3", "3", "5", "3"],
+        "stats": [5, 3, 3, 5, 3],
         "elems": ["-", "-", "-", "-", "wk", "-", "-", "-", "-", "rs"],
         "skills": { "Apt Pupil": 8, "Garu": 6, "Ice Wall": 7, "Lunge": 0, "Tarunda": 0 },
         "personality": "Irritable"
@@ -367,7 +379,7 @@ var compendium = {
     "Bishamonten": {
         "arcana": "Hierophant",
         "level": 67,
-        "stats": ["49", "37", "42", "45", "35"],
+        "stats": [49, 37, 42, 45, 35],
         "elems": ["-", "-", "ab", "wk", "-", "-", "-", "-", "rs", "rs"],
         "skills": {
             "Deadly Fury": 68,
@@ -382,7 +394,7 @@ var compendium = {
     "Black Frost": {
         "arcana": "Fool",
         "level": 67,
-        "stats": ["44", "46", "41", "42", "35"],
+        "stats": [44, 46, 41, 42, 35],
         "elems": ["-", "-", "rp", "ab", "-", "-", "-", "nu", "-", "rp"],
         "skills": {
             "Diamond Dust": 72,
@@ -391,12 +403,14 @@ var compendium = {
             "Miracle Punch": 0,
             "One Shot Kill": 0,
             "Repel Fire": 71
-        }
+        },
+        "special": true,
+        "note": "Mission 「イジメっ子を操る陰のアイツ」 must be cleared"
     },
     "Black Ooze": {
         "arcana": "Moon",
         "level": 29,
-        "stats": ["19", "18", "20", "16", "21"],
+        "stats": [19, 18, 20, 16, 21],
         "elems": ["rs", "rs", "-", "rs", "wk", "-", "wk", "-", "wk", "nu"],
         "skills": {
             "Brain Jack": 34,
@@ -412,7 +426,7 @@ var compendium = {
     "Black Rider": {
         "arcana": "Tower",
         "level": 59,
-        "stats": ["38", "43", "37", "45", "30"],
+        "stats": [38, 43, 37, 45, 30],
         "elems": ["-", "-", "wk", "ab", "-", "-", "-", "-", "rs", "rs"],
         "skills": {
             "Bloodbath": 61,
@@ -427,7 +441,7 @@ var compendium = {
     "Bugs": {
         "arcana": "Fool",
         "level": 49,
-        "stats": ["35", "33", "30", "32", "24"],
+        "stats": [35, 33, 30, 32, 24],
         "elems": ["-", "-", "-", "-", "-", "-", "rs", "wk", "-", "nu"],
         "skills": {
             "Auto-Mataru": 51,
@@ -437,12 +451,14 @@ var compendium = {
             "Miracle Punch": 0,
             "Psydyne": 0,
             "Triple Down": 52
-        }
+        },
+        "special": true,
+        "note": "Mission 「淀んだ瞳のネトスト女子」 must be cleared"
     },
     "Byakko": {
         "arcana": "Temperance",
         "level": 49,
-        "stats": ["32", "32", "31", "32", "27"],
+        "stats": [32, 32, 31, 32, 27],
         "elems": ["-", "-", "wk", "ab", "-", "-", "-", "wk", "-", "rs"],
         "skills": {
             "Bufudyne": 55,
@@ -457,7 +473,7 @@ var compendium = {
     "Cerberus": {
         "arcana": "Chariot",
         "level": 55,
-        "stats": ["39", "35", "32", "39", "27"],
+        "stats": [39, 35, 32, 39, 27],
         "elems": ["-", "-", "ab", "wk", "-", "-", "-", "rs", "-", "-"],
         "skills": {
             "Agidyne": 0,
@@ -472,7 +488,7 @@ var compendium = {
     "Chernobog": {
         "arcana": "Death",
         "level": 62,
-        "stats": ["40", "37", "39", "38", "39"],
+        "stats": [40, 37, 39, 38, 39],
         "elems": ["-", "rs", "wk", "ab", "nu", "-", "-", "-", "wk", "rp"],
         "skills": {
             "Bloodbath": 0,
@@ -487,7 +503,7 @@ var compendium = {
     "Chi You": {
         "arcana": "Chariot",
         "level": 86,
-        "stats": ["54", "56", "53", "52", "50"],
+        "stats": [54, 56, 53, 52, 50],
         "elems": ["rs", "rs", "-", "-", "-", "-", "nu", "wk", "-", "-"],
         "skills": {
             "Absorb Psy": 90,
@@ -497,12 +513,14 @@ var compendium = {
             "Psychokinesis": 0,
             "Repel Phys": 0,
             "Resist Ailment": 88
-        }
+        },
+        "special": true,
+        "max": true
     },
     "Choronzon": {
         "arcana": "Magician",
         "level": 28,
-        "stats": ["16", "19", "19", "18", "19"],
+        "stats": [16, 19, 19, 18, 19],
         "elems": ["-", "-", "ab", "-", "-", "-", "-", "-", "wk", "-"],
         "skills": {
             "Bloodsuck": 0,
@@ -519,7 +537,7 @@ var compendium = {
     "Clotho": {
         "arcana": "Fortune",
         "level": 26,
-        "stats": ["14", "19", "17", "20", "15"],
+        "stats": [14, 19, 17, 20, 15],
         "elems": ["-", "-", "-", "wk", "-", "nu", "-", "wk", "-", "-"],
         "skills": {
             "Energy Shower": 30,
@@ -534,7 +552,7 @@ var compendium = {
     "Crystal Skull": {
         "arcana": "Fool",
         "level": 50,
-        "stats": ["50", "50", "50", "50", "50"],
+        "stats": [50, 50, 50, 50, 50],
         "elems": ["rs", "nu", "rp", "rp", "rp", "rp", "rp", "rp", "-", "rp"],
         "skills": {
             "Mabufudyne": 0,
@@ -545,12 +563,13 @@ var compendium = {
             "Mapsydyne": 0,
             "Maragidyne": 0,
             "Maziodyne": 0
-        }
+        },
+        "rare": true
     },
     "Cu Chulainn": {
         "arcana": "Star",
         "level": 67,
-        "stats": ["47", "36", "44", "47", "34"],
+        "stats": [47, 36, 44, 47, 34],
         "elems": ["rs", "rs", "-", "-", "wk", "rp", "-", "-", "nu", "-"],
         "skills": {
             "Deadly Fury": 0,
@@ -565,7 +584,7 @@ var compendium = {
     "Cybele": {
         "arcana": "Priestess",
         "level": 73,
-        "stats": ["44", "48", "45", "51", "38"],
+        "stats": [44, 48, 45, 51, 38],
         "elems": ["-", "-", "rs", "-", "wk", "-", "-", "-", "nu", "-"],
         "skills": {
             "Absorb Bless": 77,
@@ -575,12 +594,13 @@ var compendium = {
             "Mediarahan": 0,
             "Salvation": 79,
             "Samarecarm": 0
-        }
+        },
+        "max": true
     },
     "Daisoujou": {
         "arcana": "Hierophant",
         "level": 42,
-        "stats": ["22", "33", "24", "25", "29"],
+        "stats": [22, 33, 24, 25, 29],
         "elems": ["-", "rs", "-", "-", "-", "-", "-", "-", "nu", "wk"],
         "skills": {
             "Diarahan": 45,
@@ -595,7 +615,7 @@ var compendium = {
     "Dakini": {
         "arcana": "Empress",
         "level": 50,
-        "stats": ["34", "32", "34", "28", "29"],
+        "stats": [34, 32, 34, 28, 29],
         "elems": ["-", "-", "rs", "-", "-", "-", "-", "-", "-", "-"],
         "skills": {
             "Bad Beat": 0,
@@ -611,7 +631,7 @@ var compendium = {
     "Decarabia": {
         "arcana": "Fool",
         "level": 32,
-        "stats": ["21", "23", "19", "22", "18"],
+        "stats": [21, 23, 19, 22, 18],
         "elems": ["wk", "-", "rp", "-", "-", "-", "-", "rs", "-", "rs"],
         "skills": {
             "Agilao": 0,
@@ -627,7 +647,7 @@ var compendium = {
     "Dionysus": {
         "arcana": "Fool",
         "level": 61,
-        "stats": ["35", "41", "38", "40", "36"],
+        "stats": [35, 41, 38, 40, 36],
         "elems": ["-", "-", "-", "-", "rp", "-", "-", "-", "rs", "rs"],
         "skills": {
             "Ailment Boost": 63,
@@ -642,7 +662,7 @@ var compendium = {
     "Dominion": {
         "arcana": "Justice",
         "level": 68,
-        "stats": ["46", "47", "45", "48", "40"],
+        "stats": [46, 47, 45, 48, 40],
         "elems": ["-", "wk", "-", "-", "-", "-", "-", "rp", "nu", "rs"],
         "skills": {
             "Blinding Flash": 0,
@@ -658,7 +678,7 @@ var compendium = {
     "Eligor": {
         "arcana": "Emperor",
         "level": 16,
-        "stats": ["12", "10", "13", "10", "10"],
+        "stats": [12, 10, 13, 10, 10],
         "elems": ["-", "rs", "rs", "-", "wk", "-", "-", "-", "-", "-"],
         "skills": {
             "Memory Blow": 20,
@@ -673,7 +693,7 @@ var compendium = {
     "Emperor's Amulet": {
         "arcana": "Hanged Man",
         "level": 35,
-        "stats": ["35", "35", "35", "35", "35"],
+        "stats": [35, 35, 35, 35, 35],
         "elems": ["rs", "nu", "-", "ab", "ab", "ab", "ab", "ab", "nu", "nu"],
         "skills": {
             "Agidyne": 0,
@@ -684,19 +704,20 @@ var compendium = {
             "Kougaon": 0,
             "Psydyne": 0,
             "Ziodyne": 0
-        }
+        },
+        "rare": true
     },
     "Feng Huang": {
         "arcana": "Hierophant",
         "level": 22,
-        "stats": ["14", "15", "15", "18", "11"],
+        "stats": [14, 15, 15, 18, 11],
         "elems": ["-", "-", "-", "rs", "wk", "nu", "-", "-", "-", "-"],
         "skills": { "Diarama": 23, "Dream Needle": 0, "Freila": 0, "Nuclear Boost": 27, "Recarm": 25 }
     },
     "Flauros": {
         "arcana": "Devil",
         "level": 25,
-        "stats": ["19", "14", "18", "18", "13"],
+        "stats": [19, 14, 18, 18, 13],
         "elems": ["-", "-", "nu", "wk", "-", "rs", "-", "rs", "-", "-"],
         "skills": {
             "Assault Dive": 29,
@@ -705,12 +726,14 @@ var compendium = {
             "Dormin Rush": 0,
             "Giant Slice": 0,
             "Heat Up": 30
-        }
+        },
+        "special": true,
+        "note": "Needs Strength cooperation rank 1 to be fused"
     },
     "Forneus": {
         "arcana": "Hierophant",
         "level": 63,
-        "stats": ["41", "39", "40", "42", "34"],
+        "stats": [41, 39, 40, 42, 34],
         "elems": ["-", "-", "-", "ab", "wk", "-", "nu", "-", "-", "-"],
         "skills": {
             "Evade Psy": 68,
@@ -726,7 +749,7 @@ var compendium = {
     "Fortuna": {
         "arcana": "Fortune",
         "level": 46,
-        "stats": ["23", "32", "29", "34", "27"],
+        "stats": [23, 32, 29, 34, 27],
         "elems": ["-", "-", "nu", "-", "wk", "nu", "-", "-", "-", "-"],
         "skills": {
             "Amrita Drop": 50,
@@ -741,7 +764,7 @@ var compendium = {
     "Futsunushi": {
         "arcana": "Magician",
         "level": 76,
-        "stats": ["54", "48", "47", "49", "37"],
+        "stats": [54, 48, 47, 49, 37],
         "elems": ["rs", "-", "-", "-", "-", "-", "-", "wk", "-", "-"],
         "skills": {
             "Ali Dance": 0,
@@ -752,12 +775,13 @@ var compendium = {
             "Power Charge": 78,
             "Rainy Death": 0,
             "Regenerate 3": 79
-        }
+        },
+        "max": true
     },
     "Fuu-Ki": {
         "arcana": "Star",
         "level": 23,
-        "stats": ["14", "17", "16", "15", "14"],
+        "stats": [14, 17, 16, 15, 14],
         "elems": ["-", "-", "-", "-", "wk", "ab", "-", "-", "-", "-"],
         "skills": { "Dodge Wind": 26, "Garula": 0, "Resist Psy": 27, "Tarukaja": 0, "Tetra Break": 0, "Wind Boost": 25 },
         "personality": "Unknown"
@@ -765,7 +789,7 @@ var compendium = {
     "Gabriel": {
         "arcana": "Temperance",
         "level": 77,
-        "stats": ["43", "51", "48", "54", "42"],
+        "stats": [43, 51, 48, 54, 42],
         "elems": ["-", "-", "-", "-", "-", "-", "nu", "-", "ab", "-"],
         "skills": {
             "Ali Dance": 79,
@@ -781,7 +805,7 @@ var compendium = {
     "Ganesha": {
         "arcana": "Sun",
         "level": 53,
-        "stats": ["39", "31", "37", "33", "26"],
+        "stats": [39, 31, 37, 33, 26],
         "elems": ["rs", "-", "-", "-", "-", "ab", "wk", "-", "-", "-"],
         "skills": {
             "Endure": 56,
@@ -797,7 +821,7 @@ var compendium = {
     "Garuda": {
         "arcana": "Star",
         "level": 52,
-        "stats": ["30", "36", "29", "39", "29"],
+        "stats": [30, 36, 29, 39, 29],
         "elems": ["-", "wk", "-", "-", "-", "rs", "-", "-", "rp", "-"],
         "skills": {
             "Amrita Shower": 0,
@@ -813,14 +837,14 @@ var compendium = {
     "Genbu": {
         "arcana": "Temperance",
         "level": 7,
-        "stats": ["5", "6", "7", "6", "4"],
+        "stats": [5, 6, 7, 6, 4],
         "elems": ["-", "-", "-", "nu", "wk", "-", "rs", "-", "-", "-"],
         "skills": { "Bufu": 0, "Defense Master": 12, "Mabufu": 10, "Patra": 8, "Rakunda": 0, "Resist Forget": 11 }
     },
     "Girimehkala": {
         "arcana": "Moon",
         "level": 44,
-        "stats": ["36", "24", "32", "32", "15"],
+        "stats": [36, 24, 32, 32, 15],
         "elems": ["rp", "rp", "rs", "-", "-", "-", "-", "-", "wk", "nu"],
         "skills": { "Foul Breath": 46, "Marakunda": 0, "Mudoon": 0, "Repel Phys": 51, "Swift Strike": 0, "Wage War": 48 },
         "personality": "Gloomy"
@@ -828,7 +852,7 @@ var compendium = {
     "Hanuman": {
         "arcana": "Star",
         "level": 64,
-        "stats": ["43", "38", "40", "40", "38"],
+        "stats": [43, 38, 40, 40, 38],
         "elems": ["-", "-", "-", "wk", "-", "-", "rs", "-", "rs", "-"],
         "skills": {
             "Deathbound": 65,
@@ -843,7 +867,7 @@ var compendium = {
     "Hariti": {
         "arcana": "Empress",
         "level": 40,
-        "stats": ["24", "29", "25", "26", "23"],
+        "stats": [24, 29, 25, 26, 23],
         "elems": ["-", "-", "-", "-", "-", "wk", "rs", "-", "rs", "-"],
         "skills": {
             "Blinding Flash": 42,
@@ -860,7 +884,7 @@ var compendium = {
     "Hecatoncheir": {
         "arcana": "Hanged Man",
         "level": 42,
-        "stats": ["29", "25", "30", "25", "24"],
+        "stats": [29, 25, 30, 25, 24],
         "elems": ["-", "rs", "-", "-", "-", "-", "-", "-", "wk", "nu"],
         "skills": {
             "Endure": 43,
@@ -875,7 +899,7 @@ var compendium = {
     "Hell Biker": {
         "arcana": "Death",
         "level": 39,
-        "stats": ["26", "27", "24", "30", "17"],
+        "stats": [26, 27, 24, 30, 17],
         "elems": ["-", "-", "rp", "-", "-", "rs", "-", "-", "wk", "-"],
         "skills": {
             "Agilao": 0,
@@ -891,7 +915,7 @@ var compendium = {
     "High Pixie": {
         "arcana": "Fool",
         "level": 16,
-        "stats": ["8", "14", "10", "13", "10"],
+        "stats": [8, 14, 10, 13, 10],
         "elems": ["-", "wk", "-", "-", "rs", "rs", "-", "wk", "-", "-"],
         "skills": { "Diarama": 18, "Dormina": 0, "Garu": 0, "Magaru": 20, "Media": 0, "Taunt": 19 },
         "personality": "Irritable"
@@ -899,7 +923,7 @@ var compendium = {
     "Hope Diamond": {
         "arcana": "Death",
         "level": 40,
-        "stats": ["40", "40", "40", "40", "40"],
+        "stats": [40, 40, 40, 40, 40],
         "elems": ["rs", "nu", "rp", "rp", "rp", "-", "rp", "rp", "nu", "nu"],
         "skills": {
             "Auto-Maraku": 0,
@@ -910,12 +934,13 @@ var compendium = {
             "High Counter": 0,
             "Invigorate 2": 0,
             "Regenerate 2": 0
-        }
+        },
+        "rare": true
     },
     "Horus": {
         "arcana": "Sun",
         "level": 49,
-        "stats": ["30", "32", "32", "35", "25"],
+        "stats": [30, 32, 32, 35, 25],
         "elems": ["-", "-", "wk", "-", "nu", "-", "-", "-", "rp", "-"],
         "skills": {
             "Diarama": 0,
@@ -930,7 +955,7 @@ var compendium = {
     "Hua Po": {
         "arcana": "Hanged Man",
         "level": 9,
-        "stats": ["4", "10", "4", "8", "8"],
+        "stats": [4, 10, 4, 8, 8],
         "elems": ["-", "wk", "rp", "wk", "-", "-", "-", "-", "-", "-"],
         "skills": { "Agi": 0, "Burn Boost": 15, "Dormina": 0, "Maragi": 13, "Resist Forget": 12, "Tarunda": 11 },
         "personality": "Upbeat"
@@ -938,7 +963,7 @@ var compendium = {
     "Incubus": {
         "arcana": "Devil",
         "level": 5,
-        "stats": ["4", "6", "4", "5", "3"],
+        "stats": [4, 6, 4, 5, 3],
         "elems": ["-", "wk", "-", "-", "rs", "-", "-", "-", "wk", "-"],
         "skills": { "Bloodsuck": 0, "Devil Touch": 0, "Dodge Curseness": 9, "Eiha": 7, "Tarunda": 8 },
         "personality": "Timid"
@@ -946,7 +971,7 @@ var compendium = {
     "Inugami": {
         "arcana": "Hanged Man",
         "level": 14,
-        "stats": ["12", "11", "9", "12", "8"],
+        "stats": [12, 11, 9, 12, 8],
         "elems": ["-", "-", "nu", "-", "-", "wk", "-", "-", "-", "nu"],
         "skills": {
             "Brain Shake": 18,
@@ -962,7 +987,7 @@ var compendium = {
     "Ippon-Datara": {
         "arcana": "Hermit",
         "level": 13,
-        "stats": ["11", "7", "14", "6", "8"],
+        "stats": [11, 7, 14, 6, 8],
         "elems": ["-", "-", "rs", "wk", "-", "rp", "-", "-", "rs", "rs"],
         "skills": {
             "Sharp Student": 16,
@@ -977,7 +1002,7 @@ var compendium = {
     "Ishtar": {
         "arcana": "Lovers",
         "level": 85,
-        "stats": ["48", "59", "49", "58", "48"],
+        "stats": [48, 59, 49, 58, 48],
         "elems": ["-", "-", "-", "-", "nu", "wk", "-", "-", "-", "-"],
         "skills": {
             "Absorb Wind": 0,
@@ -987,12 +1012,13 @@ var compendium = {
             "Salvation": 90,
             "Samarecarm": 0,
             "Spell Master": 89
-        }
+        },
+        "max": true
     },
     "Isis": {
         "arcana": "Priestess",
         "level": 26,
-        "stats": ["15", "21", "16", "18", "15"],
+        "stats": [15, 21, 16, 18, 15],
         "elems": ["-", "-", "-", "-", "-", "-", "wk", "-", "nu", "nu"],
         "skills": {
             "Agilao": 0,
@@ -1008,7 +1034,7 @@ var compendium = {
     "Izanagi": {
         "arcana": "Fool",
         "level": 20,
-        "stats": ["14", "13", "13", "14", "13"],
+        "stats": [14, 13, 13, 14, 13],
         "elems": ["-", "-", "-", "-", "rs", "wk", "-", "-", "-", "nu"],
         "skills": {
             "Cross Slash": 0,
@@ -1018,12 +1044,13 @@ var compendium = {
             "Rising Slash": 21,
             "Tarukaja": 0,
             "Zionga": 0
-        }
+        },
+        "dlc": true
     },
     "Izanagi Picaro": {
         "arcana": "Fool",
         "level": 23,
-        "stats": ["16", "15", "15", "16", "14"],
+        "stats": [16, 15, 15, 16, 14],
         "elems": ["-", "-", "-", "-", "nu", "wk", "-", "-", "-", "nu"],
         "skills": {
             "Cross Slash": 0,
@@ -1033,12 +1060,13 @@ var compendium = {
             "Rising Slash": 24,
             "Rakukaja": 0,
             "Zionga": 0
-        }
+        },
+        "dlc": true
     },
     "Jack Frost": {
         "arcana": "Magician",
         "level": 11,
-        "stats": ["8", "9", "7", "9", "7"],
+        "stats": [8, 9, 7, 9, 7],
         "elems": ["-", "-", "wk", "nu", "-", "-", "-", "-", "-", "-"],
         "skills": { "Baisudi": 0, "Bufu": 0, "Freeze Boost": 15, "Ice Break": 0, "Mabufu": 12, "Rakunda": 13 },
         "personality": "Timid"
@@ -1046,7 +1074,7 @@ var compendium = {
     "Jack O'Lantern": {
         "arcana": "Magician",
         "level": 2,
-        "stats": ["2", "3", "3", "3", "2"],
+        "stats": [2, 3, 3, 3, 2],
         "elems": ["-", "wk", "ab", "wk", "-", "wk", "-", "-", "-", "-"],
         "skills": { "Agi": 0, "Dazzler": 5, "Sharp Student": 4, "Rakunda": 0, "Resist Sleep": 7 },
         "personality": "Gloomy"
@@ -1054,7 +1082,7 @@ var compendium = {
     "Jatayu": {
         "arcana": "Tower",
         "level": 32,
-        "stats": ["18", "21", "20", "27", "17"],
+        "stats": [18, 21, 20, 27, 17],
         "elems": ["-", "-", "-", "-", "-", "ab", "wk", "-", "-", "-"],
         "skills": {
             "Dodge Psy": 33,
@@ -1069,7 +1097,7 @@ var compendium = {
     "Jikokuten": {
         "arcana": "Temperance",
         "level": 25,
-        "stats": ["19", "12", "19", "17", "15"],
+        "stats": [19, 12, 19, 17, 15],
         "elems": ["rs", "-", "-", "-", "-", "-", "-", "-", "rs", "wk"],
         "skills": {
             "Memory Blow": 0,
@@ -1084,7 +1112,7 @@ var compendium = {
     "Kaguya": {
         "arcana": "Moon",
         "level": 16,
-        "stats": ["11", "15", "12", "11", "6"],
+        "stats": [11, 15, 12, 11, 6],
         "elems": ["-", "-", "wk", "-", "-", "rs", "-", "-", "nu", "nu"],
         "skills": {
             "Amrita Shower": 18,
@@ -1094,12 +1122,13 @@ var compendium = {
             "Mediarama": 0,
             "Shining Arrows": 0,
             "Repel Phys": 22
-        }
+        },
+        "dlc": true
     },
     "Kaguya Picaro": {
         "arcana": "Moon",
         "level": 25,
-        "stats": ["17", "20", "19", "15", "11"],
+        "stats": [17, 20, 19, 15, 11],
         "elems": ["-", "-", "wk", "-", "-", "-", "-", "-", "nu", "nu"],
         "skills": {
             "Amrita Shower": 27,
@@ -1109,12 +1138,13 @@ var compendium = {
             "Mediarama": 0,
             "Shining Arrows": 0,
             "Repel Phys": 31
-        }
+        },
+        "dlc": true
     },
     "Kaiwan": {
         "arcana": "Star",
         "level": 36,
-        "stats": ["23", "26", "24", "22", "20"],
+        "stats": [23, 26, 24, 22, 20],
         "elems": ["-", "nu", "-", "-", "-", "-", "nu", "wk", "-", "-"],
         "skills": {
             "Forget Boost": 37,
@@ -1130,7 +1160,7 @@ var compendium = {
     "Kali": {
         "arcana": "Empress",
         "level": 77,
-        "stats": ["53", "45", "46", "53", "41"],
+        "stats": [53, 45, 46, 53, 41],
         "elems": ["-", "-", "nu", "-", "-", "-", "rp", "-", "-", "rs"],
         "skills": {
             "Absorb Nuclear": 82,
@@ -1145,7 +1175,7 @@ var compendium = {
     "Kelpie": {
         "arcana": "Strength",
         "level": 6,
-        "stats": ["5", "5", "5", "6", "4"],
+        "stats": [5, 5, 5, 6, 4],
         "elems": ["-", "-", "-", "rs", "wk", "-", "-", "-", "-", "-"],
         "skills": { "Garu": 0, "Lunge": 0, "Resist Brainwash": 8, "Sukukaja": 9, "Terror Claw": 10 },
         "personality": "Upbeat"
@@ -1153,7 +1183,7 @@ var compendium = {
     "Kikuri-Hime": {
         "arcana": "Priestess",
         "level": 40,
-        "stats": ["22", "31", "24", "28", "22"],
+        "stats": [22, 31, 24, 28, 22],
         "elems": ["-", "-", "wk", "-", "-", "nu", "-", "-", "rs", "-"],
         "skills": { "Divine Grace": 45, "Energy Drop": 0, "Lullaby": 0, "Marakukaja": 0, "Mediarama": 41, "Tetraja": 43 },
         "personality": "Unknown"
@@ -1161,7 +1191,7 @@ var compendium = {
     "Kin-Ki": {
         "arcana": "Chariot",
         "level": 25,
-        "stats": ["21", "13", "21", "15", "12"],
+        "stats": [21, 13, 21, 15, 12],
         "elems": ["rs", "rs", "-", "-", "-", "-", "wk", "-", "-", "-"],
         "skills": {
             "Bad Beat": 30,
@@ -1177,7 +1207,7 @@ var compendium = {
     "King Frost": {
         "arcana": "Emperor",
         "level": 61,
-        "stats": ["38", "39", "45", "33", "35"],
+        "stats": [38, 39, 45, 33, 35],
         "elems": ["-", "-", "-", "ab", "-", "-", "-", "-", "nu", "-"],
         "skills": {
             "Auto-Mataru": 64,
@@ -1193,7 +1223,7 @@ var compendium = {
     "Kodama": {
         "arcana": "Star",
         "level": 11,
-        "stats": ["9", "11", "8", "10", "4"],
+        "stats": [9, 11, 8, 10, 4],
         "elems": ["-", "-", "wk", "rs", "-", "-", "-", "-", "-", "-"],
         "skills": {
             "Devil Touch": 13,
@@ -1209,7 +1239,7 @@ var compendium = {
     "Koh-i-Noor": {
         "arcana": "Priestess",
         "level": 25,
-        "stats": ["25", "25", "25", "25", "25"],
+        "stats": [25, 25, 25, 25, 25],
         "elems": ["rs", "rs", "rs", "rs", "rs", "rs", "rs", "-", "nu", "nu"],
         "skills": {
             "Dodge Curseness": 0,
@@ -1220,12 +1250,13 @@ var compendium = {
             "Dodge Nuclear": 0,
             "Dodge Psy": 0,
             "Dodge Wind": 0
-        }
+        },
+        "rare": true
     },
     "Kohryu": {
         "arcana": "Hierophant",
         "level": 76,
-        "stats": ["43", "51", "50", "53", "38"],
+        "stats": [43, 51, 50, 53, 38],
         "elems": ["-", "-", "-", "-", "rp", "-", "wk", "nu", "nu", "-"],
         "skills": {
             "Cool Breeze": 78,
@@ -1235,12 +1266,14 @@ var compendium = {
             "Psy Amp": 80,
             "Psychokinesis": 0,
             "Spell Master": 82
-        }
+        },
+        "special": true,
+        "max": true
     },
     "Koppa Tengu": {
         "arcana": "Temperance",
         "level": 11,
-        "stats": ["7", "8", "8", "11", "6"],
+        "stats": [7, 8, 8, 11, 6],
         "elems": ["-", "-", "-", "wk", "-", "rs", "-", "-", "wk", "-"],
         "skills": { "Snap": 0, "Garu": 0, "Growth 1": 12, "Taunt": 13, "Rage Boost": 14, "Wage War": 15 },
         "personality": "Upbeat"
@@ -1248,7 +1281,7 @@ var compendium = {
     "Koropokkuru": {
         "arcana": "Hermit",
         "level": 9,
-        "stats": ["5", "8", "6", "9", "6"],
+        "stats": [5, 8, 6, 9, 6],
         "elems": ["-", "rs", "wk", "rs", "-", "rs", "-", "-", "-", "-"],
         "skills": { "Bufu": 0, "Dodge Ice": 11, "Fire Wall": 13, "Mabufu": 14, "Makajam": 0, "Rakunda": 12 },
         "personality": "Timid"
@@ -1256,7 +1289,7 @@ var compendium = {
     "Koumokuten": {
         "arcana": "Hermit",
         "level": 49,
-        "stats": ["37", "32", "34", "31", "25"],
+        "stats": [37, 32, 34, 31, 25],
         "elems": ["rs", "-", "-", "wk", "-", "-", "-", "-", "rs", "-"],
         "skills": {
             "Assault Dive": 0,
@@ -1272,7 +1305,7 @@ var compendium = {
     "Kumbhanda": {
         "arcana": "Hermit",
         "level": 42,
-        "stats": ["29", "25", "27", "26", "26"],
+        "stats": [29, 25, 27, 26, 26],
         "elems": ["-", "-", "nu", "wk", "-", "-", "-", "-", "-", "rs"],
         "skills": {
             "Dekaja": 45,
@@ -1287,14 +1320,14 @@ var compendium = {
     "Kurama Tengu": {
         "arcana": "Hermit",
         "level": 56,
-        "stats": ["34", "38", "34", "42", "27"],
+        "stats": [34, 38, 34, 42, 27],
         "elems": ["-", "-", "-", "wk", "-", "rp", "-", "-", "rs", "rs"],
         "skills": { "Brain Buster": 0, "Garudyne": 57, "Growth 3": 58, "Heat Wave": 0, "Magarudyne": 60, "Masukunda": 0 }
     },
     "Kushinada-Hime": {
         "arcana": "Lovers",
         "level": 42,
-        "stats": ["24", "30", "26", "28", "25"],
+        "stats": [24, 30, 26, 28, 25],
         "elems": ["-", "-", "-", "-", "-", "-", "-", "wk", "rp", "-"],
         "skills": {
             "Amrita Shower": 47,
@@ -1309,7 +1342,7 @@ var compendium = {
     "Kusi Mitama": {
         "arcana": "Strength",
         "level": 14,
-        "stats": ["8", "12", "11", "9", "9"],
+        "stats": [8, 12, 11, 9, 9],
         "elems": ["-", "-", "wk", "-", "-", "rs", "-", "-", "-", "-"],
         "skills": {
             "Bufu": 0,
@@ -1324,7 +1357,7 @@ var compendium = {
     "Lachesis": {
         "arcana": "Fortune",
         "level": 34,
-        "stats": ["18", "25", "22", "25", "19"],
+        "stats": [18, 25, 22, 25, 19],
         "elems": ["-", "-", "-", "nu", "wk", "rs", "-", "-", "-", "-"],
         "skills": {
             "Bufula": 0,
@@ -1339,7 +1372,7 @@ var compendium = {
     "Lakshmi": {
         "arcana": "Fortune",
         "level": 69,
-        "stats": ["40", "47", "43", "46", "38"],
+        "stats": [40, 47, 43, 46, 38],
         "elems": ["-", "-", "wk", "rs", "-", "-", "-", "-", "rs", "-"],
         "skills": {
             "Amrita Shower": 72,
@@ -1349,12 +1382,13 @@ var compendium = {
             "Lullaby": 0,
             "Mediarahan": 70,
             "Rainy Play": 71
-        }
+        },
+        "max": true
     },
     "Lamia": {
         "arcana": "Empress",
         "level": 26,
-        "stats": ["21", "15", "18", "19", "12"],
+        "stats": [21, 15, 18, 19, 12],
         "elems": ["-", "rs", "-", "wk", "rs", "-", "-", "-", "-", "nu"],
         "skills": {
             "Agilao": 0,
@@ -1370,7 +1404,7 @@ var compendium = {
     "Leanan Sidhe": {
         "arcana": "Lovers",
         "level": 19,
-        "stats": ["9", "17", "12", "16", "10"],
+        "stats": [9, 17, 12, 16, 10],
         "elems": ["-", "-", "wk", "-", "-", "rs", "rs", "-", "-", "-"],
         "skills": { "Eiga": 23, "Mamudo": 21, "Mapsy": 22, "Marin Karin": 20, "Psyo": 0, "Rakunda": 0 },
         "personality": "Irritable"
@@ -1378,7 +1412,7 @@ var compendium = {
     "Legion": {
         "arcana": "Fool",
         "level": 38,
-        "stats": ["24", "24", "30", "23", "20"],
+        "stats": [24, 24, 30, 23, 20],
         "elems": ["rs", "rs", "rs", "-", "-", "-", "rs", "-", "wk", "nu"],
         "skills": { "Bloodsuck": 0, "Negative Pile": 0, "Null Dizzy": 42, "Psyo": 39, "Rampage": 0, "Tetra Break": 40 },
         "personality": "Unknown"
@@ -1386,7 +1420,7 @@ var compendium = {
     "Lilim": {
         "arcana": "Devil",
         "level": 32,
-        "stats": ["17", "23", "18", "25", "20"],
+        "stats": [17, 23, 18, 25, 20],
         "elems": ["-", "wk", "-", "rs", "-", "wk", "-", "-", "wk", "nu"],
         "skills": {
             "Bufula": 0,
@@ -1402,7 +1436,7 @@ var compendium = {
     "Lilith": {
         "arcana": "Moon",
         "level": 60,
-        "stats": ["33", "43", "37", "39", "35"],
+        "stats": [33, 43, 37, 39, 35],
         "elems": ["-", "-", "wk", "rp", "-", "-", "-", "-", "-", "nu"],
         "skills": {
             "Mabufudyne": 0,
@@ -1417,7 +1451,7 @@ var compendium = {
     "Lucifer": {
         "arcana": "Star",
         "level": 93,
-        "stats": ["61", "59", "59", "56", "51"],
+        "stats": [61, 59, 59, 56, 51],
         "elems": ["-", "-", "-", "-", "-", "-", "-", "-", "wk", "-"],
         "skills": {
             "Absorb Phys": 99,
@@ -1428,12 +1462,14 @@ var compendium = {
             "Insta-Heal": 98,
             "Morning Star": 94,
             "Spell Master": 95
-        }
+        },
+        "special": true,
+        "max": true
     },
     "Mada": {
         "arcana": "Tower",
         "level": 85,
-        "stats": ["52", "51", "58", "56", "45"],
+        "stats": [52, 51, 58, 56, 45],
         "elems": ["-", "-", "ab", "wk", "-", "-", "rs", "nu", "-", "-"],
         "skills": {
             "Agidyne": 0,
@@ -1444,12 +1480,13 @@ var compendium = {
             "Incineration": 87,
             "Spell Master": 91,
             "Unshaken Will": 86
-        }
+        },
+        "max": true
     },
     "Magatsu-Izanagi": {
         "arcana": "Tower",
         "level": 44,
-        "stats": ["37", "35", "32", "25", "10"],
+        "stats": [37, 35, 32, 25, 10],
         "elems": ["-", "rs", "-", "-", "-", "-", "-", "wk", "nu", "nu"],
         "skills": {
             "Attack Master": 48,
@@ -1459,12 +1496,13 @@ var compendium = {
             "Magatsu Mandala": 0,
             "Maziodyne": 45,
             "Megidola": 0
-        }
+        },
+        "dlc": true
     },
     "Magatsu-Izanagi Picaro": {
         "arcana": "Tower",
         "level": 48,
-        "stats": ["40", "38", "35", "27", "11"],
+        "stats": [40, 38, 35, 27, 11],
         "elems": ["-", "rs", "-", "-", "-", "-", "-", "wk", "nu", "nu"],
         "skills": {
             "Bloodbath": 50,
@@ -1474,12 +1512,13 @@ var compendium = {
             "Magatsu Mandala": 0,
             "Megidola": 0,
             "Speed Master": 52
-        }
+        },
+        "dlc": true
     },
     "Makami": {
         "arcana": "Temperance",
         "level": 15,
-        "stats": ["13", "12", "8", "11", "8"],
+        "stats": [13, 12, 8, 11, 8],
         "elems": ["-", "-", "-", "-", "wk", "rs", "-", "rs", "nu", "-"],
         "skills": {
             "Dodge Electric": 20,
@@ -1495,7 +1534,7 @@ var compendium = {
     "Mandrake": {
         "arcana": "Death",
         "level": 3,
-        "stats": ["2", "3", "3", "4", "4"],
+        "stats": [2, 3, 3, 4, 4],
         "elems": ["-", "-", "wk", "-", "rs", "-", "-", "-", "-", "-"],
         "skills": { "Energy Drop": 0, "Lunge": 4, "Pulinpa": 0, "Skull Cracker": 7, "Sukunda": 5 },
         "personality": "Upbeat"
@@ -1503,7 +1542,7 @@ var compendium = {
     "Mara": {
         "arcana": "Tower",
         "level": 73,
-        "stats": ["47", "46", "49", "45", "39"],
+        "stats": [47, 46, 49, 45, 39],
         "elems": ["-", "nu", "ab", "wk", "-", "-", "-", "-", "rs", "rp"],
         "skills": {
             "Firm Stance": 78,
@@ -1518,14 +1557,14 @@ var compendium = {
     "Matador": {
         "arcana": "Death",
         "level": 19,
-        "stats": ["12", "13", "12", "16", "11"],
+        "stats": [12, 13, 12, 16, 11],
         "elems": ["-", "-", "-", "-", "wk", "nu", "-", "-", "-", "-"],
         "skills": { "Garula": 23, "Null Dizzy": 0, "Psy": 0, "Sukukaja": 0, "Swift Strike": 20, "Trigger Happy": 22 }
     },
     "Melchizedek": {
         "arcana": "Justice",
         "level": 60,
-        "stats": ["37", "38", "41", "39", "32"],
+        "stats": [37, 38, 41, 39, 32],
         "elems": ["-", "-", "-", "-", "-", "wk", "rs", "-", "ab", "nu"],
         "skills": {
             "Amrita Drop": 65,
@@ -1540,7 +1579,7 @@ var compendium = {
     "Messiah": {
         "arcana": "Judgement",
         "level": 81,
-        "stats": ["50", "50", "50", "50", "50"],
+        "stats": [50, 50, 50, 50, 50],
         "elems": ["-", "-", "rs", "rs", "rs", "rs", "rs", "rs", "rp", "wk"],
         "skills": {
             "Absorb Phys": 85,
@@ -1551,12 +1590,13 @@ var compendium = {
             "Megidolaon": 0,
             "Oratorio": 0,
             "Regenerate 3": 82
-        }
+        },
+        "dlc": true
     },
     "Messiah Picaro": {
         "arcana": "Judgement",
         "level": 90,
-        "stats": ["56", "56", "55", "55", "55"],
+        "stats": [56, 56, 55, 55, 55],
         "elems": ["-", "-", "rs", "rs", "rs", "rs", "rs", "rs", "rp", "wk"],
         "skills": {
             "Agneyastra": 0,
@@ -1567,12 +1607,13 @@ var compendium = {
             "Insta-Heal": 91,
             "Megidolaon": 0,
             "Oratorio": 0
-        }
+        },
+        "dlc": true
     },
     "Metatron": {
         "arcana": "Justice",
         "level": 89,
-        "stats": ["54", "61", "60", "57", "42"],
+        "stats": [54, 61, 60, 57, 42],
         "elems": ["-", "-", "-", "-", "wk", "rp", "ab", "ab", "-", "wk"],
         "skills": {
             "Dancing Blades": 0,
@@ -1583,12 +1624,14 @@ var compendium = {
             "Makougaon": 0,
             "Megidolaon": 91,
             "Mind Charge": 93
-        }
+        },
+        "special": true,
+        "max": true
     },
     "Michael": {
         "arcana": "Judgement",
         "level": 87,
-        "stats": ["57", "54", "55", "56", "46"],
+        "stats": [57, 54, 55, 56, 46],
         "elems": ["-", "rs", "-", "-", "-", "-", "-", "-", "rp", "nu"],
         "skills": {
             "Cosmic Flare": 92,
@@ -1598,12 +1641,14 @@ var compendium = {
             "Mabufudyne": 0,
             "Mahamaon": 90,
             "Megidolaon": 91
-        }
+        },
+        "special": true,
+        "note": "Needs Strength cooperation rank 5 to be fused"
     },
     "Mithra": {
         "arcana": "Temperance",
         "level": 33,
-        "stats": ["19", "26", "19", "24", "18"],
+        "stats": [19, 26, 19, 24, 18],
         "elems": ["-", "-", "-", "nu", "wk", "-", "-", "-", "nu", "-"],
         "skills": {
             "Dekunda": 35,
@@ -1618,7 +1663,7 @@ var compendium = {
     "Mithras": {
         "arcana": "Sun",
         "level": 39,
-        "stats": ["27", "25", "27", "25", "20"],
+        "stats": [27, 25, 27, 25, 20],
         "elems": ["rs", "-", "ab", "-", "-", "-", "wk", "nu", "-", "-"],
         "skills": {
             "Freidyne": 45,
@@ -1633,7 +1678,7 @@ var compendium = {
     "Mokoi": {
         "arcana": "Death",
         "level": 9,
-        "stats": ["9", "5", "6", "10", "4"],
+        "stats": [9, 5, 6, 10, 4],
         "elems": ["-", "-", "-", "-", "rs", "wk", "-", "-", "-", "-"],
         "skills": {
             "Dazzler": 0,
@@ -1648,7 +1693,7 @@ var compendium = {
     "Moloch": {
         "arcana": "Hanged Man",
         "level": 60,
-        "stats": ["32", "45", "42", "31", "37"],
+        "stats": [32, 45, 42, 31, 37],
         "elems": ["-", "-", "rp", "wk", "rs", "rs", "ab", "-", "-", "nu"],
         "skills": {
             "Absorb Fire": 64,
@@ -1663,7 +1708,7 @@ var compendium = {
     "Mot": {
         "arcana": "Death",
         "level": 72,
-        "stats": ["43", "51", "48", "42", "39"],
+        "stats": [43, 51, 48, 42, 39],
         "elems": ["-", "rs", "-", "-", "ab", "wk", "-", "-", "-", "rp"],
         "skills": {
             "Matarukaja": 0,
@@ -1677,7 +1722,7 @@ var compendium = {
     "Mother Harlot": {
         "arcana": "Empress",
         "level": 80,
-        "stats": ["55", "48", "46", "49", "49"],
+        "stats": [55, 48, 46, 49, 49],
         "elems": ["-", "-", "-", "-", "rp", "-", "-", "-", "wk", "nu"],
         "skills": {
             "Debilitate": 85,
@@ -1687,12 +1732,13 @@ var compendium = {
             "Mamudoon": 0,
             "Mudo Boost": 0,
             "Null Bless": 83
-        }
+        },
+        "max": true
     },
     "Mothman": {
         "arcana": "Moon",
         "level": 33,
-        "stats": ["21", "24", "16", "24", "21"],
+        "stats": [21, 24, 16, 24, 21],
         "elems": ["-", "wk", "-", "-", "nu", "-", "rs", "-", "-", "-"],
         "skills": {
             "Ambient Aid": 36,
@@ -1707,7 +1753,7 @@ var compendium = {
     "Naga": {
         "arcana": "Hermit",
         "level": 24,
-        "stats": ["15", "17", "15", "17", "15"],
+        "stats": [15, 17, 15, 17, 15],
         "elems": ["-", "-", "-", "-", "nu", "wk", "-", "-", "-", "-"],
         "skills": {
             "Memory Blow": 0,
@@ -1723,7 +1769,7 @@ var compendium = {
     "Narcissus": {
         "arcana": "Lovers",
         "level": 50,
-        "stats": ["27", "36", "29", "35", "30"],
+        "stats": [27, 36, 29, 35, 30],
         "elems": ["-", "-", "wk", "-", "nu", "rs", "-", "-", "rs", "-"],
         "skills": {
             "Blinding Flash": 0,
@@ -1738,7 +1784,7 @@ var compendium = {
     "Nebiros": {
         "arcana": "Devil",
         "level": 62,
-        "stats": ["39", "40", "42", "36", "36"],
+        "stats": [39, 40, 42, 36, 36],
         "elems": ["-", "-", "-", "-", "-", "-", "rs", "-", "wk", "rp"],
         "skills": {
             "Curse Amp": 65,
@@ -1753,7 +1799,7 @@ var compendium = {
     "Neko Shogun": {
         "arcana": "Star",
         "level": 30,
-        "stats": ["19", "20", "19", "21", "18"],
+        "stats": [19, 20, 19, 21, 18],
         "elems": ["rs", "-", "-", "-", "rs", "wk", "-", "-", "nu", "rs"],
         "skills": {
             "Defense Master": 34,
@@ -1763,12 +1809,14 @@ var compendium = {
             "Masukukaja": 0,
             "Psyo": 0,
             "Rat Fang": 33
-        }
+        },
+        "special": true,
+        "note": "Needs Strength cooperation rank 1 to be fused"
     },
     "Nekomata": {
         "arcana": "Magician",
         "level": 17,
-        "stats": ["13", "10", "12", "15", "8"],
+        "stats": [13, 10, 12, 15, 8],
         "elems": ["-", "-", "-", "-", "wk", "-", "rs", "-", "-", "-"],
         "skills": {
             "Devil Touch": 0,
@@ -1784,14 +1832,14 @@ var compendium = {
     "Nigi Mitama": {
         "arcana": "Temperance",
         "level": 20,
-        "stats": ["12", "14", "14", "15", "12"],
+        "stats": [12, 14, 14, 15, 12],
         "elems": ["-", "-", "-", "-", "wk", "-", "-", "-", "rs", "rs"],
         "skills": { "Baisudi": 0, "Divine Grace": 22, "Makouha": 0, "Me Patra": 23, "Media": 0, "Rainy Play": 24 }
     },
     "Norn": {
         "arcana": "Fortune",
         "level": 52,
-        "stats": ["30", "38", "33", "34", "28"],
+        "stats": [30, 38, 33, 34, 28],
         "elems": ["-", "-", "-", "rs", "-", "ab", "-", "-", "-", "-"],
         "skills": {
             "Amrita Drop": 55,
@@ -1806,7 +1854,7 @@ var compendium = {
     "Nue": {
         "arcana": "Moon",
         "level": 20,
-        "stats": ["16", "10", "17", "14", "10"],
+        "stats": [16, 10, 17, 14, 10],
         "elems": ["-", "-", "wk", "rs", "-", "-", "-", "-", "-", "nu"],
         "skills": {
             "Assault Dive": 25,
@@ -1822,7 +1870,7 @@ var compendium = {
     "Obariyon": {
         "arcana": "Fool",
         "level": 8,
-        "stats": ["7", "3", "9", "8", "4"],
+        "stats": [7, 3, 9, 8, 4],
         "elems": ["rs", "-", "-", "-", "wk", "-", "-", "-", "-", "-"],
         "skills": { "Dekaja": 12, "Snap": 0, "Lucky Punch": 9, "Resist Fear": 10, "Sukunda": 0 },
         "personality": "Unknown"
@@ -1830,7 +1878,7 @@ var compendium = {
     "Oberon": {
         "arcana": "Emperor",
         "level": 66,
-        "stats": ["40", "44", "43", "43", "35"],
+        "stats": [40, 44, 43, 43, 35],
         "elems": ["-", "-", "-", "-", "rs", "-", "nu", "wk", "-", "-"],
         "skills": {
             "Brain Jack": 0,
@@ -1847,7 +1895,7 @@ var compendium = {
     "Odin": {
         "arcana": "Emperor",
         "level": 82,
-        "stats": ["53", "52", "54", "52", "42"],
+        "stats": [53, 52, 54, 52, 42],
         "elems": ["-", "-", "-", "-", "nu", "ab", "-", "-", "rp", "rp"],
         "skills": {
             "El Jihad": 84,
@@ -1857,12 +1905,13 @@ var compendium = {
             "Mind Charge": 85,
             "Rainy Death": 0,
             "Thunder Reign": 0
-        }
+        },
+        "max": true
     },
     "Okuninushi": {
         "arcana": "Emperor",
         "level": 44,
-        "stats": ["30", "28", "29", "28", "24"],
+        "stats": [30, 28, 29, 28, 24],
         "elems": ["-", "-", "-", "-", "rp", "wk", "nu", "wk", "-", "-"],
         "skills": {
             "Evade Nuclear": 47,
@@ -1877,7 +1926,7 @@ var compendium = {
     "Ongyo-Ki": {
         "arcana": "Hermit",
         "level": 75,
-        "stats": ["56", "42", "47", "48", "39"],
+        "stats": [56, 42, 47, 48, 39],
         "elems": ["rs", "rs", "-", "-", "-", "-", "-", "-", "rp", "rp"],
         "skills": {
             "Agneyastra": 81,
@@ -1887,12 +1936,14 @@ var compendium = {
             "Pressing Stance": 0,
             "Rainy Death": 0,
             "Regenerate 3": 78
-        }
+        },
+        "special": true,
+        "max": true
     },
     "Oni": {
         "arcana": "Strength",
         "level": 19,
-        "stats": ["17", "8", "16", "13", "10"],
+        "stats": [17, 8, 16, 13, 10],
         "elems": ["rs", "rs", "-", "-", "-", "-", "-", "-", "-", "-"],
         "skills": { "Memory Blow": 23, "Sharp Student": 22, "Counter": 0, "Snap": 0, "Giant Slice": 21, "Rampage": 0 },
         "personality": "Upbeat"
@@ -1900,7 +1951,7 @@ var compendium = {
     "Onmoraki": {
         "arcana": "Moon",
         "level": 12,
-        "stats": ["9", "12", "7", "10", "5"],
+        "stats": [9, 12, 7, 10, 5],
         "elems": ["-", "wk", "rs", "-", "-", "-", "-", "-", "wk", "nu"],
         "skills": { "Agi": 13, "Ice Wall": 0, "Mudo": 0, "Panic Boost": 15, "Pulinpa": 14, "Resist Fear": 17 },
         "personality": "Gloomy"
@@ -1908,7 +1959,7 @@ var compendium = {
     "Orlov": {
         "arcana": "Strength",
         "level": 30,
-        "stats": ["30", "30", "30", "30", "30"],
+        "stats": [30, 30, 30, 30, 30],
         "elems": ["rs", "nu", "nu", "nu", "-", "nu", "nu", "nu", "nu", "nu"],
         "skills": {
             "Mabufula": 0,
@@ -1919,12 +1970,13 @@ var compendium = {
             "Mapsyo": 0,
             "Maragion": 0,
             "Mazionga": 0
-        }
+        },
+        "rare": true
     },
     "Orobas": {
         "arcana": "Hierophant",
         "level": 17,
-        "stats": ["11", "14", "15", "12", "6"],
+        "stats": [11, 14, 15, 12, 6],
         "elems": ["-", "-", "-", "-", "-", "rs", "-", "-", "wk", "rs"],
         "skills": { "Dekaja": 0, "Fire Break": 20, "Makajamon": 21, "Maragi": 0, "Marakunda": 19, "Sukukaja": 0 },
         "personality": "Timid"
@@ -1932,7 +1984,7 @@ var compendium = {
     "Orpheus": {
         "arcana": "Fool",
         "level": 26,
-        "stats": ["17", "17", "17", "17", "17"],
+        "stats": [17, 17, 17, 17, 17],
         "elems": ["-", "-", "-", "-", "wk", "-", "-", "-", "rs", "wk"],
         "skills": {
             "Agilao": 0,
@@ -1942,12 +1994,13 @@ var compendium = {
             "Maragion": 29,
             "Marakukaja": 30,
             "Tarunda": 0
-        }
+        },
+        "dlc": true
     },
     "Orpheus Picaro": {
         "arcana": "Fool",
         "level": 29,
-        "stats": ["19", "19", "19", "19", "19"],
+        "stats": [19, 19, 19, 19, 19],
         "elems": ["-", "-", "-", "-", "wk", "-", "-", "-", "rs", "wk"],
         "skills": {
             "Agidyne": 32,
@@ -1957,12 +2010,13 @@ var compendium = {
             "Maragion": 0,
             "Matarukaja": 33,
             "Matarunda": 0
-        }
+        },
+        "dlc": true
     },
     "Orthrus": {
         "arcana": "Hanged Man",
         "level": 21,
-        "stats": ["16", "14", "14", "19", "7"],
+        "stats": [16, 14, 14, 19, 7],
         "elems": ["-", "-", "ab", "wk", "-", "-", "-", "rs", "-", "-"],
         "skills": { "Agilao": 0, "Burn Boost": 22, "Dodge Ice": 0, "Double Fangs": 0, "Matarukaja": 26, "Rat Fang": 24 },
         "personality": "Irritable"
@@ -1970,7 +2024,7 @@ var compendium = {
     "Ose": {
         "arcana": "Fool",
         "level": 42,
-        "stats": ["32", "24", "25", "31", "21"],
+        "stats": [32, 24, 25, 31, 21],
         "elems": ["-", "-", "rs", "-", "-", "-", "-", "-", "wk", "nu"],
         "skills": { "Counterstrike": 0, "Heat Wave": 47, "Matarukaja": 45, "Oni Kagura": 0, "Tempest Slash": 43 },
         "personality": "Unknown"
@@ -1978,7 +2032,7 @@ var compendium = {
     "Pale Rider": {
         "arcana": "Death",
         "level": 53,
-        "stats": ["34", "34", "33", "39", "26"],
+        "stats": [34, 34, 33, 39, 26],
         "elems": ["-", "-", "-", "-", "-", "rs", "-", "-", "wk", "rp"],
         "skills": {
             "Banishing Wave": 0,
@@ -1993,7 +2047,7 @@ var compendium = {
     "Parvati": {
         "arcana": "Lovers",
         "level": 56,
-        "stats": ["33", "39", "33", "39", "31"],
+        "stats": [33, 39, 33, 39, 31],
         "elems": ["-", "-", "-", "rp", "-", "-", "rs", "-", "rs", "wk"],
         "skills": {
             "Diarahan": 58,
@@ -2009,7 +2063,7 @@ var compendium = {
     "Pazuzu": {
         "arcana": "Devil",
         "level": 43,
-        "stats": ["29", "30", "27", "26", "24"],
+        "stats": [29, 30, 27, 26, 24],
         "elems": ["-", "-", "-", "-", "-", "rs", "-", "-", "wk", "nu"],
         "skills": {
             "Bad Beat": 47,
@@ -2024,7 +2078,7 @@ var compendium = {
     "Pisaca": {
         "arcana": "Death",
         "level": 29,
-        "stats": ["19", "21", "21", "17", "16"],
+        "stats": [19, 21, 21, 17, 16],
         "elems": ["-", "-", "wk", "-", "rs", "-", "-", "-", "wk", "nu"],
         "skills": {
             "Banishing Wave": 32,
@@ -2040,7 +2094,7 @@ var compendium = {
     "Pixie": {
         "arcana": "Lovers",
         "level": 2,
-        "stats": ["1", "3", "3", "4", "2"],
+        "stats": [1, 3, 3, 4, 2],
         "elems": ["-", "wk", "-", "wk", "rs", "-", "-", "-", "rs", "wk"],
         "skills": { "Dia": 0, "Patra": 3, "Resist Panic": 6, "Tarukaja": 5, "Zio": 0 },
         "personality": "Timid"
@@ -2048,7 +2102,7 @@ var compendium = {
     "Power": {
         "arcana": "Justice",
         "level": 41,
-        "stats": ["30", "26", "28", "25", "21"],
+        "stats": [30, 26, 28, 25, 21],
         "elems": ["-", "wk", "-", "-", "-", "rs", "-", "-", "nu", "wk"],
         "skills": {
             "Diarama": 44,
@@ -2064,14 +2118,14 @@ var compendium = {
     "Principality": {
         "arcana": "Justice",
         "level": 29,
-        "stats": ["17", "19", "18", "21", "19"],
+        "stats": [17, 19, 18, 21, 19],
         "elems": ["-", "-", "rs", "-", "-", "-", "-", "-", "nu", "wk"],
         "skills": { "Bless Boost": 34, "Mabaisudi": 32, "Makajamon": 0, "Makouga": 0, "Mediarama": 31, "Tetraja": 0 }
     },
     "Queen Mab": {
         "arcana": "Magician",
         "level": 43,
-        "stats": ["23", "35", "26", "30", "22"],
+        "stats": [23, 35, 26, 30, 22],
         "elems": ["-", "-", "nu", "-", "rs", "wk", "-", "-", "-", "-"],
         "skills": { "Agidyne": 48, "Makajamon": 0, "Makara Break": 46, "Matarunda": 44, "Mazionga": 0, "Wind Wall": 0 },
         "personality": "Unknown"
@@ -2079,7 +2133,7 @@ var compendium = {
     "Quetzalcoatl": {
         "arcana": "Sun",
         "level": 63,
-        "stats": ["38", "42", "41", "41", "34"],
+        "stats": [38, 42, 41, 41, 34],
         "elems": ["-", "-", "nu", "-", "-", "rs", "wk", "-", "-", "-"],
         "skills": {
             "Memory Blow": 0,
@@ -2094,7 +2148,7 @@ var compendium = {
     "Raja Naga": {
         "arcana": "Temperance",
         "level": 55,
-        "stats": ["33", "37", "36", "35", "31"],
+        "stats": [33, 37, 36, 35, 31],
         "elems": ["-", "-", "-", "-", "nu", "-", "-", "-", "-", "-"],
         "skills": {
             "Electric Break": 0,
@@ -2109,7 +2163,7 @@ var compendium = {
     "Rakshasa": {
         "arcana": "Strength",
         "level": 24,
-        "stats": ["20", "15", "18", "17", "9"],
+        "stats": [20, 15, 18, 17, 9],
         "elems": ["rs", "-", "rs", "-", "-", "wk", "-", "-", "wk", "rs"],
         "skills": {
             "Counterstrike": 28,
@@ -2125,7 +2179,7 @@ var compendium = {
     "Rangda": {
         "arcana": "Magician",
         "level": 48,
-        "stats": ["28", "34", "30", "33", "26"],
+        "stats": [28, 34, 30, 33, 26],
         "elems": ["rp", "rp", "nu", "-", "wk", "-", "-", "-", "wk", "nu"],
         "skills": { "Bloodbath": 0, "Counterstrike": 0, "Eigaon": 49, "Matarunda": 51, "Mudoon": 53, "Swift Strike": 0 },
         "personality": "Unknown"
@@ -2133,7 +2187,7 @@ var compendium = {
     "Raphael": {
         "arcana": "Lovers",
         "level": 78,
-        "stats": ["57", "45", "49", "55", "35"],
+        "stats": [57, 45, 49, 55, 35],
         "elems": ["-", "-", "-", "ab", "-", "-", "nu", "-", "nu", "-"],
         "skills": {
             "Arms Master": 83,
@@ -2148,7 +2202,7 @@ var compendium = {
     "Red Rider": {
         "arcana": "Tower",
         "level": 41,
-        "stats": ["26", "27", "25", "29", "23"],
+        "stats": [26, 27, 25, 29, 23],
         "elems": ["-", "-", "-", "-", "-", "-", "-", "-", "wk", "nu"],
         "skills": {
             "Mapsyo": 0,
@@ -2163,7 +2217,7 @@ var compendium = {
     "Regent": {
         "arcana": "Emperor",
         "level": 10,
-        "stats": ["10", "10", "10", "10", "10"],
+        "stats": [10, 10, 10, 10, 10],
         "elems": ["rs", "rs", "rs", "rs", "rs", "rs", "wk", "wk", "nu", "nu"],
         "skills": {
             "Mabufu": 0,
@@ -2174,19 +2228,20 @@ var compendium = {
             "Mapsy": 0,
             "Maragi": 0,
             "Mazio": 0
-        }
+        },
+        "rare": true
     },
     "Saki Mitama": {
         "arcana": "Lovers",
         "level": 6,
-        "stats": ["4", "6", "5", "6", "4"],
+        "stats": [4, 6, 5, 6, 4],
         "elems": ["-", "-", "-", "rs", "wk", "-", "-", "-", "-", "-"],
         "skills": { "Bufu": 0, "Energy Drop": 0, "Growth 1": 7, "Rakukaja": 8, "Resist Dizzy": 10, "Wind Wall": 0 }
     },
     "Sandalphon": {
         "arcana": "Moon",
         "level": 75,
-        "stats": ["46", "51", "49", "48", "38"],
+        "stats": [46, 51, 49, 48, 38],
         "elems": ["rs", "rs", "-", "-", "rs", "-", "-", "-", "rp", "nu"],
         "skills": {
             "Amrita Shower": 0,
@@ -2195,12 +2250,13 @@ var compendium = {
             "Mahamaon": 0,
             "Repel Curseness": 78,
             "Samarecarm": 0
-        }
+        },
+        "max": true
     },
     "Sandman": {
         "arcana": "Magician",
         "level": 24,
-        "stats": ["11", "13", "14", "20", "21"],
+        "stats": [11, 13, 14, 20, 21],
         "elems": ["-", "-", "-", "-", "wk", "rs", "-", "-", "-", "-"],
         "skills": {
             "Dormin Rush": 0,
@@ -2216,7 +2272,7 @@ var compendium = {
     "Sarasvati": {
         "arcana": "Priestess",
         "level": 50,
-        "stats": ["30", "35", "32", "33", "27"],
+        "stats": [30, 35, 32, 33, 27],
         "elems": ["-", "-", "-", "nu", "rs", "-", "-", "wk", "-", "-"],
         "skills": {
             "Dekaja": 52,
@@ -2231,7 +2287,7 @@ var compendium = {
     "Satan": {
         "arcana": "Judgement",
         "level": 92,
-        "stats": ["62", "59", "55", "52", "55"],
+        "stats": [62, 59, 55, 52, 55],
         "elems": ["-", "rs", "-", "rp", "-", "-", "-", "-", "-", "rp"],
         "skills": {
             "Absorb Ice": 98,
@@ -2242,12 +2298,13 @@ var compendium = {
             "Mind Charge": 97,
             "Regenerate 3": 0,
             "Resist Ailment": 96
-        }
+        },
+        "max": true
     },
     "Satanael": {
         "arcana": "Fool",
         "level": 95,
-        "stats": ["63", "60", "57", "56", "56"],
+        "stats": [63, 60, 57, 56, 56],
         "elems": ["rs", "rs", "rs", "rs", "rs", "rs", "rs", "rs", "nu", "ab"],
         "skills": {
             "Cosmic Flare": 96,
@@ -2258,12 +2315,14 @@ var compendium = {
             "Survival Trick": 0,
             "Unshaken Will": 98,
             "Victory Cry": 99
-        }
+        },
+        "special": true,
+        "note": "Only available on NG+"
     },
     "Scathach": {
         "arcana": "Priestess",
         "level": 45,
-        "stats": ["29", "30", "28", "30", "25"],
+        "stats": [29, 30, 28, 30, 25],
         "elems": ["-", "-", "-", "rp", "-", "-", "-", "-", "-", "nu"],
         "skills": {
             "Attack Master": 49,
@@ -2279,7 +2338,7 @@ var compendium = {
     "Seiryu": {
         "arcana": "Temperance",
         "level": 62,
-        "stats": ["38", "41", "43", "37", "34"],
+        "stats": [38, 41, 43, 37, 34],
         "elems": ["-", "-", "-", "rs", "-", "-", "-", "wk", "-", "-"],
         "skills": {
             "Amrita Drop": 66,
@@ -2294,7 +2353,7 @@ var compendium = {
     "Setanta": {
         "arcana": "Emperor",
         "level": 28,
-        "stats": ["20", "17", "19", "18", "17"],
+        "stats": [20, 17, 19, 18, 17],
         "elems": ["-", "-", "-", "-", "-", "-", "wk", "rs", "-", "-"],
         "skills": {
             "Counter": 0,
@@ -2308,7 +2367,7 @@ var compendium = {
     "Seth": {
         "arcana": "Tower",
         "level": 51,
-        "stats": ["34", "37", "33", "37", "31"],
+        "stats": [34, 37, 33, 37, 31],
         "elems": ["-", "-", "rp", "-", "-", "nu", "-", "-", "wk", "rs"],
         "skills": {
             "Agidyne": 0,
@@ -2317,12 +2376,14 @@ var compendium = {
             "One Shot Kill": 0,
             "Resist Ailment": 56,
             "Weak Spot Aim": 53
-        }
+        },
+        "special": true,
+        "note": "Needs Strength cooperation rank 1 to be fused"
     },
     "Shiisaa": {
         "arcana": "Chariot",
         "level": 16,
-        "stats": ["13", "9", "12", "13", "8"],
+        "stats": [13, 9, 12, 13, 8],
         "elems": ["rs", "rs", "-", "-", "-", "-", "-", "-", "nu", "wk"],
         "skills": {
             "Dodge Curseness": 20,
@@ -2336,7 +2397,7 @@ var compendium = {
     "Shiki-Ouji": {
         "arcana": "Chariot",
         "level": 21,
-        "stats": ["21", "11", "15", "16", "13"],
+        "stats": [21, 11, 15, 16, 13],
         "elems": ["nu", "nu", "-", "-", "-", "-", "-", "wk", "-", "nu"],
         "skills": { "Dekaja": 24, "Snap": 0, "Mapsy": 22, "Oni Kagura": 27, "Taunt": 0, "Psyo": 26, "Tarukaja": 0 },
         "personality": "Irritable"
@@ -2344,7 +2405,7 @@ var compendium = {
     "Shiva": {
         "arcana": "Judgement",
         "level": 82,
-        "stats": ["55", "54", "53", "53", "38"],
+        "stats": [55, 54, 53, 53, 38],
         "elems": ["-", "-", "-", "nu", "rp", "-", "ab", "wk", "nu", "nu"],
         "skills": {
             "Auto-Mataru": 87,
@@ -2354,12 +2415,13 @@ var compendium = {
             "Psycho Force": 88,
             "Psychokinesis": 0,
             "Riot Gun": 85
-        }
+        },
+        "special": true
     },
     "Siegfried": {
         "arcana": "Strength",
         "level": 69,
-        "stats": ["51", "37", "47", "48", "31"],
+        "stats": [51, 37, 47, 48, 31],
         "elems": ["nu", "-", "-", "rs", "-", "-", "-", "wk", "-", "-"],
         "skills": {
             "Auto-Mataru": 72,
@@ -2373,7 +2435,7 @@ var compendium = {
     "Silky": {
         "arcana": "Priestess",
         "level": 6,
-        "stats": ["4", "7", "4", "5", "5"],
+        "stats": [4, 7, 4, 5, 5],
         "elems": ["-", "-", "wk", "rs", "wk", "-", "-", "-", "-", "-"],
         "skills": { "Bufu": 0, "Sharp Student": 10, "Dia": 7, "Dormina": 0, "Patra": 9 },
         "personality": "Gloomy"
@@ -2381,7 +2443,7 @@ var compendium = {
     "Skadi": {
         "arcana": "Priestess",
         "level": 55,
-        "stats": ["35", "39", "34", "34", "30"],
+        "stats": [35, 39, 34, 34, 30],
         "elems": ["-", "-", "-", "rp", "-", "-", "-", "-", "-", "nu"],
         "skills": {
             "Bufudyne": 58,
@@ -2396,7 +2458,7 @@ var compendium = {
     "Slime": {
         "arcana": "Chariot",
         "level": 10,
-        "stats": ["9", "6", "11", "6", "5"],
+        "stats": [9, 6, 11, 6, 5],
         "elems": ["rs", "-", "wk", "-", "-", "wk", "-", "-", "-", "-"],
         "skills": { "Devil Touch": 0, "Eiha": 11, "Fire Wall": 13, "Headbutt": 14, "Lunge": 0 },
         "personality": "Timid"
@@ -2404,7 +2466,7 @@ var compendium = {
     "Sraosha": {
         "arcana": "Star",
         "level": 80,
-        "stats": ["47", "56", "45", "56", "43"],
+        "stats": [47, 56, 45, 56, 43],
         "elems": ["-", "-", "-", "-", "ab", "-", "-", "-", "rp", "wk"],
         "skills": {
             "Amrita Shower": 84,
@@ -2414,19 +2476,22 @@ var compendium = {
             "Kougaon": 0,
             "Mahamaon": 0,
             "Makougaon": 81
-        }
+        },
+        "special": true,
+        "note": "Needs Strength cooperation rank 5 to be fused"
     },
     "Stone of Scone": {
         "arcana": "Fortune",
         "level": 20,
-        "stats": ["20", "20", "20", "20", "20"],
+        "stats": [20, 20, 20, 20, 20],
         "elems": ["nu", "nu", "nu", "nu", "nu", "nu", "nu", "nu", "nu", "wk"],
-        "skills": { "Agilao": 0, "Bufula": 0, "Eiga": 0, "Freila": 0, "Garula": 0, "Kouga": 0, "Psyo": 0, "Zionga": 0 }
+        "skills": { "Agilao": 0, "Bufula": 0, "Eiga": 0, "Freila": 0, "Garula": 0, "Kouga": 0, "Psyo": 0, "Zionga": 0 },
+        "rare": true
     },
     "Succubus": {
         "arcana": "Moon",
         "level": 7,
-        "stats": ["4", "7", "5", "8", "4"],
+        "stats": [4, 7, 5, 8, 4],
         "elems": ["-", "wk", "rs", "-", "-", "-", "-", "-", "wk", "nu"],
         "skills": { "Agi": 8, "Brainwash Boost": 11, "Dekaja": 10, "Marin Karin": 0, "Mudo": 12, "Rebellion": 0 },
         "personality": "Irritable"
@@ -2434,7 +2499,7 @@ var compendium = {
     "Sudama": {
         "arcana": "Hermit",
         "level": 17,
-        "stats": ["9", "14", "12", "13", "10"],
+        "stats": [9, 14, 12, 13, 10],
         "elems": ["-", "-", "-", "wk", "-", "rp", "-", "wk", "-", "-"],
         "skills": {
             "Apt Pupil": 22,
@@ -2449,7 +2514,7 @@ var compendium = {
     "Sui-Ki": {
         "arcana": "Moon",
         "level": 24,
-        "stats": ["16", "15", "15", "18", "15"],
+        "stats": [16, 15, 15, 18, 15],
         "elems": ["-", "-", "-", "ab", "rs", "-", "-", "wk", "-", "-"],
         "skills": {
             "Bufula": 0,
@@ -2465,7 +2530,7 @@ var compendium = {
     "Surt": {
         "arcana": "Magician",
         "level": 59,
-        "stats": ["37", "40", "39", "35", "33"],
+        "stats": [37, 40, 39, 35, 33],
         "elems": ["-", "-", "ab", "wk", "-", "-", "-", "-", "-", "-"],
         "skills": {
             "Agidyne": 0,
@@ -2479,7 +2544,7 @@ var compendium = {
     "Suzaku": {
         "arcana": "Sun",
         "level": 19,
-        "stats": ["11", "14", "10", "18", "11"],
+        "stats": [11, 14, 10, 18, 11],
         "elems": ["-", "-", "ab", "wk", "-", "-", "-", "rs", "-", "-"],
         "skills": {
             "Frei": 0,
@@ -2494,7 +2559,7 @@ var compendium = {
     "Take-Minakata": {
         "arcana": "Hanged Man",
         "level": 29,
-        "stats": ["20", "22", "21", "18", "13"],
+        "stats": [20, 22, 21, 18, 13],
         "elems": ["-", "-", "-", "-", "rp", "-", "wk", "-", "-", "rs"],
         "skills": {
             "Assault Dive": 0,
@@ -2509,7 +2574,7 @@ var compendium = {
     "Thanatos": {
         "arcana": "Death",
         "level": 65,
-        "stats": ["43", "49", "41", "38", "31"],
+        "stats": [43, 49, 41, 38, 31],
         "elems": ["rs", "-", "-", "-", "-", "-", "-", "-", "wk", "rp"],
         "skills": {
             "Curse Amp": 66,
@@ -2519,12 +2584,13 @@ var compendium = {
             "Maeigaon": 0,
             "Mamudoon": 0,
             "One Shot Kill": 68
-        }
+        },
+        "dlc": true
     },
     "Thanatos Picaro": {
         "arcana": "Death",
         "level": 69,
-        "stats": ["45", "51", "43", "40", "35"],
+        "stats": [45, 51, 43, 40, 35],
         "elems": ["rs", "-", "-", "-", "-", "-", "-", "-", "wk", "rp"],
         "skills": {
             "Adverse Resolve": 73,
@@ -2534,12 +2600,13 @@ var compendium = {
             "Mamudoon": 0,
             "Mudo Boost": 70,
             "One Shot Kill": 72
-        }
+        },
+        "dlc": true
     },
     "Queen's Necklace": {
         "arcana": "Empress",
         "level": 15,
-        "stats": ["15", "15", "15", "15", "15"],
+        "stats": [15, 15, 15, 15, 15],
         "elems": ["rs", "wk", "rs", "rs", "rs", "rs", "rs", "rs", "rs", "rs"],
         "skills": {
             "Media": 0,
@@ -2550,12 +2617,13 @@ var compendium = {
             "Sukunda": 0,
             "Tarukaja": 0,
             "Tarunda": 0
-        }
+        },
+        "rare": true
     },
     "Thor": {
         "arcana": "Chariot",
         "level": 64,
-        "stats": ["44", "39", "43", "38", "35"],
+        "stats": [44, 39, 43, 38, 35],
         "elems": ["rs", "-", "-", "-", "ab", "-", "wk", "-", "rs", "rs"],
         "skills": {
             "Attack Master": 70,
@@ -2570,7 +2638,7 @@ var compendium = {
     "Thoth": {
         "arcana": "Emperor",
         "level": 36,
-        "stats": ["21", "28", "21", "24", "21"],
+        "stats": [21, 28, 21, 24, 21],
         "elems": ["-", "-", "-", "-", "-", "-", "wk", "nu", "nu", "-"],
         "skills": {
             "Freila": 0,
@@ -2586,7 +2654,7 @@ var compendium = {
     "Throne": {
         "arcana": "Justice",
         "level": 71,
-        "stats": ["42", "49", "47", "46", "36"],
+        "stats": [42, 49, 47, 46, 36],
         "elems": ["-", "-", "ab", "-", "-", "-", "-", "rs", "nu", "wk"],
         "skills": {
             "Auto-Maraku": 76,
@@ -2596,12 +2664,14 @@ var compendium = {
             "Bless Amp": 74,
             "Mahamaon": 0,
             "Makougaon": 73
-        }
+        },
+        "special": true,
+        "note": "Needs Strength cooperation rank 5 to be fused"
     },
     "Titania": {
         "arcana": "Empress",
         "level": 56,
-        "stats": ["32", "40", "35", "38", "30"],
+        "stats": [32, 40, 35, 38, 30],
         "elems": ["-", "-", "-", "-", "-", "-", "wk", "rs", "rs", "rs"],
         "skills": {
             "Freidyne": 0,
@@ -2615,7 +2685,7 @@ var compendium = {
     "Trumpeter": {
         "arcana": "Judgement",
         "level": 59,
-        "stats": ["33", "42", "40", "38", "31"],
+        "stats": [33, 42, 40, 38, 31],
         "elems": ["-", "-", "-", "ab", "rp", "-", "-", "-", "rp", "nu"],
         "skills": {
             "Banishing Wave": 0,
@@ -2625,12 +2695,14 @@ var compendium = {
             "Mafreidyne": 0,
             "Resist Ailment": 61,
             "Weak Spot Aim": 62
-        }
+        },
+        "special": true,
+        "note": "Needs Strength cooperation rank 5 to be fused"
     },
     "Tsukiyomi": {
         "arcana": "Moon",
         "level": 50,
-        "stats": ["38", "32", "33", "37", "17"],
+        "stats": [38, 32, 33, 37, 17],
         "elems": ["rs", "-", "-", "-", "-", "-", "-", "wk", "rs", "rp"],
         "skills": {
             "Absorb Curse": 0,
@@ -2640,12 +2712,13 @@ var compendium = {
             "Purgatorial Wing": 0,
             "Rainy Death": 0,
             "Vorpal Blade": 55
-        }
+        },
+        "dlc": true
     },
     "Tsukiyomi Picaro": {
         "arcana": "Moon",
         "level": 55,
-        "stats": ["41", "35", "36", "40", "20"],
+        "stats": [41, 35, 36, 40, 20],
         "elems": ["rs", "-", "-", "-", "-", "-", "-", "wk", "rs", "rp"],
         "skills": {
             "Absorb Curse": 0,
@@ -2655,12 +2728,13 @@ var compendium = {
             "Spell Master": 61,
             "Spirit Drain": 0,
             "Vorpal Blade": 60
-        }
+        },
+        "dlc": true
     },
     "Unicorn": {
         "arcana": "Hierophant",
         "level": 39,
-        "stats": ["20", "27", "25", "28", "24"],
+        "stats": [20, 27, 25, 28, 24],
         "elems": ["-", "-", "-", "nu", "-", "-", "rs", "-", "nu", "wk"],
         "skills": {
             "Assault Dive": 0,
@@ -2676,7 +2750,7 @@ var compendium = {
     "Uriel": {
         "arcana": "Justice",
         "level": 81,
-        "stats": ["50", "54", "49", "55", "42"],
+        "stats": [50, 54, 49, 55, 42],
         "elems": ["-", "-", "nu", "-", "-", "-", "-", "ab", "rp", "-"],
         "skills": {
             "Angelic Grace": 85,
@@ -2691,7 +2765,7 @@ var compendium = {
     "Valkyrie": {
         "arcana": "Strength",
         "level": 44,
-        "stats": ["33", "24", "28", "29", "25"],
+        "stats": [33, 24, 28, 29, 25],
         "elems": ["-", "rs", "-", "-", "-", "-", "-", "-", "nu", "-"],
         "skills": {
             "Attack Master": 45,
@@ -2705,7 +2779,7 @@ var compendium = {
     "Vasuki": {
         "arcana": "Hanged Man",
         "level": 68,
-        "stats": ["41", "46", "45", "42", "37"],
+        "stats": [41, 46, 45, 42, 37],
         "elems": ["-", "-", "-", "nu", "nu", "-", "-", "-", "-", "wk"],
         "skills": {
             "Brain Jack": 0,
@@ -2715,12 +2789,14 @@ var compendium = {
             "Makarakarn": 73,
             "Trigger Happy": 71,
             "Triple Down": 0
-        }
+        },
+        "special": true,
+        "note": "Needs Strength cooperation rank 1 to be fused"
     },
     "Vishnu": {
         "arcana": "Fool",
         "level": 83,
-        "stats": ["56", "51", "49", "57", "43"],
+        "stats": [56, 51, 49, 57, 43],
         "elems": ["-", "-", "wk", "ab", "-", "-", "-", "-", "nu", "nu"],
         "skills": {
             "Ali Dance": 0,
@@ -2731,12 +2807,13 @@ var compendium = {
             "Riot Gun": 90,
             "Vacuum Wave": 85,
             "Wind Amp": 88
-        }
+        },
+        "max": true
     },
     "White Rider": {
         "arcana": "Chariot",
         "level": 39,
-        "stats": ["24", "24", "25", "26", "25"],
+        "stats": [24, 24, 25, 26, 25],
         "elems": ["-", "-", "nu", "wk", "-", "-", "-", "-", "nu", "rp"],
         "skills": {
             "Ailment Boost": 45,
@@ -2752,7 +2829,7 @@ var compendium = {
     "Yaksini": {
         "arcana": "Empress",
         "level": 20,
-        "stats": ["14", "11", "13", "16", "13"],
+        "stats": [14, 11, 13, 16, 13],
         "elems": ["-", "-", "-", "rs", "-", "-", "-", "wk", "-", "-"],
         "skills": {
             "Attack Master": 23,
@@ -2767,7 +2844,7 @@ var compendium = {
     "Yamata no Orochi": {
         "arcana": "Judgement",
         "level": 64,
-        "stats": ["44", "38", "48", "36", "33"],
+        "stats": [44, 38, 48, 36, 33],
         "elems": ["-", "-", "-", "nu", "-", "-", "-", "wk", "-", "rs"],
         "skills": {
             "Adverse Resolve": 67,
@@ -2781,7 +2858,7 @@ var compendium = {
     "Yatagarasu": {
         "arcana": "Sun",
         "level": 57,
-        "stats": ["35", "41", "30", "40", "32"],
+        "stats": [35, 41, 30, 40, 32],
         "elems": ["-", "-", "-", "-", "-", "rs", "-", "-", "nu", "wk"],
         "skills": {
             "Agidyne": 0,
@@ -2796,7 +2873,7 @@ var compendium = {
     "Yoshitsune": {
         "arcana": "Tower",
         "level": 79,
-        "stats": ["58", "47", "45", "53", "41"],
+        "stats": [58, 47, 45, 53, 41],
         "elems": ["nu", "-", "rs", "-", "rp", "-", "-", "-", "rp", "-"],
         "skills": {
             "Brave Blade": 0,
@@ -2806,12 +2883,14 @@ var compendium = {
             "Power Charge": 0,
             "Pressing Stance": 81,
             "Ziodyne": 0
-        }
+        },
+        "special": true,
+        "note": "Needs Strength cooperation rank 5 to be fused"
     },
     "Yurlungur": {
         "arcana": "Sun",
         "level": 42,
-        "stats": ["26", "29", "28", "27", "23"],
+        "stats": [26, 29, 28, 27, 23],
         "elems": ["-", "-", "-", "-", "nu", "-", "wk", "-", "rs", "-"],
         "skills": {
             "Brain Jack": 0,
@@ -2826,7 +2905,7 @@ var compendium = {
     "Zaou-Gongen": {
         "arcana": "Strength",
         "level": 80,
-        "stats": ["57", "45", "50", "56", "39"],
+        "stats": [57, 45, 50, 56, 39],
         "elems": ["-", "-", "rp", "-", "wk", "-", "-", "-", "nu", "nu"],
         "skills": {
             "Banishing Wave": 0,
@@ -2836,12 +2915,13 @@ var compendium = {
             "Incineration": 86,
             "Maragidyne": 0,
             "Weak Spot Aim": 84
-        }
+        },
+        "max": true
     },
     "Zouchouten": {
         "arcana": "Strength",
         "level": 31,
-        "stats": ["22", "19", "24", "18", "17"],
+        "stats": [22, 19, 24, 18, 17],
         "elems": ["rs", "-", "-", "-", "-", "wk", "-", "-", "-", "-"],
         "skills": {
             "Attack Master": 36,

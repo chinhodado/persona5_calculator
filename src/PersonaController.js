@@ -1,5 +1,5 @@
 ///<reference path="FusionCalculator.ts"/>
-///<reference path="../data/Compendium.ts"/>
+///<reference path="../data/PersonaData.ts"/>
 ///<reference path="../data/SkillData.ts"/>
 /**
  * Created by Chin on 08-Apr-17.
@@ -11,7 +11,7 @@ var PersonaController = (function () {
         this.$scope = $scope;
         this.$scope.Math = Math;
         this.$scope.personaName = personaName;
-        this.$scope.persona = personaeByName[personaName];
+        this.$scope.persona = personaMap[personaName];
         if (!this.$scope.persona)
             return;
         this.$scope.allRecipes = [];
@@ -22,7 +22,7 @@ var PersonaController = (function () {
             recipe.num = i;
             this.$scope.maxCost = Math.max(this.$scope.maxCost, recipe.cost);
         }
-        var compediumEntry = compendium[personaName];
+        var compediumEntry = personaMap[personaName];
         this.$scope.persona.stats = compediumEntry.stats;
         this.$scope.persona.statsHeader = ["Strength", "Magic", "Endurance", "Agility", "Luck"];
         this.$scope.persona.elems = this.getElems(personaName);
@@ -48,7 +48,7 @@ var PersonaController = (function () {
         this.$scope.allRecipes.push(recipe);
     };
     PersonaController.prototype.getElems = function (personaName) {
-        var elems = compendium[personaName].elems;
+        var elems = personaMap[personaName].elems;
         for (var i = 0; i < elems.length; i++) {
             if (elems[i] == 'wk')
                 elems[i] = 'Weak';
@@ -64,7 +64,7 @@ var PersonaController = (function () {
         return elems;
     };
     PersonaController.prototype.getSkills = function (personaName) {
-        var skills = compendium[personaName].skills;
+        var skills = personaMap[personaName].skills;
         var sorted = [];
         for (var name_1 in skills) {
             if (skills.hasOwnProperty(name_1)) {
@@ -115,7 +115,7 @@ var PersonaController = (function () {
                 if (this.$scope.persona.name == combo.result) {
                     var recipe = { 'sources': [] };
                     for (var j = 0, source = null; source = combo.sources[j]; j++) {
-                        recipe.sources.push(personaeByName[source]);
+                        recipe.sources.push(personaMap[source]);
                     }
                     this.addRecipe(recipe);
                     return;
@@ -163,10 +163,10 @@ var PersonaController = (function () {
             }
         }
         for (var i = 0; i < rarePersonae.length; i++) {
-            var rarePersona = personaeByName[rarePersonae[i]];
-            var personae_1 = personaeByArcana[this.$scope.persona.arcana];
-            for (var j = 0; j < personae_1.length; j++) {
-                var mainPersona = personae_1[j];
+            var rarePersona = personaMap[rarePersonae[i]];
+            var personae = personaeByArcana[this.$scope.persona.arcana];
+            for (var j = 0; j < personae.length; j++) {
+                var mainPersona = personae[j];
                 if (rarePersona == mainPersona)
                     continue;
                 var result = FusionCalculator.fuseRare(rarePersona, mainPersona);

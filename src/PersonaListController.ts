@@ -1,11 +1,9 @@
-///<reference path="../data/Data5.ts"/>
-
 /**
  * Created by Chin on 08-Apr-17.
  */
 class PersonaListController {
-    constructor($scope, $routeParams) {
-        $scope.personae = personae;
+    constructor($scope) {
+        $scope.personaList = personaList;
 
         // set the default sort param
         $scope.sortBy = 'level';

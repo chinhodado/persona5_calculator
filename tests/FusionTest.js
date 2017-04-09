@@ -1,6 +1,7 @@
 ///<reference path="../data/Data5.ts"/>
 ///<reference path="../src/DataUtil.ts"/>
 ///<reference path="../src/FusionCalculator.ts"/>
+///<reference path="../data/PersonaData.ts"/>
 var runFuse2Tests = function () {
     console.log("Testing fuse2()...");
     var tests = [
@@ -27,9 +28,9 @@ var runFuse2Tests = function () {
     ];
     for (var i = 0; i < tests.length; i++) {
         var test = tests[i];
-        var result = personaeByName[test.result];
-        var persona1 = personaeByName[test.ingredients[0]];
-        var persona2 = personaeByName[test.ingredients[1]];
+        var result = personaMap[test.result];
+        var persona1 = personaMap[test.ingredients[0]];
+        var persona2 = personaMap[test.ingredients[1]];
         var resultArcana = getResultArcana(persona1.arcana, persona2.arcana);
         var actualResult = FusionCalculator.fuse2(resultArcana, persona1, persona2);
         if (actualResult == result) {
@@ -41,3 +42,4 @@ var runFuse2Tests = function () {
         }
     }
 };
+// runFuse2Tests(); 

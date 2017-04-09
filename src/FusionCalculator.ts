@@ -4,7 +4,7 @@
  * Created by Chin on 08-Apr-17.
  */
 class FusionCalculator {
-    static fuse2(arcana, persona1, persona2) {
+    static fuse2(arcana: string, persona1: PersonaData, persona2: PersonaData) {
         if (persona1.rare && !persona2.rare) return null;
         if (persona2.rare && !persona1.rare) return null;
 
@@ -51,7 +51,7 @@ class FusionCalculator {
         return personae[i];
     };
 
-    static fuseRare(rarePersona, mainPersona) {
+    static fuseRare(rarePersona: PersonaData, mainPersona: PersonaData) {
         let modifier = rareCombos[mainPersona.arcana][rarePersonae.indexOf(rarePersona.name)];
         let personae = personaeByArcana[mainPersona.arcana];
         let mainPersonaIndex = personae.indexOf(mainPersona);

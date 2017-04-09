@@ -4,19 +4,50 @@
 </p>
 
 <table id="list">
-    <caption>Personae</caption>
+    <caption>Persona List</caption>
     <thead>
     <tr>
         <th><a ng-click="sortBy = 'level'; sortReverse = !sortReverse">Level</a></th>
         <th><a ng-click="sortBy = 'name'; sortReverse = !sortReverse">Name</a></th>
         <th><a ng-click="sortBy = 'arcana'; sortReverse = !sortReverse">Arcana</a></th>
+        <th><a ng-click="sortBy = 'strength'; sortReverse = !sortReverse">Strength</a></th>
+        <th><a ng-click="sortBy = 'magic'; sortReverse = !sortReverse">Magic</a></th>
+        <th><a ng-click="sortBy = 'endurance'; sortReverse = !sortReverse">Endurance</a></th>
+        <th><a ng-click="sortBy = 'agility'; sortReverse = !sortReverse">Agility</a></th>
+        <th><a ng-click="sortBy = 'luck'; sortReverse = !sortReverse">Luck</a></th>
+        <th><a ng-click="sortBy = 'physical'; sortReverse = !sortReverse">Physical</a></th>
+        <th><a ng-click="sortBy = 'gun'; sortReverse = !sortReverse">Gun</a></th>
+        <th><a ng-click="sortBy = 'fire'; sortReverse = !sortReverse">Fire</a></th>
+        <th><a ng-click="sortBy = 'ice'; sortReverse = !sortReverse">Ice</a></th>
+        <th><a ng-click="sortBy = 'electric'; sortReverse = !sortReverse">Electric</a></th>
+        <th><a ng-click="sortBy = 'wind'; sortReverse = !sortReverse">Wind</a></th>
+        <th><a ng-click="sortBy = 'psychic'; sortReverse = !sortReverse">Psychic</a></th>
+        <th><a ng-click="sortBy = 'nuclear'; sortReverse = !sortReverse">Nuclear</a></th>
+        <th><a ng-click="sortBy = 'bless'; sortReverse = !sortReverse">Bless</a></th>
+        <th><a ng-click="sortBy = 'curse'; sortReverse = !sortReverse">Curse</a></th>
     </tr>
     </thead>
     <tbody>
-    <tr ng:repeat="persona in personae | orderBy:sortBy:sortReverse | filter:filterStr">
+    <tr ng:repeat="persona in personaList | orderBy:sortBy:sortReverse | filter:filterStr">
         <td>{{persona.level}}</td>
         <td><a href='#/persona/{{persona.name}}'>{{persona.name}}</a></td>
         <td>{{persona.arcana}}</td>
+
+        <td>{{persona.strength}}</td>
+        <td>{{persona.magic}}</td>
+        <td>{{persona.endurance}}</td>
+        <td>{{persona.agility}}</td>
+        <td>{{persona.luck}}</td>
+        <td>{{persona.physical}}</td>
+        <td>{{persona.gun}}</td>
+        <td>{{persona.fire}}</td>
+        <td>{{persona.ice}}</td>
+        <td>{{persona.electric}}</td>
+        <td>{{persona.wind}}</td>
+        <td>{{persona.psychic}}</td>
+        <td>{{persona.nuclear}}</td>
+        <td>{{persona.bless}}</td>
+        <td>{{persona.curse}}</td>
     </tr>
     </tbody>
 </table>
