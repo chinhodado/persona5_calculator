@@ -53,21 +53,6 @@ const personaeByArcana : {[arcana: string]: PersonaData[]} = (() =>{
     return personaeByArcana_;
 })();
 
-const arcanaRank = (() =>{
-    let arcanaRank_ = {};
-    let rank = 0;
-    let lastArcana = null;
-    for (let i = 0; i < personaList.length; i++) {
-        let persona = personaList[i];
-        if (persona.arcana == lastArcana) continue;
-        lastArcana = persona.arcana;
-        arcanaRank_[persona.arcana] = rank++;
-    }
-    return arcanaRank_;
-})();
-
-const getRank = persona => arcanaRank[persona.arcana];
-
 const getResultArcana = (arcana1, arcana2) => {
     for (let i = 0; i < arcana2Combos.length; i++) {
         let combo = arcana2Combos[i];

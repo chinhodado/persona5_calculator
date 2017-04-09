@@ -45,20 +45,6 @@ var personaeByArcana = (function () {
     }
     return personaeByArcana_;
 })();
-var arcanaRank = (function () {
-    var arcanaRank_ = {};
-    var rank = 0;
-    var lastArcana = null;
-    for (var i = 0; i < personaList.length; i++) {
-        var persona = personaList[i];
-        if (persona.arcana == lastArcana)
-            continue;
-        lastArcana = persona.arcana;
-        arcanaRank_[persona.arcana] = rank++;
-    }
-    return arcanaRank_;
-})();
-var getRank = function (persona) { return arcanaRank[persona.arcana]; };
 var getResultArcana = function (arcana1, arcana2) {
     for (var i = 0; i < arcana2Combos.length; i++) {
         var combo = arcana2Combos[i];

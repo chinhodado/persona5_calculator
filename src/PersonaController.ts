@@ -50,10 +50,8 @@ class PersonaController {
             recipe.cost += (27 * level * level) + (126 * level) + 2147;
         }
 
-        // Sort ingredients so that highest level persona is first, if tied then use the rank.
-        // This is important for 3-way fusion where the highest level persona matter, but not so much
-        // for anything else other than looking nicer. Persona 5 doesn't have 3-way fusion anyway.
-        recipe.sources = this.$filter('orderBy')(recipe.sources, ['-level', getRank]);
+        // Sort ingredients so that highest level persona is first
+        recipe.sources = this.$filter('orderBy')(recipe.sources, ['-level']);
         this.$scope.allRecipes.push(recipe);
     }
 
