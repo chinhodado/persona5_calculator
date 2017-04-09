@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Persona 5 Fusion Calculator</title>
     <script src="angular-0.9.19.min.js" ng:autobind></script>
     <script src="data/Data5.js"></script>
@@ -22,6 +23,12 @@
 
         body {
             padding-left: 200px;
+        }
+
+        @media (max-width: 978px) {
+            body {
+                padding:0;
+            }
         }
 
         .infoTable, .infoTable th {
