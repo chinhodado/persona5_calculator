@@ -6,7 +6,7 @@ var runFuse2Tests = function() {
     console.log("Testing fuse2()...");
     const tests = [
         //same arcana
-        {ingredients: ["Obariyon", "Arsène"], result: null},                 // two lowest ranks
+        {ingredients: ["Obariyon", "Arsene"], result: null},                 // two lowest ranks
         {ingredients: ["Beelzebub", "Belial"], result: "Nebiros"},           // two highest ranks
         {ingredients: ["Ananta", "Kaiwan"], result: "Fuu-Ki"},               // skip special below 2 ingredients
         {ingredients: ["Moloch", "Hecatoncheir"], result: "Take-Minakata"},  // skip rare below 2 ingredients

@@ -5,7 +5,7 @@ var runFuse2Tests = function () {
     console.log("Testing fuse2()...");
     var tests = [
         //same arcana
-        { ingredients: ["Obariyon", "Arsène"], result: null },
+        { ingredients: ["Obariyon", "Arsene"], result: null },
         { ingredients: ["Beelzebub", "Belial"], result: "Nebiros" },
         { ingredients: ["Ananta", "Kaiwan"], result: "Fuu-Ki" },
         { ingredients: ["Moloch", "Hecatoncheir"], result: "Take-Minakata" },
