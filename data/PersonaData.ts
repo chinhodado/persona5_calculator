@@ -37,6 +37,18 @@ interface PersonaData {
     nuclear?: string;
     bless?: string;
     curse?: string;
+
+    // for sorting purpose
+    physicalValue?: number;
+    gunValue?: number;
+    fireValue?: number;
+    iceValue?: number;
+    electricValue?: number;
+    windValue?: number;
+    psychicValue?: number;
+    nuclearValue?: number;
+    blessValue?: number;
+    curseValue?: number;
 }
 
 const personaMap : PersonaMap = {

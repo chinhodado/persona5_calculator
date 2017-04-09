@@ -1,4 +1,5 @@
 ///<reference path="../data/Data5.ts"/>
+///<reference path="../data/PersonaData.ts"/>
 /**
  * Created by Chin on 08-Apr-17.
  */
@@ -10,16 +11,12 @@ function addStatProperties(persona) {
     persona.luck = persona.stats[4];
 }
 function addElementProperties(persona) {
-    persona.physical = persona.elems[0];
-    persona.gun = persona.elems[1];
-    persona.fire = persona.elems[2];
-    persona.ice = persona.elems[3];
-    persona.electric = persona.elems[4];
-    persona.wind = persona.elems[5];
-    persona.psychic = persona.elems[6];
-    persona.nuclear = persona.elems[7];
-    persona.bless = persona.elems[8];
-    persona.curse = persona.elems[9];
+    var properties = ['physical', 'gun', 'fire', 'ice', 'electric', 'wind', 'psychic', 'nuclear', 'bless', 'curse'];
+    var elemsValue = { "wk": 0, "-": 1, "rs": 2, "nu": 3, "rp": 4, "ab": 5 };
+    for (var i = 0; i < properties.length; i++) {
+        persona[properties[i]] = persona.elems[i];
+        persona[properties[i] + 'Value'] = elemsValue[persona.elems[i]];
+    }
 }
 var personaList = (function () {
     var arr = [];
