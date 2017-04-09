@@ -32,6 +32,7 @@ var PersonaController = (function () {
         this.$scope.lastPage = Math.floor(this.$scope.allRecipes.length / this.$scope.perPage);
         this.$scope.pageNum = 0;
         this.$scope.$watch('filterStr', this.paginateAndFilter.bind(this));
+        this.$scope.$watch('filterStr', this.resetPage.bind(this));
         this.$scope.$watch('pageNum', this.paginateAndFilter.bind(this), false);
     }
     PersonaController.prototype.addRecipe = function (recipe) {
@@ -46,7 +47,6 @@ var PersonaController = (function () {
         recipe.sources = this.$filter('orderBy')(recipe.sources, ['-level', getRank]);
         this.$scope.allRecipes.push(recipe);
     };
-    ;
     PersonaController.prototype.getElems = function (personaName) {
         var elems = compendium[personaName].elems;
         for (var i = 0; i < elems.length; i++) {
@@ -137,7 +137,6 @@ var PersonaController = (function () {
             this.addRecipe(recipe);
         }
     };
-    ;
     PersonaController.prototype.getArcanaRecipes = function (arcanaName, filterCallback) {
         var recipes = [];
         var combos = arcana2Combos.filter(function (x) { return x.result == arcanaName; });
@@ -182,7 +181,6 @@ var PersonaController = (function () {
         }
         return recipes;
     };
-    ;
     /**
      * Note: this can the scope that is passed in, or this.$scope.
      * Using the passed in scope for brevity.
@@ -201,6 +199,8 @@ var PersonaController = (function () {
         scope.numRecipes = scope.recipes.length;
         scope.recipes = scope.recipes.slice(scope.pageNum * scope.perPage, scope.pageNum * scope.perPage + scope.perPage);
     };
-    ;
+    PersonaController.prototype.resetPage = function (newVal, oldVal, scope) {
+        scope.pageNum = 0;
+    };
     return PersonaController;
 }());

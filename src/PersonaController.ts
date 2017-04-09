@@ -39,6 +39,7 @@ class PersonaController {
         this.$scope.lastPage = Math.floor(this.$scope.allRecipes.length / this.$scope.perPage);
         this.$scope.pageNum = 0;
         this.$scope.$watch('filterStr', this.paginateAndFilter.bind(this));
+        this.$scope.$watch('filterStr', this.resetPage.bind(this));
         this.$scope.$watch('pageNum', this.paginateAndFilter.bind(this), false);
     }
 
@@ -54,7 +55,7 @@ class PersonaController {
         // for anything else other than looking nicer. Persona 5 doesn't have 3-way fusion anyway.
         recipe.sources = this.$filter('orderBy')(recipe.sources, ['-level', getRank]);
         this.$scope.allRecipes.push(recipe);
-    };
+    }
 
     getElems(personaName: string) {
         let elems = compendium[personaName].elems;
@@ -147,7 +148,7 @@ class PersonaController {
         for (let i = 0, recipe = null; recipe = recipes[i]; i++) {
             this.addRecipe(recipe);
         }
-    };
+    }
 
     getArcanaRecipes(arcanaName, filterCallback) {
         let recipes = [];
@@ -190,7 +191,7 @@ class PersonaController {
         }
 
         return recipes;
-    };
+    }
 
     /**
      * Note: this can the scope that is passed in, or this.$scope.
@@ -212,7 +213,11 @@ class PersonaController {
             scope.pageNum * scope.perPage,
             scope.pageNum * scope.perPage + scope.perPage
         );
-    };
+    }
+
+    resetPage(newVal, oldVal, scope) {
+        scope.pageNum = 0;
+    }
 }
 
 
