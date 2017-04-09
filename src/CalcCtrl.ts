@@ -1,52 +1,45 @@
 ///<reference path="FusionCalculator.ts"/>
 ///<reference path="../data/Compendium.ts"/>
 ///<reference path="../data/SkillData.ts"/>
-declare var angular;
 
 /**
  * Created by Chin on 08-Apr-17.
  */
 class CalcCtrl {
-    numRecipes;
-    recipes;
-    filter;
-    ceil;
-    persona;
-    allRecipes;
-    maxCost;
-    perPage;
-    lastPage;
-    pageNum;
-    params;
-    $watch;
+    $scope;
+    $filter;
 
-    constructor() {
-        this.ceil = Math.ceil;
+    constructor($scope, $routeParams, $filter) {
+        let personaName = $routeParams.persona_name;
+        this.$filter = $filter;
+        this.$scope = $scope;
+        this.$scope.Math = Math;
 
-        this.persona = personaeByName[this.params.persona_name];
-        if (!this.persona) return;
+        this.$scope.personaName = personaName;
+        this.$scope.persona = personaeByName[personaName];
+        if (!this.$scope.persona) return;
 
-        this.allRecipes = [];
+        this.$scope.allRecipes = [];
         this.getRecipes();
-        this.allRecipes = angular.Array.orderBy(this.allRecipes, 'cost');
-        this.maxCost = 0;
-        for (let i = 0, recipe = null; recipe = this.allRecipes[i]; i++) {
+        this.$scope.allRecipes.sort((a,b) => a.cost - b.cost);
+        this.$scope.maxCost = 0;
+        for (let i = 0, recipe = null; recipe = this.$scope.allRecipes[i]; i++) {
             recipe.num = i;
-            this.maxCost = Math.max(this.maxCost, recipe.cost);
+            this.$scope.maxCost = Math.max(this.$scope.maxCost, recipe.cost);
         }
 
-        let compediumEntry = compendium[this.params.persona_name];
-        this.persona.stats = compediumEntry.stats;
-        this.persona.statsHeader = ["Strength", "Magic", "Endurance", "Agility", "Luck"];
-        this.persona.elems = this.getElems(this.params.persona_name);
-        this.persona.elemsHeader = ["Physical", "Gun", "Fire", "Ice", "Electric", "Wind", "Psychic", "Nuclear", "Bless", "Curse"];
-        this.persona.skills = this.getSkills(this.params.persona_name);
+        let compediumEntry = compendium[personaName];
+        this.$scope.persona.stats = compediumEntry.stats;
+        this.$scope.persona.statsHeader = ["Strength", "Magic", "Endurance", "Agility", "Luck"];
+        this.$scope.persona.elems = this.getElems(personaName);
+        this.$scope.persona.elemsHeader = ["Physical", "Gun", "Fire", "Ice", "Electric", "Wind", "Psychic", "Nuclear", "Bless", "Curse"];
+        this.$scope.persona.skills = this.getSkills(personaName);
 
-        this.perPage = 100;
-        this.lastPage = Math.floor(this.allRecipes.length / this.perPage);
-        this.pageNum = 0;
-        this.$watch('filter', this.paginateAndFilter);
-        this.$watch('pageNum', this.paginateAndFilter, false);
+        this.$scope.perPage = 100;
+        this.$scope.lastPage = Math.floor(this.$scope.allRecipes.length / this.$scope.perPage);
+        this.$scope.pageNum = 0;
+        this.$scope.$watch('filterStr', this.paginateAndFilter.bind(this));
+        this.$scope.$watch('pageNum', this.paginateAndFilter.bind(this), false);
     }
 
     addRecipe(recipe) {
@@ -56,11 +49,11 @@ class CalcCtrl {
             recipe.cost += (27 * level * level) + (126 * level) + 2147;
         }
 
-        // Sort so that the "3rd persona" in triangle fusion (the one that needs
-        // to have the highest current level) is always listed first.  In case
-        // of a tie in level, the persona with the lowest arcana rank is used.
-        recipe.sources = angular.Array.orderBy(recipe.sources, ['-level', getRank]);
-        this.allRecipes.push(recipe);
+        // Sort ingredients so that highest level persona is first, if tied then use the rank.
+        // This is important for 3-way fusion where the highest level persona matter, but not so much
+        // for anything else other than looking nicer. Persona 5 doesn't have 3-way fusion anyway.
+        recipe.sources = this.$filter('orderBy')(recipe.sources, ['-level', getRank]);
+        this.$scope.allRecipes.push(recipe);
     };
 
     getElems(personaName: string) {
@@ -77,9 +70,11 @@ class CalcCtrl {
 
     getSkills(personaName: string) {
         let skills = compendium[personaName].skills;
-        var sorted = [];
-        for (var name in skills) {
-            sorted.push([name, skills[name]]);
+        let sorted = [];
+        for (let name in skills) {
+            if (skills.hasOwnProperty(name)) {
+                sorted.push([name, skills[name]]);
+            }
         }
 
         sorted.sort(function(a, b) {
@@ -87,7 +82,7 @@ class CalcCtrl {
         });
 
         let resSkills = [];
-        for (var i = 0; i < sorted.length; i++) {
+        for (let i = 0; i < sorted.length; i++) {
             let skillData = FULL_SKILLS[sorted[i][0]];
             resSkills.push({
                 name: sorted[i][0],
@@ -120,16 +115,16 @@ class CalcCtrl {
     }
 
     getRecipes() {
-        if (this.persona.rare) {
+        if (this.$scope.persona.rare) {
             let recipe = {'sources': []};
             this.addRecipe(recipe);
             return;
         }
 
         // Check special recipes.
-        if (this.persona.special) {
+        if (this.$scope.persona.special) {
             for (let i = 0, combo = null; combo = specialCombos[i]; i++) {
-                if (this.persona.name == combo.result) {
+                if (this.$scope.persona.name == combo.result) {
                     let recipe = {'sources': []};
                     for (let j = 0, source = null; source = combo.sources[j]; j++) {
                         recipe.sources.push(personaeByName[source]);
@@ -142,13 +137,13 @@ class CalcCtrl {
 
         // Consider straight fusion.
         function filter2Way(persona1, persona2, result) {
-            if (persona1.name == this.persona.name) return true;
-            if (persona2.name == this.persona.name) return true;
-            if (result.name == this.persona.name) return false;
+            if (persona1.name == this.$scope.persona.name) return true;
+            if (persona2.name == this.$scope.persona.name) return true;
+            if (result.name == this.$scope.persona.name) return false;
             return true;
         }
 
-        let recipes = this.getArcanaRecipes(this.persona.arcana, filter2Way);
+        let recipes = this.getArcanaRecipes(this.$scope.persona.arcana, filter2Way);
         for (let i = 0, recipe = null; recipe = recipes[i]; i++) {
             this.addRecipe(recipe);
         }
@@ -156,7 +151,7 @@ class CalcCtrl {
 
     getArcanaRecipes(arcanaName, filterCallback) {
         let recipes = [];
-        let combos = angular.Array.filter(arcana2Combos, x => x.result == arcanaName);
+        let combos = arcana2Combos.filter(x => x.result == arcanaName);
         for (let i = 0, combo = null; combo = combos[i]; i++) {
             let personae1 = personaeByArcana[combo.source[0]];
             let personae2 = personaeByArcana[combo.source[1]];
@@ -179,7 +174,7 @@ class CalcCtrl {
 
         for (let i = 0; i < rarePersonae.length; i++) {
             let rarePersona = personaeByName[rarePersonae[i]];
-            let personae = personaeByArcana[this.persona.arcana];
+            let personae = personaeByArcana[this.$scope.persona.arcana];
             for (let j = 0; j < personae.length; j++) {
                 let mainPersona = personae[j];
                 if (rarePersona == mainPersona) continue;
@@ -197,15 +192,26 @@ class CalcCtrl {
         return recipes;
     };
 
-    paginateAndFilter() {
-        if (this.pageNum < 0) this.pageNum = 0;
-        if (this.pageNum > this.lastPage) this.pageNum = this.lastPage;
+    /**
+     * Note: this can the scope that is passed in, or this.$scope.
+     * Using the passed in scope for brevity.
+     */
+    paginateAndFilter(newVal, oldVal, scope) {
+        if (scope.pageNum < 0) scope.pageNum = 0;
+        if (scope.pageNum > scope.lastPage) scope.pageNum = scope.lastPage;
 
-        this.recipes = angular.Array.filter(this.allRecipes, this.filter);
-        this.numRecipes = this.recipes.length;
-        this.recipes = this.recipes.slice(
-            this.pageNum * this.perPage,
-            this.pageNum * this.perPage + this.perPage);
+        if (scope.filterStr) {
+            scope.recipes = this.$filter('filter')(scope.allRecipes, scope.filterStr);
+        }
+        else {
+            scope.recipes = scope.allRecipes;
+        }
+
+        scope.numRecipes = scope.recipes.length;
+        scope.recipes = scope.recipes.slice(
+            scope.pageNum * scope.perPage,
+            scope.pageNum * scope.perPage + scope.perPage
+        );
     };
 }
 

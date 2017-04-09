@@ -3,9 +3,9 @@
  * Created by Chin on 08-Apr-17.
  */
 var ListCtrl = (function () {
-    function ListCtrl() {
-        this.personae = personae;
-        this.sortBy = this.params.sort_by || 'level';
+    function ListCtrl($scope, $routeParams) {
+        $scope.personae = personae;
+        $scope.sortBy = $routeParams.sort_by || 'level';
     }
     return ListCtrl;
 }());

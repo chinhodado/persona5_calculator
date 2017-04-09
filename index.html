@@ -4,16 +4,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Persona 5 Fusion Calculator</title>
-    <script src="angular-0.9.19.min.js" ng:autobind></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.min.js"></script>
     <script src="data/Data5.js"></script>
     <script src="data/Compendium.js"></script>
     <script src="data/SkillData.js"></script>
     <script src="src/DataUtil.js"></script>
     <script src="src/FusionCalculator.js"></script>
-    <script src="tests/FusionTest.js"></script>
     <script src="src/CalcCtrl.js"></script>
     <script src="src/ListCtrl.js"></script>
     <script src="src/App.js"></script>
+    <script src="tests/FusionTest.js"></script>
     <style>
         div.caption { text-align: center; width: 100%; }
         td { padding: 0 0.25em; }
@@ -53,11 +54,12 @@
     </script>
 </head>
 <body>
-<a href="https://github.com/chinhodado/persona5_calculator">
-    <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png">
-</a>
-<a href="index.html">Persona 5 Fusion Calculator</a>
-<ng:view></ng:view>
-
+    <a href="https://github.com/chinhodado/persona5_calculator">
+        <img style="position: absolute; top: 0; right: 0; border: 0;"
+             src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67"
+             alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png">
+    </a>
+    <a href="index.html">Persona 5 Fusion Calculator</a>
+    <ng-view ng-app="myModule"></ng-view>
 </body>
 </html>

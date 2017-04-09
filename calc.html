@@ -1,6 +1,6 @@
-<p ng:hide="allRecipes">"{{params.persona_name}}" not found!</p>
+<p ng:hide="allRecipes">"{{personaName}}" not found!</p>
 <div ng:show="allRecipes">
-    <h2>{{params.persona_name}} ({{persona.level}} / {{persona.arcana}})</h2>
+    <h2>{{personaName}} ({{persona.level}} / {{persona.arcana}})</h2>
 
     <h3>Stats</h3>
     <table id="statsTable" class="infoTable">
@@ -8,7 +8,7 @@
             <th ng:repeat="s in persona.statsHeader">{{s}}</th>
         </tr>
         <tr>
-            <td ng:repeat="i in persona.stats">{{i}}</td>
+            <td ng:repeat="i in persona.stats track by $index">{{i}}</td>
         </tr>
     </table>
 
@@ -18,16 +18,20 @@
             <th ng:repeat="s in persona.elemsHeader">{{s}}</th>
         </tr>
         <tr>
-            <td ng:repeat="s in persona.elems">{{s}}</td>
+            <td ng:repeat="s in persona.elems track by $index">{{s}}</td>
         </tr>
     </table>
 
     <h3>Skills</h3>
     <table id="skillTable" class="infoTable">
         <tr>
-            <th>Level</th><th>Type</th><th>Name</th><th>Effect</th><th>Cost</th>
+            <th>Level</th>
+            <th>Type</th>
+            <th>Name</th>
+            <th>Effect</th>
+            <th>Cost</th>
         </tr>
-        <tr ng:repeat="skill in persona.skills">
+        <tr ng:repeat="skill in persona.skills track by $index">
             <td>{{skill.level}}</td>
             <td>{{skill.elem}}</td>
             <td>{{skill.name}}</td>
@@ -41,28 +45,30 @@
         <div class="pagination" ng:show="numRecipes > perPage">
             <span ng:click="pageNum = 0">&#x25c4;<span style="position: relative; left: -0.4em;">&#x25c4;</span></span>
             <span ng:click="pageNum = pageNum - 1">&#x25c4;</span>
-            Page {{pageNum + 1}} / {{ceil(numRecipes / perPage)}}
+            Page {{pageNum + 1}} / {{Math.ceil(numRecipes / perPage)}}
             <span ng:click="pageNum = pageNum + 1">&#x25ba;</span>
             <span ng:click="pageNum = lastPage"><span style="position: relative; right: -0.4em;">&#x25ba;</span>&#x25ba;</span>
         </div>
     </div>
 
     <p>
-        <label>Filter: <input type="text" size="30" name="filter"></label>
-        <button ng:click="filter = ''">Clear</button>
+        <label>Filter: <input type="text" size="30" ng-model="filterStr"></label>
+        <button ng:click="filterStr = ''">Clear</button>
     </p>
 
     <table id="recipes">
         <thead>
-        <th>#</th>
-        <th>Cost</th>
-        <th colspan="6">Ingredients</th>
+        <tr>
+            <th>#</th>
+            <th>Cost</th>
+            <th colspan="6">Ingredients</th>
+        </tr>
         </thead>
         <tbody>
-        <tr ng:repeat="recipe in recipes">
+        <tr ng:repeat="recipe in recipes track by $index">
             <td>{{recipe.num + 1}}</td>
             <td>{{recipe.cost | number}} ¥</td>
-            <td ng:repeat="persona in recipe.sources">
+            <td ng:repeat="persona in recipe.sources track by $index">
                 <a href='#/persona/{{persona.name}}'>{{persona.name}}</a>
                 ({{persona.level}} / {{persona.arcana}})
             </td>
