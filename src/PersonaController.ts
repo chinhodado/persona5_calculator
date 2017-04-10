@@ -33,7 +33,10 @@ class PersonaController {
         this.$scope.persona.statsHeader = ["Strength", "Magic", "Endurance", "Agility", "Luck"];
         this.$scope.persona.elems = this.getElems(personaName);
         this.$scope.persona.elemsHeader = ["Physical", "Gun", "Fire", "Ice", "Electric", "Wind", "Psychic", "Nuclear", "Bless", "Curse"];
-        this.$scope.persona.skills = this.getSkills(personaName);
+
+        // Note: skillList are skills in a sorted list for displaying with Angular.
+        // It's different from the existing skills property which is a map.
+        this.$scope.persona.skillList = this.getSkills(personaName);
 
         this.$scope.perPage = 100;
         this.$scope.lastPage = Math.floor(this.$scope.allRecipes.length / this.$scope.perPage);

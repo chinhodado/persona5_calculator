@@ -1,3 +1,4 @@
+///<reference path="DataUtil.ts"/>
 /**
  * Created by Chin on 08-Apr-17.
  */
