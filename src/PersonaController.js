@@ -25,11 +25,11 @@ var PersonaController = (function () {
         var compediumEntry = personaMap[personaName];
         this.$scope.persona.stats = compediumEntry.stats;
         this.$scope.persona.statsHeader = ["Strength", "Magic", "Endurance", "Agility", "Luck"];
-        this.$scope.persona.elems = this.getElems(personaName);
+        this.$scope.persona.elems = getElems(personaName);
         this.$scope.persona.elemsHeader = ["Physical", "Gun", "Fire", "Ice", "Electric", "Wind", "Psychic", "Nuclear", "Bless", "Curse"];
         // Note: skillList are skills in a sorted list for displaying with Angular.
         // It's different from the existing skills property which is a map.
-        this.$scope.persona.skillList = this.getSkills(personaName);
+        this.$scope.persona.skillList = getSkills(personaName);
         this.$scope.perPage = 100;
         this.$scope.lastPage = Math.floor(this.$scope.allRecipes.length / this.$scope.perPage);
         this.$scope.pageNum = 0;
@@ -46,62 +46,6 @@ var PersonaController = (function () {
         // Sort ingredients so that highest level persona is first
         recipe.sources = this.$filter('orderBy')(recipe.sources, ['-level']);
         this.$scope.allRecipes.push(recipe);
-    };
-    PersonaController.prototype.getElems = function (personaName) {
-        var elems = personaMap[personaName].elems;
-        for (var i = 0; i < elems.length; i++) {
-            if (elems[i] == 'wk')
-                elems[i] = 'Weak';
-            else if (elems[i] == 'rs')
-                elems[i] = 'Resist';
-            else if (elems[i] == 'ab')
-                elems[i] = 'Absorb';
-            else if (elems[i] == 'rp')
-                elems[i] = 'Repel';
-            else if (elems[i] == 'nu')
-                elems[i] = 'Null';
-        }
-        return elems;
-    };
-    PersonaController.prototype.getSkills = function (personaName) {
-        var skills = personaMap[personaName].skills;
-        var sorted = [];
-        for (var name_1 in skills) {
-            if (skills.hasOwnProperty(name_1)) {
-                sorted.push([name_1, skills[name_1]]);
-            }
-        }
-        sorted.sort(function (a, b) {
-            return a[1] - b[1];
-        });
-        var resSkills = [];
-        for (var i = 0; i < sorted.length; i++) {
-            var skillData = FULL_SKILLS[sorted[i][0]];
-            resSkills.push({
-                name: sorted[i][0],
-                level: sorted[i][1],
-                description: skillData.effect,
-                elem: this.capitalizeFirstLetter(skillData.element),
-                cost: this.getSkillCost(skillData)
-            });
-        }
-        return resSkills;
-    };
-    PersonaController.prototype.capitalizeFirstLetter = function (s) {
-        return s.charAt(0).toUpperCase() + s.slice(1);
-    };
-    PersonaController.prototype.getSkillCost = function (skill) {
-        if (skill.element != 'passive') {
-            if (skill.cost < 100) {
-                return String(skill.cost) + '% HP';
-            }
-            else {
-                return String(skill.cost / 100) + ' SP';
-            }
-        }
-        else {
-            return "-";
-        }
     };
     PersonaController.prototype.getRecipes = function () {
         if (this.$scope.persona.rare) {

@@ -1,5 +1,6 @@
 ///<reference path="../data/Data5.ts"/>
 ///<reference path="../data/PersonaData.ts"/>
+///<reference path="../data/SkillData.ts"/>
 /**
  * Created by Chin on 08-Apr-17.
  */
@@ -54,3 +55,59 @@ var getResultArcana = function (arcana1, arcana2) {
         }
     }
 };
+function getElems(personaName) {
+    var elems = personaMap[personaName].elems;
+    for (var i = 0; i < elems.length; i++) {
+        if (elems[i] == 'wk')
+            elems[i] = 'Weak';
+        else if (elems[i] == 'rs')
+            elems[i] = 'Resist';
+        else if (elems[i] == 'ab')
+            elems[i] = 'Absorb';
+        else if (elems[i] == 'rp')
+            elems[i] = 'Repel';
+        else if (elems[i] == 'nu')
+            elems[i] = 'Null';
+    }
+    return elems;
+}
+function getSkills(personaName) {
+    var skills = personaMap[personaName].skills;
+    var sorted = [];
+    for (var name_1 in skills) {
+        if (skills.hasOwnProperty(name_1)) {
+            sorted.push([name_1, skills[name_1]]);
+        }
+    }
+    sorted.sort(function (a, b) {
+        return a[1] - b[1];
+    });
+    var resSkills = [];
+    for (var i = 0; i < sorted.length; i++) {
+        var skillData = FULL_SKILLS[sorted[i][0]];
+        resSkills.push({
+            name: sorted[i][0],
+            level: sorted[i][1],
+            description: skillData.effect,
+            elem: capitalizeFirstLetter(skillData.element),
+            cost: getSkillCost(skillData)
+        });
+    }
+    return resSkills;
+}
+function capitalizeFirstLetter(s) {
+    return s.charAt(0).toUpperCase() + s.slice(1);
+}
+function getSkillCost(skill) {
+    if (skill.element != 'passive') {
+        if (skill.cost < 100) {
+            return String(skill.cost) + '% HP';
+        }
+        else {
+            return String(skill.cost / 100) + ' SP';
+        }
+    }
+    else {
+        return "-";
+    }
+}

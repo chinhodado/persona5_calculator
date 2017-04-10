@@ -1,5 +1,6 @@
 ///<reference path="../data/Data5.ts"/>
 ///<reference path="../data/PersonaData.ts"/>
+///<reference path="../data/SkillData.ts"/>
 
 /**
  * Created by Chin on 08-Apr-17.
@@ -53,7 +54,7 @@ const personaeByArcana : {[arcana: string]: PersonaData[]} = (() =>{
     return personaeByArcana_;
 })();
 
-const getResultArcana = (arcana1, arcana2) => {
+const getResultArcana = (arcana1: string, arcana2: string) => {
     for (let i = 0; i < arcana2Combos.length; i++) {
         let combo = arcana2Combos[i];
         if ((combo.source[0] == arcana1 && combo.source[1] == arcana2) ||
@@ -62,3 +63,61 @@ const getResultArcana = (arcana1, arcana2) => {
         }
     }
 };
+
+function getElems(personaName: string) {
+    let elems = personaMap[personaName].elems;
+    for (let i = 0; i < elems.length; i++) {
+        if (elems[i] == 'wk') elems[i] = 'Weak';
+        else if (elems[i] == 'rs') elems[i] = 'Resist';
+        else if (elems[i] == 'ab') elems[i] = 'Absorb';
+        else if (elems[i] == 'rp') elems[i] = 'Repel';
+        else if (elems[i] == 'nu') elems[i] = 'Null';
+    }
+    return elems;
+}
+
+function getSkills(personaName: string) {
+    let skills = personaMap[personaName].skills;
+    let sorted = [];
+    for (let name in skills) {
+        if (skills.hasOwnProperty(name)) {
+            sorted.push([name, skills[name]]);
+        }
+    }
+
+    sorted.sort(function(a, b) {
+        return a[1] - b[1];
+    });
+
+    let resSkills = [];
+    for (let i = 0; i < sorted.length; i++) {
+        let skillData = FULL_SKILLS[sorted[i][0]];
+        resSkills.push({
+            name: sorted[i][0],
+            level: sorted[i][1],
+            description: skillData.effect,
+            elem: capitalizeFirstLetter(skillData.element),
+            cost: getSkillCost(skillData)
+        })
+    }
+
+    return resSkills;
+}
+
+function capitalizeFirstLetter(s: string) {
+    return s.charAt(0).toUpperCase() + s.slice(1);
+}
+
+function getSkillCost(skill) {
+    if (skill.element != 'passive') {
+        if (skill.cost < 100) {
+            return String(skill.cost) + '% HP'
+        }
+        else {
+            return String(skill.cost / 100) + ' SP';
+        }
+    }
+    else {
+        return "-"
+    }
+}
