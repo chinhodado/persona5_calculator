@@ -47,7 +47,7 @@ var FusionCalculator = (function () {
                 (persona2.name == "Nebiros" && persona1.name == "Belial"))) {
             return null;
         }
-        return personae[i];
+        return personae[i] ? personae[i] : null;
     };
     ;
     FusionCalculator.fuseRare = function (rarePersona, mainPersona) {

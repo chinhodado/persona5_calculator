@@ -48,7 +48,7 @@ class FusionCalculator {
             return null;
         }
 
-        return personae[i];
+        return personae[i]? personae[i] : null;
     };
 
     static fuseRare(rarePersona: PersonaData, mainPersona: PersonaData) {
