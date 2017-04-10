@@ -84,7 +84,7 @@ function getSkills(personaName) {
     });
     var resSkills = [];
     for (var i = 0; i < sorted.length; i++) {
-        var skillData = FULL_SKILLS[sorted[i][0]];
+        var skillData = skillMap[sorted[i][0]];
         resSkills.push({
             name: sorted[i][0],
             level: sorted[i][1],

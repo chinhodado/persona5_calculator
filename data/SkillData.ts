@@ -1,6 +1,24 @@
 // from https://github.com/aqiu384/aqiu384.github.io/blob/master/p5-tool/js/full_skills.js
 
-const FULL_SKILLS = {
+interface SkillMap {
+    [index: string]: SkillData;
+}
+
+interface SkillData {
+    cost?: number;
+    effect: string;
+    element: "phys" | "gun" | "fire" | "ice" | "electric" | "wind" | "psy" | "nuclear" | "bless" | "curse" |
+        "almighty" | "ailment" | "support" | "passive" | "healing";
+    personas: {
+        [name: string]: number;
+    };
+    talk?: string;
+    fuse?: string;
+    unique?: string;
+    dlc?: boolean;
+}
+
+const skillMap: SkillMap = {
     "Absorb Bless": {
         "effect": "Absorb Bless attacks.",
         "element": "passive",

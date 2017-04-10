@@ -91,7 +91,7 @@ function getSkills(personaName: string) {
 
     let resSkills = [];
     for (let i = 0; i < sorted.length; i++) {
-        let skillData = FULL_SKILLS[sorted[i][0]];
+        let skillData = skillMap[sorted[i][0]];
         resSkills.push({
             name: sorted[i][0],
             level: sorted[i][1],
@@ -108,7 +108,7 @@ function capitalizeFirstLetter(s: string) {
     return s.charAt(0).toUpperCase() + s.slice(1);
 }
 
-function getSkillCost(skill) {
+function getSkillCost(skill: SkillData) {
     if (skill.element != 'passive') {
         if (skill.cost < 100) {
             return String(skill.cost) + '% HP'

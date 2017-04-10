@@ -1,5 +1,5 @@
 // from https://github.com/aqiu384/aqiu384.github.io/blob/master/p5-tool/js/full_skills.js
-var FULL_SKILLS = {
+var skillMap = {
     "Absorb Bless": {
         "effect": "Absorb Bless attacks.",
         "element": "passive",
