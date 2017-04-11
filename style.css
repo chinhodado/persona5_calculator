@@ -3,6 +3,9 @@
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 13px;
+    text-align: center;
+    margin-top: 0;
+    margin-right: 0;
 }
 
 a {
@@ -21,21 +24,16 @@ a, a:visited {
     color: #000;
 }
 
-.category_totals, .td1, .td2, #grand_totals, #copyright {
-    border-width: 0;
-    padding: 2px;
+#list th {
+    cursor: pointer;
+    padding: 5px;
 }
 
-#list td, #list td:HOVER {
+#list td, #list td:hover {
     border-width: 0;
 }
 
-.category_totals:HOVER, .td1:HOVER, .td2:HOVER, #grand_totals:HOVER, #copyright:HOVER {
-    border-width: 0;
-    padding: 2px;
-}
-
-tr:hover td {
+#list tr:hover td {
     background: rgba(64, 46, 24, 0.1);
 }
 
@@ -47,4 +45,41 @@ tr:hover td:first-child {
 tr:hover td:last-child {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+}
+
+.pagination span {
+    cursor: pointer;
+}
+
+#content {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.infoTable, .infoTable th {
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.infoTable, #recipes {
+    margin: 0 auto;
+}
+
+#recipes {
+    text-align: left;
+}
+
+#recipes td, #recipes th {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.infoTable th, .infoTable td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+caption {
+    font-size: large;
+    margin-bottom: 10px;
 }
