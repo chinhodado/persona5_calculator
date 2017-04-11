@@ -5,11 +5,7 @@
 ///<reference path="d.ts/mocha.d.ts"/>
 ///<reference path="d.ts/expect.js.d.ts"/>
 function fuse2TestWrapper(persona1Name, persona2Name) {
-    var persona1 = personaMap[persona1Name];
-    var persona2 = personaMap[persona2Name];
-    var resultArcana = getResultArcana(persona1.arcana, persona2.arcana);
-    var actualResult = FusionCalculator.fuse2(resultArcana, persona1, persona2);
-    return actualResult;
+    return FusionCalculator.fuse2(personaMap[persona1Name], personaMap[persona2Name]);
 }
 describe('FusionCalculator', function () {
     describe('#fuse2()', function () {

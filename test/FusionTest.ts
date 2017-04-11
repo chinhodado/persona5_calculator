@@ -6,11 +6,7 @@
 ///<reference path="d.ts/expect.js.d.ts"/>
 
 function fuse2TestWrapper(persona1Name: string, persona2Name: string): PersonaData {
-    let persona1 = personaMap[persona1Name];
-    let persona2 = personaMap[persona2Name];
-    let resultArcana = getResultArcana(persona1.arcana, persona2.arcana);
-    let actualResult = FusionCalculator.fuse2(resultArcana, persona1, persona2);
-    return actualResult;
+    return FusionCalculator.fuse2(personaMap[persona1Name], personaMap[persona2Name]);
 }
 
 describe('FusionCalculator', () => {

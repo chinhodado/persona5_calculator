@@ -14,8 +14,7 @@ var PersonaController = (function () {
         this.$scope.persona = personaMap[personaName];
         if (!this.$scope.persona)
             return;
-        this.$scope.allRecipes = [];
-        this.getRecipes();
+        this.$scope.allRecipes = FusionCalculator.getRecipes(this.$scope.persona);
         this.$scope.allRecipes.sort(function (a, b) { return a.cost - b.cost; });
         this.$scope.maxCost = 0;
         for (var i = 0, recipe = null; recipe = this.$scope.allRecipes[i]; i++) {
@@ -37,92 +36,6 @@ var PersonaController = (function () {
         this.$scope.$watch('filterStr', this.resetPage.bind(this));
         this.$scope.$watch('pageNum', this.paginateAndFilter.bind(this), false);
     }
-    PersonaController.prototype.addRecipe = function (recipe) {
-        recipe.cost = 0;
-        for (var i = 0, source = null; source = recipe.sources[i]; i++) {
-            var level = source.level;
-            recipe.cost += (27 * level * level) + (126 * level) + 2147;
-        }
-        // Sort ingredients so that highest level persona is first
-        recipe.sources = this.$filter('orderBy')(recipe.sources, ['-level']);
-        this.$scope.allRecipes.push(recipe);
-    };
-    PersonaController.prototype.getRecipes = function () {
-        if (this.$scope.persona.rare) {
-            return;
-        }
-        // Check special recipes.
-        if (this.$scope.persona.special) {
-            for (var i = 0, combo = null; combo = specialCombos[i]; i++) {
-                if (this.$scope.persona.name == combo.result) {
-                    var recipe = { 'sources': [] };
-                    for (var j = 0, source = null; source = combo.sources[j]; j++) {
-                        recipe.sources.push(personaMap[source]);
-                    }
-                    this.addRecipe(recipe);
-                    return;
-                }
-            }
-        }
-        // Consider straight fusion.
-        function filter2Way(persona1, persona2, result) {
-            if (persona1.name == this.$scope.persona.name)
-                return true;
-            if (persona2.name == this.$scope.persona.name)
-                return true;
-            if (result.name == this.$scope.persona.name)
-                return false;
-            return true;
-        }
-        var recipes = this.getArcanaRecipes(this.$scope.persona.arcana, filter2Way);
-        for (var i = 0, recipe = null; recipe = recipes[i]; i++) {
-            this.addRecipe(recipe);
-        }
-    };
-    PersonaController.prototype.getArcanaRecipes = function (arcanaName, filterCallback) {
-        var recipes = [];
-        var combos = arcana2Combos.filter(function (x) { return x.result == arcanaName; });
-        for (var i = 0, combo = null; combo = combos[i]; i++) {
-            var personae1 = personaeByArcana[combo.source[0]];
-            var personae2 = personaeByArcana[combo.source[1]];
-            for (var j = 0, persona1 = null; persona1 = personae1[j]; j++) {
-                for (var k = 0, persona2 = null; persona2 = personae2[k]; k++) {
-                    if (persona1.arcana == persona2.arcana && k <= j)
-                        continue;
-                    if (persona1.rare && !persona2.rare)
-                        continue;
-                    if (persona2.rare && !persona1.rare)
-                        continue;
-                    var result = FusionCalculator.fuse2(combo.result, persona1, persona2);
-                    if (!result)
-                        continue;
-                    if (filterCallback
-                        && filterCallback.call(this, persona1, persona2, result)) {
-                        continue;
-                    }
-                    recipes.push({ 'sources': [persona1, persona2] });
-                }
-            }
-        }
-        for (var i = 0; i < rarePersonae.length; i++) {
-            var rarePersona = personaMap[rarePersonae[i]];
-            var personae = personaeByArcana[this.$scope.persona.arcana];
-            for (var j = 0; j < personae.length; j++) {
-                var mainPersona = personae[j];
-                if (rarePersona == mainPersona)
-                    continue;
-                var result = FusionCalculator.fuseRare(rarePersona, mainPersona);
-                if (!result)
-                    continue;
-                if (filterCallback
-                    && filterCallback.call(this, rarePersona, mainPersona, result)) {
-                    continue;
-                }
-                recipes.push({ 'sources': [rarePersona, mainPersona] });
-            }
-        }
-        return recipes;
-    };
     /**
      * Note: this can the scope that is passed in, or this.$scope.
      * Using the passed in scope for brevity.

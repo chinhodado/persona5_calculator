@@ -46,14 +46,21 @@ var personaeByArcana = (function () {
     }
     return personaeByArcana_;
 })();
-var getResultArcana = function (arcana1, arcana2) {
+var arcanaMap = (function () {
+    var map = {};
     for (var i = 0; i < arcana2Combos.length; i++) {
         var combo = arcana2Combos[i];
-        if ((combo.source[0] == arcana1 && combo.source[1] == arcana2) ||
-            (combo.source[0] == arcana2 && combo.source[1] == arcana1)) {
-            return combo.result;
-        }
+        if (!map[combo.source[0]])
+            map[combo.source[0]] = {};
+        map[combo.source[0]][combo.source[1]] = combo.result;
+        if (!map[combo.source[1]])
+            map[combo.source[1]] = {};
+        map[combo.source[1]][combo.source[0]] = combo.result;
     }
+    return map;
+})();
+var getResultArcana = function (arcana1, arcana2) {
+    return arcanaMap[arcana1][arcana2];
 };
 function getElems(personaName) {
     var elems = personaMap[personaName].elems;
