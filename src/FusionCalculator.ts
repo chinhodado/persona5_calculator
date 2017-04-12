@@ -14,10 +14,11 @@ class FusionCalculator {
      * @returns The result persona, or null when the fusion is not possible,
      * the fusion is a rare fusion, or the fusion is a special fusion.
      */
-    static fuse2(persona1: PersonaData, persona2: PersonaData): PersonaData {
+    public static fuse2(persona1: PersonaData, persona2: PersonaData): PersonaData {
         // don't handle rare fusion between a normal persona and a rare persona
-        if (persona1.rare && !persona2.rare) return null;
-        if (persona2.rare && !persona1.rare) return null;
+        if ((persona1.rare && !persona2.rare) || (persona2.rare && !persona1.rare)) {
+            return null;
+        }
 
         // don't handle 2-persona-special fusions
         for (let x = 0; x < specialCombos.length; x++) {
@@ -66,7 +67,7 @@ class FusionCalculator {
      * @param mainPersona The normal persona
      * @returns The result persona, or null when the fusion is not possible.
      */
-    static fuseRare(rarePersona: PersonaData, mainPersona: PersonaData): PersonaData {
+    public static fuseRare(rarePersona: PersonaData, mainPersona: PersonaData): PersonaData {
         let modifier = rareCombos[mainPersona.arcana][rarePersonae.indexOf(rarePersona.name)];
         let personae = personaeByArcana[mainPersona.arcana];
         let mainPersonaIndex = personae.indexOf(mainPersona);
@@ -86,11 +87,37 @@ class FusionCalculator {
     };
 
     /**
+     * Get the recipe for a special persona
+     * @param persona The special persona
+     * @returns {Array} An array of 1 element containing the recipe for the persona
+     */
+    private static getSpecialRecipe(persona: PersonaData): Recipe[] {
+        if (!persona.special) {
+            throw new Error("Persona is not special!)");
+        }
+        let allRecipe = [];
+        for (let i = 0; i < specialCombos.length; i++) {
+            let combo = specialCombos[i];
+            if (persona.name === combo.result) {
+                let recipe = {
+                    sources: [],
+                    result: personaMap[combo.result]
+                };
+                for (let j = 0; j < combo.sources.length ; j++) {
+                    recipe.sources.push(personaMap[combo.sources[j]]);
+                }
+                this.addRecipe(recipe, allRecipe);
+                return allRecipe;
+            }
+        }
+    }
+
+    /**
      * Get the list of all recipes for the given persona
      * @param persona The resulting persona
      * @returns {Array} List of all recipes for the given persona
      */
-    static getRecipes(persona: PersonaData): Recipe[] {
+    public static getRecipes(persona: PersonaData): Recipe[] {
         let allRecipe = [];
         // Rare persona can't be fused
         if (persona.rare) {
@@ -99,20 +126,7 @@ class FusionCalculator {
 
         // Check special recipes.
         if (persona.special) {
-            for (let i = 0; i < specialCombos.length; i++) {
-                let combo = specialCombos[i];
-                if (persona.name === combo.result) {
-                    let recipe = {
-                        sources: [],
-                        result: personaMap[combo.result]
-                    };
-                    for (let j = 0; j < combo.sources.length ; j++) {
-                        recipe.sources.push(personaMap[combo.sources[j]]);
-                    }
-                    this.addRecipe(recipe, allRecipe);
-                    return allRecipe;
-                }
-            }
+            return FusionCalculator.getSpecialRecipe(persona);
         }
 
         let recipes = this.getArcanaRecipes(persona.arcana);
@@ -134,7 +148,7 @@ class FusionCalculator {
      * @param expectedResult The expected resulting persona
      * @returns {boolean} true if the recipe is good for the given persona, false otherwise
      */
-    static isGoodRecipe(recipe: Recipe, expectedResult: PersonaData): boolean {
+    private static isGoodRecipe(recipe: Recipe, expectedResult: PersonaData): boolean {
         if (recipe.sources[0].name === expectedResult.name) return false;
         if (recipe.sources[1].name === expectedResult.name) return false;
         return recipe.result.name === expectedResult.name;
@@ -145,7 +159,7 @@ class FusionCalculator {
      * @param arcana The result arcana
      * @returns {Array} the list of recipes
      */
-    static getArcanaRecipes(arcana: string): Recipe[] {
+    private static getArcanaRecipes(arcana: string): Recipe[] {
         let recipes : Recipe[] = [];
         let arcanaCombos = arcana2Combos.filter(x => x.result === arcana);
 

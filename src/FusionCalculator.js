@@ -17,10 +17,9 @@ var FusionCalculator = (function () {
      */
     FusionCalculator.fuse2 = function (persona1, persona2) {
         // don't handle rare fusion between a normal persona and a rare persona
-        if (persona1.rare && !persona2.rare)
+        if ((persona1.rare && !persona2.rare) || (persona2.rare && !persona1.rare)) {
             return null;
-        if (persona2.rare && !persona1.rare)
-            return null;
+        }
         // don't handle 2-persona-special fusions
         for (var x = 0; x < specialCombos.length; x++) {
             var combo = specialCombos[x];
@@ -86,6 +85,31 @@ var FusionCalculator = (function () {
     };
     ;
     /**
+     * Get the recipe for a special persona
+     * @param persona The special persona
+     * @returns {Array} An array of 1 element containing the recipe for the persona
+     */
+    FusionCalculator.getSpecialRecipe = function (persona) {
+        if (!persona.special) {
+            throw new Error("Persona is not special!)");
+        }
+        var allRecipe = [];
+        for (var i = 0; i < specialCombos.length; i++) {
+            var combo = specialCombos[i];
+            if (persona.name === combo.result) {
+                var recipe = {
+                    sources: [],
+                    result: personaMap[combo.result]
+                };
+                for (var j = 0; j < combo.sources.length; j++) {
+                    recipe.sources.push(personaMap[combo.sources[j]]);
+                }
+                this.addRecipe(recipe, allRecipe);
+                return allRecipe;
+            }
+        }
+    };
+    /**
      * Get the list of all recipes for the given persona
      * @param persona The resulting persona
      * @returns {Array} List of all recipes for the given persona
@@ -98,20 +122,7 @@ var FusionCalculator = (function () {
         }
         // Check special recipes.
         if (persona.special) {
-            for (var i = 0; i < specialCombos.length; i++) {
-                var combo = specialCombos[i];
-                if (persona.name === combo.result) {
-                    var recipe = {
-                        sources: [],
-                        result: personaMap[combo.result]
-                    };
-                    for (var j = 0; j < combo.sources.length; j++) {
-                        recipe.sources.push(personaMap[combo.sources[j]]);
-                    }
-                    this.addRecipe(recipe, allRecipe);
-                    return allRecipe;
-                }
-            }
+            return FusionCalculator.getSpecialRecipe(persona);
         }
         var recipes = this.getArcanaRecipes(persona.arcana);
         recipes = recipes.filter(function (value, index, array) {
