@@ -32,6 +32,26 @@ var personaList = (function () {
     }
     return arr;
 })();
+var skillList = (function () {
+    var arr = [];
+    for (var key in skillMap) {
+        if (skillMap.hasOwnProperty(key)) {
+            var skill = skillMap[key];
+            skill.name = key;
+            skill.elemDisplay = capitalizeFirstLetter(skill.element);
+            skill.costDisplay = getSkillCost(skill);
+            skill.personaDisplay = getSkillPersonaList(skill);
+            if (skill.talk) {
+                skill.talkDisplay = createPersonaLink(skill.talk);
+            }
+            if (skill.fuse) {
+                skill.fuseDisplay = createPersonaLink(skill.fuse);
+            }
+            arr.push(skill);
+        }
+    }
+    return arr;
+})();
 var personaeByArcana = (function () {
     var personaeByArcana_ = {};
     for (var i = 0; i < personaList.length; i++) {
@@ -101,6 +121,21 @@ function getSkills(personaName) {
         });
     }
     return resSkills;
+}
+function getSkillPersonaList(skill) {
+    var arr = [];
+    for (var key in skill.personas) {
+        if (skill.personas.hasOwnProperty(key)) {
+            var level = skill.personas[key];
+            var keyHref = createPersonaLink(key);
+            arr.push(keyHref + (level !== 0 ? " (" + level + ")" : ""));
+        }
+    }
+    var str = arr.join(", ");
+    return str;
+}
+function createPersonaLink(personaName) {
+    return "<a href='#/persona/" + personaName + "'>" + personaName + "</a>";
 }
 function capitalizeFirstLetter(s) {
     return s.charAt(0).toUpperCase() + s.slice(1);

@@ -5,6 +5,7 @@ interface SkillMap {
 }
 
 interface SkillData {
+    name?: string;
     cost?: number;
     effect: string;
     element: "phys" | "gun" | "fire" | "ice" | "electric" | "wind" | "psy" | "nuclear" | "bless" | "curse" |
@@ -16,6 +17,13 @@ interface SkillData {
     fuse?: string;
     unique?: string;
     dlc?: boolean;
+
+    // for display in list
+    elemDisplay?: string;
+    costDisplay?: string;
+    personaDisplay?: string;
+    talkDisplay?: string;
+    fuseDisplay?: string;
 }
 
 const skillMap: SkillMap = {

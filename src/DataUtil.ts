@@ -37,6 +37,27 @@ const personaList: PersonaData[] = (() =>{
     return arr;
 })();
 
+const skillList: SkillData[] = (() =>{
+    let arr = [];
+    for (let key in skillMap) {
+        if (skillMap.hasOwnProperty(key)) {
+            let skill = skillMap[key];
+            skill.name = key;
+            skill.elemDisplay = capitalizeFirstLetter(skill.element);
+            skill.costDisplay = getSkillCost(skill);
+            skill.personaDisplay = getSkillPersonaList(skill);
+            if (skill.talk) {
+                skill.talkDisplay = createPersonaLink(skill.talk);
+            }
+            if (skill.fuse) {
+                skill.fuseDisplay = createPersonaLink(skill.fuse);
+            }
+            arr.push(skill);
+        }
+    }
+    return arr;
+})();
+
 const personaeByArcana : {[arcana: string]: PersonaData[]} = (() =>{
     let personaeByArcana_ = {};
     for (let i = 0; i < personaList.length; i++) {
@@ -109,6 +130,23 @@ function getSkills(personaName: string) {
     }
 
     return resSkills;
+}
+
+function getSkillPersonaList(skill: SkillData) {
+    let arr = [];
+    for (let key in skill.personas) {
+        if (skill.personas.hasOwnProperty(key)) {
+            let level = skill.personas[key];
+            let keyHref = createPersonaLink(key);
+            arr.push(keyHref + (level !== 0? " (" + level + ")" : ""));
+        }
+    }
+    let str = arr.join(", ");
+    return str;
+}
+
+function createPersonaLink(personaName: string): string {
+    return `<a href='#/persona/${personaName}'>${personaName}</a>`;
 }
 
 function capitalizeFirstLetter(s: string) {

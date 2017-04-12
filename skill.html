@@ -1,0 +1,29 @@
+<p>
+    <label>Filter: <input type="text" size="30" ng-model="filterStr"></label>
+    <button ng:click="filterStr = ''">Clear</button>
+</p>
+
+<table id="skillList" cellspacing="0">
+    <thead>
+    <tr>
+        <th><a ng-click="sortBy = 'elemDisplay'; sortReverse = !sortReverse">Type</a></th>
+        <th><a ng-click="sortBy = 'name'; sortReverse = !sortReverse">Name</a></th>
+        <th><a ng-click="sortBy = 'costDisplay'; sortReverse = !sortReverse">Cost</a></th>
+        <th><a ng-click="sortBy = 'effect'; sortReverse = !sortReverse">Effect</a></th>
+        <th><a ng-click="sortBy = 'personaDisplay'; sortReverse = !sortReverse">Persona</a></th>
+        <th><a ng-click="sortBy = 'talk'; sortReverse = !sortReverse">Skill Card Negotiation</a></th>
+        <th><a ng-click="sortBy = 'fuse'; sortReverse = !sortReverse">Skill Card Fusion</a></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng:repeat="skill in skillList | orderBy:sortBy:sortReverse | filter:filterStr">
+        <td>{{skill.elemDisplay}}</td>
+        <td id="{{skill.name}}">{{skill.name}}</td>
+        <td>{{skill.costDisplay}}</td>
+        <td>{{skill.effect}}</td>
+        <td ng-bind-html="skill.personaDisplay"></td>
+        <td ng-bind-html="skill.talkDisplay"></td>
+        <td ng-bind-html="skill.fuseDisplay"></td>
+    </tr>
+    </tbody>
+</table>

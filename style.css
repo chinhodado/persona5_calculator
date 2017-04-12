@@ -24,7 +24,7 @@ a, a:visited {
     color: #000;
 }
 
-#list th {
+#list th, #skillList th {
     cursor: pointer;
     padding: 5px;
 }
@@ -34,6 +34,10 @@ a, a:visited {
 }
 
 #list tr:hover td {
+    background: rgba(64, 46, 24, 0.1);
+}
+
+#skillList tr:hover td {
     background: rgba(64, 46, 24, 0.1);
 }
 
@@ -61,7 +65,7 @@ tr:hover td:last-child {
     text-align: center;
 }
 
-.infoTable, #recipes {
+.infoTable, #recipes, #skillList {
     margin: 0 auto;
 }
 
@@ -82,4 +86,19 @@ tr:hover td:last-child {
 caption {
     font-size: large;
     margin-bottom: 10px;
+}
+
+#skillList {
+    text-align: left;
+}
+
+#skillList th, #skillList td {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media screen and (min-width: 1080px) {
+    #skillList {
+        width: 80%;
+    }
 }
