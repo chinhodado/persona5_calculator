@@ -102,3 +102,28 @@ caption {
         width: 80%;
     }
 }
+
+.ui.sortable.table thead th:hover {
+    background: white !important;
+}
+
+.wk, .rs, .nu, .rp, .ab,
+.Weak, .Resist, .Null, .Repel, .Absorb {
+    font-weight: bold;
+}
+
+.wk, .Weak { color: #db2828 !important; }
+.rs, .Resist { color: #2185d0 !important; }
+.nu, .Null { color: #00b5ad !important; }
+.rp, .Repel { color: #fbbd08 !important; }
+.ab, .Absorb { color: #21ba45 !important; }
+
+.left-border {
+    border-left: 1px solid rgba(34,36,38,.1) !important;
+}
+
+@media only screen and (max-width: 992px) {
+    .mobile-hidden {
+        display: none;
+    }
+}

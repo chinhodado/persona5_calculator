@@ -2,6 +2,7 @@
 ///<reference path="PersonaListController.ts"/>
 ///<reference path="SkillListController.ts"/>
 var myModule = angular.module('myModule', ['ngRoute']);
+myModule.directive('stickyTable', StickyTableDirective);
 myModule.controller('PersonaController', ['$scope', PersonaController]);
 myModule.controller('PersonaListController', ['$scope', PersonaListController]);
 myModule.config(function ($routeProvider) {
