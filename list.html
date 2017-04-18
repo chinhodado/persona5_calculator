@@ -1,52 +1,55 @@
 <p>
-    <label>Filter: <input type="text" size="30" ng-model="filterStr"></label>
-    <button ng:click="filterStr = ''">Clear</button>
+    <div class="ui mini input">
+        <label>Filter: <input type="text" size="30" ng-model="filterStr"></label>
+        &nbsp;
+        <button ng:click="filterStr = ''" class="ui mini button">Clear</button>
+    </div>
 </p>
 
-<table id="list" cellspacing="0">
+<table id="list" cellspacing="0" class="ui table striped sortable unstackable" sticky-table>
     <thead>
     <tr>
         <th><a ng-click="sortBy = 'level'; sortReverse = !sortReverse">Level</a></th>
         <th><a ng-click="sortBy = 'name'; sortReverse = !sortReverse">Name</a></th>
         <th><a ng-click="sortBy = 'arcana'; sortReverse = !sortReverse">Arcana</a></th>
-        <th><a ng-click="sortBy = 'strength'; sortReverse = !sortReverse">Strength</a></th>
-        <th><a ng-click="sortBy = 'magic'; sortReverse = !sortReverse">Magic</a></th>
-        <th><a ng-click="sortBy = 'endurance'; sortReverse = !sortReverse">Endurance</a></th>
-        <th><a ng-click="sortBy = 'agility'; sortReverse = !sortReverse">Agility</a></th>
-        <th><a ng-click="sortBy = 'luck'; sortReverse = !sortReverse">Luck</a></th>
-        <th><a ng-click="sortBy = 'physicalValue'; sortReverse = !sortReverse">Physical</a></th>
-        <th><a ng-click="sortBy = 'gunValue'; sortReverse = !sortReverse">Gun</a></th>
-        <th><a ng-click="sortBy = 'fireValue'; sortReverse = !sortReverse">Fire</a></th>
-        <th><a ng-click="sortBy = 'iceValue'; sortReverse = !sortReverse">Ice</a></th>
-        <th><a ng-click="sortBy = 'electricValue'; sortReverse = !sortReverse">Electric</a></th>
-        <th><a ng-click="sortBy = 'windValue'; sortReverse = !sortReverse">Wind</a></th>
-        <th><a ng-click="sortBy = 'psychicValue'; sortReverse = !sortReverse">Psychic</a></th>
-        <th><a ng-click="sortBy = 'nuclearValue'; sortReverse = !sortReverse">Nuclear</a></th>
-        <th><a ng-click="sortBy = 'blessValue'; sortReverse = !sortReverse">Bless</a></th>
-        <th><a ng-click="sortBy = 'curseValue'; sortReverse = !sortReverse">Curse</a></th>
+        <th class="mobile-hidden"><a ng-click="sortBy = 'strength'; sortReverse = !sortReverse">Strength</a></th>
+        <th class="mobile-hidden"><a ng-click="sortBy = 'magic'; sortReverse = !sortReverse">Magic</a></th>
+        <th class="mobile-hidden"><a ng-click="sortBy = 'endurance'; sortReverse = !sortReverse">Endurance</a></th>
+        <th class="mobile-hidden"><a ng-click="sortBy = 'agility'; sortReverse = !sortReverse">Agility</a></th>
+        <th class="mobile-hidden"><a ng-click="sortBy = 'luck'; sortReverse = !sortReverse">Luck</a></th>
+        <th class="mobile-hidden"><a ng-click="sortBy = 'physicalValue'; sortReverse = !sortReverse">Physical</a></th>
+        <th class="mobile-hidden"><a ng-click="sortBy = 'gunValue'; sortReverse = !sortReverse">Gun</a></th>
+        <th class="mobile-hidden"><a ng-click="sortBy = 'fireValue'; sortReverse = !sortReverse">Fire</a></th>
+        <th class="mobile-hidden"><a ng-click="sortBy = 'iceValue'; sortReverse = !sortReverse">Ice</a></th>
+        <th class="mobile-hidden"><a ng-click="sortBy = 'electricValue'; sortReverse = !sortReverse">Electric</a></th>
+        <th class="mobile-hidden"><a ng-click="sortBy = 'windValue'; sortReverse = !sortReverse">Wind</a></th>
+        <th class="mobile-hidden"><a ng-click="sortBy = 'psychicValue'; sortReverse = !sortReverse">Psychic</a></th>
+        <th class="mobile-hidden"><a ng-click="sortBy = 'nuclearValue'; sortReverse = !sortReverse">Nuclear</a></th>
+        <th class="mobile-hidden"><a ng-click="sortBy = 'blessValue'; sortReverse = !sortReverse">Bless</a></th>
+        <th class="mobile-hidden"><a ng-click="sortBy = 'curseValue'; sortReverse = !sortReverse">Curse</a></th>
     </tr>
     </thead>
     <tbody>
     <tr ng:repeat="persona in personaList | orderBy:sortBy:sortReverse | filter:filterStr">
         <td>{{persona.level}}</td>
-        <td><a href='#/persona/{{persona.name}}'>{{persona.name}}</a></td>
-        <td>{{persona.arcana}}</td>
+        <td class="left-border"><a href='#/persona/{{persona.name}}'>{{persona.name}}</a></td>
+        <td class="left-border">{{persona.arcana}}</td>
 
-        <td>{{persona.strength}}</td>
-        <td>{{persona.magic}}</td>
-        <td>{{persona.endurance}}</td>
-        <td>{{persona.agility}}</td>
-        <td>{{persona.luck}}</td>
-        <td>{{persona.physical}}</td>
-        <td>{{persona.gun}}</td>
-        <td>{{persona.fire}}</td>
-        <td>{{persona.ice}}</td>
-        <td>{{persona.electric}}</td>
-        <td>{{persona.wind}}</td>
-        <td>{{persona.psychic}}</td>
-        <td>{{persona.nuclear}}</td>
-        <td>{{persona.bless}}</td>
-        <td>{{persona.curse}}</td>
+        <td class="mobile-hidden left-border">{{persona.strength}}</td>
+        <td class="mobile-hidden">{{persona.magic}}</td>
+        <td class="mobile-hidden">{{persona.endurance}}</td>
+        <td class="mobile-hidden">{{persona.agility}}</td>
+        <td class="mobile-hidden">{{persona.luck}}</td>
+        <td class="mobile-hidden left-border {{persona.physical}}">{{persona.physical}}</td>
+        <td class="mobile-hidden {{persona.gun}}">{{persona.gun}}</td>
+        <td class="mobile-hidden {{persona.fire}}">{{persona.fire}}</td>
+        <td class="mobile-hidden {{persona.ice}}">{{persona.ice}}</td>
+        <td class="mobile-hidden {{persona.electric}}">{{persona.electric}}</td>
+        <td class="mobile-hidden {{persona.wind}}">{{persona.wind}}</td>
+        <td class="mobile-hidden {{persona.psychic}}">{{persona.psychic}}</td>
+        <td class="mobile-hidden {{persona.nuclear}}">{{persona.nuclear}}</td>
+        <td class="mobile-hidden {{persona.bless}}">{{persona.bless}}</td>
+        <td class="mobile-hidden {{persona.curse}}">{{persona.curse}}</td>
     </tr>
     </tbody>
 </table>

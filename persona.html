@@ -12,27 +12,36 @@
     </div>
 
     <h3>Stats</h3>
-    <table id="statsTable" class="infoTable">
+    <table id="statsTable" class="ui table striped">
+        <thead>
         <tr>
             <th ng:repeat="s in persona.statsHeader">{{s}}</th>
         </tr>
+        </thead>
+        <tbody>
         <tr>
             <td ng:repeat="i in persona.stats track by $index">{{i}}</td>
         </tr>
+        </tbody>
     </table>
 
     <h3>Elementals</h3>
-    <table id="elemsTable" class="infoTable">
+    <table id="elemsTable" class="ui table striped">
+        <thead>
         <tr>
             <th ng:repeat="s in persona.elemsHeader">{{s}}</th>
         </tr>
+        </thead>
+        <tbody>
         <tr>
-            <td ng:repeat="s in persona.elems track by $index">{{s}}</td>
+            <td ng:repeat="s in persona.elems track by $index" class="{{s}}">{{s}}</td>
         </tr>
+        </tbody>
     </table>
 
     <h3>Skills</h3>
-    <table id="skillTable" class="infoTable">
+    <table id="skillTable" class="ui table striped">
+        <thead>
         <tr>
             <th>Level</th>
             <th>Type</th>
@@ -40,6 +49,8 @@
             <th>Effect</th>
             <th>Cost</th>
         </tr>
+        </thead>
+        <tbody>
         <tr ng:repeat="skill in persona.skillList track by $index">
             <td>{{skill.level}}</td>
             <td>{{skill.elem}}</td>
@@ -47,6 +58,7 @@
             <td>{{skill.description}}</td>
             <td>{{skill.cost}}</td>
         </tr>
+        </tbody>
     </table>
 
     <h3>Fusion ({{numRecipes}} Recipes)</h3>
@@ -61,11 +73,14 @@
     </div>
 
     <p>
-        <label>Filter: <input type="text" size="30" ng-model="filterStr"></label>
-        <button ng:click="filterStr = ''">Clear</button>
+        <div class="ui mini input">
+            <label>Filter: <input type="text" size="30" ng-model="filterStr"></label>
+            &nbsp;
+            <button ng:click="filterStr = ''" class="ui mini button">Clear</button>
+        </div>
     </p>
 
-    <table id="recipes">
+    <table id="recipes" class="ui table striped">
         <thead>
         <tr>
             <th>#</th>
