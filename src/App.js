@@ -1,6 +1,15 @@
 ///<reference path="PersonaController.ts"/>
 ///<reference path="PersonaListController.ts"/>
 ///<reference path="SkillListController.ts"/>
+var StickyTableDirective = function () { return ({
+    restrict: 'A',
+    link: function ($scope, $element) {
+        $element.stickyTableHeaders();
+        $scope.$on('$destroy', function () {
+            $element.stickyTableHeaders('destroy');
+        });
+    }
+}); };
 var myModule = angular.module('myModule', ['ngRoute']);
 myModule.directive('stickyTable', StickyTableDirective);
 myModule.controller('PersonaController', ['$scope', PersonaController]);
