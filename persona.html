@@ -26,7 +26,7 @@
     </table>
 
     <h3>Elementals</h3>
-    <table id="elemsTable" class="ui table unstackable striped">
+    <table class="ui table unstackable striped mobile-hidden">
         <thead>
         <tr>
             <th ng:repeat="s in persona.elemsHeader">{{s}}</th>
@@ -35,6 +35,33 @@
         <tbody>
         <tr>
             <td ng:repeat="s in persona.elems track by $index" class="{{s}}">{{s}}</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <!--split the table into 2 for mobile-->
+    <table class="ui table unstackable striped desktop-hidden">
+        <thead>
+        <tr>
+            <th ng:repeat="s in persona.elemsHeader1">{{s}}</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td ng:repeat="s in persona.elems1 track by $index" class="{{s}}">{{s}}</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <table class="ui table unstackable striped desktop-hidden">
+        <thead>
+        <tr>
+            <th ng:repeat="s in persona.elemsHeader2">{{s}}</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td ng:repeat="s in persona.elems2 track by $index" class="{{s}}">{{s}}</td>
         </tr>
         </tbody>
     </table>

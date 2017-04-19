@@ -30,8 +30,18 @@ class PersonaController {
         let compediumEntry = personaMap[personaName];
         this.$scope.persona.stats = compediumEntry.stats;
         this.$scope.persona.statsHeader = ["Strength", "Magic", "Endurance", "Agility", "Luck"];
-        this.$scope.persona.elems = getElems(personaName);
-        this.$scope.persona.elemsHeader = ["Physical", "Gun", "Fire", "Ice", "Electric", "Wind", "Psychic", "Nuclear", "Bless", "Curse"];
+
+        // split the table into 2 for mobile
+        let elems = getElems(personaName);
+        this.$scope.persona.elems = elems;
+        this.$scope.persona.elems1 = elems.slice(0,5);
+        this.$scope.persona.elems2 = elems.slice(5);
+
+        // split the table into 2 for mobile
+        let elemsHeader = ["Physical", "Gun", "Fire", "Ice", "Electric", "Wind", "Psychic", "Nuclear", "Bless", "Curse"];
+        this.$scope.persona.elemsHeader = elemsHeader;
+        this.$scope.persona.elemsHeader1 = elemsHeader.slice(0,5);
+        this.$scope.persona.elemsHeader2 = elemsHeader.slice(5);
 
         // Note: skillList are skills in a sorted list for displaying with Angular.
         // It's different from the existing skills property which is a map.
