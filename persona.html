@@ -118,7 +118,7 @@
         <tbody>
         <tr ng:repeat="recipe in recipes track by $index">
             <td>{{recipe.num + 1}}</td>
-            <td>{{recipe.cost | number}} ¥</td>
+            <td>¥{{recipe.cost | number}}</td>
             <td ng:repeat="persona in recipe.sources track by $index">
                 <a href='#/persona/{{persona.name}}'>{{persona.name}}</a>
                 ({{persona.level}} / {{persona.arcana}})
