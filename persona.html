@@ -1,5 +1,5 @@
 <p ng:hide="allRecipes">"{{personaName}}" not found!</p>
-<div ng:show="allRecipes">
+<div ng:show="allRecipes" style="margin-top:10px">
     <h2>{{personaName}} ({{persona.level}} / {{persona.arcana}})</h2>
 
     <div ng:show='persona.max || persona.item || persona.rare || persona.note || persona.dlc'>
@@ -12,7 +12,7 @@
     </div>
 
     <h3>Stats</h3>
-    <table id="statsTable" class="ui table striped">
+    <table id="statsTable" class="ui table unstackable striped">
         <thead>
         <tr>
             <th ng:repeat="s in persona.statsHeader">{{s}}</th>
@@ -26,7 +26,7 @@
     </table>
 
     <h3>Elementals</h3>
-    <table id="elemsTable" class="ui table striped">
+    <table id="elemsTable" class="ui table unstackable striped">
         <thead>
         <tr>
             <th ng:repeat="s in persona.elemsHeader">{{s}}</th>
@@ -40,7 +40,7 @@
     </table>
 
     <h3>Skills</h3>
-    <table id="skillTable" class="ui table striped">
+    <table id="skillTable" class="ui table unstackable striped">
         <thead>
         <tr>
             <th>Level</th>
@@ -80,7 +80,7 @@
         </div>
     </p>
 
-    <table id="recipes" class="ui table striped">
+    <table id="recipes" class="ui table unstackable striped">
         <thead>
         <tr>
             <th>#</th>
