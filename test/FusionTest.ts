@@ -214,3 +214,23 @@ describe('FusionCalculator', () => {
     });
 });
 
+describe('Data', () => {
+    it("all persona's skills should be in the skill list", () => {
+        expect(checkSkill()).to.equal(true);
+    });
+});
+
+function checkSkill() {
+    let isGood = true;
+    for (let i = 0; i < personaList.length; i++) {
+        for (let key in personaList[i].skills) {
+            if (personaList[i].skills.hasOwnProperty(key)) {
+                if (!skillMap[key]) {
+                    isGood = false;
+                    throw new Error("Skill not found: " + key);
+                }
+            }
+        }
+    }
+    return isGood;
+}

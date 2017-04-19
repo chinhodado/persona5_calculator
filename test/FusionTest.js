@@ -175,3 +175,22 @@ describe('FusionCalculator', function () {
         });
     });
 });
+describe('Data', function () {
+    it("all persona's skills should be in the skill list", function () {
+        expect(checkSkill()).to.equal(true);
+    });
+});
+function checkSkill() {
+    var isGood = true;
+    for (var i = 0; i < personaList.length; i++) {
+        for (var key in personaList[i].skills) {
+            if (personaList[i].skills.hasOwnProperty(key)) {
+                if (!skillMap[key]) {
+                    isGood = false;
+                    throw new Error("Skill not found: " + key);
+                }
+            }
+        }
+    }
+    return isGood;
+}

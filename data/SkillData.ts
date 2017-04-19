@@ -43,7 +43,7 @@ const skillMap: SkillMap = {
             "Tsukiyomi Picaro": 0
         }
     },
-    "Absorb Electric": {
+    "Absorb Elec": {
         "effect": "Absorb Electric attacks.",
         "element": "passive",
         "personas": {}
@@ -62,7 +62,7 @@ const skillMap: SkillMap = {
             "Satan": 98
         }
     },
-    "Absorb Nuclear": {
+    "Absorb Nuke": {
         "effect": "Absorb Nuclear attacks.",
         "element": "passive",
         "personas": {
@@ -237,7 +237,7 @@ const skillMap: SkillMap = {
         "talk": "Scathach"
     },
     "Angelic Grace": {
-        "effect": "Double evasion rate against all attacks except Bless/Curseness/Almighty.",
+        "effect": "Double evasion rate against all attacks except Bless/Curse/Almighty.",
         "element": "passive",
         "fuse": "Sandalphon",
         "personas": {
@@ -339,7 +339,7 @@ const skillMap: SkillMap = {
     },
     "Bad Beat": {
         "cost": 21,
-        "effect": "Deal medium Phys damage and inflict Distress (low odds) to all foes.",
+        "effect": "Deal medium Phys damage and inflict Despair (low odds) to all foes.",
         "element": "phys",
         "fuse": "Black Rider",
         "personas": {
@@ -360,9 +360,9 @@ const skillMap: SkillMap = {
             "Nigi Mitama": 0
         }
     },
-    "Banishing Wave": {
+    "Abysmal Surge": {
         "cost": 1200,
-        "effect": "Inflict Distress (medium odds) to all foes.",
+        "effect": "Inflict Despair (medium odds) to all foes.",
         "element": "ailment",
         "personas": {
             "Ananta": 45,
@@ -402,7 +402,7 @@ const skillMap: SkillMap = {
             "Principality": 34
         }
     },
-    "Blinding Flash": {
+    "Nocturnal Flash": {
         "cost": 1200,
         "effect": "Inflict Dizzy (medium odds) to all foes.",
         "element": "ailment",
@@ -650,7 +650,7 @@ const skillMap: SkillMap = {
             "Pale Rider": 55
         }
     },
-    "Dancing Blades": {
+    "Sword Dance": {
         "cost": 21,
         "effect": "Deal grave Phys damage to 1 foe.",
         "element": "phys",
@@ -773,7 +773,7 @@ const skillMap: SkillMap = {
         },
         "talk": "Decarabia"
     },
-    "Devil Touch": {
+    "Evil Touch": {
         "cost": 500,
         "effect": "Inflict Fear (high odds) to 1 foe.",
         "element": "ailment",
@@ -855,8 +855,8 @@ const skillMap: SkillMap = {
         },
         "unique": "Alice"
     },
-    "Distress Boost": {
-        "effect": "Increase chance of inflicting Distress.",
+    "Despair Boost": {
+        "effect": "Increase chance of inflicting Despair.",
         "element": "passive",
         "fuse": "Lamia",
         "personas": {
@@ -902,7 +902,7 @@ const skillMap: SkillMap = {
             "Lilim": 35
         }
     },
-    "Dodge Curseness": {
+    "Dodge Curse": {
         "effect": "Double evasion rate against (non instant death) Curse attacks.",
         "element": "passive",
         "personas": {
@@ -912,7 +912,7 @@ const skillMap: SkillMap = {
             "Shiisaa": 20
         }
     },
-    "Dodge Electric": {
+    "Dodge Elec": {
         "effect": "Double evasion rate against Electric attacks.",
         "element": "passive",
         "personas": {
@@ -945,7 +945,7 @@ const skillMap: SkillMap = {
             "Orthrus": 0
         }
     },
-    "Dodge Nuclear": {
+    "Dodge Nuke": {
         "effect": "Double evasion rate against Nuclear attacks.",
         "element": "passive",
         "personas": {
@@ -1074,7 +1074,7 @@ const skillMap: SkillMap = {
             "Slime": 11
         }
     },
-    "El Jihad": {
+    "Wild Thunder": {
         "cost": 5400,
         "effect": "Deal severe Electric damage to all foes.",
         "element": "electric",
@@ -1082,7 +1082,7 @@ const skillMap: SkillMap = {
             "Odin": 84
         }
     },
-    "Electric Amp": {
+    "Elec Amp": {
         "effect": "Strengthen Electric attacks by 50%.",
         "element": "passive",
         "fuse": "Oberon",
@@ -1093,7 +1093,7 @@ const skillMap: SkillMap = {
             "Yoshitsune": 84
         }
     },
-    "Electric Boost": {
+    "Elec Boost": {
         "effect": "Strengthen Electric attacks by 25%.",
         "element": "passive",
         "fuse": "Naga",
@@ -1104,7 +1104,7 @@ const skillMap: SkillMap = {
             "Yurlungur": 48
         }
     },
-    "Electric Break": {
+    "Elec Break": {
         "cost": 1500,
         "effect": "Negate Electric resistances of all foes.",
         "element": "support",
@@ -1116,7 +1116,7 @@ const skillMap: SkillMap = {
             "Yurlungur": 45
         }
     },
-    "Electric Wall": {
+    "Elec Wall": {
         "cost": 1800,
         "effect": "Create a shield on 1 ally to reduce damage of Electric attacks for 3 turns.",
         "element": "support",
@@ -1161,7 +1161,7 @@ const skillMap: SkillMap = {
     },
     "Energy Drop": {
         "cost": 400,
-        "effect": "Cure Panic/Fear/Distress/Rage/Brainwash of 1 ally.",
+        "effect": "Cure Confuse/Fear/Despair/Rage/Brainwash of 1 ally.",
         "element": "healing",
         "fuse": "Mandrake",
         "personas": {
@@ -1174,7 +1174,7 @@ const skillMap: SkillMap = {
     },
     "Energy Shower": {
         "cost": 800,
-        "effect": "Cure Panic/Fear/Distress/Rage/Brainwash of party.",
+        "effect": "Cure Confuse/Fear/Despair/Rage/Brainwash of party.",
         "element": "healing",
         "personas": {
             "Clotho": 30,
@@ -1191,7 +1191,7 @@ const skillMap: SkillMap = {
             "Pale Rider": 57
         }
     },
-    "Evade Curseness": {
+    "Evade Curse": {
         "effect": "Triple evasion rate against (non instant death) Curse attacks.",
         "element": "passive",
         "personas": {
@@ -1200,7 +1200,7 @@ const skillMap: SkillMap = {
             "Throne": 75
         }
     },
-    "Evade Electric": {
+    "Evade Elec": {
         "effect": "Triple evasion rate against Electric attacks.",
         "element": "passive",
         "personas": {
@@ -1223,7 +1223,7 @@ const skillMap: SkillMap = {
             "Kali": 79
         }
     },
-    "Evade Nuclear": {
+    "Evade Nuke": {
         "effect": "Triple evasion rate against Nuclear attacks.",
         "element": "passive",
         "personas": {
@@ -1255,7 +1255,7 @@ const skillMap: SkillMap = {
             "Vasuki": 70
         }
     },
-    "Evil Judgement": {
+    "Demonic Decree": {
         "cost": 4800,
         "effect": "Half remaining HP of 1 foe.",
         "element": "curse",
@@ -1735,7 +1735,7 @@ const skillMap: SkillMap = {
         },
         "talk": "Onmoraki"
     },
-    "Incineration": {
+    "Blazing Hell": {
         "cost": 5400,
         "effect": "Deal severe Fire damage to all foes.",
         "element": "fire",
@@ -2039,7 +2039,7 @@ const skillMap: SkillMap = {
     "Magatsu Mandala": {
         "cost": 3000,
         "dlc": true,
-        "effect": "Deal heavy Curse damage to all foes and inflict Panic/Fear/Distress (medium odds).",
+        "effect": "Deal heavy Curse damage to all foes and inflict Confuse/Fear/Despair (medium odds).",
         "element": "curse",
         "personas": {
             "Magatsu-Izanagi": 0,
@@ -2202,7 +2202,7 @@ const skillMap: SkillMap = {
             "Thanatos Picaro": 0
         }
     },
-    "Mapsy": {
+    "Mapsi": {
         "cost": 1000,
         "effect": "Deal weak Psy damage to all foes.",
         "element": "psy",
@@ -2213,7 +2213,7 @@ const skillMap: SkillMap = {
         },
         "talk": "Shiki-Ouji"
     },
-    "Mapsydyne": {
+    "Mapsiodyne": {
         "cost": 2200,
         "effect": "Deal heavy Psy damage to all foes.",
         "element": "psy",
@@ -2226,7 +2226,7 @@ const skillMap: SkillMap = {
         },
         "talk": "Forneus"
     },
-    "Mapsyo": {
+    "Mapsio": {
         "cost": 1600,
         "effect": "Deal medium Psy damage to all foes.",
         "element": "psy",
@@ -2570,7 +2570,7 @@ const skillMap: SkillMap = {
             "Quetzalcoatl": 0
         }
     },
-    "Mind Charge": {
+    "Concentrate": {
         "cost": 1500,
         "effect": "Multiply user's next magical attack damage by 2.5.",
         "element": "support",
@@ -2590,7 +2590,7 @@ const skillMap: SkillMap = {
     },
     "Mind Slice": {
         "cost": 19,
-        "effect": "Deal medium Phys damage and inflict Panic (low odds) to all foes.",
+        "effect": "Deal medium Phys damage and inflict Confuse (low odds) to all foes.",
         "element": "phys",
         "fuse": "Rakshasa",
         "personas": {
@@ -2659,7 +2659,7 @@ const skillMap: SkillMap = {
     },
     "Negative Pile": {
         "cost": 12,
-        "effect": "Deal heavy Phys damage and inflict Distress (medium odds) to 1 foe.",
+        "effect": "Deal heavy Phys damage and inflict Despair (medium odds) to 1 foe.",
         "element": "phys",
         "personas": {
             "Legion": 0,
@@ -2667,7 +2667,7 @@ const skillMap: SkillMap = {
         },
         "talk": "Lamia"
     },
-    "Nuclear Amp": {
+    "Nuke Amp": {
         "effect": "Strengthen Nuclear attacks by 50%.",
         "element": "passive",
         "fuse": "Moloch",
@@ -2677,7 +2677,7 @@ const skillMap: SkillMap = {
             "Titania": 60
         }
     },
-    "Nuclear Boost": {
+    "Nuke Boost": {
         "effect": "Strengthen Nuclear attacks by 25%.",
         "element": "passive",
         "fuse": "Feng Huang",
@@ -2686,7 +2686,7 @@ const skillMap: SkillMap = {
             "Feng Huang": 27
         }
     },
-    "Nuclear Break": {
+    "Nuke Break": {
         "cost": 1500,
         "effect": "Negate Nuclear resistances of all foes.",
         "element": "support",
@@ -2694,7 +2694,7 @@ const skillMap: SkillMap = {
             "Mithras": 42
         }
     },
-    "Nuclear Wall": {
+    "Nuke Wall": {
         "cost": 1800,
         "effect": "Create a shield on 1 ally to reduce damage of Nuclear attacks for 3 turns.",
         "element": "support",
@@ -2716,15 +2716,15 @@ const skillMap: SkillMap = {
             "Arahabaki": 0
         }
     },
-    "Null Curseness": {
+    "Null Curse": {
         "effect": "Impart immunity against Curse attacks.",
         "element": "passive",
         "personas": {
             "Power": 46
         }
     },
-    "Null Distress": {
-        "effect": "Impart immunity against Distress.",
+    "Null Despair": {
+        "effect": "Impart immunity against Despair.",
         "element": "passive",
         "personas": {
             "King Frost": 65,
@@ -2739,7 +2739,7 @@ const skillMap: SkillMap = {
             "Matador": 0
         }
     },
-    "Null Electric": {
+    "Null Elec": {
         "effect": "Impart immunity against Electric attacks.",
         "element": "passive",
         "personas": {
@@ -2772,15 +2772,15 @@ const skillMap: SkillMap = {
         "element": "passive",
         "personas": {}
     },
-    "Null Nuclear": {
+    "Null Nuke": {
         "effect": "Impart immunity against Nuclear attacks.",
         "element": "passive",
         "personas": {
             "Sui-Ki": 26
         }
     },
-    "Null Panic": {
-        "effect": "Impart immunity against Panic.",
+    "Null Confuse": {
+        "effect": "Impart immunity against Confuse.",
         "element": "passive",
         "personas": {}
     },
@@ -2821,7 +2821,7 @@ const skillMap: SkillMap = {
             "Yatagarasu": 62
         }
     },
-    "One Shot Kill": {
+    "One-shot Kill": {
         "cost": 17,
         "effect": "Deal severe Gun damage to 1 foe. High critical rate.",
         "element": "gun",
@@ -2859,8 +2859,8 @@ const skillMap: SkillMap = {
         },
         "unique": "Messiah"
     },
-    "Panic Boost": {
-        "effect": "Increase chance of inflicting Panic.",
+    "Confuse Boost": {
+        "effect": "Increase chance of inflicting Confuse.",
         "element": "passive",
         "fuse": "Onmoraki",
         "personas": {
@@ -2888,9 +2888,9 @@ const skillMap: SkillMap = {
         },
         "talk": "Silky"
     },
-    "Power Charge": {
+    "Charge": {
         "cost": 1500,
-        "effect": "Multiply user's next Phys attack damage by 2.5.",
+        "effect": "Multiply user's next Phys or Gun attack damage by 2.5.",
         "element": "support",
         "fuse": "Cu Chulainn",
         "personas": {
@@ -2920,7 +2920,7 @@ const skillMap: SkillMap = {
             "Yoshitsune": 81
         }
     },
-    "Psy": {
+    "Psi": {
         "cost": 400,
         "effect": "Deal weak Psy damage to 1 foe.",
         "element": "psy",
@@ -2965,7 +2965,7 @@ const skillMap: SkillMap = {
         },
         "talk": "Oberon"
     },
-    "Psycho Force": {
+    "Psycho Blast": {
         "cost": 5400,
         "effect": "Deal severe Psy damage to all foes.",
         "element": "psy",
@@ -2974,7 +2974,7 @@ const skillMap: SkillMap = {
             "Shiva": 88
         }
     },
-    "Psychokinesis": {
+    "Psycho Force": {
         "cost": 4800,
         "effect": "Deal severe Psy damage to 1 foe.",
         "element": "psy",
@@ -2984,7 +2984,7 @@ const skillMap: SkillMap = {
             "Shiva": 0
         }
     },
-    "Psydyne": {
+    "Psiodyne": {
         "cost": 1200,
         "effect": "Deal heavy Psy damage to 1 foe.",
         "element": "psy",
@@ -3000,7 +3000,7 @@ const skillMap: SkillMap = {
         },
         "talk": "Moloch"
     },
-    "Psyo": {
+    "Psio": {
         "cost": 800,
         "effect": "Deal medium Psy damage to 1 foe.",
         "element": "psy",
@@ -3016,7 +3016,7 @@ const skillMap: SkillMap = {
     },
     "Pulinpa": {
         "cost": 500,
-        "effect": "Inflict Panic (high odds) to 1 foe.",
+        "effect": "Inflict Confuse (high odds) to 1 foe.",
         "element": "ailment",
         "personas": {
             "Choronzon": 0,
@@ -3049,7 +3049,7 @@ const skillMap: SkillMap = {
             "Red Rider": 46
         }
     },
-    "Rainy Death": {
+    "Myriad Slashes": {
         "cost": 20,
         "effect": "Deal 2 to 3 times medium Phys damage to 1 foe.",
         "element": "phys",
@@ -3196,14 +3196,14 @@ const skillMap: SkillMap = {
         "element": "passive",
         "personas": {}
     },
-    "Repel Curseness": {
+    "Repel Curse": {
         "effect": "Repel Curse attacks.",
         "element": "passive",
         "personas": {
             "Sandalphon": 78
         }
     },
-    "Repel Electric": {
+    "Repel Elec": {
         "effect": "Repel Electric attacks.",
         "element": "passive",
         "personas": {
@@ -3227,7 +3227,7 @@ const skillMap: SkillMap = {
             "Skadi": 60
         }
     },
-    "Repel Nuclear": {
+    "Repel Nuke": {
         "effect": "Repel Nuclear attacks.",
         "element": "passive",
         "personas": {
@@ -3255,7 +3255,7 @@ const skillMap: SkillMap = {
         "element": "passive",
         "personas": {}
     },
-    "Resist Ailment": {
+    "Fortify Spirit": {
         "effect": "Reduce susceptibilities to all ailments.",
         "element": "passive",
         "personas": {
@@ -3279,13 +3279,13 @@ const skillMap: SkillMap = {
             "Kelpie": 8
         }
     },
-    "Resist Curseness": {
+    "Resist Curse": {
         "effect": "Reduce damage from Curse attacks.",
         "element": "passive",
         "personas": {}
     },
-    "Resist Distress": {
-        "effect": "Reduce susceptibility to Distress.",
+    "Resist Despair": {
+        "effect": "Reduce susceptibility to Despair.",
         "element": "passive",
         "personas": {
             "Makami": 19
@@ -3299,7 +3299,7 @@ const skillMap: SkillMap = {
             "Saki Mitama": 10
         }
     },
-    "Resist Electric": {
+    "Resist Elec": {
         "effect": "Reduce damage from Electric attacks.",
         "element": "passive",
         "personas": {}
@@ -3333,13 +3333,13 @@ const skillMap: SkillMap = {
         "element": "passive",
         "personas": {}
     },
-    "Resist Nuclear": {
+    "Resist Nuke": {
         "effect": "Reduce damage from Nuclear attacks.",
         "element": "passive",
         "personas": {}
     },
-    "Resist Panic": {
-        "effect": "Reduce susceptibility to Panic.",
+    "Resist Confuse": {
+        "effect": "Reduce susceptibility to Confuse.",
         "element": "passive",
         "personas": {
             "Pixie": 6,
@@ -3467,7 +3467,7 @@ const skillMap: SkillMap = {
             "Zouchouten": 33
         }
     },
-    "Sharpshooter": {
+    "Snipe": {
         "effect": "Strengthen Gun attacks by 25%.",
         "element": "passive",
         "personas": {
@@ -3499,7 +3499,7 @@ const skillMap: SkillMap = {
     },
     "Skull Cracker": {
         "cost": 10,
-        "effect": "Deal medium Phys damage and inflict Panic (medium odds) to 1 foe.",
+        "effect": "Deal medium Phys damage and inflict Confuse (medium odds) to 1 foe.",
         "element": "phys",
         "fuse": "Nue",
         "personas": {
@@ -3732,7 +3732,7 @@ const skillMap: SkillMap = {
     },
     "Tentarafoo": {
         "cost": 1200,
-        "effect": "Inflict Panic (medium odds) to all foes.",
+        "effect": "Inflict Confuse (medium odds) to all foes.",
         "element": "ailment",
         "personas": {
             "Ame no Uzume": 31,
@@ -3815,7 +3815,7 @@ const skillMap: SkillMap = {
             "Odin": 0
         }
     },
-    "Thunderbolt": {
+    "Ayamur": {
         "cost": 25,
         "effect": "Deal 3 times medium Phys damage to 1 foe. High critical rate.",
         "element": "phys",
@@ -3835,7 +3835,7 @@ const skillMap: SkillMap = {
         },
         "unique": "Asterius"
     },
-    "Touch and Go": {
+    "Touch n' Go": {
         "effect": "Apply Sukukaja when performing Baton Pass .",
         "element": "passive",
         "personas": {
@@ -3936,7 +3936,7 @@ const skillMap: SkillMap = {
         },
         "talk": "Yaksini"
     },
-    "Weak Spot Aim": {
+    "Cripple": {
         "effect": "Strengthen Gun attacks by 50%.",
         "element": "passive",
         "personas": {
@@ -3989,9 +3989,9 @@ const skillMap: SkillMap = {
             "Sudama": 21
         }
     },
-    "Word of Calamity": {
+    "Ominous Words": {
         "cost": 500,
-        "effect": "Inflict Distress (high odds) to 1 foe.",
+        "effect": "Inflict Despair (high odds) to 1 foe.",
         "element": "ailment",
         "personas": {
             "Decarabia": 0,

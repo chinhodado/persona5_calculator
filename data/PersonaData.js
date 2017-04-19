@@ -19,7 +19,7 @@ var personaMap = {
         "level": 3,
         "stats": [4, 6, 9, 12, 3],
         "elems": ["-", "rs", "-", "-", "rs", "wk", "-", "-", "-", "-"],
-        "skills": { "Baisudi": 0, "Dia": 0, "Dodge Electric": 8, "Lunge": 4, "Rakukaja": 6, "Zio": 0 },
+        "skills": { "Baisudi": 0, "Dia": 0, "Dodge Elec": 8, "Lunge": 4, "Rakukaja": 6, "Zio": 0 },
         "personality": "Timid"
     },
     "Alice": {
@@ -32,7 +32,7 @@ var personaMap = {
             "Die For Me!": 81,
             "Mamudoon": 0,
             "Megidolaon": 82,
-            "Mind Charge": 83,
+            "Concentrate": 83,
             "Mudo Boost": 0,
             "Survival Trick": 84
         },
@@ -52,14 +52,14 @@ var personaMap = {
         "stats": [24, 30, 31, 26, 25],
         "elems": ["-", "-", "-", "ab", "wk", "-", "-", "-", "-", "-"],
         "skills": {
-            "Banishing Wave": 45,
+            "Abysmal Surge": 45,
             "Defense Master": 0,
-            "Electric Wall": 0,
+            "Elec Wall": 0,
             "Freidyne": 48,
             "Growth 2": 46,
             "Mafreila": 0,
             "Marakukaja": 47,
-            "Nuclear Boost": 49
+            "Nuke Boost": 49
         }
     },
     "Andras": {
@@ -75,7 +75,7 @@ var personaMap = {
         "level": 12,
         "stats": [7, 9, 9, 9, 9],
         "elems": ["-", "-", "-", "-", "rs", "-", "-", "-", "nu", "wk"],
-        "skills": { "Baisudi": 14, "Dazzler": 0, "Dekunda": 17, "Dia": 0, "Dodge Curseness": 15, "Hama": 0, "Kouha": 13 },
+        "skills": { "Baisudi": 14, "Dazzler": 0, "Dekunda": 17, "Dia": 0, "Dodge Curse": 15, "Hama": 0, "Kouha": 13 },
         "personality": "Irritable"
     },
     "Anubis": {
@@ -107,7 +107,7 @@ var personaMap = {
         "level": 11,
         "stats": [7, 11, 6, 10, 6],
         "elems": ["-", "-", "-", "rs", "wk", "-", "-", "-", "-", "-"],
-        "skills": { "Bufu": 0, "Electric Wall": 14, "Ice Wall": 0, "Media": 13, "Rebellion": 0, "Wind Wall": 16 },
+        "skills": { "Bufu": 0, "Elec Wall": 14, "Ice Wall": 0, "Media": 13, "Rebellion": 0, "Wind Wall": 16 },
         "personality": "Upbeat"
     },
     "Ara Mitama": {
@@ -123,7 +123,7 @@ var personaMap = {
         "stats": [21, 23, 22, 24, 22],
         "elems": ["rp", "rp", "-", "-", "-", "-", "wk", "wk", "rs", "rs"],
         "skills": {
-            "Banishing Wave": 0,
+            "Abysmal Surge": 0,
             "Defense Master": 39,
             "Maeiga": 38,
             "Makarakarn": 0,
@@ -137,7 +137,7 @@ var personaMap = {
         "level": 16,
         "stats": [13, 10, 13, 12, 7],
         "elems": ["-", "-", "-", "-", "wk", "-", "-", "-", "nu", "wk"],
-        "skills": { "Dazzler": 0, "Hama": 0, "Vajra Blast": 21, "Makouha": 19, "Psy": 0, "Rebellion": 18 },
+        "skills": { "Dazzler": 0, "Hama": 0, "Vajra Blast": 21, "Makouha": 19, "Psi": 0, "Rebellion": 18 },
         "personality": "Irritable"
     },
     "Ardha": {
@@ -168,7 +168,7 @@ var personaMap = {
             "Evade Physical": 34,
             "High Voltage": 32,
             "Miracle Punch": 0,
-            "Power Charge": 36,
+            "Charge": 36,
             "String Art Beast": 0
         },
         "dlc": true
@@ -184,7 +184,7 @@ var personaMap = {
             "Evade Physical": 46,
             "Heat Up": 44,
             "Miracle Punch": 0,
-            "Power Charge": 48,
+            "Charge": 48,
             "String Art Beast": 0
         },
         "dlc": true
@@ -252,12 +252,12 @@ var personaMap = {
         "elems": ["-", "-", "wk", "-", "-", "nu", "-", "-", "-", "-"],
         "skills": {
             "Dodge Fire": 44,
-            "Electric Boost": 43,
-            "Electric Break": 0,
+            "Elec Boost": 43,
+            "Elec Break": 0,
             "Fire Wall": 0,
             "Mazionga": 0,
             "Mediarama": 41,
-            "Mind Charge": 45
+            "Concentrate": 45
         }
     },
     "Attis": {
@@ -268,7 +268,7 @@ var personaMap = {
         "skills": {
             "Absorb Curse": 86,
             "Enduring Soul": 84,
-            "Incineration": 88,
+            "Blazing Hell": 88,
             "Maragidyne": 0,
             "Salvation": 0,
             "Samarecarm": 85,
@@ -285,10 +285,10 @@ var personaMap = {
             "Magarudyne": 0,
             "Matarukaja": 0,
             "Panta Rhei": 77,
-            "Power Charge": 79,
+            "Charge": 79,
             "Revolution": 0,
             "Tetraja": 78,
-            "Thunderbolt": 80
+            "Ayamur": 80
         }
     },
     "Baphomet": {
@@ -312,10 +312,10 @@ var personaMap = {
         "stats": [33, 35, 33, 37, 25],
         "elems": ["-", "rs", "-", "-", "rs", "wk", "-", "-", "nu", "wk"],
         "skills": {
-            "Electric Break": 0,
+            "Elec Break": 0,
             "Invigorate 2": 54,
             "Maziodyne": 57,
-            "Null Electric": 55,
+            "Null Elec": 55,
             "Wage War": 0,
             "Ziodyne": 0
         }
@@ -328,11 +328,11 @@ var personaMap = {
         "skills": {
             "Curse Amp": 85,
             "Devil Smile": 0,
-            "Evil Judgement": 87,
+            "Demonic Decree": 87,
             "Maeigaon": 0,
             "Mamudoon": 0,
             "Megidolaon": 89,
-            "Mind Charge": 86,
+            "Concentrate": 86,
             "Repel Ice": 88
         },
         "max": true
@@ -348,7 +348,7 @@ var personaMap = {
             "Mamudoon": 0,
             "Maragidyne": 71,
             "Matarunda": 0,
-            "Rainy Death": 74,
+            "Myriad Slashes": 74,
             "Survival Trick": 70
         }
     },
@@ -357,7 +357,7 @@ var personaMap = {
         "level": 37,
         "stats": [25, 27, 24, 23, 19],
         "elems": ["-", "-", "wk", "rs", "rs", "-", "-", "rs", "-", "rp"],
-        "skills": { "Bufula": 0, "Dodge Fire": 0, "Ice Break": 39, "Mabufula": 41, "Mind Charge": 44, "Null Rage": 38 },
+        "skills": { "Bufula": 0, "Dodge Fire": 0, "Ice Break": 39, "Mabufula": 41, "Concentrate": 44, "Null Rage": 38 },
         "personality": "Irritable"
     },
     "Berith": {
@@ -387,7 +387,7 @@ var personaMap = {
             "Freidyne": 0,
             "God's Hand": 73,
             "Mafreidyne": 69,
-            "Nuclear Amp": 71,
+            "Nuke Amp": 71,
             "Tetrakarn": 72
         }
     },
@@ -401,7 +401,7 @@ var personaMap = {
             "Ice Amp": 70,
             "Mabufudyne": 0,
             "Miracle Punch": 0,
-            "One Shot Kill": 0,
+            "One-shot Kill": 0,
             "Repel Fire": 71
         },
         "special": true,
@@ -415,7 +415,7 @@ var personaMap = {
         "skills": {
             "Brain Jack": 34,
             "Ambient Aid": 31,
-            "Devil Touch": 0,
+            "Evil Touch": 0,
             "Flash Bomb": 35,
             "Headbutt": 32,
             "Matarunda": 0,
@@ -449,7 +449,7 @@ var personaMap = {
             "Fast Heal": 55,
             "Masukunda": 0,
             "Miracle Punch": 0,
-            "Psydyne": 0,
+            "Psiodyne": 0,
             "Triple Down": 52
         },
         "special": true,
@@ -496,7 +496,7 @@ var personaMap = {
             "Deathbound": 64,
             "Fear Boost": 66,
             "Mudoon": 0,
-            "Rainy Death": 67,
+            "Myriad Slashes": 67,
             "Stagnant Air": 63
         }
     },
@@ -508,11 +508,11 @@ var personaMap = {
         "skills": {
             "Absorb Psy": 90,
             "Gigantomachia": 0,
-            "Mind Charge": 92,
-            "Psycho Force": 89,
-            "Psychokinesis": 0,
+            "Concentrate": 92,
+            "Psycho Blast": 89,
+            "Psycho Force": 0,
             "Repel Phys": 0,
-            "Resist Ailment": 88
+            "Fortify Spirit": 88
         },
         "special": true,
         "max": true
@@ -525,7 +525,7 @@ var personaMap = {
         "skills": {
             "Bloodsuck": 0,
             "Curse Boost": 32,
-            "Dodge Electric": 30,
+            "Dodge Elec": 30,
             "Eiga": 31,
             "Maeiha": 29,
             "Pulinpa": 0,
@@ -560,7 +560,7 @@ var personaMap = {
             "Mafreidyne": 0,
             "Magarudyne": 0,
             "Makougaon": 0,
-            "Mapsydyne": 0,
+            "Mapsiodyne": 0,
             "Maragidyne": 0,
             "Maziodyne": 0
         },
@@ -578,7 +578,7 @@ var personaMap = {
             "Ice Wall": 0,
             "Matarukaja": 69,
             "Oni Kagura": 0,
-            "Power Charge": 71
+            "Charge": 71
         }
     },
     "Cybele": {
@@ -622,7 +622,7 @@ var personaMap = {
             "Deathbound": 53,
             "Giant Slice": 0,
             "High Counter": 52,
-            "Power Charge": 55,
+            "Charge": 55,
             "Rising Slash": 0,
             "Rebellion": 54
         },
@@ -640,7 +640,7 @@ var personaMap = {
             "Maragion": 33,
             "Null Fire": 36,
             "Tetrakarn": 38,
-            "Word of Calamity": 0
+            "Ominous Words": 0
         },
         "personality": "Gloomy"
     },
@@ -652,10 +652,10 @@ var personaMap = {
         "skills": {
             "Ailment Boost": 63,
             "Amrita Shower": 66,
-            "Banishing Wave": 0,
+            "Abysmal Surge": 0,
             "Heat Wave": 0,
             "Maragidyne": 65,
-            "Psydyne": 0,
+            "Psiodyne": 0,
             "Thermopylae": 62
         }
     },
@@ -665,8 +665,8 @@ var personaMap = {
         "stats": [46, 47, 45, 48, 40],
         "elems": ["-", "wk", "-", "-", "-", "-", "-", "rp", "nu", "rs"],
         "skills": {
-            "Blinding Flash": 0,
-            "Evade Curseness": 73,
+            "Nocturnal Flash": 0,
+            "Evade Curse": 73,
             "Hama Boost": 71,
             "Hamaon": 0,
             "Kougaon": 0,
@@ -702,7 +702,7 @@ var personaMap = {
             "Freidyne": 0,
             "Garudyne": 0,
             "Kougaon": 0,
-            "Psydyne": 0,
+            "Psiodyne": 0,
             "Ziodyne": 0
         },
         "rare": true
@@ -712,7 +712,7 @@ var personaMap = {
         "level": 22,
         "stats": [14, 15, 15, 18, 11],
         "elems": ["-", "-", "-", "rs", "wk", "nu", "-", "-", "-", "-"],
-        "skills": { "Diarama": 23, "Dream Needle": 0, "Freila": 0, "Nuclear Boost": 27, "Recarm": 25 }
+        "skills": { "Diarama": 23, "Dream Needle": 0, "Freila": 0, "Nuke Boost": 27, "Recarm": 25 }
     },
     "Flauros": {
         "arcana": "Devil",
@@ -737,10 +737,10 @@ var personaMap = {
         "elems": ["-", "-", "-", "ab", "wk", "-", "nu", "-", "-", "-"],
         "skills": {
             "Evade Psy": 68,
-            "Mapsydyne": 67,
+            "Mapsiodyne": 67,
             "Marin Karin": 0,
             "Masukunda": 0,
-            "Psydyne": 0,
+            "Psiodyne": 0,
             "Stagnant Air": 66,
             "Survival Trick": 65
         },
@@ -753,12 +753,12 @@ var personaMap = {
         "elems": ["-", "-", "nu", "-", "wk", "nu", "-", "-", "-", "-"],
         "skills": {
             "Amrita Drop": 50,
-            "Evade Electric": 51,
+            "Evade Elec": 51,
             "Garudyne": 47,
             "Magarula": 0,
             "Masukukaja": 0,
             "Tetraja": 0,
-            "Touch and Go": 49
+            "Touch n' Go": 49
         }
     },
     "Futsunushi": {
@@ -772,8 +772,8 @@ var personaMap = {
             "Brave Blade": 82,
             "Firm Stance": 81,
             "Matarukaja": 0,
-            "Power Charge": 78,
-            "Rainy Death": 0,
+            "Charge": 78,
+            "Myriad Slashes": 0,
             "Regenerate 3": 79
         },
         "max": true
@@ -794,12 +794,12 @@ var personaMap = {
         "skills": {
             "Ali Dance": 79,
             "Divine Judgement": 78,
-            "Evade Curseness": 80,
+            "Evade Curse": 80,
             "Ice Amp": 82,
             "Mabufudyne": 0,
             "Maziodyne": 0,
             "Salvation": 83,
-            "Touch and Go": 81
+            "Touch n' Go": 81
         }
     },
     "Ganesha": {
@@ -812,7 +812,7 @@ var personaMap = {
             "Giant Slice": 0,
             "Masukunda": 57,
             "Miracle Punch": 0,
-            "Power Charge": 60,
+            "Charge": 60,
             "Rebellion": 0,
             "Tetraja": 55
         },
@@ -825,7 +825,7 @@ var personaMap = {
         "elems": ["-", "wk", "-", "-", "-", "rs", "-", "-", "rp", "-"],
         "skills": {
             "Amrita Shower": 0,
-            "Evade Electric": 55,
+            "Evade Elec": 55,
             "Garudyne": 0,
             "Heat Wave": 0,
             "Magarudyne": 57,
@@ -870,7 +870,7 @@ var personaMap = {
         "stats": [24, 29, 25, 26, 23],
         "elems": ["-", "-", "-", "-", "-", "wk", "rs", "-", "rs", "-"],
         "skills": {
-            "Blinding Flash": 42,
+            "Nocturnal Flash": 42,
             "Dizzy Boost": 45,
             "Energy Shower": 0,
             "Mabaisudi": 0,
@@ -890,7 +890,7 @@ var personaMap = {
             "Endure": 43,
             "Foul Breath": 45,
             "High Voltage": 46,
-            "Power Charge": 48,
+            "Charge": 48,
             "Regenerate 2": 0,
             "Swift Strike": 0,
             "Tarukaja": 0
@@ -949,7 +949,7 @@ var personaMap = {
             "Kougaon": 0,
             "Masukukaja": 52,
             "Megido": 0,
-            "Touch and Go": 51
+            "Touch n' Go": 51
         }
     },
     "Hua Po": {
@@ -965,7 +965,7 @@ var personaMap = {
         "level": 5,
         "stats": [4, 6, 4, 5, 3],
         "elems": ["-", "wk", "-", "-", "rs", "-", "-", "-", "wk", "-"],
-        "skills": { "Bloodsuck": 0, "Devil Touch": 0, "Dodge Curseness": 9, "Eiha": 7, "Tarunda": 8 },
+        "skills": { "Bloodsuck": 0, "Evil Touch": 0, "Dodge Curse": 9, "Eiha": 7, "Tarunda": 8 },
         "personality": "Timid"
     },
     "Inugami": {
@@ -978,7 +978,7 @@ var personaMap = {
             "Dream Needle": 15,
             "Giant Slice": 0,
             "Lucky Punch": 17,
-            "Panic Boost": 19,
+            "Confuse Boost": 19,
             "Pulinpa": 0,
             "Tarukaja": 0
         },
@@ -1090,7 +1090,7 @@ var personaMap = {
             "Garula": 0,
             "Masukukaja": 0,
             "Rainy Play": 36,
-            "Sharpshooter": 35,
+            "Snipe": 35,
             "Speed Master": 38
         }
     },
@@ -1150,9 +1150,9 @@ var personaMap = {
             "Forget Boost": 37,
             "Makajam": 0,
             "Makajamon": 39,
-            "Mapsyo": 40,
+            "Mapsio": 40,
             "Marakunda": 41,
-            "Psyo": 0,
+            "Psio": 0,
             "Speed Master": 38
         },
         "personality": "Timid"
@@ -1163,11 +1163,11 @@ var personaMap = {
         "stats": [53, 45, 46, 53, 41],
         "elems": ["-", "-", "nu", "-", "-", "-", "rp", "-", "-", "rs"],
         "skills": {
-            "Absorb Nuclear": 82,
+            "Absorb Nuke": 82,
             "Evade Ice": 79,
             "High Counter": 80,
-            "Mapsydyne": 81,
-            "Psydyne": 0,
+            "Mapsiodyne": 81,
+            "Psiodyne": 0,
             "Tentarafoo": 0,
             "Vorpal Blade": 0
         }
@@ -1216,7 +1216,7 @@ var personaMap = {
             "Ice Amp": 67,
             "Ice Break": 0,
             "Megaton Raid": 0,
-            "Null Distress": 65
+            "Null Despair": 65
         },
         "personality": "Unknown"
     },
@@ -1226,10 +1226,10 @@ var personaMap = {
         "stats": [9, 11, 8, 10, 4],
         "elems": ["-", "-", "wk", "rs", "-", "-", "-", "-", "-", "-"],
         "skills": {
-            "Devil Touch": 13,
+            "Evil Touch": 13,
             "Fear Boost": 15,
             "Garu": 0,
-            "Psy": 12,
+            "Psi": 12,
             "Rakunda": 0,
             "Resist Fear": 17,
             "Tarukaja": 14
@@ -1242,12 +1242,12 @@ var personaMap = {
         "stats": [25, 25, 25, 25, 25],
         "elems": ["rs", "rs", "rs", "rs", "rs", "rs", "rs", "-", "nu", "nu"],
         "skills": {
-            "Dodge Curseness": 0,
-            "Dodge Electric": 0,
+            "Dodge Curse": 0,
+            "Dodge Elec": 0,
             "Dodge Fire": 0,
             "Dodge Ice": 0,
             "Dodge Bless": 0,
-            "Dodge Nuclear": 0,
+            "Dodge Nuke": 0,
             "Dodge Psy": 0,
             "Dodge Wind": 0
         },
@@ -1260,11 +1260,11 @@ var personaMap = {
         "elems": ["-", "-", "-", "-", "rp", "-", "wk", "nu", "nu", "-"],
         "skills": {
             "Cool Breeze": 78,
-            "Mapsydyne": 0,
+            "Mapsiodyne": 0,
             "Mediarahan": 0,
-            "Mind Charge": 79,
+            "Concentrate": 79,
             "Psy Amp": 80,
-            "Psychokinesis": 0,
+            "Psycho Force": 0,
             "Spell Master": 82
         },
         "special": true,
@@ -1297,7 +1297,7 @@ var personaMap = {
             "Deadly Fury": 55,
             "Enduring Soul": 54,
             "Matarukaja": 52,
-            "Nuclear Wall": 53,
+            "Nuke Wall": 53,
             "Regenerate 2": 0,
             "Revolution": 0
         }
@@ -1361,7 +1361,7 @@ var personaMap = {
         "elems": ["-", "-", "-", "nu", "wk", "rs", "-", "-", "-", "-"],
         "skills": {
             "Bufula": 0,
-            "Electric Wall": 36,
+            "Elec Wall": 36,
             "Growth 2": 0,
             "Ice Boost": 40,
             "Mabaisudi": 0,
@@ -1392,12 +1392,12 @@ var personaMap = {
         "elems": ["-", "rs", "-", "wk", "rs", "-", "-", "-", "-", "nu"],
         "skills": {
             "Agilao": 0,
-            "Distress Boost": 31,
+            "Despair Boost": 31,
             "Foul Breath": 28,
             "Maragion": 30,
             "Rising Slash": 0,
             "Rakukaja": 0,
-            "Word of Calamity": 27
+            "Ominous Words": 27
         },
         "personality": "Gloomy"
     },
@@ -1406,7 +1406,7 @@ var personaMap = {
         "level": 19,
         "stats": [9, 17, 12, 16, 10],
         "elems": ["-", "-", "wk", "-", "-", "rs", "rs", "-", "-", "-"],
-        "skills": { "Eiga": 23, "Mamudo": 21, "Mapsy": 22, "Marin Karin": 20, "Psyo": 0, "Rakunda": 0 },
+        "skills": { "Eiga": 23, "Mamudo": 21, "Mapsi": 22, "Marin Karin": 20, "Psio": 0, "Rakunda": 0 },
         "personality": "Irritable"
     },
     "Legion": {
@@ -1414,7 +1414,7 @@ var personaMap = {
         "level": 38,
         "stats": [24, 24, 30, 23, 20],
         "elems": ["rs", "rs", "rs", "-", "-", "-", "rs", "-", "wk", "nu"],
-        "skills": { "Bloodsuck": 0, "Negative Pile": 0, "Null Dizzy": 42, "Psyo": 39, "Rampage": 0, "Tetra Break": 40 },
+        "skills": { "Bloodsuck": 0, "Negative Pile": 0, "Null Dizzy": 42, "Psio": 39, "Rampage": 0, "Tetra Break": 40 },
         "personality": "Unknown"
     },
     "Lilim": {
@@ -1458,7 +1458,7 @@ var personaMap = {
             "Gigantomachia": 0,
             "Heat Riser": 96,
             "High Voltage": 97,
-            "Incineration": 0,
+            "Blazing Hell": 0,
             "Insta-Heal": 98,
             "Morning Star": 94,
             "Spell Master": 95
@@ -1477,7 +1477,7 @@ var personaMap = {
             "Burn Boost": 0,
             "Enduring Soul": 90,
             "Fire Amp": 0,
-            "Incineration": 87,
+            "Blazing Hell": 87,
             "Spell Master": 91,
             "Unshaken Will": 86
         },
@@ -1521,13 +1521,13 @@ var personaMap = {
         "stats": [13, 12, 8, 11, 8],
         "elems": ["-", "-", "-", "-", "wk", "rs", "-", "rs", "nu", "-"],
         "skills": {
-            "Dodge Electric": 20,
+            "Dodge Elec": 20,
             "Double Fangs": 0,
             "Energy Drop": 0,
             "Frei": 0,
             "Mafrei": 17,
             "Makajam": 18,
-            "Resist Distress": 19
+            "Resist Despair": 19
         },
         "personality": "Upbeat"
     },
@@ -1549,8 +1549,8 @@ var personaMap = {
             "Heat Up": 77,
             "Maeigaon": 76,
             "Maragidyne": 0,
-            "One Shot Kill": 0,
-            "Power Charge": 74,
+            "One-shot Kill": 0,
+            "Charge": 74,
             "Tetra Break": 0
         }
     },
@@ -1559,7 +1559,7 @@ var personaMap = {
         "level": 19,
         "stats": [12, 13, 12, 16, 11],
         "elems": ["-", "-", "-", "-", "wk", "nu", "-", "-", "-", "-"],
-        "skills": { "Garula": 23, "Null Dizzy": 0, "Psy": 0, "Sukukaja": 0, "Swift Strike": 20, "Trigger Happy": 22 }
+        "skills": { "Garula": 23, "Null Dizzy": 0, "Psi": 0, "Sukukaja": 0, "Swift Strike": 20, "Trigger Happy": 22 }
     },
     "Melchizedek": {
         "arcana": "Justice",
@@ -1616,14 +1616,14 @@ var personaMap = {
         "stats": [54, 61, 60, 57, 42],
         "elems": ["-", "-", "-", "-", "wk", "rp", "ab", "ab", "-", "wk"],
         "skills": {
-            "Dancing Blades": 0,
+            "Sword Dance": 0,
             "Divine Judgement": 95,
             "Hama Boost": 92,
             "Bless Amp": 94,
             "Mahamaon": 0,
             "Makougaon": 0,
             "Megidolaon": 91,
-            "Mind Charge": 93
+            "Concentrate": 93
         },
         "special": true,
         "max": true
@@ -1635,7 +1635,7 @@ var personaMap = {
         "elems": ["-", "rs", "-", "-", "-", "-", "-", "-", "rp", "nu"],
         "skills": {
             "Cosmic Flare": 92,
-            "Dancing Blades": 89,
+            "Sword Dance": 89,
             "Debilitate": 0,
             "Divine Judgement": 0,
             "Mabufudyne": 0,
@@ -1668,7 +1668,7 @@ var personaMap = {
         "skills": {
             "Freidyne": 45,
             "Mafreila": 0,
-            "Nuclear Break": 42,
+            "Nuke Break": 42,
             "Vicious Strike": 0,
             "Tentarafoo": 0,
             "Tetra Break": 41
@@ -1683,7 +1683,7 @@ var personaMap = {
         "skills": {
             "Dazzler": 0,
             "Dekunda": 14,
-            "Dodge Electric": 13,
+            "Dodge Elec": 13,
             "Marin Karin": 11,
             "Skull Cracker": 0,
             "Tarukaja": 0
@@ -1700,8 +1700,8 @@ var personaMap = {
             "Agidyne": 62,
             "Devil Smile": 0,
             "Ghastly Wail": 63,
-            "Nuclear Amp": 65,
-            "Psydyne": 0,
+            "Nuke Amp": 65,
+            "Psiodyne": 0,
             "Stagnant Air": 0
         }
     },
@@ -1715,8 +1715,8 @@ var personaMap = {
             "Maziodyne": 0,
             "Megidola": 0,
             "Megidolaon": 76,
-            "Mind Charge": 74,
-            "Repel Electric": 77
+            "Concentrate": 74,
+            "Repel Elec": 77
         }
     },
     "Mother Harlot": {
@@ -1759,7 +1759,7 @@ var personaMap = {
             "Memory Blow": 0,
             "Dazzler": 27,
             "Double Fangs": 0,
-            "Electric Boost": 26,
+            "Elec Boost": 26,
             "Marakukaja": 29,
             "Mazionga": 28,
             "Zionga": 0
@@ -1772,7 +1772,7 @@ var personaMap = {
         "stats": [27, 36, 29, 35, 30],
         "elems": ["-", "-", "wk", "-", "nu", "rs", "-", "-", "rs", "-"],
         "skills": {
-            "Blinding Flash": 0,
+            "Nocturnal Flash": 0,
             "Ambient Aid": 55,
             "Dizzy Boost": 53,
             "Energy Drop": 0,
@@ -1807,7 +1807,7 @@ var personaMap = {
             "High Voltage": 36,
             "Invigorate 1": 31,
             "Masukukaja": 0,
-            "Psyo": 0,
+            "Psio": 0,
             "Rat Fang": 33
         },
         "special": true,
@@ -1819,9 +1819,9 @@ var personaMap = {
         "stats": [13, 10, 12, 15, 8],
         "elems": ["-", "-", "-", "-", "wk", "-", "rs", "-", "-", "-"],
         "skills": {
-            "Devil Touch": 0,
-            "Dodge Electric": 22,
-            "Electric Wall": 21,
+            "Evil Touch": 0,
+            "Dodge Elec": 22,
+            "Elec Wall": 21,
             "Hysterical Slap": 18,
             "Magaru": 0,
             "Terror Claw": 0,
@@ -1843,7 +1843,7 @@ var personaMap = {
         "elems": ["-", "-", "-", "rs", "-", "ab", "-", "-", "-", "-"],
         "skills": {
             "Amrita Drop": 55,
-            "Blinding Flash": 0,
+            "Nocturnal Flash": 0,
             "Diarahan": 54,
             "Garudyne": 0,
             "Samarecarm": 57,
@@ -1882,7 +1882,7 @@ var personaMap = {
         "elems": ["-", "-", "-", "-", "rs", "-", "nu", "wk", "-", "-"],
         "skills": {
             "Brain Jack": 0,
-            "Electric Amp": 72,
+            "Elec Amp": 72,
             "Heat Wave": 0,
             "Matarukaja": 68,
             "Maziodyne": 69,
@@ -1898,12 +1898,12 @@ var personaMap = {
         "stats": [53, 52, 54, 52, 42],
         "elems": ["-", "-", "-", "-", "nu", "ab", "-", "-", "rp", "rp"],
         "skills": {
-            "El Jihad": 84,
-            "Electric Amp": 87,
+            "Wild Thunder": 84,
+            "Elec Amp": 87,
             "Fast Heal": 86,
             "Marakukaja": 0,
-            "Mind Charge": 85,
-            "Rainy Death": 0,
+            "Concentrate": 85,
+            "Myriad Slashes": 0,
             "Thunder Reign": 0
         },
         "max": true
@@ -1914,9 +1914,9 @@ var personaMap = {
         "stats": [30, 28, 29, 28, 24],
         "elems": ["-", "-", "-", "-", "rp", "wk", "nu", "wk", "-", "-"],
         "skills": {
-            "Evade Nuclear": 47,
+            "Evade Nuke": 47,
             "Heat Wave": 49,
-            "Mapsyo": 0,
+            "Mapsio": 0,
             "Matarukaja": 0,
             "Psy Boost": 45,
             "Psy Break": 46,
@@ -1934,7 +1934,7 @@ var personaMap = {
             "Firm Stance": 79,
             "Makajamon": 0,
             "Pressing Stance": 0,
-            "Rainy Death": 0,
+            "Myriad Slashes": 0,
             "Regenerate 3": 78
         },
         "special": true,
@@ -1953,7 +1953,7 @@ var personaMap = {
         "level": 12,
         "stats": [9, 12, 7, 10, 5],
         "elems": ["-", "wk", "rs", "-", "-", "-", "-", "-", "wk", "nu"],
-        "skills": { "Agi": 13, "Ice Wall": 0, "Mudo": 0, "Panic Boost": 15, "Pulinpa": 14, "Resist Fear": 17 },
+        "skills": { "Agi": 13, "Ice Wall": 0, "Mudo": 0, "Confuse Boost": 15, "Pulinpa": 14, "Resist Fear": 17 },
         "personality": "Gloomy"
     },
     "Orlov": {
@@ -1967,7 +1967,7 @@ var personaMap = {
             "Mafreila": 0,
             "Magarula": 0,
             "Makouga": 0,
-            "Mapsyo": 0,
+            "Mapsio": 0,
             "Maragion": 0,
             "Mazionga": 0
         },
@@ -2035,7 +2035,7 @@ var personaMap = {
         "stats": [34, 34, 33, 39, 26],
         "elems": ["-", "-", "-", "-", "-", "rs", "-", "-", "wk", "rp"],
         "skills": {
-            "Banishing Wave": 0,
+            "Abysmal Surge": 0,
             "Brain Shake": 0,
             "Curse Boost": 55,
             "Deathbound": 58,
@@ -2055,8 +2055,8 @@ var personaMap = {
             "Energy Shower": 57,
             "Hama Boost": 61,
             "Hamaon": 0,
-            "Mapsydyne": 59,
-            "Psydyne": 0
+            "Mapsiodyne": 59,
+            "Psiodyne": 0
         },
         "personality": "Unknown"
     },
@@ -2081,8 +2081,8 @@ var personaMap = {
         "stats": [19, 21, 21, 17, 16],
         "elems": ["-", "-", "wk", "-", "rs", "-", "-", "-", "wk", "nu"],
         "skills": {
-            "Banishing Wave": 32,
-            "Distress Boost": 33,
+            "Abysmal Surge": 32,
+            "Despair Boost": 33,
             "Dream Needle": 0,
             "Mamudo": 30,
             "Mudoon": 34,
@@ -2096,7 +2096,7 @@ var personaMap = {
         "level": 2,
         "stats": [1, 3, 3, 4, 2],
         "elems": ["-", "wk", "-", "wk", "rs", "-", "-", "-", "rs", "wk"],
-        "skills": { "Dia": 0, "Patra": 3, "Resist Panic": 6, "Tarukaja": 5, "Zio": 0 },
+        "skills": { "Dia": 0, "Patra": 3, "Resist Confuse": 6, "Tarukaja": 5, "Zio": 0 },
         "personality": "Timid"
     },
     "Power": {
@@ -2109,7 +2109,7 @@ var personaMap = {
             "Hamaon": 0,
             "Makouga": 43,
             "Masukukaja": 45,
-            "Null Curseness": 46,
+            "Null Curse": 46,
             "Sukukaja": 0,
             "Swift Strike": 42
         },
@@ -2151,7 +2151,7 @@ var personaMap = {
         "stats": [33, 37, 36, 35, 31],
         "elems": ["-", "-", "-", "-", "nu", "-", "-", "-", "-", "-"],
         "skills": {
-            "Electric Break": 0,
+            "Elec Break": 0,
             "Evade Wind": 60,
             "Makarakarn": 58,
             "Maziodyne": 59,
@@ -2192,11 +2192,11 @@ var personaMap = {
         "skills": {
             "Arms Master": 83,
             "Adverse Resolve": 82,
-            "Dancing Blades": 0,
+            "Sword Dance": 0,
             "Dekaja": 0,
             "Growth 3": 81,
             "Heat Riser": 80,
-            "Power Charge": 0
+            "Charge": 0
         }
     },
     "Red Rider": {
@@ -2205,13 +2205,13 @@ var personaMap = {
         "stats": [26, 27, 25, 29, 23],
         "elems": ["-", "-", "-", "-", "-", "-", "-", "-", "wk", "nu"],
         "skills": {
-            "Mapsyo": 0,
+            "Mapsio": 0,
             "Negative Pile": 42,
             "Pressing Stance": 45,
             "Psy Break": 0,
             "Rage Boost": 46,
             "Rising Slash": 0,
-            "Resist Panic": 44
+            "Resist Confuse": 44
         }
     },
     "Regent": {
@@ -2225,7 +2225,7 @@ var personaMap = {
             "Mafrei": 0,
             "Magaru": 0,
             "Makouha": 0,
-            "Mapsy": 0,
+            "Mapsi": 0,
             "Maragi": 0,
             "Mazio": 0
         },
@@ -2246,9 +2246,9 @@ var personaMap = {
         "skills": {
             "Amrita Shower": 0,
             "Angelic Grace": 77,
-            "Dancing Blades": 79,
+            "Sword Dance": 79,
             "Mahamaon": 0,
-            "Repel Curseness": 78,
+            "Repel Curse": 78,
             "Samarecarm": 0
         },
         "max": true
@@ -2295,9 +2295,9 @@ var personaMap = {
             "Diamond Dust": 0,
             "Ice Age": 0,
             "Invigorate 3": 95,
-            "Mind Charge": 97,
+            "Concentrate": 97,
             "Regenerate 3": 0,
-            "Resist Ailment": 96
+            "Fortify Spirit": 96
         },
         "max": true
     },
@@ -2347,7 +2347,7 @@ var personaMap = {
             "Mabufudyne": 65,
             "Makarakarn": 67,
             "Marakukaja": 0,
-            "Repel Nuclear": 63
+            "Repel Nuke": 63
         }
     },
     "Setanta": {
@@ -2359,7 +2359,7 @@ var personaMap = {
             "Counter": 0,
             "Dormin Rush": 0,
             "Giant Slice": 0,
-            "Power Charge": 34,
+            "Charge": 34,
             "Rising Slash": 31,
             "Rebellion": 32
         }
@@ -2373,9 +2373,9 @@ var personaMap = {
             "Agidyne": 0,
             "Fire Break": 54,
             "Masukukaja": 0,
-            "One Shot Kill": 0,
-            "Resist Ailment": 56,
-            "Weak Spot Aim": 53
+            "One-shot Kill": 0,
+            "Fortify Spirit": 56,
+            "Cripple": 53
         },
         "special": true,
         "note": "Needs Strength cooperation rank 1 to be fused"
@@ -2386,8 +2386,8 @@ var personaMap = {
         "stats": [13, 9, 12, 13, 8],
         "elems": ["rs", "rs", "-", "-", "-", "-", "-", "-", "nu", "wk"],
         "skills": {
-            "Dodge Curseness": 20,
-            "Dodge Electric": 21,
+            "Dodge Curse": 20,
+            "Dodge Elec": 21,
             "Double Fangs": 0,
             "Rampage": 18,
             "Skull Cracker": 0,
@@ -2399,7 +2399,7 @@ var personaMap = {
         "level": 21,
         "stats": [21, 11, 15, 16, 13],
         "elems": ["nu", "nu", "-", "-", "-", "-", "-", "wk", "-", "nu"],
-        "skills": { "Dekaja": 24, "Snap": 0, "Mapsy": 22, "Oni Kagura": 27, "Taunt": 0, "Psyo": 26, "Tarukaja": 0 },
+        "skills": { "Dekaja": 24, "Snap": 0, "Mapsi": 22, "Oni Kagura": 27, "Taunt": 0, "Psio": 26, "Tarukaja": 0 },
         "personality": "Irritable"
     },
     "Shiva": {
@@ -2412,8 +2412,8 @@ var personaMap = {
             "Enduring Soul": 0,
             "Maziodyne": 0,
             "Megidolaon": 86,
-            "Psycho Force": 88,
-            "Psychokinesis": 0,
+            "Psycho Blast": 88,
+            "Psycho Force": 0,
             "Riot Gun": 85
         },
         "special": true
@@ -2428,7 +2428,7 @@ var personaMap = {
             "High Counter": 0,
             "Masukukaja": 0,
             "Megaton Raid": 0,
-            "Power Charge": 70,
+            "Charge": 70,
             "Vorpal Blade": 74
         }
     },
@@ -2447,10 +2447,10 @@ var personaMap = {
         "elems": ["-", "-", "-", "rp", "-", "-", "-", "-", "-", "nu"],
         "skills": {
             "Bufudyne": 58,
-            "Devil Touch": 0,
+            "Evil Touch": 0,
             "Ghastly Wail": 56,
             "Mabufula": 0,
-            "Null Distress": 0,
+            "Null Despair": 0,
             "Repel Ice": 60,
             "Spirit Drain": 59
         }
@@ -2460,7 +2460,7 @@ var personaMap = {
         "level": 10,
         "stats": [9, 6, 11, 6, 5],
         "elems": ["rs", "-", "wk", "-", "-", "wk", "-", "-", "-", "-"],
-        "skills": { "Devil Touch": 0, "Eiha": 11, "Fire Wall": 13, "Headbutt": 14, "Lunge": 0 },
+        "skills": { "Evil Touch": 0, "Eiha": 11, "Fire Wall": 13, "Headbutt": 14, "Lunge": 0 },
         "personality": "Timid"
     },
     "Sraosha": {
@@ -2485,7 +2485,7 @@ var personaMap = {
         "level": 20,
         "stats": [20, 20, 20, 20, 20],
         "elems": ["nu", "nu", "nu", "nu", "nu", "nu", "nu", "nu", "nu", "wk"],
-        "skills": { "Agilao": 0, "Bufula": 0, "Eiga": 0, "Freila": 0, "Garula": 0, "Kouga": 0, "Psyo": 0, "Zionga": 0 },
+        "skills": { "Agilao": 0, "Bufula": 0, "Eiga": 0, "Freila": 0, "Garula": 0, "Kouga": 0, "Psio": 0, "Zionga": 0 },
         "rare": true
     },
     "Succubus": {
@@ -2522,7 +2522,7 @@ var personaMap = {
             "Headbutt": 0,
             "Mabufu": 0,
             "Mabufula": 28,
-            "Null Nuclear": 26,
+            "Null Nuke": 26,
             "Wage War": 27
         },
         "personality": "Unknown"
@@ -2553,7 +2553,7 @@ var personaMap = {
             "Matarunda": 24,
             "Speed Master": 23,
             "Tarunda": 0,
-            "Word of Calamity": 21
+            "Ominous Words": 21
         }
     },
     "Take-Minakata": {
@@ -2564,8 +2564,8 @@ var personaMap = {
         "skills": {
             "Assault Dive": 0,
             "Defense Master": 32,
-            "Electric Boost": 34,
-            "Electric Break": 0,
+            "Elec Boost": 34,
+            "Elec Break": 0,
             "Mazionga": 30,
             "Zionga": 0
         },
@@ -2583,7 +2583,7 @@ var personaMap = {
             "High Voltage": 69,
             "Maeigaon": 0,
             "Mamudoon": 0,
-            "One Shot Kill": 68
+            "One-shot Kill": 68
         },
         "dlc": true
     },
@@ -2599,7 +2599,7 @@ var personaMap = {
             "Maeigaon": 0,
             "Mamudoon": 0,
             "Mudo Boost": 70,
-            "One Shot Kill": 72
+            "One-shot Kill": 72
         },
         "dlc": true
     },
@@ -2627,7 +2627,7 @@ var personaMap = {
         "elems": ["rs", "-", "-", "-", "ab", "-", "wk", "-", "rs", "rs"],
         "skills": {
             "Attack Master": 70,
-            "Electric Amp": 66,
+            "Elec Amp": 66,
             "Heat Up": 68,
             "High Counter": 0,
             "Maziodyne": 67,
@@ -2658,7 +2658,7 @@ var personaMap = {
         "elems": ["-", "-", "ab", "-", "-", "-", "-", "rs", "nu", "wk"],
         "skills": {
             "Auto-Maraku": 76,
-            "Evade Curseness": 75,
+            "Evade Curse": 75,
             "Hama Boost": 0,
             "Invigorate 3": 0,
             "Bless Amp": 74,
@@ -2679,7 +2679,7 @@ var personaMap = {
             "Mafreidyne": 58,
             "Makara Break": 0,
             "Mediarahan": 61,
-            "Nuclear Amp": 60
+            "Nuke Amp": 60
         }
     },
     "Trumpeter": {
@@ -2688,13 +2688,13 @@ var personaMap = {
         "stats": [33, 42, 40, 38, 31],
         "elems": ["-", "-", "-", "ab", "rp", "-", "-", "-", "rp", "nu"],
         "skills": {
-            "Banishing Wave": 0,
+            "Abysmal Surge": 0,
             "Brain Buster": 0,
             "Cool Breeze": 64,
             "Debilitate": 65,
             "Mafreidyne": 0,
-            "Resist Ailment": 61,
-            "Weak Spot Aim": 62
+            "Fortify Spirit": 61,
+            "Cripple": 62
         },
         "special": true,
         "note": "Needs Strength cooperation rank 5 to be fused"
@@ -2710,7 +2710,7 @@ var personaMap = {
             "Bloodsuck": 0,
             "Curse Amp": 53,
             "Purgatorial Wing": 0,
-            "Rainy Death": 0,
+            "Myriad Slashes": 0,
             "Vorpal Blade": 55
         },
         "dlc": true
@@ -2724,7 +2724,7 @@ var personaMap = {
             "Absorb Curse": 0,
             "Curse Amp": 58,
             "Purgatorial Wing": 0,
-            "Rainy Death": 0,
+            "Myriad Slashes": 0,
             "Spell Master": 61,
             "Spirit Drain": 0,
             "Vorpal Blade": 60
@@ -2757,8 +2757,8 @@ var personaMap = {
             "Bloodbath": 0,
             "Deathbound": 0,
             "Megidolaon": 84,
-            "Rainy Death": 0,
-            "Repel Nuclear": 83,
+            "Myriad Slashes": 0,
+            "Repel Nuke": 83,
             "Spell Master": 86
         }
     },
@@ -2802,7 +2802,7 @@ var personaMap = {
             "Ali Dance": 0,
             "Magarudyne": 0,
             "Megidolaon": 0,
-            "Power Charge": 86,
+            "Charge": 86,
             "Repel Fire": 87,
             "Riot Gun": 90,
             "Vacuum Wave": 85,
@@ -2817,12 +2817,12 @@ var personaMap = {
         "elems": ["-", "-", "nu", "wk", "-", "-", "-", "-", "nu", "rp"],
         "skills": {
             "Ailment Boost": 45,
-            "Devil Touch": 0,
+            "Evil Touch": 0,
             "Foul Breath": 44,
             "Maeiga": 42,
             "Masukukaja": 43,
             "Oni Kagura": 0,
-            "Sharpshooter": 41,
+            "Snipe": 41,
             "Triple Down": 0
         }
     },
@@ -2877,10 +2877,10 @@ var personaMap = {
         "elems": ["nu", "-", "rs", "-", "rp", "-", "-", "-", "rp", "-"],
         "skills": {
             "Brave Blade": 0,
-            "Electric Amp": 84,
+            "Elec Amp": 84,
             "Fast Heal": 82,
             "Hassou Tobi": 86,
-            "Power Charge": 0,
+            "Charge": 0,
             "Pressing Stance": 81,
             "Ziodyne": 0
         },
@@ -2894,8 +2894,8 @@ var personaMap = {
         "elems": ["-", "-", "-", "-", "nu", "-", "wk", "-", "rs", "-"],
         "skills": {
             "Brain Jack": 0,
-            "Electric Boost": 48,
-            "Electric Break": 45,
+            "Elec Boost": 48,
+            "Elec Break": 45,
             "Mazionga": 0,
             "Megido": 0,
             "Revolution": 44,
@@ -2908,13 +2908,13 @@ var personaMap = {
         "stats": [57, 45, 50, 56, 39],
         "elems": ["-", "-", "rp", "-", "wk", "-", "-", "-", "nu", "nu"],
         "skills": {
-            "Banishing Wave": 0,
+            "Abysmal Surge": 0,
             "Enduring Soul": 83,
             "Evade Physical": 82,
             "God's Hand": 0,
-            "Incineration": 86,
+            "Blazing Hell": 86,
             "Maragidyne": 0,
-            "Weak Spot Aim": 84
+            "Cripple": 84
         },
         "max": true
     },
