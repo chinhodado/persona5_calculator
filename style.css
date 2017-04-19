@@ -16,14 +16,6 @@ a:visited {
     text-decoration: none;
 }
 
-a:hover, a:visited:hover {
-    text-decoration: underline;
-}
-
-a, a:visited {
-    color: #000;
-}
-
 #list th, #skillList th {
     cursor: pointer;
     padding: 5px;
@@ -114,7 +106,7 @@ caption {
 
 .wk, .Weak { color: #db2828 !important; }
 .rs, .Resist { color: #2185d0 !important; }
-.nu, .Null { color: #00b5ad !important; }
+.nu, .Null { color: #b0b0b0 !important; }
 .rp, .Repel { color: #fbbd08 !important; }
 .ab, .Absorb { color: #21ba45 !important; }
 
