@@ -1573,7 +1573,7 @@ const skillMap: SkillMap = {
     },
     "Hamaon": {
         "cost": 1500,
-        "effect": "medium chance of instantly killing 1 foe.",
+        "effect": "Medium chance of instantly killing 1 foe.",
         "element": "bless",
         "personas": {
             "Anubis": 0,
