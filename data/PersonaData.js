@@ -17,7 +17,7 @@ var personaMap = {
     "Agathion": {
         "arcana": "Chariot",
         "level": 3,
-        "stats": [4, 6, 9, 12, 3],
+        "stats": [3, 4, 5, 7, 3],
         "elems": ["-", "rs", "-", "-", "rs", "wk", "-", "-", "-", "-"],
         "skills": { "Baisudi": 0, "Dia": 0, "Dodge Elec": 8, "Lunge": 4, "Rakukaja": 6, "Zio": 0 },
         "personality": "Timid"
@@ -363,7 +363,7 @@ var personaMap = {
     "Berith": {
         "arcana": "Hierophant",
         "level": 9,
-        "stats": [8, 6, 7, 9, 7],
+        "stats": [8, 6, 7, 8, 5],
         "elems": ["-", "nu", "rs", "wk", "-", "-", "-", "-", "-", "-"],
         "skills": { "Cleave": 0, "Dodge Fire": 11, "Double Fangs": 10, "Rakukaja": 0, "Sledgehammer": 13 },
         "personality": "Irritable"
@@ -971,7 +971,7 @@ var personaMap = {
     "Inugami": {
         "arcana": "Hanged Man",
         "level": 14,
-        "stats": [12, 11, 9, 12, 8],
+        "stats": [11, 9, 9, 12, 8],
         "elems": ["-", "-", "nu", "-", "-", "wk", "-", "-", "-", "nu"],
         "skills": {
             "Brain Shake": 18,
@@ -1223,7 +1223,7 @@ var personaMap = {
     "Kodama": {
         "arcana": "Star",
         "level": 11,
-        "stats": [9, 11, 8, 10, 4],
+        "stats": [7, 11, 8, 10, 4],
         "elems": ["-", "-", "wk", "rs", "-", "-", "-", "-", "-", "-"],
         "skills": {
             "Evil Touch": 13,
@@ -2000,7 +2000,7 @@ var personaMap = {
     "Orpheus Picaro": {
         "arcana": "Fool",
         "level": 29,
-        "stats": [19, 19, 19, 19, 19],
+        "stats": [19, 19, 19, 19, 18],
         "elems": ["-", "-", "-", "-", "wk", "-", "-", "-", "rs", "wk"],
         "skills": {
             "Agidyne": 32,
@@ -2367,7 +2367,7 @@ var personaMap = {
     "Seth": {
         "arcana": "Tower",
         "level": 51,
-        "stats": [34, 37, 33, 37, 31],
+        "stats": [32, 35, 30, 35, 28],
         "elems": ["-", "-", "rp", "-", "-", "nu", "-", "-", "wk", "rs"],
         "skills": {
             "Agidyne": 0,
@@ -2397,7 +2397,7 @@ var personaMap = {
     "Shiki-Ouji": {
         "arcana": "Chariot",
         "level": 21,
-        "stats": [21, 11, 15, 16, 13],
+        "stats": [11, 15, 16, 16, 13],
         "elems": ["nu", "nu", "-", "-", "-", "-", "-", "wk", "-", "nu"],
         "skills": { "Dekaja": 24, "Snap": 0, "Mapsi": 22, "Oni Kagura": 27, "Taunt": 0, "Psio": 26, "Tarukaja": 0 },
         "personality": "Irritable"
