@@ -1,0 +1,13 @@
+<div style="text-align: left; margin-top: 20px;">
+    <p>Select which DLC persona you have:</p>
+
+    <div class="ui form">
+        <div class="field" ng:repeat="pair in dlcPersona">
+            <div class="ui checkbox">
+                <input type="checkbox" name="{{pair[0]}},{{pair[1]}}" ng-checked="pair[2]=='y'" class="dlcCheckbox">
+                <label>{{pair[0]}} and {{pair[1]}}</label>
+            </div>
+        </div>
+        <button class="ui button" ng-click="save()">Save</button>
+    </div>
+</div>

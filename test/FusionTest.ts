@@ -222,9 +222,9 @@ describe('Data', () => {
 
 function checkSkill() {
     let isGood = true;
-    for (let i = 0; i < personaList.length; i++) {
-        for (let key in personaList[i].skills) {
-            if (personaList[i].skills.hasOwnProperty(key)) {
+    for (let i = 0; i < fullPersonaList.length; i++) {
+        for (let key in fullPersonaList[i].skills) {
+            if (fullPersonaList[i].skills.hasOwnProperty(key)) {
                 if (!skillMap[key]) {
                     isGood = false;
                     throw new Error("Skill not found: " + key);

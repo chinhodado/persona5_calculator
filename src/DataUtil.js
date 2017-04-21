@@ -19,7 +19,28 @@ function addElementProperties(persona) {
         persona[properties[i] + 'Value'] = elemsValue[persona.elems[i]];
     }
 }
-var personaList = (function () {
+function isDlcPersonaOwned(dlcPersona) {
+    if (!localStorage["dlcPersona"])
+        return true;
+    return JSON.parse(localStorage["dlcPersona"])[dlcPersona] === true;
+}
+var customPersonaList = (function () {
+    var arr = [];
+    for (var key in personaMap) {
+        if (personaMap.hasOwnProperty(key)) {
+            var persona = personaMap[key];
+            if (persona.dlc && !isDlcPersonaOwned(key)) {
+                continue;
+            }
+            persona.name = key;
+            addStatProperties(persona);
+            addElementProperties(persona);
+            arr.push(persona);
+        }
+    }
+    return arr;
+})();
+var fullPersonaList = (function () {
     var arr = [];
     for (var key in personaMap) {
         if (personaMap.hasOwnProperty(key)) {
@@ -54,8 +75,8 @@ var skillList = (function () {
 })();
 var personaeByArcana = (function () {
     var personaeByArcana_ = {};
-    for (var i = 0; i < personaList.length; i++) {
-        var persona = personaList[i];
+    for (var i = 0; i < customPersonaList.length; i++) {
+        var persona = customPersonaList[i];
         if (!personaeByArcana_[persona.arcana]) {
             personaeByArcana_[persona.arcana] = [];
         }

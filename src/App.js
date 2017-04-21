@@ -18,6 +18,7 @@ myModule.config(function ($routeProvider) {
     $routeProvider.when('/list', { templateUrl: 'list.html', controller: PersonaListController });
     $routeProvider.when('/skill', { templateUrl: 'skill.html', controller: SkillListController });
     $routeProvider.when('/persona/:persona_name', { templateUrl: 'persona.html', controller: PersonaController });
+    $routeProvider.when('/setting', { templateUrl: 'setting.html', controller: SettingController });
 });
 myModule.run(function ($rootScope, $location, $route, $window) {
     $rootScope.$on('$locationChangeStart', function (event) {

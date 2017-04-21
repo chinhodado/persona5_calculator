@@ -4,7 +4,7 @@
  */
 var PersonaListController = (function () {
     function PersonaListController($scope) {
-        $scope.personaList = personaList;
+        $scope.fullPersonaList = fullPersonaList;
         // set the default sort param
         $scope.sortBy = 'level';
         $scope.reverse = false;

@@ -182,9 +182,9 @@ describe('Data', function () {
 });
 function checkSkill() {
     var isGood = true;
-    for (var i = 0; i < personaList.length; i++) {
-        for (var key in personaList[i].skills) {
-            if (personaList[i].skills.hasOwnProperty(key)) {
+    for (var i = 0; i < fullPersonaList.length; i++) {
+        for (var key in fullPersonaList[i].skills) {
+            if (fullPersonaList[i].skills.hasOwnProperty(key)) {
                 if (!skillMap[key]) {
                     isGood = false;
                     throw new Error("Skill not found: " + key);

@@ -23,7 +23,30 @@ function addElementProperties(persona: PersonaData) : void {
     }
 }
 
-const personaList: PersonaData[] = (() =>{
+function isDlcPersonaOwned(dlcPersona: string): boolean {
+    if (!localStorage["dlcPersona"]) return true;
+
+    return JSON.parse(localStorage["dlcPersona"])[dlcPersona] === true;
+}
+
+const customPersonaList: PersonaData[] = (() =>{
+    let arr = [];
+    for (let key in personaMap) {
+        if (personaMap.hasOwnProperty(key)) {
+            let persona = personaMap[key];
+            if (persona.dlc && !isDlcPersonaOwned(key)) {
+                continue;
+            }
+            persona.name = key;
+            addStatProperties(persona);
+            addElementProperties(persona);
+            arr.push(persona);
+        }
+    }
+    return arr;
+})();
+
+const fullPersonaList: PersonaData[] = (() =>{
     let arr = [];
     for (let key in personaMap) {
         if (personaMap.hasOwnProperty(key)) {
@@ -60,8 +83,8 @@ const skillList: SkillData[] = (() =>{
 
 const personaeByArcana : {[arcana: string]: PersonaData[]} = (() =>{
     let personaeByArcana_ = {};
-    for (let i = 0; i < personaList.length; i++) {
-        let persona = personaList[i];
+    for (let i = 0; i < customPersonaList.length; i++) {
+        let persona = customPersonaList[i];
         if (!personaeByArcana_[persona.arcana]) {
             personaeByArcana_[persona.arcana] = [];
         }

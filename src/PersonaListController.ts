@@ -4,7 +4,7 @@
  */
 class PersonaListController {
     constructor($scope) {
-        $scope.personaList = personaList;
+        $scope.fullPersonaList = fullPersonaList;
 
         // set the default sort param
         $scope.sortBy = 'level';

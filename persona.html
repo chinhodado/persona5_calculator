@@ -89,6 +89,13 @@
     </table>
 
     <h3>Fusion ({{numRecipes}} Recipes)</h3>
+
+    <div ng:show="!persona.special && !persona.rare">
+        <p><b>Note</b>: Don't get the same results? Remember to configure which DLC persona you own
+            in <a href="#/setting/">Setting</a>.</p>
+        <p>Also, remember that rare persona fusion depends on your persona's current level.</p>
+    </div>
+
     <div class="caption">
         <div class="pagination" ng:show="numRecipes > perPage">
             <span ng:click="pageNum = 0">&#x25c4;<span style="position: relative; left: -0.4em;">&#x25c4;</span></span>

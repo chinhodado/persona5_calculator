@@ -278,3 +278,6 @@ var specialCombos = [
     { 'result': 'Vasuki', 'sources': ['Naga', 'Raja Naga', 'Ananta'] },
     { 'result': 'Yoshitsune', 'sources': ['Okuninushi', 'Shiki-Ouji', 'Arahabaki', 'Yatagarasu', 'Futsunushi'] }
 ];
+var dlcPersona = [["Orpheus", "Orpheus Picaro"], ["Izanagi", "Izanagi Picaro"], ["Thanatos", "Thanatos Picaro"],
+    ["Magatsu-Izanagi", "Magatsu-Izanagi Picaro"], ["Kaguya", "Kaguya Picaro"], ["Ariadne", "Ariadne Picaro"],
+    ["Asterius", "Asterius Picaro"], ["Tsukiyomi", "Tsukiyomi Picaro"], ["Messiah", "Messiah Picaro"]];

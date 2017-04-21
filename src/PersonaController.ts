@@ -22,6 +22,7 @@ class PersonaController {
         this.$scope.allRecipes = FusionCalculator.getRecipes(this.$scope.persona);
         this.$scope.allRecipes.sort((a,b) => a.cost - b.cost);
         this.$scope.maxCost = 0;
+
         for (let i = 0, recipe = null; recipe = this.$scope.allRecipes[i]; i++) {
             recipe.num = i;
             this.$scope.maxCost = Math.max(this.$scope.maxCost, recipe.cost);
