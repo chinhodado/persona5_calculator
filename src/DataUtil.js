@@ -24,6 +24,9 @@ function isDlcPersonaOwned(dlcPersona) {
         return true;
     return JSON.parse(localStorage["dlcPersona"])[dlcPersona] === true;
 }
+/**
+ * List of persona with DLC persona potentially removed based on user config
+ */
 var customPersonaList = (function () {
     var arr = [];
     for (var key in personaMap) {
@@ -73,7 +76,10 @@ var skillList = (function () {
     }
     return arr;
 })();
-var personaeByArcana = (function () {
+/**
+ * Persona by arcana based on customPersonaList
+ */
+var customPersonaeByArcana = (function () {
     var personaeByArcana_ = {};
     for (var i = 0; i < customPersonaList.length; i++) {
         var persona = customPersonaList[i];

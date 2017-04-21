@@ -14,7 +14,8 @@ var PersonaController = (function () {
         this.$scope.persona = personaMap[personaName];
         if (!this.$scope.persona)
             return;
-        this.$scope.allRecipes = FusionCalculator.getRecipes(this.$scope.persona);
+        var calc = new FusionCalculator(customPersonaeByArcana);
+        this.$scope.allRecipes = calc.getRecipes(this.$scope.persona);
         this.$scope.allRecipes.sort(function (a, b) { return a.cost - b.cost; });
         this.$scope.maxCost = 0;
         for (var i = 0, recipe = null; recipe = this.$scope.allRecipes[i]; i++) {

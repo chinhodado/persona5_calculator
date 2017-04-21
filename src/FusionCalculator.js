@@ -6,7 +6,8 @@
  * Created by Chin on 08-Apr-17.
  */
 var FusionCalculator = (function () {
-    function FusionCalculator() {
+    function FusionCalculator(personaeByArcana) {
+        this.personaeByArcana = personaeByArcana;
     }
     /**
      * Fuse 2 persona. Doesn't handle rare fusion and special fusion.
@@ -15,7 +16,7 @@ var FusionCalculator = (function () {
      * @returns The result persona, or null when the fusion is not possible,
      * the fusion is a rare fusion, or the fusion is a special fusion.
      */
-    FusionCalculator.fuse2 = function (persona1, persona2) {
+    FusionCalculator.prototype.fuse2 = function (persona1, persona2) {
         // don't handle rare fusion between a normal persona and a rare persona
         if ((persona1.rare && !persona2.rare) || (persona2.rare && !persona1.rare)) {
             return null;
@@ -30,7 +31,7 @@ var FusionCalculator = (function () {
         }
         var level = 1 + Math.floor((persona1.level + persona2.level) / 2);
         var arcana = getResultArcana(persona1.arcana, persona2.arcana);
-        var personae = personaeByArcana[arcana];
+        var personae = this.personaeByArcana[arcana];
         var persona = null;
         var found = false;
         if (persona1.arcana === persona2.arcana) {
@@ -66,9 +67,9 @@ var FusionCalculator = (function () {
      * @param mainPersona The normal persona
      * @returns The result persona, or null when the fusion is not possible.
      */
-    FusionCalculator.fuseRare = function (rarePersona, mainPersona) {
+    FusionCalculator.prototype.fuseRare = function (rarePersona, mainPersona) {
         var modifier = rareCombos[mainPersona.arcana][rarePersonae.indexOf(rarePersona.name)];
-        var personae = personaeByArcana[mainPersona.arcana];
+        var personae = this.personaeByArcana[mainPersona.arcana];
         var mainPersonaIndex = personae.indexOf(mainPersona);
         var newPersona = personae[mainPersonaIndex + modifier];
         if (!newPersona) {
@@ -89,7 +90,7 @@ var FusionCalculator = (function () {
      * @param persona The special persona
      * @returns {Array} An array of 1 element containing the recipe for the persona
      */
-    FusionCalculator.getSpecialRecipe = function (persona) {
+    FusionCalculator.prototype.getSpecialRecipe = function (persona) {
         if (!persona.special) {
             throw new Error("Persona is not special!)");
         }
@@ -114,7 +115,8 @@ var FusionCalculator = (function () {
      * @param persona The resulting persona
      * @returns {Array} List of all recipes for the given persona
      */
-    FusionCalculator.getRecipes = function (persona) {
+    FusionCalculator.prototype.getRecipes = function (persona) {
+        var _this = this;
         var allRecipe = [];
         // Rare persona can't be fused
         if (persona.rare) {
@@ -122,11 +124,11 @@ var FusionCalculator = (function () {
         }
         // Check special recipes.
         if (persona.special) {
-            return FusionCalculator.getSpecialRecipe(persona);
+            return this.getSpecialRecipe(persona);
         }
         var recipes = this.getArcanaRecipes(persona.arcana);
         recipes = recipes.filter(function (value, index, array) {
-            return FusionCalculator.isGoodRecipe(value, persona);
+            return _this.isGoodRecipe(value, persona);
         });
         for (var i = 0; i < recipes.length; i++) {
             this.addRecipe(recipes[i], allRecipe);
@@ -141,7 +143,7 @@ var FusionCalculator = (function () {
      * @param expectedResult The expected resulting persona
      * @returns {boolean} true if the recipe is good for the given persona, false otherwise
      */
-    FusionCalculator.isGoodRecipe = function (recipe, expectedResult) {
+    FusionCalculator.prototype.isGoodRecipe = function (recipe, expectedResult) {
         if (recipe.sources[0].name === expectedResult.name)
             return false;
         if (recipe.sources[1].name === expectedResult.name)
@@ -153,13 +155,13 @@ var FusionCalculator = (function () {
      * @param arcana The result arcana
      * @returns {Array} the list of recipes
      */
-    FusionCalculator.getArcanaRecipes = function (arcana) {
+    FusionCalculator.prototype.getArcanaRecipes = function (arcana) {
         var recipes = [];
         var arcanaCombos = arcana2Combos.filter(function (x) { return x.result === arcana; });
         // fuse 2 persona normally (including down-rank)
         for (var i = 0, combo = null; combo = arcanaCombos[i]; i++) {
-            var personae1 = personaeByArcana[combo.source[0]];
-            var personae2 = personaeByArcana[combo.source[1]];
+            var personae1 = this.personaeByArcana[combo.source[0]];
+            var personae2 = this.personaeByArcana[combo.source[1]];
             for (var j = 0, persona1 = null; persona1 = personae1[j]; j++) {
                 for (var k = 0, persona2 = null; persona2 = personae2[k]; k++) {
                     // for same arcana fusion only consider k > j to avoid duplicates
@@ -170,7 +172,7 @@ var FusionCalculator = (function () {
                         continue;
                     if (persona2.rare && !persona1.rare)
                         continue;
-                    var result = FusionCalculator.fuse2(persona1, persona2);
+                    var result = this.fuse2(persona1, persona2);
                     if (!result)
                         continue;
                     recipes.push({
@@ -183,12 +185,12 @@ var FusionCalculator = (function () {
         // rare fusion where one persona is a rare one and the other is a normal one
         for (var i = 0; i < rarePersonae.length; i++) {
             var rarePersona = personaMap[rarePersonae[i]];
-            var personae = personaeByArcana[arcana];
+            var personae = this.personaeByArcana[arcana];
             for (var j = 0; j < personae.length; j++) {
                 var mainPersona = personae[j];
                 if (rarePersona === mainPersona)
                     continue;
-                var result = FusionCalculator.fuseRare(rarePersona, mainPersona);
+                var result = this.fuseRare(rarePersona, mainPersona);
                 if (!result)
                     continue;
                 recipes.push({
@@ -205,7 +207,7 @@ var FusionCalculator = (function () {
      * @param recipe The recipe to add
      * @param allRecipes List of recipes to add to
      */
-    FusionCalculator.addRecipe = function (recipe, allRecipes) {
+    FusionCalculator.prototype.addRecipe = function (recipe, allRecipes) {
         // add an approximated cost
         recipe.cost = 0;
         for (var i = 0, source = null; source = recipe.sources[i]; i++) {

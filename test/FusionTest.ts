@@ -5,12 +5,31 @@
 ///<reference path="d.ts/mocha.d.ts"/>
 ///<reference path="d.ts/expect.js.d.ts"/>
 
+const fullPersonaeByArcana : {[arcana: string]: PersonaData[]} = (() =>{
+    let personaeByArcana_ = {};
+    for (let i = 0; i < fullPersonaList.length; i++) {
+        let persona = fullPersonaList[i];
+        if (!personaeByArcana_[persona.arcana]) {
+            personaeByArcana_[persona.arcana] = [];
+        }
+        personaeByArcana_[persona.arcana].push(persona);
+    }
+
+    for (let key in personaeByArcana_) {
+        personaeByArcana_[key].sort((a,b) => a.level - b.level);
+    }
+
+    return personaeByArcana_;
+})();
+
+let calc = new FusionCalculator(fullPersonaeByArcana);
+
 function fuse2TestWrapper(persona1Name: string, persona2Name: string): PersonaData {
-    return FusionCalculator.fuse2(personaMap[persona1Name], personaMap[persona2Name]);
+    return calc.fuse2(personaMap[persona1Name], personaMap[persona2Name]);
 }
 
 function fuseRareTestWrapper(rarePersonaName: string, persona2Name: string): PersonaData {
-    return FusionCalculator.fuseRare(personaMap[rarePersonaName], personaMap[persona2Name]);
+    return calc.fuseRare(personaMap[rarePersonaName], personaMap[persona2Name]);
 }
 
 function containAll(recipe: Recipe, personaNames: string[]): boolean {
@@ -120,42 +139,42 @@ describe('FusionCalculator', () => {
     describe('#getRecipes()', () => {
         describe('special fusions', function () {
             it('should return correct recipe for Ardha', () => {
-                let recipes = FusionCalculator.getRecipes(personaMap["Ardha"]);
+                let recipes = calc.getRecipes(personaMap["Ardha"]);
                 expect(recipes).to.have.length(1);
                 expect(recipes[0].sources).to.have.length(2);
                 expect(containAll(recipes[0], ['Parvati', 'Shiva'])).to.be(true);
             });
 
             it('should return correct recipe for Alice', () => {
-                let recipes = FusionCalculator.getRecipes(personaMap["Alice"]);
+                let recipes = calc.getRecipes(personaMap["Alice"]);
                 expect(recipes).to.have.length(1);
                 expect(recipes[0].sources).to.have.length(2);
                 expect(containAll(recipes[0], ['Belial', 'Nebiros'])).to.be(true);
             });
 
             it('should return correct recipe for Ongyo-Ki', () => {
-                let recipes = FusionCalculator.getRecipes(personaMap["Ongyo-Ki"]);
+                let recipes = calc.getRecipes(personaMap["Ongyo-Ki"]);
                 expect(recipes).to.have.length(1);
                 expect(recipes[0].sources).to.have.length(3);
                 expect(containAll(recipes[0], ['Kin-Ki', 'Sui-Ki', 'Fuu-Ki'])).to.be(true);
             });
 
             it('should return correct recipe for Kohryu', () => {
-                let recipes = FusionCalculator.getRecipes(personaMap["Kohryu"]);
+                let recipes = calc.getRecipes(personaMap["Kohryu"]);
                 expect(recipes).to.have.length(1);
                 expect(recipes[0].sources).to.have.length(4);
                 expect(containAll(recipes[0], ['Genbu', 'Seiryu', 'Suzaku', 'Byakko'])).to.be(true);
             });
 
             it('should return correct recipe for Sraosha', () => {
-                let recipes = FusionCalculator.getRecipes(personaMap["Sraosha"]);
+                let recipes = calc.getRecipes(personaMap["Sraosha"]);
                 expect(recipes).to.have.length(1);
                 expect(recipes[0].sources).to.have.length(5);
                 expect(containAll(recipes[0], ['Mithra', 'Mithras', 'Melchizedek', 'Lilith', 'Gabriel'])).to.be(true);
             });
 
             it('should return correct recipe for Satanael', () => {
-                let recipes = FusionCalculator.getRecipes(personaMap["Satanael"]);
+                let recipes = calc.getRecipes(personaMap["Satanael"]);
                 expect(recipes).to.have.length(1);
                 expect(recipes[0].sources).to.have.length(6);
                 expect(containAll(recipes[0], ['Arsene', 'Anzu', 'Ishtar', 'Satan', 'Lucifer', 'Michael'])).to.be(true);
@@ -164,17 +183,17 @@ describe('FusionCalculator', () => {
 
         describe('rare persona (cannot be fused)', function () {
             it('should return empty recipe list for Regent', () => {
-                let recipes = FusionCalculator.getRecipes(personaMap["Regent"]);
+                let recipes = calc.getRecipes(personaMap["Regent"]);
                 expect(recipes).to.have.length(0);
             });
 
             it('should return empty recipe list for Stone of Scone', () => {
-                let recipes = FusionCalculator.getRecipes(personaMap["Stone of Scone"]);
+                let recipes = calc.getRecipes(personaMap["Stone of Scone"]);
                 expect(recipes).to.have.length(0);
             });
 
             it('should return empty recipe list for Orlov', () => {
-                let recipes = FusionCalculator.getRecipes(personaMap["Orlov"]);
+                let recipes = calc.getRecipes(personaMap["Orlov"]);
                 expect(recipes).to.have.length(0);
             });
         });
@@ -182,32 +201,32 @@ describe('FusionCalculator', () => {
         // note: these count the number of recipes and may not be correct
         describe('normal fusion', function () {
             it('should return correct number of recipe for Arsene', () => {
-                let recipes = FusionCalculator.getRecipes(personaMap["Arsene"]);
+                let recipes = calc.getRecipes(personaMap["Arsene"]);
                 expect(recipes).to.have.length(6);
             });
 
             it('should return correct number of recipe for Apsaras', () => {
-                let recipes = FusionCalculator.getRecipes(personaMap["Apsaras"]);
+                let recipes = calc.getRecipes(personaMap["Apsaras"]);
                 expect(recipes).to.have.length(35);
             });
 
             it('should return correct number of recipe for Orthrus', () => {
-                let recipes = FusionCalculator.getRecipes(personaMap["Orthrus"]);
+                let recipes = calc.getRecipes(personaMap["Orthrus"]);
                 expect(recipes).to.have.length(46);
             });
 
             it('should return correct number of recipe for Kikuri-Hime', () => {
-                let recipes = FusionCalculator.getRecipes(personaMap["Kikuri-Hime"]);
+                let recipes = calc.getRecipes(personaMap["Kikuri-Hime"]);
                 expect(recipes).to.have.length(333);
             });
 
             it('should return correct number of recipe for Lilith', () => {
-                let recipes = FusionCalculator.getRecipes(personaMap["Lilith"]);
+                let recipes = calc.getRecipes(personaMap["Lilith"]);
                 expect(recipes).to.have.length(82);
             });
 
             it('should return correct number of recipe for Ishtar', () => {
-                let recipes = FusionCalculator.getRecipes(personaMap["Ishtar"]);
+                let recipes = calc.getRecipes(personaMap["Ishtar"]);
                 expect(recipes).to.have.length(22);
             });
         });

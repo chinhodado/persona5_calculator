@@ -29,6 +29,9 @@ function isDlcPersonaOwned(dlcPersona: string): boolean {
     return JSON.parse(localStorage["dlcPersona"])[dlcPersona] === true;
 }
 
+/**
+ * List of persona with DLC persona potentially removed based on user config
+ */
 const customPersonaList: PersonaData[] = (() =>{
     let arr = [];
     for (let key in personaMap) {
@@ -81,7 +84,10 @@ const skillList: SkillData[] = (() =>{
     return arr;
 })();
 
-const personaeByArcana : {[arcana: string]: PersonaData[]} = (() =>{
+/**
+ * Persona by arcana based on customPersonaList
+ */
+const customPersonaeByArcana : {[arcana: string]: PersonaData[]} = (() =>{
     let personaeByArcana_ = {};
     for (let i = 0; i < customPersonaList.length; i++) {
         let persona = customPersonaList[i];

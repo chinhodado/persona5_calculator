@@ -19,7 +19,8 @@ class PersonaController {
         this.$scope.persona = personaMap[personaName];
         if (!this.$scope.persona) return;
 
-        this.$scope.allRecipes = FusionCalculator.getRecipes(this.$scope.persona);
+        let calc = new FusionCalculator(customPersonaeByArcana);
+        this.$scope.allRecipes = calc.getRecipes(this.$scope.persona);
         this.$scope.allRecipes.sort((a,b) => a.cost - b.cost);
         this.$scope.maxCost = 0;
 
