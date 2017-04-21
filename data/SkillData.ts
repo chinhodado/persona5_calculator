@@ -835,7 +835,7 @@ const skillMap: SkillMap = {
         "fuse": "High Pixie",
         "personas": {
             "Ame no Uzume": 0,
-            "Feng Huang": 23,
+            "Phoenix": 23,
             "High Pixie": 18,
             "Horus": 0,
             "Isis": 0,
@@ -1033,7 +1033,7 @@ const skillMap: SkillMap = {
         "fuse": "Incubus",
         "personas": {
             "Arsene": 5,
-            "Feng Huang": 0,
+            "Phoenix": 0,
             "Inugami": 15,
             "Pisaca": 0
         }
@@ -1410,7 +1410,7 @@ const skillMap: SkillMap = {
         "fuse": "Ara Mitama",
         "personas": {
             "Ara Mitama": 0,
-            "Feng Huang": 0,
+            "Phoenix": 0,
             "Stone of Scone": 0,
             "Thoth": 0
         }
@@ -2680,10 +2680,10 @@ const skillMap: SkillMap = {
     "Nuke Boost": {
         "effect": "Strengthen Nuclear attacks by 25%.",
         "element": "passive",
-        "fuse": "Feng Huang",
+        "fuse": "Phoenix",
         "personas": {
             "Ananta": 49,
-            "Feng Huang": 27
+            "Phoenix": 27
         }
     },
     "Nuke Break": {
@@ -3153,7 +3153,7 @@ const skillMap: SkillMap = {
         "element": "healing",
         "fuse": "Leanan Sidhe",
         "personas": {
-            "Feng Huang": 25,
+            "Phoenix": 25,
             "Queen's Necklace": 0
         }
     },

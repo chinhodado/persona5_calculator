@@ -759,7 +759,7 @@ const personaMap : PersonaMap = {
         },
         "rare": true
     },
-    "Feng Huang": {
+    "Phoenix": {
         "arcana": "Hierophant",
         "level": 22,
         "stats": [14, 15, 15, 18, 11],
