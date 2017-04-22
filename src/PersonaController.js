@@ -22,26 +22,36 @@ var PersonaController = (function () {
         for (var i = 0, recipe = null; recipe = fusionToRecipes[i]; i++) {
             recipe.num = i;
         }
-        this.$scope.fusionTo = {};
-        this.$scope.fusionTo.allRecipes = fusionToRecipes;
-        this.$scope.fusionTo.lastPage = Math.floor(this.$scope.fusionTo.allRecipes.length / this.$scope.perPage);
-        this.$scope.fusionTo.pageNum = 0;
+        var fusionTo = {
+            allRecipes: fusionToRecipes,
+            recipes: fusionToRecipes,
+            numRecipes: fusionToRecipes.length,
+            lastPage: Math.floor(fusionToRecipes.length / this.$scope.perPage),
+            pageNum: 0,
+            filterStr: ""
+        };
+        this.$scope.fusionTo = fusionTo;
         this.$scope.$watch('fusionTo.filterStr', this.getPaginateAndFilterFunc(false).bind(this));
         this.$scope.$watch('fusionTo.filterStr', this.getResetPageFunc(false).bind(this));
-        this.$scope.$watch('fusionTo.pageNum', this.getPaginateAndFilterFunc(false).bind(this), false);
+        this.$scope.$watch('fusionTo.pageNum', this.getPaginateAndFilterFunc(false).bind(this));
         // fusion from
         var fusionFromRecipes = calc.getAllResultingRecipesFrom(this.$scope.persona);
         fusionFromRecipes.sort(function (a, b) { return a.cost - b.cost; });
         for (var i = 0, recipe = null; recipe = fusionFromRecipes[i]; i++) {
             recipe.num = i;
         }
-        this.$scope.fusionFrom = {};
-        this.$scope.fusionFrom.allRecipes = fusionFromRecipes;
-        this.$scope.fusionFrom.lastPage = Math.floor(this.$scope.fusionFrom.allRecipes.length / this.$scope.perPage);
-        this.$scope.fusionFrom.pageNum = 0;
+        var fusionFrom = {
+            allRecipes: fusionFromRecipes,
+            recipes: fusionFromRecipes,
+            numRecipes: fusionFromRecipes.length,
+            lastPage: Math.floor(fusionFromRecipes.length / this.$scope.perPage),
+            pageNum: 0,
+            filterStr: ""
+        };
+        this.$scope.fusionFrom = fusionFrom;
         this.$scope.$watch('fusionFrom.filterStr', this.getPaginateAndFilterFunc(true).bind(this));
         this.$scope.$watch('fusionFrom.filterStr', this.getResetPageFunc(true).bind(this));
-        this.$scope.$watch('fusionFrom.pageNum', this.getPaginateAndFilterFunc(true).bind(this), false);
+        this.$scope.$watch('fusionFrom.pageNum', this.getPaginateAndFilterFunc(true).bind(this));
         // stats
         var compediumEntry = personaMap[personaName];
         this.$scope.persona.stats = compediumEntry.stats;
@@ -61,10 +71,6 @@ var PersonaController = (function () {
         // It's different from the existing skills property which is a map.
         this.$scope.persona.skillList = getSkills(personaName);
     }
-    /**
-     * Note: this can the scope that is passed in, or this.$scope.
-     * Using the passed in scope for brevity.
-     */
     PersonaController.prototype.paginateAndFilter = function (fusionFromTo, filterFunc) {
         if (fusionFromTo.pageNum < 0)
             fusionFromTo.pageNum = 0;
@@ -76,17 +82,13 @@ var PersonaController = (function () {
         else {
             fusionFromTo.recipes = fusionFromTo.allRecipes;
         }
+        fusionFromTo.lastPage = Math.floor(fusionFromTo.recipes.length / this.$scope.perPage);
         fusionFromTo.numRecipes = fusionFromTo.recipes.length;
         fusionFromTo.recipes = fusionFromTo.recipes.slice(fusionFromTo.pageNum * this.$scope.perPage, fusionFromTo.pageNum * this.$scope.perPage + this.$scope.perPage);
     };
     PersonaController.prototype.getPaginateAndFilterFunc = function (isFusionFrom) {
         var _this = this;
-        if (isFusionFrom) {
-            return function (newVal, oldVal, scope) { return _this.paginateAndFilter(scope.fusionFrom, _this.getRecipeFilterFunc(true)); };
-        }
-        else {
-            return function (newVal, oldVal, scope) { return _this.paginateAndFilter(scope.fusionTo, _this.getRecipeFilterFunc(false)); };
-        }
+        return function (newVal, oldVal, scope) { return _this.paginateAndFilter(isFusionFrom ? scope.fusionFrom : scope.fusionTo, _this.getRecipeFilterFunc(isFusionFrom)); };
     };
     PersonaController.prototype.getRecipeFilterFunc = function (isFusionFrom) {
         var containsIgnoreCase = function (str, filter) { return str.toLowerCase().indexOf(filter.toLowerCase()) !== -1; };
@@ -111,12 +113,7 @@ var PersonaController = (function () {
     };
     PersonaController.prototype.getResetPageFunc = function (isFusionFrom) {
         var _this = this;
-        if (isFusionFrom) {
-            return function (newVal, oldVal, scope) { return _this.resetPage(scope.fusionFrom); };
-        }
-        else {
-            return function (newVal, oldVal, scope) { return _this.resetPage(scope.fusionTo); };
-        }
+        return function (newVal, oldVal, scope) { return _this.resetPage(isFusionFrom ? scope.fusionFrom : scope.fusionTo); };
     };
     return PersonaController;
 }());
