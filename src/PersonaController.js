@@ -55,7 +55,15 @@ var PersonaController = (function () {
         if (scope.pageNum > scope.lastPage)
             scope.pageNum = scope.lastPage;
         if (scope.filterStr) {
-            scope.recipes = this.$filter('filter')(scope.allRecipes, scope.filterStr);
+            var filterFunc = function (value, index, array) {
+                for (var i = 0; i < value.sources.length; i++) {
+                    if (value.sources[i].name.toLowerCase().indexOf(scope.filterStr.toLowerCase()) !== -1) {
+                        return true;
+                    }
+                }
+                return false;
+            };
+            scope.recipes = this.$filter('filter')(scope.allRecipes, filterFunc);
         }
         else {
             scope.recipes = scope.allRecipes;
