@@ -121,6 +121,16 @@ const getResultArcana = (arcana1: string, arcana2: string) => {
     return arcanaMap[arcana1][arcana2];
 };
 
+const special2Combos = (() => {
+    let combos = [];
+    for (let i = 0; i < specialCombos.length; i++) {
+        if (specialCombos[i].sources.length == 2) {
+            combos.push(specialCombos[i]);
+        }
+    }
+    return combos;
+})();
+
 function getElems(personaName: string) {
     let elems = personaMap[personaName].elems;
     for (let i = 0; i < elems.length; i++) {

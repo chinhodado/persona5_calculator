@@ -19,93 +19,82 @@ var fullPersonaeByArcana = (function () {
     return personaeByArcana_;
 })();
 var calc = new FusionCalculator(fullPersonaeByArcana);
-function fuse2TestWrapper(persona1Name, persona2Name) {
-    return calc.fuse2(personaMap[persona1Name], personaMap[persona2Name]);
-}
-function fuseRareTestWrapper(rarePersonaName, persona2Name) {
-    return calc.fuseRare(personaMap[rarePersonaName], personaMap[persona2Name]);
+function fuseTestWrapper(persona1Name, persona2Name) {
+    return calc.fuse(personaMap[persona1Name], personaMap[persona2Name]);
 }
 function containAll(recipe, personaNames) {
     return personaNames.map(function (a) { return personaMap[a]; })
         .every(function (val) { return recipe.sources.indexOf(val) !== -1; });
 }
 describe('FusionCalculator', function () {
-    describe('#fuse2()', function () {
+    describe('#fuse()', function () {
         describe('same arcana fusion', function () {
             it('should return null when fusing 2 lowest rank persona', function () {
-                expect(fuse2TestWrapper("Obariyon", "Arsene")).to.equal(null);
+                expect(fuseTestWrapper("Obariyon", "Arsene")).to.equal(null);
             });
             it('should return correct persona when fusing 2 highest rank persona', function () {
-                expect(fuse2TestWrapper("Beelzebub", "Belial")).to.equal(personaMap["Nebiros"]);
+                expect(fuseTestWrapper("Beelzebub", "Belial")).to.equal(personaMap["Nebiros"]);
             });
             it('should return correct persona when have to skip special persona below 2 ingredients', function () {
-                expect(fuse2TestWrapper("Ananta", "Kaiwan")).to.equal(personaMap["Fuu-Ki"]);
+                expect(fuseTestWrapper("Ananta", "Kaiwan")).to.equal(personaMap["Fuu-Ki"]);
             });
             it('should return correct persona when have to skip rare persona below 2 ingredients', function () {
-                expect(fuse2TestWrapper("Moloch", "Hecatoncheir")).to.equal(personaMap["Take-Minakata"]);
+                expect(fuseTestWrapper("Moloch", "Hecatoncheir")).to.equal(personaMap["Take-Minakata"]);
             });
             it('should return correct persona when have to skip rare and special personae below 2 ingredients', function () {
-                expect(fuse2TestWrapper("Dionysus", "Black Frost")).to.equal(personaMap["Ose"]);
+                expect(fuseTestWrapper("Dionysus", "Black Frost")).to.equal(personaMap["Ose"]);
             });
             it('should return correct persona when result level is midway of 2 ingredients, and right on level', function () {
-                expect(fuse2TestWrapper("Shiki-Ouji", "Slime")).to.equal(personaMap["Shiisaa"]);
+                expect(fuseTestWrapper("Shiki-Ouji", "Slime")).to.equal(personaMap["Shiisaa"]);
             });
             it('should return correct persona when result level is midway of 2 ingredients, and have to go down', function () {
-                expect(fuse2TestWrapper("Shiki-Ouji", "Slime")).to.equal(personaMap["Shiisaa"]);
+                expect(fuseTestWrapper("Shiki-Ouji", "Slime")).to.equal(personaMap["Shiisaa"]);
             });
             it('should return correct persona when have to skip rare midway and skip ingredient when fusing 2 persona', function () {
-                expect(fuse2TestWrapper("Take-Minakata", "Hecatoncheir")).to.equal(personaMap["Orthrus"]);
+                expect(fuseTestWrapper("Take-Minakata", "Hecatoncheir")).to.equal(personaMap["Orthrus"]);
             });
         });
         describe('different arcana fusion', function () {
             it('should return null when result level is higher than the highest level persona in the resulting arcana ' +
                 '(tower 79 + fool 83 -> empress 81 -> null)', function () {
-                expect(fuse2TestWrapper("Vishnu", "Yoshitsune")).to.equal(null);
+                expect(fuseTestWrapper("Vishnu", "Yoshitsune")).to.equal(null);
             });
             it('should return correct persona when result is the highest ranked persona in the resulting arcana ' +
                 '(judgement 92 + hierophant 63 -> empress 80)', function () {
-                expect(fuse2TestWrapper("Satan", "Forneus")).to.equal(personaMap["Mother Harlot"]);
+                expect(fuseTestWrapper("Satan", "Forneus")).to.equal(personaMap["Mother Harlot"]);
             });
             it('should return correct persona when fusing 2 persona, one highest rank and one lowest rank ' +
                 '(star 93 + temperance 7 -> sun 53)', function () {
-                expect(fuse2TestWrapper("Lucifer", "Genbu")).to.equal(personaMap["Ganesha"]);
+                expect(fuseTestWrapper("Lucifer", "Genbu")).to.equal(personaMap["Ganesha"]);
             });
             it('should return correct persona when fusing 2 rare persona', function () {
-                expect(fuse2TestWrapper("Crystal Skull", "Regent")).to.equal(personaMap["Mithra"]);
+                expect(fuseTestWrapper("Crystal Skull", "Regent")).to.equal(personaMap["Mithra"]);
             });
         });
-        describe('rare fusion (not handled by fuse2())', function () {
-            it('should return null when doing a rare fusion, and rare persona is first argument', function () {
-                expect(fuse2TestWrapper("Obariyon", "Regent")).to.equal(null);
+        describe('special fusion)', function () {
+            it('should return Alice when fusing Nebiros and Belial', function () {
+                expect(fuseTestWrapper("Nebiros", "Belial")).to.equal(personaMap["Alice"]);
             });
-            it('should return null when doing a rare fusion, and rare persona is second argument', function () {
-                expect(fuse2TestWrapper("Stone of Scone", "Nekomata")).to.equal(null);
+            it('should return Shiva when fusing Rangda and Barong', function () {
+                expect(fuseTestWrapper("Rangda", "Barong")).to.equal(personaMap["Shiva"]);
             });
-        });
-        describe('special formula (not handled by fuse2())', function () {
-            it('should return null when fusing Nebiros and Belial', function () {
-                expect(fuse2TestWrapper("Nebiros", "Belial")).to.equal(null);
-            });
-            it('should return null when fusing Rangda and Barong', function () {
-                expect(fuse2TestWrapper("Rangda", "Barong")).to.equal(null);
-            });
-            it('should return null when fusing Parvati and Shiva', function () {
-                expect(fuse2TestWrapper("Parvati", "Shiva")).to.equal(null);
+            it('should return Ardha when fusing Parvati and Shiva', function () {
+                expect(fuseTestWrapper("Parvati", "Shiva")).to.equal(personaMap["Ardha"]);
             });
         });
-    });
-    describe('#fuseRare()', function () {
-        it('should return correct persona when go down one', function () {
-            expect(fuseRareTestWrapper("Regent", "Obariyon")).to.equal(personaMap["Arsene"]);
-        });
-        it('should return correct persona when go up two', function () {
-            expect(fuseRareTestWrapper("Stone of Scone", "Nekomata")).to.equal(personaMap["Choronzon"]);
-        });
-        it('should return correct persona when go up one and skip special', function () {
-            expect(fuseRareTestWrapper("Orlov", "Fuu-Ki")).to.equal(personaMap["Kaiwan"]);
-        });
-        it('should return correct persona when go up one and have special persona as ingredient', function () {
-            expect(fuseRareTestWrapper("Orlov", "Neko Shogun")).to.equal(personaMap["Kaiwan"]);
+        describe('rare fusion', function () {
+            it('should return correct persona when go down one', function () {
+                expect(fuseTestWrapper("Regent", "Obariyon")).to.equal(personaMap["Arsene"]);
+            });
+            it('should return correct persona when go up two', function () {
+                expect(fuseTestWrapper("Stone of Scone", "Nekomata")).to.equal(personaMap["Choronzon"]);
+            });
+            it('should return correct persona when go up one and skip special', function () {
+                expect(fuseTestWrapper("Orlov", "Fuu-Ki")).to.equal(personaMap["Kaiwan"]);
+            });
+            it('should return correct persona when go up one and have special persona as ingredient', function () {
+                expect(fuseTestWrapper("Orlov", "Neko Shogun")).to.equal(personaMap["Kaiwan"]);
+            });
         });
     });
     describe('#getRecipes()', function () {

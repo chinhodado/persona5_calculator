@@ -1,5 +1,5 @@
-<p ng:hide="allRecipes">"{{personaName}}" not found!</p>
-<div ng:show="allRecipes" style="margin-top:10px">
+<p ng:hide="fusionTo">"{{personaName}}" not found!</p>
+<div ng:show="fusionTo" style="margin-top:10px">
     <h2>{{personaName}} ({{persona.level}} / {{persona.arcana}})</h2>
 
     <div ng:show='persona.max || persona.item || persona.rare || persona.note || persona.dlc'>
@@ -88,7 +88,7 @@
         </tbody>
     </table>
 
-    <h3>Fusion ({{numRecipes}} Recipes)</h3>
+    <h3>Fusion to this persona ({{fusionTo.numRecipes}} Recipes)</h3>
 
     <div ng:show="!persona.special && !persona.rare">
         <p><b>Note</b>: Don't get the same results? Remember to configure which DLC persona you own
@@ -97,24 +97,22 @@
     </div>
 
     <div class="caption">
-        <div class="pagination" ng:show="numRecipes > perPage">
-            <span ng:click="pageNum = 0">&#x25c4;<span style="position: relative; left: -0.4em;">&#x25c4;</span></span>
-            <span ng:click="pageNum = pageNum - 1">&#x25c4;</span>
-            Page {{pageNum + 1}} / {{Math.ceil(numRecipes / perPage)}}
-            <span ng:click="pageNum = pageNum + 1">&#x25ba;</span>
-            <span ng:click="pageNum = lastPage"><span style="position: relative; right: -0.4em;">&#x25ba;</span>&#x25ba;</span>
+        <div class="pagination" ng:show="fusionTo.numRecipes > perPage">
+            <span ng:click="fusionTo.pageNum = 0">&#x25c4;<span style="position: relative; left: -0.4em;">&#x25c4;</span></span>
+            <span ng:click="fusionTo.pageNum = fusionTo.pageNum - 1">&#x25c4;</span>
+            Page {{fusionTo.pageNum + 1}} / {{Math.ceil(fusionTo.numRecipes / perPage)}}
+            <span ng:click="fusionTo.pageNum = fusionTo.pageNum + 1">&#x25ba;</span>
+            <span ng:click="fusionTo.pageNum = fusionTo.lastPage"><span style="position: relative; right: -0.4em;">&#x25ba;</span>&#x25ba;</span>
         </div>
     </div>
 
-    <p>
-        <div class="ui mini input">
-            <label>Filter: <input type="text" size="30" ng-model="filterStr"></label>
-            &nbsp;
-            <button ng:click="filterStr = ''" class="ui mini button">Clear</button>
-        </div>
-    </p>
+    <div class="ui mini input">
+        <label>Filter: <input type="text" size="30" ng-model="fusionTo.filterStr"></label>
+        &nbsp;
+        <button ng:click="fusionTo.filterStr = ''" class="ui mini button">Clear</button>
+    </div>
 
-    <table id="recipes" class="ui table unstackable striped">
+    <table class="ui table unstackable striped recipesTable">
         <thead>
         <tr>
             <th>#</th>
@@ -123,12 +121,61 @@
         </tr>
         </thead>
         <tbody>
-        <tr ng:repeat="recipe in recipes track by $index">
+        <tr ng:repeat="recipe in fusionTo.recipes track by $index">
             <td>{{recipe.num + 1}}</td>
             <td>¥{{recipe.cost | number}}</td>
             <td ng:repeat="persona in recipe.sources track by $index">
                 <a href='#/persona/{{persona.name}}'>{{persona.name}}</a>
                 ({{persona.level}} / {{persona.arcana}})
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <h3>Fusion from this persona ({{fusionFrom.numRecipes}} Recipes)</h3>
+
+    <div ng:show="!persona.special && !persona.rare">
+        <p><b>Note</b>: Don't get the same results? Remember to configure which DLC persona you own
+            in <a href="#/setting/">Setting</a>.</p>
+        <p>Also, remember that rare persona fusion depends on your persona's current level.</p>
+    </div>
+
+    <div class="caption">
+        <div class="pagination" ng:show="fusionFrom.numRecipes > perPage">
+            <span ng:click="fusionFrom.pageNum = 0">&#x25c4;<span style="position: relative; left: -0.4em;">&#x25c4;</span></span>
+            <span ng:click="fusionFrom.pageNum = fusionFrom.pageNum - 1">&#x25c4;</span>
+            Page {{fusionFrom.pageNum + 1}} / {{Math.ceil(fusionFrom.numRecipes / perPage)}}
+            <span ng:click="fusionFrom.pageNum = fusionFrom.pageNum + 1">&#x25ba;</span>
+            <span ng:click="fusionFrom.pageNum = fusionFrom.lastPage"><span style="position: relative; right: -0.4em;">&#x25ba;</span>&#x25ba;</span>
+        </div>
+    </div>
+
+    <div class="ui mini input">
+        <label>Filter: <input type="text" size="30" ng-model="fusionFrom.filterStr"></label>
+        &nbsp;
+        <button ng:click="fusionFrom.filterStr = ''" class="ui mini button">Clear</button>
+    </div>
+
+    <table class="ui table unstackable striped recipesTable">
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>Cost</th>
+            <th>Fuse with</th>
+            <th>Result</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng:repeat="recipe in fusionFrom.recipes track by $index">
+            <td>{{recipe.num + 1}}</td>
+            <td>¥{{recipe.cost | number}}</td>
+            <td>
+                <a href='#/persona/{{recipe.sources[1].name}}'>{{recipe.sources[1].name}}</a>
+                ({{recipe.sources[1].level}} / {{recipe.sources[1].arcana}})
+            </td>
+            <td>
+                <a href='#/persona/{{recipe.result.name}}'>{{recipe.result.name}}</a>
+                ({{recipe.result.level}} / {{recipe.result.arcana}})
             </td>
         </tr>
         </tbody>

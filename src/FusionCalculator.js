@@ -10,24 +10,79 @@ var FusionCalculator = (function () {
         this.personaeByArcana = personaeByArcana;
     }
     /**
+     * Fuse 2 persona. This can handle normal fusion, rare fusion or special fusion.
+     * @param persona1 First persona to fuse
+     * @param persona2 Second persona to fuse
+     * @returns {PersonaData} The result persona, or null if the fusion is not possible
+     */
+    FusionCalculator.prototype.fuse = function (persona1, persona2) {
+        // special fusion
+        var result = this.getSpecialFuseResult(persona1, persona2);
+        if (result !== null) {
+            return result;
+        }
+        // rare fusion
+        if ((persona1.rare && !persona2.rare) || (!persona1.rare && persona2.rare)) {
+            var rarePersona = persona1.rare ? persona1 : persona2;
+            var normalPersona = persona1.rare ? persona2 : persona1;
+            result = this.fuseRare(rarePersona, normalPersona);
+            return result;
+        }
+        // either both rare or both normal => normal fusion
+        result = this.fuseNormal(persona1, persona2);
+        return result;
+    };
+    /**
+     * Get all 2-fusion recipes with the given persona as one of the ingredients
+     * @param persona The persona to fuse from
+     * @returns {Recipe[]} The list of recipes. In each recipe's sources, the given persona
+     * is guaranteed to be the first one.
+     */
+    FusionCalculator.prototype.getAllResultingRecipesFrom = function (persona) {
+        var recipes = [];
+        for (var i = 0; i < customPersonaList.length; i++) {
+            var result = this.fuse(persona, customPersonaList[i]);
+            if (result !== null) {
+                var recipe = {
+                    sources: [persona, customPersonaList[i]],
+                    result: result
+                };
+                this.addRecipe(recipe, recipes, false);
+            }
+        }
+        return recipes;
+    };
+    /**
+     * Return the result persona if 2 given persona are part of a special formula
+     * @param persona1 The first persona
+     * @param persona2 The second persona
+     * @returns {boolean} the result persona if persona1 + persona2 is a special formula, false otherwise
+     */
+    FusionCalculator.prototype.getSpecialFuseResult = function (persona1, persona2) {
+        for (var x = 0; x < special2Combos.length; x++) {
+            var combo = special2Combos[x];
+            if (((persona1.name === combo.sources[0] && persona2.name === combo.sources[1]) ||
+                (persona2.name === combo.sources[0] && persona1.name === combo.sources[1]))) {
+                return personaMap[combo.result];
+            }
+        }
+        return null;
+    };
+    /**
      * Fuse 2 persona. Doesn't handle rare fusion and special fusion.
      * @param persona1 First persona to fuse
      * @param persona2 Second persona to fuse
      * @returns The result persona, or null when the fusion is not possible,
      * the fusion is a rare fusion, or the fusion is a special fusion.
      */
-    FusionCalculator.prototype.fuse2 = function (persona1, persona2) {
+    FusionCalculator.prototype.fuseNormal = function (persona1, persona2) {
         // don't handle rare fusion between a normal persona and a rare persona
         if ((persona1.rare && !persona2.rare) || (persona2.rare && !persona1.rare)) {
             return null;
         }
         // don't handle 2-persona-special fusions
-        for (var x = 0; x < specialCombos.length; x++) {
-            var combo = specialCombos[x];
-            if (((persona1.name === combo.sources[0] && persona2.name === combo.sources[1]) ||
-                (persona2.name === combo.sources[0] && persona1.name === combo.sources[1]))) {
-                return null;
-            }
+        if (this.getSpecialFuseResult(persona1, persona2) !== null) {
+            return null;
         }
         var level = 1 + Math.floor((persona1.level + persona2.level) / 2);
         var arcana = getResultArcana(persona1.arcana, persona2.arcana);
@@ -105,7 +160,7 @@ var FusionCalculator = (function () {
                 for (var j = 0; j < combo.sources.length; j++) {
                     recipe.sources.push(personaMap[combo.sources[j]]);
                 }
-                this.addRecipe(recipe, allRecipe);
+                this.addRecipe(recipe, allRecipe, true);
                 return allRecipe;
             }
         }
@@ -131,7 +186,7 @@ var FusionCalculator = (function () {
             return _this.isGoodRecipe(value, persona);
         });
         for (var i = 0; i < recipes.length; i++) {
-            this.addRecipe(recipes[i], allRecipe);
+            this.addRecipe(recipes[i], allRecipe, true);
         }
         return allRecipe;
     };
@@ -172,7 +227,7 @@ var FusionCalculator = (function () {
                         continue;
                     if (persona2.rare && !persona1.rare)
                         continue;
-                    var result = this.fuse2(persona1, persona2);
+                    var result = this.fuseNormal(persona1, persona2);
                     if (!result)
                         continue;
                     recipes.push({
@@ -206,17 +261,24 @@ var FusionCalculator = (function () {
      * to the recipe and sort the recipe's sources.
      * @param recipe The recipe to add
      * @param allRecipes List of recipes to add to
+     * @param sortIngredients if true the ingredient list will be sorted
      */
-    FusionCalculator.prototype.addRecipe = function (recipe, allRecipes) {
+    FusionCalculator.prototype.addRecipe = function (recipe, allRecipes, sortIngredients) {
         // add an approximated cost
-        recipe.cost = 0;
+        recipe.cost = this.getApproxCost(recipe);
+        if (sortIngredients) {
+            // Sort ingredients so that highest level persona is first
+            recipe.sources.sort(function (a, b) { return b.level - a.level; });
+        }
+        allRecipes.push(recipe);
+    };
+    FusionCalculator.prototype.getApproxCost = function (recipe) {
+        var cost = 0;
         for (var i = 0, source = null; source = recipe.sources[i]; i++) {
             var level = source.level;
-            recipe.cost += (27 * level * level) + (126 * level) + 2147;
+            cost += (27 * level * level) + (126 * level) + 2147;
         }
-        // Sort ingredients so that highest level persona is first
-        recipe.sources.sort(function (a, b) { return b.level - a.level; });
-        allRecipes.push(recipe);
+        return cost;
     };
     return FusionCalculator;
 }());

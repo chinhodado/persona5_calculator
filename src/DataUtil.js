@@ -109,6 +109,15 @@ var arcanaMap = (function () {
 var getResultArcana = function (arcana1, arcana2) {
     return arcanaMap[arcana1][arcana2];
 };
+var special2Combos = (function () {
+    var combos = [];
+    for (var i = 0; i < specialCombos.length; i++) {
+        if (specialCombos[i].sources.length == 2) {
+            combos.push(specialCombos[i]);
+        }
+    }
+    return combos;
+})();
 function getElems(personaName) {
     var elems = personaMap[personaName].elems;
     for (var i = 0; i < elems.length; i++) {

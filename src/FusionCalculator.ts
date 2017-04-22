@@ -14,25 +14,88 @@ class FusionCalculator {
     }
 
     /**
+     * Fuse 2 persona. This can handle normal fusion, rare fusion or special fusion.
+     * @param persona1 First persona to fuse
+     * @param persona2 Second persona to fuse
+     * @returns {PersonaData} The result persona, or null if the fusion is not possible
+     */
+    public fuse(persona1: PersonaData, persona2: PersonaData): PersonaData {
+        // special fusion
+        let result = this.getSpecialFuseResult(persona1, persona2);
+        if (result !== null) {
+            return result;
+        }
+
+        // rare fusion
+        if ((persona1.rare && !persona2.rare) || (!persona1.rare && persona2.rare)) {
+            let rarePersona = persona1.rare? persona1 : persona2;
+            let normalPersona = persona1.rare? persona2 : persona1;
+            result = this.fuseRare(rarePersona, normalPersona);
+            return result;
+        }
+
+        // either both rare or both normal => normal fusion
+        result = this.fuseNormal(persona1, persona2);
+        return result;
+    }
+
+    /**
+     * Get all 2-fusion recipes with the given persona as one of the ingredients
+     * @param persona The persona to fuse from
+     * @returns {Recipe[]} The list of recipes. In each recipe's sources, the given persona
+     * is guaranteed to be the first one.
+     */
+    public getAllResultingRecipesFrom(persona: PersonaData): Recipe[] {
+        let recipes: Recipe[] = [];
+        for (let i = 0; i < customPersonaList.length; i++) {
+            let result = this.fuse(persona, customPersonaList[i]);
+            if (result !== null) {
+                let recipe = {
+                    sources: [persona, customPersonaList[i]],
+                    result: result
+                };
+
+                this.addRecipe(recipe, recipes, false);
+            }
+        }
+
+        return recipes;
+    }
+
+    /**
+     * Return the result persona if 2 given persona are part of a special formula
+     * @param persona1 The first persona
+     * @param persona2 The second persona
+     * @returns {boolean} the result persona if persona1 + persona2 is a special formula, false otherwise
+     */
+    private getSpecialFuseResult(persona1: PersonaData, persona2: PersonaData): PersonaData {
+        for (let x = 0; x < special2Combos.length; x++) {
+            let combo = special2Combos[x];
+            if (((persona1.name === combo.sources[0] && persona2.name === combo.sources[1]) ||
+                (persona2.name === combo.sources[0] && persona1.name === combo.sources[1]))) {
+                return personaMap[combo.result];
+            }
+        }
+
+        return null;
+    }
+
+    /**
      * Fuse 2 persona. Doesn't handle rare fusion and special fusion.
      * @param persona1 First persona to fuse
      * @param persona2 Second persona to fuse
      * @returns The result persona, or null when the fusion is not possible,
      * the fusion is a rare fusion, or the fusion is a special fusion.
      */
-    public fuse2(persona1: PersonaData, persona2: PersonaData): PersonaData {
+    private fuseNormal(persona1: PersonaData, persona2: PersonaData): PersonaData {
         // don't handle rare fusion between a normal persona and a rare persona
         if ((persona1.rare && !persona2.rare) || (persona2.rare && !persona1.rare)) {
             return null;
         }
 
         // don't handle 2-persona-special fusions
-        for (let x = 0; x < specialCombos.length; x++) {
-            let combo = specialCombos[x];
-            if (((persona1.name === combo.sources[0] && persona2.name === combo.sources[1]) ||
-                (persona2.name === combo.sources[0] && persona1.name === combo.sources[1]))) {
-                return null;
-            }
+        if (this.getSpecialFuseResult(persona1, persona2) !== null) {
+            return null;
         }
 
         let level = 1 + Math.floor((persona1.level + persona2.level) / 2);
@@ -73,7 +136,7 @@ class FusionCalculator {
      * @param mainPersona The normal persona
      * @returns The result persona, or null when the fusion is not possible.
      */
-    public fuseRare(rarePersona: PersonaData, mainPersona: PersonaData): PersonaData {
+    private fuseRare(rarePersona: PersonaData, mainPersona: PersonaData): PersonaData {
         let modifier = rareCombos[mainPersona.arcana][rarePersonae.indexOf(rarePersona.name)];
         let personae = this.personaeByArcana[mainPersona.arcana];
         let mainPersonaIndex = personae.indexOf(mainPersona);
@@ -112,7 +175,7 @@ class FusionCalculator {
                 for (let j = 0; j < combo.sources.length ; j++) {
                     recipe.sources.push(personaMap[combo.sources[j]]);
                 }
-                this.addRecipe(recipe, allRecipe);
+                this.addRecipe(recipe, allRecipe, true);
                 return allRecipe;
             }
         }
@@ -140,7 +203,7 @@ class FusionCalculator {
            return this.isGoodRecipe(value, persona);
         });
         for (let i = 0; i < recipes.length; i++) {
-            this.addRecipe(recipes[i], allRecipe);
+            this.addRecipe(recipes[i], allRecipe, true);
         }
 
         return allRecipe;
@@ -182,7 +245,7 @@ class FusionCalculator {
                     if (persona1.rare && !persona2.rare) continue;
                     if (persona2.rare && !persona1.rare) continue;
 
-                    let result = this.fuse2(persona1, persona2);
+                    let result = this.fuseNormal(persona1, persona2);
                     if (!result) continue;
                     recipes.push({
                         sources: [persona1, persona2],
@@ -216,18 +279,28 @@ class FusionCalculator {
      * to the recipe and sort the recipe's sources.
      * @param recipe The recipe to add
      * @param allRecipes List of recipes to add to
+     * @param sortIngredients if true the ingredient list will be sorted
      */
-    private addRecipe(recipe: Recipe, allRecipes: Recipe[]): void {
+    private addRecipe(recipe: Recipe, allRecipes: Recipe[], sortIngredients: boolean): void {
         // add an approximated cost
-        recipe.cost = 0;
-        for (let i = 0, source = null; source = recipe.sources[i]; i++) {
-            let level = source.level;
-            recipe.cost += (27 * level * level) + (126 * level) + 2147;
+        recipe.cost = this.getApproxCost(recipe);
+
+        if (sortIngredients) {
+            // Sort ingredients so that highest level persona is first
+            recipe.sources.sort((a, b)=> b.level - a.level);
         }
 
-        // Sort ingredients so that highest level persona is first
-        recipe.sources.sort((a, b)=> b.level - a.level);
         allRecipes.push(recipe);
+    }
+
+    private getApproxCost(recipe: Recipe): number {
+        let cost = 0;
+        for (let i = 0, source = null; source = recipe.sources[i]; i++) {
+            let level = source.level;
+            cost += (27 * level * level) + (126 * level) + 2147;
+        }
+
+        return cost;
     }
 }
 
