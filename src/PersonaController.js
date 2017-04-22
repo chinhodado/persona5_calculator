@@ -38,7 +38,7 @@ var PersonaController = (function () {
         // Note: skillList are skills in a sorted list for displaying with Angular.
         // It's different from the existing skills property which is a map.
         this.$scope.persona.skillList = getSkills(personaName);
-        this.$scope.perPage = 100;
+        this.$scope.perPage = 20;
         this.$scope.lastPage = Math.floor(this.$scope.allRecipes.length / this.$scope.perPage);
         this.$scope.pageNum = 0;
         this.$scope.$watch('filterStr', this.paginateAndFilter.bind(this));
