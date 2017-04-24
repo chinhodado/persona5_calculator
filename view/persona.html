@@ -107,7 +107,10 @@
     </div>
 
     <div class="ui mini input">
-        <label>Filter: <input type="text" size="30" ng-model="fusionTo.filterStr"></label>
+        <label>
+          Filter:
+          <input type="text" size="30" ng-model="fusionTo.filterStr" autocorrect="off" autocomplete="off" spellcheck="false">
+        </label>
         &nbsp;
         <button ng:click="fusionTo.filterStr = ''" class="ui mini button">Clear</button>
     </div>
@@ -151,7 +154,10 @@
     </div>
 
     <div class="ui mini input">
-        <label>Filter: <input type="text" size="30" ng-model="fusionFrom.filterStr"></label>
+        <label>
+          Filter:
+          <input type="text" size="30" ng-model="fusionFrom.filterStr" autocorrect="off" autocomplete="off" spellcheck="false">
+        </label>
         &nbsp;
         <button ng:click="fusionFrom.filterStr = ''" class="ui mini button">Clear</button>
     </div>
