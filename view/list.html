@@ -33,7 +33,7 @@
     </tr>
     </thead>
     <tbody>
-    <tr ng:repeat="persona in fullPersonaList | orderBy:sortBy:sortReverse | filter:filterStr">
+    <tr ng:repeat="persona in fullPersonaList | orderBy:sortFunc:sortReverse | filter:filterStr">
         <td>{{persona.level}}</td>
         <td class="left-border"><a href='#/persona/{{persona.name}}'>{{persona.name}}</a></td>
         <td class="left-border">{{persona.arcana}}</td>
