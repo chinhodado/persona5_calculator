@@ -158,7 +158,8 @@ var skillMap = {
     "Almighty Amp": {
         "effect": "Strengthen Almighty attacks by 50%.",
         "element": "passive",
-        "personas": {}
+        "personas": {},
+        "note": "Available from Network Fusion"
     },
     "Almighty Boost": {
         "effect": "Strengthen Almighty attacks by 25%.",
@@ -166,7 +167,8 @@ var skillMap = {
         "personas": {
             "Messiah": 87,
             "Messiah Picaro": 96
-        }
+        },
+        "note": "Also available from Network Fusion"
     },
     "Ambient Aid": {
         "effect": "Greatly increase inflicting rate of all status effects under rainy day or special weather warning.",
@@ -2020,10 +2022,11 @@ var skillMap = {
         },
         "unique": "Magatsu-Izanagi"
     },
-    "Mage's Gift": {
+    "Magic Ability": {
         "effect": "Strengthen all magical attacks by 25%.",
         "element": "passive",
-        "personas": {}
+        "personas": {},
+        "note": "Available from Network Fusion"
     },
     "Mahama": {
         "cost": 1800,

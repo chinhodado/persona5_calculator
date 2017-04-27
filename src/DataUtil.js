@@ -168,6 +168,9 @@ function getSkillPersonaList(skill) {
         }
     }
     var str = arr.join(", ");
+    if (skill.note) {
+        str = (str ? (str + ". ") : "") + skill.note;
+    }
     return str;
 }
 function createPersonaLink(personaName) {

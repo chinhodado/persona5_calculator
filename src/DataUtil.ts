@@ -171,7 +171,7 @@ function getSkills(personaName: string) {
     return resSkills;
 }
 
-function getSkillPersonaList(skill: SkillData) {
+function getSkillPersonaList(skill: SkillData): string {
     let arr = [];
     for (let key in skill.personas) {
         if (skill.personas.hasOwnProperty(key)) {
@@ -181,6 +181,9 @@ function getSkillPersonaList(skill: SkillData) {
         }
     }
     let str = arr.join(", ");
+    if (skill.note) {
+        str = (str? (str + ". ") : "") + skill.note;
+    }
     return str;
 }
 
