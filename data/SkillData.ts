@@ -2047,7 +2047,7 @@ const skillMap: SkillMap = {
         },
         "unique": "Magatsu-Izanagi"
     },
-    "Mage's Gift": {
+    "Magic Ability": {
         "effect": "Strengthen all magical attacks by 25%.",
         "element": "passive",
         "personas": {}
