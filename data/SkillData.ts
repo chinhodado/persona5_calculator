@@ -2559,7 +2559,7 @@ const skillMap: SkillMap = {
     },
     "Memory Blow": {
         "cost": 15,
-        "effect": "Deal medium Phys damage and inflict Forget (low odds) to all foes.",
+        "effect": "Light Physical dmg to all foes. Low chance of Forget.",
         "element": "phys",
         "fuse": "Jikokuten",
         "personas": {
