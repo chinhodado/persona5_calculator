@@ -2512,7 +2512,7 @@ _FULL_COMPENDIUM = {
         "st": "24",
         "wind": "wk"
     },
-    "Hecatoncheir": {
+    "Hecatoncheires": {
         "ag": "25",
         "arcana": "Hanged Man",
         "curse": "nu",

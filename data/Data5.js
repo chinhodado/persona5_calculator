@@ -261,7 +261,7 @@ var specialCombos = [
     { 'result': 'Asura-Ou', 'sources': ['Zouchouten', 'Jikokuten', 'Koumokuten', 'Bishamonten'] },
     { 'result': 'Black Frost', 'sources': ['Jack O\'Lantern', 'Jack Frost', 'King Frost'] },
     { 'result': 'Bugs', 'sources': ['Pixie', 'Pisaca', 'Hariti'] },
-    { 'result': 'Chi You', 'sources': ['Hecatoncheir', 'White Rider', 'Thor', 'Yoshitsune', 'Cu Chulainn'] },
+    { 'result': 'Chi You', 'sources': ['Hecatoncheires', 'White Rider', 'Thor', 'Yoshitsune', 'Cu Chulainn'] },
     { 'result': 'Flauros', 'sources': ['Berith', 'Andras', 'Eligor'] },
     { 'result': 'Kohryu', 'sources': ['Genbu', 'Seiryu', 'Suzaku', 'Byakko'] },
     { 'result': 'Lucifer', 'sources': ['Anubis', 'Ananta', 'Trumpeter', 'Michael', 'Metatron', 'Satan'] },

@@ -1106,10 +1106,10 @@ var skillMap = {
     "Endure": {
         "effect": "Survive one fatal blow with 1 HP remaining.",
         "element": "passive",
-        "fuse": "Hecatoncheir",
+        "fuse": "Hecatoncheires",
         "personas": {
             "Ganesha": 56,
-            "Hecatoncheir": 43,
+            "Hecatoncheires": 43,
             "Hope Diamond": 0,
             "Orpheus": 27,
             "Orpheus Picaro": 30,
@@ -1338,7 +1338,7 @@ var skillMap = {
         "fuse": "Mothman",
         "personas": {
             "Girimehkala": 46,
-            "Hecatoncheir": 45,
+            "Hecatoncheires": 45,
             "Lamia": 28,
             "White Rider": 44
         }
@@ -1640,7 +1640,7 @@ var skillMap = {
         "personas": {
             "Ardha": 89,
             "Ariadne": 32,
-            "Hecatoncheir": 46,
+            "Hecatoncheires": 46,
             "Lucifer": 97,
             "Neko Shogun": 36,
             "Thanatos": 69
@@ -2877,7 +2877,7 @@ var skillMap = {
             "Dakini": 55,
             "Futsunushi": 78,
             "Ganesha": 60,
-            "Hecatoncheir": 48,
+            "Hecatoncheires": 48,
             "Mara": 74,
             "Raphael": 0,
             "Setanta": 34,
@@ -3149,7 +3149,7 @@ var skillMap = {
         "fuse": "Koumokuten",
         "personas": {
             "Cerberus": 58,
-            "Hecatoncheir": 0,
+            "Hecatoncheires": 0,
             "Hope Diamond": 0,
             "Koumokuten": 0
         }
@@ -3635,7 +3635,7 @@ var skillMap = {
         "personas": {
             "Byakko": 0,
             "Girimehkala": 0,
-            "Hecatoncheir": 0,
+            "Hecatoncheires": 0,
             "Matador": 20,
             "Power": 42,
             "Rangda": 0,
@@ -3652,7 +3652,7 @@ var skillMap = {
             "Andras": 11,
             "Eligor": 0,
             "Fuu-Ki": 0,
-            "Hecatoncheir": 0,
+            "Hecatoncheires": 0,
             "Inugami": 0,
             "Ippon-Datara": 0,
             "Izanagi": 0,

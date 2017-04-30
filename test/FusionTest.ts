@@ -49,7 +49,7 @@ describe('FusionCalculator', () => {
             });
 
             it('should return correct persona when have to skip rare persona below 2 ingredients', () => {
-                expect(fuseTestWrapper("Moloch", "Hecatoncheir")).to.equal(personaMap["Take-Minakata"]);
+                expect(fuseTestWrapper("Moloch", "Hecatoncheires")).to.equal(personaMap["Take-Minakata"]);
             });
 
             it('should return correct persona when have to skip rare and special personae below 2 ingredients', () => {
@@ -65,7 +65,7 @@ describe('FusionCalculator', () => {
             });
 
             it('should return correct persona when have to skip rare midway and skip ingredient when fusing 2 persona', () => {
-                expect(fuseTestWrapper("Take-Minakata", "Hecatoncheir")).to.equal(personaMap["Orthrus"]);
+                expect(fuseTestWrapper("Take-Minakata", "Hecatoncheires")).to.equal(personaMap["Orthrus"]);
             });
         });
 

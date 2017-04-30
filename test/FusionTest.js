@@ -39,7 +39,7 @@ describe('FusionCalculator', function () {
                 expect(fuseTestWrapper("Ananta", "Kaiwan")).to.equal(personaMap["Fuu-Ki"]);
             });
             it('should return correct persona when have to skip rare persona below 2 ingredients', function () {
-                expect(fuseTestWrapper("Moloch", "Hecatoncheir")).to.equal(personaMap["Take-Minakata"]);
+                expect(fuseTestWrapper("Moloch", "Hecatoncheires")).to.equal(personaMap["Take-Minakata"]);
             });
             it('should return correct persona when have to skip rare and special personae below 2 ingredients', function () {
                 expect(fuseTestWrapper("Dionysus", "Black Frost")).to.equal(personaMap["Ose"]);
@@ -51,7 +51,7 @@ describe('FusionCalculator', function () {
                 expect(fuseTestWrapper("Shiki-Ouji", "Slime")).to.equal(personaMap["Shiisaa"]);
             });
             it('should return correct persona when have to skip rare midway and skip ingredient when fusing 2 persona', function () {
-                expect(fuseTestWrapper("Take-Minakata", "Hecatoncheir")).to.equal(personaMap["Orthrus"]);
+                expect(fuseTestWrapper("Take-Minakata", "Hecatoncheires")).to.equal(personaMap["Orthrus"]);
             });
         });
         describe('different arcana fusion', function () {

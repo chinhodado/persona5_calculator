@@ -933,7 +933,7 @@ const personaMap : PersonaMap = {
         },
         "personality": "Unknown"
     },
-    "Hecatoncheir": {
+    "Hecatoncheires": {
         "arcana": "Hanged Man",
         "level": 42,
         "stats": [29, 25, 30, 25, 24],
