@@ -14,7 +14,7 @@ interface SkillData {
         [name: string]: number;
     };
     talk?: string;
-    fuse?: string;
+    fuse?: string | string[];
     unique?: string;
     dlc?: boolean;
     note?: string;
@@ -122,7 +122,7 @@ const skillMap: SkillMap = {
         "cost": 1200,
         "effect": "Deal heavy Fire damage to 1 foe.",
         "element": "fire",
-        "fuse": "Cerberus",
+        "fuse": ["Cerberus", "Orpheus Picaro"],
         "personas": {
             "Baphomet": 0,
             "Belial": 0,
@@ -338,7 +338,8 @@ const skillMap: SkillMap = {
             "King Frost": 64,
             "Shiva": 87,
             "Siegfried": 72
-        }
+        },
+        fuse: "Ariadne Picaro"
     },
     "Bad Beat": {
         "cost": 21,
@@ -817,7 +818,7 @@ const skillMap: SkillMap = {
         "cost": 1800,
         "effect": "Fully restore 1 ally's HP.",
         "element": "healing",
-        "fuse": "Norn",
+        "fuse": ["Norn", "Kaguya Picaro"],
         "personas": {
             "Bishamonten": 0,
             "Daisoujou": 45,
@@ -1504,7 +1505,8 @@ const skillMap: SkillMap = {
             "Asterius Picaro": 68,
             "Chi You": 0,
             "Lucifer": 0
-        }
+        },
+        fuse: "Asterius Picaro"
     },
     "God's Hand": {
         "cost": 25,
@@ -1613,7 +1615,7 @@ const skillMap: SkillMap = {
         "cost": 3000,
         "effect": "Increase 1 ally's Attack, Defense and Agility for 3 turns.",
         "element": "support",
-        "fuse": "Raphael",
+        "fuse": ["Raphael", "Magatsu-Izanagi Picaro"],
         "personas": {
             "Lucifer": 96,
             "Magatsu-Izanagi": 50,
@@ -1764,7 +1766,8 @@ const skillMap: SkillMap = {
             "Ishtar": 87,
             "Lucifer": 98,
             "Messiah Picaro": 91
-        }
+        },
+        fuse: "Messiah Picaro"
     },
     "Invigorate 1": {
         "effect": "Recover 3 SP each turn in battle.",
@@ -3572,7 +3575,8 @@ const skillMap: SkillMap = {
             "Mada": 91,
             "Tsukiyomi Picaro": 61,
             "Uriel": 86
-        }
+        },
+        fuse: "Tsukiyomi Picaro"
     },
     "Spirit Drain": {
         "cost": 300,

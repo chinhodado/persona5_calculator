@@ -76,7 +76,16 @@ const skillList: SkillData[] = (() =>{
                 skill.talkDisplay = createPersonaLink(skill.talk);
             }
             if (skill.fuse) {
-                skill.fuseDisplay = createPersonaLink(skill.fuse);
+                if (typeof skill.fuse === 'string') {
+                    skill.fuseDisplay = createPersonaLink(skill.fuse);
+                }
+                else { // it's an array
+                    let arr = [];
+                    for (let i = 0; i < skill.fuse.length; i++) {
+                        arr.push(createPersonaLink(skill.fuse[i]));
+                    }
+                    skill.fuseDisplay = arr.join(", ");
+                }
             }
             arr.push(skill);
         }

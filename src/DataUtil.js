@@ -69,7 +69,16 @@ var skillList = (function () {
                 skill.talkDisplay = createPersonaLink(skill.talk);
             }
             if (skill.fuse) {
-                skill.fuseDisplay = createPersonaLink(skill.fuse);
+                if (typeof skill.fuse === 'string') {
+                    skill.fuseDisplay = createPersonaLink(skill.fuse);
+                }
+                else {
+                    var arr_1 = [];
+                    for (var i = 0; i < skill.fuse.length; i++) {
+                        arr_1.push(createPersonaLink(skill.fuse[i]));
+                    }
+                    skill.fuseDisplay = arr_1.join(", ");
+                }
             }
             arr.push(skill);
         }
