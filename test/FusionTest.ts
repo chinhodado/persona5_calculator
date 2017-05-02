@@ -224,6 +224,11 @@ describe('Data', () => {
     it("all persona's skills should be in the skill list", () => {
         expect(checkSkill()).to.equal(true);
     });
+
+    it("all skills in SkillData should have valid persona in the persona list, and " +
+        "all skills in SkillData should have correct list of persona that learn that skill at the correct level", () => {
+        expect(checkSkillPersona()).to.equal(true);
+    });
 });
 
 function checkSkill() {
@@ -234,6 +239,33 @@ function checkSkill() {
                 if (!skillMap[key]) {
                     isGood = false;
                     throw new Error("Skill not found: " + key);
+                }
+            }
+        }
+    }
+    return isGood;
+}
+
+function checkSkillPersona() {
+    let isGood = true;
+    for (let i = 0; i < skillList.length; i++) {
+        for (let key in skillList[i].personas) {
+            if (skillList[i].personas.hasOwnProperty(key)) {
+                if (!personaMap[key]) {
+                    isGood = false;
+                    throw new Error("Persona not found: " + key);
+                }
+
+                let skillLevelInPersonaMap = personaMap[key].skills[skillList[i].name];
+                let skillLevelInSkillMap = skillList[i].personas[key];
+                if (skillLevelInPersonaMap === undefined) {
+                    isGood = false;
+                    throw new Error(key + " doesn't learn " + skillList[i].name);
+                }
+
+                if (skillLevelInPersonaMap !== skillLevelInSkillMap) {
+                    isGood = false;
+                    throw new Error(key + " learns " + skillList[i].name + " at at mismatched level");
                 }
             }
         }
