@@ -53,6 +53,9 @@ describe('FusionCalculator', function () {
             it('should return correct persona when have to skip rare midway and skip ingredient when fusing 2 persona', function () {
                 expect(fuseTestWrapper("Take-Minakata", "Hecatoncheires")).to.equal(personaMap["Orthrus"]);
             });
+            it('should return null when have to skip special midway, then skip ingredient, and ingredient is lowest in arcana rank', function () {
+                expect(fuseTestWrapper("Messiah", "Anubis")).to.equal(null);
+            });
         });
         describe('different arcana fusion', function () {
             it('should return null when result level is higher than the highest level persona in the resulting arcana ' +
