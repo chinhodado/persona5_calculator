@@ -114,13 +114,13 @@ tr:hover td:last-child {
     border-left: 1px solid rgba(34,36,38,.1) !important;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 768px) {
     .mobile-hidden {
         display: none;
     }
 }
 
-@media only screen and (min-width: 993px) {
+@media only screen and (min-width: 769px) {
     .desktop-hidden {
         display: none;
     }
