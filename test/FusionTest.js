@@ -74,7 +74,7 @@ describe('FusionCalculator', function () {
                 expect(fuseTestWrapper("Crystal Skull", "Regent")).to.equal(personaMap["Mithra"]);
             });
         });
-        describe('special fusion)', function () {
+        describe('special fusion', function () {
             it('should return Alice when fusing Nebiros and Belial', function () {
                 expect(fuseTestWrapper("Nebiros", "Belial")).to.equal(personaMap["Alice"]);
             });
@@ -97,6 +97,22 @@ describe('FusionCalculator', function () {
             });
             it('should return correct persona when go up one and have special persona as ingredient', function () {
                 expect(fuseTestWrapper("Orlov", "Neko Shogun")).to.equal(personaMap["Kaiwan"]);
+            });
+        });
+        describe('impossible fusions with Judgement', function () {
+            it('should return null when fusing Judgement + Death', function () {
+                expect(fuseTestWrapper("Messiah", "Mandrake")).to.equal(null);
+                expect(fuseTestWrapper("Trumpeter", "Hell Biker")).to.equal(null);
+            });
+            it('should return null when fusing Judgement + Chariot', function () {
+                expect(fuseTestWrapper("Messiah", "Agathion")).to.equal(null);
+            });
+            it('should return null when fusing Judgement + Strength', function () {
+                expect(fuseTestWrapper("Messiah Picaro", "Kelpie")).to.equal(null);
+            });
+            it('should return null when fusing Judgement + Justice', function () {
+                expect(fuseTestWrapper("Messiah Picaro", "Angel")).to.equal(null);
+                expect(fuseTestWrapper("Power", "Anubis")).to.equal(null);
             });
         });
     });

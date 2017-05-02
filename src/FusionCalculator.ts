@@ -100,6 +100,11 @@ class FusionCalculator {
 
         let level = 1 + Math.floor((persona1.level + persona2.level) / 2);
         let arcana = getResultArcana(persona1.arcana, persona2.arcana);
+        if (!arcana) {
+            // only Judgement + [Justice/Strength/Chariot/Death] can result in this
+            return null;
+        }
+
         let personae = this.personaeByArcana[arcana];
 
         let persona: PersonaData = null;
