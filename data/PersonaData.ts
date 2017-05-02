@@ -457,7 +457,7 @@ const personaMap : PersonaMap = {
             "Repel Fire": 71
         },
         "special": true,
-        "note": "Mission 「イジメっ子を操る陰のアイツ」 must be cleared"
+        "note": "Request \"One Who Bullies Bullies\" must be cleared"
     },
     "Black Ooze": {
         "arcana": "Moon",
@@ -505,7 +505,7 @@ const personaMap : PersonaMap = {
             "Triple Down": 52
         },
         "special": true,
-        "note": "Mission 「淀んだ瞳のネトスト女子」 must be cleared"
+        "note": "Request \"The Lovesick Cyberstalking Girl\" must be cleared"
     },
     "Byakko": {
         "arcana": "Temperance",
