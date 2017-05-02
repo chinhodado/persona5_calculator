@@ -22,7 +22,11 @@ In general, fusion in Persona 5 is still mostly the same as in Persona 3 and 4, 
  
  - There are DLC persona. If you don't own a DLC persona, it will be skipped during fusion.
  
-This calculator assumes that you own all DLC persona, and that when you do a rare fusion your persona is at the base level.
+This calculator assumes that you own all DLC persona by default (you can change which DLC persona you own [here](https://chinhodado.github.io/persona5_calculator/#/setting)). It also assumes that when you do a rare fusion your persona is at the base level, so please keep that in mind if you don't get the same result as shown.
+
+### Note on fusion with Judgement arcana
+
+According to the [official guide](http://atlus.com/persona5/manual/ps4/?pid=50) a fusion between a persona of the Judgement arcana and another persona of the Justice/Strength/Chariot/Death arcana is possible, but this is actually not the case in game.
  
 ### Credits
  
