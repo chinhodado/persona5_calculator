@@ -74,7 +74,7 @@ var skillMap = {
             "Rakshasa": 30,
             "Raphael": 82,
             "Thanatos Picaro": 73,
-            "Yamata no Orochi": 67
+            "Yamata-no-Orochi": 67
         },
         "talk": "Rakshasa"
     },
@@ -84,11 +84,11 @@ var skillMap = {
         "element": "fire",
         "personas": {
             "Hua Po": 0,
-            "Jack O'Lantern": 0,
+            "Jack-o'-Lantern": 0,
             "Onmoraki": 13,
             "Succubus": 8
         },
-        "talk": "Jack O'Lantern"
+        "talk": "Jack-o'-Lantern"
     },
     "Agidyne": {
         "cost": 1200,
@@ -212,7 +212,7 @@ var skillMap = {
         "talk": "Scathach"
     },
     "Angelic Grace": {
-        "effect": "Double evasion rate against all attacks except Bless/Curse/Almighty.",
+        "effect": "Double evasion against Fire/Ice/Elec/Wind/Nuke/Psy/Bless/Curse attacks.",
         "element": "passive",
         "fuse": "Sandalphon",
         "personas": {
@@ -405,9 +405,9 @@ var skillMap = {
         },
         "talk": "Chernobog"
     },
-    "Bloodsuck": {
+    "Life Drain": {
         "cost": 300,
-        "effect": "Drains ? HP and ? SP from 1 foe.",
+        "effect": "Drains HP from 1 foe.",
         "element": "almighty",
         "personas": {
             "Choronzon": 0,
@@ -505,7 +505,7 @@ var skillMap = {
         "effect": "Deal medium Ice damage to 1 foe.",
         "element": "ice",
         "personas": {
-            "Ame no Uzume": 0,
+            "Ame-no-Uzume": 0,
             "Belphegor": 0,
             "Lachesis": 0,
             "Lilim": 0,
@@ -548,7 +548,7 @@ var skillMap = {
         },
         "talk": "Berith"
     },
-    "Cool Breeze": {
+    "Life Aid": {
         "effect": "Recover 8% HP and SP after a successful battle.",
         "element": "passive",
         "fuse": "Lakshmi",
@@ -645,7 +645,7 @@ var skillMap = {
         "personas": {
             "Angel": 0,
             "Archangel": 0,
-            "Jack O'Lantern": 5,
+            "Jack-o'-Lantern": 5,
             "Mokoi": 0,
             "Naga": 27
         }
@@ -675,7 +675,7 @@ var skillMap = {
             "Pale Rider": 58,
             "Uriel": 0,
             "Valkyrie": 46,
-            "Yamata no Orochi": 0
+            "Yamata-no-Orochi": 0
         }
     },
     "Debilitate": {
@@ -810,7 +810,7 @@ var skillMap = {
         "element": "healing",
         "fuse": "High Pixie",
         "personas": {
-            "Ame no Uzume": 0,
+            "Ame-no-Uzume": 0,
             "Phoenix": 23,
             "High Pixie": 18,
             "Horus": 0,
@@ -845,7 +845,7 @@ var skillMap = {
         "element": "passive",
         "fuse": "Kikuri-Hime",
         "personas": {
-            "Ame no Uzume": 32,
+            "Ame-no-Uzume": 32,
             "Kaguya": 17,
             "Kaguya Picaro": 26,
             "Kikuri-Hime": 45,
@@ -1636,7 +1636,7 @@ var skillMap = {
         },
         "talk": "Kali"
     },
-    "High Voltage": {
+    "Fortified Moxy": {
         "effect": "Increase critical rate when beginning battle with preemptive turn.",
         "element": "passive",
         "personas": {
@@ -1875,9 +1875,9 @@ var skillMap = {
             "Michael": 0,
             "Mother Harlot": 0,
             "Seiryu": 65,
-            "Yamata no Orochi": 0
+            "Yamata-no-Orochi": 0
         },
-        "talk": "Yamata no Orochi"
+        "talk": "Yamata-no-Orochi"
     },
     "Mabufula": {
         "cost": 1600,
@@ -2382,7 +2382,7 @@ var skillMap = {
         "element": "electric",
         "fuse": "Shiisaa",
         "personas": {
-            "Ame no Uzume": 0,
+            "Ame-no-Uzume": 0,
             "Regent": 0
         }
     },
@@ -2538,7 +2538,7 @@ var skillMap = {
     },
     "Memory Blow": {
         "cost": 15,
-        "effect": "Light Physical dmg to all foes. Low chance of Forget.",
+        "effect": "Deal light Phys damage and inflict Forget (low odds) to all foes.",
         "element": "phys",
         "fuse": "Jikokuten",
         "personas": {
@@ -2817,14 +2817,14 @@ var skillMap = {
         "cost": 16,
         "effect": "Deal medium Phys damage and inflict Rage (low odds) to all foes.",
         "element": "phys",
-        "fuse": "Yamata no Orochi",
+        "fuse": "Yamata-no-Orochi",
         "personas": {
             "Cu Chulainn": 0,
             "Ose": 0,
             "Shiki-Ouji": 27,
             "White Rider": 0,
             "Yaksini": 22,
-            "Yamata no Orochi": 0
+            "Yamata-no-Orochi": 0
         },
         "talk": "Ose"
     },
@@ -2869,7 +2869,7 @@ var skillMap = {
     },
     "Charge": {
         "cost": 1500,
-        "effect": "Multiply user's next Phys or Gun attack damage by 2.5.",
+        "effect": "Multiply user's next Phys attack damage by 2.5.",
         "element": "support",
         "fuse": "Cu Chulainn",
         "personas": {
@@ -3006,7 +3006,7 @@ var skillMap = {
         },
         "talk": "Mandrake"
     },
-    "Purgatorial Wing": {
+    "Abyssal Wings": {
         "cost": 3000,
         "dlc": true,
         "effect": "Deal severe Curse damage to all foes.",
@@ -3078,7 +3078,7 @@ var skillMap = {
             "Andras": 0,
             "Genbu": 0,
             "Jack Frost": 13,
-            "Jack O'Lantern": 0,
+            "Jack-o'-Lantern": 0,
             "Jikokuten": 0,
             "Kodama": 0,
             "Koropokkuru": 12,
@@ -3195,7 +3195,7 @@ var skillMap = {
         "personas": {
             "Black Frost": 71,
             "Vishnu": 87,
-            "Yamata no Orochi": 66
+            "Yamata-no-Orochi": 66
         }
     },
     "Repel Ice": {
@@ -3346,7 +3346,7 @@ var skillMap = {
         "effect": "Reduce susceptibility to Sleep.",
         "element": "passive",
         "personas": {
-            "Jack O'Lantern": 7
+            "Jack-o'-Lantern": 7
         }
     },
     "Resist Wind": {
@@ -3438,7 +3438,7 @@ var skillMap = {
         "personas": {
             "Eligor": 0,
             "Ippon-Datara": 16,
-            "Jack O'Lantern": 4,
+            "Jack-o'-Lantern": 4,
             "Oni": 22,
             "Scathach": 0,
             "Silky": 10,
@@ -3470,7 +3470,7 @@ var skillMap = {
         "element": "passive",
         "fuse": "Baphomet",
         "personas": {
-            "Ame no Uzume": 34,
+            "Ame-no-Uzume": 34,
             "Baphomet": 62,
             "Mothman": 0,
             "Raja Naga": 57
@@ -3580,7 +3580,7 @@ var skillMap = {
             "Pisaca": 0
         }
     },
-    "String Art Beast": {
+    "Beast Weaver": {
         "cost": 20,
         "dlc": true,
         "effect": "Deal grave Phys damage to 1 foe and user is debuffed with Tarunda.",
@@ -3715,7 +3715,7 @@ var skillMap = {
         "effect": "Inflict Confuse (medium odds) to all foes.",
         "element": "ailment",
         "personas": {
-            "Ame no Uzume": 31,
+            "Ame-no-Uzume": 31,
             "Hell Biker": 41,
             "Kali": 0,
             "Mithras": 0,
@@ -3845,14 +3845,14 @@ var skillMap = {
         }
     },
     "Unshaken Will": {
-        "effect": "Impart immunity against all psychological ailments.",
+        "effect": "Impart immunity against Confuse, Fear, and Rage.",
         "element": "passive",
         "fuse": "Mada",
         "personas": {
             "Asura-Ou": 81,
             "Mada": 86,
             "Satanael": 98,
-            "Yamata no Orochi": 69
+            "Yamata-no-Orochi": 69
         }
     },
     "Vacuum Wave": {

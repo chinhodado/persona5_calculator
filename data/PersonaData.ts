@@ -91,7 +91,7 @@ const personaMap : PersonaMap = {
         "special": true,
         "max": true
     },
-    "Ame no Uzume": {
+    "Ame-no-Uzume": {
         "arcana": "Lovers",
         "level": 29,
         "stats": [15, 22, 19, 20, 18],
@@ -202,7 +202,7 @@ const personaMap : PersonaMap = {
             "Auto-Masuku": 88,
             "Cosmic Flare": 0,
             "God's Hand": 0,
-            "High Voltage": 89,
+            "Fortified Moxy": 89,
             "Invigorate 3": 0,
             "Salvation": 90
         },
@@ -218,10 +218,10 @@ const personaMap : PersonaMap = {
             "Apt Pupil": 0,
             "Attack Master": 31,
             "Evade Physical": 34,
-            "High Voltage": 32,
+            "Fortified Moxy": 32,
             "Miracle Punch": 0,
             "Charge": 36,
-            "String Art Beast": 0
+            "Beast Weaver": 0
         },
         "dlc": true
     },
@@ -237,7 +237,7 @@ const personaMap : PersonaMap = {
             "Heat Up": 44,
             "Miracle Punch": 0,
             "Charge": 48,
-            "String Art Beast": 0
+            "Beast Weaver": 0
         },
         "dlc": true
     },
@@ -575,7 +575,7 @@ const personaMap : PersonaMap = {
         "stats": [16, 19, 19, 18, 19],
         "elems": ["-", "-", "ab", "-", "-", "-", "-", "-", "wk", "-"],
         "skills": {
-            "Bloodsuck": 0,
+            "Life Drain": 0,
             "Curse Boost": 32,
             "Dodge Elec": 30,
             "Eiga": 31,
@@ -941,7 +941,7 @@ const personaMap : PersonaMap = {
         "skills": {
             "Endure": 43,
             "Foul Breath": 45,
-            "High Voltage": 46,
+            "Fortified Moxy": 46,
             "Charge": 48,
             "Regenerate 2": 0,
             "Swift Strike": 0,
@@ -1017,7 +1017,7 @@ const personaMap : PersonaMap = {
         "level": 5,
         "stats": [4, 6, 4, 5, 3],
         "elems": ["-", "wk", "-", "-", "rs", "-", "-", "-", "wk", "-"],
-        "skills": {"Bloodsuck": 0, "Evil Touch": 0, "Dodge Curse": 9, "Eiha": 7, "Tarunda": 8},
+        "skills": {"Life Drain": 0, "Evil Touch": 0, "Dodge Curse": 9, "Eiha": 7, "Tarunda": 8},
         "personality": "Timid"
     },
     "Inugami": {
@@ -1123,7 +1123,7 @@ const personaMap : PersonaMap = {
         "skills": {"Baisudi": 0, "Bufu": 0, "Freeze Boost": 15, "Ice Break": 0, "Mabufu": 12, "Rakunda": 13},
         "personality": "Timid"
     },
-    "Jack O'Lantern": {
+    "Jack-o'-Lantern": {
         "arcana": "Magician",
         "level": 2,
         "stats": [2, 3, 3, 3, 2],
@@ -1311,7 +1311,7 @@ const personaMap : PersonaMap = {
         "stats": [43, 51, 50, 53, 38],
         "elems": ["-", "-", "-", "-", "rp", "-", "wk", "nu", "nu", "-"],
         "skills": {
-            "Cool Breeze": 78,
+            "Life Aid": 78,
             "Mapsiodyne": 0,
             "Mediarahan": 0,
             "Concentrate": 79,
@@ -1429,7 +1429,7 @@ const personaMap : PersonaMap = {
         "skills": {
             "Amrita Shower": 72,
             "Bufudyne": 0,
-            "Cool Breeze": 74,
+            "Life Aid": 74,
             "Diarahan": 0,
             "Lullaby": 0,
             "Mediarahan": 70,
@@ -1466,7 +1466,7 @@ const personaMap : PersonaMap = {
         "level": 38,
         "stats": [24, 24, 30, 23, 20],
         "elems": ["rs", "rs", "rs", "-", "-", "-", "rs", "-", "wk", "nu"],
-        "skills": {"Bloodsuck": 0, "Negative Pile": 0, "Null Dizzy": 42, "Psio": 39, "Rampage": 0, "Tetra Break": 40},
+        "skills": {"Life Drain": 0, "Negative Pile": 0, "Null Dizzy": 42, "Psio": 39, "Rampage": 0, "Tetra Break": 40},
         "personality": "Unknown"
     },
     "Lilim": {
@@ -1509,7 +1509,7 @@ const personaMap : PersonaMap = {
             "Absorb Phys": 99,
             "Gigantomachia": 0,
             "Heat Riser": 96,
-            "High Voltage": 97,
+            "Fortified Moxy": 97,
             "Blazing Hell": 0,
             "Insta-Heal": 98,
             "Morning Star": 94,
@@ -1653,7 +1653,7 @@ const personaMap : PersonaMap = {
         "skills": {
             "Agneyastra": 0,
             "Almighty Boost": 96,
-            "Cool Breeze": 93,
+            "Life Aid": 93,
             "Enduring Soul": 92,
             "Firm Stance": 94,
             "Insta-Heal": 91,
@@ -1856,7 +1856,7 @@ const personaMap : PersonaMap = {
         "skills": {
             "Defense Master": 34,
             "Diarama": 0,
-            "High Voltage": 36,
+            "Fortified Moxy": 36,
             "Invigorate 1": 31,
             "Masukukaja": 0,
             "Psio": 0,
@@ -2632,7 +2632,7 @@ const personaMap : PersonaMap = {
             "Curse Amp": 66,
             "Door of Hades": 0,
             "Enduring Soul": 70,
-            "High Voltage": 69,
+            "Fortified Moxy": 69,
             "Maeigaon": 0,
             "Mamudoon": 0,
             "One-shot Kill": 68
@@ -2742,7 +2742,7 @@ const personaMap : PersonaMap = {
         "skills": {
             "Abysmal Surge": 0,
             "Brain Buster": 0,
-            "Cool Breeze": 64,
+            "Life Aid": 64,
             "Debilitate": 65,
             "Mafreidyne": 0,
             "Fortify Spirit": 61,
@@ -2759,9 +2759,9 @@ const personaMap : PersonaMap = {
         "skills": {
             "Absorb Curse": 0,
             "Arms Master": 56,
-            "Bloodsuck": 0,
+            "Life Drain": 0,
             "Curse Amp": 53,
-            "Purgatorial Wing": 0,
+            "Abyssal Wings": 0,
             "Myriad Slashes": 0,
             "Vorpal Blade": 55
         },
@@ -2775,7 +2775,7 @@ const personaMap : PersonaMap = {
         "skills": {
             "Absorb Curse": 0,
             "Curse Amp": 58,
-            "Purgatorial Wing": 0,
+            "Abyssal Wings": 0,
             "Myriad Slashes": 0,
             "Spell Master": 61,
             "Spirit Drain": 0,
@@ -2893,7 +2893,7 @@ const personaMap : PersonaMap = {
         },
         "personality": "Irritable"
     },
-    "Yamata no Orochi": {
+    "Yamata-no-Orochi": {
         "arcana": "Judgement",
         "level": 64,
         "stats": [44, 38, 48, 36, 33],
