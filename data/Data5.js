@@ -255,7 +255,7 @@ var specialCombos = [
     { 'result': 'Alice', 'sources': ['Nebiros', 'Belial'] },
     { 'result': 'Ardha', 'sources': ['Parvati', 'Shiva'] },
     { 'result': 'Asura-Ou', 'sources': ['Zouchouten', 'Jikokuten', 'Koumokuten', 'Bishamonten'] },
-    { 'result': 'Black Frost', 'sources': ['Jack O\'Lantern', 'Jack Frost', 'King Frost'] },
+    { 'result': 'Black Frost', 'sources': ['Jack-o\'-Lantern', 'Jack Frost', 'King Frost'] },
     { 'result': 'Bugs', 'sources': ['Pixie', 'Pisaca', 'Hariti'] },
     { 'result': 'Chi You', 'sources': ['Hecatoncheires', 'White Rider', 'Thor', 'Yoshitsune', 'Cu Chulainn'] },
     { 'result': 'Flauros', 'sources': ['Berith', 'Andras', 'Eligor'] },
