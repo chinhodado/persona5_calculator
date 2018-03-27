@@ -507,7 +507,7 @@ const skillMap: SkillMap = {
             "Genbu": 0,
             "Jack Frost": 0,
             "Koropokkuru": 0,
-            "Kusi Mitama": 0,
+            "Kushi Mitama": 0,
             "Saki Mitama": 0,
             "Silky": 0
         },
@@ -1354,10 +1354,10 @@ const skillMap: SkillMap = {
     "Forget Boost": {
         "effect": "Increase chance of inflicting Forget.",
         "element": "passive",
-        "fuse": "Kusi Mitama",
+        "fuse": "Kushi Mitama",
         "personas": {
             "Kaiwan": 37,
-            "Kusi Mitama": 18
+            "Kushi Mitama": 18
         }
     },
     "Foul Breath": {
@@ -1430,7 +1430,7 @@ const skillMap: SkillMap = {
             "Kelpie": 0,
             "Kodama": 0,
             "Koppa Tengu": 0,
-            "Kusi Mitama": 0
+            "Kushi Mitama": 0
         },
         "talk": "Kelpie"
     },
@@ -2096,7 +2096,7 @@ const skillMap: SkillMap = {
             "Clotho": 0,
             "Kaiwan": 0,
             "Koropokkuru": 0,
-            "Kusi Mitama": 0,
+            "Kushi Mitama": 0,
             "Makami": 18
         }
     },
@@ -2469,7 +2469,7 @@ const skillMap: SkillMap = {
         "personas": {
             "Apsaras": 13,
             "High Pixie": 0,
-            "Kusi Mitama": 0,
+            "Kushi Mitama": 0,
             "Nigi Mitama": 0,
             "Queen's Necklace": 0
         }
@@ -3170,7 +3170,7 @@ const skillMap: SkillMap = {
         "fuse": "Kin-Ki",
         "personas": {
             "Kin-Ki": 0,
-            "Kusi Mitama": 15,
+            "Kushi Mitama": 15,
             "Rakshasa": 26
         }
     },
@@ -3990,7 +3990,7 @@ const skillMap: SkillMap = {
         "personas": {
             "Apsaras": 16,
             "Kushinada-Hime": 46,
-            "Kusi Mitama": 16,
+            "Kushi Mitama": 16,
             "Queen Mab": 0,
             "Rakshasa": 0,
             "Saki Mitama": 0,
