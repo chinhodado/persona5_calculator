@@ -1339,7 +1339,7 @@ var personaMap = {
             "Wind Wall": 46
         }
     },
-    "Kusi Mitama": {
+    "Kushi Mitama": {
         "arcana": "Strength",
         "level": 14,
         "stats": [8, 12, 11, 9, 9],
