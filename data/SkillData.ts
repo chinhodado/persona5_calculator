@@ -488,7 +488,7 @@ const skillMap: SkillMap = {
     },
     "Brave Blade": {
         "cost": 24,
-        "effect": "Deal grave Phys damage to 1 foe.",
+        "effect": "Deal colossal Phys damage to 1 foe.",
         "element": "phys",
         "fuse": "Futsunushi",
         "personas": {
@@ -656,7 +656,7 @@ const skillMap: SkillMap = {
     },
     "Sword Dance": {
         "cost": 21,
-        "effect": "Deal grave Phys damage to 1 foe.",
+        "effect": "Deal colossal Phys damage to 1 foe.",
         "element": "phys",
         "personas": {
             "Metatron": 0,
@@ -1497,7 +1497,7 @@ const skillMap: SkillMap = {
     },
     "Gigantomachia": {
         "cost": 25,
-        "effect": "Deal grave Phys damage to all foes.",
+        "effect": "Deal colossal Phys damage to all foes.",
         "element": "phys",
         "personas": {
             "Abaddon": 80,
@@ -1510,7 +1510,7 @@ const skillMap: SkillMap = {
     },
     "God's Hand": {
         "cost": 25,
-        "effect": "Deal grave Phys damage to 1 foe.",
+        "effect": "Deal colossal Phys damage to 1 foe.",
         "element": "phys",
         "fuse": "Zaou-Gongen",
         "personas": {
@@ -3611,7 +3611,7 @@ const skillMap: SkillMap = {
     "Beast Weaver": {
         "cost": 20,
         "dlc": true,
-        "effect": "Deal grave Phys damage to 1 foe and user is debuffed with Tarunda.",
+        "effect": "Deal colossal Phys damage to 1 foe and user is debuffed with Tarunda.",
         "element": "phys",
         "personas": {
             "Ariadne": 0,
