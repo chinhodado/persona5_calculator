@@ -151,7 +151,7 @@ class FusionCalculator {
             return null;
         }
 
-        if (newPersona.special) {
+        while (newPersona.special) {
             if (modifier > 0) modifier++;
             else if (modifier < 0) modifier--;
 
