@@ -134,12 +134,15 @@ var FusionCalculator = (function () {
         if (!newPersona) {
             return null;
         }
-        if (newPersona.special) {
+        while (newPersona && newPersona.special) {
             if (modifier > 0)
                 modifier++;
             else if (modifier < 0)
                 modifier--;
             newPersona = personae[mainPersonaIndex + modifier];
+        }
+        if (!newPersona) {
+            return null;
         }
         return newPersona;
     };

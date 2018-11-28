@@ -98,6 +98,9 @@ describe('FusionCalculator', function () {
             it('should return correct persona when go up one and have special persona as ingredient', function () {
                 expect(fuseTestWrapper("Orlov", "Neko Shogun")).to.equal(personaMap["Kaiwan"]);
             });
+	    it('should return correct persona when go up one and skip multiple specials', function() {
+		expect(fuseTestWrapper("Regent", "Cu Chulainn")).to.equal(null);
+	    });
         });
         describe('impossible fusions with Judgement', function () {
             it('should return null when fusing Judgement + Death', function () {
