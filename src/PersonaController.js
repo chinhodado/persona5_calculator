@@ -4,7 +4,7 @@
 /**
  * Created by Chin on 08-Apr-17.
  */
-var PersonaController = (function () {
+var PersonaController = /** @class */ (function () {
     function PersonaController($scope, $routeParams, $filter) {
         var personaName = $routeParams.persona_name;
         this.$filter = $filter;
