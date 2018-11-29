@@ -2,8 +2,15 @@
 ///<reference path="../src/DataUtil.ts"/>
 ///<reference path="../src/FusionCalculator.ts"/>
 ///<reference path="../data/PersonaData.ts"/>
-///<reference path="d.ts/mocha.d.ts"/>
-///<reference path="d.ts/expect.js.d.ts"/>
+
+var fs = require('fs');
+eval(fs.readFileSync("data/Data5.js") + '');
+eval(fs.readFileSync("data/PersonaData.js") + '');
+eval(fs.readFileSync("data/SkillData.js") + '');
+eval(fs.readFileSync("src/FusionCalculator.js") + '');
+eval(fs.readFileSync("src/DataUtil.js") + '');
+
+var expect = require('chai').expect;
 
 const fullPersonaeByArcana : {[arcana: string]: PersonaData[]} = (() =>{
     let personaeByArcana_ = {};
@@ -156,42 +163,42 @@ describe('FusionCalculator', () => {
                 let recipes = calc.getRecipes(personaMap["Ardha"]);
                 expect(recipes).to.have.length(1);
                 expect(recipes[0].sources).to.have.length(2);
-                expect(containAll(recipes[0], ['Parvati', 'Shiva'])).to.be(true);
+                expect(containAll(recipes[0], ['Parvati', 'Shiva'])).to.equal(true);
             });
 
             it('should return correct recipe for Alice', () => {
                 let recipes = calc.getRecipes(personaMap["Alice"]);
                 expect(recipes).to.have.length(1);
                 expect(recipes[0].sources).to.have.length(2);
-                expect(containAll(recipes[0], ['Belial', 'Nebiros'])).to.be(true);
+                expect(containAll(recipes[0], ['Belial', 'Nebiros'])).to.equal(true);
             });
 
             it('should return correct recipe for Ongyo-Ki', () => {
                 let recipes = calc.getRecipes(personaMap["Ongyo-Ki"]);
                 expect(recipes).to.have.length(1);
                 expect(recipes[0].sources).to.have.length(3);
-                expect(containAll(recipes[0], ['Kin-Ki', 'Sui-Ki', 'Fuu-Ki'])).to.be(true);
+                expect(containAll(recipes[0], ['Kin-Ki', 'Sui-Ki', 'Fuu-Ki'])).to.equal(true);
             });
 
             it('should return correct recipe for Kohryu', () => {
                 let recipes = calc.getRecipes(personaMap["Kohryu"]);
                 expect(recipes).to.have.length(1);
                 expect(recipes[0].sources).to.have.length(4);
-                expect(containAll(recipes[0], ['Genbu', 'Seiryu', 'Suzaku', 'Byakko'])).to.be(true);
+                expect(containAll(recipes[0], ['Genbu', 'Seiryu', 'Suzaku', 'Byakko'])).to.equal(true);
             });
 
             it('should return correct recipe for Sraosha', () => {
                 let recipes = calc.getRecipes(personaMap["Sraosha"]);
                 expect(recipes).to.have.length(1);
                 expect(recipes[0].sources).to.have.length(5);
-                expect(containAll(recipes[0], ['Mithra', 'Mithras', 'Melchizedek', 'Lilith', 'Gabriel'])).to.be(true);
+                expect(containAll(recipes[0], ['Mithra', 'Mithras', 'Melchizedek', 'Lilith', 'Gabriel'])).to.equal(true);
             });
 
             it('should return correct recipe for Satanael', () => {
                 let recipes = calc.getRecipes(personaMap["Satanael"]);
                 expect(recipes).to.have.length(1);
                 expect(recipes[0].sources).to.have.length(6);
-                expect(containAll(recipes[0], ['Arsene', 'Anzu', 'Ishtar', 'Satan', 'Lucifer', 'Michael'])).to.be(true);
+                expect(containAll(recipes[0], ['Arsene', 'Anzu', 'Ishtar', 'Satan', 'Lucifer', 'Michael'])).to.equal(true);
             });
         });
 
