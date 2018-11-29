@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/chinhodado/persona5_calculator.svg?branch=master)](https://travis-ci.org/chinhodado/persona5_calculator)
+
 ### Persona 5 fusion calculator
 
 A tool to help calculate fusions in Persona 5.
