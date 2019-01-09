@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/chinhodado/persona5_calculator.svg?branch=master)](https://travis-ci.org/chinhodado/persona5_calculator)
+
 ### Persona 5 fusion calculator
 
 A tool to help calculate fusions in Persona 5.
@@ -28,6 +30,8 @@ This calculator assumes that you own all DLC persona by default (you can change 
 
 According to the [official guide](http://atlus.com/persona5/manual/ps4/?pid=50) a fusion between a persona of the Judgement arcana and another persona of the Justice/Strength/Chariot/Death arcana is possible, but this is actually not the case in game.
  
+Backup [link](img/atlus_fusion_table.jpg) if above link is broken.
+
 ### Credits
  
 Ideas, logics, data, etc. have been gathered from:

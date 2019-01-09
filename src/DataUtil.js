@@ -72,7 +72,7 @@ var skillList = (function () {
                 if (typeof skill.fuse === 'string') {
                     skill.fuseDisplay = createPersonaLink(skill.fuse);
                 }
-                else {
+                else { // it's an array
                     var arr_1 = [];
                     for (var i = 0; i < skill.fuse.length; i++) {
                         arr_1.push(createPersonaLink(skill.fuse[i]));
