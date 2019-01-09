@@ -24,7 +24,7 @@ function addElementProperties(persona: PersonaData) : void {
 }
 
 function isDlcPersonaOwned(dlcPersona: string): boolean {
-    if (!localStorage["dlcPersona"]) return true;
+    if (!localStorage["dlcPersona"]) return false;
 
     return JSON.parse(localStorage["dlcPersona"])[dlcPersona] === true;
 }
