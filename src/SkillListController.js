@@ -2,7 +2,7 @@
 /**
  * Created by Chin on 11-Apr-17.
  */
-var SkillListController = (function () {
+var SkillListController = /** @class */ (function () {
     function SkillListController($scope, $sce) {
         $scope.skillList = skillList;
         if (!SkillListController.sceDone) {
@@ -17,6 +17,6 @@ var SkillListController = (function () {
         $scope.sortBy = 'name';
         $scope.reverse = false;
     }
+    SkillListController.sceDone = false;
     return SkillListController;
 }());
-SkillListController.sceDone = false;

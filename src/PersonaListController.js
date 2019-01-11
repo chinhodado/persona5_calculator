@@ -2,7 +2,7 @@
 /**
  * Created by Chin on 08-Apr-17.
  */
-var PersonaListController = (function () {
+var PersonaListController = /** @class */ (function () {
     function PersonaListController($scope) {
         this.$scope = $scope;
         $scope.fullPersonaList = fullPersonaList;

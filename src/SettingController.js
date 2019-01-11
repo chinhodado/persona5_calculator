@@ -1,5 +1,5 @@
 ///<reference path="DataUtil.ts"/>
-var SettingController = (function () {
+var SettingController = /** @class */ (function () {
     function SettingController($scope) {
         $scope.dlcPersona = dlcPersona;
         $scope.save = this.save;

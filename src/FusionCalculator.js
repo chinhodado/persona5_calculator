@@ -5,7 +5,7 @@
  *
  * Created by Chin on 08-Apr-17.
  */
-var FusionCalculator = (function () {
+var FusionCalculator = /** @class */ (function () {
     function FusionCalculator(personaeByArcana) {
         this.personaeByArcana = personaeByArcana;
     }
