@@ -203,7 +203,7 @@ var skillMap = {
             "Garuda": 0,
             "Kaguya": 18,
             "Kaguya Picaro": 27,
-            "Kushinada-Hime": 47,
+            "Kushinada": 47,
             "Lakshmi": 72,
             "Mada": 88,
             "Sandalphon": 0,
@@ -1654,7 +1654,7 @@ var skillMap = {
         "element": "phys",
         "personas": {
             "Kumbhanda": 0,
-            "Kushinada-Hime": 0,
+            "Kushinada": 0,
             "Nekomata": 18,
             "Yaksini": 0
         },
@@ -1887,14 +1887,14 @@ var skillMap = {
         "personas": {
             "Belphegor": 41,
             "Byakko": 0,
-            "Kushinada-Hime": 0,
+            "Kushinada": 0,
             "Lachesis": 38,
             "Lilim": 37,
             "Orlov": 0,
             "Skadi": 0,
             "Sui-Ki": 28
         },
-        "talk": "Kushinada-Hime"
+        "talk": "Kushinada"
     },
     "Maeiga": {
         "cost": 1600,
@@ -2349,7 +2349,7 @@ var skillMap = {
             "Futsunushi": 0,
             "Jikokuten": 30,
             "Koumokuten": 52,
-            "Kushinada-Hime": 44,
+            "Kushinada": 44,
             "Mot": 0,
             "Oberon": 68,
             "Okuninushi": 0,
@@ -2471,7 +2471,7 @@ var skillMap = {
             "Kaguya": 0,
             "Kaguya Picaro": 0,
             "Kikuri-Hime": 41,
-            "Kushinada-Hime": 0,
+            "Kushinada": 0,
             "Narcissus": 54,
             "Principality": 31,
             "Sarasvati": 0
@@ -2788,7 +2788,7 @@ var skillMap = {
         "effect": "Impart immunity against Sleep.",
         "element": "passive",
         "personas": {
-            "Kushinada-Hime": 45,
+            "Kushinada": 45,
             "Sandman": 27,
             "Sarasvati": 51
         }
@@ -3958,10 +3958,10 @@ var skillMap = {
         "cost": 1800,
         "effect": "Create a shield on 1 ally to reduce damage of Wind attacks for 3 turns.",
         "element": "support",
-        "fuse": "Kushinada-Hime",
+        "fuse": "Kushinada",
         "personas": {
             "Apsaras": 16,
-            "Kushinada-Hime": 46,
+            "Kushinada": 46,
             "Kushi Mitama": 16,
             "Queen Mab": 0,
             "Rakshasa": 0,

@@ -1324,7 +1324,7 @@ var personaMap = {
         "elems": ["-", "-", "-", "wk", "-", "rp", "-", "-", "rs", "rs"],
         "skills": { "Brain Buster": 0, "Garudyne": 57, "Growth 3": 58, "Heat Wave": 0, "Magarudyne": 60, "Masukunda": 0 }
     },
-    "Kushinada-Hime": {
+    "Kushinada": {
         "arcana": "Lovers",
         "level": 42,
         "stats": [24, 30, 26, 28, 25],
