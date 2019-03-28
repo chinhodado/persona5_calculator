@@ -500,13 +500,13 @@ const skillMap: SkillMap = {
         "cost": 400,
         "effect": "Deal weak Ice damage to 1 foe.",
         "element": "ice",
-        "fuse": "Koropokkuru",
+        "fuse": "Koropokguru",
         "personas": {
             "Andras": 0,
             "Apsaras": 0,
             "Genbu": 0,
             "Jack Frost": 0,
-            "Koropokkuru": 0,
+            "Koropokguru": 0,
             "Kushi Mitama": 0,
             "Saki Mitama": 0,
             "Silky": 0
@@ -945,7 +945,7 @@ const skillMap: SkillMap = {
         "element": "passive",
         "personas": {
             "Koh-i-Noor": 0,
-            "Koropokkuru": 11,
+            "Koropokguru": 11,
             "Orthrus": 0
         }
     },
@@ -1325,10 +1325,10 @@ const skillMap: SkillMap = {
         "element": "support",
         "personas": {
             "Atropos": 0,
-            "Koropokkuru": 13,
+            "Koropokguru": 13,
             "Slime": 13
         },
-        "talk": "Koropokkuru"
+        "talk": "Koropokguru"
     },
     "Firm Stance": {
         "effect": "Half all incoming damage by sacrificing evasion completely.",
@@ -1884,7 +1884,7 @@ const skillMap: SkillMap = {
             "Andras": 14,
             "Genbu": 10,
             "Jack Frost": 12,
-            "Koropokkuru": 14,
+            "Koropokguru": 14,
             "Regent": 0,
             "Sui-Ki": 0
         },
@@ -2095,7 +2095,7 @@ const skillMap: SkillMap = {
         "personas": {
             "Clotho": 0,
             "Kaiwan": 0,
-            "Koropokkuru": 0,
+            "Koropokguru": 0,
             "Kushi Mitama": 0,
             "Makami": 18
         }
@@ -3109,7 +3109,7 @@ const skillMap: SkillMap = {
             "Jack-o'-Lantern": 0,
             "Jikokuten": 0,
             "Kodama": 0,
-            "Koropokkuru": 12,
+            "Koropokguru": 12,
             "Leanan Sidhe": 0,
             "Queen's Necklace": 0
         },

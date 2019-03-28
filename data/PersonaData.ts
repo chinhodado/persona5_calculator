@@ -1330,7 +1330,7 @@ const personaMap : PersonaMap = {
         "skills": {"Snap": 0, "Garu": 0, "Growth 1": 12, "Taunt": 13, "Rage Boost": 14, "Wage War": 15},
         "personality": "Upbeat"
     },
-    "Koropokkuru": {
+    "Koropokguru": {
         "arcana": "Hermit",
         "level": 9,
         "stats": [5, 8, 6, 9, 6],
