@@ -268,7 +268,7 @@ var specialCombos = [
     { 'result': 'Satanael', 'sources': ['Arsene', 'Anzu', 'Ishtar', 'Satan', 'Lucifer', 'Michael'] },
     { 'result': 'Seth', 'sources': ['Isis', 'Thoth', 'Anubis', 'Horus'] },
     { 'result': 'Shiva', 'sources': ['Rangda', 'Barong'] },
-    { 'result': 'Sraosha', 'sources': ['Mithra', 'Mithras', 'Melchizedek', 'Lilith', 'Gabriel'] },
+    { 'result': 'Sraosha', 'sources': ['Mitra', 'Mithras', 'Melchizedek', 'Lilith', 'Gabriel'] },
     { 'result': 'Throne', 'sources': ['Power', 'Melchizedek', 'Dominion'] },
     { 'result': 'Trumpeter', 'sources': ['White Rider', 'Red Rider', 'Black Rider', 'Pale Rider'] },
     { 'result': 'Vasuki', 'sources': ['Naga', 'Raja Naga', 'Ananta'] },

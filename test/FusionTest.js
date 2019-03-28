@@ -76,7 +76,7 @@ describe('FusionCalculator', function () {
                 expect(fuseTestWrapper("Lucifer", "Genbu")).to.equal(personaMap["Ganesha"]);
             });
             it('should return correct persona when fusing 2 rare persona', function () {
-                expect(fuseTestWrapper("Crystal Skull", "Regent")).to.equal(personaMap["Mithra"]);
+                expect(fuseTestWrapper("Crystal Skull", "Regent")).to.equal(personaMap["Mitra"]);
             });
         });
         describe('special fusion', function () {
@@ -154,7 +154,7 @@ describe('FusionCalculator', function () {
                 var recipes = calc.getRecipes(personaMap["Sraosha"]);
                 expect(recipes).to.have.length(1);
                 expect(recipes[0].sources).to.have.length(5);
-                expect(containAll(recipes[0], ['Mithra', 'Mithras', 'Melchizedek', 'Lilith', 'Gabriel'])).to.equal(true);
+                expect(containAll(recipes[0], ['Mitra', 'Mithras', 'Melchizedek', 'Lilith', 'Gabriel'])).to.equal(true);
             });
             it('should return correct recipe for Satanael', function () {
                 var recipes = calc.getRecipes(personaMap["Satanael"]);

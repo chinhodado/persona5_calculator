@@ -402,7 +402,7 @@ const skillMap: SkillMap = {
         "element": "passive",
         "personas": {
             "Daisoujou": 44,
-            "Mithra": 36,
+            "Mitra": 36,
             "Principality": 34
         }
     },
@@ -758,7 +758,7 @@ const skillMap: SkillMap = {
             "Anubis": 40,
             "Cu Chulainn": 70,
             "Jikokuten": 27,
-            "Mithra": 35,
+            "Mitra": 35,
             "Mokoi": 14,
             "Unicorn": 0,
             "Yatagarasu": 0
@@ -843,7 +843,7 @@ const skillMap: SkillMap = {
             "High Pixie": 18,
             "Horus": 0,
             "Isis": 0,
-            "Mithra": 0,
+            "Mitra": 0,
             "Neko Shogun": 0,
             "Parvati": 0,
             "Power": 44
@@ -1803,7 +1803,7 @@ const skillMap: SkillMap = {
         "effect": "Deal medium Bless damage to 1 foe.",
         "element": "bless",
         "personas": {
-            "Mithra": 0,
+            "Mitra": 0,
             "Stone of Scone": 0,
             "Unicorn": 43
         },
@@ -2065,7 +2065,7 @@ const skillMap: SkillMap = {
         "element": "bless",
         "personas": {
             "Clotho": 0,
-            "Mithra": 0,
+            "Mitra": 0,
             "Unicorn": 0
         },
         "talk": "Power"
@@ -2148,7 +2148,7 @@ const skillMap: SkillMap = {
         "fuse": "Daisoujou",
         "personas": {
             "Daisoujou": 0,
-            "Mithra": 34,
+            "Mitra": 34,
             "Orlov": 0,
             "Power": 43,
             "Principality": 0
@@ -3812,7 +3812,7 @@ const skillMap: SkillMap = {
         "personas": {
             "Attis": 0,
             "Dionysus": 62,
-            "Mithra": 38
+            "Mitra": 38
         }
     },
     "Thunder Reign": {

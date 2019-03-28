@@ -1645,7 +1645,7 @@ var personaMap = {
         "special": true,
         "note": "Needs Strength cooperation rank 5 to be fused"
     },
-    "Mithra": {
+    "Mitra": {
         "arcana": "Temperance",
         "level": 33,
         "stats": [19, 26, 19, 24, 18],
