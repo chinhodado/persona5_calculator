@@ -298,6 +298,13 @@ class FusionCalculator {
             recipe.sources.sort((a, b)=> b.level - a.level);
         }
 
+        // help with rare persona fusion warning
+        let isAllRare = true;
+        for (let i = 0; i < recipe.sources.length; i++) {
+            isAllRare = isAllRare && recipe.sources[i].rare;
+        }
+        recipe.isAllRare = isAllRare;
+
         allRecipes.push(recipe);
     }
 
@@ -320,4 +327,5 @@ interface Recipe {
     sources: PersonaData[];
     result: PersonaData;
     cost?: number;
+    isAllRare?: boolean;
 }

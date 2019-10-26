@@ -277,6 +277,12 @@ var FusionCalculator = /** @class */ (function () {
             // Sort ingredients so that highest level persona is first
             recipe.sources.sort(function (a, b) { return b.level - a.level; });
         }
+        // help with rare persona fusion warning
+        var isAllRare = true;
+        for (var i = 0; i < recipe.sources.length; i++) {
+            isAllRare = isAllRare && recipe.sources[i].rare;
+        }
+        recipe.isAllRare = isAllRare;
         allRecipes.push(recipe);
     };
     FusionCalculator.prototype.getApproxCost = function (recipe) {

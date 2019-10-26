@@ -131,7 +131,7 @@
                 <a href='#/persona/{{persona.name}}'>{{persona.name}}</a>
                 ({{persona.level}} / {{persona.arcana}})
                 <span title="This is a rare persona. Depending on the other ingredient's current level, you may not get the
-                same result when fusing with this persona." class="warning-sign" ng:if="persona.rare">⚠</span>
+                same result when fusing with this persona." class="warning-sign" ng:if="persona.rare && !recipe.isAllRare">⚠</span>
             </td>
         </tr>
         </tbody>
@@ -181,7 +181,7 @@
                 <a href='#/persona/{{recipe.sources[1].name}}'>{{recipe.sources[1].name}}</a>
                 ({{recipe.sources[1].level}} / {{recipe.sources[1].arcana}})
                 <span title="This is a rare persona. Depending on the other ingredient's current level, you may not get the
-                same result when fusing with this persona." class="warning-sign" ng:if="recipe.sources[1].rare">⚠</span>
+                same result when fusing with this persona." class="warning-sign" ng:if="recipe.sources[1].rare && !recipe.isAllRare">⚠</span>
             </td>
             <td>
                 <a href='#/persona/{{recipe.result.name}}'>{{recipe.result.name}}</a>
