@@ -14,10 +14,14 @@ Note: the cost is estimated and is not accurate.
 
 In general, fusion in Persona 5 is still mostly the same as in Persona 3 and 4, with a few additional rules:
 
- - There are rare persona (Regent, Queen's Necklace, Stone of Scone, Koh-i-Noor, Orlov, Emperor's Amulet, Hope Diamond and Crystal Skull) that when fused with a normal persona X will result in another persona either one or two ranks above or below X's current level. Whether to move up or down rank and whether to move one or two steps depending on the rare persona and X's arcana.
+ - There are rare persona (aka Treasure Demon) that when fused with a normal persona X will result in another persona either one or two ranks above or below X's current level. Whether to move up or down rank and whether to move one or two steps depends on the rare persona and X's arcana.
+   - In other word, given a rare persona and another non-rare persona X, when fusing them you will **not** always get a fixed result, but the result will vary depending on the non-rare persona X's current level. Please keep this in mind when using the fusion calculator.
+   - The rare persona are Regent, Queen's Necklace, Stone of Scone, Koh-i-Noor, Orlov, Emperor's Amulet, Hope Diamond and Crystal Skull
  
+ - When two rare persona are fused, the normal fusion formula is used.
+  
  - Rare persona cannot be the result of a fusion.
- 
+  
  - When doing a fusion, either a normal one, a same-arcana-downrank one or a rare one, if the result is a rare persona, it will be skipped.
  
  - There is no longer 3-way fusion.
