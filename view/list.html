@@ -35,7 +35,10 @@
     <tbody>
     <tr ng:repeat="persona in fullPersonaList | orderBy:sortFunc:sortReverse | filter:filterStr">
         <td>{{persona.level}}</td>
-        <td class="left-border"><a href='#/persona/{{persona.name}}'>{{persona.name}}</a></td>
+        <td class="left-border">
+            <a class="persona-name" href='#/persona/{{persona.name}}'>{{persona.name}}</a>
+            <span class="dlc-label" ng-if="persona.dlc">DLC</span>
+        </td>
         <td class="left-border">{{persona.arcana}}</td>
 
         <td class="mobile-hidden left-border">{{persona.strength}}</td>
