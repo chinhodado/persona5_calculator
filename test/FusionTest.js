@@ -106,6 +106,9 @@ describe('FusionCalculator', function () {
             it('should return correct persona when go up one and skip multiple specials', function () {
                 expect(fuseTestWrapper("Regent", "Cu Chulainn")).to.equal(null);
             });
+            it('should return correct persona when go down one and skip rare persona', function () {
+                expect(fuseTestWrapper("Regent", "Zouchouten")).to.equal(personaMap["Rakshasa"]);
+            });
         });
         describe('impossible fusions with Judgement', function () {
             it('should return null when fusing Judgement + Death', function () {
@@ -185,7 +188,7 @@ describe('FusionCalculator', function () {
             });
             it('should return correct number of recipe for Apsaras', function () {
                 var recipes = calc.getRecipes(personaMap["Apsaras"]);
-                expect(recipes).to.have.length(35);
+                expect(recipes).to.have.length(38);
             });
             it('should return correct number of recipe for Orthrus', function () {
                 var recipes = calc.getRecipes(personaMap["Orthrus"]);

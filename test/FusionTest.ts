@@ -131,9 +131,14 @@ describe('FusionCalculator', () => {
             it('should return correct persona when go up one and have special persona as ingredient', () => {
                 expect(fuseTestWrapper("Orlov", "Neko Shogun")).to.equal(personaMap["Kaiwan"]);
             });
-	    it('should return correct persona when go up one and skip multiple specials', function() {
-		expect(fuseTestWrapper("Regent", "Cu Chulainn")).to.equal(null);
-	    });
+
+            it('should return correct persona when go up one and skip multiple specials', () => {
+                expect(fuseTestWrapper("Regent", "Cu Chulainn")).to.equal(null);
+            });
+
+            it('should return correct persona when go down one and skip rare persona', () => {
+                expect(fuseTestWrapper("Regent", "Zouchouten")).to.equal(personaMap["Rakshasa"]);
+            });
         });
 
         describe('impossible fusions with Judgement', function () {
@@ -228,7 +233,7 @@ describe('FusionCalculator', () => {
 
             it('should return correct number of recipe for Apsaras', () => {
                 let recipes = calc.getRecipes(personaMap["Apsaras"]);
-                expect(recipes).to.have.length(35);
+                expect(recipes).to.have.length(38);
             });
 
             it('should return correct number of recipe for Orthrus', () => {

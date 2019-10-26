@@ -151,12 +151,13 @@ class FusionCalculator {
             return null;
         }
 
-        while (newPersona && newPersona.special) {
+        while (newPersona && (newPersona.special || newPersona.rare)) {
             if (modifier > 0) modifier++;
             else if (modifier < 0) modifier--;
 
             newPersona = personae[mainPersonaIndex + modifier];
         }
+
         if (!newPersona) {
             return null;
         }

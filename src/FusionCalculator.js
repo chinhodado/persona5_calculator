@@ -134,7 +134,7 @@ var FusionCalculator = /** @class */ (function () {
         if (!newPersona) {
             return null;
         }
-        while (newPersona && newPersona.special) {
+        while (newPersona && (newPersona.special || newPersona.rare)) {
             if (modifier > 0)
                 modifier++;
             else if (modifier < 0)
