@@ -120,12 +120,6 @@ var FusionCalculator = /** @class */ (function () {
         return found ? persona : null;
     };
     ;
-    /**
-     * Fuse a rare persona with a normal persona.
-     * @param rarePersona The rare persona
-     * @param mainPersona The normal persona
-     * @returns The result persona, or null when the fusion is not possible.
-     */
     FusionCalculator.prototype.fuseRare = function (rarePersona, mainPersona) {
         var modifier = rareCombos[mainPersona.arcana][rarePersonae.indexOf(rarePersona.name)];
         var personae = this.personaeByArcana[mainPersona.arcana];

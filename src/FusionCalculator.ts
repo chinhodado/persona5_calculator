@@ -134,14 +134,14 @@ class FusionCalculator {
 
         return found? persona : null;
     };
-
+qweqe
     /**
      * Fuse a rare persona with a normal persona.
      * @param rarePersona The rare persona
      * @param mainPersona The normal persona
      * @returns The result persona, or null when the fusion is not possible.
      */
-    private fuseRare(rarePersona: PersonaData, mainPersona: PersonaData): PersonaData {
+    pate fuseRare(rarePersona: PersonaData, mainPersona: PersonaData): PersonaData {
         let modifier = rareCombos[mainPersona.arcana][rarePersonae.indexOf(rarePersona.name)];
         let personae = this.personaeByArcana[mainPersona.arcana];
         let mainPersonaIndex = personae.indexOf(mainPersona);
