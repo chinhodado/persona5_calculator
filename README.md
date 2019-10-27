@@ -1,4 +1,5 @@
-[![Build Status](https://travis-ci.org/chinhodado/persona5_calculator.svg?branch=master)](https://travis-ci.org/chinhodado/persona5_calculator)
+[![Build Status](https://github.com/chinhodado/persona5_calculator/workflows/build/badge.svg)](https://github.com/chinhodado/persona5_calculator/actions?workflow=build)
+
 
 ### Persona 5 fusion calculator
 
