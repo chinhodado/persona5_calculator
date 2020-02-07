@@ -338,3 +338,19 @@ const specialCombosRoyal = [
     {result: 'Vasuki', sources: ["Naga", "Ananta", "Raja Naga"]},
     {result: 'Yoshitsune', sources: ["Shiki-Ouji", "Arahabaki", "Okuninushi", "Yatagarasu", "Futsunushi"]},
 ];
+
+const dlcPersonaRoyal = [
+    ["Izanagi", "Izanagi Picaro"],
+    ["Orpheus", "Orpheus Picaro"],
+    ["Ariadne", "Ariadne Picaro"],
+    ["Asterius", "Asterius Picaro"],
+    ["Thanatos", "Thanatos Picaro"],
+    ["Kaguya", "Kaguya Picaro"],
+    ["Magatsu-Izanagi", "Magatsu-Izanagi Picaro"],
+    ["Tsukiyomi", "Tsukiyomi Picaro"],
+    ["Messiah", "Messiah Picaro"],
+    ["Orpheus F", "Orpheus F Picaro"],
+    ["Athena", "Athena Picaro"],
+    ["Izanagi-no-Okami", "Izanagi-no-Okami Picaro"],
+    ["Raoul"]
+];
