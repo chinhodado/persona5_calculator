@@ -20,6 +20,12 @@ interface PersonaData {
     note?: string;
     rare?: boolean;
 
+    // from new data for p5r
+    inherits?: string;
+    item?: string;
+    itemr?: string;
+    trait?: string;
+
     // only for when converted to list
     strength?: number;
     magic?: number;
