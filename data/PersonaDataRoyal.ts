@@ -3648,5 +3648,512 @@ const personaMapRoyal: PersonaMap = {
         },
         "stats": [22, 19, 24, 18, 17],
         "trait": "Elec Lineage"
+    },
+    "Ariadne": {
+        "inherits": "almighty",
+        "item": "Red Yarn Ball",
+        "itemr": "Red Yarn Ball R",
+        "level": 30,
+        "arcana": "Fortune",
+        "elems": ["-", "rs", "-", "-", "-", "-", "wk", "nu", "rs", "-"],
+        "skills": {
+            "Beast Weaver": 0,
+            "Apt Pupil": 0,
+            "Miracle Punch": 0,
+            "Attack Master": 31,
+            "Fortified Moxy": 32,
+            "Evade Physical": 34,
+            "Charge": 36
+        },
+        "stats": [23, 19, 20, 17, 18],
+        "trait": "Offered Hand",
+        "dlc": true
+    },
+    "Ariadne Picaro": {
+        "inherits": "almighty",
+        "item": "Auto-Mataru",
+        "itemr": "Auto-Maraku",
+        "level": 42,
+        "arcana": "Fortune",
+        "elems": ["-", "rs", "-", "-", "-", "-", "wk", "nu", "rs", "-"],
+        "skills": {
+            "Beast Weaver": 0,
+            "Apt Pupil": 0,
+            "Miracle Punch": 0,
+            "Auto-Mataru": 43,
+            "Heat Up": 44,
+            "Evade Physical": 46,
+            "Charge": 48
+        },
+        "stats": [36, 23, 29, 24, 21],
+        "trait": "Offered Hand",
+        "dlc": true
+    },
+    "Asterius": {
+        "inherits": "almighty",
+        "item": "Thunder Horns",
+        "itemr": "Thunder Horns R",
+        "level": 56,
+        "arcana": "Fortune",
+        "elems": ["-", "-", "rs", "wk", "-", "-", "rs", "-", "-", "nu"],
+        "skills": {
+            "Titanomachia": 0,
+            "Maragidyne": 0,
+            "Burn Boost": 0,
+            "Auto-Mataru": 57,
+            "Fire Amp": 59,
+            "Tetrakarn": 60,
+            "Gigantomachia": 62
+        },
+        "stats": [43, 43, 32, 32, 25],
+        "trait": "Charging Bull",
+        "dlc": true
+    },
+    "Asterius Picaro": {
+        "inherits": "almighty",
+        "item": "Gigantomachia",
+        "itemr": "Agneyastra",
+        "level": 62,
+        "arcana": "Fortune",
+        "elems": ["-", "-", "rs", "wk", "-", "-", "rs", "-", "-", "nu"],
+        "skills": {
+            "Titanomachia": 0,
+            "Maragidyne": 0,
+            "Burn Boost": 0,
+            "Auto-Masuku": 63,
+            "Fire Amp": 65,
+            "Makarakarn": 66,
+            "Gigantomachia": 68
+        },
+        "stats": [46, 46, 36, 36, 29],
+        "trait": "Charging Bull",
+        "dlc": true
+    },
+    "Athena": {
+        "inherits": "almighty",
+        "item": "Kugelbein",
+        "itemr": "Kugelbein R",
+        "level": 46,
+        "arcana": "Chariot",
+        "elems": ["rs", "nu", "-", "-", "wk", "-", "-", "-", "-", "-"],
+        "skills": {
+            "Akasha Arts": 0,
+            "Marakukaja": 0,
+            "Rising Slash": 0,
+            "Diarahan": 47,
+            "Matarukaja": 48,
+            "Auto-Maraku": 50,
+            "Samarecarm": 51,
+            "Megaton Raid": 52
+        },
+        "stats": [33, 27, 29, 29, 27],
+        "trait": "Olive Grace",
+        "dlc": true
+    },
+    "Athena Picaro": {
+        "inherits": "almighty",
+        "item": "Charge",
+        "itemr": "Concentrate",
+        "level": 50,
+        "arcana": "Chariot",
+        "elems": ["rs", "nu", "-", "-", "wk", "-", "-", "-", "-", "-"],
+        "skills": {
+            "Akasha Arts": 0,
+            "Matarukaja": 0,
+            "Rising Slash": 0,
+            "Diarahan": 51,
+            "Marakukaja": 52,
+            "Auto-Mataru": 54,
+            "Samarecarm": 55,
+            "Megaton Raid": 56
+        },
+        "stats": [35, 30, 31, 32, 29],
+        "trait": "Olive Grace",
+        "dlc": true
+    },
+    "Izanagi": {
+        "inherits": "almighty",
+        "item": "White Headband",
+        "itemr": "White Headband R",
+        "level": 20,
+        "arcana": "Fool",
+        "elems": ["-", "-", "-", "-", "rs", "wk", "-", "-", "-", "nu"],
+        "skills": {
+            "Cross Slash": 0,
+            "Zionga": 0,
+            "Tarukaja": 0,
+            "Rising Slash": 21,
+            "Dodge Physical": 22,
+            "Mazionga": 24,
+            "Growth 3": 25
+        },
+        "stats": [14, 13, 13, 14, 13],
+        "trait": "Divine Ceremony",
+        "dlc": true
+    },
+    "Izanagi Picaro": {
+        "inherits": "almighty",
+        "item": "Growth 2",
+        "itemr": "Growth 3",
+        "level": 23,
+        "arcana": "Fool",
+        "elems": ["-", "-", "-", "-", "nu", "wk", "-", "-", "-", "nu"],
+        "skills": {
+            "Cross Slash": 0,
+            "Zionga": 0,
+            "Rakukaja": 0,
+            "Rising Slash": 24,
+            "Null Phys": 25,
+            "Mazionga": 27,
+            "Growth 3": 28
+        },
+        "stats": [16, 15, 15, 16, 14],
+        "trait": "Divine Ceremony",
+        "dlc": true
+    },
+    "Izanagi-no-Okami": {
+        "special": true,
+        "inherits": "almighty",
+        "item": "Bright Headband",
+        "itemr": "Bright Headband R",
+        "level": 80,
+        "arcana": "World",
+        "elems": ["rs", "rs", "rs", "rs", "rs", "rs", "rs", "rs", "-", "-"],
+        "skills": {
+            "Myriad Truths": 0,
+            "Victory Cry": 0,
+            "Angelic Grace": 0,
+            "Concentrate": 81,
+            "Heat Riser": 82,
+            "Heat Up": 83,
+            "Salvation": 84
+        },
+        "stats": [52, 56, 46, 48, 45],
+        "trait": "Creation Ceremony",
+        "dlc": true
+    },
+    "Izanagi-no-Okami Picaro": {
+        "special": true,
+        "inherits": "almighty",
+        "item": "Mediarahan",
+        "itemr": "Salvation",
+        "level": 89,
+        "arcana": "World",
+        "elems": ["rs", "rs", "rs", "rs", "rs", "rs", "rs", "rs", "-", "-"],
+        "skills": {
+            "Myriad Truths": 0,
+            "Victory Cry": 0,
+            "Angelic Grace": 0,
+            "Concentrate": 90,
+            "Debilitate": 91,
+            "Enduring Soul": 92,
+            "Salvation": 93
+        },
+        "stats": [54, 61, 56, 58, 45],
+        "trait": "Creation Ceremony",
+        "dlc": true
+    },
+    "Kaguya": {
+        "inherits": "almighty",
+        "item": "Moonlight Robe",
+        "itemr": "Moonlight Robe R",
+        "level": 16,
+        "arcana": "Moon",
+        "elems": ["-", "-", "wk", "-", "-", "rs", "-", "-", "nu", "nu"],
+        "skills": {
+            "Shining Arrows": 0,
+            "Mediarama": 0,
+            "Counterstrike": 0,
+            "Divine Grace": 17,
+            "Amrita Shower": 18,
+            "Diarahan": 21,
+            "Repel Phys": 22
+        },
+        "stats": [11, 15, 12, 11, 6],
+        "trait": "Untouchable Beauty",
+        "dlc": true
+    },
+    "Kaguya Picaro": {
+        "inherits": "almighty",
+        "item": "Diarahan",
+        "itemr": "Mediarahan",
+        "level": 25,
+        "arcana": "Moon",
+        "elems": ["-", "-", "wk", "-", "-", "-", "-", "-", "nu", "nu"],
+        "skills": {
+            "Shining Arrows": 0,
+            "Mediarama": 0,
+            "High Counter": 0,
+            "Divine Grace": 26,
+            "Amrita Shower": 27,
+            "Diarahan": 30,
+            "Repel Phys": 31
+        },
+        "stats": [17, 20, 19, 15, 11],
+        "trait": "Untouchable Beauty",
+        "dlc": true
+    },
+    "Magatsu-Izanagi": {
+        "inherits": "almighty",
+        "item": "Black Headband",
+        "itemr": "Black Headband R",
+        "level": 44,
+        "arcana": "Tower",
+        "elems": ["-", "rs", "-", "-", "-", "-", "-", "wk", "nu", "nu"],
+        "skills": {
+            "Magatsu Mandala": 0,
+            "Megidola": 0,
+            "Ghastly Wail": 0,
+            "Maziodyne": 45,
+            "Bloodbath": 46,
+            "Attack Master": 48,
+            "Heat Riser": 50
+        },
+        "stats": [37, 35, 32, 25, 10],
+        "trait": "Hollow Fool",
+        "dlc": true
+    },
+    "Magatsu-Izanagi Picaro": {
+        "inherits": "almighty",
+        "item": "Heat Riser",
+        "itemr": "Debilitate",
+        "level": 48,
+        "arcana": "Tower",
+        "elems": ["-", "rs", "-", "-", "-", "-", "-", "wk", "nu", "nu"],
+        "skills": {
+            "Magatsu Mandala": 0,
+            "Megidola": 0,
+            "Ghastly Wail": 0,
+            "Magarudyne": 49,
+            "Bloodbath": 50,
+            "Speed Master": 52,
+            "Heat Riser": 54
+        },
+        "stats": [40, 38, 35, 27, 11],
+        "trait": "Hollow Fool",
+        "dlc": true
+    },
+    "Messiah": {
+        "inherits": "almighty",
+        "item": "Lucifer Guard",
+        "itemr": "Lucifer Guard R",
+        "level": 81,
+        "arcana": "Judgement",
+        "elems": ["-", "-", "rs", "rs", "rs", "rs", "rs", "rs", "rp", "wk"],
+        "skills": {
+            "Oratorio": 0,
+            "Megidolaon": 0,
+            "God's Hand": 0,
+            "Regenerate 3": 82,
+            "Enduring Soul": 83,
+            "Invigorate 3": 84,
+            "Absorb Phys": 85,
+            "Almighty Boost": 87
+        },
+        "stats": [50, 50, 50, 50, 50],
+        "trait": "Offered Soul",
+        "dlc": true
+    },
+    "Messiah Picaro": {
+        "inherits": "almighty",
+        "item": "Insta-Heal",
+        "itemr": "Firm Stance",
+        "level": 90,
+        "arcana": "Judgement",
+        "elems": ["-", "-", "rs", "rs", "rs", "rs", "rs", "rs", "rp", "wk"],
+        "skills": {
+            "Oratorio": 0,
+            "Megidolaon": 0,
+            "Agneyastra": 0,
+            "Insta-Heal": 91,
+            "Enduring Soul": 92,
+            "Life Aid": 93,
+            "Firm Stance": 94,
+            "Almighty Boost": 96
+        },
+        "stats": [56, 56, 55, 55, 55],
+        "trait": "Offered Soul",
+        "dlc": true
+    },
+    "Orpheus": {
+        "inherits": "almighty",
+        "item": "Hades Harp",
+        "itemr": "Hades Harp R",
+        "level": 26,
+        "arcana": "Fool",
+        "elems": ["-", "-", "-", "-", "wk", "-", "-", "-", "rs", "wk"],
+        "skills": {
+            "Cadenza": 0,
+            "Agilao": 0,
+            "Tarunda": 0,
+            "Endure": 27,
+            "Maragion": 29,
+            "Marakukaja": 30,
+            "Fire Boost": 32
+        },
+        "stats": [17, 17, 17, 17, 17],
+        "trait": "Cycle of Sorrow",
+        "dlc": true
+    },
+    "Orpheus F": {
+        "inherits": "almighty",
+        "item": "Graceful Harp",
+        "itemr": "Graceful Harp R",
+        "level": 11,
+        "arcana": "Fool",
+        "elems": ["-", "-", "-", "-", "wk", "-", "-", "-", "rs", "wk"],
+        "skills": {
+            "Neo Cadenza": 0,
+            "Agi": 0,
+            "Tarunda": 0,
+            "Endure": 0,
+            "Maragion": 12,
+            "Marakukaja": 14,
+            "Dodge Curse": 15
+        },
+        "stats": [8, 9, 8, 9, 6],
+        "trait": "Cycle of Sorrow",
+        "dlc": true
+    },
+    "Orpheus F Picaro": {
+        "inherits": "almighty",
+        "item": "Endure",
+        "itemr": "Enduring Soul",
+        "level": 13,
+        "arcana": "Fool",
+        "elems": ["-", "-", "-", "-", "wk", "-", "-", "-", "rs", "wk"],
+        "skills": {
+            "Neo Cadenza": 0,
+            "Maragi": 0,
+            "Rakunda": 0,
+            "Endure": 0,
+            "Agilao": 14,
+            "Marakukaja": 16,
+            "Dodge Curse": 17
+        },
+        "stats": [9, 11, 9, 10, 7],
+        "trait": "Cycle of Sorrow",
+        "dlc": true
+    },
+    "Orpheus Picaro": {
+        "inherits": "almighty",
+        "item": "Agidyne",
+        "itemr": "Maragidyne",
+        "level": 29,
+        "arcana": "Fool",
+        "elems": ["-", "-", "-", "-", "wk", "-", "-", "-", "rs", "wk"],
+        "skills": {
+            "Cadenza": 0,
+            "Maragion": 0,
+            "Matarunda": 0,
+            "Endure": 30,
+            "Agidyne": 32,
+            "Matarukaja": 33,
+            "Fire Boost": 35
+        },
+        "stats": [19, 19, 19, 19, 19],
+        "trait": "Cycle of Sorrow",
+        "dlc": true
+    },
+    "Raoul": {
+        "inherits": "almighty",
+        "item": "Phantom Hat",
+        "itemr": "Trickster Hat",
+        "level": 76,
+        "arcana": "Fool",
+        "elems": ["-", "-", "-", "-", "-", "-", "-", "-", "wk", "nu"],
+        "skills": {
+            "Phantom Show": 0,
+            "Eigaon": 0,
+            "Ali Dance": 0,
+            "Maeigaon": 78,
+            "Heat Riser": 79,
+            "Curse Amp": 80,
+            "Concentrate": 81,
+            "Life Aid": 82
+        },
+        "stats": [47, 49, 43, 54, 42],
+        "trait": "Hidden Presence",
+        "dlc": true
+    },
+    "Thanatos": {
+        "inherits": "almighty",
+        "item": "Darkness Ring",
+        "itemr": "Darkness Ring R",
+        "level": 65,
+        "arcana": "Death",
+        "elems": ["rs", "-", "-", "-", "-", "-", "-", "-", "wk", "rp"],
+        "skills": {
+            "Door of Hades": 0,
+            "Maeigaon": 0,
+            "Mamudoon": 0,
+            "Curse Amp": 66,
+            "One-shot Kill": 68,
+            "Fortified Moxy": 69,
+            "Enduring Soul": 70
+        },
+        "stats": [43, 49, 41, 38, 31],
+        "trait": "Iron Heart",
+        "dlc": true
+    },
+    "Thanatos Picaro": {
+        "inherits": "almighty",
+        "item": "Maeigaon",
+        "itemr": "Demonic Decree",
+        "level": 69,
+        "arcana": "Death",
+        "elems": ["rs", "-", "-", "-", "-", "-", "-", "-", "wk", "rp"],
+        "skills": {
+            "Door of Hades": 0,
+            "Maeigaon": 0,
+            "Mamudoon": 0,
+            "Mudo Boost": 70,
+            "One-shot Kill": 72,
+            "Adverse Resolve": 73,
+            "Enduring Soul": 74
+        },
+        "stats": [45, 51, 43, 40, 35],
+        "trait": "Iron Heart",
+        "dlc": true
+    },
+    "Tsukiyomi": {
+        "inherits": "almighty",
+        "item": "Black Moon",
+        "itemr": "Black Moon R",
+        "level": 50,
+        "arcana": "Moon",
+        "elems": ["rs", "-", "-", "-", "-", "-", "-", "wk", "rs", "rp"],
+        "skills": {
+            "Abyssal Wings": 0,
+            "Absorb Curse": 0,
+            "Myriad Slashes": 0,
+            "Life Drain": 0,
+            "Curse Amp": 53,
+            "Vorpal Blade": 55,
+            "Arms Master": 56
+        },
+        "stats": [38, 32, 33, 37, 17],
+        "trait": "Tree of Life",
+        "dlc": true
+    },
+    "Tsukiyomi Picaro": {
+        "inherits": "almighty",
+        "item": "Spell Master",
+        "itemr": "Arms Master",
+        "level": 55,
+        "arcana": "Moon",
+        "elems": ["rs", "-", "-", "-", "-", "-", "-", "wk", "rs", "rp"],
+        "skills": {
+            "Abyssal Wings": 0,
+            "Absorb Curse": 0,
+            "Myriad Slashes": 0,
+            "Spirit Drain": 0,
+            "Curse Amp": 58,
+            "Vorpal Blade": 60,
+            "Spell Master": 61
+        },
+        "stats": [41, 35, 36, 40, 20],
+        "trait": "Tree of Life",
+        "dlc": true
     }
 };
