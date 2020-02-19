@@ -6,7 +6,7 @@
     <meta name="theme-color" content="#B71C1C">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="Persona 5 Fusion Calculator">
-    <title>Persona 5 Fusion Calculator</title>
+    <title>Persona 5 Royal Fusion Calculator</title>
     <link rel="icon" sizes="192x192" href="img/favicon/192x192.png">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -16,11 +16,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-table-headers/0.1.19/js/jquery.stickytableheaders.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.min.js"></script>
-    <script src="data/Data5.js"></script>
-    <script src="data/PersonaData.js"></script>
-    <script src="data/SkillData.js"></script>
+    <script src="data/Data5Royal.js"></script>
+    <script src="data/PersonaDataRoyal.js"></script>
+    <script src="data/SkillDataRoyal.js"></script>
     <script>
-        var GLOBAL_IS_ROYAL = false;
+        // dirty quick hack
+        var GLOBAL_IS_ROYAL = true;
+        var rarePersonae = rarePersonaeRoyal;
+        var rareCombos = rareCombosRoyal;
+        var arcana2Combos = arcana2CombosRoyal;
+        var specialCombos = specialCombosRoyal;
+        var dlcPersona = dlcPersonaRoyal;
+        var personaMap = personaMapRoyal;
+        var skillMap = skillMapRoyal;
     </script>
     <script src="src/DataUtil.js"></script>
     <script src="src/FusionCalculator.js"></script>
@@ -29,10 +37,11 @@
     <script src="src/SkillListController.js"></script>
     <script src="src/SettingController.js"></script>
     <script src="src/App.js"></script>
+
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
         ga('create', 'UA-38672868-11', 'auto');
@@ -50,17 +59,17 @@
 
 </head>
 <body>
-    <a href="https://github.com/chinhodado/persona5_calculator" class="mobile-hidden">
-        <img style="position: absolute; top: 0; right: 0; border: 0;"
-             src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67"
-             alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png">
-    </a>
-    <div id="content">
-        <h3><a href="index.html">Persona 5 Fusion Calculator</a></h3>
-        <h4>Click <a href="indexRoyal.html">here</a> for the Royal version</h4>
-        <div class="desktop-hidden" style="margin-bottom:10px"><b><a href="https://github.com/chinhodado/persona5_calculator">View code on GitHub</a></b></div>
-        <b><a href="#/list/">Persona</a></b> - <b><a href="#/skill/">Skills</a></b> - <b><a href="#/setting/">Settings</a></b>
-        <ng-view ng-app="myModule"></ng-view>
-    </div>
+<a href="https://github.com/chinhodado/persona5_calculator" class="mobile-hidden">
+    <img style="position: absolute; top: 0; right: 0; border: 0;"
+         src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67"
+         alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png">
+</a>
+<div id="content">
+    <h3><a href="indexRoyal.html">Persona 5 Royal Fusion Calculator</a></h3>
+    <h4>Click <a href="index.html">here</a> for the normal (non-royal) version</h4>
+    <div class="desktop-hidden" style="margin-bottom:10px"><b><a href="https://github.com/chinhodado/persona5_calculator">View code on GitHub</a></b></div>
+    <b><a href="#/list/">Persona</a></b> - <b><a href="#/skill/">Skills</a></b> - <b><a href="#/setting/">Settings</a></b>
+    <ng-view ng-app="myModule"></ng-view>
+</div>
 </body>
 </html>

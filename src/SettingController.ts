@@ -23,6 +23,6 @@ class SettingController {
             localStorage["dlcPersona"] = JSON.stringify(config);
         }
 
-        window.location.href = "index.html";
+        window.location.href = GLOBAL_IS_ROYAL? "indexRoyal.html" : "index.html";
     }
 }
