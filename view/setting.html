@@ -5,7 +5,7 @@
         <div class="field" ng:repeat="pair in dlcPersona">
             <div class="ui checkbox">
                 <input type="checkbox" name="{{pair[0]}},{{pair[1]}}" ng-checked="pair[2]=='y'" class="dlcCheckbox">
-                <label>{{pair[0]}} and {{pair[1]}}</label>
+                <label>{{pair[0]}} <span ng-if="pair[1]">and {{pair[1]}}</span></label>
             </div>
         </div>
         <button class="ui button" ng-click="save()">Save</button>
