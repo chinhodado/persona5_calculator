@@ -189,7 +189,7 @@ function capitalizeFirstLetter(s) {
     return s.charAt(0).toUpperCase() + s.slice(1);
 }
 function getSkillCost(skill) {
-    if (skill.element != 'passive') {
+    if (skill.element !== 'passive' && skill.element !== 'trait') {
         if (skill.cost < 100) {
             return String(skill.cost) + '% HP';
         }

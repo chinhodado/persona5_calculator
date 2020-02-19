@@ -1,4 +1,5 @@
 ///<reference path="DataUtil.ts"/>
+declare var GLOBAL_IS_ROYAL;
 
 class SettingController {
     constructor($scope) {

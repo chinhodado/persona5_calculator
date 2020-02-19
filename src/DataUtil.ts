@@ -205,7 +205,7 @@ function capitalizeFirstLetter(s: string) {
 }
 
 function getSkillCost(skill: SkillData) {
-    if (skill.element != 'passive') {
+    if (skill.element !== 'passive' && skill.element !== 'trait') {
         if (skill.cost < 100) {
             return String(skill.cost) + '% HP'
         }

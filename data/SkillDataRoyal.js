@@ -9,12 +9,12 @@ var skillMapRoyal = {
         "element": "passive",
         "personas": { "Attis": 86, "Loa": 73, "Lucifer": 0, "Tsukiyomi": 0, "Tsukiyomi Picaro": 0 }
     },
-    "Absorb Elec": { "fuse": "Foggy Day ???", "effect": "Absorb Electric attacks.", "element": "passive" },
+    "Absorb Elec": { "effect": "Absorb Electric attacks.", "element": "passive", "fuse": "Foggy Day ???" },
     "Absorb Fire": {
-        "fuse": "Full Moon ???",
         "effect": "Absorb Fire attacks.",
         "element": "passive",
-        "personas": { "Moloch": 64 }
+        "personas": { "Moloch": 64 },
+        "fuse": "Full Moon ???"
     },
     "Absorb Ice": {
         "effect": "Absorb Ice attacks.",
@@ -30,7 +30,7 @@ var skillMapRoyal = {
     "Absorb Psy": { "effect": "Absorb Psy attacks.", "element": "passive", "personas": { "Chi You": 92 } },
     "Absorb Wind": { "effect": "Absorb Wind attacks.", "element": "passive", "personas": { "Ishtar": 0 } },
     "Abysmal Surge": {
-        "cost": 1008,
+        "cost": 800,
         "effect": "Inflict Despair (medium odds) to all foes.",
         "element": "ailment",
         "personas": {
@@ -44,7 +44,7 @@ var skillMapRoyal = {
         }
     },
     "Abyssal Wings": {
-        "cost": 1030,
+        "cost": 3000,
         "effect": "Deal severe Curse damage to all foes.",
         "element": "curse",
         "unique": "Tsukiyomi",
@@ -61,13 +61,13 @@ var skillMapRoyal = {
         "personas": { "Arsene": 7, "Jikokuten": 28, "Rakshasa": 30, "Raphael": 82, "Thanatos Picaro": 73 }
     },
     "Agi": {
-        "cost": 1004,
+        "cost": 400,
         "effect": "Deal weak Fire damage to 1 foe.",
         "element": "fire",
         "personas": { "Cait Sith": 0, "Hua Po": 0, "Jack-o'-Lantern": 0, "Onmoraki": 13, "Succubus": 8, "Orpheus F": 0 }
     },
     "Agidyne": {
-        "cost": 1012,
+        "cost": 1200,
         "effect": "Deal heavy Fire damage to 1 foe.",
         "element": "fire",
         "personas": {
@@ -86,7 +86,7 @@ var skillMapRoyal = {
         }
     },
     "Agilao": {
-        "cost": 1008,
+        "cost": 800,
         "effect": "Deal medium Fire damage to 1 foe.",
         "element": "fire",
         "personas": {
@@ -110,17 +110,17 @@ var skillMapRoyal = {
         "personas": { "Abaddon": 79, "Biyarky": 73, "Dionysus": 73, "Mishaguji": 57, "White Rider": 44 }
     },
     "Ali Dance": {
-        "fuse": "Jazz 1/15 Foggy Day 50",
         "effect": "Half hit rate of all incoming attacks.",
         "element": "passive",
-        "personas": { "Gabriel": 79, "Macabre": 78, "Vishnu": 0, "Raoul": 0 }
+        "personas": { "Gabriel": 79, "Macabre": 78, "Vishnu": 0, "Raoul": 0 },
+        "fuse": "Jazz 1/15 Foggy Day 50"
     },
-    "Almighty Amp": { "fuse": "Network Fusion", "effect": "Strengthen Almighty attacks by 50%.", "element": "passive" },
+    "Almighty Amp": { "effect": "Strengthen Almighty attacks by 50%.", "element": "passive", "fuse": "Network Fusion" },
     "Almighty Boost": {
-        "fuse": "Network Fusion",
         "effect": "Strengthen Almighty attacks by 25%.",
         "element": "passive",
-        "personas": { "Messiah": 87, "Messiah Picaro": 96 }
+        "personas": { "Messiah": 87, "Messiah Picaro": 96 },
+        "fuse": "Network Fusion"
     },
     "Ambient Aid": {
         "effect": "Greatly increase inflicting rate of all status effects under rainy day or special weather warning.",
@@ -128,13 +128,13 @@ var skillMapRoyal = {
         "personas": { "Black Ooze": 20, "Black Rider": 60, "Mothman": 36, "Narcissus": 53, "Pazuzu": 47, "Sudama": 20 }
     },
     "Amrita Drop": {
-        "cost": 1006,
+        "cost": 600,
         "effect": "Cure all ailments of 1 ally except for unique status.",
         "element": "healing",
         "personas": { "Fortuna": 50, "Norn": 55, "Seiryu": 66 }
     },
     "Amrita Shower": {
-        "cost": 1012,
+        "cost": 1200,
         "effect": "Cure all ailments of party except for unique status.",
         "element": "healing",
         "personas": {
@@ -168,7 +168,6 @@ var skillMapRoyal = {
         }
     },
     "Apt Pupil": {
-        "fuse": "CJ Gym Trickster 50",
         "effect": "Increase critical rate.",
         "element": "passive",
         "personas": {
@@ -179,13 +178,14 @@ var skillMapRoyal = {
             "Sudama": 22,
             "Ariadne": 0,
             "Ariadne Picaro": 0
-        }
+        },
+        "fuse": "CJ Gym Trickster 50"
     },
     "Arms Master": {
-        "fuse": "Jazz 1/22",
         "effect": "Half HP cost for physical skills.",
         "element": "passive",
-        "personas": { "Ongyo-Ki": 91, "Raphael": 83, "Tsukiyomi": 56 }
+        "personas": { "Ongyo-Ki": 91, "Raphael": 83, "Tsukiyomi": 56 },
+        "fuse": "Jazz 1/22"
     },
     "Assault Dive": {
         "cost": 13,
@@ -202,7 +202,7 @@ var skillMapRoyal = {
         }
     },
     "Atomic Flare": {
-        "cost": 1048,
+        "cost": 4800,
         "effect": "Deal severe Nuclear damage to 1 foe.",
         "element": "nuclear",
         "personas": { "Asura-Ou": 0, "Fafnir": 88, "Orichalcum": 0 }
@@ -260,7 +260,7 @@ var skillMapRoyal = {
         "personas": { "Dakini": 0, "Kin-Ki": 30 }
     },
     "Baisudi": {
-        "cost": 1004,
+        "cost": 400,
         "effect": "Cure Burn/Freeze/Shock of 1 ally.",
         "element": "healing",
         "personas": { "Agathion": 0, "Ame-no-Uzume": 16, "Angel": 10, "Jack Frost": 0, "Nigi Mitama": 0 }
@@ -273,13 +273,13 @@ var skillMapRoyal = {
         "personas": { "Ariadne": 0, "Ariadne Picaro": 0 }
     },
     "Black Viper": {
-        "cost": 1048,
+        "cost": 4800,
         "effect": "Deal severe Almighty damage to 1 foe.",
         "element": "almighty",
         "personas": { "Satan": 94, "Satanael": 96 }
     },
     "Blazing Hell": {
-        "cost": 1054,
+        "cost": 5400,
         "effect": "Deal severe Fire damage to all foes.",
         "element": "fire",
         "personas": { "Attis": 88, "Mada": 92, "Surt": 0, "Zaou-Gongen": 86 }
@@ -318,7 +318,7 @@ var skillMapRoyal = {
         "personas": { "Mara": 76, "Tam Lin": 30, "Trumpeter": 0 }
     },
     "Brain Jack": {
-        "cost": 1008,
+        "cost": 800,
         "effect": "Inflict Brainwash (medium odds) to all foes.",
         "element": "ailment",
         "personas": {
@@ -359,13 +359,13 @@ var skillMapRoyal = {
         }
     },
     "Bufu": {
-        "cost": 1004,
+        "cost": 400,
         "effect": "Deal weak Ice damage to 1 foe.",
         "element": "ice",
         "personas": { "Apsaras": 0, "Genbu": 0, "Jack Frost": 0, "Koropokkuru": 0, "Saki Mitama": 0, "Silky": 0 }
     },
     "Bufudyne": {
-        "cost": 1012,
+        "cost": 1200,
         "effect": "Deal heavy Ice damage to 1 foe.",
         "element": "ice",
         "personas": {
@@ -380,7 +380,7 @@ var skillMapRoyal = {
         }
     },
     "Bufula": {
-        "cost": 1008,
+        "cost": 800,
         "effect": "Deal medium Ice damage to 1 foe.",
         "element": "ice",
         "personas": { "Lachesis": 0, "Lilim": 0, "Stone of Scone": 0, "Sui-Ki": 0 }
@@ -400,15 +400,14 @@ var skillMapRoyal = {
         }
     },
     "Cadenza": {
-        "cost": 1024,
+        "cost": 2400,
         "effect": "Restore 50% HP of party and increase evasion rate.",
         "element": "healing",
         "unique": "Orpheus",
         "personas": { "Orpheus": 0, "Orpheus Picaro": 0 }
     },
     "Charge": {
-        "fuse": "Jazz 9/4",
-        "cost": 1015,
+        "cost": 1500,
         "effect": "Multiply user's next Phys attack damage by 2.5.",
         "element": "support",
         "personas": {
@@ -426,7 +425,8 @@ var skillMapRoyal = {
             "Yoshitsune": 0,
             "Ariadne": 36,
             "Ariadne Picaro": 48
-        }
+        },
+        "fuse": "Jazz 9/4"
     },
     "Cleave": {
         "cost": 6,
@@ -440,8 +440,7 @@ var skillMapRoyal = {
         "personas": { "Choronzon": 33, "Koropokkuru": 15, "Lakshmi": 71, "Nigi Mitama": 26 }
     },
     "Concentrate": {
-        "fuse": "Jazz 9/25",
-        "cost": 1015,
+        "cost": 1500,
         "effect": "Multiply user's next magical attack damage by 2.5.",
         "element": "support",
         "personas": {
@@ -464,7 +463,8 @@ var skillMapRoyal = {
             "Izanagi-no-Okami": 81,
             "Izanagi-no-Okami Picaro": 90,
             "Raoul": 81
-        }
+        },
+        "fuse": "Jazz 9/25"
     },
     "Confuse Boost": {
         "effect": "Increase chance of inflicting Confuse.",
@@ -478,7 +478,7 @@ var skillMapRoyal = {
         "personas": { "Flauros": 23, "Neko Shogun": 33, "Orthrus": 24 }
     },
     "Cosmic Flare": {
-        "cost": 1054,
+        "cost": 5400,
         "effect": "Deal severe Nuclear damage to all foes.",
         "element": "nuclear",
         "personas": { "Ardha": 0, "Fafnir": 0, "Michael": 92 }
@@ -516,7 +516,7 @@ var skillMapRoyal = {
         "personas": { "Choronzon": 32, "Nue": 26, "Pale Rider": 55 }
     },
     "Dazzler": {
-        "cost": 1003,
+        "cost": 300,
         "effect": "Inflict Dizzy (high odds) to 1 foe.",
         "element": "ailment",
         "personas": { "Archangel": 0, "Jack-o'-Lantern": 5, "Mokoi": 0, "Narcissus": 0 }
@@ -543,8 +543,7 @@ var skillMapRoyal = {
         }
     },
     "Debilitate": {
-        "fuse": "Jazz 12/11",
-        "cost": 1030,
+        "cost": 3000,
         "effect": "Decrease 1 foe's Attack, Defense and Agility for 3 turns.",
         "element": "support",
         "personas": {
@@ -556,7 +555,8 @@ var skillMapRoyal = {
             "Sraosha": 85,
             "Trumpeter": 65,
             "Izanagi-no-Okami Picaro": 91
-        }
+        },
+        "fuse": "Jazz 12/11"
     },
     "Defense Master": {
         "effect": "Automatic Rakukaja at the start of battle.",
@@ -564,8 +564,7 @@ var skillMapRoyal = {
         "personas": { "Ananta": 0, "Arahabaki": 39, "Genbu": 12, "Jikokuten": 0, "Neko Shogun": 35, "Take-Minakata": 0 }
     },
     "Dekaja": {
-        "fuse": "CJ Maid Cafe",
-        "cost": 1010,
+        "cost": 1000,
         "effect": "Negate all -kaja buff effects of all foes.",
         "element": "support",
         "personas": {
@@ -578,17 +577,18 @@ var skillMapRoyal = {
             "Sarasvati": 52,
             "Shiki-Ouji": 21,
             "Succubus": 10
-        }
+        },
+        "fuse": "CJ Maid Cafe"
     },
     "Dekunda": {
-        "fuse": "CJ Maid Cafe",
-        "cost": 1010,
+        "cost": 1000,
         "effect": "Negate all -nda debuff effects of party.",
         "element": "support",
-        "personas": { "Angel": 12, "Anubis": 37, "Mithra": 35, "Mokoi": 14, "Suzaku": 18, "Unicorn": 0, "Yatagarasu": 0 }
+        "personas": { "Angel": 12, "Anubis": 37, "Mithra": 35, "Mokoi": 14, "Suzaku": 18, "Unicorn": 0, "Yatagarasu": 0 },
+        "fuse": "CJ Maid Cafe"
     },
     "Demonic Decree": {
-        "cost": 1048,
+        "cost": 4800,
         "effect": "Half remaining HP of 1 foe.",
         "element": "curse",
         "personas": { "Beelzebub": 90, "Belial": 88, "Orichalcum": 0 }
@@ -599,19 +599,19 @@ var skillMapRoyal = {
         "personas": { "Lamia": 31, "Pisaca": 32, "Red Rider": 44 }
     },
     "Dia": {
-        "cost": 1003,
+        "cost": 300,
         "effect": "Slightly restore 1 ally's HP.",
         "element": "healing",
         "personas": { "Agathion": 0, "Angel": 0, "Kusi Mitama": 0, "Pixie": 0, "Silky": 7 }
     },
     "Diamond Dust": {
-        "cost": 1048,
+        "cost": 4800,
         "effect": "Deal severe Ice damage to 1 foe.",
         "element": "ice",
         "personas": { "Alilat": 0, "Black Frost": 72, "Orichalcum": 0, "Satan": 0, "Yamata-no-Orochi": 69 }
     },
     "Diarahan": {
-        "cost": 1018,
+        "cost": 1800,
         "effect": "Fully restore 1 ally's HP.",
         "element": "healing",
         "personas": {
@@ -629,8 +629,7 @@ var skillMapRoyal = {
         }
     },
     "Diarama": {
-        "fuse": "Chain 20",
-        "cost": 1006,
+        "cost": 600,
         "effect": "Moderately restore 1 ally's HP.",
         "element": "healing",
         "personas": {
@@ -642,10 +641,11 @@ var skillMapRoyal = {
             "Nigi Mitama": 0,
             "Parvati": 0,
             "Phoenix": 22
-        }
+        },
+        "fuse": "Chain 20"
     },
     "Die For Me!": {
-        "cost": 1044,
+        "cost": 4400,
         "effect": "High chance of instantly killing all foes.",
         "element": "curse",
         "unique": "Alice",
@@ -657,7 +657,7 @@ var skillMapRoyal = {
         "personas": { "Ame-no-Uzume": 18, "Kikuri-Hime": 45, "Nigi Mitama": 24, "Kaguya": 17, "Kaguya Picaro": 26 }
     },
     "Divine Judgement": {
-        "cost": 1048,
+        "cost": 4800,
         "effect": "Half remaining HP of 1 foe.",
         "element": "bless",
         "personas": { "Gabriel": 78, "Metatron": 95, "Michael": 0, "Orichalcum": 0, "Vohu Manah": 0 }
@@ -696,10 +696,10 @@ var skillMapRoyal = {
         "personas": { "Belphegor": 39, "Berith": 11, "Koh-i-Noor": 0, "Sui-Ki": 29 }
     },
     "Dodge Ice": {
-        "fuse": "Trial 20",
         "effect": "Double evasion rate against Ice attacks.",
         "element": "passive",
-        "personas": { "Koh-i-Noor": 0, "Koropokkuru": 11 }
+        "personas": { "Koh-i-Noor": 0, "Koropokkuru": 11 },
+        "fuse": "Trial 20"
     },
     "Dodge Nuke": {
         "effect": "Double evasion rate against Nuclear attacks.",
@@ -722,7 +722,7 @@ var skillMapRoyal = {
         "personas": { "Koh-i-Noor": 0 }
     },
     "Door of Hades": {
-        "cost": 1032,
+        "cost": 3200,
         "effect": "Deal heavy Almighty damage to all foes with medium chance of instant kill.",
         "element": "almighty",
         "unique": "Thanatos",
@@ -735,7 +735,7 @@ var skillMapRoyal = {
         "personas": { "Flauros": 0, "Sandman": 0, "Setanta": 0 }
     },
     "Dormina": {
-        "cost": 1003,
+        "cost": 300,
         "effect": "Inflict Sleep (high odds) to 1 foe.",
         "element": "ailment",
         "personas": { "High Pixie": 0, "Hua Po": 0, "Incubus": 7, "Sandman": 0, "Silky": 0, "Succubus": 0 }
@@ -753,13 +753,13 @@ var skillMapRoyal = {
         "personas": { "Arsene": 5, "Incubus": 0, "Inugami": 15, "Phoenix": 0, "Pisaca": 0 }
     },
     "Eiga": {
-        "cost": 1008,
+        "cost": 800,
         "effect": "Deal medium Curse damage to 1 foe.",
         "element": "curse",
         "personas": { "Choronzon": 31, "Leanan Sidhe": 23, "Stone of Scone": 0 }
     },
     "Eigaon": {
-        "cost": 1012,
+        "cost": 1200,
         "effect": "Deal heavy Curse damage to 1 foe.",
         "element": "curse",
         "personas": {
@@ -773,7 +773,7 @@ var skillMapRoyal = {
         }
     },
     "Eiha": {
-        "cost": 1004,
+        "cost": 400,
         "effect": "Deal weak Curse damage to 1 foe.",
         "element": "curse",
         "personas": { "Arsene": 0, "Onmoraki": 0 }
@@ -789,13 +789,13 @@ var skillMapRoyal = {
         "personas": { "Atropos": 42, "Take-Minakata": 29, "Thunderbird": 38, "Yurlungur": 49 }
     },
     "Elec Break": {
-        "cost": 1006,
+        "cost": 600,
         "effect": "Negate Electric resistances of all foes.",
         "element": "support",
         "personas": { "Atropos": 0, "Barong": 54, "Raja Naga": 0, "Yurlungur": 46 }
     },
     "Elec Wall": {
-        "cost": 1018,
+        "cost": 1800,
         "effect": "Create a shield on 1 ally to reduce damage of Electric attacks for 3 turns.",
         "element": "support",
         "personas": { "Ananta": 0, "Apsaras": 14, "Lachesis": 37, "Nekomata": 21 }
@@ -806,7 +806,6 @@ var skillMapRoyal = {
         "unique": "Necronomicon"
     },
     "Endure": {
-        "fuse": "Full Moon 50",
         "effect": "Survive one fatal blow with 1 HP remaining.",
         "element": "passive",
         "personas": {
@@ -817,10 +816,10 @@ var skillMapRoyal = {
             "Orpheus F": 0,
             "Orpheus F Picaro": 0,
             "Orpheus Picaro": 30
-        }
+        },
+        "fuse": "Full Moon 50"
     },
     "Enduring Soul": {
-        "fuse": "L Leblanc",
         "effect": "Survive one fatal blow with HP completely recovered.",
         "element": "passive",
         "personas": {
@@ -836,16 +835,17 @@ var skillMapRoyal = {
             "Messiah Picaro": 92,
             "Thanatos": 70,
             "Thanatos Picaro": 74
-        }
+        },
+        "fuse": "L Leblanc"
     },
     "Energy Drop": {
-        "cost": 1004,
+        "cost": 400,
         "effect": "Cure Confuse/Fear/Despair/Rage/Brainwash of 1 ally.",
         "element": "healing",
         "personas": { "Kikuri-Hime": 0, "Makami": 0, "Mandrake": 0, "Narcissus": 0, "Saki Mitama": 0 }
     },
     "Energy Shower": {
-        "cost": 1008,
+        "cost": 800,
         "effect": "Cure Confuse/Fear/Despair/Rage/Brainwash of party.",
         "element": "healing",
         "personas": { "Clotho": 31, "Hariti": 0, "Parvati": 57 }
@@ -892,13 +892,13 @@ var skillMapRoyal = {
         "personas": { "Raja Naga": 60 }
     },
     "Evil Smile": {
-        "cost": 1008,
+        "cost": 800,
         "effect": "Inflict Fear (medium odds) to all foes.",
         "element": "ailment",
         "personas": { "Beelzebub": 0, "Fafnir": 0, "Legion": 0, "Macabre": 0, "Moloch": 0, "Pazuzu": 48, "Skadi": 0 }
     },
     "Evil Touch": {
-        "cost": 1003,
+        "cost": 300,
         "effect": "Inflict Fear (high odds) to 1 foe.",
         "element": "ailment",
         "personas": {
@@ -950,13 +950,13 @@ var skillMapRoyal = {
         "personas": { "Decarabia": 35, "Hell Biker": 39, "Orpheus": 32, "Orpheus Picaro": 35 }
     },
     "Fire Break": {
-        "cost": 1006,
+        "cost": 600,
         "effect": "Negate Fire resistances of all foes.",
         "element": "support",
         "personas": { "Biyarky": 74, "Orobas": 20, "Seth": 54 }
     },
     "Fire Wall": {
-        "cost": 1018,
+        "cost": 1800,
         "effect": "Create a shield on 1 ally to reduce damage of Fire attacks for 3 turns.",
         "element": "support",
         "personas": { "Atropos": 0, "Koropokkuru": 13, "Slime": 13 }
@@ -988,7 +988,7 @@ var skillMapRoyal = {
         "personas": { "Chi You": 90, "Loa": 75, "Mada": 91, "Satan": 96, "Seth": 56, "Trumpeter": 61, "Vohu Manah": 83 }
     },
     "Foul Breath": {
-        "cost": 1008,
+        "cost": 800,
         "effect": "Increase susceptibility to all ailments of 1 foe.",
         "element": "almighty",
         "personas": { "Andras": 0, "Biyarky": 0, "Lamia": 28, "Legion": 39, "White Rider": 43 }
@@ -1009,44 +1009,44 @@ var skillMapRoyal = {
         }
     },
     "Frei": {
-        "fuse": "CJ Theater",
-        "cost": 1004,
+        "cost": 400,
         "effect": "Deal weak Nuclear damage to 1 foe.",
         "element": "nuclear",
-        "personas": { "Makami": 0, "Shiisaa": 0, "Suzaku": 0 }
+        "personas": { "Makami": 0, "Shiisaa": 0, "Suzaku": 0 },
+        "fuse": "CJ Theater"
     },
     "Freidyne": {
-        "cost": 1012,
+        "cost": 1200,
         "effect": "Deal heavy Nuclear damage to 1 foe.",
         "element": "nuclear",
         "personas": { "Ananta": 49, "Bishamonten": 0, "Emperor's Amulet": 0, "Lilith": 0, "Mithras": 45, "Titania": 0 }
     },
     "Freila": {
-        "cost": 1008,
+        "cost": 800,
         "effect": "Deal medium Nuclear damage to 1 foe.",
         "element": "nuclear",
         "personas": { "Ara Mitama": 0, "Phoenix": 0, "Stone of Scone": 0, "Thoth": 0 }
     },
     "Garu": {
-        "cost": 1003,
+        "cost": 300,
         "effect": "Deal weak Wind damage to 1 foe.",
         "element": "wind",
         "personas": { "Bicorn": 6, "High Pixie": 0, "Kelpie": 0, "Kodama": 0, "Koppa Tengu": 0 }
     },
     "Garudyne": {
-        "cost": 1010,
+        "cost": 1000,
         "effect": "Deal heavy Wind damage to 1 foe.",
         "element": "wind",
         "personas": { "Emperor's Amulet": 0, "Fortuna": 47, "Garuda": 0, "Jatayu": 0, "Norn": 0, "Quetzalcoatl": 0 }
     },
     "Garula": {
-        "cost": 1006,
+        "cost": 600,
         "effect": "Deal medium Wind damage to 1 foe.",
         "element": "wind",
         "personas": { "Anzu": 0, "Fuu-Ki": 0, "Sandman": 0, "Stone of Scone": 0 }
     },
     "Ghastly Wail": {
-        "cost": 1028,
+        "cost": 2800,
         "effect": "Instantly kill all foes under Fear.",
         "element": "almighty",
         "personas": {
@@ -1091,10 +1091,10 @@ var skillMapRoyal = {
         "personas": { "Koppa Tengu": 12, "Saki Mitama": 7 }
     },
     "Growth 2": {
-        "fuse": "CJ Beach",
         "effect": "Persona gains 1/2 EXP while inactive.",
         "element": "passive",
-        "personas": { "Ananta": 47, "Kurama Tengu": 36, "Lachesis": 0, "Thoth": 42 }
+        "personas": { "Ananta": 47, "Kurama Tengu": 36, "Lachesis": 0, "Thoth": 42 },
+        "fuse": "CJ Beach"
     },
     "Growth 3": {
         "effect": "Persona gains full EXP even while inactive.",
@@ -1102,7 +1102,7 @@ var skillMapRoyal = {
         "personas": { "Narcissus": 50, "Quetzalcoatl": 68, "Raphael": 81, "Izanagi": 25, "Izanagi Picaro": 28 }
     },
     "Hama": {
-        "cost": 1008,
+        "cost": 800,
         "effect": "Small chance of instantly killing 1 foe.",
         "element": "bless",
         "personas": { "Archangel": 0 }
@@ -1113,7 +1113,7 @@ var skillMapRoyal = {
         "personas": { "Dominion": 71, "Horus": 52, "Isis": 30, "Melchizedek": 59, "Metatron": 92, "Sraosha": 0 }
     },
     "Hamaon": {
-        "cost": 1015,
+        "cost": 1500,
         "effect": "Medium chance of instantly killing 1 foe.",
         "element": "bless",
         "personas": {
@@ -1141,8 +1141,7 @@ var skillMapRoyal = {
         "personas": { "Black Ooze": 21, "Slime": 14 }
     },
     "Heat Riser": {
-        "fuse": "Jazz 12/4 CJ Underground Mall",
-        "cost": 1030,
+        "cost": 3000,
         "effect": "Increase 1 ally's Attack, Defense and Agility for 3 turns.",
         "element": "support",
         "personas": {
@@ -1155,13 +1154,14 @@ var skillMapRoyal = {
             "Magatsu-Izanagi": 50,
             "Magatsu-Izanagi Picaro": 54,
             "Raoul": 79
-        }
+        },
+        "fuse": "Jazz 12/4 CJ Underground Mall"
     },
     "Heat Up": {
-        "fuse": "Trial 50",
         "effect": "Recover 5% HP and 10 SP at the start of preemptive turn.",
         "element": "passive",
-        "personas": { "Flauros": 24, "Tam Lin": 32, "Thor": 68, "Ariadne Picaro": 44, "Izanagi-no-Okami": 83 }
+        "personas": { "Flauros": 24, "Tam Lin": 32, "Thor": 68, "Ariadne Picaro": 44, "Izanagi-no-Okami": 83 },
+        "fuse": "Trial 50"
     },
     "Heat Wave": {
         "cost": 20,
@@ -1170,7 +1170,6 @@ var skillMapRoyal = {
         "personas": { "Chimera": 0, "Kali": 0, "Mithras": 0, "Oberon": 0, "Okuninushi": 59, "Ose": 47 }
     },
     "High Counter": {
-        "fuse": "CJ Leblanc",
         "effect": "20% chance of reflecting Phys attacks.",
         "element": "passive",
         "personas": {
@@ -1184,7 +1183,8 @@ var skillMapRoyal = {
             "Siegfried": 0,
             "Thor": 0,
             "Kaguya Picaro": 0
-        }
+        },
+        "fuse": "CJ Leblanc"
     },
     "Hysterical Slap": {
         "cost": 9,
@@ -1193,7 +1193,7 @@ var skillMapRoyal = {
         "personas": { "Kushinada-Hime": 0, "Nekomata": 18, "Yaksini": 0 }
     },
     "Ice Age": {
-        "cost": 1054,
+        "cost": 5400,
         "effect": "Deal severe Ice damage to all foes.",
         "element": "ice",
         "personas": { "Alilat": 87, "Mother Harlot": 86, "Satan": 0 }
@@ -1217,19 +1217,19 @@ var skillMapRoyal = {
         "personas": { "Byakko": 47, "Lachesis": 41 }
     },
     "Ice Break": {
-        "cost": 1006,
+        "cost": 600,
         "effect": "Negate Ice resistances of all foes.",
         "element": "support",
         "personas": { "Belphegor": 0, "Byakko": 48, "Jack Frost": 0, "King Frost": 0 }
     },
     "Ice Wall": {
-        "cost": 1018,
+        "cost": 1800,
         "effect": "Create a shield on 1 ally to reduce damage of Ice attacks for 3 turns.",
         "element": "support",
         "personas": { "Apsaras": 0, "Bicorn": 7, "Koumokuten": 52, "Onmoraki": 0, "Sarasvati": 0 }
     },
     "Inferno": {
-        "cost": 1048,
+        "cost": 4800,
         "effect": "Deal severe Fire damage to 1 foe.",
         "element": "fire",
         "personas": { "Mada": 0, "Orichalcum": 0, "Throne": 78 }
@@ -1240,10 +1240,10 @@ var skillMapRoyal = {
         "personas": { "Ishtar": 87, "Lucifer": 98, "Messiah Picaro": 91 }
     },
     "Invigorate 1": {
-        "fuse": "Technician 30",
         "effect": "Recover 3 SP each turn in battle.",
         "element": "passive",
-        "personas": { "Clotho": 33, "Neko Shogun": 31 }
+        "personas": { "Clotho": 33, "Neko Shogun": 31 },
+        "fuse": "Technician 30"
     },
     "Invigorate 2": {
         "effect": "Recover 5 SP each turn in battle.",
@@ -1256,26 +1256,26 @@ var skillMapRoyal = {
         "personas": { "Ardha": 0, "Maria": 0, "Satan": 95, "Throne": 76, "Vohu Manah": 84, "Messiah": 84 }
     },
     "Kouga": {
-        "cost": 1008,
+        "cost": 800,
         "effect": "Deal medium Bless damage to 1 foe.",
         "element": "bless",
         "personas": { "Mithra": 0, "Stone of Scone": 0, "Unicorn": 43 }
     },
     "Kougaon": {
-        "cost": 1012,
+        "cost": 1200,
         "effect": "Deal heavy Bless damage to 1 foe.",
         "element": "bless",
         "personas": { "Dominion": 0, "Emperor's Amulet": 0, "Horus": 0, "Sraosha": 0 }
     },
-    "Kouha": { "cost": 1004, "effect": "Deal weak Bless damage to 1 foe.", "element": "bless", "personas": { "Angel": 0 } },
+    "Kouha": { "cost": 400, "effect": "Deal weak Bless damage to 1 foe.", "element": "bless", "personas": { "Angel": 0 } },
     "Life Aid": {
-        "fuse": "Trial 80",
         "effect": "Recover 8% HP and SP after a successful battle.",
         "element": "passive",
-        "personas": { "Kohryu": 78, "Lakshmi": 74, "Trumpeter": 63, "Messiah Picaro": 93, "Raoul": 82 }
+        "personas": { "Kohryu": 78, "Lakshmi": 74, "Trumpeter": 63, "Messiah Picaro": 93, "Raoul": 82 },
+        "fuse": "Trial 80"
     },
     "Life Drain": {
-        "cost": 1003,
+        "cost": 300,
         "effect": "Drains HP from 1 foe.",
         "element": "almighty",
         "personas": { "Choronzon": 0, "Incubus": 0, "Legion": 0, "Loa": 0, "Tsukiyomi": 0 }
@@ -1288,7 +1288,7 @@ var skillMapRoyal = {
         "personas": { "Inugami": 17, "Obariyon": 9, "Sudama": 0 }
     },
     "Lullaby": {
-        "cost": 1008,
+        "cost": 800,
         "effect": "Inflict Sleep (medium odds) to all foes.",
         "element": "ailment",
         "personas": { "Kikuri-Hime": 0, "Lakshmi": 0, "Lilim": 0, "Titania": 0 }
@@ -1300,20 +1300,20 @@ var skillMapRoyal = {
         "personas": { "Agathion": 4, "Bicorn": 0, "Kelpie": 0, "Mandrake": 4, "Slime": 0 }
     },
     "Mabaisudi": {
-        "cost": 1008,
+        "cost": 800,
         "effect": "Cure Burn/Freeze/Shock of party.",
         "element": "healing",
         "personas": { "Hariti": 0, "Lachesis": 0, "Mithras": 43, "Principality": 35 }
     },
     "Mabufu": {
-        "fuse": "CJ BBB",
-        "cost": 1010,
+        "cost": 1000,
         "effect": "Deal weak Ice damage to all foes.",
         "element": "ice",
-        "personas": { "Genbu": 10, "Jack Frost": 12, "Koropokkuru": 14, "Regent": 0, "Sui-Ki": 0 }
+        "personas": { "Genbu": 10, "Jack Frost": 12, "Koropokkuru": 14, "Regent": 0, "Sui-Ki": 0 },
+        "fuse": "CJ BBB"
     },
     "Mabufudyne": {
-        "cost": 1022,
+        "cost": 2200,
         "effect": "Deal heavy Ice damage to all foes.",
         "element": "ice",
         "personas": {
@@ -1334,19 +1334,19 @@ var skillMapRoyal = {
         }
     },
     "Mabufula": {
-        "cost": 1016,
+        "cost": 1600,
         "effect": "Deal medium Ice damage to all foes.",
         "element": "ice",
         "personas": { "Belphegor": 0, "Byakko": 0, "Lachesis": 39, "Lilim": 37, "Orlov": 0, "Sui-Ki": 28 }
     },
     "Maeiga": {
-        "cost": 1016,
+        "cost": 1600,
         "effect": "Deal medium Curse damage to all foes.",
         "element": "curse",
         "personas": { "Anubis": 36, "Orlov": 0, "Pazuzu": 0, "White Rider": 41 }
     },
     "Maeigaon": {
-        "cost": 1022,
+        "cost": 2200,
         "effect": "Deal heavy Curse damage to all foes.",
         "element": "curse",
         "personas": {
@@ -1365,37 +1365,37 @@ var skillMapRoyal = {
         }
     },
     "Maeiha": {
-        "cost": 1010,
+        "cost": 1000,
         "effect": "Deal weak Curse damage to all foes.",
         "element": "curse",
         "personas": { "Choronzon": 29, "Nue": 0, "Regent": 0 }
     },
     "Mafrei": {
-        "cost": 1010,
+        "cost": 1000,
         "effect": "Deal weak Nuclear damage to all foes.",
         "element": "nuclear",
         "personas": { "Makami": 17, "Regent": 0, "Suzaku": 19 }
     },
     "Mafreidyne": {
-        "cost": 1022,
+        "cost": 2200,
         "effect": "Deal heavy Nuclear damage to all foes.",
         "element": "nuclear",
         "personas": { "Asura-Ou": 79, "Bishamonten": 69, "Crystal Skull": 0, "Lilith": 62, "Trumpeter": 0 }
     },
     "Mafreila": {
-        "cost": 1016,
+        "cost": 1600,
         "effect": "Deal medium Nuclear damage to all foes.",
         "element": "nuclear",
         "personas": { "Ananta": 0, "Mithras": 0, "Orlov": 0, "Phoenix": 26 }
     },
     "Magaru": {
-        "cost": 1008,
+        "cost": 800,
         "effect": "Deal small Wind damage to all foes.",
         "element": "wind",
         "personas": { "Ame-no-Uzume": 0, "High Pixie": 22, "Nekomata": 0, "Regent": 0 }
     },
     "Magarudyne": {
-        "cost": 1020,
+        "cost": 2000,
         "effect": "Deal heavy Wind damage to all foes.",
         "element": "wind",
         "personas": {
@@ -1408,7 +1408,7 @@ var skillMapRoyal = {
         }
     },
     "Magarula": {
-        "cost": 1014,
+        "cost": 1400,
         "effect": "Deal medium Wind damage to all foes.",
         "element": "wind",
         "personas": {
@@ -1423,25 +1423,25 @@ var skillMapRoyal = {
         }
     },
     "Magatsu Mandala": {
-        "cost": 1030,
+        "cost": 3000,
         "effect": "Deal heavy Curse damage to all foes and inflict Confuse/Fear/Despair (medium odds).",
         "element": "curse",
         "unique": "Magatsu-Izanagi",
         "personas": { "Magatsu-Izanagi": 0, "Magatsu-Izanagi Picaro": 0 }
     },
     "Magic Ability": {
-        "fuse": "Network Fusion",
         "effect": "Strengthen all magical attacks by 25%.",
-        "element": "passive"
+        "element": "passive",
+        "fuse": "Network Fusion"
     },
     "Mahama": {
-        "cost": 1018,
+        "cost": 1800,
         "effect": "Small chance of instantly killing all foes.",
         "element": "bless",
         "personas": { "Clotho": 0, "Isis": 0, "Mithra": 0, "Unicorn": 0 }
     },
     "Mahamaon": {
-        "cost": 1034,
+        "cost": 3400,
         "effect": "medium chance of instantly killing all foes.",
         "element": "bless",
         "personas": {
@@ -1456,13 +1456,13 @@ var skillMapRoyal = {
         }
     },
     "Makajam": {
-        "cost": 1003,
+        "cost": 300,
         "effect": "Inflict Forget (high odds) to 1 foe.",
         "element": "ailment",
         "personas": { "Angel": 0, "Clotho": 0, "Kaiwan": 0, "Koropokkuru": 0, "Kusi Mitama": 0, "Makami": 18 }
     },
     "Makajamaon": {
-        "cost": 1008,
+        "cost": 800,
         "effect": "Inflict Forget (medium odds) to all foes.",
         "element": "ailment",
         "personas": {
@@ -1477,14 +1477,13 @@ var skillMapRoyal = {
         }
     },
     "Makara Break": {
-        "cost": 1018,
+        "cost": 1800,
         "effect": "Remove magic-repellent shields from all foes.",
         "element": "support",
         "personas": { "Queen Mab": 46, "Yatagarasu": 0 }
     },
     "Makarakarn": {
-        "fuse": "Jazz 10/30",
-        "cost": 1036,
+        "cost": 3600,
         "effect": "Create a shield on 1 ally to repel 1 magical attack.",
         "element": "support",
         "personas": {
@@ -1496,16 +1495,17 @@ var skillMapRoyal = {
             "Seiryu": 67,
             "Vasuki": 71,
             "Asterius Picaro": 66
-        }
+        },
+        "fuse": "Jazz 10/30"
     },
     "Makouga": {
-        "cost": 1016,
+        "cost": 1600,
         "effect": "Deal medium Bless damage to all foes.",
         "element": "bless",
         "personas": { "Anubis": 0, "Daisoujou": 0, "Isis": 0, "Mithra": 34, "Orlov": 0, "Power": 43, "Principality": 0 }
     },
     "Makougaon": {
-        "cost": 1022,
+        "cost": 2200,
         "effect": "Deal heavy Bless damage to all foes.",
         "element": "bless",
         "personas": {
@@ -1519,19 +1519,19 @@ var skillMapRoyal = {
         }
     },
     "Makouha": {
-        "cost": 1010,
+        "cost": 1000,
         "effect": "Deal weak Bless damage to all foes.",
         "element": "bless",
         "personas": { "Nigi Mitama": 0, "Regent": 0 }
     },
     "Mamudo": {
-        "cost": 1018,
+        "cost": 1800,
         "effect": "Small chance of instantly killing all foes.",
         "element": "curse",
         "personas": { "Lamia": 30, "Leanan Sidhe": 21, "Nue": 24, "Pisaca": 29 }
     },
     "Mamudoon": {
-        "cost": 1034,
+        "cost": 3400,
         "effect": "medium chance of instantly killing all foes.",
         "element": "curse",
         "personas": {
@@ -1548,32 +1548,32 @@ var skillMapRoyal = {
         }
     },
     "Mapsi": {
-        "cost": 1010,
+        "cost": 1000,
         "effect": "Deal weak Psy damage to all foes.",
         "element": "psy",
         "personas": { "Leanan Sidhe": 22, "Matador": 18, "Regent": 0, "Shiki-Ouji": 19, "Sudama": 0 }
     },
     "Mapsio": {
-        "cost": 1016,
+        "cost": 1600,
         "effect": "Deal medium Psy damage to all foes.",
         "element": "psy",
         "personas": { "Okuninushi": 0, "Orlov": 0, "Red Rider": 0 }
     },
     "Mapsiodyne": {
-        "cost": 1022,
+        "cost": 2200,
         "effect": "Deal heavy Psy damage to all foes.",
         "element": "psy",
         "personas": { "Crystal Skull": 0, "Forneus": 67, "Kohryu": 0, "Mara": 0, "Nebiros": 0, "Parvati": 59 }
     },
     "Maragi": {
-        "fuse": "CJ BBB",
-        "cost": 1010,
+        "cost": 1000,
         "effect": "Deal weak Fire damage to all foes.",
         "element": "fire",
-        "personas": { "Eligor": 0, "Hua Po": 13, "Orobas": 0, "Orthrus": 0, "Regent": 0, "Orpheus F Picaro": 0 }
+        "personas": { "Eligor": 0, "Hua Po": 13, "Orobas": 0, "Orthrus": 0, "Regent": 0, "Orpheus F Picaro": 0 },
+        "fuse": "CJ BBB"
     },
     "Maragidyne": {
-        "cost": 1022,
+        "cost": 2200,
         "effect": "Deal heavy Fire damage to all foes.",
         "element": "fire",
         "personas": {
@@ -1590,14 +1590,13 @@ var skillMapRoyal = {
         }
     },
     "Maragion": {
-        "cost": 1016,
+        "cost": 1600,
         "effect": "Deal medium Fire damage to all foes.",
         "element": "fire",
         "personas": { "Hell Biker": 40, "Orlov": 0, "Orpheus": 29, "Orpheus F": 12, "Orpheus Picaro": 0 }
     },
     "Marakukaja": {
-        "fuse": "Jazz 7/17 10/16",
-        "cost": 1024,
+        "cost": 2400,
         "effect": "Increase party's Defense for 3 turns.",
         "element": "support",
         "personas": {
@@ -1615,24 +1614,24 @@ var skillMapRoyal = {
             "Orpheus": 30,
             "Orpheus F": 14,
             "Orpheus F Picaro": 16
-        }
+        },
+        "fuse": "Jazz 7/17 10/16"
     },
     "Marakunda": {
-        "fuse": "Jazz 8/14 11/13",
-        "cost": 1024,
+        "cost": 2400,
         "effect": "Decrease all foes' Defense for 3 turns.",
         "element": "support",
-        "personas": { "Ara Mitama": 32, "Chimera": 76, "Girimehkala": 0, "Kaiwan": 41, "Orobas": 19, "Surt": 85 }
+        "personas": { "Ara Mitama": 32, "Chimera": 76, "Girimehkala": 0, "Kaiwan": 41, "Orobas": 19, "Surt": 85 },
+        "fuse": "Jazz 8/14 11/13"
     },
     "Marin Karin": {
-        "cost": 1003,
+        "cost": 300,
         "effect": "Inflict Brainwash (high odds) to 1 foe.",
         "element": "ailment",
         "personas": { "Leanan Sidhe": 20, "Mokoi": 12, "Nebiros": 0, "Suzaku": 0 }
     },
     "Masukukaja": {
-        "fuse": "Jazz 7/31 10/23 CJ Aquarium",
-        "cost": 1024,
+        "cost": 2400,
         "effect": "Increase party's Agility for 3 turns.",
         "element": "support",
         "personas": {
@@ -1646,18 +1645,18 @@ var skillMapRoyal = {
             "Seth": 0,
             "Siegfried": 0,
             "White Rider": 42
-        }
+        },
+        "fuse": "Jazz 7/31 10/23 CJ Aquarium"
     },
     "Masukunda": {
-        "fuse": "Jazz 8/28 11/27 CJ Aquarium",
-        "cost": 1024,
+        "cost": 2400,
         "effect": "Decrease all foes' Agility for 3 turns.",
         "element": "support",
-        "personas": { "Bugs": 0, "Forneus": 0, "Ganesha": 57, "Kurama Tengu": 0, "Lilim": 34, "Thoth": 0 }
+        "personas": { "Bugs": 0, "Forneus": 0, "Ganesha": 57, "Kurama Tengu": 0, "Lilim": 34, "Thoth": 0 },
+        "fuse": "Jazz 8/28 11/27 CJ Aquarium"
     },
     "Matarukaja": {
-        "fuse": "Jazz 7/10 10/9",
-        "cost": 1024,
+        "cost": 2400,
         "effect": "Increase party's Attack power for 3 turns.",
         "element": "support",
         "personas": {
@@ -1678,23 +1677,24 @@ var skillMapRoyal = {
             "Athena": 48,
             "Athena Picaro": 0,
             "Orpheus Picaro": 33
-        }
+        },
+        "fuse": "Jazz 7/10 10/9"
     },
     "Matarunda": {
-        "fuse": "Jazz 8/7 11/6",
-        "cost": 1024,
+        "cost": 2400,
         "effect": "Decrease all foes' Attack power for 3 turns.",
         "element": "support",
-        "personas": { "Hanuman": 0, "Queen Mab": 44, "Rangda": 51, "Sarasvati": 53, "Suzaku": 21, "Orpheus Picaro": 0 }
+        "personas": { "Hanuman": 0, "Queen Mab": 44, "Rangda": 51, "Sarasvati": 53, "Suzaku": 21, "Orpheus Picaro": 0 },
+        "fuse": "Jazz 8/7 11/6"
     },
     "Mazio": {
-        "cost": 1010,
+        "cost": 1000,
         "effect": "Deal weak Electric damage to all foes.",
         "element": "electric",
         "personas": { "Ame-no-Uzume": 0, "Regent": 0 }
     },
     "Maziodyne": {
-        "cost": 1022,
+        "cost": 2200,
         "effect": "Deal heavy Electric damage to all foes.",
         "element": "electric",
         "personas": {
@@ -1710,8 +1710,7 @@ var skillMapRoyal = {
         }
     },
     "Mazionga": {
-        "fuse": "Trial 30",
-        "cost": 1016,
+        "cost": 1600,
         "effect": "Deal medium Electric damage to all foes.",
         "element": "electric",
         "personas": {
@@ -1725,16 +1724,17 @@ var skillMapRoyal = {
             "Yurlungur": 0,
             "Izanagi": 24,
             "Izanagi Picaro": 27
-        }
+        },
+        "fuse": "Trial 30"
     },
     "Me Patra": {
-        "cost": 1008,
+        "cost": 800,
         "effect": "Cure Dizzy/Forget/Sleep/Hunger of party.",
         "element": "healing",
         "personas": { "Clotho": 0, "Daisoujou": 44, "Nigi Mitama": 25 }
     },
     "Media": {
-        "cost": 1007,
+        "cost": 700,
         "effect": "Slightly restore party's HP.",
         "element": "healing",
         "personas": {
@@ -1747,7 +1747,7 @@ var skillMapRoyal = {
         }
     },
     "Mediarahan": {
-        "cost": 1030,
+        "cost": 3000,
         "effect": "Fully restore party's HP.",
         "element": "healing",
         "personas": {
@@ -1761,7 +1761,7 @@ var skillMapRoyal = {
         }
     },
     "Mediarama": {
-        "cost": 1012,
+        "cost": 1200,
         "effect": "Moderately restore party's HP.",
         "element": "healing",
         "personas": {
@@ -1791,13 +1791,13 @@ var skillMapRoyal = {
         }
     },
     "Megido": {
-        "cost": 1015,
+        "cost": 1500,
         "effect": "Deal medium Almighty damage to all foes.",
         "element": "almighty",
         "personas": { "Thoth": 37 }
     },
     "Megidola": {
-        "cost": 1024,
+        "cost": 2400,
         "effect": "Deal heavy Almighty damage to all foes.",
         "element": "almighty",
         "personas": {
@@ -1812,7 +1812,7 @@ var skillMapRoyal = {
         }
     },
     "Megidolaon": {
-        "cost": 1038,
+        "cost": 3800,
         "effect": "Deal severe Almighty damage to all foes.",
         "element": "almighty",
         "personas": {
@@ -1860,14 +1860,14 @@ var skillMapRoyal = {
         "unique": "Necronomicon"
     },
     "Morning Star": {
-        "cost": 1054,
+        "cost": 5400,
         "effect": "Deal severe Almighty damage to all foes.",
         "element": "almighty",
         "unique": "Lucifer",
         "personas": { "Lucifer": 94 }
     },
     "Mudo": {
-        "cost": 1008,
+        "cost": 800,
         "effect": "Small chance of instantly killing 1 foe.",
         "element": "curse",
         "personas": { "Lamia": 0, "Nue": 21, "Succubus": 12 }
@@ -1878,7 +1878,7 @@ var skillMapRoyal = {
         "personas": { "Alice": 0, "Mother Harlot": 0, "Thanatos Picaro": 70 }
     },
     "Mudoon": {
-        "cost": 1015,
+        "cost": 1500,
         "effect": "medium chance of instantly killing 1 foe.",
         "element": "curse",
         "personas": {
@@ -1917,7 +1917,7 @@ var skillMapRoyal = {
         "personas": { "Red Rider": 42 }
     },
     "Nocturnal Flash": {
-        "cost": 1008,
+        "cost": 800,
         "effect": "Inflict Dizzy (medium odds) to all foes.",
         "element": "ailment",
         "personas": { "Ame-no-Uzume": 15, "Hariti": 42, "Hastur": 0, "Jatayu": 0, "Norn": 0, "Oberon": 0 }
@@ -1933,13 +1933,13 @@ var skillMapRoyal = {
         "personas": { "Ananta": 50, "Phoenix": 25 }
     },
     "Nuke Break": {
-        "cost": 1006,
+        "cost": 600,
         "effect": "Negate Nuclear resistances of all foes.",
         "element": "support",
         "personas": { "Mithras": 42 }
     },
     "Nuke Wall": {
-        "cost": 1018,
+        "cost": 1800,
         "effect": "Create a shield on 1 ally to reduce damage of Nuclear attacks for 3 turns.",
         "element": "support"
     },
@@ -2005,7 +2005,7 @@ var skillMapRoyal = {
         "personas": { "Yatagarasu": 64 }
     },
     "Ominous Words": {
-        "cost": 1003,
+        "cost": 300,
         "effect": "Inflict Despair (high odds) to 1 foe.",
         "element": "ailment",
         "personas": { "Decarabia": 0, "Lamia": 27, "Red Rider": 45 }
@@ -2032,20 +2032,20 @@ var skillMapRoyal = {
         "personas": { "Atavaka": 0, "Ose": 0, "Shiki-Ouji": 24, "White Rider": 0, "Yaksini": 22 }
     },
     "Oratorio": {
-        "cost": 1038,
+        "cost": 3800,
         "effect": "Fully restore party's HP and negate all -nda debuffs.",
         "element": "healing",
         "unique": "Messiah",
         "personas": { "Messiah": 0, "Messiah Picaro": 0 }
     },
     "Panta Rhei": {
-        "cost": 1042,
+        "cost": 4200,
         "effect": "Deal severe Wind damage to 1 foe",
         "element": "wind",
         "personas": { "Baal": 0, "Orichalcum": 0 }
     },
     "Patra": {
-        "cost": 1004,
+        "cost": 400,
         "effect": "Cure Dizzy/Forget/Sleep/Hunger of 1 ally.",
         "element": "healing",
         "personas": { "Genbu": 8, "Pixie": 3, "Silky": 9 }
@@ -2061,14 +2061,14 @@ var skillMapRoyal = {
         "personas": { "Ongyo-Ki": 0, "Red Rider": 46, "Yatagarasu": 60, "Yoshitsune": 89 }
     },
     "Psi": {
-        "fuse": "CJ Theater",
-        "cost": 1004,
+        "cost": 400,
         "effect": "Deal weak Psy damage to 1 foe.",
         "element": "psy",
-        "personas": { "Kodama": 12, "Matador": 0 }
+        "personas": { "Kodama": 12, "Matador": 0 },
+        "fuse": "CJ Theater"
     },
     "Psio": {
-        "cost": 1008,
+        "cost": 800,
         "effect": "Deal medium Psy damage to 1 foe.",
         "element": "psy",
         "personas": {
@@ -2081,7 +2081,7 @@ var skillMapRoyal = {
         }
     },
     "Psiodyne": {
-        "cost": 1012,
+        "cost": 1200,
         "effect": "Deal heavy Psy damage to 1 foe.",
         "element": "psy",
         "personas": { "Bugs": 0, "Emperor's Amulet": 0, "Forneus": 0, "Kaiwan": 40, "Mishaguji": 0, "Parvati": 0 }
@@ -2093,31 +2093,31 @@ var skillMapRoyal = {
     },
     "Psy Boost": { "effect": "Strengthen Psy attacks by 25%.", "element": "passive", "personas": { "Okuninushi": 55 } },
     "Psy Break": {
-        "cost": 1006,
+        "cost": 600,
         "effect": "Negate Psy resistances of all foes.",
         "element": "support",
         "personas": { "Okuninushi": 56, "Parvati": 0, "Red Rider": 0 }
     },
     "Psy Wall": {
-        "cost": 1018,
+        "cost": 1800,
         "effect": "Create a shield on 1 ally to reduce damage of Psy attacks for 3 turns.",
         "element": "support",
         "personas": { "Kushinada-Hime": 0, "Sarasvati": 51, "Thoth": 39 }
     },
     "Psycho Blast": {
-        "cost": 1054,
+        "cost": 5400,
         "effect": "Deal severe Psy damage to all foes.",
         "element": "psy",
         "personas": { "Chi You": 91, "Shiva": 88 }
     },
     "Psycho Force": {
-        "cost": 1048,
+        "cost": 4800,
         "effect": "Deal severe Psy damage to 1 foe.",
         "element": "psy",
         "personas": { "Chi You": 0, "Kohryu": 0, "Mara": 78, "Orichalcum": 0, "Shiva": 0 }
     },
     "Pulinpa": {
-        "cost": 1003,
+        "cost": 300,
         "effect": "Inflict Confuse (high odds) to 1 foe.",
         "element": "ailment",
         "personas": { "Choronzon": 0, "High Pixie": 20, "Inugami": 0, "Mandrake": 0, "Nue": 22, "Onmoraki": 15 }
@@ -2128,8 +2128,7 @@ var skillMapRoyal = {
         "personas": { "Ara Mitama": 34, "Koppa Tengu": 13 }
     },
     "Rakukaja": {
-        "fuse": "CJ Sky Tree",
-        "cost": 1008,
+        "cost": 800,
         "effect": "Increase 1 ally's Defense for 3 turns.",
         "element": "support",
         "personas": {
@@ -2140,10 +2139,11 @@ var skillMapRoyal = {
             "Queen's Necklace": 0,
             "Saki Mitama": 8,
             "Izanagi Picaro": 0
-        }
+        },
+        "fuse": "CJ Sky Tree"
     },
     "Rakunda": {
-        "cost": 1008,
+        "cost": 800,
         "effect": "Decrease 1 foe's Defense for 3 turns.",
         "element": "support",
         "personas": {
@@ -2165,7 +2165,7 @@ var skillMapRoyal = {
         "personas": { "Choronzon": 0, "Ippon-Datara": 15, "Oni": 0, "Pisaca": 0, "Shiisaa": 17 }
     },
     "Rebellion": {
-        "cost": 1005,
+        "cost": 500,
         "effect": "Increase 1 ally's critical rate for 3 turns.",
         "element": "support",
         "personas": {
@@ -2185,7 +2185,7 @@ var skillMapRoyal = {
         }
     },
     "Recarm": {
-        "cost": 1008,
+        "cost": 800,
         "effect": "Revive 1 ally with 50% HP recovered.",
         "element": "healing",
         "personas": { "Phoenix": 23, "Queen's Necklace": 0 }
@@ -2201,7 +2201,6 @@ var skillMapRoyal = {
         "personas": { "Hecatoncheires": 0, "Hope Diamond": 0, "Koumokuten": 0 }
     },
     "Regenerate 3": {
-        "fuse": "CJ Art Museum",
         "effect": "Recover 6% of max HP each turn in battle.",
         "element": "passive",
         "personas": {
@@ -2212,7 +2211,8 @@ var skillMapRoyal = {
             "Quetzalcoatl": 69,
             "Satan": 0,
             "Messiah": 82
-        }
+        },
+        "fuse": "CJ Art Museum"
     },
     "Repel Bless": {
         "effect": "Repel Bless attacks.",
@@ -2278,7 +2278,7 @@ var skillMapRoyal = {
     "Resist Wind": { "effect": "Reduce damage from Wind attacks.", "element": "passive", "personas": { "Fuu-Ki": 27 } },
     "Reverse Rub": { "effect": "Inflict Rage (100%) to 1 ally.", "element": "ailment", "unique": "Enemies" },
     "Revolution": {
-        "cost": 1005,
+        "cost": 500,
         "effect": "Increase all foes and allies' critical rate for 3 turns.",
         "element": "support",
         "personas": { "Baal": 0, "Hanuman": 0, "Koumokuten": 0, "Kumbhanda": 47, "Melchizedek": 60, "Yurlungur": 45 }
@@ -2306,7 +2306,7 @@ var skillMapRoyal = {
         }
     },
     "Salvation": {
-        "cost": 1048,
+        "cost": 4800,
         "effect": "Fully restore HP and cure all ailments of party except for unique status.",
         "element": "healing",
         "personas": {
@@ -2322,8 +2322,7 @@ var skillMapRoyal = {
         }
     },
     "Samarecarm": {
-        "fuse": "CJ Church",
-        "cost": 1018,
+        "cost": 1800,
         "effect": "Revive 1 ally with all HP recovered.",
         "element": "healing",
         "personas": {
@@ -2338,10 +2337,11 @@ var skillMapRoyal = {
             "Unicorn": 41,
             "Athena": 51,
             "Athena Picaro": 55
-        }
+        },
+        "fuse": "CJ Church"
     },
     "Samsara": {
-        "cost": 1044,
+        "cost": 4400,
         "effect": "High chance of instantly killing all foes.",
         "element": "bless",
         "unique": "Daisoujou",
@@ -2353,7 +2353,6 @@ var skillMapRoyal = {
         "unique": "Enemies"
     },
     "Sharp Student": {
-        "fuse": "CJ Gym",
         "effect": "Lower odds of receiving critical hit.",
         "element": "passive",
         "personas": {
@@ -2364,10 +2363,11 @@ var skillMapRoyal = {
             "Silky": 10,
             "Tam Lin": 28,
             "Zouchouten": 33
-        }
+        },
+        "fuse": "CJ Gym"
     },
     "Shining Arrows": {
-        "cost": 1022,
+        "cost": 2200,
         "effect": "Deal 4 to 8 times weak Bless damage to all foes.",
         "element": "bless",
         "unique": "Kaguya",
@@ -2403,9 +2403,9 @@ var skillMapRoyal = {
     },
     "Snipe": { "effect": "Strengthen Gun attacks by 25%.", "element": "passive", "personas": { "White Rider": 40 } },
     "Soul Chain": {
-        "fuse": "Network Fusion",
         "effect": "Recover 20 SP when performing Baton Pass.",
-        "element": "passive"
+        "element": "passive",
+        "fuse": "Network Fusion"
     },
     "Speed Master": {
         "effect": "Automatic Sukukaja at the start of battle.",
@@ -2413,13 +2413,13 @@ var skillMapRoyal = {
         "personas": { "Hell Biker": 0, "Jatayu": 57, "Kaiwan": 38, "Suzaku": 20, "Magatsu-Izanagi Picaro": 52 }
     },
     "Spell Master": {
-        "fuse": "Jazz 1/29",
         "effect": "Half SP cost for magic skills.",
         "element": "passive",
-        "personas": { "Ishtar": 89, "Kohryu": 82, "Lucifer": 95, "Mada": 96, "Uriel": 86, "Tsukiyomi Picaro": 61 }
+        "personas": { "Ishtar": 89, "Kohryu": 82, "Lucifer": 95, "Mada": 96, "Uriel": 86, "Tsukiyomi Picaro": 61 },
+        "fuse": "Jazz 1/29"
     },
     "Spirit Drain": {
-        "cost": 1003,
+        "cost": 300,
         "effect": "Drains SP from 1 foe.",
         "element": "almighty",
         "personas": {
@@ -2436,7 +2436,7 @@ var skillMapRoyal = {
     },
     "Spirit Leech": { "effect": "Drains 150 SP from 1 foe.", "element": "almighty", "unique": "Enemies" },
     "Stagnant Air": {
-        "cost": 1005,
+        "cost": 500,
         "effect": "Increase susceptibility to all ailments of all foes and allies.",
         "element": "almighty",
         "personas": {
@@ -2475,14 +2475,14 @@ var skillMapRoyal = {
         "unique": "Necronomicon"
     },
     "Sukukaja": {
-        "fuse": "CJ Sky Tree",
-        "cost": 1008,
+        "cost": 800,
         "effect": "Increase 1 ally's Agility for 3 turns.",
         "element": "support",
-        "personas": { "Cait Sith": 7, "Kelpie": 9, "Koppa Tengu": 0, "Matador": 0, "Orobas": 0, "Queen's Necklace": 0 }
+        "personas": { "Cait Sith": 7, "Kelpie": 9, "Koppa Tengu": 0, "Matador": 0, "Orobas": 0, "Queen's Necklace": 0 },
+        "fuse": "CJ Sky Tree"
     },
     "Sukunda": {
-        "cost": 1008,
+        "cost": 800,
         "effect": "Decrease 1 foe's Agility for 3 turns.",
         "element": "support",
         "personas": {
@@ -2523,8 +2523,7 @@ var skillMapRoyal = {
         "personas": { "Metatron": 0, "Michael": 89, "Raphael": 0, "Sandalphon": 79 }
     },
     "Tarukaja": {
-        "fuse": "CJ Sky Tree",
-        "cost": 1008,
+        "cost": 800,
         "effect": "Increase 1 ally's Attack power for 3 turns.",
         "element": "support",
         "personas": {
@@ -2544,10 +2543,11 @@ var skillMapRoyal = {
             "Sudama": 0,
             "Thunderbird": 0,
             "Izanagi": 0
-        }
+        },
+        "fuse": "CJ Sky Tree"
     },
     "Tarunda": {
-        "cost": 1008,
+        "cost": 800,
         "effect": "Decrease 1 foe's Attack power for 3 turns.",
         "element": "support",
         "personas": {
@@ -2562,7 +2562,7 @@ var skillMapRoyal = {
         }
     },
     "Taunt": {
-        "cost": 1003,
+        "cost": 300,
         "effect": "Inflict Rage (high odds) to 1 foe.",
         "element": "ailment",
         "personas": { "Ara Mitama": 0, "Koppa Tengu": 13, "Shiki-Ouji": 0, "Thoth": 0 }
@@ -2574,7 +2574,7 @@ var skillMapRoyal = {
         "personas": { "Ganesha": 0, "Hanuman": 0, "Kumbhanda": 43, "Ose": 43 }
     },
     "Tentarafoo": {
-        "cost": 1008,
+        "cost": 800,
         "effect": "Inflict Confuse (medium odds) to all foes.",
         "element": "ailment",
         "personas": { "Hell Biker": 38, "Mithras": 0, "Mothman": 35, "Pazuzu": 0, "Raja Naga": 0, "Sarasvati": 0 }
@@ -2586,14 +2586,13 @@ var skillMapRoyal = {
         "personas": { "Andras": 0, "Kelpie": 10, "Nekomata": 0, "Zouchouten": 32 }
     },
     "Tetra Break": {
-        "cost": 1018,
+        "cost": 1800,
         "effect": "Remove physical-repellent shields from all foes.",
         "element": "support",
         "personas": { "Fuu-Ki": 0, "Hanuman": 67, "Legion": 40, "Mara": 0, "Mithras": 41, "Yurlungur": 48 }
     },
     "Tetraja": {
-        "fuse": "CJ Maid Cafe",
-        "cost": 1024,
+        "cost": 2400,
         "effect": "Create shields on party to nullify one instant death attack of Bless or Curse types.",
         "element": "support",
         "personas": {
@@ -2604,29 +2603,30 @@ var skillMapRoyal = {
             "Kikuri-Hime": 43,
             "Norn": 56,
             "Principality": 0
-        }
+        },
+        "fuse": "CJ Maid Cafe"
     },
     "Tetrakarn": {
-        "fuse": "Jazz 10/2 CJ Destiny Land",
-        "cost": 1036,
+        "cost": 3600,
         "effect": "Create a shield on 1 ally to repel 1 Phys attack.",
         "element": "support",
-        "personas": { "Bishamonten": 72, "Decarabia": 33, "Asterius": 60 }
+        "personas": { "Bishamonten": 72, "Decarabia": 33, "Asterius": 60 },
+        "fuse": "Jazz 10/2 CJ Destiny Land"
     },
     "Thermopylae": {
-        "cost": 1030,
+        "cost": 3000,
         "effect": "Increase party's Attack, Defense and Agility for 3 turns. Only usable if the party is being ambushed.",
         "element": "support",
         "personas": { "Attis": 0, "Dionysus": 72, "Mithra": 38 }
     },
     "Thunder Reign": {
-        "cost": 1048,
+        "cost": 4800,
         "effect": "Deal severe Electric damage to 1 foe.",
         "element": "electric",
         "personas": { "Odin": 0, "Orichalcum": 0 }
     },
     "Titanomachia": {
-        "cost": 1034,
+        "cost": 3400,
         "effect": "Deal severe Fire damage to all foes and inflict Fear (high odds).",
         "element": "fire",
         "unique": "Asterius",
@@ -2664,7 +2664,7 @@ var skillMapRoyal = {
         "personas": { "Asura-Ou": 81 }
     },
     "Vacuum Wave": {
-        "cost": 1048,
+        "cost": 4800,
         "effect": "Deal severe Wind damage to all foes.",
         "element": "wind",
         "personas": { "Baal": 87, "Hastur": 0, "Vishnu": 85 }
@@ -2693,13 +2693,13 @@ var skillMapRoyal = {
         "personas": { "Kali": 68, "Scathach": 81, "Siegfried": 89, "Tsukiyomi": 55, "Tsukiyomi Picaro": 60 }
     },
     "Wage War": {
-        "cost": 1008,
+        "cost": 800,
         "effect": "Inflict Rage (medium odds) to all foes.",
         "element": "ailment",
         "personas": { "Barong": 0, "Girimehkala": 47, "Koppa Tengu": 15, "Sui-Ki": 27, "Yaksini": 0 }
     },
     "Wild Thunder": {
-        "cost": 1054,
+        "cost": 5400,
         "effect": "Deal severe Electric damage to all foes.",
         "element": "electric",
         "personas": { "Odin": 86, "Thor": 71 }
@@ -2715,13 +2715,13 @@ var skillMapRoyal = {
         "personas": { "Fuu-Ki": 25, "Kurama Tengu": 32 }
     },
     "Wind Break": {
-        "cost": 1006,
+        "cost": 600,
         "effect": "Negate Wind resistances of all foes.",
         "element": "support",
         "personas": { "Anzu": 0, "Nekomata": 20, "Yatagarasu": 61 }
     },
     "Wind Wall": {
-        "cost": 1018,
+        "cost": 1800,
         "effect": "Create a shield on 1 ally to reduce damage of Wind attacks for 3 turns.",
         "element": "support",
         "personas": {
@@ -2734,13 +2734,13 @@ var skillMapRoyal = {
         }
     },
     "Zio": {
-        "cost": 1004,
+        "cost": 400,
         "effect": "Deal weak Electric damage to 1 foe.",
         "element": "electric",
         "personas": { "Agathion": 7, "Pixie": 0 }
     },
     "Ziodyne": {
-        "cost": 1012,
+        "cost": 1200,
         "effect": "Deal heavy Electric damage to 1 foe.",
         "element": "electric",
         "personas": {
@@ -2760,7 +2760,7 @@ var skillMapRoyal = {
         }
     },
     "Zionga": {
-        "cost": 1008,
+        "cost": 800,
         "effect": "Deal medium Electric damage to 1 foe.",
         "element": "electric",
         "personas": {
@@ -2774,7 +2774,7 @@ var skillMapRoyal = {
         }
     },
     "Abyssal Gaze": {
-        "cost": 1050,
+        "cost": 5000,
         "effect": "Deal severe Almighty damage to all foes.",
         "element": "almighty",
         "unique": "Hastur",
@@ -2801,7 +2801,7 @@ var skillMapRoyal = {
     "Ave Maria": { "effect": "Reduces costs of Support spells by 75%", "element": "trait" },
     "Avenger": { "effect": "Doubles damage from Counter skills", "element": "trait", "personas": { "Hope Diamond": 0 } },
     "Blade of Rebellion": {
-        "cost": 1099,
+        "cost": 9900,
         "effect": "Deal severe Almighty damage to 1 for with extra effectiveness if down.",
         "element": "almighty",
         "unique": "Hereward"
@@ -2814,7 +2814,7 @@ var skillMapRoyal = {
     },
     "Bloodsucker": { "effect": "Doubles effectiveness of absorption skills", "element": "trait" },
     "Brave Step": {
-        "cost": 1016,
+        "cost": 1600,
         "effect": "Increase critical rate for all allies.",
         "element": "support",
         "unique": "Cendrillon"
@@ -2827,28 +2827,28 @@ var skillMapRoyal = {
         "personas": { "Regent": 0 }
     },
     "Champion Cup": {
-        "fuse": "Kamoshida Ishi",
-        "cost": 1010,
+        "cost": 1000,
         "effect": "Diarama + Tarukaja",
         "element": "support",
-        "unique": "Kamoshida Ishi"
+        "unique": "Kamoshida Ishi",
+        "fuse": "Kamoshida Ishi"
     },
     "Charge All": {
-        "cost": 1080,
+        "cost": 8000,
         "effect": "Multiply all allies' next Phys attack damage by 2.5.",
         "element": "support",
         "unique": "William"
     },
     "Charging Bull": { "effect": "Scales damage dealt against lost HP", "element": "trait", "unique": "Asterius" },
     "Checkmate": {
-        "cost": 1090,
+        "cost": 9000,
         "effect": "Decrease all foes' Attack, Defense and Agility for 3 turns.",
         "element": "support",
         "unique": "Agnes"
     },
     "Cocytus": { "effect": "Reduces costs of Ice skills by 75%", "element": "trait" },
     "Concentrate All": {
-        "cost": 1080,
+        "cost": 8000,
         "effect": "Multiply all allies' next Magic attack damage by 2.5.",
         "element": "support",
         "unique": "Celestine"
@@ -2916,11 +2916,11 @@ var skillMapRoyal = {
         "personas": { "Regent": 0 }
     },
     "False Painting": {
-        "fuse": "Madarame Ishi",
-        "cost": 1022,
+        "cost": 2200,
         "effect": "Absorbs any non-almighty attack once + Removes weakness",
         "element": "support",
-        "unique": "Madarame Ishi"
+        "unique": "Madarame Ishi",
+        "fuse": "Madarame Ishi"
     },
     "Fiendish Insight": {
         "effect": "High chance to evade Phys attacks for all allies",
@@ -2943,11 +2943,11 @@ var skillMapRoyal = {
         "unique": "William"
     },
     "Gambler Intuition": {
-        "fuse": "Niijima Ishi",
-        "cost": 1020,
+        "cost": 2000,
         "effect": "Masukukaja + Begin battle with Concentrate",
         "element": "support",
-        "unique": "Niijima Ishi"
+        "unique": "Niijima Ishi",
+        "fuse": "Niijima Ishi"
     },
     "Gattling Blows": {
         "cost": 16,
@@ -2962,11 +2962,11 @@ var skillMapRoyal = {
         "personas": { "Queen's Necklace": 0 }
     },
     "Guiding Tentacle": {
-        "fuse": "??? Ishi",
-        "cost": 1054,
+        "cost": 5400,
         "effect": "Life Aid + Down all foes",
         "element": "support",
-        "unique": "??? Ishi"
+        "unique": "??? Ishi",
+        "fuse": "??? Ishi"
     },
     "Heavyweight": { "effect": "Strengthens Phys skills by 20%", "element": "trait", "personas": { "Hope Diamond": 0 } },
     "Herald's Grace": { "effect": "Reduces costs of Bless skills by 75%", "element": "trait" },
@@ -3006,7 +3006,7 @@ var skillMapRoyal = {
         "personas": { "Stone of Scone": 0 }
     },
     "Life Wall": {
-        "cost": 1095,
+        "cost": 9500,
         "effect": "Repels next non-almighty attack for all allies.",
         "element": "support",
         "unique": "Lucy"
@@ -3024,11 +3024,11 @@ var skillMapRoyal = {
         "unique": "Ella"
     },
     "Mastermind Authority": {
-        "fuse": "??? Ishi",
-        "cost": 1015,
+        "cost": 1500,
         "effect": "Defense Master + Charge on Ally",
         "element": "support",
-        "unique": "??? Ishi"
+        "unique": "??? Ishi",
+        "fuse": "??? Ishi"
     },
     "Midnight Bell": {
         "effect": "Chance to prevent down when weakness struck for all allies",
@@ -3043,13 +3043,13 @@ var skillMapRoyal = {
     },
     "Mother Blessing": { "effect": "Reduces costs of Recovery skills by 75%", "element": "trait" },
     "Myriad Blooms": {
-        "cost": 1090,
+        "cost": 9000,
         "effect": "Increase all allies' Attack, Defense and Agility for 3 turns.",
         "element": "support",
         "unique": "Gorokichi"
     },
     "Myriad Truths": {
-        "cost": 1040,
+        "cost": 4000,
         "effect": "Deal 3 times heavy Almighty damage to all foes.",
         "element": "almighty",
         "unique": "Izanagi-no-Okami",
@@ -3057,7 +3057,7 @@ var skillMapRoyal = {
     },
     "Naranari": { "effect": "Doubles effectiveness of SP regeneration skills", "element": "trait" },
     "Neo Cadenza": {
-        "cost": 1024,
+        "cost": 2400,
         "effect": "Restore 50% HP of party and increase attack, defense, and evasion rate.",
         "element": "healing",
         "unique": "Orpheus F",
@@ -3094,7 +3094,7 @@ var skillMapRoyal = {
         "personas": { "Regent": 0 }
     },
     "Phantom Show": {
-        "cost": 1004,
+        "cost": 400,
         "effect": "Inflict Sleep (high odds) to all foes.",
         "element": "ailment",
         "unique": "Raoul",
@@ -3107,11 +3107,11 @@ var skillMapRoyal = {
         "personas": { "Archangel": 17, "Berith": 13, "Naga": 0 }
     },
     "President Intuition": {
-        "fuse": "Okumura Ishi",
-        "cost": 1015,
+        "cost": 1500,
         "effect": "Attack Master + Concentrate on Ally",
         "element": "support",
-        "unique": "Okumura Ishi"
+        "unique": "Okumura Ishi",
+        "fuse": "Okumura Ishi"
     },
     "Psy Lineage": { "effect": "Halves costs of Psy skills", "element": "trait", "personas": { "Emperor's Amulet": 0 } },
     "Reaper's Despair": { "effect": "Reduces costs of Curse skills by 75%", "element": "trait" },
@@ -3131,7 +3131,7 @@ var skillMapRoyal = {
         "unique": "Goemon"
     },
     "Saintly Devotion": {
-        "cost": 1026,
+        "cost": 2600,
         "effect": "Revive and fully restore HP for all allies.",
         "element": "healing",
         "unique": "Maria",
@@ -3200,11 +3200,11 @@ var skillMapRoyal = {
     "Untouchable Beauty": { "effect": "Triples damage dealt by Counter skills", "element": "trait", "unique": "Kaguya" },
     "Vahana": { "effect": "Reduces costs of Wind skills by 75%", "element": "trait" },
     "Vault Guardian": {
-        "fuse": "Kaneshiro Ishi",
-        "cost": 1020,
+        "cost": 2000,
         "effect": "Marakukaja + Begin battle with Tetrakarn and Makarakarn",
         "element": "support",
-        "unique": "Kaneshiro Ishi"
+        "unique": "Kaneshiro Ishi",
+        "fuse": "Kaneshiro Ishi"
     },
     "Wargod's Wrath": { "effect": "Reduces costs of Psy skills by 75%", "element": "trait" },
     "Wild Spirit": {
@@ -3214,11 +3214,11 @@ var skillMapRoyal = {
     },
     "Wind Lineage": { "effect": "Halves costs of Wind skills", "element": "trait", "personas": { "Emperor's Amulet": 0 } },
     "Wings of Wisdom": {
-        "fuse": "Futaba Ishi",
-        "cost": 1010,
+        "cost": 1000,
         "effect": "Speed Master + Amrita Shower",
         "element": "support",
-        "unique": "Futaba Ishi"
+        "unique": "Futaba Ishi",
+        "fuse": "Futaba Ishi"
     },
     "Witchcraft": {
         "effect": "Low chance to decrease attack spell costs for all allies",
