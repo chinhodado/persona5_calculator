@@ -9,8 +9,8 @@ interface SkillData {
     cost?: number;
     effect: string;
     element: "phys" | "gun" | "fire" | "ice" | "electric" | "wind" | "psy" | "nuclear" | "bless" | "curse" |
-        "almighty" | "ailment" | "support" | "passive" | "healing";
-    personas: {
+        "almighty" | "ailment" | "support" | "passive" | "healing" | "trait";
+    personas?: {
         [name: string]: number;
     };
     talk?: string;
