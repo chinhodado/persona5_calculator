@@ -81,7 +81,10 @@
         <tr ng:repeat="skill in persona.skillList track by $index">
             <td>{{skill.level}}</td>
             <td>{{skill.elem}}</td>
-            <td><a href="#/skill#{{skill.name}}">{{skill.name}}</a></td>
+            <td>
+                <a href="#/skill#{{skill.name}}">{{skill.name}}</a>
+                <span class="dlc-label" ng-if="skill.unique">Unique</span>
+            </td>
             <td>{{skill.description}}</td>
             <td>{{skill.cost}}</td>
         </tr>

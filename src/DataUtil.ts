@@ -172,6 +172,7 @@ function getSkills(personaName: string) {
             name: sorted[i][0],
             level: sorted[i][1],
             description: skillData.effect,
+            unique: skillData.unique,
             elem: capitalizeFirstLetter(skillData.element),
             cost: getSkillCost(skillData)
         })
