@@ -15,6 +15,7 @@ interface SkillData {
     };
     talk?: string;
     fuse?: string | string[];
+    card?: string
     unique?: string;
     dlc?: boolean;
     note?: string;
