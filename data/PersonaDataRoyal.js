@@ -934,7 +934,8 @@ var personaMapRoyal = {
             "Dodge Physical": 20,
             "Rebellion": 22,
             "Cornered Fang": 23,
-            "Heat Up": 24
+            "Heat Up": 24,
+            "Apt Pupil": 28,
         },
         "stats": [15, 11, 13, 14, 11],
         "trait": "Life Focus"
