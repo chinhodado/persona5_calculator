@@ -85,7 +85,7 @@ var personaMapRoyal = {
         "item": "Mafreila Ring",
         "itemr": "Freidyne Ring",
         "level": 44,
-        "arcana": "Consultant",
+        "arcana": "Councillor",
         "elems": ["-", "-", "-", "ab", "wk", "-", "-", "-", "-", "-"],
         "skills": {
             "Mafreila": 0,
@@ -806,7 +806,7 @@ var personaMapRoyal = {
         "item": "Maragion",
         "itemr": "Agidyne",
         "level": 32,
-        "arcana": "Consultant",
+        "arcana": "Councillor",
         "elems": ["wk", "-", "rp", "-", "-", "-", "-", "rs", "-", "rs"],
         "skills": {
             "Agilao": 0,
@@ -825,7 +825,7 @@ var personaMapRoyal = {
         "item": "Maziodyne",
         "itemr": "Thunder Reign",
         "level": 71,
-        "arcana": "Consultant",
+        "arcana": "Councillor",
         "elems": ["-", "-", "-", "-", "rp", "-", "-", "-", "nu", "nu"],
         "skills": {
             "Maziodyne": 0,
@@ -1661,7 +1661,7 @@ var personaMapRoyal = {
         "item": "Dia Charm",
         "itemr": "Media Charm",
         "level": 12,
-        "arcana": "Consultant",
+        "arcana": "Councillor",
         "elems": ["-", "-", "wk", "-", "-", "rs", "-", "-", "-", "-"],
         "skills": { "Dia": 0, "Media": 0, "Makajam": 0, "Regenerate 1": 13, "Wind Wall": 14, "Forget Boost": 16 },
         "stats": [7, 11, 9, 8, 8],
@@ -2261,7 +2261,7 @@ var personaMapRoyal = {
         "item": "Kouha Ring",
         "itemr": "Makouha Ring",
         "level": 22,
-        "arcana": "Consultant",
+        "arcana": "Councillor",
         "elems": ["-", "-", "-", "-", "wk", "-", "-", "-", "rs", "rs"],
         "skills": { "Baisudi": 0, "Diarama": 0, "Makouha": 0, "Divine Grace": 24, "Me Patra": 25, "Climate Decorum": 26 },
         "stats": [13, 15, 15, 16, 14],
@@ -2953,7 +2953,7 @@ var personaMapRoyal = {
         "item": "Bufudyne Ring",
         "itemr": "Mabufudyne Ring",
         "level": 62,
-        "arcana": "Consultant",
+        "arcana": "Councillor",
         "elems": ["-", "-", "-", "rs", "-", "-", "-", "wk", "-", "-"],
         "skills": {
             "Bufudyne": 0,
@@ -3484,7 +3484,7 @@ var personaMapRoyal = {
         "item": "Doomsday",
         "itemr": "Ancient of Days",
         "level": 80,
-        "arcana": "Consultant",
+        "arcana": "Councillor",
         "elems": ["-", "-", "-", "-", "rs", "wk", "-", "-", "ab", "nu"],
         "skills": {
             "Divine Judgement": 0,
@@ -3559,7 +3559,7 @@ var personaMapRoyal = {
         "item": "Black Wing Robe",
         "itemr": "Black Wing Robe R",
         "level": 57,
-        "arcana": "Consultant",
+        "arcana": "Councillor",
         "elems": ["-", "-", "-", "-", "-", "rs", "-", "-", "nu", "wk"],
         "skills": {
             "Agidyne": 0,
