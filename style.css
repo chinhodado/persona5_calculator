@@ -149,3 +149,22 @@ tr:hover td:last-child {
 .persona-name {
     vertical-align: inherit;
 }
+
+@supports (-webkit-overflow-scrolling: touch) {
+    .search-label,
+    select,
+    textarea,
+    input,
+    .ui.input input {
+        font-size: 16px;
+    }
+    .ui.button.clear-button {
+        padding: 1.4em 1.5em;
+    }
+}
+
+.search-container {
+    align-items: center;
+    justify-content: center;
+    max-width: 50%;
+}
