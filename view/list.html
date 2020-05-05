@@ -1,11 +1,11 @@
 <p>
-    <div class="ui mini input">
-        <label>
+    <div class="ui mini input search-container">
+        <label class="search-label">
           Filter:
-          <input type="text" size="30" ng-model="filterStr" autocorrect="off" autocomplete="off" spellcheck="false">
         </label>
+        <input type="text" size="30" ng-model="filterStr" autocorrect="off" autocomplete="off" spellcheck="false" class="search-box">
         &nbsp;
-        <button ng:click="filterStr = ''" class="ui mini button">Clear</button>
+        <button ng:click="filterStr = ''" class="ui mini button clear-button">Clear</button>
     </div>
 </p>
 
