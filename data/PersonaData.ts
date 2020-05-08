@@ -781,6 +781,7 @@ const personaMap : PersonaMap = {
             "Assault Dive": 29,
             "Dekaja": 0,
             "Dodge Physical": 26,
+            "Apt Pupil": 28,
             "Dormin Rush": 0,
             "Giant Slice": 0,
             "Heat Up": 30
