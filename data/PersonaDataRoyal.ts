@@ -47,7 +47,8 @@ const personaMapRoyal: PersonaMap = {
             "Survival Trick": 88
         },
         "stats": [45, 61, 49, 54, 47],
-        "trait": "Die Already!"
+        "trait": "Die Already!",
+        "max": true
     },
     "Alilat": {
         "inherits": "ice",
@@ -229,7 +230,8 @@ const personaMapRoyal: PersonaMap = {
             "Salvation": 90
         },
         "stats": [54, 56, 55, 54, 40],
-        "trait": "Naranari"
+        "trait": "Naranari",
+        "max": true
     },
     "Arsene": {
         "inherits": "curse",
@@ -260,7 +262,8 @@ const personaMapRoyal: PersonaMap = {
             "Unshaken Will": 81
         },
         "stats": [52, 48, 51, 49, 35],
-        "trait": "Path of Carnage"
+        "trait": "Path of Carnage",
+        "max": true
     },
     "Atavaka": {
         "inherits": "phys",
@@ -317,7 +320,8 @@ const personaMapRoyal: PersonaMap = {
             "Blazing Hell": 88
         },
         "stats": [49, 50, 48, 54, 52],
-        "trait": "Dying Will"
+        "trait": "Dying Will",
+        "max": true
     },
     "Baal": {
         "inherits": "wind",
@@ -386,7 +390,8 @@ const personaMapRoyal: PersonaMap = {
             "Megidolaon": 92
         },
         "stats": [55, 61, 54, 56, 42],
-        "trait": "Reaper's Despair"
+        "trait": "Reaper's Despair",
+        "max": true
     },
     "Belial": {
         "inherits": "curse",
@@ -764,7 +769,8 @@ const personaMapRoyal: PersonaMap = {
             "Salvation": 89
         },
         "stats": [44, 57, 49, 51, 55],
-        "trait": "Chained Lineage"
+        "trait": "Chained Lineage",
+        "max": true
     },
     "Daisoujou": {
         "inherits": "bless",
@@ -999,7 +1005,8 @@ const personaMapRoyal: PersonaMap = {
             "Auto-Maraku": 92
         },
         "stats": [60, 58, 55, 52, 40],
-        "trait": "Sword God"
+        "trait": "Sword God",
+        "max": true
     },
     "Fuu-Ki": {
         "inherits": "wind",
@@ -1319,7 +1326,8 @@ const personaMapRoyal: PersonaMap = {
             "Salvation": 90
         },
         "stats": [48, 59, 49, 58, 48],
-        "trait": "Mother Blessing"
+        "trait": "Mother Blessing",
+        "max": true
     },
     "Isis": {
         "inherits": "healing",
@@ -1559,7 +1567,8 @@ const personaMapRoyal: PersonaMap = {
             "Spell Master": 82
         },
         "stats": [43, 51, 50, 53, 38],
-        "trait": "Five Elements"
+        "trait": "Five Elements",
+        "max": true
     },
     "Koppa Tengu": {
         "inherits": "wind",
@@ -1707,7 +1716,8 @@ const personaMapRoyal: PersonaMap = {
             "Life Aid": 74
         },
         "stats": [39, 49, 41, 47, 38],
-        "trait": "Lotus Dance"
+        "trait": "Lotus Dance",
+        "max": true
     },
     "Lamia": {
         "inherits": "fire",
@@ -1835,7 +1845,8 @@ const personaMapRoyal: PersonaMap = {
             "Absorb Phys": 99
         },
         "stats": [61, 59, 59, 56, 51],
-        "trait": "Forbidden Knowledge"
+        "trait": "Forbidden Knowledge",
+        "max": true
     },
     "Macabre": {
         "inherits": "curse",
@@ -1875,7 +1886,8 @@ const personaMapRoyal: PersonaMap = {
             "Spell Master": 96
         },
         "stats": [55, 54, 61, 59, 48],
-        "trait": "Drunken Frenzy"
+        "trait": "Drunken Frenzy",
+        "max": true
     },
     "Makami": {
         "inherits": "nuke",
@@ -1943,7 +1955,8 @@ const personaMapRoyal: PersonaMap = {
             "Saintly Words": 98
         },
         "stats": [52, 66, 53, 54, 61],
-        "trait": "Ave Maria"
+        "trait": "Ave Maria",
+        "max": true
     },
     "Matador": {
         "inherits": "psy",
@@ -2145,7 +2158,8 @@ const personaMapRoyal: PersonaMap = {
             "Debilitate": 90
         },
         "stats": [55, 54, 48, 50, 55],
-        "trait": "Goblet of Sin"
+        "trait": "Goblet of Sin",
+        "max": true
     },
     "Mothman": {
         "inherits": "elec",
@@ -2359,7 +2373,8 @@ const personaMapRoyal: PersonaMap = {
             "Elec Amp": 89
         },
         "stats": [53, 58, 54, 52, 42],
-        "trait": "Hunting Premonition"
+        "trait": "Hunting Premonition",
+        "max": true
     },
     "Okuninushi": {
         "inherits": "psy",
@@ -2398,7 +2413,8 @@ const personaMapRoyal: PersonaMap = {
             "Agneyastra": 95
         },
         "stats": [56, 53, 57, 59, 49],
-        "trait": "Oni Whisper"
+        "trait": "Oni Whisper",
+        "max": true
     },
     "Oni": {
         "inherits": "phys",
@@ -2854,7 +2870,8 @@ const personaMapRoyal: PersonaMap = {
             "Megidolaon": 81
         },
         "stats": [46, 51, 49, 48, 38],
-        "trait": "Herald's Verdict"
+        "trait": "Herald's Verdict",
+        "max": true
     },
     "Sandman": {
         "inherits": "wind",
@@ -2912,7 +2929,8 @@ const personaMapRoyal: PersonaMap = {
             "Absorb Ice": 98
         },
         "stats": [62, 59, 55, 52, 55],
-        "trait": "Cocytus"
+        "trait": "Cocytus",
+        "max": true
     },
     "Satanael": {
         "special": true,
@@ -2933,7 +2951,8 @@ const personaMapRoyal: PersonaMap = {
             "Victory Cry": 99
         },
         "stats": [63, 60, 57, 56, 56],
-        "trait": "Heretic Charisma"
+        "trait": "Heretic Charisma",
+        "note": "Only available on NG+"
     },
     "Scathach": {
         "inherits": "wind",
@@ -3483,7 +3502,8 @@ const personaMapRoyal: PersonaMap = {
             "Riot Gun": 90
         },
         "stats": [56, 51, 49, 57, 43],
-        "trait": "Vahana"
+        "trait": "Vahana",
+        "max": true
     },
     "Vohu Manah": {
         "inherits": "almighty",
@@ -3502,7 +3522,8 @@ const personaMapRoyal: PersonaMap = {
             "Salvation": 85
         },
         "stats": [46, 59, 45, 56, 41],
-        "trait": "Enlightenment"
+        "trait": "Enlightenment",
+        "max": true
     },
     "White Rider": {
         "inherits": "curse",
@@ -3635,7 +3656,8 @@ const personaMapRoyal: PersonaMap = {
             "Blazing Hell": 86
         },
         "stats": [57, 45, 50, 56, 39],
-        "trait": "Apocalyptic Fury"
+        "trait": "Apocalyptic Fury",
+        "max": true
     },
     "Zouchouten": {
         "inherits": "elec",
