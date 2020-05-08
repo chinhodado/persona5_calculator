@@ -67,7 +67,8 @@ var personaMapRoyal = {
             "Ice Age": 87
         },
         "stats": [45, 54, 57, 49, 45],
-        "trait": "Ice Lineage"
+        "trait": "Ice Lineage",
+        "note": "Only available after 1/12"
     },
     "Ame-no-Uzume": {
         "inherits": "almighty",
@@ -475,7 +476,8 @@ var personaMapRoyal = {
             "Heat Riser": 75
         },
         "stats": [42, 49, 43, 51, 32],
-        "trait": "Fire Lineage"
+        "trait": "Fire Lineage",
+        "note": "Only available after 1/12"
     },
     "Black Frost": {
         "special": true,
@@ -660,7 +662,8 @@ var personaMapRoyal = {
             "Ice Amp": 79
         },
         "stats": [51, 40, 42, 48, 48],
-        "trait": "Stagnant Aura"
+        "trait": "Stagnant Aura",
+        "note": "Only available after 1/12"
     },
     "Choronzon": {
         "inherits": "curse",
@@ -917,7 +920,8 @@ var personaMapRoyal = {
             "Absorb Nuke": 92
         },
         "stats": [61, 55, 58, 48, 43],
-        "trait": "Pandemic Gaze"
+        "trait": "Pandemic Gaze",
+        "note": "Only available after 1/12"
     },
     "Flauros": {
         "special": true,
@@ -934,8 +938,7 @@ var personaMapRoyal = {
             "Dodge Physical": 20,
             "Rebellion": 22,
             "Cornered Fang": 23,
-            "Heat Up": 24,
-            "Apt Pupil": 28,
+            "Heat Up": 24
         },
         "stats": [15, 11, 13, 14, 11],
         "trait": "Life Focus"
@@ -1144,7 +1147,8 @@ var personaMapRoyal = {
             "Repel Wind": 89
         },
         "stats": [51, 59, 52, 56, 41],
-        "trait": "Spirit Focus"
+        "trait": "Spirit Focus",
+        "note": "Only available after 1/12"
     },
     "Hecatoncheires": {
         "inherits": "phys",
@@ -1809,7 +1813,8 @@ var personaMapRoyal = {
             "Fortify Spirit": 75
         },
         "stats": [45, 47, 43, 46, 39],
-        "trait": "Bloodsucker"
+        "trait": "Bloodsucker",
+        "note": "Only available after 1/12"
     },
     "Lucifer": {
         "special": true,
@@ -1849,7 +1854,8 @@ var personaMapRoyal = {
             "Ali Dance": 78
         },
         "stats": [48, 49, 42, 48, 39],
-        "trait": "Pandemic Gaze"
+        "trait": "Pandemic Gaze",
+        "note": "Only available after 1/12"
     },
     "Mada": {
         "inherits": "fire",
