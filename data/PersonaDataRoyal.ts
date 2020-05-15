@@ -514,7 +514,7 @@ const personaMapRoyal: PersonaMap = {
         "skills": {
             "Sledgehammer": 0,
             "Evil Touch": 0,
-            "Stagnant Air": 0,
+            "Foul Breath": 0,
             "Ambient Aid": 20,
             "Headbutt": 21,
             "Brain Jack": 23,
