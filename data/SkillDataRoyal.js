@@ -527,12 +527,6 @@ var skillMapRoyal = {
         "personas": { "Byakko": 0, "Kin-Ki": 31, "Ose": 0, "Rakshasa": 28, "Rangda": 0, "Valkyrie": 0, "Kaguya": 0 },
         "talk": "Funerary Warrior (Valkyrie)"
     },
-    "Cripple": {
-        "effect": "Strengthen Gun attacks by 50%.",
-        "element": "passive",
-        "fuse": ["White Rider"],
-        "personas": { "Seth": 53, "Trumpeter": 62, "Zaou-Gongen": 84 }
-    },
     "Cross Slash": {
         "cost": 20,
         "effect": "Deal 2 times heavy Phys damage to 1 foe. High accuracy.",
@@ -1183,6 +1177,17 @@ var skillMapRoyal = {
         "element": "passive",
         "fuse": ["Izanagi Picaro"],
         "personas": { "Narcissus": 50, "Quetzalcoatl": 68, "Raphael": 81, "Izanagi": 25, "Izanagi Picaro": 28 }
+    },
+    "Gun Amp": {
+        "effect": "Strengthen Gun attacks by 50%.",
+        "element": "passive",
+        "fuse": ["White Rider"],
+        "personas": { "Seth": 53, "Trumpeter": 62, "Zaou-Gongen": 84 }
+    },
+    "Gun Boost": {
+        "effect": "Strengthen Gun attacks by 25%.",
+        "element": "passive",
+        "personas": { "White Rider": 40 }
     },
     "Hama": {
         "cost": 800,
@@ -2616,7 +2621,6 @@ var skillMapRoyal = {
         "personas": { "Obariyon": 0, "Oni": 0 },
         "talk": "Night-Walking Warrior (Mokoi)"
     },
-    "Snipe": { "effect": "Strengthen Gun attacks by 25%.", "element": "passive", "personas": { "White Rider": 40 } },
     "Soul Chain": {
         "card": "Network Fusion",
         "effect": "Recover 20 SP when performing Baton Pass.",
