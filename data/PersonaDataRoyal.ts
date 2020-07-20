@@ -3015,7 +3015,7 @@ const personaMapRoyal: PersonaMap = {
             "One-shot Kill": 0,
             "Agidyne": 0,
             "Masukukaja": 0,
-            "Cripple": 53,
+            "Gun Amp": 53,
             "Fire Break": 54,
             "Fortify Spirit": 56
         },
@@ -3401,7 +3401,7 @@ const personaMapRoyal: PersonaMap = {
             "Abysmal Surge": 0,
             "Brain Buster": 0,
             "Fortify Spirit": 61,
-            "Cripple": 62,
+            "Gun Amp": 62,
             "Life Aid": 63,
             "Debilitate": 65
         },
@@ -3527,8 +3527,8 @@ const personaMapRoyal: PersonaMap = {
     },
     "White Rider": {
         "inherits": "curse",
-        "item": "Snipe",
-        "itemr": "Cripple",
+        "item": "Gun Boost",
+        "itemr": "Gun Amp",
         "level": 38,
         "arcana": "Chariot",
         "elems": ["-", "-", "nu", "wk", "-", "-", "-", "-", "nu", "rp"],
@@ -3536,7 +3536,7 @@ const personaMapRoyal: PersonaMap = {
             "Triple Down": 0,
             "Evil Touch": 0,
             "Oni Kagura": 0,
-            "Snipe": 40,
+            "Gun Boost": 40,
             "Maeiga": 41,
             "Masukukaja": 42,
             "Foul Breath": 43,
@@ -3652,7 +3652,7 @@ const personaMapRoyal: PersonaMap = {
             "God's Hand": 0,
             "Evade Physical": 82,
             "Enduring Soul": 83,
-            "Cripple": 84,
+            "Gun Amp": 84,
             "Blazing Hell": 86
         },
         "stats": [57, 45, 50, 56, 39],
