@@ -1669,7 +1669,7 @@ var personaMapRoyal = {
         "stats": [24, 30, 26, 28, 25],
         "trait": "Recovery Lineage"
     },
-    "Kusi Mitama": {
+    "Kushi Mitama": {
         "inherits": "healing",
         "item": "Dia Charm",
         "itemr": "Media Charm",
