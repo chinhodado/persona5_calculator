@@ -639,7 +639,7 @@ const skillMapRoyal: SkillMap = {
         "cost": 300,
         "effect": "Slightly restore 1 ally's HP.",
         "element": "healing",
-        "personas": {"Agathion": 0, "Angel": 0, "Kusi Mitama": 0, "Pixie": 0, "Silky": 7},
+        "personas": {"Agathion": 0, "Angel": 0, "Kushi Mitama": 0, "Pixie": 0, "Silky": 7},
         "talk": "Beguiling Girl (Pixie)"
     },
     "Diamond Dust": {
@@ -1039,7 +1039,7 @@ const skillMapRoyal: SkillMap = {
     "Forget Boost": {
         "effect": "Increase chance of inflicting Forget.",
         "element": "passive",
-        "personas": {"Kaiwan": 37, "Kusi Mitama": 16, "Principality": 32}
+        "personas": {"Kaiwan": 37, "Kushi Mitama": 16, "Principality": 32}
     },
     "Fortified Moxy": {
         "effect": "Increase critical rate when beginning battle with preemptive turn.",
@@ -1585,7 +1585,7 @@ const skillMapRoyal: SkillMap = {
         "cost": 300,
         "effect": "Inflict Forget (high odds) to 1 foe.",
         "element": "ailment",
-        "personas": {"Angel": 0, "Clotho": 0, "Kaiwan": 0, "Koropokkuru": 0, "Kusi Mitama": 0, "Makami": 18},
+        "personas": {"Angel": 0, "Clotho": 0, "Kaiwan": 0, "Koropokkuru": 0, "Kushi Mitama": 0, "Makami": 18},
         "talk": "Zealous Messenger (Angel)"
     },
     "Makajamaon": {
@@ -1899,7 +1899,7 @@ const skillMapRoyal: SkillMap = {
             "Apsaras": 13,
             "Cait Sith": 9,
             "High Pixie": 0,
-            "Kusi Mitama": 0,
+            "Kushi Mitama": 0,
             "Queen's Necklace": 0
         }
     },
@@ -2384,7 +2384,7 @@ const skillMapRoyal: SkillMap = {
     "Regenerate 1": {
         "effect": "Restore 2% of max HP each turn in battle.",
         "element": "passive",
-        "personas": {"Kin-Ki": 0, "Kusi Mitama": 13, "Rakshasa": 26}
+        "personas": {"Kin-Ki": 0, "Kushi Mitama": 13, "Rakshasa": 26}
     },
     "Regenerate 2": {
         "effect": "Recover 4% of max HP each turn in battle.",
@@ -2971,7 +2971,7 @@ const skillMapRoyal: SkillMap = {
         "personas": {
             "Apsaras": 16,
             "Kushinada-Hime": 46,
-            "Kusi Mitama": 14,
+            "Kushi Mitama": 14,
             "Rakshasa": 0,
             "Saki Mitama": 0,
             "Sudama": 21
