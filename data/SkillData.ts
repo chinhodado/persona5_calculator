@@ -1367,7 +1367,6 @@ const skillMap: SkillMap = {
         "element": "almighty",
         "fuse": "Mothman",
         "personas": {
-            "Black Ooze": 0,
             "Girimehkala": 46,
             "Hecatoncheires": 45,
             "Lamia": 28,
@@ -3602,6 +3601,7 @@ const skillMap: SkillMap = {
         "element": "almighty",
         "fuse": "Black Ooze",
         "personas": {
+            "Black Ooze": 0,
             "Chernobog": 63,
             "Forneus": 66,
             "Kumbhanda": 0,

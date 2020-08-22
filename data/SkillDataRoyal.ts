@@ -1055,7 +1055,7 @@ const skillMapRoyal: SkillMap = {
         "cost": 800,
         "effect": "Increase susceptibility to all ailments of 1 foe.",
         "element": "almighty",
-        "personas": {"Andras": 0, "Biyarky": 0, "Lamia": 28, "Legion": 39, "White Rider": 43},
+        "personas": {"Andras": 0, "Black Ooze": 0, "Biyarky": 0, "Lamia": 28, "Legion": 39, "White Rider": 43},
         "talk": "Pulsing Mud (Black Ooze)"
     },
     "Freeze Boost": {
@@ -2660,7 +2660,6 @@ const skillMapRoyal: SkillMap = {
         "element": "almighty",
         "fuse": ["Legion"],
         "personas": {
-            "Black Ooze": 0,
             "Chernobog": 63,
             "Forneus": 66,
             "Kumbhanda": 0,
