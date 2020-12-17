@@ -9,6 +9,7 @@ eval(fs.readFileSync("data/PersonaData.js") + '');
 eval(fs.readFileSync("data/SkillData.js") + '');
 eval(fs.readFileSync("src/FusionCalculator.js") + '');
 eval(fs.readFileSync("src/DataUtil.js") + '');
+eval(fs.readFileSync("test/TestUtil.js") + '');
 
 var expect = require('chai').expect;
 
@@ -30,15 +31,6 @@ const fullPersonaeByArcana : {[arcana: string]: PersonaData[]} = (() =>{
 })();
 
 let calc = new FusionCalculator(fullPersonaeByArcana);
-
-function fuseTestWrapper(persona1Name: string, persona2Name: string): PersonaData {
-    return calc.fuse(personaMap[persona1Name], personaMap[persona2Name]);
-}
-
-function containAll(recipe: Recipe, personaNames: string[]): boolean {
-    return personaNames.map(a => personaMap[a])
-        .every(val => recipe.sources.indexOf(val) !== -1);
-}
 
 describe('FusionCalculator', () => {
     describe('#fuse()', () => {
@@ -269,45 +261,3 @@ describe('Data', () => {
         expect(checkSkillPersona()).to.equal(true);
     });
 });
-
-function checkSkill() {
-    let isGood = true;
-    for (let i = 0; i < fullPersonaList.length; i++) {
-        for (let key in fullPersonaList[i].skills) {
-            if (fullPersonaList[i].skills.hasOwnProperty(key)) {
-                if (!skillMap[key]) {
-                    isGood = false;
-                    throw new Error("Skill not found: " + key);
-                }
-            }
-        }
-    }
-    return isGood;
-}
-
-function checkSkillPersona() {
-    let isGood = true;
-    for (let i = 0; i < skillList.length; i++) {
-        for (let key in skillList[i].personas) {
-            if (skillList[i].personas.hasOwnProperty(key)) {
-                if (!personaMap[key]) {
-                    isGood = false;
-                    throw new Error("Persona not found: " + key);
-                }
-
-                let skillLevelInPersonaMap = personaMap[key].skills[skillList[i].name];
-                let skillLevelInSkillMap = skillList[i].personas[key];
-                if (skillLevelInPersonaMap === undefined) {
-                    isGood = false;
-                    throw new Error(key + " doesn't learn " + skillList[i].name);
-                }
-
-                if (skillLevelInPersonaMap !== skillLevelInSkillMap) {
-                    isGood = false;
-                    throw new Error(key + " learns " + skillList[i].name + " at at mismatched level");
-                }
-            }
-        }
-    }
-    return isGood;
-}

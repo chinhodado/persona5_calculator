@@ -48,6 +48,13 @@ const skillMapRoyal: SkillMap = {
         },
         "talk": "Awakened God (Arahabaki)"
     },
+    "Abyssal Eye": {
+        "cost": 5000,
+        "effect": "Deal severe Almighty damage to all foes.",
+        "element": "almighty",
+        "unique": "Hastur",
+        "personas": {"Hastur": 86}
+    },
     "Abyssal Wings": {
         "cost": 3000,
         "effect": "Deal severe Curse damage to all foes.",
@@ -80,11 +87,11 @@ const skillMapRoyal: SkillMap = {
         "fuse": ["Decarabia"],
         "personas": {
             "Baphomet": 0,
-            "Biyarky": 0,
+            "Byakhee": 0,
             "Cerberus": 0,
             "Decarabia": 36,
             "Emperor's Amulet": 0,
-            "Girimehkala": 46,
+            "Girimehkala": 45,
             "Moloch": 0,
             "Queen Mab": 47,
             "Seth": 0,
@@ -117,7 +124,19 @@ const skillMapRoyal: SkillMap = {
     "Ailment Boost": {
         "effect": "Increase chance of inflicting all ailments.",
         "element": "passive",
-        "personas": {"Abaddon": 79, "Biyarky": 73, "Dionysus": 73, "Mishaguji": 57, "White Rider": 44}
+        "personas": {"Abaddon": 79, "Byakhee": 73, "Dionysus": 73, "Mishaguji": 57, "White Rider": 44}
+    },
+    "Ailment Hunter": {
+        "effect": "Damage +25% for each foe afflicted with an ailment",
+        "element": "trait",
+        "personas": {"Crystal Skull": 0, "Fafnir": 0, "Macabre": 0, "Mishaguji": 0, "Red Rider": 0}
+    },
+    "Akasha Arts": {
+        "cost": 20,
+        "effect": "Deal 1-2 times severe Phys damage to all foes.",
+        "element": "phys",
+        "unique": "Athena",
+        "personas": {"Athena": 0, "Athena Picaro": 0}
     },
     "Ali Dance": {
         "card": "Jazz 1/15 Foggy Day 50",
@@ -125,12 +144,18 @@ const skillMapRoyal: SkillMap = {
         "element": "passive",
         "personas": {"Gabriel": 79, "Macabre": 78, "Vishnu": 0, "Raoul": 0}
     },
+    "All-out Attack Boost": {"effect": "Increases damage from All-out Attacks", "element": "passive"},
     "Almighty Amp": {"card": "Network Fusion", "effect": "Strengthen Almighty attacks by 50%.", "element": "passive"},
+    "Allure of Wisdom": {
+        "effect": "Reduces costs of magic skills by 75%",
+        "element": "trait",
+        "personas": {"Lucifer": 0}
+    },
     "Almighty Boost": {
         "card": "Network Fusion",
         "effect": "Strengthen Almighty attacks by 25%.",
         "element": "passive",
-        "personas": {"Messiah": 87, "Messiah Picaro": 96}
+        "personas": {"Izanagi-no-Okami": 85, "Izanagi-no-Okami Picaro": 94, "Messiah": 87, "Messiah Picaro": 96}
     },
     "Ambient Aid": {
         "effect": "Greatly increase inflicting rate of all status effects under rainy day or special weather warning.",
@@ -151,7 +176,7 @@ const skillMapRoyal: SkillMap = {
             "Cybele": 84,
             "Dionysus": 75,
             "Garuda": 53,
-            "Kushinada-Hime": 47,
+            "Kushinada": 47,
             "Lakshmi": 72,
             "Mada": 93,
             "Sandalphon": 0,
@@ -213,13 +238,19 @@ const skillMapRoyal: SkillMap = {
             "Unicorn": 0
         }
     },
+    "Atomic Bloodline": {
+        "effect": "Halves costs of Nuke skills",
+        "element": "trait",
+        "personas": {"Ananta": 0, "Ara Mitama": 0, "Orlov": 0, "Phoenix": 0, "Shiisaa": 0}
+    },
     "Atomic Flare": {
         "cost": 4800,
         "effect": "Deal severe Nuclear damage to 1 foe.",
         "element": "nuclear",
         "fuse": ["Bishamonten"],
-        "personas": {"Asura-Ou": 0, "Fafnir": 88, "Orichalcum": 0}
+        "personas": {"Asura": 0, "Fafnir": 88, "Orichalcum": 0}
     },
+    "Atomic Hellscape": {"effect": "Reduces costs of Nuke skills by 75%", "element": "trait", "personas": {"Asura": 0}},
     "Attack Master": {
         "effect": "Automatic Tarukaja at the start of battle.",
         "element": "passive",
@@ -234,6 +265,12 @@ const skillMapRoyal: SkillMap = {
             "Ariadne": 31,
             "Magatsu-Izanagi": 48
         }
+    },
+    "Attract": {
+        "card": "Fusion Mutation",
+        "cost": 400,
+        "effect": "Raises chance of being targeted",
+        "element": "support"
     },
     "Auto-Maraku": {
         "effect": "Automatic Marakukaja at the start of battle. (Overwrites Defense Master)",
@@ -251,7 +288,7 @@ const skillMapRoyal: SkillMap = {
         "effect": "Automatic Matarukaja at the start of battle. (Overwrites Attack Master)",
         "element": "passive",
         "personas": {
-            "Asura-Ou": 78,
+            "Asura": 78,
             "Bugs": 51,
             "Hope Diamond": 0,
             "Shiva": 87,
@@ -261,6 +298,7 @@ const skillMapRoyal: SkillMap = {
             "Athena Picaro": 54
         }
     },
+    "Ave Maria": {"effect": "Reduces costs of Support spells by 75%", "element": "trait", "personas": {"Maria": 0}},
     "Ayamur": {
         "cost": 25,
         "effect": "Deal 3 times medium Phys damage to 1 foe. High accuracy.",
@@ -280,6 +318,7 @@ const skillMapRoyal: SkillMap = {
         "element": "healing",
         "personas": {"Agathion": 0, "Ame-no-Uzume": 16, "Angel": 10, "Jack Frost": 0, "Nigi Mitama": 0}
     },
+    "Bargain Bolts": {"effect": "Reduces costs of Elec skills by 75%", "element": "trait", "personas": {"Odin": 0}},
     "Beast Weaver": {
         "cost": 20,
         "effect": "Deal grave Phys damage to 1 foe and user is debuffed with Tarunda.",
@@ -291,6 +330,7 @@ const skillMapRoyal: SkillMap = {
         "cost": 4800,
         "effect": "Deal severe Almighty damage to 1 foe.",
         "element": "almighty",
+        "unique": "Satan",
         "personas": {"Satan": 94, "Satanael": 96}
     },
     "Blazing Hell": {
@@ -298,6 +338,13 @@ const skillMapRoyal: SkillMap = {
         "effect": "Deal severe Fire damage to all foes.",
         "element": "fire",
         "personas": {"Attis": 88, "Mada": 92, "Surt": 0, "Zaou-Gongen": 86}
+    },
+    "Bleeding Dry Brush": {
+        "card": "Ring of Vanity",
+        "cost": 2200,
+        "effect": "Drains next non-Almighty attack for 1 ally, Removes innate weaknesses",
+        "element": "support",
+        "unique": "Ring of Vanity"
     },
     "Bless Amp": {
         "effect": "Strengthen (non instant death) Bless attacks by 50%.",
@@ -308,11 +355,24 @@ const skillMapRoyal: SkillMap = {
     "Bless Boost": {
         "effect": "Strengthen (non instant death) Bless attacks by 25%.",
         "element": "passive",
-        "personas": {"Daisoujou": 42, "Mithra": 37, "Power": 44, "Principality": 34}
+        "personas": {"Daisoujou": 42, "Mithra": 36, "Power": 44, "Principality": 34}
+    },
+    "Blessed Bloodline": {
+        "effect": "Halves costs of Bless skills",
+        "element": "trait",
+        "personas": {
+            "Barong": 0,
+            "Dominion": 0,
+            "Mithra": 0,
+            "Orichalcum": 0,
+            "Principality": 0,
+            "Sraosha": 0,
+            "Unicorn": 0
+        }
     },
     "Bloodbath": {
-        "cost": 19,
         "effect": "Deal heavy Phys damage and inflict Fear (low odds) to all foes.",
+        "cost": 22,
         "element": "phys",
         "fuse": ["Kumbhanda"],
         "personas": {
@@ -329,9 +389,20 @@ const skillMapRoyal: SkillMap = {
         },
         "talk": "The Black Avenger (Chernobog)"
     },
+    "Bloodstained Eyes": {
+        "effect": "Raises evasion against foes afflicted with ailments",
+        "element": "trait",
+        "personas": {"Belial": 0, "Forneus": 0, "Koh-i-Noor": 0, "Skadi": 0, "White Rider": 0}
+    },
+    "Bolstering Force": {
+        "effect": "Damage dealt during 1 More +50%",
+        "element": "trait",
+        "unique": "Tsukiyomi",
+        "personas": {"Tsukiyomi": 0, "Tsukiyomi Picaro": 0}
+    },
     "Brain Buster": {
-        "cost": 21,
         "effect": "Deal heavy Phys damage and inflict Brainwash (low odds) to all foes.",
+        "cost": 22,
         "element": "phys",
         "personas": {"Mara": 76, "Tam Lin": 30, "Trumpeter": 0},
         "talk": "Monk of the Valley (Kurama Tengu)"
@@ -379,7 +450,13 @@ const skillMapRoyal: SkillMap = {
             "Surt": 0,
             "Yoshitsune": 0
         },
-        "talk": "Furious Wisdom King (Atavaka)"
+        "talk": "Infuriated Wisdom King (Atavaka)"
+    },
+    "Brave Step": {
+        "cost": 1600,
+        "effect": "Raises critical rate for 3 turns for all allies",
+        "element": "support",
+        "unique": "Cendrillon"
     },
     "Bufu": {
         "cost": 400,
@@ -433,6 +510,13 @@ const skillMapRoyal: SkillMap = {
         "unique": "Orpheus",
         "personas": {"Orpheus": 0, "Orpheus Picaro": 0}
     },
+    "Champion's Cup": {
+        "card": "Ring of Lust",
+        "cost": 1000,
+        "effect": "Diarama + Tarukaja",
+        "element": "healing",
+        "unique": "Ring of Lust"
+    },
     "Charge": {
         "card": "Jazz 9/4",
         "cost": 1500,
@@ -456,17 +540,41 @@ const skillMapRoyal: SkillMap = {
         },
         "talk": "Blood-Thirsty Demoness (Dakini)"
     },
+    "Checkmate": {"cost": 9000, "effect": "Matarunda + Marakunda + Masukunda", "element": "support", "unique": "Agnes"},
+    "Chi You's Blessing": {
+        "effect": "Reduces costs of Psy skills by 75%",
+        "element": "trait",
+        "personas": {"Chi You": 0}
+    },
+    "Circle of Sadness": {
+        "effect": "Activates endure up to 4 times",
+        "element": "trait",
+        "unique": "Orpheus",
+        "personas": {"Orpheus": 0, "Orpheus F": 0, "Orpheus F Picaro": 0, "Orpheus Picaro": 0}
+    },
     "Cleave": {
         "cost": 6,
         "effect": "Deal weak Phys damage to 1 foe.",
         "element": "phys",
         "personas": {"Arsene": 2, "Berith": 0, "Cait Sith": 0},
-        "talk": "Headhunting Puss in Boots (Cait Sith)"
+        "talk": "Hunting Puss in Boots (Cait Sith)"
     },
     "Climate Decorum": {
         "effect": "Greatly increase evasion under rainy day or special weather warning.",
         "element": "passive",
         "personas": {"Choronzon": 33, "Koropokkuru": 15, "Lakshmi": 71, "Nigi Mitama": 26}
+    },
+    "Cocytus": {"effect": "Reduces costs of Ice skills by 75%", "element": "trait", "personas": {"Satan": 0}},
+    "Cold-Blooded": {
+        "effect": "Increases chance of inflicting Freeze during 1 More",
+        "element": "trait",
+        "personas": {"Genbu": 0, "Lilim": 0, "Yamata-no-Orochi": 0}
+    },
+    "Conceal": {
+        "card": "Fusion Mutation",
+        "cost": 400,
+        "effect": "Lowers chance of being targeted",
+        "element": "support"
     },
     "Concentrate": {
         "card": "Jazz 9/25",
@@ -495,12 +603,17 @@ const skillMapRoyal: SkillMap = {
             "Izanagi-no-Okami Picaro": 90,
             "Raoul": 81
         },
-        "talk": "Degenerate Idol (Alilat)"
+        "talk": "Decadent False God (Alilat)"
     },
     "Confuse Boost": {
         "effect": "Increase chance of inflicting Confuse.",
         "element": "passive",
         "personas": {"Inugami": 19, "Onmoraki": 17}
+    },
+    "Cool Customer": {
+        "effect": "Reduces ailment susceptibility by 50% for all allies",
+        "element": "trait",
+        "unique": "Lucy"
     },
     "Cornered Fang": {
         "cost": 10,
@@ -527,6 +640,17 @@ const skillMapRoyal: SkillMap = {
         "personas": {"Byakko": 0, "Kin-Ki": 31, "Ose": 0, "Rakshasa": 28, "Rangda": 0, "Valkyrie": 0, "Kaguya": 0},
         "talk": "Funerary Warrior (Valkyrie)"
     },
+    "Country Maker": {
+        "effect": "Scales damage dealt and received against Compendium completion rate",
+        "element": "trait",
+        "unique": "Izanagi-no-Okami",
+        "personas": {"Izanagi-no-Okami": 0, "Izanagi-no-Okami Picaro": 0}
+    },
+    "Crisis Control": {
+        "effect": "Reduces damage taken when weakness struck",
+        "element": "trait",
+        "personas": {"Berith": 0, "Chernobog": 0, "Koh-i-Noor": 0, "Throne": 0}
+    },
     "Cross Slash": {
         "cost": 20,
         "effect": "Deal 2 times heavy Phys damage to 1 foe. High accuracy.",
@@ -544,6 +668,11 @@ const skillMapRoyal: SkillMap = {
         "element": "passive",
         "personas": {"Choronzon": 32, "Nue": 26, "Pale Rider": 55}
     },
+    "Cursed Bloodline": {
+        "effect": "Halves costs of Curse skills",
+        "element": "trait",
+        "personas": {"Crystal Skull": 0, "Girimehkala": 0, "Pazuzu": 0, "Rangda": 0}
+    },
     "Dazzler": {
         "cost": 300,
         "effect": "Inflict Dizzy (high odds) to 1 foe.",
@@ -557,6 +686,13 @@ const skillMapRoyal: SkillMap = {
         "fuse": ["Valkyrie"],
         "personas": {"Bishamonten": 0, "Koumokuten": 55, "Skadi": 0},
         "talk": "Quaking Lady of Shadow (Skadi)"
+    },
+    "Death Scythe": {
+        "cost": 20,
+        "effect": "Deal severe Phys damage and inflict Fear (medium odds) to 1 foe.",
+        "element": "phys",
+        "fuse": ["Macabre"],
+        "personas": {"Byakhee": 0, "Macabre": 0}
     },
     "Deathbound": {
         "cost": 22,
@@ -574,6 +710,11 @@ const skillMapRoyal: SkillMap = {
             "Valkyrie": 46
         },
         "talk": "Rebellious Elephant (Girimehkala)"
+    },
+    "Deathly Illness": {
+        "effect": "Increases success rate of instant death skills",
+        "element": "trait",
+        "personas": {"Anubis": 0, "Melchizedek": 0}
     },
     "Debilitate": {
         "card": "Jazz 12/11",
@@ -623,9 +764,10 @@ const skillMapRoyal: SkillMap = {
         "element": "support",
         "personas": {"Angel": 12, "Anubis": 37, "Mithra": 35, "Mokoi": 14, "Suzaku": 18, "Unicorn": 0, "Yatagarasu": 0}
     },
+    "Demon's Bite": {"effect": "Doubles own HP recovery", "element": "trait", "personas": {"Ongyo-Ki": 0}},
     "Demonic Decree": {
-        "cost": 4800,
         "effect": "Half remaining HP of 1 foe.",
+        "cost": 3800,
         "element": "curse",
         "fuse": ["Belial", "Thanatos Picaro"],
         "personas": {"Beelzebub": 90, "Belial": 88, "Orichalcum": 0}
@@ -688,8 +830,8 @@ const skillMapRoyal: SkillMap = {
         "talk": "Prankster Leader (High Pixie)"
     },
     "Die For Me!": {
-        "cost": 4400,
         "effect": "High chance of instantly killing all foes.",
+        "cost": 4000,
         "element": "curse",
         "unique": "Alice",
         "personas": {"Alice": 85}
@@ -700,8 +842,8 @@ const skillMapRoyal: SkillMap = {
         "personas": {"Ame-no-Uzume": 18, "Kikuri-Hime": 45, "Nigi Mitama": 24, "Kaguya": 17, "Kaguya Picaro": 26}
     },
     "Divine Judgement": {
-        "cost": 4800,
         "effect": "Half remaining HP of 1 foe.",
+        "cost": 3800,
         "element": "bless",
         "fuse": ["Dominion"],
         "personas": {"Gabriel": 78, "Metatron": 95, "Michael": 0, "Orichalcum": 0, "Vohu Manah": 0}
@@ -750,15 +892,15 @@ const skillMapRoyal: SkillMap = {
         "element": "passive",
         "personas": {"Koh-i-Noor": 0}
     },
-    "Dodge Physical": {
-        "effect": "Double evasion rate against Phys attacks.",
+    "Dodge Phys": {
+        "effect": "Doubles evasion rate against Phys attacks",
         "element": "passive",
         "personas": {"Flauros": 20, "Valkyrie": 49, "Izanagi": 22}
     },
     "Dodge Psy": {
         "effect": "Double evasion rate against Psy attacks.",
         "element": "passive",
-        "personas": {"Kin-Ki": 28, "Koh-i-Noor": 0}
+        "personas": {"Kin-Ki": 27, "Koh-i-Noor": 0}
     },
     "Dodge Wind": {
         "effect": "Double evasion rate against Wind attacks.",
@@ -793,11 +935,30 @@ const skillMapRoyal: SkillMap = {
         "personas": {"Eligor": 18, "Makami": 0, "Orthrus": 0, "Shiisaa": 0},
         "talk": "Twin-Headed Guardian (Orthrus)"
     },
+    "Double Shot": {
+        "cost": 12,
+        "effect": "Deal 2 times light Gun damage to 1 foe.",
+        "element": "gun",
+        "personas": {"Kurama Tengu": 0, "Matador": 20, "Shiki-Ouji": 0},
+        "talk": "Bringer of Misfortune (Shiki-Ouji)"
+    },
+    "Draining Mouth": {
+        "effect": "Doubles effectiveness of absorption skills",
+        "element": "trait",
+        "personas": {"Choronzon": 0, "Daisoujou": 0, "Incubus": 0, "Legion": 0, "Loa": 0}
+    },
     "Dream Needle": {
         "cost": 8,
         "effect": "Deal weak Gun damage and inflict Sleep (medium odds) to 1 foe.",
         "element": "gun",
         "personas": {"Arsene": 5, "Incubus": 0, "Inugami": 15, "Phoenix": 0, "Pisaca": 0}
+    },
+    "Drunken Passion": {"effect": "Reduces costs of Fire skills by 75%", "element": "trait", "personas": {"Mada": 0}},
+    "EXP Boost": {"effect": "EXP +15% after battle", "element": "passive"},
+    "Eccentric Temper": {
+        "effect": "Low chance to strengthen Phys attacks by 80% for all allies",
+        "element": "trait",
+        "unique": "William"
     },
     "Eiga": {
         "cost": 800,
@@ -852,6 +1013,19 @@ const skillMapRoyal: SkillMap = {
         "element": "support",
         "personas": {"Ananta": 0, "Apsaras": 14, "Lachesis": 37, "Nekomata": 21},
         "talk": "Waterside Nymph (Apsaras)"
+    },
+    "Electric Bloodline": {
+        "effect": "Halves costs of Elec skills",
+        "element": "trait",
+        "personas": {
+            "Ame-no-Uzume": 0,
+            "Hariti": 0,
+            "Orlov": 0,
+            "Raja Naga": 0,
+            "Take-Minakata": 0,
+            "Thunderbird": 0,
+            "Zouchouten": 0
+        }
     },
     "Emergency Shift": {
         "effect": "Chance to swap current party with backups when 2 or more people are KO'd.",
@@ -932,8 +1106,8 @@ const skillMapRoyal: SkillMap = {
         "element": "passive",
         "personas": {"Oberon": 70, "Okuninushi": 57}
     },
-    "Evade Physical": {
-        "effect": "Triple evasion rate against Phys attacks.",
+    "Evade Phys": {
+        "effect": "Triples evasion rate against Phys attacks",
         "element": "passive",
         "personas": {"Bugs": 54, "Zaou-Gongen": 82, "Ariadne": 34, "Ariadne Picaro": 46}
     },
@@ -969,6 +1143,11 @@ const skillMapRoyal: SkillMap = {
         },
         "talk": "Menacing Owlman (Andras)"
     },
+    "Explosive Scheme": {
+        "effect": "Restores 25% HP after Futaba's All-Out Attack for all allies",
+        "element": "trait",
+        "unique": "Necronomicon"
+    },
     "Famine's Scream": {
         "effect": "Inflict Hunger (medium odds) to all foes.",
         "element": "ailment",
@@ -982,7 +1161,13 @@ const skillMapRoyal: SkillMap = {
     "Fear Boost": {
         "effect": "Increase chance of inflicting Fear.",
         "element": "passive",
-        "personas": {"Andras": 29, "Belial": 85, "Chernobog": 66, "Kodama": 14, "Kumbhanda": 46, "Skadi": 0}
+        "personas": {"Andras": 29, "Belial": 85, "Chernobog": 66, "Kodama": 15, "Kumbhanda": 46, "Skadi": 0}
+    },
+    "Fighting Spirit": {
+        "cost": 8000,
+        "effect": "Next Phys attack +150% damage for all allies",
+        "element": "support",
+        "unique": "William"
     },
     "Final Guard": {
         "effect": "Chance to nullify a fatal attack to a current party member.",
@@ -1001,7 +1186,7 @@ const skillMapRoyal: SkillMap = {
             "Asterius": 59,
             "Asterius Picaro": 65
         },
-        "talk": "Mutant Lion God (Chimera)"
+        "talk": "Deformed Lion God (Chimera)"
     },
     "Fire Boost": {
         "effect": "Strengthen Fire attacks by 25%.",
@@ -1013,7 +1198,7 @@ const skillMapRoyal: SkillMap = {
         "cost": 600,
         "effect": "Negate Fire resistances of all foes.",
         "element": "support",
-        "personas": {"Biyarky": 74, "Orobas": 20, "Seth": 54},
+        "personas": {"Byakhee": 74, "Orobas": 20, "Seth": 54},
         "talk": "Equine Sage (Orobas)"
     },
     "Fire Wall": {
@@ -1055,8 +1240,35 @@ const skillMapRoyal: SkillMap = {
         "cost": 800,
         "effect": "Increase susceptibility to all ailments of 1 foe.",
         "element": "almighty",
-        "personas": {"Andras": 0, "Black Ooze": 0, "Biyarky": 0, "Lamia": 28, "Legion": 39, "White Rider": 43},
+        "personas": {
+            "Andras": 0,
+            "Black Ooze": 0,
+            "Byakhee": 0,
+            "Chernobog": 63,
+            "Lamia": 28,
+            "Legion": 39,
+            "White Rider": 43
+        },
         "talk": "Pulsing Mud (Black Ooze)"
+    },
+    "Foul Odor": {
+        "effect": "Increases chance of inflicting ailments after Baton Pass",
+        "element": "trait",
+        "personas": {
+            "Andras": 0,
+            "Inugami": 0,
+            "Koropokkuru": 0,
+            "Lamia": 0,
+            "Nekomata": 0,
+            "Sandman": 0,
+            "Succubus": 0,
+            "Yaksini": 0
+        }
+    },
+    "Foul Stench": {
+        "effect": "Increases chance of inflicting ailments",
+        "element": "trait",
+        "personas": {"Chimera": 0, "Crystal Skull": 0, "Pale Rider": 0, "Titania": 0, "Vasuki": 0}
     },
     "Freeze Boost": {
         "effect": "Increase chance of inflicting Freeze.",
@@ -1096,6 +1308,41 @@ const skillMapRoyal: SkillMap = {
         "element": "nuclear",
         "personas": {"Ara Mitama": 0, "Phoenix": 0, "Stone of Scone": 0, "Thoth": 0}
     },
+    "Frenzied Bull": {
+        "effect": "Scales damage dealt against lost HP under 50%",
+        "element": "trait",
+        "unique": "Asterius",
+        "personas": {"Asterius": 0, "Asterius Picaro": 0}
+    },
+    "Frigid Bloodline": {
+        "effect": "Halves costs of Ice skills",
+        "element": "trait",
+        "personas": {
+            "Alilat": 0,
+            "Black Frost": 0,
+            "Emperor's Amulet": 0,
+            "Jack Frost": 0,
+            "King Frost": 0,
+            "Sui-Ki": 0
+        }
+    },
+    "Gaia Blessing": {
+        "effect": "Increases chance of inflicting Burn, Freeze, and Shock by 50% for all allies",
+        "element": "trait",
+        "unique": "Agnes"
+    },
+    "Gaia Pact": {
+        "effect": "Increases chance of inflicting Burn, Freeze, and Shock by 25% for all allies",
+        "element": "trait",
+        "unique": "Johanna"
+    },
+    "Gambler's Foresight": {
+        "card": "Ring of Envy",
+        "cost": 2000,
+        "effect": "Masukukaja, Begins battle with Concentrate",
+        "element": "support",
+        "unique": "Ring of Envy"
+    },
     "Garu": {
         "cost": 300,
         "effect": "Deal weak Wind damage to 1 foe.",
@@ -1118,6 +1365,12 @@ const skillMapRoyal: SkillMap = {
         "personas": {"Anzu": 0, "Fuu-Ki": 0, "Sandman": 0, "Stone of Scone": 0},
         "talk": "Tornado Devil (Fuu-Ki)"
     },
+    "Gattling Blows": {
+        "cost": 16,
+        "effect": "Deal 3 to 4 times light Phys damage to 1 foe.",
+        "element": "phys",
+        "personas": {"Hecatoncheires": 49}
+    },
     "Ghastly Wail": {
         "cost": 2800,
         "effect": "Instantly kill all foes under Fear.",
@@ -1132,6 +1385,11 @@ const skillMapRoyal: SkillMap = {
             "Magatsu-Izanagi Picaro": 0
         },
         "talk": "Dancer of Death (Macabre)"
+    },
+    "Ghost Nest": {
+        "effect": "Increases chance of inflicting ailments on downed foes",
+        "element": "trait",
+        "personas": {"Mother Harlot": 0}
     },
     "Giant Slice": {
         "cost": 9,
@@ -1152,7 +1410,33 @@ const skillMapRoyal: SkillMap = {
             "Asterius": 62,
             "Asterius Picaro": 68
         },
-        "talk": "Ravenous Dragon (Fafnir)"
+        "talk": "Evil Voracious Dragon (Fafnir)"
+    },
+    "Gloomy Child": {
+        "effect": "Activates all equipped special weather passives",
+        "element": "trait",
+        "personas": {"Black Rider": 0, "Mokoi": 0, "Sudama": 0}
+    },
+    "Gluttonmouth": {
+        "effect": "Strengthens own HP recovery by 50%",
+        "element": "trait",
+        "personas": {
+            "Flauros": 0,
+            "Ganesha": 0,
+            "Hecatoncheires": 0,
+            "Koumokuten": 0,
+            "Kushi Mitama": 0,
+            "Narcissus": 0,
+            "Stone of Scone": 0,
+            "Suzaku": 0,
+            "Tam Lin": 0
+        }
+    },
+    "God Maker": {
+        "effect": "Increases chance of ally traits activating",
+        "element": "trait",
+        "unique": "Izanagi",
+        "personas": {"Izanagi": 0, "Izanagi Picaro": 0}
     },
     "God's Hand": {
         "cost": 25,
@@ -1161,6 +1445,18 @@ const skillMapRoyal: SkillMap = {
         "fuse": ["Cerberus"],
         "personas": {"Ardha": 0, "Bishamonten": 73, "Melchizedek": 65, "Zaou-Gongen": 0, "Messiah": 0}
     },
+    "Grace of Mother": {
+        "effect": "Reduces costs of Recovery skills by 75%",
+        "element": "trait",
+        "personas": {"Ishtar": 0}
+    },
+    "Grace of the Olive": {
+        "effect": "Reduces costs of skills to 0 during 1 More",
+        "element": "trait",
+        "unique": "Athena",
+        "personas": {"Athena": 0, "Athena Picaro": 0}
+    },
+    "Great Aim": {"effect": "Gun hit rate +5%", "element": "passive"},
     "Growth 1": {
         "effect": "Persona gains 1/4 EXP while inactive.",
         "element": "passive",
@@ -1178,20 +1474,29 @@ const skillMapRoyal: SkillMap = {
         "fuse": ["Izanagi Picaro"],
         "personas": {"Narcissus": 50, "Quetzalcoatl": 68, "Raphael": 81, "Izanagi": 25, "Izanagi Picaro": 28}
     },
+    "Guiding Tendril": {
+        "card": "Ring of Sorrow",
+        "cost": 2000,
+        "effect": "Downs all foes, Only usable when ambushing foe, Life Aid",
+        "element": "support",
+        "unique": "Ring of Sorrow"
+    },
     "Gun Amp": {
-        "effect": "Strengthen Gun attacks by 50%.",
+        "effect": "Gun damage +50%",
         "element": "passive",
         "fuse": ["White Rider"],
         "personas": {"Seth": 53, "Trumpeter": 62, "Zaou-Gongen": 84}
     },
-    "Gun Boost": {
-        "effect": "Strengthen Gun attacks by 25%.",
-        "element": "passive",
-        "personas": {"White Rider": 40}
+    "Gun Boost": {"effect": "Gun damage +25%", "element": "passive", "personas": {"White Rider": 40}},
+    "Hallowed Spirit": {
+        "effect": "Doubles own HP and SP recovery",
+        "element": "trait",
+        "unique": "Messiah",
+        "personas": {"Messiah": 0, "Messiah Picaro": 0}
     },
     "Hama": {
-        "cost": 800,
         "effect": "Small chance of instantly killing 1 foe.",
+        "cost": 600,
         "element": "bless",
         "personas": {"Archangel": 0}
     },
@@ -1201,8 +1506,8 @@ const skillMapRoyal: SkillMap = {
         "personas": {"Dominion": 71, "Horus": 52, "Isis": 30, "Melchizedek": 59, "Metatron": 92, "Sraosha": 0}
     },
     "Hamaon": {
-        "cost": 1500,
         "effect": "Medium chance of instantly killing 1 foe.",
+        "cost": 1200,
         "element": "bless",
         "fuse": ["Unicorn"],
         "personas": {
@@ -1224,6 +1529,12 @@ const skillMapRoyal: SkillMap = {
         "unique": "Yoshitsune",
         "personas": {"Yoshitsune": 94}
     },
+    "Hazy Presence": {
+        "effect": "Increases chance of ally follow-up attacks",
+        "element": "trait",
+        "unique": "Raoul",
+        "personas": {"Raoul": 0}
+    },
     "Headbutt": {
         "cost": 9,
         "effect": "Deal medium Phys damage and inflict Forget (medium odds) to 1 foe.",
@@ -1236,7 +1547,7 @@ const skillMapRoyal: SkillMap = {
         "effect": "Increase 1 ally's Attack, Defense and Agility for 3 turns.",
         "element": "support",
         "personas": {
-            "Biyarky": 75,
+            "Byakhee": 75,
             "Lucifer": 96,
             "Maria": 94,
             "Raphael": 80,
@@ -1246,7 +1557,7 @@ const skillMapRoyal: SkillMap = {
             "Magatsu-Izanagi Picaro": 54,
             "Raoul": 79
         },
-        "talk": "Hybrid Servant of Evil (Biyarky)"
+        "talk": "Evil Synthetic Organism (Byakhee)"
     },
     "Heat Up": {
         "card": "Trial 50",
@@ -1260,13 +1571,18 @@ const skillMapRoyal: SkillMap = {
         "element": "phys",
         "personas": {"Chimera": 0, "Kali": 0, "Mithras": 0, "Oberon": 0, "Okuninushi": 59, "Ose": 47}
     },
+    "Heated Bloodline": {
+        "effect": "Halves costs of Fire skills",
+        "element": "trait",
+        "personas": {"Byakhee": 0, "Cerberus": 0, "Decarabia": 0, "Orlov": 0, "Surt": 0}
+    },
     "High Counter": {
         "card": "CJ Leblanc",
         "effect": "20% chance of reflecting Phys attacks.",
         "element": "passive",
         "fuse": ["Ose"],
         "personas": {
-            "Asura-Ou": 80,
+            "Asura": 80,
             "Atavaka": 67,
             "Cerberus": 57,
             "Cu Chulainn": 0,
@@ -1278,11 +1594,48 @@ const skillMapRoyal: SkillMap = {
             "Kaguya Picaro": 0
         }
     },
+    "High Energy": {
+        "cost": 8000,
+        "effect": "Next Magic attack +150% damage for all allies",
+        "element": "support",
+        "unique": "Celestine"
+    },
+    "Hollow Jester": {
+        "effect": "Damage +40% for each foe afflicted with an ailment",
+        "element": "trait",
+        "unique": "Magatsu-Izanagi",
+        "personas": {"Magatsu-Izanagi": 0, "Magatsu-Izanagi Picaro": 0}
+    },
+    "Holy Benevolence": {
+        "cost": 2600,
+        "effect": "Revive all allies with 100% HP",
+        "element": "healing",
+        "unique": "Maria",
+        "personas": {"Maria": 0}
+    },
+    "Holy Embrace": {
+        "effect": "Recover 25% max HP each turn in battle",
+        "element": "passive",
+        "unique": "Maria",
+        "personas": {"Maria": 96}
+    },
+    "Holy Whisper": {
+        "effect": "Recover 15% max HP and 15 SP each turn in battle",
+        "element": "passive",
+        "unique": "Maria",
+        "personas": {"Maria": 98}
+    },
+    "Hyakka Ryouran": {
+        "cost": 9000,
+        "effect": "Matarukaja + Marakukaja + Masukukaja",
+        "element": "support",
+        "unique": "Gorokichi"
+    },
     "Hysterical Slap": {
         "cost": 9,
         "effect": "Deal medium Phys damage and inflict Rage (medium odds) to 1 foe.",
         "element": "phys",
-        "personas": {"Kushinada-Hime": 0, "Nekomata": 18, "Yaksini": 0},
+        "personas": {"Kushinada": 0, "Nekomata": 18, "Yaksini": 0},
         "talk": "Life-Draining Spirit (Kumbhanda)"
     },
     "Ice Age": {
@@ -1323,6 +1676,16 @@ const skillMapRoyal: SkillMap = {
         "element": "support",
         "personas": {"Apsaras": 0, "Bicorn": 7, "Koumokuten": 52, "Onmoraki": 0, "Sarasvati": 0}
     },
+    "Icy Glare": {
+        "effect": "Reduces ailment susceptibility by 25% for all allies",
+        "element": "trait",
+        "unique": "Milady"
+    },
+    "Immunity": {
+        "effect": "Nullifies ailments",
+        "element": "trait",
+        "personas": {"Arahabaki": 0, "Moloch": 0, "Orichalcum": 0}
+    },
     "Inferno": {
         "cost": 4800,
         "effect": "Deal severe Fire damage to 1 foe.",
@@ -1330,10 +1693,47 @@ const skillMapRoyal: SkillMap = {
         "fuse": ["Surt"],
         "personas": {"Mada": 0, "Orichalcum": 0, "Throne": 78}
     },
+    "Infinite Scheme": {
+        "effect": "Restores 100% after Futaba's All-Out Attack for all allies",
+        "element": "trait",
+        "unique": "Al Azif"
+    },
+    "Ingenious Spirit": {
+        "effect": "Chance to halve Support and Almighty skill costs for all allies",
+        "element": "trait",
+        "unique": "Hereward"
+    },
     "Insta-Heal": {
         "effect": "Recover from an ailment in 1 turn.",
         "element": "passive",
         "personas": {"Ishtar": 87, "Lucifer": 98, "Messiah Picaro": 91}
+    },
+    "Intense Focus": {
+        "effect": "Single-target magic damage +20%",
+        "element": "trait",
+        "personas": {
+            "Belphegor": 0,
+            "Fuu-Ki": 0,
+            "Koppa Tengu": 0,
+            "Norn": 0,
+            "Onmoraki": 0,
+            "Silky": 0,
+            "Stone of Scone": 0,
+            "Thor": 0
+        }
+    },
+    "Internal Hypnosis": {
+        "effect": "Extends buffs received by 1 turn",
+        "element": "trait",
+        "personas": {
+            "Apsaras": 0,
+            "Hell Biker": 0,
+            "Hope Diamond": 0,
+            "Jikokuten": 0,
+            "Lachesis": 0,
+            "Power": 0,
+            "Saki Mitama": 0
+        }
     },
     "Invigorate 1": {
         "card": "Technician 30",
@@ -1351,11 +1751,31 @@ const skillMapRoyal: SkillMap = {
         "element": "passive",
         "personas": {"Ardha": 0, "Maria": 0, "Satan": 95, "Throne": 76, "Vohu Manah": 84, "Messiah": 84}
     },
+    "Inviolable Beauty": {
+        "effect": "Triples damage dealt by Counter skills",
+        "element": "trait",
+        "unique": "Kaguya",
+        "personas": {"Kaguya": 0, "Kaguya Picaro": 0}
+    },
+    "Iron Heart": {
+        "effect": "Halves costs of SP skills after Baton Pass",
+        "element": "trait",
+        "unique": "Thanatos",
+        "personas": {"Thanatos": 0, "Thanatos Picaro": 0}
+    },
+    "Just Die": {"effect": "Reduces costs of instant death skills to 0", "element": "trait", "personas": {"Alice": 0}},
+    "Kill Rush": {
+        "cost": 14,
+        "effect": "Deal 1-3 times light Phys damage to 1 foe.",
+        "element": "phys",
+        "fuse": ["Oni"],
+        "personas": {"Jikokuten": 24, "Zouchouten": 0}
+    },
     "Kouga": {
         "cost": 800,
         "effect": "Deal medium Bless damage to 1 foe.",
         "element": "bless",
-        "personas": {"Mithra": 0, "Stone of Scone": 0, "Unicorn": 43},
+        "personas": {"Mithra": 0, "Stone of Scone": 0},
         "talk": "Expressionless Beast (Unicorn)"
     },
     "Kougaon": {
@@ -1363,7 +1783,7 @@ const skillMapRoyal: SkillMap = {
         "effect": "Deal heavy Bless damage to 1 foe.",
         "element": "bless",
         "fuse": ["Anubis"],
-        "personas": {"Dominion": 0, "Emperor's Amulet": 0, "Horus": 0, "Sraosha": 0}
+        "personas": {"Dominion": 0, "Emperor's Amulet": 0, "Horus": 0, "Sraosha": 0, "Unicorn": 43}
     },
     "Kouha": {
         "cost": 400,
@@ -1372,12 +1792,20 @@ const skillMapRoyal: SkillMap = {
         "personas": {"Angel": 0},
         "talk": "Heavenly Punisher (Archangel)"
     },
+    "Kuzunoha's Order": {"effect": "Reduces skill costs by 25%", "element": "passive"},
+    "Laevateinn": {"cost": 25, "effect": "Colossal damage to 1 foe", "element": "phys", "unique": "Loki"},
+    "Last Stand": {
+        "effect": "Reduces enemy hit rate by 2/3 when ambushed",
+        "element": "passive",
+        "personas": {"Ongyo-Ki": 0, "Red Rider": 46, "Yatagarasu": 60, "Yoshitsune": 89}
+    },
     "Life Aid": {
         "card": "Trial 80",
         "effect": "Recover 8% HP and SP after a successful battle.",
         "element": "passive",
         "personas": {"Kohryu": 78, "Lakshmi": 74, "Trumpeter": 63, "Messiah Picaro": 93, "Raoul": 82}
     },
+    "Life Boost": {"effect": "All Stats +3, SP +20", "element": "passive"},
     "Life Drain": {
         "cost": 300,
         "effect": "Drains HP from 1 foe.",
@@ -1386,9 +1814,20 @@ const skillMapRoyal: SkillMap = {
         "talk": "Bedside Brute (Incubus)"
     },
     "Life Leech": {"effect": "Drains 150 HP from 1 foe.", "element": "almighty", "unique": "Enemies"},
+    "Life Wall": {
+        "cost": 9500,
+        "effect": "Repels next non-Almighty attack for all allies",
+        "element": "support",
+        "unique": "Lucy"
+    },
+    "Linked Bloodline": {
+        "effect": "Greatly raises damage dealt after Baton Pass",
+        "element": "trait",
+        "personas": {"Cybele": 0}
+    },
     "Lucky Punch": {
-        "cost": 6,
         "effect": "Deal minuscule Phys damage to 1 foe. High critical rate.",
+        "cost": 3,
         "element": "phys",
         "personas": {"Inugami": 17, "Obariyon": 9, "Sudama": 0}
     },
@@ -1420,7 +1859,7 @@ const skillMapRoyal: SkillMap = {
         "element": "ice",
         "fuse": ["Koropokkuru"],
         "personas": {"Genbu": 10, "Jack Frost": 12, "Koropokkuru": 14, "Regent": 0, "Sui-Ki": 0},
-        "talk": "Floodbringer Demon (Sui-Ki)"
+        "talk": "Raging Water Demon (Sui-Ki)"
     },
     "Mabufudyne": {
         "cost": 2200,
@@ -1496,7 +1935,7 @@ const skillMapRoyal: SkillMap = {
         "effect": "Deal heavy Nuclear damage to all foes.",
         "element": "nuclear",
         "fuse": ["Titania"],
-        "personas": {"Asura-Ou": 79, "Bishamonten": 69, "Crystal Skull": 0, "Lilith": 62, "Trumpeter": 0}
+        "personas": {"Asura": 79, "Bishamonten": 69, "Crystal Skull": 0, "Lilith": 62, "Trumpeter": 0}
     },
     "Mafreila": {
         "cost": 1600,
@@ -1557,20 +1996,20 @@ const skillMapRoyal: SkillMap = {
         "element": "passive"
     },
     "Mahama": {
-        "cost": 1800,
         "effect": "Small chance of instantly killing all foes.",
+        "cost": 1400,
         "element": "bless",
         "fuse": ["Archangel"],
         "personas": {"Clotho": 0, "Isis": 0, "Mithra": 0, "Unicorn": 0},
         "talk": "She of Life and Death (Isis)"
     },
     "Mahamaon": {
-        "cost": 3400,
-        "effect": "medium chance of instantly killing all foes.",
+        "effect": "Medium chance of instantly killing all foes.",
+        "cost": 2600,
         "element": "bless",
         "fuse": ["Melchizedek"],
         "personas": {
-            "Asura-Ou": 0,
+            "Asura": 0,
             "Dominion": 72,
             "Melchizedek": 62,
             "Metatron": 0,
@@ -1579,7 +2018,12 @@ const skillMapRoyal: SkillMap = {
             "Sraosha": 0,
             "Vasuki": 0
         },
-        "talk": "Blazing Judgement Wheel (Throne)"
+        "talk": "Fire Assassin (Throne)"
+    },
+    "Majestic Presence": {
+        "effect": "Doubles effectiveness and decreases costs of Recovery skills for all allies",
+        "element": "trait",
+        "unique": "Diego"
     },
     "Makajam": {
         "cost": 300,
@@ -1606,15 +2050,15 @@ const skillMapRoyal: SkillMap = {
         "talk": "Vampire Moth (Mothman)"
     },
     "Makara Break": {
-        "cost": 1800,
         "effect": "Remove magic-repellent shields from all foes.",
+        "cost": 900,
         "element": "support",
         "personas": {"Queen Mab": 46, "Yatagarasu": 0}
     },
     "Makarakarn": {
         "card": "Jazz 10/30",
-        "cost": 3600,
         "effect": "Create a shield on 1 ally to repel 1 magical attack.",
+        "cost": 2400,
         "element": "support",
         "fuse": ["Clotho"],
         "personas": {
@@ -1659,15 +2103,15 @@ const skillMapRoyal: SkillMap = {
         "personas": {"Nigi Mitama": 0, "Regent": 0}
     },
     "Mamudo": {
-        "cost": 1800,
         "effect": "Small chance of instantly killing all foes.",
+        "cost": 1400,
         "element": "curse",
         "fuse": ["Leanan Sidhe"],
         "personas": {"Lamia": 30, "Leanan Sidhe": 21, "Nue": 24, "Pisaca": 29}
     },
     "Mamudoon": {
-        "cost": 3400,
         "effect": "medium chance of instantly killing all foes.",
+        "cost": 2600,
         "element": "curse",
         "fuse": ["Chernobog"],
         "personas": {
@@ -1720,7 +2164,7 @@ const skillMapRoyal: SkillMap = {
         "personas": {
             "Atavaka": 0,
             "Attis": 0,
-            "Biyarky": 72,
+            "Byakhee": 72,
             "Cerberus": 58,
             "Chimera": 0,
             "Crystal Skull": 0,
@@ -1747,7 +2191,7 @@ const skillMapRoyal: SkillMap = {
         "personas": {
             "Alilat": 0,
             "Ananta": 48,
-            "Asura-Ou": 0,
+            "Asura": 0,
             "Kikuri-Hime": 0,
             "Lachesis": 36,
             "Naga": 29,
@@ -1775,6 +2219,17 @@ const skillMapRoyal: SkillMap = {
         "effect": "Inflict Brainwash (high odds) to 1 foe.",
         "element": "ailment",
         "personas": {"Leanan Sidhe": 20, "Mokoi": 12, "Nebiros": 0, "Suzaku": 0}
+    },
+    "Martyr's Gift": {
+        "effect": "Reduces costs of Bless skills by 75%",
+        "element": "trait",
+        "personas": {"Metatron": 0}
+    },
+    "Masquerade": {"cost": 25, "effect": "Severe damage to 1 foe, x2 hits", "element": "phys", "unique": "Ella"},
+    "Mastery of Magic": {
+        "effect": "Low chance to decrease attack spell costs for all allies",
+        "element": "trait",
+        "unique": "Carmen"
     },
     "Masukukaja": {
         "card": "Jazz 7/31 10/23 CJ Aquarium",
@@ -1815,7 +2270,7 @@ const skillMapRoyal: SkillMap = {
             "Cu Chulainn": 78,
             "Futsunushi": 0,
             "Jikokuten": 27,
-            "Kushinada-Hime": 44,
+            "Kushinada": 44,
             "Melchizedek": 63,
             "Mot": 0,
             "Oberon": 68,
@@ -1828,7 +2283,7 @@ const skillMapRoyal: SkillMap = {
             "Athena Picaro": 0,
             "Orpheus Picaro": 33
         },
-        "talk": "Lamenting Sacrifice (Kushinada-Hime)"
+        "talk": "Lamenting Sacrifice (Kushinada)"
     },
     "Matarunda": {
         "card": "Jazz 8/7 11/6",
@@ -1860,6 +2315,7 @@ const skillMapRoyal: SkillMap = {
             "Raja Naga": 59,
             "Shiva": 0,
             "Thor": 67,
+            "Thunderbird": 39,
             "Magatsu-Izanagi": 45
         },
         "talk": "Thunder Emperor (Thor)"
@@ -1882,7 +2338,7 @@ const skillMapRoyal: SkillMap = {
             "Izanagi": 24,
             "Izanagi Picaro": 27
         },
-        "talk": "Storm-Calling Bird (Thunderbird)"
+        "talk": "Storm-Invoking Ptarmigan (Thunderbird)"
     },
     "Me Patra": {
         "cost": 800,
@@ -1926,7 +2382,7 @@ const skillMapRoyal: SkillMap = {
             "Atropos": 41,
             "Hariti": 44,
             "Kikuri-Hime": 41,
-            "Kushinada-Hime": 0,
+            "Kushinada": 0,
             "Narcissus": 52,
             "Principality": 30,
             "Sarasvati": 0,
@@ -2006,6 +2462,11 @@ const skillMapRoyal: SkillMap = {
         "fuse": ["Black Ooze"],
         "personas": {"Eligor": 20, "Naga": 0, "Oni": 24, "Quetzalcoatl": 0}
     },
+    "Mighty Gaze": {
+        "effect": "All-target magic damage +20%",
+        "element": "trait",
+        "personas": {"Atropos": 0, "Lilith": 0, "Mara": 0, "Mot": 0, "Nue": 0, "Orobas": 0, "Regent": 0}
+    },
     "Mind Slice": {
         "cost": 19,
         "effect": "Deal medium Phys damage and inflict Confuse (low odds) to all foes.",
@@ -2021,6 +2482,13 @@ const skillMapRoyal: SkillMap = {
         "personas": {"Ara Mitama": 0, "Black Frost": 0, "Bugs": 0, "Ganesha": 0, "Ariadne": 0, "Ariadne Picaro": 0},
         "talk": "Auspicious Pachyderm (Ganesha)"
     },
+    "Miracle Rush": {
+        "cost": 16,
+        "effect": "Deal medium Phys damage to all foes. High critical rate.",
+        "element": "phys",
+        "unique": "Diego"
+    },
+    "Money Boost": {"effect": "Doubles money earned after battle", "element": "passive"},
     "Moral Support": {
         "effect": "Chance to cast Kaja or party-healing magic during battle.",
         "element": "passive",
@@ -2033,9 +2501,19 @@ const skillMapRoyal: SkillMap = {
         "unique": "Lucifer",
         "personas": {"Lucifer": 94}
     },
+    "Mother's Lament": {
+        "effect": "Reduces costs of Curse skills by 75%",
+        "element": "trait",
+        "personas": {"Beelzebub": 0}
+    },
+    "Mouth of Savoring": {
+        "effect": "Strengthens own SP recovery by 50%",
+        "element": "trait",
+        "personas": {"Abaddon": 0, "Hastur": 0, "Orichalcum": 0, "Uriel": 0, "Yurlungur": 0}
+    },
     "Mudo": {
-        "cost": 800,
         "effect": "Small chance of instantly killing 1 foe.",
+        "cost": 600,
         "element": "curse",
         "personas": {"Lamia": 0, "Nue": 21, "Succubus": 12},
         "talk": "Corpse Bird (Onmoraki)"
@@ -2046,8 +2524,8 @@ const skillMapRoyal: SkillMap = {
         "personas": {"Alice": 0, "Mother Harlot": 0, "Thanatos Picaro": 70}
     },
     "Mudoon": {
-        "cost": 1500,
         "effect": "medium chance of instantly killing 1 foe.",
+        "cost": 1200,
         "element": "curse",
         "personas": {
             "Anubis": 0,
@@ -2080,12 +2558,27 @@ const skillMapRoyal: SkillMap = {
             "Tsukiyomi Picaro": 0
         }
     },
+    "Myriad Truths": {
+        "cost": 4000,
+        "effect": "Deal 3 times heavy Almighty damage to all foes.",
+        "element": "almighty",
+        "unique": "Izanagi-no-Okami",
+        "personas": {"Izanagi-no-Okami": 0, "Izanagi-no-Okami Picaro": 0}
+    },
+    "Naranari": {"effect": "Doubles effectiveness of SP regeneration skills", "element": "trait", "personas": {"Ardha": 0}},
     "Negative Pile": {
         "cost": 12,
         "effect": "Deal heavy Phys damage and inflict Despair (medium odds) to 1 foe.",
         "element": "phys",
         "personas": {"Red Rider": 42},
         "talk": "Slithering Snakewoman (Lamia)"
+    },
+    "Neo Cadenza": {
+        "cost": 2400,
+        "effect": "Restore 50% HP of party and increase attack, defense, and evasion rate.",
+        "element": "healing",
+        "unique": "Orpheus F",
+        "personas": {"Orpheus F": 0, "Orpheus F Picaro": 0}
     },
     "Nocturnal Flash": {
         "cost": 800,
@@ -2127,11 +2620,8 @@ const skillMapRoyal: SkillMap = {
         "element": "passive",
         "personas": {"Arahabaki": 0}
     },
-    "Null Confuse": {
-        "effect": "Impart immunity against Confuse.",
-        "element": "passive",
-        "personas": {"Kushinada-Hime": 45}
-    },
+    "Null Burn": {"effect": "Immune to Burn", "element": "passive"},
+    "Null Confuse": {"effect": "Impart immunity against Confuse.", "element": "passive", "personas": {"Kushinada": 45}},
     "Null Curse": {
         "effect": "Impart immunity against Curse attacks.",
         "element": "passive",
@@ -2155,11 +2645,14 @@ const skillMapRoyal: SkillMap = {
         "personas": {"Decarabia": 37}
     },
     "Null Forget": {"effect": "Impart immunity against Forget.", "element": "passive", "personas": {"Anzu": 29}},
+    "Null Freeze": {"effect": "Immune to Freeze", "element": "passive"},
+    "Null Hunger": {"effect": "Immune to Hunger", "element": "passive"},
     "Null Ice": {
         "effect": "Impart immunity against Ice attacks.",
         "element": "passive",
-        "personas": {"Kushinada-Hime": 48, "Parvati": 61, "Sui-Ki": 26}
+        "personas": {"Kushinada": 48, "Parvati": 61, "Sui-Ki": 26}
     },
+    "Null Mortal": {"effect": "Nullifies damage from Bless and Curse attacks", "element": "passive"},
     "Null Nuke": {"effect": "Impart immunity against Nuclear attacks.", "element": "passive"},
     "Null Phys": {
         "effect": "Impart immunity against Phys attacks.",
@@ -2172,11 +2665,17 @@ const skillMapRoyal: SkillMap = {
         "element": "passive",
         "personas": {"Belphegor": 38, "Byakko": 50, "Daisoujou": 45}
     },
+    "Null Shock": {"effect": "Immune to Shock", "element": "passive"},
     "Null Sleep": {"effect": "Impart immunity against Sleep.", "element": "passive", "personas": {"Sandman": 26}},
     "Null Wind": {
         "effect": "Impart immunity against Wind attacks.",
         "element": "passive",
         "personas": {"Yatagarasu": 64}
+    },
+    "Omen": {
+        "effect": "Greatly increases success rate of instant death skills",
+        "element": "trait",
+        "personas": {"Sandalphon": 0}
     },
     "Ominous Words": {
         "cost": 300,
@@ -2200,7 +2699,7 @@ const skillMapRoyal: SkillMap = {
             "Thanatos": 68,
             "Thanatos Picaro": 72
         },
-        "talk": "Brave Spear-Bearer (Cu Chulainn)"
+        "talk": "Spear-Wielding General (Cu Chulainn)"
     },
     "Oni Kagura": {
         "cost": 16,
@@ -2217,6 +2716,11 @@ const skillMapRoyal: SkillMap = {
         "unique": "Messiah",
         "personas": {"Messiah": 0, "Messiah Picaro": 0}
     },
+    "Pagan Allure": {
+        "effect": "Magic damage +50%, Cannot exceed 100% limit",
+        "element": "trait",
+        "personas": {"Satanael": 0}
+    },
     "Panta Rhei": {
         "cost": 4200,
         "effect": "Deal severe Wind damage to 1 foe",
@@ -2231,15 +2735,67 @@ const skillMapRoyal: SkillMap = {
         "personas": {"Genbu": 8, "Pixie": 3, "Silky": 9},
         "talk": "Troublesome Maid (Silky)"
     },
+    "Phantom Show": {
+        "cost": 400,
+        "effect": "Inflict Sleep (high odds) to all foes.",
+        "element": "ailment",
+        "unique": "Raoul",
+        "personas": {"Raoul": 0}
+    },
+    "Pinch Anchor": {
+        "effect": "Allows use of ambush-only skills after Baton Pass",
+        "element": "trait",
+        "personas": {"Arsene": 0, "Dionysus": 0, "Neko Shogun": 0, "Raphael": 0}
+    },
+    "Pinnacle of Magic": {
+        "effect": "Low chance to halve attack spell costs for all allies",
+        "element": "trait",
+        "unique": "Celestine"
+    },
     "Position Hack": {
         "effect": "Chance to instantly Hold Up enemies when starting a battle.",
         "element": "passive",
         "unique": "Necronomicon"
     },
-    "Pressing Stance": {
-        "effect": "Reduce hit rate by 2/3 of all incoming attack when being ambushed.",
-        "element": "passive",
-        "personas": {"Ongyo-Ki": 0, "Red Rider": 46, "Yatagarasu": 60, "Yoshitsune": 89}
+    "Positive Thoughts": {
+        "effect": "Extends buffs received by 2 turns",
+        "element": "trait",
+        "personas": {"Vohu Manah": 0}
+    },
+    "Potent Hypnosis": {
+        "effect": "Extends buffs cast by 1 turn",
+        "element": "trait",
+        "personas": {
+            "Bugs": 0,
+            "Cu Chulainn": 0,
+            "Hanuman": 0,
+            "Horus": 0,
+            "Matador": 0,
+            "Michael": 0,
+            "Queen's Necklace": 0,
+            "Seth": 0,
+            "Yatagarasu": 0
+        }
+    },
+    "Power Slash": {
+        "cost": 10,
+        "effect": "Deal medium Phys damage to 1 foe.",
+        "element": "phys",
+        "fuse": ["Berith"],
+        "personas": {"Archangel": 17, "Berith": 13, "Naga": 0},
+        "talk": "Brutal Cavalryman (Berith)"
+    },
+    "President's Insight": {
+        "card": "Ring of Greed",
+        "cost": 1500,
+        "effect": "Next Magic attack +150% damage for 1 ally, Attack Master",
+        "element": "support",
+        "unique": "Ring of Greed"
+    },
+    "Proud Presence": {
+        "effect": "Doubles effectiveness of Recovery skills for all allies",
+        "element": "trait",
+        "unique": "Zorro"
     },
     "Psi": {
         "card": "CJ Theater",
@@ -2287,8 +2843,13 @@ const skillMapRoyal: SkillMap = {
         "cost": 1800,
         "effect": "Create a shield on 1 ally to reduce damage of Psy attacks for 3 turns.",
         "element": "support",
-        "personas": {"Kushinada-Hime": 0, "Sarasvati": 51, "Thoth": 39},
+        "personas": {"Kushinada": 0, "Sarasvati": 51, "Thoth": 39},
         "talk": "Unfaithful Dream-King (Oberon)"
+    },
+    "Psychic Bloodline": {
+        "effect": "Halves costs of Psy skills",
+        "element": "trait",
+        "personas": {"Emperor's Amulet": 0, "Kaiwan": 0, "Nebiros": 0, "Okuninushi": 0, "Shiki-Ouji": 0, "Shiva": 0}
     },
     "Psycho Blast": {
         "cost": 5400,
@@ -2313,7 +2874,12 @@ const skillMapRoyal: SkillMap = {
     "Rage Boost": {
         "effect": "Increase chance of inflicting Rage.",
         "element": "passive",
-        "personas": {"Ara Mitama": 34, "Koppa Tengu": 13}
+        "personas": {"Ara Mitama": 34, "Koppa Tengu": 14}
+    },
+    "Raging Temper": {
+        "effect": "Low chance to strengthen Phys attacks by 40% for all allies",
+        "element": "trait",
+        "unique": "Captain Kidd"
     },
     "Rakukaja": {
         "card": "CJ Sky Tree",
@@ -2355,6 +2921,11 @@ const skillMapRoyal: SkillMap = {
         "personas": {"Choronzon": 0, "Ippon-Datara": 15, "Oni": 0, "Pisaca": 0, "Shiisaa": 17},
         "talk": "Chivalrous Fiend (Oni)"
     },
+    "Rare Antibody": {
+        "effect": "Reduces susceptibility to ailments",
+        "element": "trait",
+        "personas": {"Agathion": 0, "Black Ooze": 0, "Koh-i-Noor": 0, "Kumbhanda": 0, "Pisaca": 0, "Slime": 0}
+    },
     "Rebellion": {
         "cost": 500,
         "effect": "Increase 1 ally's critical rate for 3 turns.",
@@ -2374,6 +2945,12 @@ const skillMapRoyal: SkillMap = {
             "Tam Lin": 0,
             "Thunderbird": 35
         }
+    },
+    "Rebellion Blade": {
+        "cost": 9900,
+        "effect": "Colossal damage to 1 foe, Damage +150% when target downed",
+        "element": "almighty",
+        "unique": "Hereward"
     },
     "Recarm": {
         "cost": 800,
@@ -2406,6 +2983,16 @@ const skillMapRoyal: SkillMap = {
             "Satan": 0,
             "Messiah": 82
         }
+    },
+    "Relentless": {
+        "effect": "Damage that strikes foe weaknesses +50%",
+        "element": "trait",
+        "personas": {"Gabriel": 0, "Kali": 0, "Seiryu": 0, "Stone of Scone": 0, "Trumpeter": 0}
+    },
+    "Relief Bloodline": {
+        "effect": "Halves costs of Support skills",
+        "element": "trait",
+        "personas": {"Clotho": 0, "Kikuri-Hime": 0, "Nigi Mitama": 0, "Queen's Necklace": 0, "Sarasvati": 0}
     },
     "Repel Bless": {
         "effect": "Repel Bless attacks.",
@@ -2441,7 +3028,7 @@ const skillMapRoyal: SkillMap = {
     "Repel Wind": {
         "effect": "Repel Wind attacks.",
         "element": "passive",
-        "fuse": ["Biyarky"],
+        "fuse": ["Byakhee"],
         "personas": {"Hastur": 89}
     },
     "Resist Bless": {"effect": "Reduce damage from Bless attacks.", "element": "passive", "personas": {"Anubis": 38}},
@@ -2450,7 +3037,8 @@ const skillMapRoyal: SkillMap = {
         "element": "passive",
         "personas": {"Kelpie": 8}
     },
-    "Resist Confuse": {"effect": "Reduce susceptibility to Confuse.", "element": "passive", "personas": {"Pixie": 5}},
+    "Resist Burn": {"effect": "Halves susceptibility to Burn", "element": "passive"},
+    "Resist Confuse": {"effect": "Reduce susceptibility to Confuse.", "element": "passive", "personas": {"Pixie": 6}},
     "Resist Curse": {"effect": "Reduce damage from Curse attacks.", "element": "passive"},
     "Resist Despair": {
         "effect": "Reduce susceptibility to Despair.",
@@ -2472,19 +3060,36 @@ const skillMapRoyal: SkillMap = {
     "Resist Forget": {
         "effect": "Reduce susceptibility to Forget.",
         "element": "passive",
-        "personas": {"Genbu": 9, "Hua Po": 12}
+        "personas": {"Genbu": 11, "Hua Po": 12}
     },
+    "Resist Freeze": {"effect": "Halves susceptibility to Freeze", "element": "passive"},
+    "Resist Hunger": {"effect": "Halves susceptibility to Hunger", "element": "passive"},
     "Resist Ice": {"effect": "Reduce damage from Ice attacks.", "element": "passive"},
     "Resist Nuke": {"effect": "Reduce damage from Nuclear attacks.", "element": "passive"},
     "Resist Phys": {"effect": "Reduce damage from Phys attacks.", "element": "passive"},
     "Resist Psy": {"effect": "Reduce damage from Psy attacks.", "element": "passive", "personas": {"Ganesha": 56}},
     "Resist Rage": {"effect": "Reduce susceptibility to Rage.", "element": "passive"},
+    "Resist Shock": {"effect": "Halves susceptibility to Shock", "element": "passive"},
     "Resist Sleep": {
         "effect": "Reduce susceptibility to Sleep.",
         "element": "passive",
         "personas": {"Cait Sith": 6, "Jack-o'-Lantern": 7}
     },
     "Resist Wind": {"effect": "Reduce damage from Wind attacks.", "element": "passive", "personas": {"Fuu-Ki": 27}},
+    "Retaliating Body": {
+        "effect": "Doubles damage from Counter skills",
+        "element": "trait",
+        "personas": {
+            "Byakko": 0,
+            "Hope Diamond": 0,
+            "Kin-Ki": 0,
+            "Oni": 0,
+            "Ose": 0,
+            "Setanta": 0,
+            "Siegfried": 0,
+            "Yoshitsune": 0
+        }
+    },
     "Reverse Rub": {"effect": "Inflict Rage (100%) to 1 ally.", "element": "ailment", "unique": "Enemies"},
     "Revolution": {
         "cost": 500,
@@ -2556,11 +3161,22 @@ const skillMapRoyal: SkillMap = {
         }
     },
     "Samsara": {
-        "cost": 4400,
         "effect": "High chance of instantly killing all foes.",
+        "cost": 4000,
         "element": "bless",
         "unique": "Daisoujou",
         "personas": {"Daisoujou": 41}
+    },
+    "Samurai's Ruling": {"effect": "Raises critical rate and Magic evasion", "element": "passive"},
+    "Savior Bloodline": {
+        "effect": "Halves costs of Recovery skills",
+        "element": "trait",
+        "personas": {"Atavaka": 0, "Bishamonten": 0, "Isis": 0, "Kushinada": 0, "Mandrake": 0, "Queen's Necklace": 0}
+    },
+    "Scoundrel Eyes": {
+        "effect": "Raises evasion rate against Phys attacks for all allies",
+        "element": "trait",
+        "unique": "Goemon"
     },
     "Self-Destruct": {
         "effect": "Sacrifice self and deal medium Almighty damage to all.",
@@ -2573,7 +3189,7 @@ const skillMapRoyal: SkillMap = {
         "element": "passive",
         "personas": {
             "Eligor": 0,
-            "Ippon-Datara": 16,
+            "Ippon-Datara": 17,
             "Jack-o'-Lantern": 4,
             "Oni": 23,
             "Silky": 10,
@@ -2594,18 +3210,38 @@ const skillMapRoyal: SkillMap = {
         "element": "passive",
         "personas": {"Baphomet": 62, "Mothman": 0, "Naga": 26, "Raja Naga": 57, "Take-Minakata": 32, "Thunderbird": 0}
     },
+    "Skillful Combo": {
+        "effect": "Raises damage dealt after Baton Pass",
+        "element": "trait",
+        "personas": {
+            "Angel": 0,
+            "Archangel": 0,
+            "Dakini": 0,
+            "High Pixie": 0,
+            "Kodama": 0,
+            "Kurama Tengu": 0,
+            "Rakshasa": 0,
+            "Regent": 0,
+            "Valkyrie": 0
+        }
+    },
+    "Skillful Technique": {
+        "effect": "Technical damage +25%",
+        "element": "trait",
+        "personas": {"Leanan Sidhe": 0, "Makami": 0, "Mithras": 0, "Parvati": 0, "Regent": 0, "Scathach": 0, "Thoth": 0}
+    },
     "Skull Cracker": {
         "cost": 10,
         "effect": "Deal medium Phys damage and inflict Confuse (medium odds) to 1 foe.",
         "element": "phys",
-        "personas": {"Mandrake": 7, "Mokoi": 10, "Mothman": 0, "Nue": 0, "Shiisaa": 0},
+        "personas": {"Mokoi": 10, "Mothman": 0, "Nue": 0, "Shiisaa": 0},
         "talk": "Night Chimera (Nue)"
     },
     "Sledgehammer": {
         "cost": 10,
         "effect": "Deal medium Phys damage and inflict Dizzy (medium odds) to 1 foe.",
         "element": "phys",
-        "personas": {"Black Ooze": 0, "Ippon-Datara": 0, "Kin-Ki": 27, "Sui-Ki": 0},
+        "personas": {"Black Ooze": 0, "Ippon-Datara": 0, "Kin-Ki": 28, "Sui-Ki": 0},
         "talk": "Embittered Blacksmith (Ippon-Datara)"
     },
     "Sleep Boost": {
@@ -2626,6 +3262,7 @@ const skillMapRoyal: SkillMap = {
         "effect": "Recover 20 SP when performing Baton Pass.",
         "element": "passive"
     },
+    "Soul Touch": {"effect": "Recover 5 SP after Baton Pass", "element": "passive"},
     "Speed Master": {
         "effect": "Automatic Sukukaja at the start of battle.",
         "element": "passive",
@@ -2659,19 +3296,23 @@ const skillMapRoyal: SkillMap = {
         "effect": "Increase susceptibility to all ailments of all foes and allies.",
         "element": "almighty",
         "fuse": ["Legion"],
-        "personas": {
-            "Chernobog": 63,
-            "Forneus": 66,
-            "Kumbhanda": 0,
-            "Moloch": 0,
-            "Pazuzu": 49,
-            "Pisaca": 0
-        }
+        "personas": {"Forneus": 66, "Kumbhanda": 0, "Moloch": 0, "Pazuzu": 49, "Pisaca": 0}
     },
+    "Static Electricity": {
+        "effect": "Increases chance of inflicting Shock on downed foes",
+        "element": "trait",
+        "personas": {"Mothman": 0, "Oberon": 0, "Pixie": 0, "Queen Mab": 0}
+    },
+    "Stealth": {"effect": "Lowers chance of being targeted", "element": "passive"},
     "Stomach Blow": {
         "effect": "Medium Physical damage to 1 foe and inflict Hunger.",
         "element": "phys",
         "unique": "Enemies"
+    },
+    "Striking Weight": {
+        "effect": "Phys damage +20%",
+        "element": "trait",
+        "personas": {"Bicorn": 0, "Hope Diamond": 0, "Ippon-Datara": 0, "Kelpie": 0, "Naga": 0, "Obariyon": 0}
     },
     "Subrecover HP": {
         "effect": "After battle, 10% HP recovery for backup allies.",
@@ -2717,6 +3358,30 @@ const skillMapRoyal: SkillMap = {
         "talk": "Piggyback Demon (Obariyon)"
     },
     "Summon": {"effect": "Summon ally reinforcements.", "element": "almighty", "unique": "Enemies"},
+    "Support Plus 1": {
+        "card": "Jazz 1",
+        "effect": "Adds Masukunda to Moral Support pool",
+        "element": "passive",
+        "unique": "Necronomicon"
+    },
+    "Support Plus 2": {
+        "card": "Jazz 2",
+        "effect": "Adds Masukunda and Marakunda to Moral Support pool",
+        "element": "passive",
+        "unique": "Necronomicon"
+    },
+    "Support Plus 3": {
+        "card": "Jazz 3",
+        "effect": "Adds Masukunda, Marakunda, and Matarunda to Moral Support pool",
+        "element": "passive",
+        "unique": "Necronomicon"
+    },
+    "Support Rate Up": {
+        "card": "Jazz 4",
+        "effect": "Raises chance of Moral Support activating",
+        "element": "passive",
+        "unique": "Necronomicon"
+    },
     "Survival Trick": {
         "effect": "Survive one instant death attack with 1 HP remaining.",
         "element": "passive",
@@ -2746,6 +3411,17 @@ const skillMapRoyal: SkillMap = {
         "fuse": ["Atavaka"],
         "personas": {"Metatron": 0, "Michael": 89, "Raphael": 0, "Sandalphon": 79}
     },
+    "Tactical Spirit": {
+        "effect": "Chance to halve Support skill costs for all allies",
+        "element": "trait",
+        "unique": "Robin Hood"
+    },
+    "Tag Team": {
+        "effect": "Allows use of consumables without expending them after Baton Pass",
+        "element": "trait",
+        "unique": "Ariadne",
+        "personas": {"Ariadne": 0, "Ariadne Picaro": 0}
+    },
     "Tarukaja": {
         "card": "CJ Sky Tree",
         "cost": 800,
@@ -2759,9 +3435,9 @@ const skillMapRoyal: SkillMap = {
             "Hecatoncheires": 0,
             "Inugami": 0,
             "Ippon-Datara": 0,
-            "Kodama": 15,
+            "Kodama": 14,
             "Mokoi": 0,
-            "Pixie": 4,
+            "Pixie": 5,
             "Queen's Necklace": 0,
             "Rakshasa": 0,
             "Shiki-Ouji": 0,
@@ -2815,8 +3491,8 @@ const skillMapRoyal: SkillMap = {
         "talk": "Ascended Feline (Nekomata)"
     },
     "Tetra Break": {
-        "cost": 1800,
         "effect": "Remove physical-repellent shields from all foes.",
+        "cost": 900,
         "element": "support",
         "personas": {"Fuu-Ki": 0, "Hanuman": 67, "Legion": 40, "Mara": 0, "Mithras": 41, "Yurlungur": 48},
         "talk": "Fused Ghost (Legion)"
@@ -2838,12 +3514,17 @@ const skillMapRoyal: SkillMap = {
     },
     "Tetrakarn": {
         "card": "Jazz 10/2 CJ Destiny Land",
-        "cost": 3600,
         "effect": "Create a shield on 1 ally to repel 1 Phys attack.",
+        "cost": 2400,
         "element": "support",
         "fuse": ["Scathach"],
         "personas": {"Bishamonten": 72, "Decarabia": 33, "Asterius": 60},
         "talk": "Vicious Pentagram (Decarabia)"
+    },
+    "Thermal Conduct": {
+        "effect": "Increases chance of inflicting Burn after Baton Pass",
+        "element": "trait",
+        "personas": {"Baphomet": 0, "Cait Sith": 0, "Eligor": 0, "Hua Po": 0, "Jack-o'-Lantern": 0, "Orthrus": 0}
     },
     "Thermopylae": {
         "cost": 3000,
@@ -2892,10 +3573,52 @@ const skillMapRoyal: SkillMap = {
         "fuse": ["Shiki-Ouji"],
         "personas": {"Bugs": 52, "Vasuki": 0, "White Rider": 0}
     },
-    "Unshaken Will": {
-        "effect": "Impart immunity against Confuse, Fear, and Rage.",
+    "Tyrant's Mind": {
+        "effect": "All damage +25%, Can exceed 100% limit",
         "element": "passive",
-        "personas": {"Asura-Ou": 81}
+        "unique": "Satanel",
+        "personas": {"Satanael": 98}
+    },
+    "Tyrant's Will": {
+        "card": "Ring of Pride",
+        "cost": 1500,
+        "effect": "Next Phys attack +150% damage for 1 ally, Defense Master",
+        "element": "support",
+        "unique": "Ring of Pride"
+    },
+    "Ultimate Support": {
+        "effect": "Moral Support may now fully recover and buff all allies",
+        "element": "passive",
+        "unique": "Al Azif"
+    },
+    "Ultimate Vessel": {
+        "effect": "Carries multiple traits to pass down during fusion",
+        "element": "trait",
+        "unique": "Regent",
+        "personas": {
+            "Crystal Skull": 0,
+            "Emperor's Amulet": 0,
+            "Hope Diamond": 0,
+            "Koh-i-Noor": 0,
+            "Orichalcum": 0,
+            "Orlov": 0,
+            "Queen's Necklace": 0,
+            "Regent": 0,
+            "Stone of Scone": 0
+        }
+    },
+    "Undying Fury": {"effect": "Phys damage +30%", "element": "trait", "personas": {"Zaou-Gongen": 0}},
+    "Universal Law": {"effect": "Technical damage +50%", "element": "trait", "personas": {"Kohryu": 0}},
+    "Unparalleled Eyes": {
+        "effect": "Greatly raises evasion rate against Phys attacks for all allies",
+        "element": "trait",
+        "unique": "Gorokichi"
+    },
+    "Unshaken Will": {
+        "effect": "Impart immunity against all mental ailments.",
+        "element": "passive",
+        "unique": "Asura",
+        "personas": {"Asura": 81}
     },
     "Vacuum Wave": {
         "cost": 4800,
@@ -2903,12 +3626,30 @@ const skillMapRoyal: SkillMap = {
         "element": "wind",
         "personas": {"Baal": 87, "Hastur": 0, "Vishnu": 85}
     },
+    "Vahana's Wings": {"effect": "Reduces costs of Wind skills by 75%", "element": "trait", "personas": {"Vishnu": 0}},
     "Vajra Blast": {
-        "cost": 14,
         "effect": "Deal medium Phys damage to all foes.",
+        "cost": 13,
         "element": "phys",
         "personas": {"Archangel": 19, "Kin-Ki": 0},
-        "talk": "Demonic Warlord (Kin-Ki)"
+        "talk": "Samurai Killer (Kin-Ki)"
+    },
+    "Vault Guardian": {
+        "card": "Ring of Gluttony",
+        "cost": 2000,
+        "effect": "Marakukaja, Begins battle with Tetrakarn + Makarakarn",
+        "element": "support",
+        "unique": "Ring of Gluttony"
+    },
+    "Veil of Midnight": {
+        "effect": "Chance to prevent down when weakness struck for all allies",
+        "element": "trait",
+        "unique": "Cendrillon"
+    },
+    "Veil of Sunrise": {
+        "effect": "High chance to prevent down when weakness struck for all allies",
+        "element": "trait",
+        "unique": "Ella"
     },
     "Vicious Strike": {
         "cost": 18,
@@ -2921,6 +3662,11 @@ const skillMapRoyal: SkillMap = {
         "effect": "Recover full HP and SP after a successful battle.",
         "element": "passive",
         "personas": {"Satanael": 99, "Izanagi-no-Okami": 0, "Izanagi-no-Okami Picaro": 0}
+    },
+    "Vitality of the Tree": {
+        "effect": "Allows use of ambush-only skills under normal conditions",
+        "element": "trait",
+        "personas": {"Attis": 0}
     },
     "Vorpal Blade": {
         "cost": 23,
@@ -2937,18 +3683,37 @@ const skillMapRoyal: SkillMap = {
         "personas": {"Barong": 0, "Girimehkala": 47, "Koppa Tengu": 15, "Sui-Ki": 27, "Yaksini": 0},
         "talk": "Human-Eating Lady (Yaksini)"
     },
+    "Wealth of Lotus": {"effect": "Extends buffs cast by 2 turns", "element": "trait", "personas": {"Lakshmi": 0}},
     "Wild Thunder": {
         "cost": 5400,
         "effect": "Deal severe Electric damage to all foes.",
         "element": "electric",
         "personas": {"Odin": 86, "Thor": 71}
     },
+    "Will of the Sword": {
+        "effect": "Charge-type effects +200% damage instead, Begins battle with Concentrate",
+        "element": "trait",
+        "personas": {"Futsunushi": 0}
+    },
     "Wind Amp": {
         "effect": "Strengthen Wind attacks by 50%.",
         "element": "passive",
         "fuse": ["Fuu-Ki"],
         "personas": {"Garuda": 59, "Hastur": 87, "Jatayu": 54, "Quetzalcoatl": 71, "Vishnu": 88},
-        "talk": "Spiral of the Abyss (Hastur)"
+        "talk": "Warped Abyss (Hastur)"
+    },
+    "Wind Bloodline": {
+        "effect": "Halves costs of Wind skills",
+        "element": "trait",
+        "personas": {
+            "Anzu": 0,
+            "Baal": 0,
+            "Emperor's Amulet": 0,
+            "Fortuna": 0,
+            "Garuda": 0,
+            "Jatayu": 0,
+            "Quetzalcoatl": 0
+        }
     },
     "Wind Boost": {
         "effect": "Strengthen Wind attacks by 25%.",
@@ -2967,14 +3732,14 @@ const skillMapRoyal: SkillMap = {
         "cost": 1800,
         "effect": "Create a shield on 1 ally to reduce damage of Wind attacks for 3 turns.",
         "element": "support",
-        "personas": {
-            "Apsaras": 16,
-            "Kushinada-Hime": 46,
-            "Kushi Mitama": 14,
-            "Rakshasa": 0,
-            "Saki Mitama": 0,
-            "Sudama": 21
-        }
+        "personas": {"Apsaras": 16, "Kushinada": 46, "Kushi Mitama": 14, "Rakshasa": 0, "Saki Mitama": 0, "Sudama": 21}
+    },
+    "Wings of Wisdom": {
+        "card": "Ring of Wrath",
+        "cost": 1000,
+        "effect": "Amrita Shower, Speed Master",
+        "element": "support",
+        "unique": "Ring of Wrath"
     },
     "Zio": {
         "cost": 400,
@@ -3018,462 +3783,5 @@ const skillMapRoyal: SkillMap = {
             "Izanagi Picaro": 0
         },
         "talk": "Cavern Snakeman (Naga)"
-    },
-    "Abyssal Gaze": {
-        "cost": 5000,
-        "effect": "Deal severe Almighty damage to all foes.",
-        "element": "almighty",
-        "unique": "Hastur",
-        "personas": {"Hastur": 86}
-    },
-    "Akasha Arts": {
-        "cost": 20,
-        "effect": "Deal 1-2 times severe Phys damage to all foes.",
-        "element": "phys",
-        "unique": "Athena",
-        "personas": {"Athena": 0, "Athena Picaro": 0}
-    },
-    "All Grace": {
-        "effect": "Increases chance of inflicting Burn, Freeze, and Shock by 50% for all allies",
-        "element": "trait",
-        "unique": "Agnes"
-    },
-    "All Judge": {
-        "effect": "Increases chance of inflicting Burn, Freeze, and Shock by 25% for all allies",
-        "element": "trait",
-        "unique": "Johanna"
-    },
-    "Apocalyptic Fury": {"effect": "Strengthens Phys attacks by 30%", "element": "trait"},
-    "Ave Maria": {"effect": "Reduces costs of Support spells by 75%", "element": "trait"},
-    "Avenger": {"effect": "Doubles damage from Counter skills", "element": "trait", "personas": {"Hope Diamond": 0}},
-    "Blade of Rebellion": {
-        "cost": 9900,
-        "effect": "Deal severe Almighty damage to 1 for with extra effectiveness if down.",
-        "element": "almighty",
-        "unique": "Hereward"
-    },
-    "Bless Lineage": {"effect": "Halves costs of Bless skills", "element": "trait", "personas": {"Orichalcum": 0}},
-    "Bloodshot Gaze": {
-        "effect": "Raises evasion against foes afflicted with ailments",
-        "element": "trait",
-        "personas": {"Koh-i-Noor": 0}
-    },
-    "Bloodsucker": {"effect": "Doubles effectiveness of absorption skills", "element": "trait"},
-    "Brave Step": {
-        "cost": 1600,
-        "effect": "Increase critical rate for all allies.",
-        "element": "support",
-        "unique": "Cendrillon"
-    },
-    "Burning Touch": {"effect": "Increases chance of inflicting Burn after Baton Pass", "element": "trait"},
-    "Chained Lineage": {"effect": "Greatly raises damage dealt after Baton Pass", "element": "trait"},
-    "Chained Technique": {
-        "effect": "Raises damage dealt after Baton Pass",
-        "element": "trait",
-        "personas": {"Regent": 0}
-    },
-    "Champion Cup": {
-        "card": "Kamoshida Ishi",
-        "cost": 1000,
-        "effect": "Diarama + Tarukaja",
-        "element": "support",
-        "unique": "Kamoshida Ishi"
-    },
-    "Charge All": {
-        "cost": 8000,
-        "effect": "Multiply all allies' next Phys attack damage by 2.5.",
-        "element": "support",
-        "unique": "William"
-    },
-    "Charging Bull": {"effect": "Scales damage dealt against lost HP", "element": "trait", "unique": "Asterius"},
-    "Checkmate": {
-        "cost": 9000,
-        "effect": "Decrease all foes' Attack, Defense and Agility for 3 turns.",
-        "element": "support",
-        "unique": "Agnes"
-    },
-    "Cocytus": {"effect": "Reduces costs of Ice skills by 75%", "element": "trait"},
-    "Concentrate All": {
-        "cost": 8000,
-        "effect": "Multiply all allies' next Magic attack damage by 2.5.",
-        "element": "support",
-        "unique": "Celestine"
-    },
-    "Coolheadedness": {
-        "effect": "Reduces ailment susceptibility by 25% for all allies",
-        "element": "trait",
-        "unique": "Milady"
-    },
-    "Creation Ceremony": {
-        "effect": "Scales damage dealt and received against Compendium completion rate. Can exceed 100% limit",
-        "element": "trait",
-        "unique": "Izanagi-no-Okami"
-    },
-    "Crisis Management": {
-        "effect": "Reduces damage taken when weakness struck",
-        "element": "trait",
-        "personas": {"Koh-i-Noor": 0}
-    },
-    "Cunning Strategist": {
-        "effect": "Halves Support and Almighty skill costs for all allies",
-        "element": "trait",
-        "unique": "Hereward"
-    },
-    "Cunning Tactician": {
-        "effect": "Halves Support skill costs for all allies",
-        "element": "trait",
-        "unique": "Robin Hood"
-    },
-    "Curse Lineage": {"effect": "Halves costs of Curse skills", "element": "trait", "personas": {"Crystal Skull": 0}},
-    "Cycle of Sorrow": {"effect": "Activates endure up to 4 times", "element": "trait", "unique": "Orpheus"},
-    "Daybreak Bell": {
-        "effect": "High chance to prevent down when weakness struck for all allies",
-        "element": "trait",
-        "unique": "Ella"
-    },
-    "Deadly Plague": {"effect": "Increases success rate of instant death skills", "element": "trait"},
-    "Death Scythe": {
-        "cost": 20,
-        "effect": "Deal severe Phys damage and inflict Fear (medium odds) to 1 foe.",
-        "element": "phys",
-        "fuse": ["Macabre"],
-        "personas": {"Biyarky": 0, "Macabre": 0}
-    },
-    "Demon Kingdom": {
-        "effect": "Strengthen all magical attacks by 50%.",
-        "element": "passive",
-        "unique": "Satanel",
-        "personas": {"Satanael": 98}
-    },
-    "Die Already!": {"effect": "Reduces costs of instant death skills to 0", "element": "trait"},
-    "Divine Ceremony": {"effect": "Raises chance of ally traits activating", "element": "trait", "unique": "Izanagi"},
-    "Double Shot": {
-        "cost": 12,
-        "effect": "Deal 2 times light Gun damage to 1 foe.",
-        "element": "gun",
-        "personas": {"Kurama Tengu": 0, "Matador": 20, "Shiki-Ouji": 0},
-        "talk": "Bringer of Misfortune (Shiki-Ouji)"
-    },
-    "Drunken Frenzy": {"effect": "Reduces costs of Fire skills by 75%", "element": "trait"},
-    "Dying Will": {"effect": "Allows use of ambush-only skills under normal conditions", "element": "trait"},
-    "Elec Lineage": {"effect": "Halves costs of Elec skills", "element": "trait", "personas": {"Orlov": 0}},
-    "Enlightenment": {"effect": "Extends buffs cast on self by 2 turns", "element": "trait"},
-    "Exquisite Technique": {
-        "effect": "Strengthens technical damage by 25%",
-        "element": "trait",
-        "personas": {"Regent": 0}
-    },
-    "False Painting": {
-        "card": "Madarame Ishi",
-        "cost": 2200,
-        "effect": "Absorbs any non-almighty attack once + Removes weakness",
-        "element": "support",
-        "unique": "Madarame Ishi"
-    },
-    "Fiendish Insight": {
-        "effect": "High chance to evade Phys attacks for all allies",
-        "element": "trait",
-        "unique": "Gorokichi"
-    },
-    "Fire Lineage": {"effect": "Halves costs of Fire skills", "element": "trait", "personas": {"Orlov": 0}},
-    "Five Elements": {"effect": "Strengthens technical damage by 50%", "element": "trait"},
-    "Focused Gaze": {
-        "effect": "Strengthens single-target magic by 20%. Can exceed 100% limit",
-        "element": "trait",
-        "personas": {"Stone of Scone": 0}
-    },
-    "Forbidden Knowledge": {"effect": "Reduces costs of magic attack skills by 75%", "element": "trait"},
-    "Foul Contagion": {"effect": "Increases chance of inflicting ailments after Baton Pass", "element": "trait"},
-    "Freezing Follow-up": {"effect": "Increases chance of inflicting Freeze on downed foe", "element": "trait"},
-    "Furious Spirit": {
-        "effect": "Low chance to strengthen Phys attacks by 80% for all allies",
-        "element": "trait",
-        "unique": "William"
-    },
-    "Gambler Intuition": {
-        "card": "Niijima Ishi",
-        "cost": 2000,
-        "effect": "Masukukaja + Begin battle with Concentrate",
-        "element": "support",
-        "unique": "Niijima Ishi"
-    },
-    "Gattling Blows": {
-        "cost": 16,
-        "effect": "Deal 3 to 4 times light Phys damage to 1 foe.",
-        "element": "phys",
-        "personas": {"Hecatoncheires": 49}
-    },
-    "Goblet of Sin": {"effect": "Increases chance of inflicting ailments on downed foes", "element": "trait"},
-    "Group Hypnosis": {
-        "effect": "Extends buffs cast on allies by 1 turn",
-        "element": "trait",
-        "personas": {"Queen's Necklace": 0}
-    },
-    "Guiding Tentacle": {
-        "card": "??? Ishi",
-        "cost": 5400,
-        "effect": "Life Aid + Down all foes",
-        "element": "support",
-        "unique": "??? Ishi"
-    },
-    "Heavyweight": {"effect": "Strengthens Phys skills by 20%", "element": "trait", "personas": {"Hope Diamond": 0}},
-    "Herald's Grace": {"effect": "Reduces costs of Bless skills by 75%", "element": "trait"},
-    "Herald's Verdict": {"effect": "Greatly increases success rate of instant death skills", "element": "trait"},
-    "Heretic Charisma": {"effect": "Strengthens magic skills by 50%", "element": "trait"},
-    "Hidden Presence": {"effect": "Increased chance of ally follow-up attacks", "element": "trait", "unique": "Raoul"},
-    "High-speed Hacking": {
-        "effect": "Restores 25% HP after Futaba's All-Out Attack for all allies",
-        "element": "trait",
-        "unique": "Necronomicon"
-    },
-    "Hollow Fool": {
-        "effect": "Raises damage dealt by 40% for each foe afflicted with an ailment. Can exceed 100% limit",
-        "element": "trait",
-        "unique": "Magatsu-Izanagi"
-    },
-    "Hunting Premonition": {"effect": "Reduces costs of Elec skills by 75%", "element": "trait"},
-    "Ice Lineage": {"effect": "Halves costs of Ice skills", "element": "trait", "personas": {"Emperor's Amulet": 0}},
-    "Immovable": {
-        "effect": "Reduces ailment susceptibility by 50% for all allies",
-        "element": "trait",
-        "unique": "Lucy"
-    },
-    "Iron Heart": {"effect": "Halves costs of SP skills after Baton Pass", "element": "trait", "unique": "Thanatos"},
-    "Iron Immunity": {"effect": "Nullifies ailments", "element": "trait", "personas": {"Orichalcum": 0}},
-    "Kill Rush": {
-        "cost": 14,
-        "effect": "Deal 1-3 times light Phys damage to 1 foe.",
-        "element": "phys",
-        "fuse": ["Oni"],
-        "personas": {"Jikokuten": 24, "Zouchouten": 0}
-    },
-    "Laevatein": {"cost": 25, "effect": "Deal severe Phys damage to 1 foe.", "element": "phys", "unique": "Loki"},
-    "Last Stand": {"effect": "Allows use of ambush-only skills after Baton Pass", "element": "trait"},
-    "Life Focus": {
-        "effect": "Strengthens HP regeneration skills by 50%",
-        "element": "trait",
-        "personas": {"Stone of Scone": 0}
-    },
-    "Life Wall": {
-        "cost": 9500,
-        "effect": "Repels next non-almighty attack for all allies.",
-        "element": "support",
-        "unique": "Lucy"
-    },
-    "Lotus Dance": {"effect": "Extends buffs cast on allies by 2 turns", "element": "trait"},
-    "Majestic Aura": {
-        "effect": "Doubles effectiveness and decreases costs of Recovery skills for all allies",
-        "element": "trait",
-        "unique": "Diego"
-    },
-    "Masquerade": {
-        "cost": 25,
-        "effect": "Deal 2 times severe Phys damage to 1 foe.",
-        "element": "phys",
-        "unique": "Ella"
-    },
-    "Mastermind Authority": {
-        "card": "??? Ishi",
-        "cost": 1500,
-        "effect": "Defense Master + Charge on Ally",
-        "element": "support",
-        "unique": "??? Ishi"
-    },
-    "Midnight Bell": {
-        "effect": "Chance to prevent down when weakness struck for all allies",
-        "element": "trait",
-        "unique": "Cendrillon"
-    },
-    "Miracle Rush": {
-        "cost": 16,
-        "effect": "Deal medium Phys damage to all foes. High critical rate.",
-        "element": "phys",
-        "unique": "Diego"
-    },
-    "Mother Blessing": {"effect": "Reduces costs of Recovery skills by 75%", "element": "trait"},
-    "Myriad Blooms": {
-        "cost": 9000,
-        "effect": "Increase all allies' Attack, Defense and Agility for 3 turns.",
-        "element": "support",
-        "unique": "Gorokichi"
-    },
-    "Myriad Truths": {
-        "cost": 4000,
-        "effect": "Deal 3 times heavy Almighty damage to all foes.",
-        "element": "almighty",
-        "unique": "Izanagi-no-Okami",
-        "personas": {"Izanagi-no-Okami": 0, "Izanagi-no-Okami Picaro": 0}
-    },
-    "Naranari": {"effect": "Doubles effectiveness of SP regeneration skills", "element": "trait"},
-    "Neo Cadenza": {
-        "cost": 2400,
-        "effect": "Restore 50% HP of party and increase attack, defense, and evasion rate.",
-        "element": "healing",
-        "unique": "Orpheus F",
-        "personas": {"Orpheus F": 0, "Orpheus F Picaro": 0}
-    },
-    "Nobility": {
-        "effect": "Doubles effectiveness of Recovery skills for all allies",
-        "element": "trait",
-        "unique": "Zorro"
-    },
-    "Nuke Lineage": {"effect": "Halves costs of Nuke skills", "element": "trait", "personas": {"Orlov": 0}},
-    "Odd Immunity": {"effect": "Reduces susceptibility to ailments", "element": "trait", "personas": {"Koh-i-Noor": 0}},
-    "Offered Hand": {
-        "effect": "Allows use of consumables without expending them after Baton Pass",
-        "element": "trait",
-        "unique": "Ariadne"
-    },
-    "Offered Soul": {
-        "effect": "Doubles effectiveness of HP and SP regeneration skills",
-        "element": "trait",
-        "unique": "Messiah"
-    },
-    "Olive Grace": {"effect": "Halves costs of skills after Baton Pass", "element": "trait", "unique": "Athena"},
-    "Oni Whisper": {"effect": "Doubles effectiveness of HP regeneration skills", "element": "trait"},
-    "Pandemic Gaze": {
-        "effect": "Raises damage dealt by 25% for each foe afflicted with an ailment",
-        "element": "trait",
-        "personas": {"Crystal Skull": 0}
-    },
-    "Path of Carnage": {"effect": "Reduces costs of Nuke skills by 75%", "element": "trait"},
-    "Peerless Gaze": {
-        "effect": "Strengthens all-target magic by 20%. Can exceed 100% limit",
-        "element": "trait",
-        "personas": {"Regent": 0}
-    },
-    "Phantom Show": {
-        "cost": 400,
-        "effect": "Inflict Sleep (high odds) to all foes.",
-        "element": "ailment",
-        "unique": "Raoul",
-        "personas": {"Raoul": 0}
-    },
-    "Power Slash": {
-        "cost": 10,
-        "effect": "Deal medium Phys damage to 1 foe.",
-        "element": "phys",
-        "fuse": ["Berith"],
-        "personas": {"Archangel": 17, "Berith": 13, "Naga": 0},
-        "talk": "Brutal Calvaryman (Berith)"
-    },
-    "President Intuition": {
-        "card": "Okumura Ishi",
-        "cost": 1500,
-        "effect": "Attack Master + Concentrate on Ally",
-        "element": "support",
-        "unique": "Okumura Ishi"
-    },
-    "Psy Lineage": {"effect": "Halves costs of Psy skills", "element": "trait", "personas": {"Emperor's Amulet": 0}},
-    "Reaper's Despair": {"effect": "Reduces costs of Curse skills by 75%", "element": "trait"},
-    "Recovery Lineage": {
-        "effect": "Halves costs of Recovery skills",
-        "element": "trait",
-        "personas": {"Queen's Necklace": 0}
-    },
-    "Relentlessness": {
-        "effect": "Strengthens attacks that strike foe weaknesses by 50%",
-        "element": "trait",
-        "personas": {"Stone of Scone": 0}
-    },
-    "Roguish Instinct": {
-        "effect": "Chance to evade Phys attacks for all allies",
-        "element": "trait",
-        "unique": "Goemon"
-    },
-    "Saintly Devotion": {
-        "cost": 2600,
-        "effect": "Revive and fully restore HP for all allies.",
-        "element": "healing",
-        "unique": "Maria",
-        "personas": {"Maria": 0}
-    },
-    "Saintly Embrace": {
-        "effect": "Recover 25% max HP each turn in battle.",
-        "element": "passive",
-        "unique": "Maria",
-        "personas": {"Maria": 95}
-    },
-    "Saintly Words": {
-        "effect": "Recover 15% max HP and SP each turn in battle.",
-        "element": "passive",
-        "unique": "Maria",
-        "personas": {"Maria": 98}
-    },
-    "Self Hypnosis": {
-        "effect": "Extends buffs cast on self by 1 turn",
-        "element": "trait",
-        "personas": {"Hope Diamond": 0}
-    },
-    "Shocking Follow-up": {"effect": "Increases chance of inflicting Shock on downed foes", "element": "trait"},
-    "Sorcery": {
-        "effect": "Low chance to halve attack spell costs for all allies",
-        "element": "trait",
-        "unique": "Celestine"
-    },
-    "Spirit Focus": {
-        "effect": "Strengthens SP regeneration skills by 50%",
-        "element": "trait",
-        "personas": {"Orichalcum": 0}
-    },
-    "Stagnant Aura": {
-        "effect": "Increases chance of inflicting ailments",
-        "element": "trait",
-        "personas": {"Crystal Skull": 0}
-    },
-    "Storm Born": {"effect": "Activates all equipped special weather passives", "element": "trait"},
-    "Support Lineage": {
-        "effect": "Halves costs of Support skills",
-        "element": "trait",
-        "personas": {"Queen's Necklace": 0}
-    },
-    "Sword God": {"effect": "Triples damage from Charge skills", "element": "trait"},
-    "Treasured Talent": {
-        "effect": "Carries multiple traits to pass down during fusion",
-        "element": "trait",
-        "unique": "Regent"
-    },
-    "Tree of Life": {
-        "effect": "Strengthens damage dealt on downed foes by 50%",
-        "element": "trait",
-        "unique": "Tsukiyomi"
-    },
-    "Ultimate Support": {
-        "effect": "Moral Support may activate simultaneous effects",
-        "element": "passive",
-        "unique": "Al Azif"
-    },
-    "Unstoppable Hacking": {
-        "effect": "Restores 100% after Futaba's All-Out Attack for all allies",
-        "element": "trait",
-        "unique": "Al Azif"
-    },
-    "Untouchable Beauty": {"effect": "Triples damage dealt by Counter skills", "element": "trait", "unique": "Kaguya"},
-    "Vahana": {"effect": "Reduces costs of Wind skills by 75%", "element": "trait"},
-    "Vault Guardian": {
-        "card": "Kaneshiro Ishi",
-        "cost": 2000,
-        "effect": "Marakukaja + Begin battle with Tetrakarn and Makarakarn",
-        "element": "support",
-        "unique": "Kaneshiro Ishi"
-    },
-    "Wargod's Wrath": {"effect": "Reduces costs of Psy skills by 75%", "element": "trait"},
-    "Wild Spirit": {
-        "effect": "Low chance to strengthen Phys attacks by 40% for all allies",
-        "element": "trait",
-        "unique": "Captain Kidd"
-    },
-    "Wind Lineage": {"effect": "Halves costs of Wind skills", "element": "trait", "personas": {"Emperor's Amulet": 0}},
-    "Wings of Wisdom": {
-        "card": "Futaba Ishi",
-        "cost": 1000,
-        "effect": "Speed Master + Amrita Shower",
-        "element": "support",
-        "unique": "Futaba Ishi"
-    },
-    "Witchcraft": {
-        "effect": "Low chance to decrease attack spell costs for all allies",
-        "element": "trait",
-        "unique": "Carmen"
     }
 }
