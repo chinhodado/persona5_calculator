@@ -110,6 +110,11 @@ const customPersonaeByArcana : {[arcana: string]: PersonaData[]} = (() =>{
         personaeByArcana_[key].sort((a,b) => a.level - b.level);
     }
 
+    // Make sure this is always there regardless of DLC setting
+    if (!personaeByArcana_['World']) {
+        personaeByArcana_['World'] = [];
+    }
+
     return personaeByArcana_;
 })();
 

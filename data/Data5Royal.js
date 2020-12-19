@@ -308,6 +308,7 @@ var arcana2CombosRoyal = [
     { 'source': ['Faith', 'Faith'], 'result': 'Faith' },
     { 'source': ['Faith', 'Councillor'], 'result': 'Priestess' },
     { 'source': ['Councillor', 'Councillor'], 'result': 'Councillor' },
+    { 'source': ['World', 'World'], 'result': 'World' },
 ];
 var specialCombosRoyal = [
     { result: 'Alice', sources: ["Belial", "Nebiros"] },

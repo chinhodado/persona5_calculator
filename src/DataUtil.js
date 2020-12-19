@@ -100,6 +100,10 @@ var customPersonaeByArcana = (function () {
     for (var key in personaeByArcana_) {
         personaeByArcana_[key].sort(function (a, b) { return a.level - b.level; });
     }
+    // Make sure this is always there regardless of DLC setting
+    if (!personaeByArcana_['World']) {
+        personaeByArcana_['World'] = [];
+    }
     return personaeByArcana_;
 })();
 var arcanaMap = (function () {
