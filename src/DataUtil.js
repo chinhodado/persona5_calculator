@@ -166,6 +166,17 @@ function getSkills(personaName) {
             cost: getSkillCost(skillData)
         });
     }
+    if (personaMap[personaName].trait) {
+        var traitData = skillMap[personaMap[personaName].trait];
+        resSkills.unshift({
+            name: personaMap[personaName].trait,
+            level: 0,
+            description: traitData.effect,
+            unique: traitData.unique,
+            elem: "Trait",
+            cost: "-"
+        });
+    }
     return resSkills;
 }
 function getSkillPersonaList(skill) {

@@ -178,6 +178,18 @@ function getSkills(personaName: string) {
         })
     }
 
+    if (personaMap[personaName].trait) {
+        let traitData = skillMap[personaMap[personaName].trait];
+        resSkills.unshift({
+            name: personaMap[personaName].trait,
+            level: 0,
+            description: traitData.effect,
+            unique: traitData.unique,
+            elem: "Trait",
+            cost: "-"
+        });
+    }
+
     return resSkills;
 }
 
