@@ -316,7 +316,7 @@ const arcana2CombosRoyal = [
 const specialCombosRoyal = [
     {result: 'Alice', sources: ["Belial", "Nebiros"]},
     {result: 'Ardha', sources: ["Shiva", "Parvati"]},
-    {result: 'Asura-Ou', sources: ["Jikokuten", "Zouchouten", "Koumokuten", "Bishamonten"]},
+    {result: 'Asura', sources: ["Jikokuten", "Zouchouten", "Koumokuten", "Bishamonten"]},
     {result: 'Black Frost', sources: ["Jack-o'-Lantern", "Jack Frost", "King Frost"]},
     {result: 'Bugs', sources: ["Pixie", "Pisaca", "Hariti"]},
     {result: 'Chi You', sources: ["White Rider", "Hecatoncheires", "Thor", "Cu Chulainn", "Yoshitsune"]},
