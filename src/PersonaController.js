@@ -82,7 +82,8 @@ var PersonaController = /** @class */ (function () {
         else {
             fusionFromTo.recipes = fusionFromTo.allRecipes;
         }
-        fusionFromTo.lastPage = Math.floor(fusionFromTo.recipes.length / this.$scope.perPage);
+        var totalPageCount = Math.ceil(fusionFromTo.recipes.length / this.$scope.perPage);
+        fusionFromTo.lastPage = Math.max(0, totalPageCount - 1);
         fusionFromTo.numRecipes = fusionFromTo.recipes.length;
         fusionFromTo.recipes = fusionFromTo.recipes.slice(fusionFromTo.pageNum * this.$scope.perPage, fusionFromTo.pageNum * this.$scope.perPage + this.$scope.perPage);
     };

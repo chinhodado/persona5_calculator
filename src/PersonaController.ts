@@ -95,7 +95,8 @@ class PersonaController {
             fusionFromTo.recipes = fusionFromTo.allRecipes;
         }
 
-        fusionFromTo.lastPage = Math.floor(fusionFromTo.recipes.length / this.$scope.perPage);
+        const totalPageCount = Math.ceil(fusionFromTo.recipes.length / this.$scope.perPage);
+        fusionFromTo.lastPage = Math.max(0, totalPageCount - 1);
 
         fusionFromTo.numRecipes = fusionFromTo.recipes.length;
         fusionFromTo.recipes = fusionFromTo.recipes.slice(
