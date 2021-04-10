@@ -51,23 +51,23 @@ This app uses `npm` for dependency management. [You can download npm here.](http
 
 ### Clone the repo
 
-```
+```sh
 $ git clone https://github.com/chinhodado/persona5_calculator.git # Or your fork's URL
 ```
 
 ### Install dependencies
 
-```
+```sh
 $ npm install
 ```
 
 ### Compile source files
 
-```
+```sh
 $ npm run compile
 ```
 
-You will need to re-run this command and refresh the page any time to see changes to any of the Typescript (*.ts) source files.
+You will need to re-run this command and refresh the page any time to see changes to any of the Typescript (`*.ts`) source files.
 
 ### Run the app locally
 
