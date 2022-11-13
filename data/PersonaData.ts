@@ -2456,7 +2456,7 @@ const personaMap : PersonaMap = {
     "Shiki-Ouji": {
         "arcana": "Chariot",
         "level": 21,
-        "stats": [11, 15, 16, 16, 13],
+        "stats": [16, 14, 15, 14, 11],
         "elems": ["nu", "nu", "-", "-", "-", "-", "-", "wk", "-", "nu"],
         "skills": {"Dekaja": 24, "Snap": 0, "Mapsi": 22, "Oni Kagura": 27, "Taunt": 0, "Psio": 26, "Tarukaja": 0},
         "personality": "Irritable"
