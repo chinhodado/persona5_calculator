@@ -233,9 +233,9 @@ const personaMapRoyal: PersonaMap = {
         "trait": "Naranari",
         "max": true
     },
-    "Arsene": {
+    "Arséne": {
         "inherits": "curse",
-        "item": "Arsene's Cane",
+        "item": "Arséne's Cane",
         "itemr": "Great Thief Stick",
         "level": 1,
         "arcana": "Fool",
