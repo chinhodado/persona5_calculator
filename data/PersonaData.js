@@ -205,8 +205,8 @@ var personaMap = {
         },
         "dlc": true
     },
-    "Arsene": {
-        "item": "Arsene's Cane",
+    "Arséne": {
+        "item": "Arséne's Cane",
         "arcana": "Fool",
         "level": 1,
         "stats": [2, 2, 2, 3, 1],
