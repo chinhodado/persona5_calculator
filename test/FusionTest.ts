@@ -36,7 +36,7 @@ describe('FusionCalculator', () => {
     describe('#fuse()', () => {
         describe('same arcana fusion', () => {
             it('should return null when fusing 2 lowest rank persona', () => {
-                expect(fuseTestWrapper("Obariyon", "Arsene")).to.equal(null);
+                expect(fuseTestWrapper("Obariyon", "Arséne")).to.equal(null);
             });
 
             it('should return correct persona when fusing 2 highest rank persona', () => {
@@ -109,7 +109,7 @@ describe('FusionCalculator', () => {
 
         describe('rare fusion', function () {
             it('should return correct persona when go down one', () => {
-                expect(fuseTestWrapper("Regent", "Obariyon")).to.equal(personaMap["Arsene"]);
+                expect(fuseTestWrapper("Regent", "Obariyon")).to.equal(personaMap["Arséne"]);
             });
 
             it('should return correct persona when go up two', () => {
@@ -195,7 +195,7 @@ describe('FusionCalculator', () => {
                 let recipes = calc.getRecipes(personaMap["Satanael"]);
                 expect(recipes).to.have.length(1);
                 expect(recipes[0].sources).to.have.length(6);
-                expect(containAll(recipes[0], ['Arsene', 'Anzu', 'Ishtar', 'Satan', 'Lucifer', 'Michael'])).to.equal(true);
+                expect(containAll(recipes[0], ['Arséne', 'Anzu', 'Ishtar', 'Satan', 'Lucifer', 'Michael'])).to.equal(true);
             });
         });
 
@@ -218,8 +218,8 @@ describe('FusionCalculator', () => {
 
         // note: these count the number of recipes and may not be correct
         describe('normal fusion', function () {
-            it('should return correct number of recipe for Arsene', () => {
-                let recipes = calc.getRecipes(personaMap["Arsene"]);
+            it('should return correct number of recipe for Arséne', () => {
+                let recipes = calc.getRecipes(personaMap["Arséne"]);
                 expect(recipes).to.have.length(6);
             });
 
