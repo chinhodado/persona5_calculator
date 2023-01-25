@@ -70,7 +70,7 @@ const skillMapRoyal: SkillMap = {
     "Adverse Resolve": {
         "effect": "Increase critical rate when being ambushed.",
         "element": "passive",
-        "personas": {"Arsene": 7, "Jikokuten": 28, "Rakshasa": 30, "Raphael": 82, "Thanatos Picaro": 73},
+        "personas": {"Arséne": 7, "Jikokuten": 28, "Rakshasa": 30, "Raphael": 82, "Thanatos Picaro": 73},
         "talk": "Battle Fiend (Rakshasa)"
     },
     "Agi": {
@@ -556,7 +556,7 @@ const skillMapRoyal: SkillMap = {
         "cost": 6,
         "effect": "Deal weak Phys damage to 1 foe.",
         "element": "phys",
-        "personas": {"Arsene": 2, "Berith": 0, "Cait Sith": 0},
+        "personas": {"Arséne": 2, "Berith": 0, "Cait Sith": 0},
         "talk": "Hunting Puss in Boots (Cait Sith)"
     },
     "Climate Decorum": {
@@ -951,7 +951,7 @@ const skillMapRoyal: SkillMap = {
         "cost": 8,
         "effect": "Deal weak Gun damage and inflict Sleep (medium odds) to 1 foe.",
         "element": "gun",
-        "personas": {"Arsene": 5, "Incubus": 0, "Inugami": 15, "Phoenix": 0, "Pisaca": 0}
+        "personas": {"Arséne": 5, "Incubus": 0, "Inugami": 15, "Phoenix": 0, "Pisaca": 0}
     },
     "Drunken Passion": {"effect": "Reduces costs of Fire skills by 75%", "element": "trait", "personas": {"Mada": 0}},
     "EXP Boost": {"effect": "EXP +15% after battle", "element": "passive"},
@@ -988,7 +988,7 @@ const skillMapRoyal: SkillMap = {
         "cost": 400,
         "effect": "Deal weak Curse damage to 1 foe.",
         "element": "curse",
-        "personas": {"Arsene": 0, "Onmoraki": 0}
+        "personas": {"Arséne": 0, "Onmoraki": 0}
     },
     "Elec Amp": {
         "effect": "Strengthen Electric attacks by 50%.",
@@ -2745,7 +2745,7 @@ const skillMapRoyal: SkillMap = {
     "Pinch Anchor": {
         "effect": "Allows use of ambush-only skills after Baton Pass",
         "element": "trait",
-        "personas": {"Arsene": 0, "Dionysus": 0, "Neko Shogun": 0, "Raphael": 0}
+        "personas": {"Arséne": 0, "Dionysus": 0, "Neko Shogun": 0, "Raphael": 0}
     },
     "Pinnacle of Magic": {
         "effect": "Low chance to halve attack spell costs for all allies",
@@ -3347,7 +3347,7 @@ const skillMapRoyal: SkillMap = {
         "effect": "Decrease 1 foe's Agility for 3 turns.",
         "element": "support",
         "personas": {
-            "Arsene": 4,
+            "Arséne": 4,
             "Eligor": 19,
             "Koropokkuru": 12,
             "Mandrake": 5,

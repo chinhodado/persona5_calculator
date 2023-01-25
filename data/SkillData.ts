@@ -98,7 +98,7 @@ const skillMap: SkillMap = {
         "effect": "Increase critical rate when being ambushed.",
         "element": "passive",
         "personas": {
-            "Arsene": 7,
+            "Arséne": 7,
             "Jikokuten": 31,
             "Rakshasa": 30,
             "Raphael": 82,
@@ -572,7 +572,7 @@ const skillMap: SkillMap = {
         "element": "phys",
         "fuse": "Berith",
         "personas": {
-            "Arsene": 2,
+            "Arséne": 2,
             "Berith": 0
         },
         "talk": "Berith"
@@ -1037,7 +1037,7 @@ const skillMap: SkillMap = {
         "element": "phys",
         "fuse": "Incubus",
         "personas": {
-            "Arsene": 5,
+            "Arséne": 5,
             "Phoenix": 0,
             "Inugami": 15,
             "Pisaca": 0
@@ -1074,7 +1074,7 @@ const skillMap: SkillMap = {
         "effect": "Deal weak Curse damage to 1 foe.",
         "element": "curse",
         "personas": {
-            "Arsene": 1,
+            "Arséne": 1,
             "Incubus": 7,
             "Slime": 11
         }
@@ -3639,7 +3639,7 @@ const skillMap: SkillMap = {
         "effect": "Decrease 1 foe's Agility for 3 turns.",
         "element": "support",
         "personas": {
-            "Arsene": 4,
+            "Arséne": 4,
             "Eligor": 19,
             "Mandrake": 5,
             "Obariyon": 0,
