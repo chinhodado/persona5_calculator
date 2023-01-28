@@ -2,10 +2,12 @@
 ///<reference path="../src/DataUtil.ts"/>
 ///<reference path="../src/FusionCalculator.ts"/>
 ///<reference path="../data/PersonaData.ts"/>
+///<reference path="../data/ItemData.ts"/>
 var fs = require('fs');
 eval(fs.readFileSync("data/Data5.js") + '');
 eval(fs.readFileSync("data/PersonaData.js") + '');
 eval(fs.readFileSync("data/SkillData.js") + '');
+eval(fs.readFileSync("data/ItemData.js") + '');
 eval(fs.readFileSync("src/FusionCalculator.js") + '');
 eval(fs.readFileSync("src/DataUtil.js") + '');
 eval(fs.readFileSync("test/TestUtil.js") + '');
@@ -210,5 +212,9 @@ describe('Data', function () {
     it("all skills in SkillData should have valid persona in the persona list, and " +
         "all skills in SkillData should have correct list of persona that learn that skill at the correct level", function () {
         expect(checkSkillPersona()).to.equal(true);
+    });
+    it("all items associated with each persona should be found in ItemData if it is not a skill card " +
+        "and all skill cards should have data in SkillData", () => {
+        expect(checkItemization()).to.equal(true);
     });
 });

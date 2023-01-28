@@ -1,7 +1,7 @@
 ///<reference path="FusionCalculator.ts"/>
 ///<reference path="../data/PersonaData.ts"/>
 ///<reference path="../data/SkillData.ts"/>
-
+///<reference path="../data/ItemData.ts"/>
 /**
  * Created by Chin on 08-Apr-17.
  */
@@ -65,6 +65,25 @@ class PersonaController {
         let compediumEntry = personaMap[personaName];
         this.$scope.persona.stats = compediumEntry.stats;
         this.$scope.persona.statsHeader = ["Strength", "Magic", "Endurance", "Agility", "Luck"];
+
+        //item data
+        let item = compediumEntry.item;
+        if(compediumEntry.skillCard) {
+            this.$scope.persona.itemData = getSkillCardInfo(item);
+            if(compediumEntry.itemr) {
+                let itemr = compediumEntry.itemr;
+                this.$scope.persona.itemDataR = getSkillCardInfo(itemr);
+            }
+            this.$scope.persona.itemDataHeader = ["Type", "Name", "Effect", "Cost"];
+        }
+        else {
+            this.$scope.persona.itemData = getItem(item);
+            if(compediumEntry.itemr) {
+                let itemr = compediumEntry.itemr;
+                this.$scope.persona.itemDataR = getItem(itemr);
+            }
+            this.$scope.persona.itemDataHeader = ["Type", "Name", "Description"];
+        }
 
         // elements
         // split the table into 2 for mobile

@@ -1,7 +1,7 @@
 ///<reference path="../data/Data5.ts"/>
 ///<reference path="../data/PersonaData.ts"/>
 ///<reference path="../data/SkillData.ts"/>
-
+///<reference path="../data/ItemData.ts"/>
 /**
  * Created by Chin on 08-Apr-17.
  */
@@ -196,6 +196,31 @@ function getSkills(personaName: string) {
     }
 
     return resSkills;
+}
+
+function getSkillCardInfo(skillCard: string) {
+    let skillData = [];
+    let skill = skillMap[skillCard];
+    skillData.push({
+        name: skillCard,
+        description: skill.effect,
+        elem: capitalizeFirstLetter(skill.element),
+        cost: getSkillCost(skill)
+    })
+
+    return skillData;
+}
+function getItem(itemName: string) {
+    let itemData = [];
+    let item = itemMap[itemName];
+    itemData.push({
+        skillCard: item.skillCard,
+        name: itemName,
+        type: item.type,
+        description: item.description
+    })
+
+    return itemData;
 }
 
 function getSkillPersonaList(skill: SkillData): string {

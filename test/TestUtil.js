@@ -59,6 +59,39 @@ function checkSkillPersona() {
     }
     return isGood;
 }
+function checkItemization() {
+    var isGood = true;
+    for (var i = 0; i < fullPersonaList.length; i++) {
+        var item = fullPersonaList[i].item;
+        if(fullPersonaList[i].skillCard) {
+            if(!skillMap[item]) {
+                isGood = false;
+                throw new Error("Skill data not found for: " + item + " for skill card itemization for: " + fullPersonaList[i].name);
+            }
+            if(fullPersonaList[i].itemr) {
+                var itemr = fullPersonaList[i].itemr;
+                if (!skillMap[itemr]) {
+                    isGood = false;
+                    throw new Error("Skill data not found for: " + itemr + " for fusion alarm skill card itemization for: " + fullPersonaList[i].name);
+                }
+            }
+        }
+        else {
+            if(!itemMap[item]) {
+                isGood = false;
+                throw new Error("Item not found: " + item + " for persona: " + fullPersonaList[i].name);
+            }
+            if(fullPersonaList[i].itemr) {
+                var itemr = fullPersonaList[i].itemr;
+                if (!itemMap[itemr]) {
+                    isGood = false;
+                    throw new Error("Fusion Alarm item not found: " + itemr + " for persona: " + fullPersonaList[i].name);
+                }
+            }
+        }     
+    }
+    return isGood;
+}
 //
 // function checkTraitPersona() {
 //     let isGood = true;
