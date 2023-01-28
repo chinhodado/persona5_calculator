@@ -389,7 +389,6 @@ const itemMapRoyal: ItemMap = {
     "Fleurs du Mal R": {
         "type": "Weapon - Haru only",
         "description": "Atk 345 / Acc 86 / Ma +5 / +Dizzy (high)"
-        
     },
     "Foul Breath": {
         "skillCard": true
@@ -407,6 +406,10 @@ const itemMapRoyal: ItemMap = {
     "Frost Hood": {
         "type": "Protector - Morgana only",
         "description": "Def 110 / Ev 20 / +20 SP"
+    },
+    "Frost Ring": {
+        "type": "Accessory",
+        "description": "+Bufu (Light Ice dmg to all foes)"
     },
     "Garu": {
         "skillCard": true
@@ -1021,7 +1024,7 @@ const itemMapRoyal: ItemMap = {
         "type": "Accessory",
         "description": "Lu +13 / +Attack Master (Incr. Attack at start of battle)"
     },
-    "Red String Ball": {
+    "Red String": {
         "type": "Accessory",
         "description": "Lu +10 / +Attack Master (Incr. Attack at start of battle)"
     },

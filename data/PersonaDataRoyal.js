@@ -241,10 +241,10 @@ var personaMapRoyal = {
         "trait": "Naranari",
         "max": true
     },
-    "Arséne": {
+    "Arsène": {
         "inherits": "curse",
-        "item": "Arséne's Cane",
-        "itemr": "Great Thief Stick",
+        "item": "Arsène's Cane",
+        "itemr": "The Great Thief Stick",
         "level": 1,
         "arcana": "Fool",
         "elems": ["-", "-", "-", "wk", "-", "-", "-", "-", "wk", "rs"],
