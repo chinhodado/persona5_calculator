@@ -485,7 +485,7 @@ const itemMapRoyal: ItemMap = {
     "Gun Boost": {
         "skillCard": true
     },
-    "Hade Harp": {
+    "Hades Harp": {
         "type": "Accessory",
         "description": "Ag +3 / +Null Brainwash"
     },
