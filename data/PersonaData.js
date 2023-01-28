@@ -23,7 +23,7 @@ var personaMap = {
         "level": 3,
         "stats": [3, 4, 5, 7, 3],
         "elems": ["-", "rs", "-", "-", "rs", "wk", "-", "-", "-", "-"],
-        "skills": { "Baisudi": 0, "Dia": 0, "Dodge Elec": 8, "Lunge": 4, "Rakukaja": 6, "Zio": 0 },
+        "skills": {"Baisudi": 0, "Dia": 0, "Dodge Elec": 8, "Lunge": 4, "Rakukaja": 6, "Zio": 0},
         "personality": "Timid"
     },
     "Alice": {
@@ -46,13 +46,15 @@ var personaMap = {
         "max": true
     },
     "Ame-no-Uzume": {
+        "item": "Senryou Yakusha",
         "arcana": "Lovers",
         "level": 29,
         "stats": [15, 22, 19, 20, 18],
         "elems": ["-", "-", "ab", "-", "-", "-", "wk", "-", "-", "-"],
-        "skills": { "Bufula": 0, "Diarama": 0, "Divine Grace": 32, "Mazio": 0, "Shock Boost": 34, "Tentarafoo": 31 }
+        "skills": {"Bufula": 0, "Diarama": 0, "Divine Grace": 32, "Mazio": 0, "Shock Boost": 34, "Tentarafoo": 31}
     },
     "Ananta": {
+        "item": "Hua Khon",
         "arcana": "Star",
         "level": 43,
         "stats": [24, 30, 31, 26, 25],
@@ -75,7 +77,7 @@ var personaMap = {
         "level": 10,
         "stats": [5, 9, 7, 10, 6],
         "elems": ["-", "wk", "wk", "rs", "-", "-", "-", "-", "-", "-"],
-        "skills": { "Apt Pupil": 13, "Bufu": 0, "Ice Break": 15, "Mabufu": 14, "Rakunda": 0, "Tarukaja": 11 },
+        "skills": {"Apt Pupil": 13, "Bufu": 0, "Ice Break": 15, "Mabufu": 14, "Rakunda": 0, "Tarukaja": 11},
         "personality": "Timid"
     },
     "Angel": {
@@ -85,7 +87,7 @@ var personaMap = {
         "level": 12,
         "stats": [7, 9, 9, 9, 9],
         "elems": ["-", "-", "-", "-", "rs", "-", "-", "-", "nu", "wk"],
-        "skills": { "Baisudi": 14, "Dazzler": 0, "Dekunda": 17, "Dia": 0, "Dodge Curse": 15, "Hama": 0, "Kouha": 13 },
+        "skills": {"Baisudi": 14, "Dazzler": 0, "Dekunda": 17, "Dia": 0, "Dodge Curse": 15, "Hama": 0, "Kouha": 13},
         "personality": "Irritable"
     },
     "Anubis": {
@@ -113,7 +115,7 @@ var personaMap = {
         "level": 25,
         "stats": [14, 18, 15, 21, 14],
         "elems": ["-", "wk", "-", "-", "rs", "rp", "-", "wk", "-", "-"],
-        "skills": { "Assault Dive": 27, "Dekaja": 28, "Garula": 0, "Masukukaja": 0, "Null Forget": 29, "Wind Break": 0 },
+        "skills": {"Assault Dive": 27, "Dekaja": 28, "Garula": 0, "Masukukaja": 0, "Null Forget": 29, "Wind Break": 0},
         "personality": "Irritable"
     },
     "Apsaras": {
@@ -123,7 +125,7 @@ var personaMap = {
         "level": 11,
         "stats": [7, 11, 6, 10, 6],
         "elems": ["-", "-", "-", "rs", "wk", "-", "-", "-", "-", "-"],
-        "skills": { "Bufu": 0, "Elec Wall": 14, "Ice Wall": 0, "Media": 13, "Rebellion": 0, "Wind Wall": 16 },
+        "skills": {"Bufu": 0, "Elec Wall": 14, "Ice Wall": 0, "Media": 13, "Rebellion": 0, "Wind Wall": 16},
         "personality": "Upbeat"
     },
     "Ara Mitama": {
@@ -133,9 +135,10 @@ var personaMap = {
         "level": 31,
         "stats": [20, 19, 20, 20, 21],
         "elems": ["rs", "-", "-", "wk", "-", "-", "-", "-", "-", "-"],
-        "skills": { "Freila": 0, "Marakunda": 33, "Miracle Punch": 0, "Taunt": 0, "Rage Boost": 35, "Rebellion": 32 }
+        "skills": {"Freila": 0, "Marakunda": 33, "Miracle Punch": 0, "Taunt": 0, "Rage Boost": 35, "Rebellion": 32}
     },
     "Arahabaki": {
+        "item": "Tapsuan",
         "arcana": "Hermit",
         "level": 35,
         "stats": [21, 23, 22, 24, 22],
@@ -157,7 +160,7 @@ var personaMap = {
         "level": 16,
         "stats": [13, 10, 13, 12, 7],
         "elems": ["-", "-", "-", "-", "wk", "-", "-", "-", "nu", "wk"],
-        "skills": { "Dazzler": 0, "Hama": 0, "Vajra Blast": 21, "Makouha": 19, "Psi": 0, "Rebellion": 18 },
+        "skills": {"Dazzler": 0, "Hama": 0, "Vajra Blast": 21, "Makouha": 19, "Psi": 0, "Rebellion": 18},
         "personality": "Irritable"
     },
     "Ardha": {
@@ -180,6 +183,7 @@ var personaMap = {
         "max": true
     },
     "Ariadne": {
+        "item": "Red Yarn Ball",
         "arcana": "Fortune",
         "level": 30,
         "stats": [23, 19, 20, 17, 18],
@@ -213,14 +217,16 @@ var personaMap = {
         },
         "dlc": true
     },
-    "Arsene": {
+    "Arséne": {
+        "item": "Arséne's Cane",
         "arcana": "Fool",
         "level": 1,
         "stats": [2, 2, 2, 3, 1],
         "elems": ["-", "-", "-", "wk", "-", "-", "-", "-", "wk", "rs"],
-        "skills": { "Cleave": 2, "Adverse Resolve": 7, "Dream Needle": 5, "Eiha": 1, "Sukunda": 4 }
+        "skills": {"Cleave": 2, "Adverse Resolve": 7, "Dream Needle": 5, "Eiha": 1, "Sukunda": 4}
     },
     "Asterius": {
+        "item": "Thunder Horns",
         "arcana": "Fortune",
         "level": 56,
         "stats": [43, 43, 32, 32, 25],
@@ -255,6 +261,7 @@ var personaMap = {
         "dlc": true
     },
     "Asura-Ou": {
+        "item": "Vajra",
         "arcana": "Sun",
         "level": 76,
         "stats": [52, 48, 51, 49, 35],
@@ -307,6 +314,7 @@ var personaMap = {
         "max": true
     },
     "Baal": {
+        "item": "Yagrush",
         "arcana": "Emperor",
         "level": 75,
         "stats": [48, 50, 47, 47, 40],
@@ -355,6 +363,7 @@ var personaMap = {
         }
     },
     "Beelzebub": {
+        "item": "Fleur du Mal",
         "arcana": "Devil",
         "level": 84,
         "stats": [55, 60, 54, 56, 34],
@@ -395,7 +404,7 @@ var personaMap = {
         "level": 37,
         "stats": [25, 27, 24, 23, 19],
         "elems": ["-", "-", "wk", "rs", "rs", "-", "-", "rs", "-", "rp"],
-        "skills": { "Bufula": 0, "Dodge Fire": 0, "Ice Break": 39, "Mabufula": 41, "Concentrate": 44, "Null Rage": 38 },
+        "skills": {"Bufula": 0, "Dodge Fire": 0, "Ice Break": 39, "Mabufula": 41, "Concentrate": 44, "Null Rage": 38},
         "personality": "Irritable"
     },
     "Berith": {
@@ -405,7 +414,7 @@ var personaMap = {
         "level": 9,
         "stats": [8, 6, 7, 8, 5],
         "elems": ["-", "nu", "rs", "wk", "-", "-", "-", "-", "-", "-"],
-        "skills": { "Cleave": 0, "Dodge Fire": 11, "Double Fangs": 10, "Rakukaja": 0, "Sledgehammer": 13 },
+        "skills": {"Cleave": 0, "Dodge Fire": 11, "Double Fangs": 10, "Rakukaja": 0, "Sledgehammer": 13},
         "personality": "Irritable"
     },
     "Bicorn": {
@@ -415,7 +424,7 @@ var personaMap = {
         "level": 4,
         "stats": [5, 3, 3, 5, 3],
         "elems": ["-", "-", "-", "-", "wk", "-", "-", "-", "-", "rs"],
-        "skills": { "Apt Pupil": 8, "Garu": 6, "Ice Wall": 7, "Lunge": 0, "Tarunda": 0 },
+        "skills": {"Apt Pupil": 8, "Garu": 6, "Ice Wall": 7, "Lunge": 0, "Tarunda": 0},
         "personality": "Irritable"
     },
     "Bishamonten": {
@@ -436,6 +445,7 @@ var personaMap = {
         }
     },
     "Black Frost": {
+        "item": "Naraka Whip",
         "arcana": "Fool",
         "level": 67,
         "stats": [44, 46, 41, 42, 35],
@@ -487,6 +497,7 @@ var personaMap = {
         }
     },
     "Bugs": {
+        "item": "Bear Gloves",
         "arcana": "Fool",
         "level": 49,
         "stats": [35, 33, 30, 32, 24],
@@ -610,6 +621,7 @@ var personaMap = {
         }
     },
     "Crystal Skull": {
+        "item": "Crystal Skull",
         "arcana": "Fool",
         "level": 50,
         "stats": [50, 50, 50, 50, 50],
@@ -644,6 +656,7 @@ var personaMap = {
         }
     },
     "Cybele": {
+        "item": "Sabazios",
         "arcana": "Priestess",
         "level": 73,
         "stats": [44, 48, 45, 51, 38],
@@ -765,6 +778,7 @@ var personaMap = {
         "personality": "Unknown"
     },
     "Emperor's Amulet": {
+        "item": "Emperor's Amulet",
         "arcana": "Hanged Man",
         "level": 35,
         "stats": [35, 35, 35, 35, 35],
@@ -788,9 +802,10 @@ var personaMap = {
         "level": 22,
         "stats": [14, 15, 15, 18, 11],
         "elems": ["-", "-", "-", "rs", "wk", "nu", "-", "-", "-", "-"],
-        "skills": { "Diarama": 23, "Dream Needle": 0, "Freila": 0, "Nuke Boost": 27, "Recarm": 25 }
+        "skills": {"Diarama": 23, "Dream Needle": 0, "Freila": 0, "Nuke Boost": 27, "Recarm": 25}
     },
     "Flauros": {
+        "item": "Shackles",
         "arcana": "Devil",
         "level": 25,
         "stats": [19, 14, 18, 18, 13],
@@ -868,7 +883,7 @@ var personaMap = {
         "level": 23,
         "stats": [14, 17, 16, 15, 14],
         "elems": ["-", "-", "-", "-", "wk", "ab", "-", "-", "-", "-"],
-        "skills": { "Dodge Wind": 26, "Garula": 0, "Resist Psy": 27, "Tarukaja": 0, "Tetra Break": 0, "Wind Boost": 25 },
+        "skills": {"Dodge Wind": 26, "Garula": 0, "Resist Psy": 27, "Tarukaja": 0, "Tetra Break": 0, "Wind Boost": 25},
         "personality": "Unknown"
     },
     "Gabriel": {
@@ -932,7 +947,7 @@ var personaMap = {
         "level": 7,
         "stats": [5, 6, 7, 6, 4],
         "elems": ["-", "-", "-", "nu", "wk", "-", "rs", "-", "-", "-"],
-        "skills": { "Bufu": 0, "Defense Master": 12, "Mabufu": 10, "Patra": 8, "Rakunda": 0, "Resist Forget": 11 }
+        "skills": {"Bufu": 0, "Defense Master": 12, "Mabufu": 10, "Patra": 8, "Rakunda": 0, "Resist Forget": 11}
     },
     "Girimehkala": {
         "item": "Marakunda",
@@ -941,10 +956,11 @@ var personaMap = {
         "level": 44,
         "stats": [36, 24, 32, 32, 15],
         "elems": ["rp", "rp", "rs", "-", "-", "-", "-", "-", "wk", "nu"],
-        "skills": { "Foul Breath": 46, "Marakunda": 0, "Mudoon": 0, "Repel Phys": 51, "Swift Strike": 0, "Wage War": 48 },
+        "skills": {"Foul Breath": 46, "Marakunda": 0, "Mudoon": 0, "Repel Phys": 51, "Swift Strike": 0, "Wage War": 48},
         "personality": "Gloomy"
     },
     "Hanuman": {
+        "item": "Ruyi Jingu Bang",
         "arcana": "Star",
         "level": 64,
         "stats": [43, 38, 40, 40, 38],
@@ -996,6 +1012,7 @@ var personaMap = {
         }
     },
     "Hell Biker": {
+        "item": "Black Jacket",
         "arcana": "Death",
         "level": 39,
         "stats": [26, 27, 24, 30, 17],
@@ -1018,10 +1035,11 @@ var personaMap = {
         "level": 16,
         "stats": [8, 14, 10, 13, 10],
         "elems": ["-", "wk", "-", "-", "rs", "rs", "-", "wk", "-", "-"],
-        "skills": { "Diarama": 18, "Dormina": 0, "Garu": 0, "Magaru": 20, "Media": 0, "Taunt": 19 },
+        "skills": {"Diarama": 18, "Dormina": 0, "Garu": 0, "Magaru": 20, "Media": 0, "Taunt": 19},
         "personality": "Irritable"
     },
     "Hope Diamond": {
+        "item": "Hope Diamond",
         "arcana": "Death",
         "level": 40,
         "stats": [40, 40, 40, 40, 40],
@@ -1062,7 +1080,7 @@ var personaMap = {
         "level": 9,
         "stats": [4, 10, 4, 8, 8],
         "elems": ["-", "wk", "rp", "wk", "-", "-", "-", "-", "-", "-"],
-        "skills": { "Agi": 0, "Burn Boost": 15, "Dormina": 0, "Maragi": 13, "Resist Forget": 12, "Tarunda": 11 },
+        "skills": {"Agi": 0, "Burn Boost": 15, "Dormina": 0, "Maragi": 13, "Resist Forget": 12, "Tarunda": 11},
         "personality": "Upbeat"
     },
     "Incubus": {
@@ -1072,7 +1090,7 @@ var personaMap = {
         "level": 5,
         "stats": [4, 6, 4, 5, 3],
         "elems": ["-", "wk", "-", "-", "rs", "-", "-", "-", "wk", "-"],
-        "skills": { "Life Drain": 0, "Evil Touch": 0, "Dodge Curse": 9, "Eiha": 7, "Tarunda": 8 },
+        "skills": {"Life Drain": 0, "Evil Touch": 0, "Dodge Curse": 9, "Eiha": 7, "Tarunda": 8},
         "personality": "Timid"
     },
     "Inugami": {
@@ -1147,6 +1165,7 @@ var personaMap = {
         "personality": "Timid"
     },
     "Izanagi": {
+        "item": "White Headband",
         "arcana": "Fool",
         "level": 20,
         "stats": [14, 13, 13, 14, 13],
@@ -1181,19 +1200,21 @@ var personaMap = {
         "dlc": true
     },
     "Jack Frost": {
+        "item": "Frost Hood",
         "arcana": "Magician",
         "level": 11,
         "stats": [8, 9, 7, 9, 7],
         "elems": ["-", "-", "wk", "nu", "-", "-", "-", "-", "-", "-"],
-        "skills": { "Baisudi": 0, "Bufu": 0, "Freeze Boost": 15, "Ice Break": 0, "Mabufu": 12, "Rakunda": 13 },
+        "skills": {"Baisudi": 0, "Bufu": 0, "Freeze Boost": 15, "Ice Break": 0, "Mabufu": 12, "Rakunda": 13},
         "personality": "Timid"
     },
     "Jack-o'-Lantern": {
+        "item": "Pumpkin Bomb",
         "arcana": "Magician",
         "level": 2,
         "stats": [2, 3, 3, 3, 2],
         "elems": ["-", "wk", "ab", "wk", "-", "wk", "-", "-", "-", "-"],
-        "skills": { "Agi": 0, "Dazzler": 5, "Sharp Student": 4, "Rakunda": 0, "Resist Sleep": 7 },
+        "skills": {"Agi": 0, "Dazzler": 5, "Sharp Student": 4, "Rakunda": 0, "Resist Sleep": 7},
         "personality": "Gloomy"
     },
     "Jatayu": {
@@ -1231,6 +1252,7 @@ var personaMap = {
         }
     },
     "Kaguya": {
+        "item": "Moonlight Robe",
         "arcana": "Moon",
         "level": 16,
         "stats": [11, 15, 12, 11, 6],
@@ -1283,6 +1305,7 @@ var personaMap = {
         "personality": "Timid"
     },
     "Kali": {
+        "item": "Khamrai Tao",
         "arcana": "Empress",
         "level": 77,
         "stats": [53, 45, 46, 53, 41],
@@ -1304,7 +1327,7 @@ var personaMap = {
         "level": 6,
         "stats": [5, 5, 5, 6, 4],
         "elems": ["-", "-", "-", "rs", "wk", "-", "-", "-", "-", "-"],
-        "skills": { "Garu": 0, "Lunge": 0, "Resist Brainwash": 8, "Sukukaja": 9, "Terror Claw": 10 },
+        "skills": {"Garu": 0, "Lunge": 0, "Resist Brainwash": 8, "Sukukaja": 9, "Terror Claw": 10},
         "personality": "Upbeat"
     },
     "Kikuri-Hime": {
@@ -1314,7 +1337,7 @@ var personaMap = {
         "level": 40,
         "stats": [22, 31, 24, 28, 22],
         "elems": ["-", "-", "wk", "-", "-", "nu", "-", "-", "rs", "-"],
-        "skills": { "Divine Grace": 45, "Energy Drop": 0, "Lullaby": 0, "Marakukaja": 0, "Mediarama": 41, "Tetraja": 43 },
+        "skills": {"Divine Grace": 45, "Energy Drop": 0, "Lullaby": 0, "Marakukaja": 0, "Mediarama": 41, "Tetraja": 43},
         "personality": "Unknown"
     },
     "Kin-Ki": {
@@ -1336,6 +1359,7 @@ var personaMap = {
         "personality": "Gloomy"
     },
     "King Frost": {
+        "item": "King Frost Cape",
         "arcana": "Emperor",
         "level": 61,
         "stats": [38, 39, 45, 33, 35],
@@ -1370,6 +1394,7 @@ var personaMap = {
         "personality": "Upbeat"
     },
     "Koh-i-Noor": {
+        "item": "Koh-i-Noor",
         "arcana": "Priestess",
         "level": 25,
         "stats": [25, 25, 25, 25, 25],
@@ -1387,6 +1412,7 @@ var personaMap = {
         "rare": true
     },
     "Kohryu": {
+        "item": "Sudarshana",
         "arcana": "Hierophant",
         "level": 76,
         "stats": [43, 51, 50, 53, 38],
@@ -1410,7 +1436,7 @@ var personaMap = {
         "level": 11,
         "stats": [7, 8, 8, 11, 6],
         "elems": ["-", "-", "-", "wk", "-", "rs", "-", "-", "wk", "-"],
-        "skills": { "Snap": 0, "Garu": 0, "Growth 1": 12, "Taunt": 13, "Rage Boost": 14, "Wage War": 15 },
+        "skills": {"Snap": 0, "Garu": 0, "Growth 1": 12, "Taunt": 13, "Rage Boost": 14, "Wage War": 15},
         "personality": "Upbeat"
     },
     "Koropokguru": {
@@ -1420,7 +1446,7 @@ var personaMap = {
         "level": 9,
         "stats": [5, 8, 6, 9, 6],
         "elems": ["-", "rs", "wk", "rs", "-", "rs", "-", "-", "-", "-"],
-        "skills": { "Bufu": 0, "Dodge Ice": 11, "Fire Wall": 13, "Mabufu": 14, "Makajam": 0, "Rakunda": 12 },
+        "skills": {"Bufu": 0, "Dodge Ice": 11, "Fire Wall": 13, "Mabufu": 14, "Makajam": 0, "Rakunda": 12},
         "personality": "Timid"
     },
     "Koumokuten": {
@@ -1465,7 +1491,7 @@ var personaMap = {
         "level": 56,
         "stats": [34, 38, 34, 42, 27],
         "elems": ["-", "-", "-", "wk", "-", "rp", "-", "-", "rs", "rs"],
-        "skills": { "Brain Buster": 0, "Garudyne": 57, "Growth 3": 58, "Heat Wave": 0, "Magarudyne": 60, "Masukunda": 0 }
+        "skills": {"Brain Buster": 0, "Garudyne": 57, "Growth 3": 58, "Heat Wave": 0, "Magarudyne": 60, "Masukunda": 0}
     },
     "Kushinada": {
         "item": "Wind Wall",
@@ -1561,15 +1587,16 @@ var personaMap = {
         "level": 19,
         "stats": [9, 17, 12, 16, 10],
         "elems": ["-", "-", "wk", "-", "-", "rs", "rs", "-", "-", "-"],
-        "skills": { "Eiga": 23, "Mamudo": 21, "Mapsi": 22, "Marin Karin": 20, "Psio": 0, "Rakunda": 0 },
+        "skills": {"Eiga": 23, "Mamudo": 21, "Mapsi": 22, "Marin Karin": 20, "Psio": 0, "Rakunda": 0},
         "personality": "Irritable"
     },
     "Legion": {
+        "item": "Legion's Jail",
         "arcana": "Fool",
         "level": 38,
         "stats": [24, 24, 30, 23, 20],
         "elems": ["rs", "rs", "rs", "-", "-", "-", "rs", "-", "wk", "nu"],
-        "skills": { "Life Drain": 0, "Negative Pile": 0, "Null Dizzy": 42, "Psio": 39, "Rampage": 0, "Tetra Break": 40 },
+        "skills": {"Life Drain": 0, "Negative Pile": 0, "Null Dizzy": 42, "Psio": 39, "Rampage": 0, "Tetra Break": 40},
         "personality": "Unknown"
     },
     "Lilim": {
@@ -1608,6 +1635,7 @@ var personaMap = {
         }
     },
     "Lucifer": {
+        "item": "Tyrant Pistol",
         "arcana": "Star",
         "level": 93,
         "stats": [61, 59, 59, 56, 51],
@@ -1645,6 +1673,7 @@ var personaMap = {
         "max": true
     },
     "Magatsu-Izanagi": {
+        "item": "Black Headband",
         "arcana": "Tower",
         "level": 44,
         "stats": [37, 35, 32, 25, 10],
@@ -1703,7 +1732,7 @@ var personaMap = {
         "level": 3,
         "stats": [2, 3, 3, 4, 4],
         "elems": ["-", "-", "wk", "-", "rs", "-", "-", "-", "-", "-"],
-        "skills": { "Energy Drop": 0, "Lunge": 4, "Pulinpa": 0, "Skull Cracker": 7, "Sukunda": 5 },
+        "skills": {"Energy Drop": 0, "Lunge": 4, "Pulinpa": 0, "Skull Cracker": 7, "Sukunda": 5},
         "personality": "Upbeat"
     },
     "Mara": {
@@ -1730,7 +1759,7 @@ var personaMap = {
         "level": 19,
         "stats": [12, 13, 12, 16, 11],
         "elems": ["-", "-", "-", "-", "wk", "nu", "-", "-", "-", "-"],
-        "skills": { "Garula": 23, "Null Dizzy": 0, "Psi": 0, "Sukukaja": 0, "Swift Strike": 20, "Trigger Happy": 22 }
+        "skills": {"Garula": 23, "Null Dizzy": 0, "Psi": 0, "Sukukaja": 0, "Swift Strike": 20, "Trigger Happy": 22}
     },
     "Melchizedek": {
         "item": "Mahamaon",
@@ -1750,6 +1779,7 @@ var personaMap = {
         }
     },
     "Messiah": {
+        "item": "Lucifer Guard",
         "arcana": "Judgement",
         "level": 81,
         "stats": [50, 50, 50, 50, 50],
@@ -1786,6 +1816,7 @@ var personaMap = {
         "dlc": true
     },
     "Metatron": {
+        "item": "Nataraja",
         "arcana": "Justice",
         "level": 89,
         "stats": [54, 61, 60, 57, 42],
@@ -1804,6 +1835,7 @@ var personaMap = {
         "max": true
     },
     "Michael": {
+        "item": "Judge of the Dead",
         "arcana": "Judgement",
         "level": 87,
         "stats": [57, 54, 55, 56, 46],
@@ -1821,6 +1853,7 @@ var personaMap = {
         "note": "Needs Strength cooperation rank 5 to be fused"
     },
     "Mitra": {
+        "item": "Death Contract",
         "arcana": "Temperance",
         "level": 33,
         "stats": [19, 26, 19, 24, 18],
@@ -1836,6 +1869,7 @@ var personaMap = {
         }
     },
     "Mithras": {
+        "item": "Petra Genetrix",
         "arcana": "Sun",
         "level": 39,
         "stats": [27, 25, 27, 25, 20],
@@ -1901,6 +1935,7 @@ var personaMap = {
         }
     },
     "Mother Harlot": {
+        "item": "Claiomh Solais - Sable",
         "arcana": "Empress",
         "level": 80,
         "stats": [55, 48, 46, 49, 49],
@@ -1952,6 +1987,7 @@ var personaMap = {
         "personality": "Gloomy"
     },
     "Narcissus": {
+        "item": "Daffodils",
         "arcana": "Lovers",
         "level": 50,
         "stats": [27, 36, 29, 35, 30],
@@ -1984,6 +2020,7 @@ var personaMap = {
         }
     },
     "Neko Shogun": {
+        "item": "Catnap",
         "arcana": "Star",
         "level": 30,
         "stats": [19, 20, 19, 21, 18],
@@ -2001,6 +2038,7 @@ var personaMap = {
         "note": "Needs Strength cooperation rank 1 to be fused"
     },
     "Nekomata": {
+        "item": "Pawzooka",
         "arcana": "Magician",
         "level": 17,
         "stats": [13, 10, 12, 15, 8],
@@ -2023,7 +2061,7 @@ var personaMap = {
         "level": 20,
         "stats": [12, 14, 14, 15, 12],
         "elems": ["-", "-", "-", "-", "wk", "-", "-", "-", "rs", "rs"],
-        "skills": { "Baisudi": 0, "Divine Grace": 22, "Makouha": 0, "Me Patra": 23, "Media": 0, "Rainy Play": 24 }
+        "skills": {"Baisudi": 0, "Divine Grace": 22, "Makouha": 0, "Me Patra": 23, "Media": 0, "Rainy Play": 24}
     },
     "Norn": {
         "item": "Diarahan",
@@ -2067,7 +2105,7 @@ var personaMap = {
         "level": 8,
         "stats": [7, 3, 9, 8, 4],
         "elems": ["rs", "-", "-", "-", "wk", "-", "-", "-", "-", "-"],
-        "skills": { "Dekaja": 12, "Snap": 0, "Lucky Punch": 9, "Resist Fear": 10, "Sukunda": 0 },
+        "skills": {"Dekaja": 12, "Snap": 0, "Lucky Punch": 9, "Resist Fear": 10, "Sukunda": 0},
         "personality": "Unknown"
     },
     "Oberon": {
@@ -2090,6 +2128,7 @@ var personaMap = {
         "personality": "Unknown"
     },
     "Odin": {
+        "item": "Wild Hunt",
         "arcana": "Emperor",
         "level": 82,
         "stats": [53, 52, 54, 52, 42],
@@ -2106,6 +2145,7 @@ var personaMap = {
         "max": true
     },
     "Okuninushi": {
+        "item": "Official's Robe",
         "arcana": "Emperor",
         "level": 44,
         "stats": [30, 28, 29, 28, 24],
@@ -2146,7 +2186,7 @@ var personaMap = {
         "level": 19,
         "stats": [17, 8, 16, 13, 10],
         "elems": ["rs", "rs", "-", "-", "-", "-", "-", "-", "-", "-"],
-        "skills": { "Memory Blow": 23, "Sharp Student": 22, "Counter": 0, "Snap": 0, "Giant Slice": 21, "Rampage": 0 },
+        "skills": {"Memory Blow": 23, "Sharp Student": 22, "Counter": 0, "Snap": 0, "Giant Slice": 21, "Rampage": 0},
         "personality": "Upbeat"
     },
     "Onmoraki": {
@@ -2156,10 +2196,11 @@ var personaMap = {
         "level": 12,
         "stats": [9, 12, 7, 10, 5],
         "elems": ["-", "wk", "rs", "-", "-", "-", "-", "-", "wk", "nu"],
-        "skills": { "Agi": 13, "Ice Wall": 0, "Mudo": 0, "Confuse Boost": 15, "Pulinpa": 14, "Resist Fear": 17 },
+        "skills": {"Agi": 13, "Ice Wall": 0, "Mudo": 0, "Confuse Boost": 15, "Pulinpa": 14, "Resist Fear": 17},
         "personality": "Gloomy"
     },
     "Orlov": {
+        "item": "Orlov",
         "arcana": "Strength",
         "level": 30,
         "stats": [30, 30, 30, 30, 30],
@@ -2183,10 +2224,11 @@ var personaMap = {
         "level": 17,
         "stats": [11, 14, 15, 12, 6],
         "elems": ["-", "-", "-", "-", "-", "rs", "-", "-", "wk", "rs"],
-        "skills": { "Dekaja": 0, "Fire Break": 20, "Makajamon": 21, "Maragi": 0, "Marakunda": 19, "Sukukaja": 0 },
+        "skills": {"Dekaja": 0, "Fire Break": 20, "Makajamon": 21, "Maragi": 0, "Marakunda": 19, "Sukukaja": 0},
         "personality": "Timid"
     },
     "Orpheus": {
+        "item": "Hades Harp",
         "arcana": "Fool",
         "level": 26,
         "stats": [17, 17, 17, 17, 17],
@@ -2227,7 +2269,7 @@ var personaMap = {
         "level": 21,
         "stats": [16, 14, 14, 19, 7],
         "elems": ["-", "-", "ab", "wk", "-", "-", "-", "rs", "-", "-"],
-        "skills": { "Agilao": 0, "Burn Boost": 22, "Dodge Ice": 0, "Double Fangs": 0, "Matarukaja": 26, "Rat Fang": 24 },
+        "skills": {"Agilao": 0, "Burn Boost": 22, "Dodge Ice": 0, "Double Fangs": 0, "Matarukaja": 26, "Rat Fang": 24},
         "personality": "Irritable"
     },
     "Ose": {
@@ -2237,7 +2279,7 @@ var personaMap = {
         "level": 42,
         "stats": [32, 24, 25, 31, 21],
         "elems": ["-", "-", "rs", "-", "-", "-", "-", "-", "wk", "nu"],
-        "skills": { "Counterstrike": 0, "Heat Wave": 47, "Matarukaja": 45, "Oni Kagura": 0, "Tempest Slash": 43 },
+        "skills": {"Counterstrike": 0, "Heat Wave": 47, "Matarukaja": 45, "Oni Kagura": 0, "Tempest Slash": 43},
         "personality": "Unknown"
     },
     "Pale Rider": {
@@ -2293,6 +2335,7 @@ var personaMap = {
         }
     },
     "Pisaca": {
+        "item": "Headhunter Ladle",
         "arcana": "Death",
         "level": 29,
         "stats": [19, 21, 21, 17, 16],
@@ -2315,7 +2358,7 @@ var personaMap = {
         "level": 2,
         "stats": [1, 3, 3, 4, 2],
         "elems": ["-", "wk", "-", "wk", "rs", "-", "-", "-", "rs", "wk"],
-        "skills": { "Dia": 0, "Patra": 3, "Resist Confuse": 6, "Tarukaja": 5, "Zio": 0 },
+        "skills": {"Dia": 0, "Patra": 3, "Resist Confuse": 6, "Tarukaja": 5, "Zio": 0},
         "personality": "Timid"
     },
     "Power": {
@@ -2343,14 +2386,15 @@ var personaMap = {
         "level": 29,
         "stats": [17, 19, 18, 21, 19],
         "elems": ["-", "-", "rs", "-", "-", "-", "-", "-", "nu", "wk"],
-        "skills": { "Bless Boost": 34, "Mabaisudi": 32, "Makajamon": 0, "Makouga": 0, "Mediarama": 31, "Tetraja": 0 }
+        "skills": {"Bless Boost": 34, "Mabaisudi": 32, "Makajamon": 0, "Makouga": 0, "Mediarama": 31, "Tetraja": 0}
     },
     "Queen Mab": {
+        "item": "Masquerade Ribbon",
         "arcana": "Magician",
         "level": 43,
         "stats": [23, 35, 26, 30, 22],
         "elems": ["-", "-", "nu", "-", "rs", "wk", "-", "-", "-", "-"],
-        "skills": { "Agidyne": 48, "Makajamon": 0, "Makara Break": 46, "Matarunda": 44, "Mazionga": 0, "Wind Wall": 0 },
+        "skills": {"Agidyne": 48, "Makajamon": 0, "Makara Break": 46, "Matarunda": 44, "Mazionga": 0, "Wind Wall": 0},
         "personality": "Unknown"
     },
     "Quetzalcoatl": {
@@ -2412,7 +2456,7 @@ var personaMap = {
         "level": 48,
         "stats": [28, 34, 30, 33, 26],
         "elems": ["rp", "rp", "nu", "-", "wk", "-", "-", "-", "wk", "nu"],
-        "skills": { "Bloodbath": 0, "Counterstrike": 0, "Eigaon": 49, "Matarunda": 51, "Mudoon": 53, "Swift Strike": 0 },
+        "skills": {"Bloodbath": 0, "Counterstrike": 0, "Eigaon": 49, "Matarunda": 51, "Mudoon": 53, "Swift Strike": 0},
         "personality": "Unknown"
     },
     "Raphael": {
@@ -2450,6 +2494,7 @@ var personaMap = {
         }
     },
     "Regent": {
+        "item": "Regent",
         "arcana": "Emperor",
         "level": 10,
         "stats": [10, 10, 10, 10, 10],
@@ -2473,7 +2518,7 @@ var personaMap = {
         "level": 6,
         "stats": [4, 6, 5, 6, 4],
         "elems": ["-", "-", "-", "rs", "wk", "-", "-", "-", "-", "-"],
-        "skills": { "Bufu": 0, "Energy Drop": 0, "Growth 1": 7, "Rakukaja": 8, "Resist Dizzy": 10, "Wind Wall": 0 }
+        "skills": {"Bufu": 0, "Energy Drop": 0, "Growth 1": 7, "Rakukaja": 8, "Resist Dizzy": 10, "Wind Wall": 0}
     },
     "Sandalphon": {
         "item": "Angelic Grace",
@@ -2528,6 +2573,7 @@ var personaMap = {
         }
     },
     "Satan": {
+        "item": "Tantric Oath",
         "arcana": "Judgement",
         "level": 92,
         "stats": [62, 59, 55, 52, 55],
@@ -2545,6 +2591,7 @@ var personaMap = {
         "max": true
     },
     "Satanael": {
+        "item": "Paradise Lost",
         "arcana": "Fool",
         "level": 95,
         "stats": [63, 60, 57, 56, 56],
@@ -2654,10 +2701,11 @@ var personaMap = {
         "level": 21,
         "stats": [16, 14, 15, 14, 11],
         "elems": ["nu", "nu", "-", "-", "-", "-", "-", "wk", "-", "nu"],
-        "skills": { "Dekaja": 24, "Snap": 0, "Mapsi": 22, "Oni Kagura": 27, "Taunt": 0, "Psio": 26, "Tarukaja": 0 },
+        "skills": {"Dekaja": 24, "Snap": 0, "Mapsi": 22, "Oni Kagura": 27, "Taunt": 0, "Psio": 26, "Tarukaja": 0},
         "personality": "Irritable"
     },
     "Shiva": {
+        "item": "Megido Fire",
         "arcana": "Judgement",
         "level": 82,
         "stats": [55, 54, 53, 53, 38],
@@ -2690,14 +2738,16 @@ var personaMap = {
         }
     },
     "Silky": {
+        "item": "Silk Dress",
         "arcana": "Priestess",
         "level": 6,
         "stats": [4, 7, 4, 5, 5],
         "elems": ["-", "-", "wk", "rs", "wk", "-", "-", "-", "-", "-"],
-        "skills": { "Bufu": 0, "Sharp Student": 10, "Dia": 7, "Dormina": 0, "Patra": 9 },
+        "skills": {"Bufu": 0, "Sharp Student": 10, "Dia": 7, "Dormina": 0, "Patra": 9},
         "personality": "Gloomy"
     },
     "Skadi": {
+        "item": "Snow Queen's Whip",
         "arcana": "Priestess",
         "level": 55,
         "stats": [35, 39, 34, 34, 30],
@@ -2719,10 +2769,11 @@ var personaMap = {
         "level": 10,
         "stats": [9, 6, 11, 6, 5],
         "elems": ["rs", "-", "wk", "-", "-", "wk", "-", "-", "-", "-"],
-        "skills": { "Evil Touch": 0, "Eiha": 11, "Fire Wall": 13, "Headbutt": 14, "Lunge": 0 },
+        "skills": {"Evil Touch": 0, "Eiha": 11, "Fire Wall": 13, "Headbutt": 14, "Lunge": 0},
         "personality": "Timid"
     },
     "Sraosha": {
+        "item": "Archangel Bra",
         "arcana": "Star",
         "level": 80,
         "stats": [47, 56, 45, 56, 43],
@@ -2740,19 +2791,21 @@ var personaMap = {
         "note": "Needs Strength cooperation rank 5 to be fused"
     },
     "Stone of Scone": {
+        "item": "Stone of Scone",
         "arcana": "Fortune",
         "level": 20,
         "stats": [20, 20, 20, 20, 20],
         "elems": ["nu", "nu", "nu", "nu", "nu", "nu", "nu", "nu", "nu", "wk"],
-        "skills": { "Agilao": 0, "Bufula": 0, "Eiga": 0, "Freila": 0, "Garula": 0, "Kouga": 0, "Psio": 0, "Zionga": 0 },
+        "skills": {"Agilao": 0, "Bufula": 0, "Eiga": 0, "Freila": 0, "Garula": 0, "Kouga": 0, "Psio": 0, "Zionga": 0},
         "rare": true
     },
     "Succubus": {
+        "item": "Brain Shot",
         "arcana": "Moon",
         "level": 7,
         "stats": [4, 7, 5, 8, 4],
         "elems": ["-", "wk", "rs", "-", "-", "-", "-", "-", "wk", "nu"],
-        "skills": { "Agi": 8, "Brainwash Boost": 11, "Dekaja": 10, "Marin Karin": 0, "Mudo": 12, "Rebellion": 0 },
+        "skills": {"Agi": 8, "Brainwash Boost": 11, "Dekaja": 10, "Marin Karin": 0, "Mudo": 12, "Rebellion": 0},
         "personality": "Irritable"
     },
     "Sudama": {
@@ -2824,6 +2877,7 @@ var personaMap = {
         }
     },
     "Take-Minakata": {
+        "item": "Thunder Band",
         "arcana": "Hanged Man",
         "level": 29,
         "stats": [20, 22, 21, 18, 13],
@@ -2839,6 +2893,7 @@ var personaMap = {
         "personality": "Gloomy"
     },
     "Thanatos": {
+        "item": "Darkness Ring",
         "arcana": "Death",
         "level": 65,
         "stats": [43, 49, 41, 38, 31],
@@ -2873,6 +2928,7 @@ var personaMap = {
         "dlc": true
     },
     "Queen's Necklace": {
+        "item": "Queen's Necklace",
         "arcana": "Empress",
         "level": 15,
         "stats": [15, 15, 15, 15, 15],
@@ -2890,6 +2946,7 @@ var personaMap = {
         "rare": true
     },
     "Thor": {
+        "item": "Mjolnir",
         "arcana": "Chariot",
         "level": 64,
         "stats": [44, 39, 43, 38, 35],
@@ -2977,6 +3034,7 @@ var personaMap = {
         "note": "Needs Strength cooperation rank 5 to be fused"
     },
     "Tsukiyomi": {
+        "item": "Black Moon",
         "arcana": "Moon",
         "level": 50,
         "stats": [38, 32, 33, 37, 17],
@@ -3029,6 +3087,7 @@ var personaMap = {
         "personality": "Unknown"
     },
     "Uriel": {
+        "item": "Heaven's Gate",
         "arcana": "Justice",
         "level": 81,
         "stats": [50, 54, 49, 55, 42],
@@ -3060,6 +3119,7 @@ var personaMap = {
         }
     },
     "Vasuki": {
+        "item": "Kuzuryu Gouhou",
         "arcana": "Hanged Man",
         "level": 68,
         "stats": [41, 46, 45, 42, 37],
@@ -3147,6 +3207,7 @@ var personaMap = {
         }
     },
     "Yatagarasu": {
+        "item": "Black Wing Robe",
         "arcana": "Sun",
         "level": 57,
         "stats": [35, 41, 30, 40, 32],
@@ -3162,6 +3223,7 @@ var personaMap = {
         }
     },
     "Yoshitsune": {
+        "item": "Usumidori",
         "arcana": "Tower",
         "level": 79,
         "stats": [58, 47, 45, 53, 41],
@@ -3179,6 +3241,7 @@ var personaMap = {
         "note": "Needs Strength cooperation rank 5 to be fused"
     },
     "Yurlungur": {
+        "item": "Mirrirmina",
         "arcana": "Sun",
         "level": 42,
         "stats": [26, 29, 28, 27, 23],

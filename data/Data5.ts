@@ -268,7 +268,7 @@ const specialCombos = [
     {'result': 'Michael', 'sources': ['Raphael', 'Gabriel', 'Uriel']},
     {'result': 'Neko Shogun', 'sources': ['Kodama', 'Sudama', 'Anzu']},
     {'result': 'Ongyo-Ki', 'sources': ['Kin-Ki', 'Sui-Ki', 'Fuu-Ki']},
-    {'result': 'Satanael', 'sources': ['Arsene', 'Anzu', 'Ishtar', 'Satan', 'Lucifer', 'Michael']},
+    {'result': 'Satanael', 'sources': ['Arséne', 'Anzu', 'Ishtar', 'Satan', 'Lucifer', 'Michael']},
     {'result': 'Seth', 'sources': ['Isis', 'Thoth', 'Anubis', 'Horus']},
     {'result': 'Shiva', 'sources': ['Rangda', 'Barong']},
     {'result': 'Sraosha', 'sources': ['Mitra', 'Mithras', 'Melchizedek', 'Lilith', 'Gabriel']},

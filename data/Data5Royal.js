@@ -327,7 +327,7 @@ var specialCombosRoyal = [
     { result: 'Michael', sources: ["Gabriel", "Raphael", "Uriel"] },
     { result: 'Neko Shogun', sources: ["Kodama", "Sudama", "Anzu"] },
     { result: 'Ongyo-Ki', sources: ["Kin-Ki", "Sui-Ki", "Fuu-Ki"] },
-    { result: 'Satanael', sources: ["Arsene", "Anzu", "Ishtar", "Satan", "Lucifer", "Michael"] },
+    { result: 'Satanael', sources: ["Arséne", "Anzu", "Ishtar", "Satan", "Lucifer", "Michael"] },
     { result: 'Seth', sources: ["Isis", "Anubis", "Thoth", "Horus"] },
     { result: 'Shiva', sources: ["Barong", "Rangda"] },
     { result: 'Sraosha', sources: ["Mithra", "Mithras", "Melchizedek", "Lilith", "Gabriel"] },

@@ -105,6 +105,7 @@ const personaMap : PersonaMap = {
         "max": true
     },
     "Ame-no-Uzume": {
+        "item": "Senryou Yakusha",
         "arcana": "Lovers",
         "level": 29,
         "stats": [15, 22, 19, 20, 18],
@@ -112,6 +113,7 @@ const personaMap : PersonaMap = {
         "skills": {"Bufula": 0, "Diarama": 0, "Divine Grace": 32, "Mazio": 0, "Shock Boost": 34, "Tentarafoo": 31}
     },
     "Ananta": {
+        "item": "Hua Khon",
         "arcana": "Star",
         "level": 43,
         "stats": [24, 30, 31, 26, 25],
@@ -195,6 +197,7 @@ const personaMap : PersonaMap = {
         "skills": {"Freila": 0, "Marakunda": 33, "Miracle Punch": 0, "Taunt": 0, "Rage Boost": 35, "Rebellion": 32}
     },
     "Arahabaki": {
+        "item": "Tapsuan",
         "arcana": "Hermit",
         "level": 35,
         "stats": [21, 23, 22, 24, 22],
@@ -239,6 +242,7 @@ const personaMap : PersonaMap = {
         "max": true
     },
     "Ariadne": {
+        "item": "Red Yarn Ball",
         "arcana": "Fortune",
         "level": 30,
         "stats": [23, 19, 20, 17, 18],
@@ -272,7 +276,8 @@ const personaMap : PersonaMap = {
         },
         "dlc": true
     },
-    "Arsene": {
+    "Arséne": {
+        "item": "Arséne's Cane",
         "arcana": "Fool",
         "level": 1,
         "stats": [2, 2, 2, 3, 1],
@@ -280,6 +285,7 @@ const personaMap : PersonaMap = {
         "skills": {"Cleave": 2, "Adverse Resolve": 7, "Dream Needle": 5, "Eiha": 1, "Sukunda": 4}
     },
     "Asterius": {
+        "item": "Thunder Horns",
         "arcana": "Fortune",
         "level": 56,
         "stats": [43, 43, 32, 32, 25],
@@ -314,6 +320,7 @@ const personaMap : PersonaMap = {
         "dlc": true
     },
     "Asura-Ou": {
+        "item": "Vajra",
         "arcana": "Sun",
         "level": 76,
         "stats": [52, 48, 51, 49, 35],
@@ -366,6 +373,7 @@ const personaMap : PersonaMap = {
         "max": true
     },
     "Baal": {
+        "item": "Yagrush",
         "arcana": "Emperor",
         "level": 75,
         "stats": [48, 50, 47, 47, 40],
@@ -414,6 +422,7 @@ const personaMap : PersonaMap = {
         }
     },
     "Beelzebub": {
+        "item": "Fleur du Mal",
         "arcana": "Devil",
         "level": 84,
         "stats": [55, 60, 54, 56, 34],
@@ -495,6 +504,7 @@ const personaMap : PersonaMap = {
         }
     },
     "Black Frost": {
+        "item": "Naraka Whip",
         "arcana": "Fool",
         "level": 67,
         "stats": [44, 46, 41, 42, 35],
@@ -546,6 +556,7 @@ const personaMap : PersonaMap = {
         }
     },
     "Bugs": {
+        "item": "Bear Gloves",
         "arcana": "Fool",
         "level": 49,
         "stats": [35, 33, 30, 32, 24],
@@ -669,6 +680,7 @@ const personaMap : PersonaMap = {
         }
     },
     "Crystal Skull": {
+        "item": "Crystal Skull",
         "arcana": "Fool",
         "level": 50,
         "stats": [50, 50, 50, 50, 50],
@@ -703,6 +715,7 @@ const personaMap : PersonaMap = {
         }
     },
     "Cybele": {
+        "item": "Sabazios",
         "arcana": "Priestess",
         "level": 73,
         "stats": [44, 48, 45, 51, 38],
@@ -824,6 +837,7 @@ const personaMap : PersonaMap = {
         "personality": "Unknown"
     },
     "Emperor's Amulet": {
+        "item": "Emperor's Amulet",
         "arcana": "Hanged Man",
         "level": 35,
         "stats": [35, 35, 35, 35, 35],
@@ -850,6 +864,7 @@ const personaMap : PersonaMap = {
         "skills": {"Diarama": 23, "Dream Needle": 0, "Freila": 0, "Nuke Boost": 27, "Recarm": 25}
     },
     "Flauros": {
+        "item": "Shackles",
         "arcana": "Devil",
         "level": 25,
         "stats": [19, 14, 18, 18, 13],
@@ -1004,6 +1019,7 @@ const personaMap : PersonaMap = {
         "personality": "Gloomy"
     },
     "Hanuman": {
+        "item": "Ruyi Jingu Bang",
         "arcana": "Star",
         "level": 64,
         "stats": [43, 38, 40, 40, 38],
@@ -1055,6 +1071,7 @@ const personaMap : PersonaMap = {
         }
     },
     "Hell Biker": {
+        "item": "Black Jacket",
         "arcana": "Death",
         "level": 39,
         "stats": [26, 27, 24, 30, 17],
@@ -1081,6 +1098,7 @@ const personaMap : PersonaMap = {
         "personality": "Irritable"
     },
     "Hope Diamond": {
+        "item": "Hope Diamond",
         "arcana": "Death",
         "level": 40,
         "stats": [40, 40, 40, 40, 40],
@@ -1206,6 +1224,7 @@ const personaMap : PersonaMap = {
         "personality": "Timid"
     },
     "Izanagi": {
+        "item": "White Headband",
         "arcana": "Fool",
         "level": 20,
         "stats": [14, 13, 13, 14, 13],
@@ -1240,6 +1259,7 @@ const personaMap : PersonaMap = {
         "dlc": true
     },
     "Jack Frost": {
+        "item": "Frost Hood",
         "arcana": "Magician",
         "level": 11,
         "stats": [8, 9, 7, 9, 7],
@@ -1248,6 +1268,7 @@ const personaMap : PersonaMap = {
         "personality": "Timid"
     },
     "Jack-o'-Lantern": {
+        "item": "Pumpkin Bomb",
         "arcana": "Magician",
         "level": 2,
         "stats": [2, 3, 3, 3, 2],
@@ -1290,6 +1311,7 @@ const personaMap : PersonaMap = {
         }
     },
     "Kaguya": {
+        "item": "Moonlight Robe",
         "arcana": "Moon",
         "level": 16,
         "stats": [11, 15, 12, 11, 6],
@@ -1342,6 +1364,7 @@ const personaMap : PersonaMap = {
         "personality": "Timid"
     },
     "Kali": {
+        "item": "Khamrai Tao",
         "arcana": "Empress",
         "level": 77,
         "stats": [53, 45, 46, 53, 41],
@@ -1395,6 +1418,7 @@ const personaMap : PersonaMap = {
         "personality": "Gloomy"
     },
     "King Frost": {
+        "item": "King Frost Cape",
         "arcana": "Emperor",
         "level": 61,
         "stats": [38, 39, 45, 33, 35],
@@ -1429,6 +1453,7 @@ const personaMap : PersonaMap = {
         "personality": "Upbeat"
     },
     "Koh-i-Noor": {
+        "item": "Koh-i-Noor",
         "arcana": "Priestess",
         "level": 25,
         "stats": [25, 25, 25, 25, 25],
@@ -1446,6 +1471,7 @@ const personaMap : PersonaMap = {
         "rare": true
     },
     "Kohryu": {
+        "item": "Sudarshana",
         "arcana": "Hierophant",
         "level": 76,
         "stats": [43, 51, 50, 53, 38],
@@ -1624,6 +1650,7 @@ const personaMap : PersonaMap = {
         "personality": "Irritable"
     },
     "Legion": {
+        "item": "Legion's Jail",
         "arcana": "Fool",
         "level": 38,
         "stats": [24, 24, 30, 23, 20],
@@ -1667,6 +1694,7 @@ const personaMap : PersonaMap = {
         }
     },
     "Lucifer": {
+        "item": "Tyrant Pistol",
         "arcana": "Star",
         "level": 93,
         "stats": [61, 59, 59, 56, 51],
@@ -1704,6 +1732,7 @@ const personaMap : PersonaMap = {
         "max": true
     },
     "Magatsu-Izanagi": {
+        "item": "Black Headband",
         "arcana": "Tower",
         "level": 44,
         "stats": [37, 35, 32, 25, 10],
@@ -1809,6 +1838,7 @@ const personaMap : PersonaMap = {
         }
     },
     "Messiah": {
+        "item": "Lucifer Guard",
         "arcana": "Judgement",
         "level": 81,
         "stats": [50, 50, 50, 50, 50],
@@ -1845,6 +1875,7 @@ const personaMap : PersonaMap = {
         "dlc": true
     },
     "Metatron": {
+        "item": "Nataraja",
         "arcana": "Justice",
         "level": 89,
         "stats": [54, 61, 60, 57, 42],
@@ -1863,6 +1894,7 @@ const personaMap : PersonaMap = {
         "max": true
     },
     "Michael": {
+        "item": "Judge of the Dead",
         "arcana": "Judgement",
         "level": 87,
         "stats": [57, 54, 55, 56, 46],
@@ -1880,6 +1912,7 @@ const personaMap : PersonaMap = {
         "note": "Needs Strength cooperation rank 5 to be fused"
     },
     "Mitra": {
+        "item": "Death Contract",
         "arcana": "Temperance",
         "level": 33,
         "stats": [19, 26, 19, 24, 18],
@@ -1895,6 +1928,7 @@ const personaMap : PersonaMap = {
         }
     },
     "Mithras": {
+        "item": "Petra Genetrix",
         "arcana": "Sun",
         "level": 39,
         "stats": [27, 25, 27, 25, 20],
@@ -1960,6 +1994,7 @@ const personaMap : PersonaMap = {
         }
     },
     "Mother Harlot": {
+        "item": "Claiomh Solais - Sable",
         "arcana": "Empress",
         "level": 80,
         "stats": [55, 48, 46, 49, 49],
@@ -2011,6 +2046,7 @@ const personaMap : PersonaMap = {
         "personality": "Gloomy"
     },
     "Narcissus": {
+        "item": "Daffodils",
         "arcana": "Lovers",
         "level": 50,
         "stats": [27, 36, 29, 35, 30],
@@ -2043,6 +2079,7 @@ const personaMap : PersonaMap = {
         }
     },
     "Neko Shogun": {
+        "item": "Catnap",
         "arcana": "Star",
         "level": 30,
         "stats": [19, 20, 19, 21, 18],
@@ -2060,6 +2097,7 @@ const personaMap : PersonaMap = {
         "note": "Needs Strength cooperation rank 1 to be fused"
     },
     "Nekomata": {
+        "item": "Pawzooka",
         "arcana": "Magician",
         "level": 17,
         "stats": [13, 10, 12, 15, 8],
@@ -2149,6 +2187,7 @@ const personaMap : PersonaMap = {
         "personality": "Unknown"
     },
     "Odin": {
+        "item": "Wild Hunt",
         "arcana": "Emperor",
         "level": 82,
         "stats": [53, 52, 54, 52, 42],
@@ -2165,6 +2204,7 @@ const personaMap : PersonaMap = {
         "max": true
     },
     "Okuninushi": {
+        "item": "Official's Robe",
         "arcana": "Emperor",
         "level": 44,
         "stats": [30, 28, 29, 28, 24],
@@ -2219,6 +2259,7 @@ const personaMap : PersonaMap = {
         "personality": "Gloomy"
     },
     "Orlov": {
+        "item": "Orlov",
         "arcana": "Strength",
         "level": 30,
         "stats": [30, 30, 30, 30, 30],
@@ -2246,6 +2287,7 @@ const personaMap : PersonaMap = {
         "personality": "Timid"
     },
     "Orpheus": {
+        "item": "Hades Harp",
         "arcana": "Fool",
         "level": 26,
         "stats": [17, 17, 17, 17, 17],
@@ -2352,6 +2394,7 @@ const personaMap : PersonaMap = {
         }
     },
     "Pisaca": {
+        "item": "Headhunter Ladle",
         "arcana": "Death",
         "level": 29,
         "stats": [19, 21, 21, 17, 16],
@@ -2405,6 +2448,7 @@ const personaMap : PersonaMap = {
         "skills": {"Bless Boost": 34, "Mabaisudi": 32, "Makajamon": 0, "Makouga": 0, "Mediarama": 31, "Tetraja": 0}
     },
     "Queen Mab": {
+        "item": "Masquerade Ribbon",
         "arcana": "Magician",
         "level": 43,
         "stats": [23, 35, 26, 30, 22],
@@ -2509,6 +2553,7 @@ const personaMap : PersonaMap = {
         }
     },
     "Regent": {
+        "item": "Regent",
         "arcana": "Emperor",
         "level": 10,
         "stats": [10, 10, 10, 10, 10],
@@ -2587,6 +2632,7 @@ const personaMap : PersonaMap = {
         }
     },
     "Satan": {
+        "item": "Tantric Oath",
         "arcana": "Judgement",
         "level": 92,
         "stats": [62, 59, 55, 52, 55],
@@ -2604,6 +2650,7 @@ const personaMap : PersonaMap = {
         "max": true
     },
     "Satanael": {
+        "item": "Paradise Lost",
         "arcana": "Fool",
         "level": 95,
         "stats": [63, 60, 57, 56, 56],
@@ -2717,6 +2764,7 @@ const personaMap : PersonaMap = {
         "personality": "Irritable"
     },
     "Shiva": {
+        "item": "Megido Fire",
         "arcana": "Judgement",
         "level": 82,
         "stats": [55, 54, 53, 53, 38],
@@ -2749,6 +2797,7 @@ const personaMap : PersonaMap = {
         }
     },
     "Silky": {
+        "item": "Silk Dress",
         "arcana": "Priestess",
         "level": 6,
         "stats": [4, 7, 4, 5, 5],
@@ -2757,6 +2806,7 @@ const personaMap : PersonaMap = {
         "personality": "Gloomy"
     },
     "Skadi": {
+        "item": "Snow Queen's Whip",
         "arcana": "Priestess",
         "level": 55,
         "stats": [35, 39, 34, 34, 30],
@@ -2782,6 +2832,7 @@ const personaMap : PersonaMap = {
         "personality": "Timid"
     },
     "Sraosha": {
+        "item": "Archangel Bra",
         "arcana": "Star",
         "level": 80,
         "stats": [47, 56, 45, 56, 43],
@@ -2799,6 +2850,7 @@ const personaMap : PersonaMap = {
         "note": "Needs Strength cooperation rank 5 to be fused"
     },
     "Stone of Scone": {
+        "item": "Stone of Scone",
         "arcana": "Fortune",
         "level": 20,
         "stats": [20, 20, 20, 20, 20],
@@ -2807,6 +2859,7 @@ const personaMap : PersonaMap = {
         "rare": true
     },
     "Succubus": {
+        "item": "Brain Shot",
         "arcana": "Moon",
         "level": 7,
         "stats": [4, 7, 5, 8, 4],
@@ -2883,6 +2936,7 @@ const personaMap : PersonaMap = {
         }
     },
     "Take-Minakata": {
+        "item": "Thunder Band",
         "arcana": "Hanged Man",
         "level": 29,
         "stats": [20, 22, 21, 18, 13],
@@ -2898,6 +2952,7 @@ const personaMap : PersonaMap = {
         "personality": "Gloomy"
     },
     "Thanatos": {
+        "item": "Darkness Ring",
         "arcana": "Death",
         "level": 65,
         "stats": [43, 49, 41, 38, 31],
@@ -2932,6 +2987,7 @@ const personaMap : PersonaMap = {
         "dlc": true
     },
     "Queen's Necklace": {
+        "item": "Queen's Necklace",
         "arcana": "Empress",
         "level": 15,
         "stats": [15, 15, 15, 15, 15],
@@ -2949,6 +3005,7 @@ const personaMap : PersonaMap = {
         "rare": true
     },
     "Thor": {
+        "item": "Mjolnir",
         "arcana": "Chariot",
         "level": 64,
         "stats": [44, 39, 43, 38, 35],
@@ -3036,6 +3093,7 @@ const personaMap : PersonaMap = {
         "note": "Needs Strength cooperation rank 5 to be fused"
     },
     "Tsukiyomi": {
+        "item": "Black Moon",
         "arcana": "Moon",
         "level": 50,
         "stats": [38, 32, 33, 37, 17],
@@ -3088,6 +3146,7 @@ const personaMap : PersonaMap = {
         "personality": "Unknown"
     },
     "Uriel": {
+        "item": "Heaven's Gate",
         "arcana": "Justice",
         "level": 81,
         "stats": [50, 54, 49, 55, 42],
@@ -3119,6 +3178,7 @@ const personaMap : PersonaMap = {
         }
     },
     "Vasuki": {
+        "item": "Kuzuryu Gouhou",
         "arcana": "Hanged Man",
         "level": 68,
         "stats": [41, 46, 45, 42, 37],
@@ -3206,6 +3266,7 @@ const personaMap : PersonaMap = {
         }
     },
     "Yatagarasu": {
+        "item": "Black Wing Robe",
         "arcana": "Sun",
         "level": 57,
         "stats": [35, 41, 30, 40, 32],
@@ -3221,6 +3282,7 @@ const personaMap : PersonaMap = {
         }
     },
     "Yoshitsune": {
+        "item": "Usumidori",
         "arcana": "Tower",
         "level": 79,
         "stats": [58, 47, 45, 53, 41],
@@ -3238,6 +3300,7 @@ const personaMap : PersonaMap = {
         "note": "Needs Strength cooperation rank 5 to be fused"
     },
     "Yurlungur": {
+        "item": "Mirrirmina",
         "arcana": "Sun",
         "level": 42,
         "stats": [26, 29, 28, 27, 23],
