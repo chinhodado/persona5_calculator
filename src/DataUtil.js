@@ -1,6 +1,7 @@
 ///<reference path="../data/Data5.ts"/>
 ///<reference path="../data/PersonaData.ts"/>
 ///<reference path="../data/SkillData.ts"/>
+///<reference path="../data/ItemData.ts"/>
 /**
  * Created by Chin on 08-Apr-17.
  */
@@ -182,6 +183,28 @@ function getSkills(personaName) {
         });
     }
     return resSkills;
+}
+function getSkillCardInfo(skillCard) {
+    var skillData = [];
+    var skill = skillMap[skillCard];
+    skillData.push({
+        name: skillCard,
+        description: skill.effect,
+        elem: capitalizeFirstLetter(skill.element),
+        cost: getSkillCost(skill)
+    })
+
+    return skillData;
+}
+function getItem(itemName) {
+    var itemData = [];
+    var item = itemMap[itemName];
+    itemData.push({
+        name: itemName,
+        type: item.type,
+        description: item.description
+    })
+    return itemData;
 }
 function getSkillPersonaList(skill) {
     var arr = [];

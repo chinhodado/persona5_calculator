@@ -24,6 +24,7 @@ interface PersonaData {
     inherits?: string;
     item?: string;
     itemr?: string;
+    skillCard?: boolean;
     trait?: string;
 
     // only for when converted to list
@@ -60,6 +61,7 @@ interface PersonaData {
 const personaMap : PersonaMap = {
     "Abaddon": {
         "item": "Makarakarn",
+        "skillCard": true,
         "arcana": "Judgement",
         "level": 74,
         "stats": [51, 38, 58, 43, 39],
@@ -75,6 +77,7 @@ const personaMap : PersonaMap = {
     },
     "Agathion": {
         "item": "Zio",
+        "skillCard": true,
         "arcana": "Chariot",
         "level": 3,
         "stats": [3, 4, 5, 7, 3],
@@ -84,6 +87,7 @@ const personaMap : PersonaMap = {
     },
     "Alice": {
         "item": "Mamudoon",
+        "skillCard": true,
         "arcana": "Death",
         "level": 79,
         "stats": [43, 59, 40, 57, 45],
@@ -127,6 +131,7 @@ const personaMap : PersonaMap = {
     },
     "Andras": {
         "item": "Ice Break",
+        "skillCard": true,
         "arcana": "Devil",
         "level": 10,
         "stats": [5, 9, 7, 10, 6],
@@ -136,6 +141,7 @@ const personaMap : PersonaMap = {
     },
     "Angel": {
         "item": "Baisudi",
+        "skillCard": true,
         "arcana": "Justice",
         "level": 12,
         "stats": [7, 9, 9, 9, 9],
@@ -145,6 +151,7 @@ const personaMap : PersonaMap = {
     },
     "Anubis": {
         "item": "Makouha",
+        "skillCard": true,
         "arcana": "Judgement",
         "level": 37,
         "stats": [23, 26, 24, 22, 23],
@@ -162,6 +169,7 @@ const personaMap : PersonaMap = {
     },
     "Anzu": {
         "item": "Dekaja",
+        "skillCard": true,
         "arcana": "Hierophant",
         "level": 25,
         "stats": [14, 18, 15, 21, 14],
@@ -171,6 +179,7 @@ const personaMap : PersonaMap = {
     },
     "Apsaras": {
         "item": "Freeze Boost",
+        "skillCard": true,
         "arcana": "Priestess",
         "level": 11,
         "stats": [7, 11, 6, 10, 6],
@@ -180,6 +189,7 @@ const personaMap : PersonaMap = {
     },
     "Ara Mitama": {
         "item": "Freila",
+        "skillCard": true,
         "arcana": "Chariot",
         "level": 31,
         "stats": [20, 19, 20, 20, 21],
@@ -204,6 +214,7 @@ const personaMap : PersonaMap = {
     },
     "Archangel": {
         "item": "Dazzler",
+        "skillCard": true,
         "arcana": "Justice",
         "level": 16,
         "stats": [13, 10, 13, 12, 7],
@@ -213,6 +224,7 @@ const personaMap : PersonaMap = {
     },
     "Ardha": {
         "item": "Agneyastra",
+        "skillCard": true,
         "arcana": "Temperance",
         "level": 84,
         "stats": [54, 56, 55, 54, 40],
@@ -248,6 +260,7 @@ const personaMap : PersonaMap = {
     },
     "Ariadne Picaro": {
         "item": "Auto-Mataru",
+        "skillCard": true,
         "arcana": "Fortune",
         "level": 42,
         "stats": [36, 23, 29, 24, 21],
@@ -263,8 +276,8 @@ const personaMap : PersonaMap = {
         },
         "dlc": true
     },
-    "Arséne": {
-        "item": "Arséne's Cane",
+    "Arsène": {
+        "item": "Arsène's Cane",
         "arcana": "Fool",
         "level": 1,
         "stats": [2, 2, 2, 3, 1],
@@ -290,6 +303,7 @@ const personaMap : PersonaMap = {
     },
     "Asterius Picaro": {
         "item": "Gigantomachia",
+        "skillCard": true,
         "arcana": "Fortune",
         "level": 62,
         "stats": [46, 46, 36, 36, 29],
@@ -325,6 +339,7 @@ const personaMap : PersonaMap = {
     },
     "Atropos": {
         "item": "Mazionga",
+        "skillCard": true,
         "arcana": "Fortune",
         "level": 39,
         "stats": [23, 30, 22, 27, 22],
@@ -341,6 +356,7 @@ const personaMap : PersonaMap = {
     },
     "Attis": {
         "item": "Enduring Soul",
+        "skillCard": true,
         "arcana": "Hanged Man",
         "level": 82,
         "stats": [56, 50, 48, 51, 48],
@@ -374,6 +390,7 @@ const personaMap : PersonaMap = {
     },
     "Baphomet": {
         "item": "Shock Boost",
+        "skillCard": true,
         "arcana": "Devil",
         "level": 58,
         "stats": [34, 42, 36, 38, 31],
@@ -390,6 +407,7 @@ const personaMap : PersonaMap = {
     },
     "Barong": {
         "item": "Invigorate 2",
+        "skillCard": true,
         "arcana": "Emperor",
         "level": 52,
         "stats": [33, 35, 33, 37, 25],
@@ -423,6 +441,7 @@ const personaMap : PersonaMap = {
     },
     "Belial": {
         "item": "Maragion",
+        "skillCard": true,
         "arcana": "Devil",
         "level": 68,
         "stats": [45, 41, 46, 43, 36],
@@ -439,6 +458,7 @@ const personaMap : PersonaMap = {
     },
     "Belphegor": {
         "item": "Mabufula",
+        "skillCard": true,
         "arcana": "Tower",
         "level": 37,
         "stats": [25, 27, 24, 23, 19],
@@ -448,6 +468,7 @@ const personaMap : PersonaMap = {
     },
     "Berith": {
         "item": "Cleave",
+        "skillCard": true,
         "arcana": "Hierophant",
         "level": 9,
         "stats": [8, 6, 7, 8, 5],
@@ -457,6 +478,7 @@ const personaMap : PersonaMap = {
     },
     "Bicorn": {
         "item": "Garu",
+        "skillCard": true,
         "arcana": "Hermit",
         "level": 4,
         "stats": [5, 3, 3, 5, 3],
@@ -466,6 +488,7 @@ const personaMap : PersonaMap = {
     },
     "Bishamonten": {
         "item": "Mafreidyne",
+        "skillCard": true,
         "arcana": "Hierophant",
         "level": 67,
         "stats": [49, 37, 42, 45, 35],
@@ -499,6 +522,7 @@ const personaMap : PersonaMap = {
     },
     "Black Ooze": {
         "item": "Stagnant Air",
+        "skillCard": true,
         "arcana": "Moon",
         "level": 29,
         "stats": [19, 18, 20, 16, 21],
@@ -516,6 +540,7 @@ const personaMap : PersonaMap = {
     },
     "Black Rider": {
         "item": "Bad Beat",
+        "skillCard": true,
         "arcana": "Tower",
         "level": 59,
         "stats": [38, 43, 37, 45, 30],
@@ -550,6 +575,7 @@ const personaMap : PersonaMap = {
     },
     "Byakko": {
         "item": "Swift Strike",
+        "skillCard": true,
         "arcana": "Temperance",
         "level": 49,
         "stats": [32, 32, 31, 32, 27],
@@ -566,6 +592,7 @@ const personaMap : PersonaMap = {
     },
     "Cerberus": {
         "item": "Agidyne",
+        "skillCard": true,
         "arcana": "Chariot",
         "level": 55,
         "stats": [39, 35, 32, 39, 27],
@@ -582,6 +609,7 @@ const personaMap : PersonaMap = {
     },
     "Chernobog": {
         "item": "Deadly Fury",
+        "skillCard": true,
         "arcana": "Death",
         "level": 62,
         "stats": [40, 37, 39, 38, 39],
@@ -598,6 +626,7 @@ const personaMap : PersonaMap = {
     },
     "Chi You": {
         "item": "Arms Master",
+        "skillCard": true,
         "arcana": "Chariot",
         "level": 86,
         "stats": [54, 56, 53, 52, 50],
@@ -616,6 +645,7 @@ const personaMap : PersonaMap = {
     },
     "Choronzon": {
         "item": "Maeiha",
+        "skillCard": true,
         "arcana": "Magician",
         "level": 28,
         "stats": [16, 19, 19, 18, 19],
@@ -634,6 +664,7 @@ const personaMap : PersonaMap = {
     },
     "Clotho": {
         "item": "Invigorate 1",
+        "skillCard": true,
         "arcana": "Fortune",
         "level": 26,
         "stats": [14, 19, 17, 20, 15],
@@ -668,6 +699,7 @@ const personaMap : PersonaMap = {
     },
     "Cu Chulainn": {
         "item": "Charge",
+        "skillCard": true,
         "arcana": "Star",
         "level": 67,
         "stats": [47, 36, 44, 47, 34],
@@ -701,6 +733,7 @@ const personaMap : PersonaMap = {
     },
     "Daisoujou": {
         "item": "Makouga",
+        "skillCard": true,
         "arcana": "Hierophant",
         "level": 42,
         "stats": [22, 33, 24, 25, 29],
@@ -717,6 +750,7 @@ const personaMap : PersonaMap = {
     },
     "Dakini": {
         "item": "Deathbound",
+        "skillCard": true,
         "arcana": "Empress",
         "level": 50,
         "stats": [34, 32, 34, 28, 29],
@@ -734,6 +768,7 @@ const personaMap : PersonaMap = {
     },
     "Decarabia": {
         "item": "Fire Boost",
+        "skillCard": true,
         "arcana": "Fool",
         "level": 32,
         "stats": [21, 23, 19, 22, 18],
@@ -751,6 +786,7 @@ const personaMap : PersonaMap = {
     },
     "Dionysus": {
         "item": "Thermopylae",
+        "skillCard": true,
         "arcana": "Fool",
         "level": 61,
         "stats": [35, 41, 38, 40, 36],
@@ -767,6 +803,7 @@ const personaMap : PersonaMap = {
     },
     "Dominion": {
         "item": "Makougaon",
+        "skillCard": true,
         "arcana": "Justice",
         "level": 68,
         "stats": [46, 47, 45, 48, 40],
@@ -784,6 +821,7 @@ const personaMap : PersonaMap = {
     },
     "Eligor": {
         "item": "Tarukaja",
+        "skillCard": true,
         "arcana": "Emperor",
         "level": 16,
         "stats": [12, 10, 13, 10, 10],
@@ -818,6 +856,7 @@ const personaMap : PersonaMap = {
     },
     "Phoenix": {
         "item": "Nuke Boost",
+        "skillCard": true,
         "arcana": "Hierophant",
         "level": 22,
         "stats": [14, 15, 15, 18, 11],
@@ -844,6 +883,7 @@ const personaMap : PersonaMap = {
     },
     "Forneus": {
         "item": "Masukunda",
+        "skillCard": true,
         "arcana": "Hierophant",
         "level": 63,
         "stats": [41, 39, 40, 42, 34],
@@ -861,6 +901,7 @@ const personaMap : PersonaMap = {
     },
     "Fortuna": {
         "item": "Fast Heal",
+        "skillCard": true,
         "arcana": "Fortune",
         "level": 46,
         "stats": [23, 32, 29, 34, 27],
@@ -877,6 +918,7 @@ const personaMap : PersonaMap = {
     },
     "Futsunushi": {
         "item": "Brave Blade",
+        "skillCard": true,
         "arcana": "Magician",
         "level": 76,
         "stats": [54, 48, 47, 49, 37],
@@ -895,6 +937,7 @@ const personaMap : PersonaMap = {
     },
     "Fuu-Ki": {
         "item": "Wind Boost",
+        "skillCard": true,
         "arcana": "Star",
         "level": 23,
         "stats": [14, 17, 16, 15, 14],
@@ -904,6 +947,7 @@ const personaMap : PersonaMap = {
     },
     "Gabriel": {
         "item": "Mabufudyne",
+        "skillCard": true,
         "arcana": "Temperance",
         "level": 77,
         "stats": [43, 51, 48, 54, 42],
@@ -921,6 +965,7 @@ const personaMap : PersonaMap = {
     },
     "Ganesha": {
         "item": "Miracle Punch",
+        "skillCard": true,
         "arcana": "Sun",
         "level": 53,
         "stats": [39, 31, 37, 33, 26],
@@ -938,6 +983,7 @@ const personaMap : PersonaMap = {
     },
     "Garuda": {
         "item": "Wind Amp",
+        "skillCard": true,
         "arcana": "Star",
         "level": 52,
         "stats": [30, 36, 29, 39, 29],
@@ -955,6 +1001,7 @@ const personaMap : PersonaMap = {
     },
     "Genbu": {
         "item": "Patra",
+        "skillCard": true,
         "arcana": "Temperance",
         "level": 7,
         "stats": [5, 6, 7, 6, 4],
@@ -963,6 +1010,7 @@ const personaMap : PersonaMap = {
     },
     "Girimehkala": {
         "item": "Marakunda",
+        "skillCard": true,
         "arcana": "Moon",
         "level": 44,
         "stats": [36, 24, 32, 32, 15],
@@ -988,6 +1036,7 @@ const personaMap : PersonaMap = {
     },
     "Hariti": {
         "item": "Spirit Drain",
+        "skillCard": true,
         "arcana": "Empress",
         "level": 40,
         "stats": [24, 29, 25, 26, 23],
@@ -1006,6 +1055,7 @@ const personaMap : PersonaMap = {
     },
     "Hecatoncheires": {
         "item": "Endure",
+        "skillCard": true,
         "arcana": "Hanged Man",
         "level": 42,
         "stats": [29, 25, 30, 25, 24],
@@ -1039,6 +1089,7 @@ const personaMap : PersonaMap = {
     },
     "High Pixie": {
         "item": "Diarama",
+        "skillCard": true,
         "arcana": "Fool",
         "level": 16,
         "stats": [8, 14, 10, 13, 10],
@@ -1066,6 +1117,7 @@ const personaMap : PersonaMap = {
     },
     "Horus": {
         "item": "Kougaon",
+        "skillCard": true,
         "arcana": "Sun",
         "level": 49,
         "stats": [30, 32, 32, 35, 25],
@@ -1082,6 +1134,7 @@ const personaMap : PersonaMap = {
     },
     "Hua Po": {
         "item": "Agilao",
+        "skillCard": true,
         "arcana": "Hanged Man",
         "level": 9,
         "stats": [4, 10, 4, 8, 8],
@@ -1091,6 +1144,7 @@ const personaMap : PersonaMap = {
     },
     "Incubus": {
         "item": "Dream Needle",
+        "skillCard": true,
         "arcana": "Devil",
         "level": 5,
         "stats": [4, 6, 4, 5, 3],
@@ -1100,6 +1154,7 @@ const personaMap : PersonaMap = {
     },
     "Inugami": {
         "item": "Brain Shake",
+        "skillCard": true,
         "arcana": "Hanged Man",
         "level": 14,
         "stats": [11, 9, 9, 12, 8],
@@ -1117,6 +1172,7 @@ const personaMap : PersonaMap = {
     },
     "Ippon-Datara": {
         "item": "Sledgehammer",
+        "skillCard": true,
         "arcana": "Hermit",
         "level": 13,
         "stats": [11, 7, 14, 6, 8],
@@ -1133,6 +1189,7 @@ const personaMap : PersonaMap = {
     },
     "Ishtar": {
         "item": "Salvation",
+        "skillCard": true,
         "arcana": "Lovers",
         "level": 85,
         "stats": [48, 59, 49, 58, 48],
@@ -1150,6 +1207,7 @@ const personaMap : PersonaMap = {
     },
     "Isis": {
         "item": "Zionga",
+        "skillCard": true,
         "arcana": "Priestess",
         "level": 26,
         "stats": [15, 21, 16, 18, 15],
@@ -1184,6 +1242,7 @@ const personaMap : PersonaMap = {
     },
     "Izanagi Picaro": {
         "item": "Growth 3",
+        "skillCard": true,
         "arcana": "Fool",
         "level": 23,
         "stats": [16, 15, 15, 16, 14],
@@ -1219,6 +1278,7 @@ const personaMap : PersonaMap = {
     },
     "Jatayu": {
         "item": "Flash Bomb",
+        "skillCard": true,
         "arcana": "Tower",
         "level": 32,
         "stats": [18, 21, 20, 27, 17],
@@ -1235,6 +1295,7 @@ const personaMap : PersonaMap = {
     },
     "Jikokuten": {
         "item": "Memory Blow",
+        "skillCard": true,
         "arcana": "Temperance",
         "level": 25,
         "stats": [19, 12, 19, 17, 15],
@@ -1268,6 +1329,7 @@ const personaMap : PersonaMap = {
     },
     "Kaguya Picaro": {
         "item": "Diarahan",
+        "skillCard": true,
         "arcana": "Moon",
         "level": 25,
         "stats": [17, 20, 19, 15, 11],
@@ -1285,6 +1347,7 @@ const personaMap : PersonaMap = {
     },
     "Kaiwan": {
         "item": "Mapsio",
+        "skillCard": true,
         "arcana": "Star",
         "level": 36,
         "stats": [23, 26, 24, 22, 20],
@@ -1318,6 +1381,7 @@ const personaMap : PersonaMap = {
     },
     "Kelpie": {
         "item": "Terror Claw",
+        "skillCard": true,
         "arcana": "Strength",
         "level": 6,
         "stats": [5, 5, 5, 6, 4],
@@ -1327,6 +1391,7 @@ const personaMap : PersonaMap = {
     },
     "Kikuri-Hime": {
         "item": "Divine Grace",
+        "skillCard": true,
         "arcana": "Priestess",
         "level": 40,
         "stats": [22, 31, 24, 28, 22],
@@ -1336,6 +1401,7 @@ const personaMap : PersonaMap = {
     },
     "Kin-Ki": {
         "item": "Regenerate 1",
+        "skillCard": true,
         "arcana": "Chariot",
         "level": 25,
         "stats": [21, 13, 21, 15, 12],
@@ -1370,6 +1436,7 @@ const personaMap : PersonaMap = {
     },
     "Kodama": {
         "item": "Fear Boost",
+        "skillCard": true,
         "arcana": "Star",
         "level": 11,
         "stats": [7, 11, 8, 10, 4],
@@ -1423,6 +1490,7 @@ const personaMap : PersonaMap = {
     },
     "Koppa Tengu": {
         "item": "Growth 1",
+        "skillCard": true,
         "arcana": "Temperance",
         "level": 11,
         "stats": [7, 8, 8, 11, 6],
@@ -1432,6 +1500,7 @@ const personaMap : PersonaMap = {
     },
     "Koropokguru": {
         "item": "Bufu",
+        "skillCard": true,
         "arcana": "Hermit",
         "level": 9,
         "stats": [5, 8, 6, 9, 6],
@@ -1441,6 +1510,7 @@ const personaMap : PersonaMap = {
     },
     "Koumokuten": {
         "item": "Regenerate 2",
+        "skillCard": true,
         "arcana": "Hermit",
         "level": 49,
         "stats": [37, 32, 34, 31, 25],
@@ -1458,6 +1528,7 @@ const personaMap : PersonaMap = {
     },
     "Kumbhanda": {
         "item": "Rage Boost",
+        "skillCard": true,
         "arcana": "Hermit",
         "level": 42,
         "stats": [29, 25, 27, 26, 26],
@@ -1474,6 +1545,7 @@ const personaMap : PersonaMap = {
     },
     "Kurama Tengu": {
         "item": "Garudyne",
+        "skillCard": true,
         "arcana": "Hermit",
         "level": 56,
         "stats": [34, 38, 34, 42, 27],
@@ -1482,6 +1554,7 @@ const personaMap : PersonaMap = {
     },
     "Kushinada": {
         "item": "Wind Wall",
+        "skillCard": true,
         "arcana": "Lovers",
         "level": 42,
         "stats": [24, 30, 26, 28, 25],
@@ -1498,6 +1571,7 @@ const personaMap : PersonaMap = {
     },
     "Kushi Mitama": {
         "item": "Forget Boost",
+        "skillCard": true,
         "arcana": "Strength",
         "level": 14,
         "stats": [8, 12, 11, 9, 9],
@@ -1514,6 +1588,7 @@ const personaMap : PersonaMap = {
     },
     "Lachesis": {
         "item": "Ice Boost",
+        "skillCard": true,
         "arcana": "Fortune",
         "level": 34,
         "stats": [18, 25, 22, 25, 19],
@@ -1530,6 +1605,7 @@ const personaMap : PersonaMap = {
     },
     "Lakshmi": {
         "item": "Life Aid",
+        "skillCard": true,
         "arcana": "Fortune",
         "level": 69,
         "stats": [40, 47, 43, 46, 38],
@@ -1547,6 +1623,7 @@ const personaMap : PersonaMap = {
     },
     "Lamia": {
         "item": "Despair Boost",
+        "skillCard": true,
         "arcana": "Empress",
         "level": 26,
         "stats": [21, 15, 18, 19, 12],
@@ -1564,6 +1641,7 @@ const personaMap : PersonaMap = {
     },
     "Leanan Sidhe": {
         "item": "Recarm",
+        "skillCard": true,
         "arcana": "Lovers",
         "level": 19,
         "stats": [9, 17, 12, 16, 10],
@@ -1582,6 +1660,7 @@ const personaMap : PersonaMap = {
     },
     "Lilim": {
         "item": "Lullaby",
+        "skillCard": true,
         "arcana": "Devil",
         "level": 32,
         "stats": [17, 23, 18, 25, 20],
@@ -1599,6 +1678,7 @@ const personaMap : PersonaMap = {
     },
     "Lilith": {
         "item": "Mabufudyne",
+        "skillCard": true,
         "arcana": "Moon",
         "level": 60,
         "stats": [33, 43, 37, 39, 35],
@@ -1634,6 +1714,7 @@ const personaMap : PersonaMap = {
     },
     "Mada": {
         "item": "Unshaken Will",
+        "skillCard": true,
         "arcana": "Tower",
         "level": 85,
         "stats": [52, 51, 58, 56, 45],
@@ -1669,6 +1750,7 @@ const personaMap : PersonaMap = {
     },
     "Magatsu-Izanagi Picaro": {
         "item": "Heat Riser",
+        "skillCard": true,
         "arcana": "Tower",
         "level": 48,
         "stats": [40, 38, 35, 27, 11],
@@ -1685,7 +1767,8 @@ const personaMap : PersonaMap = {
         "dlc": true
     },
     "Makami": {
-        "item": "Makajama",
+        "item": "Makajam",
+        "skillCard": true,
         "arcana": "Temperance",
         "level": 15,
         "stats": [13, 12, 8, 11, 8],
@@ -1703,6 +1786,7 @@ const personaMap : PersonaMap = {
     },
     "Mandrake": {
         "item": "Energy Drop",
+        "skillCard": true,
         "arcana": "Death",
         "level": 3,
         "stats": [2, 3, 3, 4, 4],
@@ -1712,6 +1796,7 @@ const personaMap : PersonaMap = {
     },
     "Mara": {
         "item": "Maragidyne",
+        "skillCard": true,
         "arcana": "Tower",
         "level": 73,
         "stats": [47, 46, 49, 45, 39],
@@ -1728,6 +1813,7 @@ const personaMap : PersonaMap = {
     },
     "Matador": {
         "item": "Garula",
+        "skillCard": true,
         "arcana": "Death",
         "level": 19,
         "stats": [12, 13, 12, 16, 11],
@@ -1736,6 +1822,7 @@ const personaMap : PersonaMap = {
     },
     "Melchizedek": {
         "item": "Mahamaon",
+        "skillCard": true,
         "arcana": "Justice",
         "level": 60,
         "stats": [37, 38, 41, 39, 32],
@@ -1770,6 +1857,7 @@ const personaMap : PersonaMap = {
     },
     "Messiah Picaro": {
         "item": "Insta-Heal",
+        "skillCard": true,
         "arcana": "Judgement",
         "level": 90,
         "stats": [56, 56, 55, 55, 55],
@@ -1857,6 +1945,7 @@ const personaMap : PersonaMap = {
     },
     "Mokoi": {
         "item": "Dekunda",
+        "skillCard": true,
         "arcana": "Death",
         "level": 9,
         "stats": [9, 5, 6, 10, 4],
@@ -1873,6 +1962,7 @@ const personaMap : PersonaMap = {
     },
     "Moloch": {
         "item": "Nuke Amp",
+        "skillCard": true,
         "arcana": "Hanged Man",
         "level": 60,
         "stats": [32, 45, 42, 31, 37],
@@ -1889,6 +1979,7 @@ const personaMap : PersonaMap = {
     },
     "Mot": {
         "item": "Concentrate",
+        "skillCard": true,
         "arcana": "Death",
         "level": 72,
         "stats": [43, 51, 48, 42, 39],
@@ -1921,6 +2012,7 @@ const personaMap : PersonaMap = {
     },
     "Mothman": {
         "item": "Foul Breath",
+        "skillCard": true,
         "arcana": "Moon",
         "level": 33,
         "stats": [21, 24, 16, 24, 21],
@@ -1937,6 +2029,7 @@ const personaMap : PersonaMap = {
     },
     "Naga": {
         "item": "Elec Boost",
+        "skillCard": true,
         "arcana": "Hermit",
         "level": 24,
         "stats": [15, 17, 15, 17, 15],
@@ -1970,6 +2063,7 @@ const personaMap : PersonaMap = {
     },
     "Nebiros": {
         "item": "Eigaon",
+        "skillCard": true,
         "arcana": "Devil",
         "level": 62,
         "stats": [39, 40, 42, 36, 36],
@@ -2021,6 +2115,7 @@ const personaMap : PersonaMap = {
     },
     "Nigi Mitama": {
         "item": "Me Patra",
+        "skillCard": true,
         "arcana": "Temperance",
         "level": 20,
         "stats": [12, 14, 14, 15, 12],
@@ -2029,6 +2124,7 @@ const personaMap : PersonaMap = {
     },
     "Norn": {
         "item": "Diarahan",
+        "skillCard": true,
         "arcana": "Fortune",
         "level": 52,
         "stats": [30, 38, 33, 34, 28],
@@ -2045,6 +2141,7 @@ const personaMap : PersonaMap = {
     },
     "Nue": {
         "item": "Skull Cracker",
+        "skillCard": true,
         "arcana": "Moon",
         "level": 20,
         "stats": [16, 10, 17, 14, 10],
@@ -2062,6 +2159,7 @@ const personaMap : PersonaMap = {
     },
     "Obariyon": {
         "item": "Lucky Punch",
+        "skillCard": true,
         "arcana": "Fool",
         "level": 8,
         "stats": [7, 3, 9, 8, 4],
@@ -2071,6 +2169,7 @@ const personaMap : PersonaMap = {
     },
     "Oberon": {
         "item": "Elec Amp",
+        "skillCard": true,
         "arcana": "Emperor",
         "level": 66,
         "stats": [40, 44, 43, 43, 35],
@@ -2122,6 +2221,7 @@ const personaMap : PersonaMap = {
     },
     "Ongyo-Ki": {
         "item": "Myriad Slashes",
+        "skillCard": true,
         "arcana": "Hermit",
         "level": 75,
         "stats": [56, 42, 47, 48, 39],
@@ -2140,6 +2240,7 @@ const personaMap : PersonaMap = {
     },
     "Oni": {
         "item": "Rampage",
+        "skillCard": true,
         "arcana": "Strength",
         "level": 19,
         "stats": [17, 8, 16, 13, 10],
@@ -2149,6 +2250,7 @@ const personaMap : PersonaMap = {
     },
     "Onmoraki": {
         "item": "Confuse Boost",
+        "skillCard": true,
         "arcana": "Moon",
         "level": 12,
         "stats": [9, 12, 7, 10, 5],
@@ -2176,6 +2278,7 @@ const personaMap : PersonaMap = {
     },
     "Orobas": {
         "item": "Maragi",
+        "skillCard": true,
         "arcana": "Hierophant",
         "level": 17,
         "stats": [11, 14, 15, 12, 6],
@@ -2202,6 +2305,7 @@ const personaMap : PersonaMap = {
     },
     "Orpheus Picaro": {
         "item": "Agidyne",
+        "skillCard": true,
         "arcana": "Fool",
         "level": 29,
         "stats": [19, 19, 19, 19, 18],
@@ -2219,6 +2323,7 @@ const personaMap : PersonaMap = {
     },
     "Orthrus": {
         "item": "Burn Boost",
+        "skillCard": true,
         "arcana": "Hanged Man",
         "level": 21,
         "stats": [16, 14, 14, 19, 7],
@@ -2228,6 +2333,7 @@ const personaMap : PersonaMap = {
     },
     "Ose": {
         "item": "Matarukaja",
+        "skillCard": true,
         "arcana": "Fool",
         "level": 42,
         "stats": [32, 24, 25, 31, 21],
@@ -2237,6 +2343,7 @@ const personaMap : PersonaMap = {
     },
     "Pale Rider": {
         "item": "Megidola",
+        "skillCard": true,
         "arcana": "Death",
         "level": 53,
         "stats": [34, 34, 33, 39, 26],
@@ -2253,6 +2360,7 @@ const personaMap : PersonaMap = {
     },
     "Parvati": {
         "item": "Psiodyne",
+        "skillCard": true,
         "arcana": "Lovers",
         "level": 56,
         "stats": [33, 39, 33, 39, 31],
@@ -2270,6 +2378,7 @@ const personaMap : PersonaMap = {
     },
     "Pazuzu": {
         "item": "Maeiga",
+        "skillCard": true,
         "arcana": "Devil",
         "level": 43,
         "stats": [29, 30, 27, 26, 24],
@@ -2303,6 +2412,7 @@ const personaMap : PersonaMap = {
     },
     "Pixie": {
         "item": "Dia",
+        "skillCard": true,
         "arcana": "Lovers",
         "level": 2,
         "stats": [1, 3, 3, 4, 2],
@@ -2312,6 +2422,7 @@ const personaMap : PersonaMap = {
     },
     "Power": {
         "item": "Masukukaja",
+        "skillCard": true,
         "arcana": "Justice",
         "level": 41,
         "stats": [30, 26, 28, 25, 21],
@@ -2329,6 +2440,7 @@ const personaMap : PersonaMap = {
     },
     "Principality": {
         "item": "Tetraja",
+        "skillCard": true,
         "arcana": "Justice",
         "level": 29,
         "stats": [17, 19, 18, 21, 19],
@@ -2346,6 +2458,7 @@ const personaMap : PersonaMap = {
     },
     "Quetzalcoatl": {
         "item": "Regenerate 3",
+        "skillCard": true,
         "arcana": "Sun",
         "level": 63,
         "stats": [38, 42, 41, 41, 34],
@@ -2362,6 +2475,7 @@ const personaMap : PersonaMap = {
     },
     "Raja Naga": {
         "item": "Ziodyne",
+        "skillCard": true,
         "arcana": "Temperance",
         "level": 55,
         "stats": [33, 37, 36, 35, 31],
@@ -2378,6 +2492,7 @@ const personaMap : PersonaMap = {
     },
     "Rakshasa": {
         "item": "Mind Slice",
+        "skillCard": true,
         "arcana": "Strength",
         "level": 24,
         "stats": [20, 15, 18, 17, 9],
@@ -2395,6 +2510,7 @@ const personaMap : PersonaMap = {
     },
     "Rangda": {
         "item": "Bloodbath",
+        "skillCard": true,
         "arcana": "Magician",
         "level": 48,
         "stats": [28, 34, 30, 33, 26],
@@ -2404,6 +2520,7 @@ const personaMap : PersonaMap = {
     },
     "Raphael": {
         "item": "Heat Riser",
+        "skillCard": true,
         "arcana": "Lovers",
         "level": 78,
         "stats": [57, 45, 49, 55, 35],
@@ -2420,6 +2537,7 @@ const personaMap : PersonaMap = {
     },
     "Red Rider": {
         "item": "Psy Break",
+        "skillCard": true,
         "arcana": "Tower",
         "level": 41,
         "stats": [26, 27, 25, 29, 23],
@@ -2454,6 +2572,7 @@ const personaMap : PersonaMap = {
     },
     "Saki Mitama": {
         "item": "Rakukaja",
+        "skillCard": true,
         "arcana": "Lovers",
         "level": 6,
         "stats": [4, 6, 5, 6, 4],
@@ -2462,6 +2581,7 @@ const personaMap : PersonaMap = {
     },
     "Sandalphon": {
         "item": "Angelic Grace",
+        "skillCard": true,
         "arcana": "Moon",
         "level": 75,
         "stats": [46, 51, 49, 48, 38],
@@ -2478,6 +2598,7 @@ const personaMap : PersonaMap = {
     },
     "Sandman": {
         "item": "Sleep Boost",
+        "skillCard": true,
         "arcana": "Magician",
         "level": 24,
         "stats": [11, 13, 14, 20, 21],
@@ -2495,6 +2616,7 @@ const personaMap : PersonaMap = {
     },
     "Sarasvati": {
         "item": "Mediarama",
+        "skillCard": true,
         "arcana": "Priestess",
         "level": 50,
         "stats": [30, 35, 32, 33, 27],
@@ -2548,6 +2670,7 @@ const personaMap : PersonaMap = {
     },
     "Scathach": {
         "item": "Tempest Slash",
+        "skillCard": true,
         "arcana": "Priestess",
         "level": 45,
         "stats": [29, 30, 28, 30, 25],
@@ -2565,6 +2688,7 @@ const personaMap : PersonaMap = {
     },
     "Seiryu": {
         "item": "Amrita Drop",
+        "skillCard": true,
         "arcana": "Temperance",
         "level": 62,
         "stats": [38, 41, 43, 37, 34],
@@ -2581,6 +2705,7 @@ const personaMap : PersonaMap = {
     },
     "Setanta": {
         "item": "Counter",
+        "skillCard": true,
         "arcana": "Emperor",
         "level": 28,
         "stats": [20, 17, 19, 18, 17],
@@ -2596,6 +2721,7 @@ const personaMap : PersonaMap = {
     },
     "Seth": {
         "item": "One-shot Kill",
+        "skillCard": true,
         "arcana": "Tower",
         "level": 51,
         "stats": [32, 35, 30, 35, 28],
@@ -2613,6 +2739,7 @@ const personaMap : PersonaMap = {
     },
     "Shiisaa": {
         "item": "Mazio",
+        "skillCard": true,
         "arcana": "Chariot",
         "level": 16,
         "stats": [13, 9, 12, 13, 8],
@@ -2628,6 +2755,7 @@ const personaMap : PersonaMap = {
     },
     "Shiki-Ouji": {
         "item": "Dormin Rush",
+        "skillCard": true,
         "arcana": "Chariot",
         "level": 21,
         "stats": [16, 14, 15, 14, 11],
@@ -2654,6 +2782,7 @@ const personaMap : PersonaMap = {
     },
     "Siegfried": {
         "item": "Vorpal Blade",
+        "skillCard": true,
         "arcana": "Strength",
         "level": 69,
         "stats": [51, 37, 47, 48, 31],
@@ -2694,6 +2823,7 @@ const personaMap : PersonaMap = {
     },
     "Slime": {
         "item": "Headbutt",
+        "skillCard": true,
         "arcana": "Chariot",
         "level": 10,
         "stats": [9, 6, 11, 6, 5],
@@ -2739,6 +2869,7 @@ const personaMap : PersonaMap = {
     },
     "Sudama": {
         "item": "Magaru",
+        "skillCard": true,
         "arcana": "Hermit",
         "level": 17,
         "stats": [9, 14, 12, 13, 10],
@@ -2755,6 +2886,7 @@ const personaMap : PersonaMap = {
     },
     "Sui-Ki": {
         "item": "Mabufu",
+        "skillCard": true,
         "arcana": "Moon",
         "level": 24,
         "stats": [16, 15, 15, 18, 15],
@@ -2772,6 +2904,7 @@ const personaMap : PersonaMap = {
     },
     "Surt": {
         "item": "Fire Amp",
+        "skillCard": true,
         "arcana": "Magician",
         "level": 59,
         "stats": [37, 40, 39, 35, 33],
@@ -2787,6 +2920,7 @@ const personaMap : PersonaMap = {
     },
     "Suzaku": {
         "item": "Mafrei",
+        "skillCard": true,
         "arcana": "Sun",
         "level": 19,
         "stats": [11, 14, 10, 18, 11],
@@ -2836,6 +2970,7 @@ const personaMap : PersonaMap = {
     },
     "Thanatos Picaro": {
         "item": "Maeigaon",
+        "skillCard": true,
         "arcana": "Death",
         "level": 69,
         "stats": [45, 51, 43, 40, 35],
@@ -2887,6 +3022,7 @@ const personaMap : PersonaMap = {
     },
     "Thoth": {
         "item": "Growth 2",
+        "skillCard": true,
         "arcana": "Emperor",
         "level": 36,
         "stats": [21, 28, 21, 24, 21],
@@ -2904,6 +3040,7 @@ const personaMap : PersonaMap = {
     },
     "Throne": {
         "item": "Invigorate 3",
+        "skillCard": true,
         "arcana": "Justice",
         "level": 71,
         "stats": [42, 49, 47, 46, 36],
@@ -2922,6 +3059,7 @@ const personaMap : PersonaMap = {
     },
     "Titania": {
         "item": "Mediarahan",
+        "skillCard": true,
         "arcana": "Empress",
         "level": 56,
         "stats": [32, 40, 35, 38, 30],
@@ -2937,6 +3075,7 @@ const personaMap : PersonaMap = {
     },
     "Trumpeter": {
         "item": "Debilitate",
+        "skillCard": true,
         "arcana": "Judgement",
         "level": 59,
         "stats": [33, 42, 40, 38, 31],
@@ -2972,6 +3111,7 @@ const personaMap : PersonaMap = {
     },
     "Tsukiyomi Picaro": {
         "item": "Spell Master",
+        "skillCard": true,
         "arcana": "Moon",
         "level": 55,
         "stats": [41, 35, 36, 40, 20],
@@ -2989,6 +3129,7 @@ const personaMap : PersonaMap = {
     },
     "Unicorn": {
         "item": "Samarecarm",
+        "skillCard": true,
         "arcana": "Hierophant",
         "level": 39,
         "stats": [20, 27, 25, 28, 24],
@@ -3022,6 +3163,7 @@ const personaMap : PersonaMap = {
     },
     "Valkyrie": {
         "item": "Giant Slice",
+        "skillCard": true,
         "arcana": "Strength",
         "level": 44,
         "stats": [33, 24, 28, 29, 25],
@@ -3055,6 +3197,7 @@ const personaMap : PersonaMap = {
     },
     "Vishnu": {
         "item": "Riot Gun",
+        "skillCard": true,
         "arcana": "Fool",
         "level": 83,
         "stats": [56, 51, 49, 57, 43],
@@ -3073,6 +3216,7 @@ const personaMap : PersonaMap = {
     },
     "White Rider": {
         "item": "Triple Down",
+        "skillCard": true,
         "arcana": "Chariot",
         "level": 39,
         "stats": [24, 24, 25, 26, 25],
@@ -3090,6 +3234,7 @@ const personaMap : PersonaMap = {
     },
     "Yaksini": {
         "item": "Vicious Strike",
+        "skillCard": true,
         "arcana": "Empress",
         "level": 20,
         "stats": [14, 11, 13, 16, 13],
@@ -3105,7 +3250,8 @@ const personaMap : PersonaMap = {
         "personality": "Irritable"
     },
     "Yamata-no-Orochi": {
-        "item": "Oni-Kagura",
+        "item": "Oni Kagura",
+        "skillCard": true,
         "arcana": "Judgement",
         "level": 64,
         "stats": [44, 38, 48, 36, 33],
@@ -3171,6 +3317,7 @@ const personaMap : PersonaMap = {
     },
     "Zaou-Gongen": {
         "item": "God's Hand",
+        "skillCard": true,
         "arcana": "Strength",
         "level": 80,
         "stats": [57, 45, 50, 56, 39],
@@ -3188,6 +3335,7 @@ const personaMap : PersonaMap = {
     },
     "Zouchouten": {
         "item": "Sharp Student",
+        "skillCard": true,
         "arcana": "Strength",
         "level": 31,
         "stats": [22, 19, 24, 18, 17],

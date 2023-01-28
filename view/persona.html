@@ -10,10 +10,44 @@
         <span style='color: slateblue;' ng:show='persona.dlc'>This is a DLC persona!</span>
     </div>
 
-    <div ng:if='persona.item || persona.itemr' style="margin-top:10px">
-        <h3>Itemization</h3>
-        <p ng:show='persona.item'><b>Normal:</b> {{persona.item}}</p>
-        <p ng:show='persona.itemr'><b>Fusion Alarm:</b> {{persona.itemr}}</p>
+    <h3>Itemization</h3>
+    <div ng:if='persona.item' style="margin-top:10px">
+        <table class="ui table unstackable striped">
+            <thead>
+            <tr>
+                <th ng:if='persona.itemr'> </th>
+                <th ng:repeat="s in persona.itemDataHeader">{{s}}</th>
+            </tr>
+            </thead>
+        <tbody>
+            <tr ng:if='!persona.skillCard' ng:repeat="item in persona.itemData track by $index">
+                <td ng:if='persona.itemr'>Normal:</td>
+                <td>{{item.type}}</td>
+                <td>{{item.name}}</td>
+                <td>{{item.description}}</td>
+            </tr>
+            <tr ng:if='persona.skillCard' ng:repeat="item in persona.itemData track by $index">
+                <td ng:if='persona.itemr' >Normal:</td>
+                <td>{{item.elem}}</td>
+                <td>{{item.name}}</td>
+                <td>{{item.description}}</td>
+                <td>{{item.cost}}</td>
+            </tr>
+            <tr ng:if='!persona.skillCard' ng:repeat="itemr in persona.itemDataR track by $index">
+                <td>Fusion Alarm:</td>
+                <td>{{itemr.type}}</td>
+                <td>{{itemr.name}}</td>
+                <td>{{itemr.description}}</td>
+            </tr>
+            <tr ng:if='persona.skillCard' ng:repeat="itemr in persona.itemDataR track by $index">
+                <td>Fusion Alarm:</td>
+                <td>{{itemr.elem}}</td>
+                <td>{{itemr.name}}</td>
+                <td>{{itemr.description}}</td>
+                <td>{{itemr.cost}}</td>
+            </tr>
+            </tbody>
+        </table>
     </div>
 
     <h3>Stats</h3>
