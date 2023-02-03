@@ -17,7 +17,13 @@ class PersonaListController {
     private getSortValue(item) {
         let sortBy = this.$scope.sortBy;
         if (sortBy === "arcana") {
-            return item.arcana + (item.level >= 10? item.level : ("0" + item.level));
+            let arcanaIndex = Object.keys(rareCombos).indexOf(item.arcana);
+            let arcanaValue = arcanaIndex >= 10 ? arcanaIndex.toString() : "0" + arcanaIndex;
+
+            let level = 100 - item.level;
+            let levelValue = level >= 10 ? level.toString() : ("0" + level);
+            
+            return arcanaValue + levelValue;
         }
         else {
             return item[sortBy];
