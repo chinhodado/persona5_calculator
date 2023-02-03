@@ -18,7 +18,6 @@ var PersonaListController = /** @class */ (function () {
             var arcanaValue = arcanaIndex >= 10 ? arcanaIndex.toString() : "0" + arcanaIndex;
             var level = 100 - item.level;
             var levelValue = level >= 10 ? level.toString() : ("0" + level);
-            console.log(item.name + " : " + (arcanaValue + levelValue));
             return arcanaValue + levelValue;
         }
         else {
