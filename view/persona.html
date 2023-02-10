@@ -21,28 +21,32 @@
             </thead>
         <tbody>
             <tr ng:if='!persona.skillCard' ng:repeat="item in persona.itemData track by $index">
-                <td ng:if='persona.itemr'>Normal:</td>
+                <td ng:if='persona.itemr'><b>Normal:</b></td>
                 <td>{{item.type}}</td>
                 <td>{{item.name}}</td>
                 <td>{{item.description}}</td>
             </tr>
             <tr ng:if='persona.skillCard' ng:repeat="item in persona.itemData track by $index">
-                <td ng:if='persona.itemr' >Normal:</td>
-                <td>{{item.elem}}</td>
-                <td>{{item.name}}</td>
+                <td ng:if='persona.itemr' ><b>Normal:</b></td>
+                <td>Skill Card - {{item.elem}}</td>
+                <td>
+                    <a href="#/skill#{{item.name}}">{{item.name}}</a>
+                </td>
                 <td>{{item.description}}</td>
                 <td>{{item.cost}}</td>
             </tr>
             <tr ng:if='!persona.skillCard' ng:repeat="itemr in persona.itemDataR track by $index">
-                <td>Fusion Alarm:</td>
+                <td><b>Fusion Alarm:</b></td>
                 <td>{{itemr.type}}</td>
                 <td>{{itemr.name}}</td>
                 <td>{{itemr.description}}</td>
             </tr>
             <tr ng:if='persona.skillCard' ng:repeat="itemr in persona.itemDataR track by $index">
-                <td>Fusion Alarm:</td>
-                <td>{{itemr.elem}}</td>
-                <td>{{itemr.name}}</td>
+                <td><b>Fusion Alarm:</b></td>
+                <td>Skill Card - {{itemr.elem}}</td>
+                <td>
+                    <a href="#/skill#{{itemr.name}}">{{itemr.name}}</a>
+                </td>
                 <td>{{itemr.description}}</td>
                 <td>{{itemr.cost}}</td>
             </tr>
