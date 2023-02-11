@@ -657,7 +657,7 @@ const skillMap: SkillMap = {
     },
     "Sword Dance": {
         "cost": 21,
-        "effect": "Deal colossal Phys damage to 1 foe.",
+        "effect": "Deal colossal Phys damage to 1 foe with high critical.",
         "element": "phys",
         "personas": {
             "Metatron": 0,

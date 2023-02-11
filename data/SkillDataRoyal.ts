@@ -3406,7 +3406,7 @@ const skillMapRoyal: SkillMap = {
     },
     "Sword Dance": {
         "cost": 21,
-        "effect": "Deal grave Phys damage to 1 foe.",
+        "effect": "Deal grave Phys damage to 1 foe with high critical.",
         "element": "phys",
         "fuse": ["Atavaka"],
         "personas": {"Metatron": 0, "Michael": 89, "Raphael": 0, "Sandalphon": 79}
