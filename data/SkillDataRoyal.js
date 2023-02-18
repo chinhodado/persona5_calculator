@@ -68,14 +68,14 @@ var skillMapRoyal = {
         "unique": "Necronomicon"
     },
     "Adverse Resolve": {
-        "effect": "Increase critical rate when being ambushed.",
+        "effect": "Increase critical rate when surrounded.",
         "element": "passive",
         "personas": { "Arsène": 7, "Jikokuten": 28, "Rakshasa": 30, "Raphael": 82, "Thanatos Picaro": 73 },
         "talk": "Battle Fiend (Rakshasa)"
     },
     "Agi": {
         "cost": 400,
-        "effect": "Deal weak Fire damage to 1 foe.",
+        "effect": "Deal light Fire damage to 1 foe.",
         "element": "fire",
         "personas": { "Cait Sith": 0, "Hua Po": 0, "Jack-o'-Lantern": 0, "Onmoraki": 13, "Succubus": 8, "Orpheus F": 0 },
         "talk": "Crypt-Dwelling Pyromaniac (Jack-o'-Lantern)"
@@ -116,7 +116,7 @@ var skillMapRoyal = {
     },
     "Agneyastra": {
         "cost": 24,
-        "effect": "Deal 1 to 3 times medium Phys damage to all foes.",
+        "effect": "Deal medium Phys damage to all foes 1 to 3 times.",
         "element": "phys",
         "fuse": ["Asterius Picaro"],
         "personas": { "Ardha": 87, "Ongyo-Ki": 95, "Messiah Picaro": 0 }
@@ -131,9 +131,9 @@ var skillMapRoyal = {
         "element": "trait",
         "personas": { "Crystal Skull": 0, "Fafnir": 0, "Macabre": 0, "Mishaguji": 0, "Red Rider": 0 }
     },
-    "Akasha Arts": {
+    "Akashic Arts": {
         "cost": 20,
-        "effect": "Deal 1-2 times severe Phys damage to all foes.",
+        "effect": "Deal severe Phys damage to all foes 1-2 times.",
         "element": "phys",
         "unique": "Athena",
         "personas": { "Athena": 0, "Athena Picaro": 0 }
@@ -301,7 +301,7 @@ var skillMapRoyal = {
     "Ave Maria": { "effect": "Reduces costs of Support spells by 75%", "element": "trait", "personas": { "Maria": 0 } },
     "Ayamur": {
         "cost": 25,
-        "effect": "Deal 3 times medium Phys damage to 1 foe. High accuracy.",
+        "effect": "Deal medium Phys damage to 1 foe 3 times. High accuracy.",
         "element": "phys",
         "unique": "Baal",
         "personas": { "Baal": 84 }
@@ -321,7 +321,7 @@ var skillMapRoyal = {
     "Bargain Bolts": { "effect": "Reduces costs of Elec skills by 75%", "element": "trait", "personas": { "Odin": 0 } },
     "Beast Weaver": {
         "cost": 20,
-        "effect": "Deal grave Phys damage to 1 foe and user is debuffed with Tarunda.",
+        "effect": "Deal colossal Phys damage to 1 foe and user is debuffed with Tarunda.",
         "element": "phys",
         "unique": "Ariadne",
         "personas": { "Ariadne": 0, "Ariadne Picaro": 0 }
@@ -355,7 +355,7 @@ var skillMapRoyal = {
     "Bless Boost": {
         "effect": "Strengthen (non instant death) Bless attacks by 25%.",
         "element": "passive",
-        "personas": { "Daisoujou": 42, "Mithra": 36, "Power": 44, "Principality": 34 }
+        "personas": { "Daisoujou": 42, "Mitra": 36, "Power": 44, "Principality": 34 }
     },
     "Blessed Bloodline": {
         "effect": "Halves costs of Bless skills",
@@ -363,7 +363,7 @@ var skillMapRoyal = {
         "personas": {
             "Barong": 0,
             "Dominion": 0,
-            "Mithra": 0,
+            "Mitra": 0,
             "Orichalcum": 0,
             "Principality": 0,
             "Sraosha": 0,
@@ -438,7 +438,7 @@ var skillMapRoyal = {
     },
     "Brave Blade": {
         "cost": 24,
-        "effect": "Deal grave Phys damage to 1 foe.",
+        "effect": "Deal colossal Phys damage to 1 foe.",
         "element": "phys",
         "personas": {
             "Atavaka": 70,
@@ -460,7 +460,7 @@ var skillMapRoyal = {
     },
     "Bufu": {
         "cost": 400,
-        "effect": "Deal weak Ice damage to 1 foe.",
+        "effect": "Deal light Ice damage to 1 foe.",
         "element": "ice",
         "personas": { "Apsaras": 0, "Genbu": 0, "Jack Frost": 0, "Koropokkuru": 0, "Saki Mitama": 0, "Silky": 0 },
         "talk": "Mocking Snowman (Jack Frost)"
@@ -554,7 +554,7 @@ var skillMapRoyal = {
     },
     "Cleave": {
         "cost": 6,
-        "effect": "Deal weak Phys damage to 1 foe.",
+        "effect": "Deal light Phys damage to 1 foe.",
         "element": "phys",
         "personas": { "Arsène": 2, "Berith": 0, "Cait Sith": 0 },
         "talk": "Hunting Puss in Boots (Cait Sith)"
@@ -617,7 +617,7 @@ var skillMapRoyal = {
     },
     "Cornered Fang": {
         "cost": 10,
-        "effect": "Deal medium Phys damage to 1 foe. More powerful when being ambushed.",
+        "effect": "Deal medium Phys damage to 1 foe. More powerful when surrounded.",
         "element": "phys",
         "fuse": ["Shiisaa"],
         "personas": { "Flauros": 23, "Neko Shogun": 33, "Orthrus": 24 }
@@ -653,7 +653,7 @@ var skillMapRoyal = {
     },
     "Cross Slash": {
         "cost": 20,
-        "effect": "Deal 2 times heavy Phys damage to 1 foe. High accuracy.",
+        "effect": "Deal heavy Phys damage to 1 foe 2 times. High accuracy.",
         "element": "phys",
         "unique": "Izanagi",
         "personas": { "Izanagi": 0, "Izanagi Picaro": 0 }
@@ -696,7 +696,7 @@ var skillMapRoyal = {
     },
     "Deathbound": {
         "cost": 22,
-        "effect": "Deal 1 to 2 times medium Phys damage to all foes.",
+        "effect": "Deal medium Phys damage to all foes 1 to 2 times.",
         "element": "phys",
         "fuse": ["Girimehkala"],
         "personas": {
@@ -762,7 +762,7 @@ var skillMapRoyal = {
         "cost": 1000,
         "effect": "Negate all -nda debuff effects of party.",
         "element": "support",
-        "personas": { "Angel": 12, "Anubis": 37, "Mithra": 35, "Mokoi": 14, "Suzaku": 18, "Unicorn": 0, "Yatagarasu": 0 }
+        "personas": { "Angel": 12, "Anubis": 37, "Mitra": 35, "Mokoi": 14, "Suzaku": 18, "Unicorn": 0, "Yatagarasu": 0 }
     },
     "Demon's Bite": { "effect": "Doubles own HP recovery", "element": "trait", "personas": { "Ongyo-Ki": 0 } },
     "Demonic Decree": {
@@ -821,7 +821,7 @@ var skillMapRoyal = {
             "High Pixie": 19,
             "Horus": 0,
             "Isis": 0,
-            "Mithra": 0,
+            "Mitra": 0,
             "Neko Shogun": 0,
             "Nigi Mitama": 0,
             "Parvati": 0,
@@ -930,14 +930,14 @@ var skillMapRoyal = {
     },
     "Double Fangs": {
         "cost": 10,
-        "effect": "Deal 2 times medium Phys damage to 1 foe.",
+        "effect": "Deal medium Phys damage to 1 foe 2 times.",
         "element": "phys",
         "personas": { "Eligor": 18, "Makami": 0, "Orthrus": 0, "Shiisaa": 0 },
         "talk": "Twin-Headed Guardian (Orthrus)"
     },
     "Double Shot": {
         "cost": 12,
-        "effect": "Deal 2 times light Gun damage to 1 foe.",
+        "effect": "Deal light Gun damage to 1 foe 2 times.",
         "element": "gun",
         "personas": { "Kurama Tengu": 0, "Matador": 20, "Shiki-Ouji": 0 },
         "talk": "Bringer of Misfortune (Shiki-Ouji)"
@@ -949,7 +949,7 @@ var skillMapRoyal = {
     },
     "Dream Needle": {
         "cost": 8,
-        "effect": "Deal weak Gun damage and inflict Sleep (medium odds) to 1 foe.",
+        "effect": "Deal light Gun damage and inflict Sleep (medium odds) to 1 foe.",
         "element": "gun",
         "personas": { "Arsène": 5, "Incubus": 0, "Inugami": 15, "Phoenix": 0, "Pisaca": 0 }
     },
@@ -986,7 +986,7 @@ var skillMapRoyal = {
     },
     "Eiha": {
         "cost": 400,
-        "effect": "Deal weak Curse damage to 1 foe.",
+        "effect": "Deal light Curse damage to 1 foe.",
         "element": "curse",
         "personas": { "Arsène": 0, "Onmoraki": 0 }
     },
@@ -1289,7 +1289,7 @@ var skillMapRoyal = {
     "Frei": {
         "card": "CJ Theater",
         "cost": 400,
-        "effect": "Deal weak Nuclear damage to 1 foe.",
+        "effect": "Deal light Nuclear damage to 1 foe.",
         "element": "nuclear",
         "personas": { "Makami": 0, "Shiisaa": 0, "Suzaku": 0 },
         "talk": "Rooftop Lion (Shiisaa)"
@@ -1345,7 +1345,7 @@ var skillMapRoyal = {
     },
     "Garu": {
         "cost": 300,
-        "effect": "Deal weak Wind damage to 1 foe.",
+        "effect": "Deal light Wind damage to 1 foe.",
         "element": "wind",
         "personas": { "Bicorn": 6, "High Pixie": 0, "Kelpie": 0, "Kodama": 0, "Koppa Tengu": 0 },
         "talk": "Mad Marsh Horse (Kelpie)"
@@ -1365,9 +1365,9 @@ var skillMapRoyal = {
         "personas": { "Anzu": 0, "Fuu-Ki": 0, "Sandman": 0, "Stone of Scone": 0 },
         "talk": "Tornado Devil (Fuu-Ki)"
     },
-    "Gattling Blows": {
+    "Gatling Blows": {
         "cost": 16,
-        "effect": "Deal 3 to 4 times light Phys damage to 1 foe.",
+        "effect": "Deal light Phys damage to 1 foe 3 to 4 times.",
         "element": "phys",
         "personas": { "Hecatoncheires": 49 }
     },
@@ -1399,7 +1399,7 @@ var skillMapRoyal = {
     },
     "Gigantomachia": {
         "cost": 25,
-        "effect": "Deal grave Phys damage to all foes.",
+        "effect": "Deal colossal Phys damage to all foes.",
         "element": "phys",
         "personas": {
             "Abaddon": 81,
@@ -1440,7 +1440,7 @@ var skillMapRoyal = {
     },
     "God's Hand": {
         "cost": 25,
-        "effect": "Deal grave Phys damage to 1 foe.",
+        "effect": "Deal colossal Phys damage to 1 foe.",
         "element": "phys",
         "fuse": ["Cerberus"],
         "personas": { "Ardha": 0, "Bishamonten": 73, "Melchizedek": 65, "Zaou-Gongen": 0, "Messiah": 0 }
@@ -1524,7 +1524,7 @@ var skillMapRoyal = {
     },
     "Hassou Tobi": {
         "cost": 25,
-        "effect": "Deal 8 times weak Phys damage to all foes.",
+        "effect": "Deal light Phys damage to all foes 8 times.",
         "element": "phys",
         "unique": "Yoshitsune",
         "personas": { "Yoshitsune": 94 }
@@ -1766,7 +1766,7 @@ var skillMapRoyal = {
     "Just Die": { "effect": "Reduces costs of instant death skills to 0", "element": "trait", "personas": { "Alice": 0 } },
     "Kill Rush": {
         "cost": 14,
-        "effect": "Deal 1-3 times light Phys damage to 1 foe.",
+        "effect": "Deal light Phys damage to 1 foe 1-3 times.",
         "element": "phys",
         "fuse": ["Oni"],
         "personas": { "Jikokuten": 24, "Zouchouten": 0 }
@@ -1775,7 +1775,7 @@ var skillMapRoyal = {
         "cost": 800,
         "effect": "Deal medium Bless damage to 1 foe.",
         "element": "bless",
-        "personas": { "Mithra": 0, "Stone of Scone": 0 },
+        "personas": { "Mitra": 0, "Stone of Scone": 0 },
         "talk": "Expressionless Beast (Unicorn)"
     },
     "Kougaon": {
@@ -1787,7 +1787,7 @@ var skillMapRoyal = {
     },
     "Kouha": {
         "cost": 400,
-        "effect": "Deal weak Bless damage to 1 foe.",
+        "effect": "Deal light Bless damage to 1 foe.",
         "element": "bless",
         "personas": { "Angel": 0 },
         "talk": "Heavenly Punisher (Archangel)"
@@ -1795,7 +1795,7 @@ var skillMapRoyal = {
     "Kuzunoha's Order": { "effect": "Reduces skill costs by 25%", "element": "passive" },
     "Laevateinn": { "cost": 25, "effect": "Colossal damage to 1 foe", "element": "phys", "unique": "Loki" },
     "Last Stand": {
-        "effect": "Reduces enemy hit rate by 2/3 when ambushed",
+        "effect": "Reduces enemy hit rate by 2/3 when surrounded",
         "element": "passive",
         "personas": { "Ongyo-Ki": 0, "Red Rider": 46, "Yatagarasu": 60, "Yoshitsune": 89 }
     },
@@ -1841,7 +1841,7 @@ var skillMapRoyal = {
     },
     "Lunge": {
         "cost": 5,
-        "effect": "Deal weak Phys damage to 1 foe.",
+        "effect": "Deal light Phys damage to 1 foe.",
         "element": "phys",
         "personas": { "Agathion": 4, "Bicorn": 0, "Kelpie": 0, "Mandrake": 4, "Slime": 0 },
         "talk": "Dirty Two-Horned Beast (Bicorn)"
@@ -1855,7 +1855,7 @@ var skillMapRoyal = {
     "Mabufu": {
         "card": "CJ BBB",
         "cost": 1000,
-        "effect": "Deal weak Ice damage to all foes.",
+        "effect": "Deal light Ice damage to all foes.",
         "element": "ice",
         "fuse": ["Koropokkuru"],
         "personas": { "Genbu": 10, "Jack Frost": 12, "Koropokkuru": 14, "Regent": 0, "Sui-Ki": 0 },
@@ -1918,13 +1918,13 @@ var skillMapRoyal = {
     },
     "Maeiha": {
         "cost": 1000,
-        "effect": "Deal weak Curse damage to all foes.",
+        "effect": "Deal light Curse damage to all foes.",
         "element": "curse",
         "personas": { "Choronzon": 29, "Nue": 0, "Regent": 0 }
     },
     "Mafrei": {
         "cost": 1000,
-        "effect": "Deal weak Nuclear damage to all foes.",
+        "effect": "Deal light Nuclear damage to all foes.",
         "element": "nuclear",
         "fuse": ["Makami"],
         "personas": { "Makami": 17, "Regent": 0, "Suzaku": 19 },
@@ -2000,7 +2000,7 @@ var skillMapRoyal = {
         "cost": 1400,
         "element": "bless",
         "fuse": ["Archangel"],
-        "personas": { "Clotho": 0, "Isis": 0, "Mithra": 0, "Unicorn": 0 },
+        "personas": { "Clotho": 0, "Isis": 0, "Mitra": 0, "Unicorn": 0 },
         "talk": "She of Life and Death (Isis)"
     },
     "Mahamaon": {
@@ -2077,7 +2077,7 @@ var skillMapRoyal = {
         "effect": "Deal medium Bless damage to all foes.",
         "element": "bless",
         "fuse": ["Isis"],
-        "personas": { "Anubis": 0, "Daisoujou": 0, "Isis": 0, "Mithra": 34, "Orlov": 0, "Power": 43, "Principality": 0 },
+        "personas": { "Anubis": 0, "Daisoujou": 0, "Isis": 0, "Mitra": 34, "Orlov": 0, "Power": 43, "Principality": 0 },
         "talk": "Divine Warrior (Power)"
     },
     "Makougaon": {
@@ -2097,7 +2097,7 @@ var skillMapRoyal = {
     },
     "Makouha": {
         "cost": 1000,
-        "effect": "Deal weak Bless damage to all foes.",
+        "effect": "Deal light Bless damage to all foes.",
         "element": "bless",
         "fuse": ["Angel"],
         "personas": { "Nigi Mitama": 0, "Regent": 0 }
@@ -2130,7 +2130,7 @@ var skillMapRoyal = {
     },
     "Mapsi": {
         "cost": 1000,
-        "effect": "Deal weak Psy damage to all foes.",
+        "effect": "Deal light Psy damage to all foes.",
         "element": "psy",
         "personas": { "Leanan Sidhe": 22, "Matador": 18, "Regent": 0, "Shiki-Ouji": 19, "Sudama": 0 }
     },
@@ -2151,7 +2151,7 @@ var skillMapRoyal = {
     "Maragi": {
         "card": "CJ BBB",
         "cost": 1000,
-        "effect": "Deal weak Fire damage to all foes.",
+        "effect": "Deal light Fire damage to all foes.",
         "element": "fire",
         "fuse": ["Cait Sith"],
         "personas": { "Eligor": 0, "Hua Po": 13, "Orobas": 0, "Orthrus": 0, "Regent": 0, "Orpheus F Picaro": 0 }
@@ -2296,7 +2296,7 @@ var skillMapRoyal = {
     },
     "Mazio": {
         "cost": 1000,
-        "effect": "Deal weak Electric damage to all foes.",
+        "effect": "Deal light Electric damage to all foes.",
         "element": "electric",
         "fuse": ["Agathion"],
         "personas": { "Ame-no-Uzume": 0, "Regent": 0 }
@@ -2540,7 +2540,7 @@ var skillMapRoyal = {
     },
     "Myriad Slashes": {
         "cost": 20,
-        "effect": "Deal 2 to 3 times medium Phys damage to 1 foe.",
+        "effect": "Deal medium Phys damage to 1 foe 2 to 3 times.",
         "element": "phys",
         "fuse": ["Dakini"],
         "personas": {
@@ -2800,7 +2800,7 @@ var skillMapRoyal = {
     "Psi": {
         "card": "CJ Theater",
         "cost": 400,
-        "effect": "Deal weak Psy damage to 1 foe.",
+        "effect": "Deal light Psy damage to 1 foe.",
         "element": "psy",
         "personas": { "Kodama": 12, "Matador": 0 },
         "talk": "Hanging Tree Spirit (Kodama)"
@@ -2916,7 +2916,7 @@ var skillMapRoyal = {
     },
     "Rampage": {
         "cost": 13,
-        "effect": "Deal 1 to 3 times weak Phys damage to all foes.",
+        "effect": "Deal light Phys damage to all foes 1 to 3 times.",
         "element": "phys",
         "personas": { "Choronzon": 0, "Ippon-Datara": 15, "Oni": 0, "Pisaca": 0, "Shiisaa": 17 },
         "talk": "Chivalrous Fiend (Oni)"
@@ -3200,7 +3200,7 @@ var skillMapRoyal = {
     },
     "Shining Arrows": {
         "cost": 2200,
-        "effect": "Deal 4 to 8 times weak Bless damage to all foes.",
+        "effect": "Deal light Bless damage to all foes 4 to 8 times.",
         "element": "bless",
         "unique": "Kaguya",
         "personas": { "Kaguya": 0, "Kaguya Picaro": 0 }
@@ -3390,7 +3390,7 @@ var skillMapRoyal = {
     },
     "Swift Strike": {
         "cost": 17,
-        "effect": "Deal 2 to 4 times weak Phys damage to all foes.",
+        "effect": "Deal miniscule Phys damage to all foes 2-4 times.",
         "element": "phys",
         "personas": {
             "Byakko": 0,
@@ -3406,7 +3406,7 @@ var skillMapRoyal = {
     },
     "Sword Dance": {
         "cost": 21,
-        "effect": "Deal grave Phys damage to 1 foe with high critical.",
+        "effect": "Deal colossal Phys damage to 1 foe with high critical.",
         "element": "phys",
         "fuse": ["Atavaka"],
         "personas": { "Metatron": 0, "Michael": 89, "Raphael": 0, "Sandalphon": 79 }
@@ -3472,7 +3472,7 @@ var skillMapRoyal = {
     },
     "Tempest Slash": {
         "cost": 17,
-        "effect": "Deal 3 to 5 times minuscule Phys damage to 1 foe.",
+        "effect": "Deal minuscule Phys damage to 1 foe 3 to 5 times .",
         "element": "phys",
         "personas": { "Ganesha": 0, "Hanuman": 0, "Kumbhanda": 43, "Ose": 43 },
         "talk": "Nimble Monkey King (Hanuman)"
@@ -3528,9 +3528,9 @@ var skillMapRoyal = {
     },
     "Thermopylae": {
         "cost": 3000,
-        "effect": "Increase party's Attack, Defense and Agility for 3 turns. Only usable if the party is being ambushed.",
+        "effect": "Increase party's Attack, Defense and Agility for 3 turns. Only usable if the party is surrounded.",
         "element": "support",
-        "personas": { "Attis": 0, "Dionysus": 72, "Mithra": 38 }
+        "personas": { "Attis": 0, "Dionysus": 72, "Mitra": 38 }
     },
     "Thunder Reign": {
         "cost": 4800,
@@ -3568,7 +3568,7 @@ var skillMapRoyal = {
     },
     "Triple Down": {
         "cost": 16,
-        "effect": "Deal 3 times small Gun damage to all foes.",
+        "effect": "Deal light Gun damage to all foes 3 times.",
         "element": "gun",
         "fuse": ["Shiki-Ouji"],
         "personas": { "Bugs": 52, "Vasuki": 0, "White Rider": 0 }
@@ -3743,7 +3743,7 @@ var skillMapRoyal = {
     },
     "Zio": {
         "cost": 400,
-        "effect": "Deal weak Electric damage to 1 foe.",
+        "effect": "Deal light Electric damage to 1 foe.",
         "element": "electric",
         "personas": { "Agathion": 7, "Pixie": 0 }
     },

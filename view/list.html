@@ -15,6 +15,8 @@
         <th><a ng-click="sortBy = 'level'; sortReverse = !sortReverse">Level</a></th>
         <th><a ng-click="sortBy = 'name'; sortReverse = !sortReverse">Name</a></th>
         <th><a ng-click="sortBy = 'arcana'; sortReverse = !sortReverse">Arcana</a></th>
+
+        <th class="mobile-hidden"><a ng-click="sortBy = 'inherits'; sortReverse = !sortReverse">Inherits</a></th>
         <th class="mobile-hidden"><a ng-click="sortBy = 'strength'; sortReverse = !sortReverse">Strength</a></th>
         <th class="mobile-hidden"><a ng-click="sortBy = 'magic'; sortReverse = !sortReverse">Magic</a></th>
         <th class="mobile-hidden"><a ng-click="sortBy = 'endurance'; sortReverse = !sortReverse">Endurance</a></th>
@@ -30,6 +32,8 @@
         <th class="mobile-hidden"><a ng-click="sortBy = 'nuclearValue'; sortReverse = !sortReverse">Nuclear</a></th>
         <th class="mobile-hidden"><a ng-click="sortBy = 'blessValue'; sortReverse = !sortReverse">Bless</a></th>
         <th class="mobile-hidden"><a ng-click="sortBy = 'curseValue'; sortReverse = !sortReverse">Curse</a></th>
+
+        <th class="mobile-hidden"><a ng-click="sortBy = 'area'; sortReverse = !sortReverse">Mementos Location</th>
     </tr>
     </thead>
     <tbody>
@@ -40,6 +44,9 @@
             <span class="dlc-label" ng-if="persona.dlc">DLC</span>
         </td>
         <td class="left-border">{{persona.arcana}}</td>
+        
+        <td class="mobile-hidden left-border" ng-if="persona.inherits">{{persona.inherits}}</td>
+        <td class="mobile-hidden left-border" ng-if="!persona.inherits">-</td>
 
         <td class="mobile-hidden left-border">{{persona.strength}}</td>
         <td class="mobile-hidden">{{persona.magic}}</td>
@@ -56,6 +63,9 @@
         <td class="mobile-hidden {{persona.nuclear}}">{{persona.nuclear}}</td>
         <td class="mobile-hidden {{persona.bless}}">{{persona.bless}}</td>
         <td class="mobile-hidden {{persona.curse}}">{{persona.curse}}</td>
+
+        <td class="mobile-hidden left-border {{persona.area}}"><span title="{{persona.floor}}" class="dlc-label" 
+            style="background-color:#c3c8cb" ng-if="persona.floor">?</span> {{persona.area}}</td>
     </tr>
     </tbody>
 </table>

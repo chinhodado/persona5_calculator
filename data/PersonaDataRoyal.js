@@ -1,6 +1,6 @@
 var personaMapRoyal = {
     "Abaddon": {
-        "inherits": "curse",
+        "inherits": "Curse",
         "item": "Megaton Raid Belt",
         "itemr": "God's Hand Belt",
         "level": 75,
@@ -16,10 +16,12 @@ var personaMapRoyal = {
             "Gigantomachia": 81
         },
         "stats": [51, 42, 58, 38, 43],
-        "trait": "Mouth of Savoring"
+        "trait": "Mouth of Savoring",
+        "area": "Da'at",
+        "floor": "All"
     },
     "Agathion": {
-        "inherits": "elec",
+        "inherits": "Electric",
         "item": "Zio",
         "itemr": "Mazio",
         "skillCard": true,
@@ -28,11 +30,13 @@ var personaMapRoyal = {
         "elems": ["-", "rs", "-", "-", "rs", "wk", "-", "-", "-", "-"],
         "skills": {"Dia": 0, "Baisudi": 0, "Lunge": 4, "Rakukaja": 6, "Zio": 7, "Dodge Elec": 8},
         "stats": [3, 4, 5, 7, 3],
-        "trait": "Rare Antibody"
+        "trait": "Rare Antibody",
+        "area": "Aiyatsbus",
+        "floor": "L1"
     },
     "Alice": {
         "special": true,
-        "inherits": "curse",
+        "inherits": "Curse",
         "item": "Spiral Hell Ring",
         "itemr": "Cursed Ribbon",
         "level": 83,
@@ -52,7 +56,7 @@ var personaMapRoyal = {
         "max": true
     },
     "Alilat": {
-        "inherits": "ice",
+        "inherits": "Ice",
         "item": "Mabufudyne",
         "itemr": "Diamond Dust",
         "skillCard": true,
@@ -74,7 +78,7 @@ var personaMapRoyal = {
         "note": "Only available after 1/12"
     },
     "Ame-no-Uzume": {
-        "inherits": "almighty",
+        "inherits": "Almighty",
         "item": "Senryou Yakusha",
         "itemr": "Senryou Yakusha R",
         "level": 13,
@@ -82,10 +86,12 @@ var personaMapRoyal = {
         "elems": ["-", "-", "ab", "-", "-", "-", "wk", "-", "-", "-"],
         "skills": {"Mazio": 0, "Magaru": 0, "Media": 0, "Nocturnal Flash": 15, "Baisudi": 16, "Divine Grace": 18},
         "stats": [7, 10, 9, 11, 9],
-        "trait": "Electric Bloodline"
+        "trait": "Electric Bloodline",
+        "area": "Chemdah",
+        "floor": "L6 & 7"
     },
     "Ananta": {
-        "inherits": "nuke",
+        "inherits": "Nuclear",
         "item": "Spiral Nuclear Ring",
         "itemr": "Reactor Ring",
         "level": 44,
@@ -105,7 +111,7 @@ var personaMapRoyal = {
         "trait": "Atomic Bloodline"
     },
     "Andras": {
-        "inherits": "ice",
+        "inherits": "Ice",
         "item": "Evil Touch",
         "itemr": "Evil Smile",
         "skillCard": true,
@@ -121,10 +127,12 @@ var personaMapRoyal = {
             "Ghastly Wail": 32
         },
         "stats": [15, 19, 19, 21, 14],
-        "trait": "Foul Odor"
+        "trait": "Foul Odor",
+        "area": "Akzeriyyuth",
+        "floor": "???"
     },
     "Angel": {
-        "inherits": "bless",
+        "inherits": "Bless",
         "item": "Kouha",
         "itemr": "Makouha",
         "skillCard": true,
@@ -133,10 +141,12 @@ var personaMapRoyal = {
         "elems": ["-", "wk", "-", "-", "rs", "-", "-", "-", "nu", "wk"],
         "skills": {"Kouha": 0, "Makajam": 0, "Dia": 0, "Baisudi": 10, "Dodge Curse": 11, "Dekunda": 12},
         "stats": [6, 9, 5, 9, 5],
-        "trait": "Skillful Combo"
+        "trait": "Skillful Combo",
+        "area": "Aiyatsbus / Kaitul",
+        "floor": "L5 & 6 / L1-4"
     },
     "Anubis": {
-        "inherits": "almighty",
+        "inherits": "Almighty",
         "item": "Makouga",
         "itemr": "Kougaon",
         "skillCard": true,
@@ -145,10 +155,12 @@ var personaMapRoyal = {
         "elems": ["-", "rs", "-", "-", "-", "-", "rs", "-", "nu", "nu"],
         "skills": {"Hamaon": 0, "Mudoon": 0, "Makouga": 0, "Maeiga": 36, "Dekunda": 37, "Resist Bless": 38},
         "stats": [19, 24, 22, 21, 23],
-        "trait": "Deathly Illness"
+        "trait": "Deathly Illness",
+        "area": "Akzeriyyuth",
+        "floor": "L10 & 11"
     },
     "Anzu": {
-        "inherits": "wind",
+        "inherits": "Wind",
         "item": "Garula",
         "itemr": "Magarula",
         "skillCard": true,
@@ -157,10 +169,12 @@ var personaMapRoyal = {
         "elems": ["-", "wk", "-", "-", "rs", "rp", "-", "wk", "-", "-"],
         "skills": {"Garula": 0, "Masukukaja": 0, "Wind Break": 0, "Assault Dive": 27, "Dekaja": 28, "Null Forget": 29},
         "stats": [14, 18, 15, 21, 14],
-        "trait": "Wind Bloodline"
+        "trait": "Wind Bloodline",
+        "area": "Akzeriyyuth",
+        "floor": "L1-3, 5-7, 9-11"
     },
     "Apsaras": {
-        "inherits": "ice",
+        "inherits": "Ice",
         "item": "Media",
         "itemr": "Diarama",
         "skillCard": true,
@@ -169,10 +183,12 @@ var personaMapRoyal = {
         "elems": ["-", "-", "wk", "rs", "wk", "-", "-", "-", "-", "-"],
         "skills": {"Rebellion": 0, "Ice Wall": 0, "Bufu": 0, "Media": 13, "Elec Wall": 14, "Wind Wall": 16},
         "stats": [7, 11, 6, 10, 6],
-        "trait": "Internal Hypnosis"
+        "trait": "Internal Hypnosis",
+        "area": "Chemdah",
+        "floor": "L1-4"
     },
     "Ara Mitama": {
-        "inherits": "nuke",
+        "inherits": "Nuclear",
         "item": "Nuclear Ring",
         "itemr": "Spiral Nuclear Ring",
         "level": 30,
@@ -191,7 +207,7 @@ var personaMapRoyal = {
         "trait": "Atomic Bloodline"
     },
     "Arahabaki": {
-        "inherits": "ailment",
+        "inherits": "Ailment",
         "item": "Tapsuan",
         "itemr": "Fine Tapsuan",
         "level": 35,
@@ -206,10 +222,12 @@ var personaMapRoyal = {
             "Defense Master": 39
         },
         "stats": [21, 23, 22, 24, 22],
-        "trait": "Immunity"
+        "trait": "Immunity",
+        "area": "Adyeshach",
+        "floor": "L1-4, 6-8, 10"
     },
     "Archangel": {
-        "inherits": "bless",
+        "inherits": "Bless",
         "item": "Hama",
         "itemr": "Mahama",
         "skillCard": true,
@@ -218,11 +236,13 @@ var personaMapRoyal = {
         "elems": ["-", "-", "-", "-", "wk", "-", "-", "-", "nu", "wk"],
         "skills": {"Giant Slice": 0, "Dazzler": 0, "Hama": 0, "Rebellion": 16, "Power Slash": 17, "Vajra Blast": 19},
         "stats": [11, 9, 10, 12, 7],
-        "trait": "Skillful Combo"
+        "trait": "Skillful Combo",
+        "area": "Aiyatsbus",
+        "floor": "L5 & 6"
     },
     "Ardha": {
         "special": true,
-        "inherits": "almighty",
+        "inherits": "Almighty",
         "item": "Sahasrara",
         "itemr": "Sahasrara EX",
         "level": 84,
@@ -242,7 +262,7 @@ var personaMapRoyal = {
         "max": true
     },
     "Arsène": {
-        "inherits": "curse",
+        "inherits": "Curse",
         "item": "Arsène's Cane",
         "itemr": "The Great Thief Stick",
         "level": 1,
@@ -254,7 +274,7 @@ var personaMapRoyal = {
     },
     "Asura": {
         "special": true,
-        "inherits": "nuke",
+        "inherits": "Nuclear",
         "item": "Vajra",
         "itemr": "Unparalleled Vajra",
         "level": 76,
@@ -274,7 +294,7 @@ var personaMapRoyal = {
         "max": true
     },
     "Atavaka": {
-        "inherits": "phys",
+        "inherits": "Physical",
         "item": "Brave Blade",
         "itemr": "Sword Dance",
         "skillCard": true,
@@ -294,7 +314,7 @@ var personaMapRoyal = {
         "trait": "Savior Bloodline"
     },
     "Atropos": {
-        "inherits": "elec",
+        "inherits": "Electric",
         "item": "Mazionga",
         "itemr": "Ziodyne",
         "skillCard": true,
@@ -314,7 +334,7 @@ var personaMapRoyal = {
         "trait": "Mighty Gaze"
     },
     "Attis": {
-        "inherits": "fire",
+        "inherits": "Fire",
         "item": "Null Curse",
         "itemr": "Absorb Curse",
         "skillCard": true,
@@ -335,7 +355,7 @@ var personaMapRoyal = {
         "max": true
     },
     "Baal": {
-        "inherits": "wind",
+        "inherits": "Wind",
         "item": "Yagrush",
         "itemr": "Yagrush EX",
         "level": 82,
@@ -354,7 +374,7 @@ var personaMapRoyal = {
         "trait": "Wind Bloodline"
     },
     "Baphomet": {
-        "inherits": "almighty",
+        "inherits": "Almighty",
         "item": "Bufudyne",
         "itemr": "Mabufudyne",
         "skillCard": true,
@@ -371,10 +391,12 @@ var personaMapRoyal = {
             "Freeze Boost": 63
         },
         "stats": [34, 42, 36, 38, 31],
-        "trait": "Thermal Conduct"
+        "trait": "Thermal Conduct",
+        "area": "Sheriruth",
+        "floor": "L13 (after Palace 7)"
     },
     "Barong": {
-        "inherits": "elec",
+        "inherits": "Electric",
         "item": "Ziodyne",
         "itemr": "Maziodyne",
         "skillCard": true,
@@ -383,10 +405,12 @@ var personaMapRoyal = {
         "elems": ["-", "rs", "-", "-", "rs", "wk", "-", "-", "nu", "wk"],
         "skills": {"Ziodyne": 0, "Wage War": 0, "Invigorate 2": 0, "Elec Break": 54, "Null Elec": 55, "Maziodyne": 57},
         "stats": [33, 35, 33, 37, 25],
-        "trait": "Blessed Bloodline"
+        "trait": "Blessed Bloodline",
+        "area": "Sheriruth",
+        "floor": "L11 & 12 (after Palace 7)"
     },
     "Beelzebub": {
-        "inherits": "curse",
+        "inherits": "Curse",
         "item": "Fleurs du Mal",
         "itemr": "Fleurs du Mal R",
         "level": 87,
@@ -407,7 +431,7 @@ var personaMapRoyal = {
         "max": true
     },
     "Belial": {
-        "inherits": "curse",
+        "inherits": "Curse",
         "item": "Mamudoon",
         "itemr": "Demonic Decree",
         "skillCard": true,
@@ -427,7 +451,7 @@ var personaMapRoyal = {
         "trait": "Bloodstained Eyes"
     },
     "Belphegor": {
-        "inherits": "ice",
+        "inherits": "Ice",
         "item": "Mabufula",
         "itemr": "Bufudyne",
         "skillCard": true,
@@ -436,10 +460,12 @@ var personaMapRoyal = {
         "elems": ["-", "-", "wk", "rs", "rs", "-", "-", "rs", "-", "rp"],
         "skills": {"Mabufula": 0, "Ice Break": 0, "Null Rage": 38, "Dodge Fire": 39, "Bufudyne": 41, "Concentrate": 42},
         "stats": [25, 27, 24, 23, 19],
-        "trait": "Intense Focus"
+        "trait": "Intense Focus",
+        "area": "Adyeshach",
+        "floor": "L6-8, 10"
     },
     "Berith": {
-        "inherits": "phys",
+        "inherits": "Physical",
         "item": "Cleave",
         "itemr": "Power Slash",
         "skillCard": true,
@@ -448,10 +474,12 @@ var personaMapRoyal = {
         "elems": ["-", "nu", "rs", "wk", "-", "-", "-", "-", "-", "-"],
         "skills": {"Cleave": 0, "Rakukaja": 0, "Tarukaja": 10, "Dodge Fire": 11, "Power Slash": 13},
         "stats": [9, 6, 8, 8, 3],
-        "trait": "Crisis Control"
+        "trait": "Crisis Control",
+        "area": "Aiyatsbus",
+        "floor": "L5 & 6"
     },
     "Bicorn": {
-        "inherits": "wind",
+        "inherits": "Wind",
         "item": "Lunge",
         "itemr": "Assault Dive",
         "skillCard": true,
@@ -460,10 +488,12 @@ var personaMapRoyal = {
         "elems": ["-", "-", "-", "-", "wk", "-", "-", "-", "-", "rs"],
         "skills": {"Lunge": 0, "Tarunda": 0, "Garu": 6, "Ice Wall": 7, "Apt Pupil": 8},
         "stats": [5, 3, 3, 5, 3],
-        "trait": "Striking Weight"
+        "trait": "Striking Weight",
+        "area": "Aiyatsbus",
+        "floor": "L1 & 2"
     },
     "Bishamonten": {
-        "inherits": "nuke",
+        "inherits": "Nuclear",
         "item": "Mafreidyne",
         "itemr": "Atomic Flare",
         "skillCard": true,
@@ -484,7 +514,7 @@ var personaMapRoyal = {
     },
     "Black Frost": {
         "special": true,
-        "inherits": "almighty",
+        "inherits": "Almighty",
         "item": "Naraka Whip",
         "itemr": "Dainaraka Whip",
         "level": 67,
@@ -503,7 +533,7 @@ var personaMapRoyal = {
         "trait": "Frigid Bloodline"
     },
     "Black Ooze": {
-        "inherits": "curse",
+        "inherits": "Curse",
         "item": "Headbutt",
         "itemr": "Memory Blow",
         "skillCard": true,
@@ -520,10 +550,12 @@ var personaMapRoyal = {
             "Flash Bomb": 24
         },
         "stats": [15, 7, 16, 8, 15],
-        "trait": "Rare Antibody"
+        "trait": "Rare Antibody",
+        "area": "Adyeshach",
+        "floor": "L1-4, 6"
     },
     "Black Rider": {
-        "inherits": "curse",
+        "inherits": "Curse",
         "item": "Megidola",
         "itemr": "Megidolaon",
         "skillCard": true,
@@ -544,7 +576,7 @@ var personaMapRoyal = {
     },
     "Bugs": {
         "special": true,
-        "inherits": "almighty",
+        "inherits": "Almighty",
         "item": "Bear Gloves",
         "itemr": "Big Bear Gloves",
         "level": 49,
@@ -563,7 +595,7 @@ var personaMapRoyal = {
         "trait": "Potent Hypnosis"
     },
     "Byakhee": {
-        "inherits": "fire",
+        "inherits": "Fire",
         "item": "Null Wind",
         "itemr": "Repel Wind",
         "skillCard": true,
@@ -584,7 +616,7 @@ var personaMapRoyal = {
         "note": "Only available after 1/12"
     },
     "Byakko": {
-        "inherits": "ice",
+        "inherits": "Ice",
         "item": "Spiral Snow Ring",
         "itemr": "Blizzard Ring",
         "level": 45,
@@ -604,7 +636,7 @@ var personaMapRoyal = {
         "trait": "Retaliating Body"
     },
     "Cait Sith": {
-        "inherits": "ailment",
+        "inherits": "Ailment",
         "item": "Agi",
         "itemr": "Maragi",
         "skillCard": true,
@@ -616,7 +648,7 @@ var personaMapRoyal = {
         "trait": "Thermal Conduct"
     },
     "Cerberus": {
-        "inherits": "fire",
+        "inherits": "Fire",
         "item": "Megaton Raid",
         "itemr": "God's Hand",
         "skillCard": true,
@@ -632,10 +664,12 @@ var personaMapRoyal = {
             "Enduring Soul": 60
         },
         "stats": [39, 35, 32, 39, 27],
-        "trait": "Heated Bloodline"
+        "trait": "Heated Bloodline",
+        "area": "Sheriruth",
+        "floor": "L7-9 (after Palace 7)"
     },
     "Chernobog": {
-        "inherits": "ailment",
+        "inherits": "Ailment",
         "item": "Mudoon",
         "itemr": "Mamudoon",
         "skillCard": true,
@@ -652,11 +686,13 @@ var personaMapRoyal = {
             "Brave Blade": 67
         },
         "stats": [40, 37, 39, 38, 39],
-        "trait": "Crisis Control"
+        "trait": "Crisis Control",
+        "area": "Da'at",
+        "floor": "All"
     },
     "Chi You": {
         "special": true,
-        "inherits": "psy",
+        "inherits": "Psy",
         "item": "Repel Phys",
         "itemr": "Absorb Phys",
         "skillCard": true,
@@ -676,7 +712,7 @@ var personaMapRoyal = {
         "trait": "Chi You's Blessing"
     },
     "Chimera": {
-        "inherits": "phys",
+        "inherits": "Physical",
         "item": "Null Fire",
         "itemr": "Absorb Fire",
         "skillCard": true,
@@ -697,7 +733,7 @@ var personaMapRoyal = {
         "note": "Only available after 1/12"
     },
     "Choronzon": {
-        "inherits": "curse",
+        "inherits": "Curse",
         "item": "Curse Ring",
         "itemr": "Spiral Curse Ring",
         "level": 28,
@@ -714,10 +750,12 @@ var personaMapRoyal = {
             "Climate Decorum": 33
         },
         "stats": [16, 19, 19, 18, 19],
-        "trait": "Draining Mouth"
+        "trait": "Draining Mouth",
+        "area": "Kaitul",
+        "floor": "L1-4"
     },
     "Clotho": {
-        "inherits": "healing",
+        "inherits": "Healing",
         "item": "Tetraja",
         "itemr": "Makarakarn",
         "skillCard": true,
@@ -738,7 +776,7 @@ var personaMapRoyal = {
     },
     "Crystal Skull": {
         "rare": true,
-        "inherits": "almighty",
+        "inherits": "Almighty",
         "item": "Crystal Skull",
         "itemr": "Crystal Skull R",
         "level": 50,
@@ -758,10 +796,12 @@ var personaMapRoyal = {
             "Cursed Bloodline": 0
         },
         "stats": [50, 50, 50, 50, 50],
-        "trait": "Ultimate Vessel"
+        "trait": "Ultimate Vessel",
+        "area": "Sheriruth / Da'at",
+        "floor": "L7-9. 11-13 (after Palace 7) / All"
     },
     "Cu Chulainn": {
-        "inherits": "almighty",
+        "inherits": "Almighty",
         "item": "One-shot Kill",
         "itemr": "Riot Gun",
         "skillCard": true,
@@ -781,7 +821,7 @@ var personaMapRoyal = {
         "trait": "Potent Hypnosis"
     },
     "Cybele": {
-        "inherits": "healing",
+        "inherits": "Healing",
         "item": "Sabazios",
         "itemr": "Gordios",
         "level": 83,
@@ -801,7 +841,7 @@ var personaMapRoyal = {
         "max": true
     },
     "Daisoujou": {
-        "inherits": "bless",
+        "inherits": "Bless",
         "item": "Spiral Blessing Ring",
         "itemr": "Divine Ring",
         "level": 40,
@@ -820,7 +860,7 @@ var personaMapRoyal = {
         "trait": "Draining Mouth"
     },
     "Dakini": {
-        "inherits": "phys",
+        "inherits": "Physical",
         "item": "Tempest Slash",
         "itemr": "Myriad Slashes",
         "skillCard": true,
@@ -837,10 +877,12 @@ var personaMapRoyal = {
             "Charge": 55
         },
         "stats": [34, 32, 34, 28, 29],
-        "trait": "Skillful Combo"
+        "trait": "Skillful Combo",
+        "area": "Sheriruth",
+        "floor": "L7-9 (after Palace 7)"
     },
     "Decarabia": {
-        "inherits": "fire",
+        "inherits": "Fire",
         "item": "Maragion",
         "itemr": "Agidyne",
         "skillCard": true,
@@ -857,10 +899,12 @@ var personaMapRoyal = {
             "Megidola": 38
         },
         "stats": [21, 23, 19, 22, 18],
-        "trait": "Heated Bloodline"
+        "trait": "Heated Bloodline",
+        "area": "Adyeshach",
+        "floor": "L3, 4, 6-8"
     },
     "Dionysus": {
-        "inherits": "ailment",
+        "inherits": "Ailment",
         "item": "Maziodyne",
         "itemr": "Thunder Reign",
         "skillCard": true,
@@ -880,7 +924,7 @@ var personaMapRoyal = {
         "trait": "Pinch Anchor"
     },
     "Dominion": {
-        "inherits": "bless",
+        "inherits": "Bless",
         "item": "Makougaon",
         "itemr": "Divine Judgement",
         "skillCard": true,
@@ -897,10 +941,12 @@ var personaMapRoyal = {
             "Evade Curse": 74
         },
         "stats": [42, 45, 43, 44, 37],
-        "trait": "Blessed Bloodline"
+        "trait": "Blessed Bloodline",
+        "area": "Da'at",
+        "floor": "All"
     },
     "Eligor": {
-        "inherits": "fire",
+        "inherits": "Fire",
         "item": "Tarukaja",
         "itemr": "Matarukaja",
         "skillCard": true,
@@ -916,11 +962,13 @@ var personaMapRoyal = {
             "Memory Blow": 20
         },
         "stats": [12, 10, 13, 10, 10],
-        "trait": "Thermal Conduct"
+        "trait": "Thermal Conduct",
+        "area": "Chemdah",
+        "floor": "L3 & 4"
     },
     "Emperor's Amulet": {
         "rare": true,
-        "inherits": "almighty",
+        "inherits": "Almighty",
         "item": "Emperor's Amulet",
         "itemr": "Emperor's Charm R",
         "level": 35,
@@ -940,10 +988,12 @@ var personaMapRoyal = {
             "Psychic Bloodline": 0
         },
         "stats": [35, 35, 35, 35, 35],
-        "trait": "Ultimate Vessel"
+        "trait": "Ultimate Vessel",
+        "area": "Sheriruth",
+        "floor": "L7-9, 11-13 (after Palace 7)"
     },
     "Fafnir": {
-        "inherits": "nuke",
+        "inherits": "Nuclear",
         "item": "Spiral Reactor Ring",
         "itemr": "Fire Dragon Horn",
         "level": 86,
@@ -964,7 +1014,7 @@ var personaMapRoyal = {
     },
     "Flauros": {
         "special": true,
-        "inherits": "ailment",
+        "inherits": "Ailment",
         "item": "Giant Slice Belt",
         "itemr": "Rising Slash Belt",
         "level": 19,
@@ -983,7 +1033,7 @@ var personaMapRoyal = {
         "trait": "Gluttonmouth"
     },
     "Forneus": {
-        "inherits": "psy",
+        "inherits": "Psy",
         "item": "Psiodyne",
         "itemr": "Mapsiodyne",
         "skillCard": true,
@@ -1000,10 +1050,12 @@ var personaMapRoyal = {
             "Evade Psy": 68
         },
         "stats": [41, 39, 40, 42, 34],
-        "trait": "Bloodstained Eyes"
+        "trait": "Bloodstained Eyes",
+        "area": "Sheriruth",
+        "floor": "L12 & 13 (after Palace 7)"
     },
     "Fortuna": {
-        "inherits": "wind",
+        "inherits": "Wind",
         "item": "Lucky Robe",
         "itemr": "Super Lucky Robe",
         "level": 46,
@@ -1022,7 +1074,7 @@ var personaMapRoyal = {
         "trait": "Wind Bloodline"
     },
     "Futsunushi": {
-        "inherits": "phys",
+        "inherits": "Physical",
         "item": "Hinokagutsuchi",
         "itemr": "Hinokagutsuchi II",
         "level": 86,
@@ -1043,7 +1095,7 @@ var personaMapRoyal = {
         "max": true
     },
     "Fuu-Ki": {
-        "inherits": "wind",
+        "inherits": "Wind",
         "item": "Wind Boost",
         "itemr": "Wind Amp",
         "skillCard": true,
@@ -1052,10 +1104,12 @@ var personaMapRoyal = {
         "elems": ["-", "rs", "-", "-", "wk", "ab", "-", "-", "-", "-"],
         "skills": {"Tetra Break": 0, "Tarukaja": 0, "Garula": 0, "Wind Boost": 25, "Magarula": 26, "Resist Wind": 27},
         "stats": [14, 17, 16, 15, 14],
-        "trait": "Intense Focus"
+        "trait": "Intense Focus",
+        "area": "Kaitul",
+        "floor": "L8 & 9"
     },
     "Gabriel": {
-        "inherits": "almighty",
+        "inherits": "Almighty",
         "item": "Spiral Blizzard Ring",
         "itemr": "Diamond Dust Lily",
         "level": 77,
@@ -1075,7 +1129,7 @@ var personaMapRoyal = {
         "trait": "Relentless"
     },
     "Ganesha": {
-        "inherits": "ailment",
+        "inherits": "Ailment",
         "item": "Rebellion",
         "itemr": "Revolution",
         "skillCard": true,
@@ -1092,10 +1146,12 @@ var personaMapRoyal = {
             "Charge": 60
         },
         "stats": [39, 31, 37, 33, 26],
-        "trait": "Gluttonmouth"
+        "trait": "Gluttonmouth",
+        "area": "Sheriruth",
+        "floor": "L5, 7-9 (before Palace 7) / L3 & 4 (after Palace 7)"
     },
     "Garuda": {
-        "inherits": "wind",
+        "inherits": "Wind",
         "item": "Garudyne",
         "itemr": "Magarudyne",
         "skillCard": true,
@@ -1112,10 +1168,12 @@ var personaMapRoyal = {
             "Wind Amp": 59
         },
         "stats": [30, 36, 29, 39, 29],
-        "trait": "Wind Bloodline"
+        "trait": "Wind Bloodline",
+        "area": "Sheriruth",
+        "floor": "L12 (after Palace 7)"
     },
     "Genbu": {
-        "inherits": "ice",
+        "inherits": "Ice",
         "item": "Frost Ring",
         "itemr": "Spiral Frost Ring",
         "level": 7,
@@ -1126,7 +1184,7 @@ var personaMapRoyal = {
         "trait": "Cold-Blooded"
     },
     "Girimehkala": {
-        "inherits": "ailment",
+        "inherits": "Ailment",
         "item": "Swift Strike",
         "itemr": "Deathbound",
         "skillCard": true,
@@ -1135,10 +1193,12 @@ var personaMapRoyal = {
         "elems": ["rp", "rp", "rs", "-", "-", "-", "-", "-", "wk", "nu"],
         "skills": {"Mudoon": 0, "Marakunda": 0, "Deathbound": 0, "Agidyne": 45, "Wage War": 47, "Repel Phys": 50},
         "stats": [32, 24, 32, 29, 19],
-        "trait": "Cursed Bloodline"
+        "trait": "Cursed Bloodline",
+        "area": "Adyeshach",
+        "floor": "L4, 6-8, 10"
     },
     "Hanuman": {
-        "inherits": "phys",
+        "inherits": "Physical",
         "item": "Ruyi Jingu Bang",
         "itemr": "Fine Ruyi Jingu Bang",
         "level": 64,
@@ -1153,10 +1213,12 @@ var personaMapRoyal = {
             "Regenerate 3": 69
         },
         "stats": [43, 38, 40, 40, 38],
-        "trait": "Potent Hypnosis"
+        "trait": "Potent Hypnosis",
+        "area": "Sheriruth",
+        "floor": "L12 & 13 (after Palace 7)"
     },
     "Hariti": {
-        "inherits": "elec",
+        "inherits": "Electric",
         "item": "Revival Charm",
         "itemr": "Rejuvenate Charm",
         "level": 40,
@@ -1176,7 +1238,7 @@ var personaMapRoyal = {
         "trait": "Electric Bloodline"
     },
     "Hastur": {
-        "inherits": "wind",
+        "inherits": "Wind",
         "item": "Spiral Gale Ring",
         "itemr": "Storm Sculpture",
         "level": 84,
@@ -1196,7 +1258,7 @@ var personaMapRoyal = {
         "note": "Only available after 1/12"
     },
     "Hecatoncheires": {
-        "inherits": "phys",
+        "inherits": "Physical",
         "item": "Swift Strike Belt",
         "itemr": "Gatling Belt",
         "level": 42,
@@ -1209,14 +1271,14 @@ var personaMapRoyal = {
             "Endure": 43,
             "Rebellion": 45,
             "Fortified Moxy": 46,
-            "Gattling Blows": 49
+            "Gatling Blows": 49
         },
         "stats": [35, 22, 27, 23, 26],
         "trait": "Gluttonmouth"
     },
     "Hell Biker": {
         "special": true,
-        "inherits": "fire",
+        "inherits": "Fire",
         "item": "Black Jacket",
         "itemr": "Dark Jacket",
         "level": 37,
@@ -1235,7 +1297,7 @@ var personaMapRoyal = {
         "trait": "Internal Hypnosis"
     },
     "High Pixie": {
-        "inherits": "healing",
+        "inherits": "Healing",
         "item": "Magaru",
         "itemr": "Garula",
         "skillCard": true,
@@ -1244,11 +1306,13 @@ var personaMapRoyal = {
         "elems": ["-", "wk", "-", "-", "rs", "rs", "-", "wk", "-", "-"],
         "skills": {"Garu": 0, "Media": 0, "Dormina": 0, "Diarama": 19, "Pulinpa": 20, "Magaru": 22},
         "stats": [8, 14, 10, 13, 10],
-        "trait": "Skillful Combo"
+        "trait": "Skillful Combo",
+        "area": "Kaitul",
+        "floor": "L1-3"
     },
     "Hope Diamond": {
         "rare": true,
-        "inherits": "almighty",
+        "inherits": "Almighty",
         "item": "Hope Diamond",
         "itemr": "Hope Diamond R",
         "level": 40,
@@ -1268,10 +1332,12 @@ var personaMapRoyal = {
             "Retaliating Body": 0
         },
         "stats": [40, 40, 40, 40, 40],
-        "trait": "Ultimate Vessel"
+        "trait": "Ultimate Vessel",
+        "area": "Sheriruth",
+        "floor": "L7-9. 11-13 (after Palace 7)"
     },
     "Horus": {
-        "inherits": "almighty",
+        "inherits": "Almighty",
         "item": "Hallowed Ring",
         "itemr": "Spiral Hallowed Ring",
         "level": 47,
@@ -1290,7 +1356,7 @@ var personaMapRoyal = {
         "trait": "Potent Hypnosis"
     },
     "Hua Po": {
-        "inherits": "fire",
+        "inherits": "Fire",
         "item": "Ember Ring",
         "itemr": "Spiral Ember Ring",
         "level": 9,
@@ -1298,10 +1364,12 @@ var personaMapRoyal = {
         "elems": ["-", "wk", "rp", "wk", "-", "-", "-", "-", "-", "-"],
         "skills": {"Agi": 0, "Dormina": 0, "Tarunda": 11, "Resist Forget": 12, "Maragi": 13, "Burn Boost": 15},
         "stats": [4, 10, 4, 8, 8],
-        "trait": "Thermal Conduct"
+        "trait": "Thermal Conduct",
+        "area": "Chemdah",
+        "floor": "L1-3"
     },
     "Incubus": {
-        "inherits": "ailment",
+        "inherits": "Ailment",
         "item": "Dream Needle",
         "itemr": "Dormin Rush",
         "skillCard": true,
@@ -1310,10 +1378,12 @@ var personaMapRoyal = {
         "elems": ["-", "-", "wk", "-", "rs", "-", "-", "-", "wk", "-"],
         "skills": {"Life Drain": 0, "Dream Needle": 0, "Dormina": 7, "Tarunda": 8, "Dodge Curse": 9},
         "stats": [4, 6, 4, 5, 3],
-        "trait": "Draining Mouth"
+        "trait": "Draining Mouth",
+        "area": "Aiyatsbus",
+        "floor": "L2, 3 & 6"
     },
     "Inugami": {
-        "inherits": "fire",
+        "inherits": "Fire",
         "item": "Giant Slice",
         "itemr": "Rising Slash",
         "skillCard": true,
@@ -1330,10 +1400,12 @@ var personaMapRoyal = {
             "Confuse Boost": 19
         },
         "stats": [11, 9, 9, 12, 8],
-        "trait": "Foul Odor"
+        "trait": "Foul Odor",
+        "area": "Chemdah",
+        "floor": "L4, 6 & 7"
     },
     "Ippon-Datara": {
-        "inherits": "phys",
+        "inherits": "Physical",
         "item": "Sledgehammer",
         "itemr": "Flash Bomb",
         "skillCard": true,
@@ -1349,10 +1421,12 @@ var personaMapRoyal = {
             "Counter": 18
         },
         "stats": [11, 7, 14, 6, 8],
-        "trait": "Striking Weight"
+        "trait": "Striking Weight",
+        "area": "Chemdah",
+        "floor": "L1-4"
     },
     "Ishtar": {
-        "inherits": "healing",
+        "inherits": "Healing",
         "item": "Spiral Thunder Ring",
         "itemr": "Goddess Horn",
         "level": 85,
@@ -1372,7 +1446,7 @@ var personaMapRoyal = {
         "max": true
     },
     "Isis": {
-        "inherits": "healing",
+        "inherits": "Healing",
         "item": "Kouga",
         "itemr": "Makouga",
         "skillCard": true,
@@ -1389,10 +1463,12 @@ var personaMapRoyal = {
             "Makarakarn": 32
         },
         "stats": [14, 20, 17, 18, 16],
-        "trait": "Savior Bloodline"
+        "trait": "Savior Bloodline",
+        "area": "Akzeriyyuth",
+        "floor": "L5-7, 9-11"
     },
     "Jack Frost": {
-        "inherits": "ice",
+        "inherits": "Ice",
         "item": "Frost Hood",
         "itemr": "Frost Ace Hood",
         "level": 11,
@@ -1400,10 +1476,12 @@ var personaMapRoyal = {
         "elems": ["-", "-", "wk", "nu", "-", "-", "-", "-", "-", "-"],
         "skills": {"Bufu": 0, "Ice Break": 0, "Baisudi": 0, "Mabufu": 12, "Rakunda": 13, "Freeze Boost": 15},
         "stats": [8, 9, 7, 9, 7],
-        "trait": "Frigid Bloodline"
+        "trait": "Frigid Bloodline",
+        "area": "Chemdah",
+        "floor": "L4 & 6"
     },
     "Jack-o'-Lantern": {
-        "inherits": "fire",
+        "inherits": "Fire",
         "item": "Pumpkin Bomb",
         "itemr": "Pumpkin Buster",
         "level": 2,
@@ -1411,10 +1489,12 @@ var personaMapRoyal = {
         "elems": ["-", "-", "ab", "wk", "-", "wk", "-", "-", "-", "-"],
         "skills": {"Agi": 0, "Rakunda": 0, "Sharp Student": 4, "Dazzler": 5, "Resist Sleep": 7},
         "stats": [2, 3, 3, 3, 2],
-        "trait": "Thermal Conduct"
+        "trait": "Thermal Conduct",
+        "area": "Qimranut / Aiyatsbus",
+        "floor": "All / L1"
     },
     "Jatayu": {
-        "inherits": "wind",
+        "inherits": "Wind",
         "item": "Speed Master",
         "itemr": "Auto-Masuku",
         "skillCard": true,
@@ -1434,7 +1514,7 @@ var personaMapRoyal = {
         "trait": "Wind Bloodline"
     },
     "Jikokuten": {
-        "inherits": "phys",
+        "inherits": "Physical",
         "item": "Assault Belt",
         "itemr": "Rush Belt",
         "level": 22,
@@ -1453,7 +1533,7 @@ var personaMapRoyal = {
         "trait": "Internal Hypnosis"
     },
     "Kaiwan": {
-        "inherits": "almighty",
+        "inherits": "Almighty",
         "item": "Makajam",
         "itemr": "Makajamaon",
         "skillCard": true,
@@ -1470,10 +1550,12 @@ var personaMapRoyal = {
             "Marakunda": 41
         },
         "stats": [23, 26, 24, 22, 20],
-        "trait": "Psychic Bloodline"
+        "trait": "Psychic Bloodline",
+        "area": "Adyeshach",
+        "floor": "L10-12"
     },
     "Kali": {
-        "inherits": "fire",
+        "inherits": "Fire",
         "item": "Null Psy",
         "itemr": "Repel Psy",
         "skillCard": true,
@@ -1493,7 +1575,7 @@ var personaMapRoyal = {
         "trait": "Relentless"
     },
     "Kelpie": {
-        "inherits": "wind",
+        "inherits": "Wind",
         "item": "Garu",
         "itemr": "Magaru",
         "skillCard": true,
@@ -1502,10 +1584,12 @@ var personaMapRoyal = {
         "elems": ["-", "-", "-", "rs", "wk", "-", "-", "-", "-", "-"],
         "skills": {"Garu": 0, "Lunge": 0, "Resist Brainwash": 8, "Sukukaja": 9, "Terror Claw": 10},
         "stats": [5, 5, 5, 6, 4],
-        "trait": "Striking Weight"
+        "trait": "Striking Weight",
+        "area": "Aiyatsbus",
+        "floor": "L3"
     },
     "Kikuri-Hime": {
-        "inherits": "healing",
+        "inherits": "Healing",
         "item": "Energy Drop",
         "itemr": "Energy Shower",
         "skillCard": true,
@@ -1514,10 +1598,12 @@ var personaMapRoyal = {
         "elems": ["-", "-", "wk", "-", "-", "nu", "-", "-", "rs", "-"],
         "skills": {"Lullaby": 0, "Marakukaja": 0, "Energy Drop": 0, "Mediarama": 41, "Tetraja": 43, "Divine Grace": 45},
         "stats": [22, 31, 24, 28, 22],
-        "trait": "Relief Bloodline"
+        "trait": "Relief Bloodline",
+        "area": "Sheriruth",
+        "floor": "L3-5 (before Palace 7) / L2 & 3 (after Palace 7)"
     },
     "Kin-Ki": {
-        "inherits": "phys",
+        "inherits": "Physical",
         "item": "Vajra Blast",
         "itemr": "Vicious Strike",
         "skillCard": true,
@@ -1534,10 +1620,12 @@ var personaMapRoyal = {
             "Counterstrike": 31
         },
         "stats": [21, 13, 21, 15, 12],
-        "trait": "Retaliating Body"
+        "trait": "Retaliating Body",
+        "area": "Kaitul",
+        "floor": "L4, 5, 7-9"
     },
     "King Frost": {
-        "inherits": "ice",
+        "inherits": "Ice",
         "item": "King Frost Cape",
         "itemr": "King Frost Cape EX",
         "level": 61,
@@ -1553,10 +1641,12 @@ var personaMapRoyal = {
             "Ice Amp": 67
         },
         "stats": [40, 44, 43, 29, 34],
-        "trait": "Frigid Bloodline"
+        "trait": "Frigid Bloodline",
+        "area": "Sheriruth",
+        "floor": "L8, 11, 12, 13 (after Palace 7)"
     },
     "Kodama": {
-        "inherits": "ailment",
+        "inherits": "Ailment",
         "item": "Psy Ring",
         "itemr": "Spiral Psy Ring",
         "level": 11,
@@ -1572,11 +1662,13 @@ var personaMapRoyal = {
             "Resist Fear": 17
         },
         "stats": [7, 11, 8, 10, 4],
-        "trait": "Skillful Combo"
+        "trait": "Skillful Combo",
+        "area": "Aiyatsbus",
+        "floor": "L1-3"
     },
     "Koh-i-Noor": {
         "rare": true,
-        "inherits": "almighty",
+        "inherits": "Almighty",
         "item": "Koh-i-Noor",
         "itemr": "Koh-i-Noor R",
         "level": 25,
@@ -1596,11 +1688,13 @@ var personaMapRoyal = {
             "Rare Antibody": 0
         },
         "stats": [25, 25, 25, 25, 25],
-        "trait": "Ultimate Vessel"
+        "trait": "Ultimate Vessel",
+        "area": "Adyeshach",
+        "floor": "L1-4, 6-8, 10-12"
     },
     "Kohryu": {
         "special": true,
-        "inherits": "psy",
+        "inherits": "Psy",
         "item": "Spiral Mystic Ring",
         "itemr": "Dragon's Heart",
         "level": 76,
@@ -1620,7 +1714,7 @@ var personaMapRoyal = {
         "max": true
     },
     "Koppa Tengu": {
-        "inherits": "wind",
+        "inherits": "Wind",
         "item": "Breeze Ring",
         "itemr": "Spiral Breeze Ring",
         "level": 11,
@@ -1628,10 +1722,12 @@ var personaMapRoyal = {
         "elems": ["-", "-", "-", "wk", "-", "rs", "-", "-", "wk", "-"],
         "skills": {"Garu": 0, "Sukukaja": 0, "Growth 1": 12, "Taunt": 13, "Rage Boost": 14, "Wage War": 15},
         "stats": [7, 8, 8, 11, 6],
-        "trait": "Intense Focus"
+        "trait": "Intense Focus",
+        "area": "Chemdah",
+        "floor": "L6 & 7"
     },
     "Koropokkuru": {
-        "inherits": "ice",
+        "inherits": "Ice",
         "item": "Bufu",
         "itemr": "Mabufu",
         "skillCard": true,
@@ -1648,10 +1744,12 @@ var personaMapRoyal = {
             "Climate Decorum": 15
         },
         "stats": [5, 8, 6, 9, 6],
-        "trait": "Foul Odor"
+        "trait": "Foul Odor",
+        "area": "Chemdah",
+        "floor": "L2 & 3"
     },
     "Koumokuten": {
-        "inherits": "phys",
+        "inherits": "Physical",
         "item": "Regenerate 2",
         "itemr": "Regenerate 3",
         "skillCard": true,
@@ -1671,7 +1769,7 @@ var personaMapRoyal = {
         "trait": "Gluttonmouth"
     },
     "Kumbhanda": {
-        "inherits": "ailment",
+        "inherits": "Ailment",
         "item": "Terror Claw",
         "itemr": "Bloodbath",
         "skillCard": true,
@@ -1688,10 +1786,12 @@ var personaMapRoyal = {
             "Revolution": 47
         },
         "stats": [25, 30, 25, 27, 26],
-        "trait": "Rare Antibody"
+        "trait": "Rare Antibody",
+        "area": "Sheriruth",
+        "floor": "L8, 9, 11-13 (before Palace 7) / L4 & 5 (after Palace 7)"
     },
     "Kurama Tengu": {
-        "inherits": "wind",
+        "inherits": "Wind",
         "item": "Wind Ring",
         "itemr": "Spiral Wind Ring",
         "level": 31,
@@ -1699,10 +1799,12 @@ var personaMapRoyal = {
         "elems": ["-", "-", "-", "nu", "-", "rp", "-", "-", "rs", "rs"],
         "skills": {"Double Shot": 0, "Masukunda": 0, "Magarula": 0, "Wind Boost": 32, "Brain Jack": 34, "Growth 2": 36},
         "stats": [20, 19, 21, 24, 16],
-        "trait": "Skillful Combo"
+        "trait": "Skillful Combo",
+        "area": "Sheriruth",
+        "floor": "L11 (after Palace 7)"
     },
     "Kushinada": {
-        "inherits": "healing",
+        "inherits": "Healing",
         "item": "Cure Charm",
         "itemr": "Spiral Cure Charm",
         "level": 42,
@@ -1719,10 +1821,12 @@ var personaMapRoyal = {
             "Null Ice": 48
         },
         "stats": [24, 30, 26, 28, 25],
-        "trait": "Savior Bloodline"
+        "trait": "Savior Bloodline",
+        "area": "Sheriruth",
+        "floor": "L5, 7-9 (before Palace 7) / L3 & 4 (after Palace 7)"
     },
     "Kushi Mitama": {
-        "inherits": "healing",
+        "inherits": "Healing",
         "item": "Aid Charm",
         "itemr": "Spiral Aid Charm",
         "level": 12,
@@ -1733,7 +1837,7 @@ var personaMapRoyal = {
         "trait": "Gluttonmouth"
     },
     "Lachesis": {
-        "inherits": "ice",
+        "inherits": "Ice",
         "item": "Snow Ring",
         "itemr": "Spiral Snow Ring",
         "level": 35,
@@ -1752,7 +1856,7 @@ var personaMapRoyal = {
         "trait": "Internal Hypnosis"
     },
     "Lakshmi": {
-        "inherits": "healing",
+        "inherits": "Healing",
         "item": "Amrita Charm",
         "itemr": "Spiral Amrita Charm",
         "level": 69,
@@ -1772,7 +1876,7 @@ var personaMapRoyal = {
         "max": true
     },
     "Lamia": {
-        "inherits": "fire",
+        "inherits": "Fire",
         "item": "Rakukaja",
         "itemr": "Marakukaja",
         "skillCard": true,
@@ -1789,21 +1893,26 @@ var personaMapRoyal = {
             "Despair Boost": 31
         },
         "stats": [21, 15, 18, 19, 12],
-        "trait": "Foul Odor"
+        "trait": "Foul Odor",
+        "area": "Akzeriyyuth",
+        "floor": "L3, 5-7, 9-11"
     },
     "Leanan Sidhe": {
-        "inherits": "almighty",
+        "inherits": "Almighty",
         "item": "Mudo",
         "itemr": "Mamudo",
+        "skillCard": true,
         "level": 19,
         "arcana": "Lovers",
         "elems": ["-", "-", "wk", "-", "-", "rs", "rs", "-", "-", "-"],
         "skills": {"Rakunda": 0, "Psio": 0, "Marin Karin": 20, "Mamudo": 21, "Mapsi": 22, "Eiga": 23},
         "stats": [9, 17, 12, 16, 10],
-        "trait": "Skillful Technique"
+        "trait": "Skillful Technique",
+        "area": "Kaitul",
+        "floor": "L3-5"
     },
     "Legion": {
-        "inherits": "psy",
+        "inherits": "Psy",
         "item": "Foul Breath",
         "itemr": "Stagnant Air",
         "skillCard": true,
@@ -1820,10 +1929,12 @@ var personaMapRoyal = {
             "Eigaon": 45
         },
         "stats": [24, 24, 30, 23, 20],
-        "trait": "Draining Mouth"
+        "trait": "Draining Mouth",
+        "area": "Adyeshach",
+        "floor": "L1-4"
     },
     "Lilim": {
-        "inherits": "ice",
+        "inherits": "Ice",
         "item": "Ice Boost",
         "itemr": "Ice Amp",
         "skillCard": true,
@@ -1840,10 +1951,12 @@ var personaMapRoyal = {
             "Mabufula": 37
         },
         "stats": [17, 23, 18, 25, 20],
-        "trait": "Cold-Blooded"
+        "trait": "Cold-Blooded",
+        "area": "Adyeshach",
+        "floor": "L6-8, 10-12"
     },
     "Lilith": {
-        "inherits": "almighty",
+        "inherits": "Almighty",
         "item": "Null Nuke",
         "itemr": "Repel Nuke",
         "skillCard": true,
@@ -1860,10 +1973,12 @@ var personaMapRoyal = {
             "Nuke Amp": 65
         },
         "stats": [33, 43, 37, 39, 35],
-        "trait": "Mighty Gaze"
+        "trait": "Mighty Gaze",
+        "area": "Da'at",
+        "floor": "All"
     },
     "Loa": {
-        "inherits": "curse",
+        "inherits": "Curse",
         "item": "Ominous Words",
         "itemr": "Abysmal Surge",
         "skillCard": true,
@@ -1885,7 +2000,7 @@ var personaMapRoyal = {
     },
     "Lucifer": {
         "special": true,
-        "inherits": "almighty",
+        "inherits": "Almighty",
         "item": "Tyrant Pistol",
         "itemr": "Tyrant Pistol EX",
         "level": 93,
@@ -1906,7 +2021,7 @@ var personaMapRoyal = {
         "max": true
     },
     "Macabre": {
-        "inherits": "curse",
+        "inherits": "Curse",
         "item": "Bloodbath",
         "itemr": "Death Scythe",
         "skillCard": true,
@@ -1927,7 +2042,7 @@ var personaMapRoyal = {
         "note": "Only available after 1/12"
     },
     "Mada": {
-        "inherits": "fire",
+        "inherits": "Fire",
         "item": "Spiral Inferno Ring",
         "itemr": "Dark Flame Band",
         "level": 90,
@@ -1948,7 +2063,7 @@ var personaMapRoyal = {
         "max": true
     },
     "Makami": {
-        "inherits": "nuke",
+        "inherits": "Nuclear",
         "item": "Frei",
         "itemr": "Mafrei",
         "skillCard": true,
@@ -1965,10 +2080,12 @@ var personaMapRoyal = {
             "Dodge Elec": 20
         },
         "stats": [13, 12, 8, 11, 8],
-        "trait": "Skillful Technique"
+        "trait": "Skillful Technique",
+        "area": "Chemdah",
+        "floor": "L6 & 7"
     },
     "Mandrake": {
-        "inherits": "elec",
+        "inherits": "Electric",
         "item": "Sukunda",
         "itemr": "Masukunda",
         "skillCard": true,
@@ -1977,10 +2094,12 @@ var personaMapRoyal = {
         "elems": ["-", "-", "wk", "-", "rs", "-", "-", "-", "-", "-"],
         "skills": {"Pulinpa": 0, "Energy Drop": 0, "Lunge": 4, "Sukunda": 5},
         "stats": [2, 3, 3, 4, 4],
-        "trait": "Savior Bloodline"
+        "trait": "Savior Bloodline",
+        "area": "Qimranut / Aiyatsbus",
+        "floor": "All / L1"
     },
     "Mara": {
-        "inherits": "psy",
+        "inherits": "Psy",
         "item": "Mapsiodyne",
         "itemr": "Psycho Force",
         "skillCard": true,
@@ -1997,10 +2116,12 @@ var personaMapRoyal = {
             "Psycho Force": 78
         },
         "stats": [51, 43, 43, 45, 44],
-        "trait": "Mighty Gaze"
+        "trait": "Mighty Gaze",
+        "area": "Da'at",
+        "floor": "All"
     },
     "Maria": {
-        "inherits": "healing",
+        "inherits": "Healing",
         "item": "Spiral Heal Charm",
         "itemr": "Rosary of Purity",
         "level": 93,
@@ -2020,7 +2141,7 @@ var personaMapRoyal = {
         "max": true
     },
     "Matador": {
-        "inherits": "psy",
+        "inherits": "Psy",
         "item": "Blood Red Capote",
         "itemr": "Bloodied Capote",
         "level": 17,
@@ -2031,7 +2152,7 @@ var personaMapRoyal = {
         "trait": "Potent Hypnosis"
     },
     "Melchizedek": {
-        "inherits": "bless",
+        "inherits": "Bless",
         "item": "Hamaon",
         "itemr": "Mahamaon",
         "skillCard": true,
@@ -2048,11 +2169,13 @@ var personaMapRoyal = {
             "God's Hand": 65
         },
         "stats": [37, 32, 40, 39, 33],
-        "trait": "Deathly Illness"
+        "trait": "Deathly Illness",
+        "area": "Da'at",
+        "floor": "All"
     },
     "Metatron": {
         "special": true,
-        "inherits": "bless",
+        "inherits": "Bless",
         "item": "Nataraja",
         "itemr": "Nataraja EX",
         "level": 89,
@@ -2073,7 +2196,7 @@ var personaMapRoyal = {
     },
     "Michael": {
         "special": true,
-        "inherits": "almighty",
+        "inherits": "Almighty",
         "item": "Judge of Hell",
         "itemr": "Judge End",
         "level": 87,
@@ -2092,7 +2215,7 @@ var personaMapRoyal = {
         "trait": "Potent Hypnosis"
     },
     "Mishaguji": {
-        "inherits": "ailment",
+        "inherits": "Ailment",
         "item": "Spiral Karma Ring",
         "itemr": "Mystic Ring",
         "level": 52,
@@ -2110,8 +2233,8 @@ var personaMapRoyal = {
         "stats": [32, 32, 32, 32, 35],
         "trait": "Ailment Hunter"
     },
-    "Mithra": {
-        "inherits": "bless",
+    "Mitra": {
+        "inherits": "Bless",
         "item": "Death Contract",
         "itemr": "Death Promise",
         "level": 33,
@@ -2130,7 +2253,7 @@ var personaMapRoyal = {
         "trait": "Blessed Bloodline"
     },
     "Mithras": {
-        "inherits": "nuke",
+        "inherits": "Nuclear",
         "item": "Nuke Boost",
         "itemr": "Nuke Amp",
         "skillCard": true,
@@ -2147,10 +2270,12 @@ var personaMapRoyal = {
             "Freidyne": 45
         },
         "stats": [27, 25, 27, 25, 20],
-        "trait": "Skillful Technique"
+        "trait": "Skillful Technique",
+        "area": "Adyeshach",
+        "floor": "L11 & 12"
     },
     "Mokoi": {
-        "inherits": "ailment",
+        "inherits": "Ailment",
         "item": "Dekunda",
         "itemr": "Dekaja",
         "skillCard": true,
@@ -2166,10 +2291,12 @@ var personaMapRoyal = {
             "Dekunda": 14
         },
         "stats": [9, 5, 6, 10, 4],
-        "trait": "Gloomy Child"
+        "trait": "Gloomy Child",
+        "area": "Chemdah",
+        "floor": "L1-4"
     },
     "Moloch": {
-        "inherits": "fire",
+        "inherits": "Fire",
         "item": "Inferno Ring",
         "itemr": "Spiral Inferno Ring",
         "level": 60,
@@ -2185,10 +2312,12 @@ var personaMapRoyal = {
             "Fire Amp": 65
         },
         "stats": [32, 45, 42, 31, 37],
-        "trait": "Immunity"
+        "trait": "Immunity",
+        "area": "Da'at",
+        "floor": "All"
     },
     "Mot": {
-        "inherits": "ailment",
+        "inherits": "Ailment",
         "item": "Null Elec",
         "itemr": "Repel Elec",
         "skillCard": true,
@@ -2204,10 +2333,12 @@ var personaMapRoyal = {
             "Repel Elec": 77
         },
         "stats": [43, 51, 48, 42, 39],
-        "trait": "Mighty Gaze"
+        "trait": "Mighty Gaze",
+        "area": "Da'at",
+        "floor": "All"
     },
     "Mother Harlot": {
-        "inherits": "ice",
+        "inherits": "Ice",
         "item": "Claiomh Solais",
         "itemr": "Claiomh Solais R",
         "level": 85,
@@ -2227,7 +2358,7 @@ var personaMapRoyal = {
         "max": true
     },
     "Mothman": {
-        "inherits": "elec",
+        "inherits": "Electric",
         "item": "Skull Cracker",
         "itemr": "Mind Slice",
         "skillCard": true,
@@ -2244,10 +2375,12 @@ var personaMapRoyal = {
             "Ziodyne": 38
         },
         "stats": [21, 24, 16, 24, 21],
-        "trait": "Static Electricity"
+        "trait": "Static Electricity",
+        "area": "Adyeshach",
+        "floor": "L3, 4, 7, 8, 10"
     },
     "Naga": {
-        "inherits": "elec",
+        "inherits": "Electric",
         "item": "Counter",
         "itemr": "Counterstrike",
         "skillCard": true,
@@ -2264,10 +2397,12 @@ var personaMapRoyal = {
             "Marakukaja": 29
         },
         "stats": [15, 17, 15, 17, 15],
-        "trait": "Striking Weight"
+        "trait": "Striking Weight",
+        "area": "Akzeriyyuth",
+        "floor": "L2, 3, 5-7, 9"
     },
     "Narcissus": {
-        "inherits": "ailment",
+        "inherits": "Ailment",
         "item": "Dazzler",
         "itemr": "Nocturnal Flash",
         "skillCard": true,
@@ -2284,10 +2419,12 @@ var personaMapRoyal = {
             "Ambient Aid": 53
         },
         "stats": [27, 31, 29, 33, 31],
-        "trait": "Gluttonmouth"
+        "trait": "Gluttonmouth",
+        "area": "Sheriruth",
+        "floor": "L7 & 8 (after Palace 7)"
     },
     "Nebiros": {
-        "inherits": "curse",
+        "inherits": "Curse",
         "item": "Marin Karin",
         "itemr": "Brain Jack",
         "skillCard": true,
@@ -2308,7 +2445,7 @@ var personaMapRoyal = {
     },
     "Neko Shogun": {
         "special": true,
-        "inherits": "almighty",
+        "inherits": "Almighty",
         "item": "Catnap",
         "itemr": "Cat Buster",
         "level": 30,
@@ -2327,7 +2464,7 @@ var personaMapRoyal = {
         "trait": "Pinch Anchor"
     },
     "Nekomata": {
-        "inherits": "ailment",
+        "inherits": "Ailment",
         "item": "Pawzooka",
         "itemr": "Paw-omber",
         "level": 17,
@@ -2343,10 +2480,12 @@ var personaMapRoyal = {
             "Dodge Elec": 22
         },
         "stats": [13, 10, 12, 15, 8],
-        "trait": "Foul Odor"
+        "trait": "Foul Odor",
+        "area": "Kaitul",
+        "floor": "L2-4"
     },
     "Nigi Mitama": {
-        "inherits": "healing",
+        "inherits": "Healing",
         "item": "Prayer Ring",
         "itemr": "Spiral Prayer Ring",
         "level": 22,
@@ -2357,7 +2496,7 @@ var personaMapRoyal = {
         "trait": "Relief Bloodline"
     },
     "Norn": {
-        "inherits": "almighty",
+        "inherits": "Almighty",
         "item": "Recarm",
         "itemr": "Samarecarm",
         "skillCard": true,
@@ -2374,10 +2513,12 @@ var personaMapRoyal = {
             "Samarecarm": 57
         },
         "stats": [30, 38, 33, 34, 28],
-        "trait": "Intense Focus"
+        "trait": "Intense Focus",
+        "area": "Sheriruth",
+        "floor": "L11-13 (before Palace 7) / L5 (after Palace 7)"
     },
     "Nue": {
-        "inherits": "curse",
+        "inherits": "Curse",
         "item": "Maeiha",
         "itemr": "Eiga",
         "skillCard": true,
@@ -2394,10 +2535,12 @@ var personaMapRoyal = {
             "Curse Boost": 26
         },
         "stats": [16, 10, 17, 14, 10],
-        "trait": "Mighty Gaze"
+        "trait": "Mighty Gaze",
+        "area": "Chemdah",
+        "floor": "L4"
     },
     "Obariyon": {
-        "inherits": "phys",
+        "inherits": "Physical",
         "item": "Lucky Punch",
         "itemr": "Miracle Punch",
         "skillCard": true,
@@ -2406,10 +2549,12 @@ var personaMapRoyal = {
         "elems": ["rs", "-", "-", "-", "wk", "-", "-", "-", "-", "-"],
         "skills": {"Snap": 0, "Sukunda": 0, "Lucky Punch": 9, "Resist Fear": 10, "Dekaja": 12},
         "stats": [7, 3, 9, 8, 4],
-        "trait": "Striking Weight"
+        "trait": "Striking Weight",
+        "area": "Aiyatsbus",
+        "floor": "L3, 5 & 6"
     },
     "Oberon": {
-        "inherits": "elec",
+        "inherits": "Electric",
         "item": "Heat Wave",
         "itemr": "Vorpal Blade",
         "skillCard": true,
@@ -2427,10 +2572,12 @@ var personaMapRoyal = {
             "Elec Amp": 72
         },
         "stats": [40, 45, 42, 43, 35],
-        "trait": "Static Electricity"
+        "trait": "Static Electricity",
+        "area": "Sheriruth",
+        "floor": "L13 (after Palace 7)"
     },
     "Odin": {
-        "inherits": "elec",
+        "inherits": "Electric",
         "item": "Wild Hunt",
         "itemr": "Gungnir",
         "level": 84,
@@ -2450,7 +2597,7 @@ var personaMapRoyal = {
         "max": true
     },
     "Okuninushi": {
-        "inherits": "psy",
+        "inherits": "Psy",
         "item": "Official's Robe",
         "itemr": "Official's Robe R",
         "level": 54,
@@ -2470,7 +2617,7 @@ var personaMapRoyal = {
     },
     "Ongyo-Ki": {
         "special": true,
-        "inherits": "phys",
+        "inherits": "Physical",
         "item": "Myriad Slash Belt",
         "itemr": "Sword Dance Belt",
         "level": 89,
@@ -2490,7 +2637,7 @@ var personaMapRoyal = {
         "max": true
     },
     "Oni": {
-        "inherits": "phys",
+        "inherits": "Physical",
         "item": "Rampage",
         "itemr": "Kill Rush",
         "skillCard": true,
@@ -2499,10 +2646,12 @@ var personaMapRoyal = {
         "elems": ["rs", "rs", "-", "-", "-", "-", "-", "-", "-", "-"],
         "skills": {"Rampage": 0, "Counter": 0, "Snap": 0, "Giant Slice": 22, "Sharp Student": 23, "Memory Blow": 24},
         "stats": [19, 9, 17, 12, 10],
-        "trait": "Retaliating Body"
+        "trait": "Retaliating Body",
+        "area": "Kaitul",
+        "floor": "L3-5, 8, 9"
     },
     "Onmoraki": {
-        "inherits": "curse",
+        "inherits": "Curse",
         "item": "Grudge Ring",
         "itemr": "Spiral Grudge Ring",
         "level": 12,
@@ -2510,11 +2659,13 @@ var personaMapRoyal = {
         "elems": ["-", "-", "rs", "wk", "-", "-", "-", "-", "wk", "nu"],
         "skills": {"Eiha": 0, "Ice Wall": 0, "Agi": 13, "Evil Touch": 14, "Pulinpa": 15, "Confuse Boost": 17},
         "stats": [9, 12, 7, 10, 5],
-        "trait": "Intense Focus"
+        "trait": "Intense Focus",
+        "area": "Chemdah",
+        "floor": "L3 & 4"
     },
     "Orichalcum": {
         "rare": true,
-        "inherits": "almighty",
+        "inherits": "Almighty",
         "item": "Orichalcum",
         "itemr": "Orichalcum R",
         "level": 60,
@@ -2538,7 +2689,7 @@ var personaMapRoyal = {
     },
     "Orlov": {
         "rare": true,
-        "inherits": "almighty",
+        "inherits": "Almighty",
         "item": "Orlov",
         "itemr": "Orlov R",
         "level": 30,
@@ -2558,10 +2709,12 @@ var personaMapRoyal = {
             "Atomic Bloodline": 0
         },
         "stats": [30, 30, 30, 30, 30],
-        "trait": "Ultimate Vessel"
+        "trait": "Ultimate Vessel",
+        "area": "Sheriruth",
+        "floor": "All (before Palace 7) / L1-5 (after Palace 7)"
     },
     "Orobas": {
-        "inherits": "fire",
+        "inherits": "Fire",
         "item": "Rakunda",
         "itemr": "Marakunda",
         "skillCard": true,
@@ -2570,10 +2723,12 @@ var personaMapRoyal = {
         "elems": ["-", "-", "-", "wk", "-", "rs", "-", "-", "-", "rs"],
         "skills": {"Maragi": 0, "Sukukaja": 0, "Dekaja": 0, "Marakunda": 19, "Fire Break": 20, "Makajamaon": 21},
         "stats": [11, 14, 15, 12, 6],
-        "trait": "Mighty Gaze"
+        "trait": "Mighty Gaze",
+        "area": "Kaitul",
+        "floor": "L1-3"
     },
     "Orthrus": {
-        "inherits": "fire",
+        "inherits": "Fire",
         "item": "Agilao",
         "itemr": "Maragion",
         "skillCard": true,
@@ -2589,10 +2744,12 @@ var personaMapRoyal = {
             "Matarukaja": 26
         },
         "stats": [16, 14, 14, 19, 7],
-        "trait": "Thermal Conduct"
+        "trait": "Thermal Conduct",
+        "area": "Kaitul",
+        "floor": "L4, 5, 7-9"
     },
     "Ose": {
-        "inherits": "ailment",
+        "inherits": "Ailment",
         "item": "Counterstrike",
         "itemr": "High Counter",
         "skillCard": true,
@@ -2608,10 +2765,12 @@ var personaMapRoyal = {
             "Heat Wave": 47
         },
         "stats": [32, 24, 25, 31, 21],
-        "trait": "Retaliating Body"
+        "trait": "Retaliating Body",
+        "area": "Sheriruth",
+        "floor": "L1-5, 9 (before Palace 7) / L1-4 (after Palace 7)"
     },
     "Pale Rider": {
-        "inherits": "curse",
+        "inherits": "Curse",
         "item": "Hex Ring",
         "itemr": "Spiral Hex Ring",
         "level": 54,
@@ -2630,7 +2789,7 @@ var personaMapRoyal = {
         "trait": "Foul Stench"
     },
     "Parvati": {
-        "inherits": "psy",
+        "inherits": "Psy",
         "item": "Null Ice",
         "itemr": "Repel Ice",
         "skillCard": true,
@@ -2647,10 +2806,12 @@ var personaMapRoyal = {
             "Null Ice": 61
         },
         "stats": [33, 39, 33, 39, 31],
-        "trait": "Skillful Technique"
+        "trait": "Skillful Technique",
+        "area": "Sheriruth",
+        "floor": "L9, 11, 12 (after Palace 7)"
     },
     "Pazuzu": {
-        "inherits": "curse",
+        "inherits": "Curse",
         "item": "Spiral Curse Ring",
         "itemr": "Hex Ring",
         "level": 45,
@@ -2669,7 +2830,7 @@ var personaMapRoyal = {
         "trait": "Cursed Bloodline"
     },
     "Phoenix": {
-        "inherits": "nuke",
+        "inherits": "Nuclear",
         "item": "Heavensent Dress",
         "itemr": "Godsent Dress",
         "level": 21,
@@ -2680,7 +2841,7 @@ var personaMapRoyal = {
         "trait": "Atomic Bloodline"
     },
     "Pisaca": {
-        "inherits": "curse",
+        "inherits": "Curse",
         "item": "Headhunter Ladle",
         "itemr": "Headhunter Ladle EX",
         "level": 28,
@@ -2696,10 +2857,12 @@ var personaMapRoyal = {
             "Mudoon": 33
         },
         "stats": [19, 21, 21, 16, 14],
-        "trait": "Rare Antibody"
+        "trait": "Rare Antibody",
+        "area": "Akzeriyyuth",
+        "floor": "L5-7, 9-11"
     },
     "Pixie": {
-        "inherits": "elec",
+        "inherits": "Electric",
         "item": "Static Ring",
         "itemr": "Spiral Static Ring",
         "level": 2,
@@ -2707,10 +2870,12 @@ var personaMapRoyal = {
         "elems": ["-", "wk", "-", "wk", "rs", "-", "-", "-", "rs", "wk"],
         "skills": {"Zio": 0, "Dia": 0, "Patra": 3, "Tarukaja": 5, "Resist Confuse": 6},
         "stats": [1, 3, 3, 4, 2],
-        "trait": "Static Electricity"
+        "trait": "Static Electricity",
+        "area": "Qimranut / Aiyatsbus",
+        "floor": "All / L1 & 3"
     },
     "Power": {
-        "inherits": "bless",
+        "inherits": "Bless",
         "item": "Bless Boost",
         "itemr": "Bless Amp",
         "skillCard": true,
@@ -2727,10 +2892,12 @@ var personaMapRoyal = {
             "Null Curse": 46
         },
         "stats": [30, 26, 28, 25, 21],
-        "trait": "Internal Hypnosis"
+        "trait": "Internal Hypnosis",
+        "area": "Sheriruth",
+        "floor": "L1-5, 7 (before Palace 7) / L1-3 (after Palace 7)"
     },
     "Principality": {
-        "inherits": "bless",
+        "inherits": "Bless",
         "item": "Blessing Ring",
         "itemr": "Spiral Blessing Ring",
         "level": 29,
@@ -2749,7 +2916,7 @@ var personaMapRoyal = {
         "trait": "Blessed Bloodline"
     },
     "Queen Mab": {
-        "inherits": "almighty",
+        "inherits": "Almighty",
         "item": "Masquerade Ribbon",
         "itemr": "Masquerade Ribbon R",
         "level": 43,
@@ -2765,11 +2932,13 @@ var personaMapRoyal = {
             "Concentrate": 48
         },
         "stats": [23, 35, 26, 30, 22],
-        "trait": "Static Electricity"
+        "trait": "Static Electricity",
+        "area": "Sheriruth",
+        "floor": "L5, 7-9 (before Palace 7) / L3 & 4 (after Palace 7)"
     },
     "Queen's Necklace": {
         "rare": true,
-        "inherits": "almighty",
+        "inherits": "Almighty",
         "item": "Queen's Necklace",
         "itemr": "Queen's Necklace R",
         "level": 15,
@@ -2789,10 +2958,12 @@ var personaMapRoyal = {
             "Savior Bloodline": 0
         },
         "stats": [15, 15, 15, 15, 15],
-        "trait": "Ultimate Vessel"
+        "trait": "Ultimate Vessel",
+        "area": "Kaitul",
+        "floor": "L1-5, 7-9"
     },
     "Quetzalcoatl": {
-        "inherits": "wind",
+        "inherits": "Wind",
         "item": "Magarudyne",
         "itemr": "Panta Rhei",
         "skillCard": true,
@@ -2812,7 +2983,7 @@ var personaMapRoyal = {
         "trait": "Wind Bloodline"
     },
     "Raja Naga": {
-        "inherits": "elec",
+        "inherits": "Electric",
         "item": "Thunder Ring",
         "itemr": "Spiral Thunder Ring",
         "level": 55,
@@ -2831,7 +3002,7 @@ var personaMapRoyal = {
         "trait": "Electric Bloodline"
     },
     "Rakshasa": {
-        "inherits": "phys",
+        "inherits": "Physical",
         "item": "Regenerate 1",
         "itemr": "Regenerate 2",
         "skillCard": true,
@@ -2848,10 +3019,13 @@ var personaMapRoyal = {
             "Adverse Resolve": 30
         },
         "stats": [20, 15, 18, 17, 9],
-        "trait": "Skillful Combo"
+        "trait": "Skillful Combo",
+        "personality": "Irritable",
+        "area": "Kaitul",
+        "floor": "L5, 7-9"
     },
     "Rangda": {
-        "inherits": "curse",
+        "inherits": "Curse",
         "item": "Maeiga",
         "itemr": "Eigaon",
         "skillCard": true,
@@ -2860,10 +3034,12 @@ var personaMapRoyal = {
         "elems": ["rp", "rp", "nu", "-", "wk", "-", "-", "-", "wk", "nu"],
         "skills": {"Swift Strike": 0, "Bloodbath": 0, "Counterstrike": 0, "Eigaon": 49, "Matarunda": 51, "Mudoon": 53},
         "stats": [28, 34, 30, 33, 26],
-        "trait": "Cursed Bloodline"
+        "trait": "Cursed Bloodline",
+        "area": "Sheriruth",
+        "floor": "L11-13 (before Palace 7) / L5 (after Palace 7)"
     },
     "Raphael": {
-        "inherits": "almighty",
+        "inherits": "Almighty",
         "item": "Null Bless",
         "itemr": "Repel Bless",
         "skillCard": true,
@@ -2883,7 +3059,7 @@ var personaMapRoyal = {
         "trait": "Pinch Anchor"
     },
     "Red Rider": {
-        "inherits": "psy",
+        "inherits": "Psy",
         "item": "Karma Ring",
         "itemr": "Spiral Karma Ring",
         "level": 41,
@@ -2903,7 +3079,7 @@ var personaMapRoyal = {
     },
     "Regent": {
         "rare": true,
-        "inherits": "almighty",
+        "inherits": "Almighty",
         "item": "Regent",
         "itemr": "Regent R",
         "level": 10,
@@ -2923,10 +3099,12 @@ var personaMapRoyal = {
             "Skillful Combo": 0
         },
         "stats": [10, 10, 10, 10, 10],
-        "trait": "Ultimate Vessel"
+        "trait": "Ultimate Vessel",
+        "area": "Qimranut / Aiyatsbus / Chemdah",
+        "floor": "All / L1-3, 5 & 6 / L1-4, 6 & 7"
     },
     "Saki Mitama": {
-        "inherits": "healing",
+        "inherits": "Healing",
         "item": "Energy Charm",
         "itemr": "Spiral Energy Charm",
         "level": 6,
@@ -2937,7 +3115,7 @@ var personaMapRoyal = {
         "trait": "Internal Hypnosis"
     },
     "Sandalphon": {
-        "inherits": "bless",
+        "inherits": "Bless",
         "item": "Sword of Sinai",
         "itemr": "Sword of Sinai II",
         "level": 75,
@@ -2957,7 +3135,7 @@ var personaMapRoyal = {
         "max": true
     },
     "Sandman": {
-        "inherits": "wind",
+        "inherits": "Wind",
         "item": "Dormina",
         "itemr": "Lullaby",
         "skillCard": true,
@@ -2974,10 +3152,12 @@ var personaMapRoyal = {
             "Sleep Boost": 28
         },
         "stats": [11, 13, 14, 17, 21],
-        "trait": "Foul Odor"
+        "trait": "Foul Odor",
+        "area": "Akzeriyyuth",
+        "floor": "L1-3"
     },
     "Sarasvati": {
-        "inherits": "healing",
+        "inherits": "Healing",
         "item": "Mediarama",
         "itemr": "Diarahan",
         "skillCard": true,
@@ -2994,10 +3174,12 @@ var personaMapRoyal = {
             "Diarahan": 54
         },
         "stats": [30, 35, 32, 33, 27],
-        "trait": "Relief Bloodline"
+        "trait": "Relief Bloodline",
+        "area": "Sheriruth",
+        "floor": "L7-9. 12 (after Palace 7)"
     },
     "Satan": {
-        "inherits": "ice",
+        "inherits": "Ice",
         "item": "Tantric Oath",
         "itemr": "Tantric Oath R",
         "level": 92,
@@ -3019,7 +3201,7 @@ var personaMapRoyal = {
     },
     "Satanael": {
         "special": true,
-        "inherits": "almighty",
+        "inherits": "Almighty",
         "item": "Paradise Lost",
         "itemr": "Paradise Lost R",
         "level": 95,
@@ -3040,7 +3222,7 @@ var personaMapRoyal = {
         "note": "Only available on NG+"
     },
     "Scathach": {
-        "inherits": "wind",
+        "inherits": "Wind",
         "item": "Makarakarn",
         "itemr": "Tetrakarn",
         "skillCard": true,
@@ -3057,10 +3239,12 @@ var personaMapRoyal = {
             "Attack Master": 82
         },
         "stats": [48, 52, 46, 48, 44],
-        "trait": "Skillful Technique"
+        "trait": "Skillful Technique",
+        "area": "Adyeshach",
+        "floor": "L10-12"
     },
     "Seiryu": {
-        "inherits": "ice",
+        "inherits": "Ice",
         "item": "Blizzard Ring",
         "itemr": "Spiral Blizzard Ring",
         "level": 62,
@@ -3079,7 +3263,7 @@ var personaMapRoyal = {
         "trait": "Relentless"
     },
     "Setanta": {
-        "inherits": "phys",
+        "inherits": "Physical",
         "item": "Rebellion Anklet",
         "itemr": "Revolution Anklet",
         "level": 25,
@@ -3091,7 +3275,7 @@ var personaMapRoyal = {
     },
     "Seth": {
         "special": true,
-        "inherits": "fire",
+        "inherits": "Fire",
         "item": "Triple Shot Belt",
         "itemr": "Special Shot Belt",
         "level": 51,
@@ -3109,7 +3293,7 @@ var personaMapRoyal = {
         "trait": "Potent Hypnosis"
     },
     "Shiisaa": {
-        "inherits": "elec",
+        "inherits": "Electric",
         "item": "Double Fangs",
         "itemr": "Cornered Fang",
         "skillCard": true,
@@ -3128,7 +3312,7 @@ var personaMapRoyal = {
         "trait": "Atomic Bloodline"
     },
     "Shiki-Ouji": {
-        "inherits": "psy",
+        "inherits": "Psy",
         "item": "Double Shot",
         "itemr": "Triple Down",
         "skillCard": true,
@@ -3145,11 +3329,13 @@ var personaMapRoyal = {
             "Oni Kagura": 24
         },
         "stats": [16, 14, 12, 9, 10],
-        "trait": "Psychic Bloodline"
+        "trait": "Psychic Bloodline",
+        "area": "Chemdah",
+        "floor": "L6 & 7"
     },
     "Shiva": {
         "special": true,
-        "inherits": "psy",
+        "inherits": "Psy",
         "item": "Megido Fire",
         "itemr": "Megido Blaster",
         "level": 82,
@@ -3168,7 +3354,7 @@ var personaMapRoyal = {
         "trait": "Psychic Bloodline"
     },
     "Siegfried": {
-        "inherits": "phys",
+        "inherits": "Physical",
         "item": "Vorpal Blade Belt",
         "itemr": "Brave Belt",
         "level": 84,
@@ -3187,7 +3373,7 @@ var personaMapRoyal = {
         "trait": "Retaliating Body"
     },
     "Silky": {
-        "inherits": "healing",
+        "inherits": "Healing",
         "item": "Silk Dress",
         "itemr": "Fine Silk Dress",
         "level": 6,
@@ -3195,10 +3381,12 @@ var personaMapRoyal = {
         "elems": ["-", "-", "wk", "rs", "wk", "-", "-", "-", "-", "-"],
         "skills": {"Dormina": 0, "Bufu": 0, "Dia": 7, "Patra": 9, "Sharp Student": 10},
         "stats": [4, 7, 4, 5, 5],
-        "trait": "Intense Focus"
+        "trait": "Intense Focus",
+        "area": "Aiyatsbus",
+        "floor": "L2, 3, 5 & 6"
     },
     "Skadi": {
-        "inherits": "ice",
+        "inherits": "Ice",
         "item": "Snow Queen's Whip",
         "itemr": "Snow Queen's Whip II",
         "level": 53,
@@ -3214,10 +3402,12 @@ var personaMapRoyal = {
             "Spirit Drain": 58
         },
         "stats": [33, 39, 32, 34, 28],
-        "trait": "Bloodstained Eyes"
+        "trait": "Bloodstained Eyes",
+        "area": "Sheriruth",
+        "floor": "L12 & 13 (before Palace 7) / L5 (after Palace 7)"
     },
     "Slime": {
-        "inherits": "curse",
+        "inherits": "Curse",
         "item": "Tarunda",
         "itemr": "Matarunda",
         "skillCard": true,
@@ -3226,11 +3416,13 @@ var personaMapRoyal = {
         "elems": ["rs", "rs", "wk", "-", "-", "wk", "-", "-", "-", "-"],
         "skills": {"Lunge": 0, "Evil Touch": 0, "Tarunda": 11, "Fire Wall": 13, "Headbutt": 14},
         "stats": [9, 6, 11, 6, 5],
-        "trait": "Rare Antibody"
+        "trait": "Rare Antibody",
+        "area": "Qimranut / Aiyatsbus",
+        "floor": "All / L1, 2, 3, 6"
     },
     "Sraosha": {
         "special": true,
-        "inherits": "bless",
+        "inherits": "Bless",
         "item": "Archangel Bra",
         "itemr": "High Archangel Bra",
         "level": 80,
@@ -3250,7 +3442,7 @@ var personaMapRoyal = {
     },
     "Stone of Scone": {
         "rare": true,
-        "inherits": "almighty",
+        "inherits": "Almighty",
         "item": "Stone of Scone",
         "itemr": "Stone of Scone R",
         "level": 20,
@@ -3270,10 +3462,12 @@ var personaMapRoyal = {
             "Intense Focus": 0
         },
         "stats": [20, 20, 20, 20, 20],
-        "trait": "Ultimate Vessel"
+        "trait": "Ultimate Vessel",
+        "area": "Akzeriyyuth",
+        "floor": "L1-3, 5-7, 9-11"
     },
     "Succubus": {
-        "inherits": "curse",
+        "inherits": "Curse",
         "item": "Brain Shot",
         "itemr": "Pink Buster",
         "level": 7,
@@ -3281,10 +3475,12 @@ var personaMapRoyal = {
         "elems": ["-", "-", "rs", "-", "-", "wk", "-", "-", "wk", "nu"],
         "skills": {"Dormina": 0, "Rebellion": 0, "Agi": 8, "Dekaja": 10, "Sleep Boost": 11, "Mudo": 12},
         "stats": [4, 7, 5, 8, 4],
-        "trait": "Foul Odor"
+        "trait": "Foul Odor",
+        "area": "Aiyatsbus",
+        "floor": "L5 & 6"
     },
     "Sudama": {
-        "inherits": "psy",
+        "inherits": "Psy",
         "item": "Mapsi",
         "itemr": "Psio",
         "skillCard": true,
@@ -3301,10 +3497,12 @@ var personaMapRoyal = {
             "Psio": 23
         },
         "stats": [9, 14, 12, 13, 10],
-        "trait": "Gloomy Child"
+        "trait": "Gloomy Child",
+        "area": "Chemdah",
+        "floor": "L6 & 7"
     },
     "Sui-Ki": {
-        "inherits": "ice",
+        "inherits": "Ice",
         "item": "Bufula",
         "itemr": "Mabufula",
         "skillCard": true,
@@ -3321,10 +3519,12 @@ var personaMapRoyal = {
             "Dodge Fire": 29
         },
         "stats": [16, 15, 15, 18, 15],
-        "trait": "Frigid Bloodline"
+        "trait": "Frigid Bloodline",
+        "area": "Kaitul",
+        "floor": "L7-9"
     },
     "Surt": {
-        "inherits": "fire",
+        "inherits": "Fire",
         "item": "Maragidyne",
         "itemr": "Inferno",
         "skillCard": true,
@@ -3344,7 +3544,7 @@ var personaMapRoyal = {
         "trait": "Heated Bloodline"
     },
     "Suzaku": {
-        "inherits": "nuke",
+        "inherits": "Nuclear",
         "item": "Atom Ring",
         "itemr": "Spiral Atom Ring",
         "level": 16,
@@ -3363,7 +3563,7 @@ var personaMapRoyal = {
         "trait": "Gluttonmouth"
     },
     "Take-Minakata": {
-        "inherits": "elec",
+        "inherits": "Electric",
         "item": "Zionga",
         "itemr": "Mazionga",
         "skillCard": true,
@@ -3380,11 +3580,13 @@ var personaMapRoyal = {
             "Shock Boost": 32
         },
         "stats": [17, 19, 18, 16, 15],
-        "trait": "Electric Bloodline"
+        "trait": "Electric Bloodline",
+        "area": "Kaitul",
+        "floor": "L7-9"
     },
     "Tam Lin": {
         "special": true,
-        "inherits": "almighty",
+        "inherits": "Almighty",
         "item": "Fairy Knight Armor",
         "itemr": "Fairy Hero Armor",
         "level": 27,
@@ -3403,7 +3605,7 @@ var personaMapRoyal = {
         "trait": "Gluttonmouth"
     },
     "Thor": {
-        "inherits": "elec",
+        "inherits": "Electric",
         "item": "Mjolnir",
         "itemr": "Imprisoned Mjolnir",
         "level": 64,
@@ -3419,10 +3621,12 @@ var personaMapRoyal = {
             "Wild Thunder": 71
         },
         "stats": [44, 39, 43, 38, 35],
-        "trait": "Intense Focus"
+        "trait": "Intense Focus",
+        "area": "Da'at",
+        "floor": "All"
     },
     "Thoth": {
-        "inherits": "nuke",
+        "inherits": "Nuclear",
         "item": "Mafreila",
         "itemr": "Freidyne",
         "skillCard": true,
@@ -3439,10 +3643,12 @@ var personaMapRoyal = {
             "Growth 2": 42
         },
         "stats": [21, 28, 21, 24, 21],
-        "trait": "Skillful Technique"
+        "trait": "Skillful Technique",
+        "area": "Akzeriyyuth",
+        "floor": "L6, 7, 9-11"
     },
     "Throne": {
-        "inherits": "bless",
+        "inherits": "Bless",
         "item": "Spiral Divine Ring",
         "itemr": "Judgement Cross",
         "level": 72,
@@ -3458,10 +3664,12 @@ var personaMapRoyal = {
             "Inferno": 78
         },
         "stats": [42, 49, 43, 46, 43],
-        "trait": "Crisis Control"
+        "trait": "Crisis Control",
+        "area": "Da'at",
+        "floor": "All"
     },
     "Thunderbird": {
-        "inherits": "elec",
+        "inherits": "Electric",
         "item": "Elec Boost",
         "itemr": "Elec Amp",
         "skillCard": true,
@@ -3481,7 +3689,7 @@ var personaMapRoyal = {
         "trait": "Electric Bloodline"
     },
     "Titania": {
-        "inherits": "nuke",
+        "inherits": "Nuclear",
         "item": "Freidyne",
         "itemr": "Mafreidyne",
         "skillCard": true,
@@ -3490,11 +3698,13 @@ var personaMapRoyal = {
         "elems": ["-", "-", "-", "-", "-", "-", "wk", "rs", "rs", "rs"],
         "skills": {"Freidyne": 0, "Ziodyne": 0, "Lullaby": 0, "Concentrate": 59, "Nuke Amp": 60, "Mediarahan": 61},
         "stats": [32, 40, 35, 38, 30],
-        "trait": "Foul Stench"
+        "trait": "Foul Stench",
+        "area": "Sheriruth",
+        "floor": "L8, 9, 11-13 (after Palace 7)"
     },
     "Trumpeter": {
         "special": true,
-        "inherits": "almighty",
+        "inherits": "Almighty",
         "item": "Reactor Ring",
         "itemr": "Spiral Reactor Ring",
         "level": 59,
@@ -3513,7 +3723,7 @@ var personaMapRoyal = {
         "trait": "Relentless"
     },
     "Unicorn": {
-        "inherits": "bless",
+        "inherits": "Bless",
         "item": "Mahama",
         "itemr": "Hamaon",
         "skillCard": true,
@@ -3530,10 +3740,12 @@ var personaMapRoyal = {
             "Hamaon": 44
         },
         "stats": [20, 27, 25, 28, 24],
-        "trait": "Blessed Bloodline"
+        "trait": "Blessed Bloodline",
+        "area": "Sheriruth",
+        "floor": "L1-4 (before Palace 7) / L1 & 2 (after Palace 7)"
     },
     "Uriel": {
-        "inherits": "almighty",
+        "inherits": "Almighty",
         "item": "Heaven's Gate",
         "itemr": "Providence",
         "level": 81,
@@ -3552,7 +3764,7 @@ var personaMapRoyal = {
         "trait": "Mouth of Savoring"
     },
     "Valkyrie": {
-        "inherits": "phys",
+        "inherits": "Physical",
         "item": "Rising Slash",
         "itemr": "Deadly Fury",
         "skillCard": true,
@@ -3568,11 +3780,13 @@ var personaMapRoyal = {
             "Dodge Phys": 49
         },
         "stats": [33, 24, 28, 29, 25],
-        "trait": "Skillful Combo"
+        "trait": "Skillful Combo",
+        "area": "Sheriruth",
+        "floor": "L3-5, 7-9 (before Palace 7) / L2-4 (after Palace 7)"
     },
     "Vasuki": {
         "special": true,
-        "inherits": "ailment",
+        "inherits": "Ailment",
         "item": "Kuzuryu Gouhou",
         "itemr": "Kuzuryu Gouhou EX",
         "level": 68,
@@ -3591,7 +3805,7 @@ var personaMapRoyal = {
         "trait": "Foul Stench"
     },
     "Vishnu": {
-        "inherits": "almighty",
+        "inherits": "Almighty",
         "item": "Sudarshana",
         "itemr": "Sudarshana EX",
         "level": 83,
@@ -3612,7 +3826,7 @@ var personaMapRoyal = {
         "max": true
     },
     "Vohu Manah": {
-        "inherits": "almighty",
+        "inherits": "Almighty",
         "item": "Doomsday",
         "itemr": "Ancient Day",
         "level": 80,
@@ -3632,7 +3846,7 @@ var personaMapRoyal = {
         "max": true
     },
     "White Rider": {
-        "inherits": "curse",
+        "inherits": "Curse",
         "item": "Gun Boost",
         "itemr": "Gun Amp",
         "skillCard": true,
@@ -3653,7 +3867,7 @@ var personaMapRoyal = {
         "trait": "Bloodstained Eyes"
     },
     "Yaksini": {
-        "inherits": "ice",
+        "inherits": "Ice",
         "item": "Hysterical Slap",
         "itemr": "Oni Kagura",
         "skillCard": true,
@@ -3669,10 +3883,12 @@ var personaMapRoyal = {
             "Vicious Strike": 24
         },
         "stats": [14, 11, 13, 16, 13],
-        "trait": "Foul Odor"
+        "trait": "Foul Odor",
+        "area": "Kaitul",
+        "floor": "L3-5, 7"
     },
     "Yamata-no-Orochi": {
-        "inherits": "ice",
+        "inherits": "Ice",
         "item": "Triple Down",
         "itemr": "One-shot Kill",
         "skillCard": true,
@@ -3688,10 +3904,12 @@ var personaMapRoyal = {
             "Diamond Dust": 69
         },
         "stats": [44, 38, 48, 36, 33],
-        "trait": "Cold-Blooded"
+        "trait": "Cold-Blooded",
+        "area": "Da'at",
+        "floor": "All"
     },
     "Yatagarasu": {
-        "inherits": "fire",
+        "inherits": "Fire",
         "item": "Black Wing Robe",
         "itemr": "Black Wing Robe R",
         "level": 57,
@@ -3711,7 +3929,7 @@ var personaMapRoyal = {
     },
     "Yoshitsune": {
         "special": true,
-        "inherits": "phys",
+        "inherits": "Physical",
         "item": "Usumidori",
         "itemr": "Usumidori R",
         "level": 87,
@@ -3730,7 +3948,7 @@ var personaMapRoyal = {
         "trait": "Retaliating Body"
     },
     "Yurlungur": {
-        "inherits": "elec",
+        "inherits": "Electric",
         "item": "Mirrirmina",
         "itemr": "Mirrirmina EX",
         "level": 43,
@@ -3749,7 +3967,7 @@ var personaMapRoyal = {
         "trait": "Mouth of Savoring"
     },
     "Zaou-Gongen": {
-        "inherits": "fire",
+        "inherits": "Fire",
         "item": "God's Hand Belt",
         "itemr": "Gigantomachia Belt",
         "level": 80,
@@ -3769,7 +3987,7 @@ var personaMapRoyal = {
         "max": true
     },
     "Zouchouten": {
-        "inherits": "elec",
+        "inherits": "Electric",
         "item": "Spark Ring",
         "itemr": "Spiral Spark Ring",
         "level": 31,
@@ -3788,7 +4006,7 @@ var personaMapRoyal = {
         "trait": "Electric Bloodline"
     },
     "Ariadne": {
-        "inherits": "almighty",
+        "inherits": "Almighty",
         "item": "Red String",
         "itemr": "Red String R",
         "level": 30,
@@ -3808,7 +4026,7 @@ var personaMapRoyal = {
         "dlc": true
     },
     "Ariadne Picaro": {
-        "inherits": "almighty",
+        "inherits": "Almighty",
         "item": "Auto-Mataru",
         "itemr": "Auto-Maraku",
         "skillCard": true,
@@ -3829,7 +4047,7 @@ var personaMapRoyal = {
         "dlc": true
     },
     "Asterius": {
-        "inherits": "almighty",
+        "inherits": "Almighty",
         "item": "Blazing Horns",
         "itemr": "Inferno Horns",
         "level": 56,
@@ -3849,7 +4067,7 @@ var personaMapRoyal = {
         "dlc": true
     },
     "Asterius Picaro": {
-        "inherits": "almighty",
+        "inherits": "Almighty",
         "item": "Gigantomachia",
         "itemr": "Agneyastra",
         "skillCard": true,
@@ -3870,14 +4088,14 @@ var personaMapRoyal = {
         "dlc": true
     },
     "Athena": {
-        "inherits": "almighty",
+        "inherits": "Almighty",
         "item": "Kugelbein",
         "itemr": "Kugelbein R",
         "level": 46,
         "arcana": "Chariot",
         "elems": ["rs", "nu", "-", "-", "wk", "-", "-", "-", "-", "-"],
         "skills": {
-            "Akasha Arts": 0,
+            "Akashic Arts": 0,
             "Marakukaja": 0,
             "Rising Slash": 0,
             "Diarahan": 47,
@@ -3891,7 +4109,7 @@ var personaMapRoyal = {
         "dlc": true
     },
     "Athena Picaro": {
-        "inherits": "almighty",
+        "inherits": "Almighty",
         "item": "Charge",
         "itemr": "Concentrate",
         "skillCard": true,
@@ -3899,7 +4117,7 @@ var personaMapRoyal = {
         "arcana": "Chariot",
         "elems": ["rs", "nu", "-", "-", "wk", "-", "-", "-", "-", "-"],
         "skills": {
-            "Akasha Arts": 0,
+            "Akashic Arts": 0,
             "Matarukaja": 0,
             "Rising Slash": 0,
             "Diarahan": 51,
@@ -3913,7 +4131,7 @@ var personaMapRoyal = {
         "dlc": true
     },
     "Izanagi": {
-        "inherits": "almighty",
+        "inherits": "Almighty",
         "item": "White Headband",
         "itemr": "White Headband R",
         "level": 20,
@@ -3933,7 +4151,7 @@ var personaMapRoyal = {
         "dlc": true
     },
     "Izanagi Picaro": {
-        "inherits": "almighty",
+        "inherits": "Almighty",
         "item": "Growth 2",
         "itemr": "Growth 3",
         "skillCard": true,
@@ -3955,7 +4173,7 @@ var personaMapRoyal = {
     },
     "Izanagi-no-Okami": {
         "special": true,
-        "inherits": "almighty",
+        "inherits": "Almighty",
         "item": "Shiny Belt",
         "itemr": "Shiny Belt R",
         "level": 80,
@@ -3977,7 +4195,7 @@ var personaMapRoyal = {
     },
     "Izanagi-no-Okami Picaro": {
         "special": true,
-        "inherits": "almighty",
+        "inherits": "Almighty",
         "item": "Mediarahan",
         "itemr": "Salvation",
         "skillCard": true,
@@ -3999,7 +4217,7 @@ var personaMapRoyal = {
         "dlc": true
     },
     "Kaguya": {
-        "inherits": "almighty",
+        "inherits": "Almighty",
         "item": "Moonlight Robe",
         "itemr": "Moonlight Robe R",
         "level": 16,
@@ -4019,7 +4237,7 @@ var personaMapRoyal = {
         "dlc": true
     },
     "Kaguya Picaro": {
-        "inherits": "almighty",
+        "inherits": "Almighty",
         "item": "Diarahan",
         "itemr": "Mediarahan",
         "skillCard": true,
@@ -4040,7 +4258,7 @@ var personaMapRoyal = {
         "dlc": true
     },
     "Magatsu-Izanagi": {
-        "inherits": "almighty",
+        "inherits": "Almighty",
         "item": "Black Headband",
         "itemr": "Black Headband R",
         "level": 44,
@@ -4060,7 +4278,7 @@ var personaMapRoyal = {
         "dlc": true
     },
     "Magatsu-Izanagi Picaro": {
-        "inherits": "almighty",
+        "inherits": "Almighty",
         "item": "Heat Riser",
         "itemr": "Debilitate",
         "skillCard": true,
@@ -4081,7 +4299,7 @@ var personaMapRoyal = {
         "dlc": true
     },
     "Messiah": {
-        "inherits": "almighty",
+        "inherits": "Almighty",
         "item": "Sirius Armor",
         "itemr": "Sirius Armor EX",
         "level": 81,
@@ -4102,7 +4320,7 @@ var personaMapRoyal = {
         "dlc": true
     },
     "Messiah Picaro": {
-        "inherits": "almighty",
+        "inherits": "Almighty",
         "item": "Insta-Heal",
         "itemr": "Firm Stance",
         "skillCard": true,
@@ -4124,7 +4342,7 @@ var personaMapRoyal = {
         "dlc": true
     },
     "Orpheus": {
-        "inherits": "almighty",
+        "inherits": "Almighty",
         "item": "Hades Harp",
         "itemr": "Hades Harp R",
         "level": 26,
@@ -4144,7 +4362,7 @@ var personaMapRoyal = {
         "dlc": true
     },
     "Orpheus F": {
-        "inherits": "almighty",
+        "inherits": "Almighty",
         "item": "Graceful Harp",
         "itemr": "Graceful Harp R",
         "level": 11,
@@ -4164,7 +4382,7 @@ var personaMapRoyal = {
         "dlc": true
     },
     "Orpheus F Picaro": {
-        "inherits": "almighty",
+        "inherits": "Almighty",
         "item": "Endure",
         "itemr": "Enduring Soul",
         "skillCard": true,
@@ -4185,7 +4403,7 @@ var personaMapRoyal = {
         "dlc": true
     },
     "Orpheus Picaro": {
-        "inherits": "almighty",
+        "inherits": "Almighty",
         "item": "Agidyne",
         "itemr": "Maragidyne",
         "skillCard": true,
@@ -4206,7 +4424,7 @@ var personaMapRoyal = {
         "dlc": true
     },
     "Raoul": {
-        "inherits": "almighty",
+        "inherits": "Almighty",
         "item": "Picaresque Hat",
         "itemr": "Picaresque Crown",
         "level": 76,
@@ -4227,7 +4445,7 @@ var personaMapRoyal = {
         "dlc": true
     },
     "Thanatos": {
-        "inherits": "almighty",
+        "inherits": "Almighty",
         "item": "Darkness Ring",
         "itemr": "Darkness Ring R",
         "level": 65,
@@ -4247,7 +4465,7 @@ var personaMapRoyal = {
         "dlc": true
     },
     "Thanatos Picaro": {
-        "inherits": "almighty",
+        "inherits": "Almighty",
         "item": "Maeigaon",
         "itemr": "Demonic Decree",
         "skillCard": true,
@@ -4268,7 +4486,7 @@ var personaMapRoyal = {
         "dlc": true
     },
     "Tsukiyomi": {
-        "inherits": "almighty",
+        "inherits": "Almighty",
         "item": "Black Moon",
         "itemr": "Black Moon R",
         "level": 50,
@@ -4288,7 +4506,7 @@ var personaMapRoyal = {
         "dlc": true
     },
     "Tsukiyomi Picaro": {
-        "inherits": "almighty",
+        "inherits": "Almighty",
         "item": "Spell Master",
         "itemr": "Arms Master",
         "skillCard": true,

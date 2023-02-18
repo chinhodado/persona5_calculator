@@ -1,19 +1,4 @@
 var itemMapRoyal = {
-    "Abysmal Surge": {
-        "skillCard": true,
-    },
-    "Agi": {
-        "skillCard": true,
-    },
-    "Agidyne": {
-        "skillCard": true,
-    },
-    "Agilao": {
-        "skillCard": true,
-    },
-    "Agneyastra": {
-        "skillCard": true,
-    },
     "Aid Charm": {
         "type": "Accessory",
         "description": "+Dia (Small HP recovery for 1 ally)"
@@ -30,9 +15,6 @@ var itemMapRoyal = {
         "type": "Protector - Women only",
         "description": "Def 300 / Ev 18 / +Reduce Elec dmg (high)"
     },
-    "Arms Master": {
-        "skillCard": true
-    },
     "Arsène's Cane": {
         "type": "Weapon - Joker only",
         "description": "Atk 130 / Acc 92 / +Random ailment (low)",
@@ -41,24 +23,9 @@ var itemMapRoyal = {
         "type": "Accessory",
         "description": "+Assault Dive (Heavy Phys dmg to 1 foe)"
     },
-    "Assault Dive": {
-        "skillCard": true,
-    },
     "Atom Ring": {
         "type": "Accessory",
         "description": "+Frei (Light Nuke dmg to 1 foe)"
-    },
-    "Atomic Flare": {
-        "skillCard": true,
-    },
-    "Auto-Maraku": {
-        "skillCard": true,
-    },
-    "Auto-Masaku": {
-        "skillCard": true,
-    },
-    "Auto-Mataru": {
-        "skillCard": true
     },
     "Bear Gloves": {
         "type": "Weapon - Makoto only",
@@ -101,12 +68,6 @@ var itemMapRoyal = {
         "type": "Accessory",
         "description": "+Fire Amp / En +10"
     },
-    "Bless Amp": {
-        "skillCard": true
-    },
-    "Bless Boost": {
-        "skillCard": true
-    },
     "Blessing Ring": {
         "type": "Accessory",
         "description": "+Kouga (Med. Bless dmg to 1 foe)"
@@ -114,9 +75,6 @@ var itemMapRoyal = {
     "Blizzard Ring": {
         "type": "Accessory",
         "description": "+Bufudyne (Heavy Ice dmg to 1 foe)"
-    },
-    "Bloodbath": {
-        "skillCard": true
     },
     "Blood Red Capote": {
         "type": "Protector - Men only",
@@ -126,9 +84,6 @@ var itemMapRoyal = {
         "type": "Protector - Men only",
         "description": "Def 130 / Ev 20 / Ag +6"
     },
-    "Brain Jack": {
-        "skillCard": true
-    },
     "Brain Shot": {
         "type": "Gun - Ann only",
         "description" : "Atk 140 / Acc 84 / Rounds 12 / +Brainwash (med)"
@@ -137,21 +92,9 @@ var itemMapRoyal = {
         "type": "Accessory",
         "description": "+Brave Blade (Colossal Phys dmg to 1 foe)"
     },
-    "Brave Blade": {
-        "skillCard": true
-    },
     "Breeze Ring": {
         "type": "Accessory",
         "description": "+Garu (Light Wind dmg to 1 foe)"
-    },
-    "Bufu": {
-        "skillCard": true
-    },
-    "Bufudyne": {
-        "skillCard": true
-    },
-    "Bufula": {
-        "skillCard": true
     },
     "Cat Buster": {
         "type": "Gun - Morgana only",
@@ -161,9 +104,6 @@ var itemMapRoyal = {
         "type": "Gun - Morgana only",
         "description": "Atk 150 / Acc 90 / Rounds 5 / +Sleep (med)" 
     },
-    "Charge": {
-        "skillCard": true
-    },
     "Claiomh Solais": {
         "type": "Weapon - Morgana only",
         "description": "Atk 315 / Acc 90 / +50 SP"
@@ -171,21 +111,6 @@ var itemMapRoyal = {
     "Claiomh Solais R": {
         "type": "Weapon - Morgana only",
         "description": "Atk 330 / Acc 90 / +50 SP"
-    },
-    "Cleave": {
-        "skillCard": true
-    },
-    "Concentrate": {
-        "skillCard": true
-    },
-    "Cornered Fang": {
-        "skillCard": true
-    },
-    "Counter": {
-        "skillCard": true
-    },
-    "Counterstrike": {
-        "skillCard": true
     },
     "Crystal Skull": {
         "type": "Accessory",
@@ -227,12 +152,6 @@ var itemMapRoyal = {
         "type": "Accessory",
         "description": "+Evade Curse (high) / Ma +8"
     },
-    "Dazzler": {
-        "skillCard": true
-    },
-    "Deadly Fury": {
-        "skillCard": true
-    },
     "Death Contract": {
         "type": "Weapon - Haru only",
         "description": "Atk 190 / Acc 80 / +Despair (low)"
@@ -241,39 +160,9 @@ var itemMapRoyal = {
         "type": "Weapon - Haru only",
         "description": "Atk 200 / Acc 80 / +Despair (med)"
     },
-    "Death Scythe": {
-        "skillCard": true
-    },
-    "Deathbound": {
-        "skillCard": true
-    },
-    "Debilitate": {
-        "skillCard": true
-    },
-    "Dekaja": {
-        "skillCard": true
-    },
-    "Dekunda": {
-        "skillCard": true
-    },
-    "Demonic Decree": {
-        "skillCard": true
-    },
-    "Diamond Dust": {
-        "skillCard": true
-    },
     "Diamond Dust Lily": {
         "type": "Accessory",
         "description": "+Diamond Dust (Severe Ice dmg to 1 foe)"
-    },
-    "Diarahan": {
-        "skillCard": true
-    },
-    "Diarama": {
-        "skillCard": true
-    },
-    "Divine Judgement": {
-        "skillCard": true
     },
     "Divine Ring": {
         "type": "Accessory",
@@ -283,39 +172,9 @@ var itemMapRoyal = {
         "type": "Gun - Akechi only",
         "description": "Atk 330 / Acc 85 / Rounds 5 / All Stats +5"
     },
-    "Dormin Rush": {
-        "skillCard": true
-    },
-    "Dormina": {
-        "skillCard": true
-    },
-    "Double Fangs": {
-        "skillCard": true
-    },
-    "Double Shot": {
-        "skillCard": true
-    },
     "Dragon's Heart": {
         "type": "Accessory",
         "description": "+Psycho Force (Severe Psy dmg to 1 foe)"
-    },
-    "Drain Curse": {
-        "skillCard": true
-    },
-    "Dream Needle": {
-        "skillCard": true
-    },
-    "Eiga": {
-        "skillCard": true
-    },
-    "Eigaon": {
-        "skillCard": true
-    },
-    "Elec Amp": {
-        "skillCard": true
-    },
-    "Elec Boost": {
-        "skillCard": true
     },
     "Ember Ring": {
         "type": "Accessory",
@@ -329,27 +188,9 @@ var itemMapRoyal = {
         "type": "Accessory",
         "description": "En +8 / +Auto-Mataru"
     },
-    "Endure": {
-        "skillCard": true
-    },
-    "Enduring Soul": {
-        "skillCard": true
-    },
     "Energy Charm": {
         "type": "Accessory",
         "description": "+Energy Drop (Cure Confuse/Fear/Despair/Rage/Brainwash for 1 ally)"
-    },
-    "Energy Drop": {
-        "skillCard": true
-    },
-    "Energy Shower": {
-        "skillCard": true
-    },
-    "Evil Smile": {
-        "skillCard": true
-    },
-    "Evil Touch": {
-        "skillCard": true
     },
     "Fairy Hero Armor": {
         "type": "Protector - Men only",
@@ -375,12 +216,6 @@ var itemMapRoyal = {
         "type": "Accessory",
         "description": "+Atomic Flare (Severe Nuke dmg to 1 foe)"
     },
-    "Firm Stance": {
-        "skillCard": true
-    },
-    "Flash Bomb": {
-        "skillCard": true
-    },
     "Fleurs du Mal": {
         "type": "Weapon - Haru only",
         "description": "Atk 325 / Acc 86 / Ma +5 / +Dizzy (high)"
@@ -389,16 +224,6 @@ var itemMapRoyal = {
     "Fleurs du Mal R": {
         "type": "Weapon - Haru only",
         "description": "Atk 345 / Acc 86 / Ma +5 / +Dizzy (high)"
-        
-    },
-    "Foul Breath": {
-        "skillCard": true
-    },
-    "Frei": {
-        "skillCard": true
-    },
-    "Freidyne": {
-        "skillCard": true
     },
     "Frost Ace Hood": {
         "type": "Protector - Morgana only",
@@ -412,35 +237,17 @@ var itemMapRoyal = {
         "type": "Accessory",
         "description": "+Bufu (Light Ice dmg to all foes)"
     },
-    "Garu": {
-        "skillCard": true
-    },
-    "Garudyne": {
-        "skillCard": true
-    },
-    "Garula": {
-        "skillCard": true
-    },
     "Gatling Belt": {
         "type": "Accessory",
         "description": "+Gatling Blow (Light Phys dmg 3-4 times to 1 foe)"
-    },
-    "Giant Slice": {
-        "skillCard": true
     },
     "Giant Slice Belt": {
         "type": "Accessory",
         "description": "+Giant Slice (Med Phys dmg to 1 foe, powers up after baton pass)"
     },
-    "Gigantomachia": {
-        "skillCard": true
-    },
     "Gigantomachia Belt": {
         "type": "Accessory",
         "description": "+Gigantomachia (Colossal Phys dmg to all foes)"
-    },
-    "God's Hand": {
-        "skillCard": true
     },
     "God's Hand Belt": {
         "type": "Accessory",
@@ -466,25 +273,13 @@ var itemMapRoyal = {
         "type": "Accessory",
         "description": "Null Brainwash / Ma +8"
     },
-    "Growth 2": {
-        "skillCard": true
-    },
-    "Growth 3": {
-        "skillCard": true
-    },
     "Grudge Ring": {
         "type": "Accessory",
         "description": "+Eiha (Light Curse dmg to 1 foe)"
     },
-    "Gun Amp": {
-        "skillCard": true
-    },
     "Gungnir": {
         "type": "Gun - Ann only",
         "description": "Atk 340 / Acc 90 / Rounds 12 / +Despair (med)"
-    },
-    "Gun Boost": {
-        "skillCard": true
     },
     "Hades Harp": {
         "type": "Accessory",
@@ -498,15 +293,6 @@ var itemMapRoyal = {
         "type": "Accessory",
         "description": "+Hamaon (Bless, med chance of insta-killing 1 foe)"
     },
-    "Hama": {
-        "skillCard": true
-    },
-    "Hamaon": {
-        "skillCard": true
-    },
-    "Headbutt": {
-        "skillCard": true
-    },
     "Headhunter Ladle": {
         "type": "Weapon - Morgana only",
         "description": "Atk 150 / Acc 90 / +Critical rate up (low)"
@@ -514,12 +300,6 @@ var itemMapRoyal = {
     "Headhunter Ladle EX": {
         "type": "Weapon - Morgana only",
         "description": "Atk 150 / Acc 90 / +Critical rate up (med)"
-    },
-    "Heat Riser": {
-        "skillCard": true
-    },
-    "Heat Wave": {
-        "skillCard": true
     },
     "Heaven's Gate": {
         "type": "Gun - Yusuke only",
@@ -537,9 +317,6 @@ var itemMapRoyal = {
         "type": "Protector - Women only",
         "description": "Def 325 / Ev 20 / +Reduce Elec dmg (high)"
     },
-    "High Counter": {
-        "skillCard": true
-    },
     "Hinokagutsuchi": {
         "type": "Weapon - Akechi only",
         "description": "Atk 350 / Acc 90 / +Burn (med)"
@@ -556,21 +333,9 @@ var itemMapRoyal = {
         "type": "Accessory",
         "description": "All stats +4 / Regenerate 3"
     },
-    "Hysterical Slap": {
-        "skillCard": true
-    },
-    "Ice Amp": {
-        "skillCard": true
-    },
-    "Ice Boost": {
-        "skillCard": true
-    },
     "Imprisoned Mjolnir": {
         "type": "Weapon - Ryuji only",
         "description": "Atk 324 / Acc 88 / +Elec attacks"
-    },
-    "Inferno": {
-        "skillCard": true
     },
     "Inferno Horns": {
         "type": "Accessory",
@@ -579,9 +344,6 @@ var itemMapRoyal = {
     "Inferno Ring": {
         "type": "Accessory",
         "description": "+Agidyne (Heavy Fire dmg to 1 foe)"
-    },
-    "Insta-Heal": {
-        "skillCard": true
     },
     "Judge End": {
         "type": "Gun - Makoto only",
@@ -603,9 +365,6 @@ var itemMapRoyal = {
         "type": "Accessory",
         "description": "+Psio (Med Psy dmg to 1 foe)"
     },
-    "Kill Rush": {
-        "skillCard": true
-    },
     "King Frost Cape": {
         "type": "Protector - Unisex",
         "description": "Def 260 / Ev 16 / +Reduce Ice dmg (high)"
@@ -622,15 +381,6 @@ var itemMapRoyal = {
         "type": "Accessory",
         "description": "All stats +3 / +Bless Amp"
     },
-    "Kouga": {
-        "skillCard": true
-    },
-    "Kougaon": {
-        "skillCard": true
-    },
-    "Kouha": {
-        "skillCard": true
-    },
     "Kugelbein": {
         "type": "Accessory",
         "description": "+Auto-Maraku"
@@ -643,108 +393,9 @@ var itemMapRoyal = {
         "type": "Gun - Yusuke only",
         "description": "Atk 300 / Acc 75 / Rounds 10 / St +5"
     },
-    "Lucky Punch": {
-        "skillCard": true
-    },
     "Lucky Robe": {
         "type": "Protector - Women only",
         "description": "Def 210 / Ev 18 / Lu +5"
-    },
-    "Lullaby": {
-        "skillCard": true
-    },
-    "Lunge": {
-        "skillCard": true
-    },
-    "Mabufu": {
-        "skillCard": true
-    },
-    "Mabufudyne": {
-        "skillCard": true
-    },
-    "Mabufula": {
-        "skillCard": true
-    },
-    "Maeiga": {
-        "skillCard": true
-    },
-    "Maeigaon": {
-        "skillCard": true
-    },
-    "Maeiha": {
-        "skillCard": true
-    },
-    "Mafrei": {
-        "skillCard": true
-    },
-    "Mafreidyne": {
-        "skillCard": true
-    },
-    "Mafreila": {
-        "skillCard": true
-    },
-    "Magaru": {
-        "skillCard": true
-    },
-    "Magarudyne": {
-        "skillCard": true
-    },
-    "Magarula": {
-        "skillCard": true
-    },
-    "Mahama": {
-        "skillCard": true
-    },
-    "Mahamaon": {
-        "skillCard": true
-    },
-    "Makajama": {
-        "skillCard": true
-    },
-    "Makajamaon": {
-        "skillCard": true
-    },
-    "Makarakarn": {
-        "skillCard": true
-    },
-    "Makouga": {
-        "skillCard": true
-    },
-    "Makougaon": {
-        "skillCard": true
-    },
-    "Makouha": {
-        "skillCard": true
-    },
-    "Mamudo": {
-        "skillCard": true
-    },
-    "Mamudoon": {
-        "skillCard": true
-    },
-    "Mapsi": {
-        "skillCard": true
-    },
-    "Mapsiodyne": {
-        "skillCard": true
-    },
-    "Maragi": {
-        "skillCard": true
-    },
-    "Maragidyne": {
-        "skillCard": true
-    },
-    "Maragion": {
-        "skillCard": true
-    },
-    "Marakukaja": {
-        "skillCard": true
-    },
-    "Marakunda": {
-        "skillCard": true
-    },
-    "Marin Karin": {
-        "skillCard": true
     },
     "Masquerade Ribbon": {
         "type": "Weapon - Ann only",
@@ -754,39 +405,9 @@ var itemMapRoyal = {
         "type": "Weapon - Ann only",
         "description": "Atk 250 / Acc 88 / +Dizzy (low)"
     },
-    "Masukunda": {
-        "skillCard": true
-    },
-    "Matarukaja": {
-        "skillCard": true
-    },
-    "Matarunda": {
-        "skillCard": true
-    },
-    "Mazio": {
-        "skillCard": true
-    },
-    "Maziodyne": {
-        "skillCard": true
-    },
-    "Mazionga": {
-        "skillCard": true
-    },
-    "Media": {
-        "skillCard": true
-    },
-    "Mediarahan": {
-        "skillCard": true
-    },
-    "Mediarama": {
-        "skillCard": true
-    },
     "Megaton Raid Belt": {
         "type": "Accessory",
         "description": "+Megaton Raid (Severe Phys dmg to 1 foe)"
-    },
-    "Megaton Raid": {
-        "skillCard": true
     },
     "Megido Blaster": {
         "type": "Gun - Ryuji only",
@@ -795,21 +416,6 @@ var itemMapRoyal = {
     "Megido Fire": {
         "type": "Gun - Ryuji only",
         "description": "Atk 350 / Acc 85 / Rounds 3 / +Burn (high)"
-    },
-    "Megidola": {
-        "skillCard": true
-    },
-    "Megidolaon": {
-        "skillCard": true
-    },
-    "Memory Blow": {
-        "skillCard": true
-    },
-    "Mind Slice": {
-        "skillCard": true
-    },
-    "Miracle Punch": {
-        "skillCard": true
     },
     "Mirrirmina": {
         "type": "Gun - Makoto only",
@@ -831,18 +437,9 @@ var itemMapRoyal = {
         "type": "Protector - Women only",
         "description": "Def 70 / Ev 30 / +Repel Phys (high)"
     },
-    "Mudo": {
-        "skillCard": true
-    },
-    "Mudoon": {
-        "skillCard": true
-    },
     "Myriad Slash Belt": {
         "type": "Accessory",
         "description": "+Myriad Slashes (Med Phys dmg to 1 foe 2-3 times)"
-    },
-    "Myriad Slashes": {
-        "skillCard": true
     },
     "Mystic Ring": {
         "type": "Accessory",
@@ -860,39 +457,9 @@ var itemMapRoyal = {
         "type": "Gun - Joker only",
         "description": "Atk 350 / Acc 85 / Rounds 8 / All stats +6"
     },
-    "Nocturnal Flash": {
-        "skillCard": true
-    },
     "Nuclear Ring": {
         "type": "Accessory",
         "description": "+Freila (Med. Nuke dmg to 1 foe)"
-    },
-    "Nuke Amp": {
-        "skillCard": true
-    },
-    "Nuke Boost": {
-        "skillCard": true
-    },
-    "Null Bless": {
-        "skillCard": true
-    },
-    "Null Curse": {
-        "skillCard": true
-    },
-    "Null Elec": {
-        "skillCard": true
-    },
-    "Null Fire": {
-        "skillCard": true
-    },
-    "Null Ice": {
-        "skillCard": true
-    },
-    "Null Psy": {
-        "skillCard": true
-    },
-    "Null Wind": {
-        "skillCard": true
     },
     "Official's Robe": {
         "type": "Protector - Men only",
@@ -901,15 +468,6 @@ var itemMapRoyal = {
     "Official's Robe R": {
         "type": "Protector - Men only",
         "description": "Def 295 / Ev 20 / +Evade Curse (high)"
-    },
-    "Ominous Words": {
-        "skillCard": true
-    },
-    "One-shot Kill": {
-        "skillCard": true
-    },
-    "Oni-Kagura": {
-        "skillCard": true
     },
     "Orichalcum": {
         "type": "Accessory",
@@ -926,9 +484,6 @@ var itemMapRoyal = {
     "Orlov R": {
         "type": "Accessory",
         "description": "+High Counter / En +5"
-    },
-    "Panta Rhei": {
-        "skillCard": true
     },
     "Paradise Lost": {
         "type": "Weapon - Joker only",
@@ -958,9 +513,6 @@ var itemMapRoyal = {
         "type": "Gun - Ann only",
         "description": "Atk 135 / Acc 90 / Rounds 12 / +Brainwash (med)"
     },
-    "Power Slash": {
-        "skillCard": true
-    },
     "Prayer Ring": {
         "type": "Accessory",
         "description": "+Kouha (Light Bless dmg to 1 foe)"
@@ -969,18 +521,9 @@ var itemMapRoyal = {
         "type": "Gun - Yusuke only",
         "description": "Atk 350 / Acc 75 / Rounds 10 / Ag +13"
     },
-    "Psio": {
-        "skillCard": true
-    },
-    "Psiodyne": {
-        "skillCard": true
-    },
     "Psy Ring": {
         "type": "Accessory",
         "description": "+Psi (Light Psy dmg to 1 foe)"
-    },
-    "Psycho Force": {
-        "skillCard": true
     },
     "Pumpkin Bomb": {
         "type": "Gun - Ryuji only",
@@ -998,28 +541,13 @@ var itemMapRoyal = {
         "type": "Accessory",
         "description": "Mana Bonus (SP +10%) / All stats +2"
     },
-    "Rakukaja": {
-        "skillCard": true
-    },
-    "Rakunda": {
-        "skillCard": true
-    },
-    "Rampage": {
-        "skillCard": true
-    },
     "Reactor Ring": {
         "type": "Accessory",
         "description": "+Freidyne (Heavy Nuke dmg to 1 foe)"
     },
-    "Rebellion": {
-        "skillCard": true
-    },
     "Rebellion Anklet": {
         "type": "Accessory",
         "description": "+Rebellion (Incr. Critical rate for 1 ally)"
-    },
-    "Recarm": {
-        "skillCard": true
     },
     "Red String R": {
         "type": "Accessory",
@@ -1028,15 +556,6 @@ var itemMapRoyal = {
     "Red String": {
         "type": "Accessory",
         "description": "Lu +10 / +Attack Master (Incr. Attack at start of battle)"
-    },
-    "Regenerate 1": {
-        "skillCard": true
-    },
-    "Regenerate 2": {
-        "skillCard": true
-    },
-    "Regenerate 3": {
-        "skillCard": true
     },
     "Regent": {
         "type": "Accessory",
@@ -1050,43 +569,13 @@ var itemMapRoyal = {
         "type": "Accessory",
         "description": "+Samarecarm (Revive 1 ally with full HP)"
     },
-    "Repel Bless": {
-        "skillCard": true
-    },
-    "Repel Elec": {
-        "skillCard": true
-    },
-    "Repel Ice": {
-        "skillCard": true
-    },
-    "Repel Nuke": {
-        "skillCard": true
-    },
-    "Repel Phys": {
-        "skillCard": true
-    },
-    "Repel Psy": {
-        "skillCard": true
-    },
-    "Repel Wind": {
-        "skillCard": true
-    },
     "Revival Charm": {
         "type": "Accessory",
         "description": "+Recarm (Revive 1 ally with 50% HP)"
     },
-    "Revolution": {
-        "skillCard": true
-    },
     "Revolution Anklet": {
         "type": "Accessory",
         "description": "+Revolution (Increases Critical rate of everyone on field)"
-    },
-    "Riot Gun": {
-        "skillCard": true
-    },
-    "Rising Slash": {
-        "skillCard": true
     },
     "Rising Slash Belt": {
         "type": "Accessory",
@@ -1116,12 +605,6 @@ var itemMapRoyal = {
         "type": "Gun - Kasumi only",
         "description": "Atk 345 / Acc 90 / Rounds 10 / All stats +6"
     },
-    "Salvation": {
-        "skillCard": true
-    },
-    "Samarecarm": {
-        "skillCard": true
-    },
     "Senryou Yakusha": {
         "type": "Weapon - Yusuke only",
         "description": "Atk 130 / Acc 90 / St +5"
@@ -1150,12 +633,6 @@ var itemMapRoyal = {
         "type": "Protector - Unisex",
         "description": "Def 330 / Ev 10 / +Reduce Magic dmg (high)"
     },
-    "Skull Cracker": {
-        "skillCard": true
-    },
-    "Sledgehammer": {
-        "skillCard": true
-    },
     "Snow Queen's Whip": {
         "type": "Weapon - Ann only",
         "description": "Atk 260 / Acc 90 / +Auto-Sukukaja"
@@ -1175,12 +652,6 @@ var itemMapRoyal = {
     "Special Shot Belt": {
         "type": "Accessory",
         "description": "+One-shot Kill (Heavy Gun dmg to area of foes with high Critical)"
-    },
-    "Speed Master": {
-        "skillCard": true
-    },
-    "Spell Master": {
-        "skillCard": true
     },
     "Spiral Aid Charm": {
         "type": "Accessory",
@@ -1302,9 +773,6 @@ var itemMapRoyal = {
         "type": "Accessory",
         "description": "+Magarula (Med. Wind dmg to all foes)"
     },
-    "Stagnant Air": {
-        "skillCard": true
-    },
     "Static Ring": {
         "type": "Accessory",
         "description": "+Zio (Light Elec dmg to 1 foe)"
@@ -1329,22 +797,13 @@ var itemMapRoyal = {
         "type": "Gun - Morgana only",
         "description": "Atk 330 / Acc 90 / Rounds 5 / +Dizzy (high)"
     },
-    "Sukunda": {
-        "skillCard": true
-    },
     "Super Lucky Robe": {
         "type": "Protector - Women only",
         "description": "Def 220 / Ev 18 / Lu +10"
     },
-    "Swift Strike": {
-        "skillCard": true
-    },
     "Swift Strike Belt": {
         "type": "Accessory",
         "description": "+Swift Strike (Miniscule Phys dmg to all foes 2-4 times)"
-    },
-    "Sword Dance": {
-        "skillCard": true
     },
     "Sword Dance Belt": {
         "type": "Accessory",
@@ -1370,37 +829,13 @@ var itemMapRoyal = {
         "type": "Protector - Women only",
         "description": "Def 170 / Ev 12 / +Evade Wind (high)"
     },
-    "Tarukaja": {
-        "skillCard": true
-    },
-    "Tarunda": {
-        "skillCard": true
-    },
-    "Tempest Slash": {
-        "skillCard": true
-    },
-    "Terror Claw": {
-        "skillCard": true
-    },
-    "Tetraja": {
-        "skillCard": true
-    },
-    "Tetrakarn": {
-        "skillCard": true
-    },
     "The Great Thief Stick": {
         "type": "Weapon - Joker only",
         "description": "Atk 150 / Acc 92 / +Random ailment (med)"
     },
-    "Thunder Reign": {
-        "skillCard": true
-    },
     "Thunder Ring": {
         "type": "Accessory",
         "description": "+Ziodyne (Heavy elec dmg to 1 foe)"
-    },
-    "Triple Down": {
-        "skillCard": true
     },
     "Triple Shot Belt": {
         "type": "Accessory",
@@ -1430,15 +865,6 @@ var itemMapRoyal = {
         "type": "Weapon - Makoto only",
         "description": "Atk 305 / Acc 90 / +Random ailment (high)"
     },
-    "Vajra Blast": {
-        "skillCard": true
-    },
-    "Vicious Strike": {
-        "skillCard": true
-    },
-    "Vorpal Blade": {
-        "skillCard": true
-    },
     "Vorpal Blade Belt": {
         "type": "Accessory",
         "description": "+Vorpal Blade (Severe Phys dmg to all foes)"
@@ -1455,12 +881,6 @@ var itemMapRoyal = {
         "type": "Gun - Ann only",
         "description": "Atk 320 / Acc 90 / +Despair (med)"
     },
-    "Wind Amp": {
-        "skillCard": true
-    },
-    "Wind Boost": {
-        "skillCard": true
-    },
     "Wind Ring": {
         "type": "Accessory",
         "description": "+Garula (Med. Wind dmg to 1 foe)"
@@ -1472,14 +892,5 @@ var itemMapRoyal = {
     "Yagrush EX": {
         "type": "Gun - Haru only",
         "description": "Atk 360 / Acc 70 / Rounds 1 / +Shock (high)"
-    },
-    "Zio": {
-        "skillCard": true
-    },
-    "Ziodyne": {
-        "skillCard": true
-    },
-    "Zionga": {
-        "skillCard": true
     }
 };

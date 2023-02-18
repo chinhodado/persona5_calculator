@@ -80,7 +80,7 @@ var skillMap = {
     },
     "Agi": {
         "cost": 400,
-        "effect": "Deal weak Fire damage to 1 foe.",
+        "effect": "Deal light Fire damage to 1 foe.",
         "element": "fire",
         "personas": {
             "Hua Po": 0,
@@ -128,7 +128,7 @@ var skillMap = {
     },
     "Agneyastra": {
         "cost": 24,
-        "effect": "Deal 1 to 3 times medium Phys damage to all foes.",
+        "effect": "Deal medium Phys damage to all foes 1 to 3 times.",
         "element": "phys",
         "fuse": "Ardha",
         "personas": {
@@ -470,7 +470,7 @@ var skillMap = {
     },
     "Bufu": {
         "cost": 400,
-        "effect": "Deal weak Ice damage to 1 foe.",
+        "effect": "Deal light Ice damage to 1 foe.",
         "element": "ice",
         "fuse": "Koropokguru",
         "personas": {
@@ -539,7 +539,7 @@ var skillMap = {
     },
     "Cleave": {
         "cost": 6,
-        "effect": "Deal weak Phys damage to 1 foe.",
+        "effect": "Deal light Phys damage to 1 foe.",
         "element": "phys",
         "fuse": "Berith",
         "personas": {
@@ -598,7 +598,7 @@ var skillMap = {
     "Cross Slash": {
         "cost": 20,
         "dlc": true,
-        "effect": "Deal 2 times heavy Phys damage to 1 foe. High accuracy.",
+        "effect": "Deal heavy Phys damage to 1 foe 2 times. High accuracy.",
         "element": "phys",
         "personas": {
             "Izanagi": 0,
@@ -664,7 +664,7 @@ var skillMap = {
     },
     "Deathbound": {
         "cost": 22,
-        "effect": "Deal 1 to 2 times medium Phys damage to all foes.",
+        "effect": "Deal medium Phys damage to all foes 1 to 2 times.",
         "element": "phys",
         "fuse": "Dakini",
         "personas": {
@@ -990,7 +990,7 @@ var skillMap = {
     },
     "Double Fangs": {
         "cost": 10,
-        "effect": "Deal 2 times medium Phys damage to 1 foe.",
+        "effect": "Deal medium Phys damage to 1 foe 2 times.",
         "element": "phys",
         "personas": {
             "Berith": 10,
@@ -1042,7 +1042,7 @@ var skillMap = {
     },
     "Eiha": {
         "cost": 400,
-        "effect": "Deal weak Curse damage to 1 foe.",
+        "effect": "Deal light Curse damage to 1 foe.",
         "element": "curse",
         "personas": {
             "Arsène": 1,
@@ -1358,7 +1358,7 @@ var skillMap = {
     },
     "Frei": {
         "cost": 400,
-        "effect": "Deal weak Nuclear damage to 1 foe.",
+        "effect": "Deal light Nuclear damage to 1 foe.",
         "element": "nuclear",
         "personas": {
             "Makami": 0,
@@ -1393,7 +1393,7 @@ var skillMap = {
     },
     "Garu": {
         "cost": 300,
-        "effect": "Deal weak Wind damage to 1 foe.",
+        "effect": "Deal light Wind damage to 1 foe.",
         "element": "wind",
         "fuse": "Bicorn",
         "personas": {
@@ -1565,7 +1565,7 @@ var skillMap = {
     },
     "Hassou Tobi": {
         "cost": 25,
-        "effect": "Deal 8 times weak Phys damage to all foes.",
+        "effect": "Deal light Phys damage to all foes 8 times.",
         "element": "phys",
         "personas": {
             "Yoshitsune": 86
@@ -1795,7 +1795,7 @@ var skillMap = {
     },
     "Kouha": {
         "cost": 400,
-        "effect": "Deal weak Bless damage to 1 foe.",
+        "effect": "Deal light Bless damage to 1 foe.",
         "element": "bless",
         "personas": {
             "Angel": 13
@@ -1826,7 +1826,7 @@ var skillMap = {
     },
     "Lunge": {
         "cost": 5,
-        "effect": "Deal weak Phys damage to 1 foe.",
+        "effect": "Deal light Phys damage to 1 foe.",
         "element": "phys",
         "personas": {
             "Agathion": 4,
@@ -1849,7 +1849,7 @@ var skillMap = {
     },
     "Mabufu": {
         "cost": 1000,
-        "effect": "Deal weak Ice damage to all foes.",
+        "effect": "Deal light Ice damage to all foes.",
         "element": "ice",
         "fuse": "Sui-Ki",
         "personas": {
@@ -1927,7 +1927,7 @@ var skillMap = {
     },
     "Maeiha": {
         "cost": 1000,
-        "effect": "Deal weak Curse damage to all foes.",
+        "effect": "Deal light Curse damage to all foes.",
         "element": "curse",
         "fuse": "Choronzon",
         "personas": {
@@ -1938,7 +1938,7 @@ var skillMap = {
     },
     "Mafrei": {
         "cost": 1000,
-        "effect": "Deal weak Nuclear damage to all foes.",
+        "effect": "Deal light Nuclear damage to all foes.",
         "element": "nuclear",
         "fuse": "Suzaku",
         "personas": {
@@ -2143,7 +2143,7 @@ var skillMap = {
     },
     "Makouha": {
         "cost": 1000,
-        "effect": "Deal weak Bless damage to all foes.",
+        "effect": "Deal light Bless damage to all foes.",
         "element": "bless",
         "fuse": "Anubis",
         "personas": {
@@ -2183,7 +2183,7 @@ var skillMap = {
     },
     "Mapsi": {
         "cost": 1000,
-        "effect": "Deal weak Psy damage to all foes.",
+        "effect": "Deal light Psy damage to all foes.",
         "element": "psy",
         "personas": {
             "Leanan Sidhe": 22,
@@ -2219,7 +2219,7 @@ var skillMap = {
     },
     "Maragi": {
         "cost": 1000,
-        "effect": "Deal weak Fire damage to all foes.",
+        "effect": "Deal light Fire damage to all foes.",
         "element": "fire",
         "fuse": "Orobas",
         "personas": {
@@ -2378,7 +2378,7 @@ var skillMap = {
     },
     "Mazio": {
         "cost": 1000,
-        "effect": "Deal weak Electric damage to all foes.",
+        "effect": "Deal light Electric damage to all foes.",
         "element": "electric",
         "fuse": "Shiisaa",
         "personas": {
@@ -2901,7 +2901,7 @@ var skillMap = {
     },
     "Psi": {
         "cost": 400,
-        "effect": "Deal weak Psy damage to 1 foe.",
+        "effect": "Deal light Psy damage to 1 foe.",
         "element": "psy",
         "personas": {
             "Archangel": 0,
@@ -3030,7 +3030,7 @@ var skillMap = {
     },
     "Myriad Slashes": {
         "cost": 20,
-        "effect": "Deal 2 to 3 times medium Phys damage to 1 foe.",
+        "effect": "Deal medium Phys damage to 1 foe 2 to 3 times.",
         "element": "phys",
         "fuse": "Ongyo-Ki",
         "personas": {
@@ -3089,7 +3089,7 @@ var skillMap = {
     },
     "Rampage": {
         "cost": 13,
-        "effect": "Deal 1 to 3 times weak Phys damage to all foes.",
+        "effect": "Deal light Phys damage to all foes 1 to 3 times.",
         "element": "phys",
         "fuse": "Oni",
         "personas": {
@@ -3457,7 +3457,7 @@ var skillMap = {
     "Shining Arrows": {
         "cost": 2200,
         "dlc": true,
-        "effect": "Deal 4 to 8 times weak Bless damage to all foes.",
+        "effect": "Deal light Bless damage to all foes 4 to 8 times.",
         "element": "bless",
         "personas": {
             "Kaguya": 0,
@@ -3633,7 +3633,7 @@ var skillMap = {
     },
     "Swift Strike": {
         "cost": 17,
-        "effect": "Deal 3 to 4 times weak Phys damage to all foes.",
+        "effect": "Deal weak Phys damage to all foes 3 to 4 times.",
         "element": "phys",
         "fuse": "Byakko",
         "personas": {
@@ -3698,7 +3698,7 @@ var skillMap = {
     },
     "Tempest Slash": {
         "cost": 17,
-        "effect": "Deal 3 to 5 times minuscule Phys damage to 1 foe.",
+        "effect": "Deal minuscule Phys damage to 1 foe 3 to 5 times.",
         "element": "phys",
         "fuse": "Scathach",
         "personas": {
@@ -3797,7 +3797,7 @@ var skillMap = {
     },
     "Ayamur": {
         "cost": 25,
-        "effect": "Deal 3 times medium Phys damage to 1 foe. High critical rate.",
+        "effect": "Deal medium Phys damage to 1 foe 3 times. High critical rate.",
         "element": "phys",
         "personas": {
             "Baal": 80
@@ -3835,7 +3835,7 @@ var skillMap = {
     },
     "Triple Down": {
         "cost": 16,
-        "effect": "Deal 3 times small Gun damage to all foes.",
+        "effect": "Deal light Gun damage to all foes 3 times.",
         "element": "gun",
         "fuse": "White Rider",
         "personas": {
@@ -3982,7 +3982,7 @@ var skillMap = {
     },
     "Zio": {
         "cost": 400,
-        "effect": "Deal weak Electric damage to 1 foe.",
+        "effect": "Deal light Electric damage to 1 foe.",
         "element": "electric",
         "fuse": "Agathion",
         "personas": {

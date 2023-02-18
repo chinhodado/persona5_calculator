@@ -206,6 +206,10 @@ function getItem(itemName) {
     })
     return itemData;
 }
+function getInheritance(inheritanceType) {
+    return inheritanceChart[inheritanceType];
+}
+
 function getSkillPersonaList(skill) {
     var arr = [];
     for (var key in skill.personas) {

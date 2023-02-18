@@ -1,6 +1,7 @@
 // derived partly from https://github.com/aqiu384/aqiu384.github.io/blob/master/p5-tool/js/full_compendium.js
 var personaMap = {
     "Abaddon": {
+        "inherits": "Curse",
         "item": "Makarakarn",
         "skillCard": true,
         "arcana": "Judgement",
@@ -17,6 +18,7 @@ var personaMap = {
         }
     },
     "Agathion": {
+        "inherits": "Electric",
         "item": "Zio",
         "skillCard": true,
         "arcana": "Chariot",
@@ -24,9 +26,12 @@ var personaMap = {
         "stats": [3, 4, 5, 7, 3],
         "elems": ["-", "rs", "-", "-", "rs", "wk", "-", "-", "-", "-"],
         "skills": {"Baisudi": 0, "Dia": 0, "Dodge Elec": 8, "Lunge": 4, "Rakukaja": 6, "Zio": 0},
-        "personality": "Timid"
+        "personality": "Timid",
+        "area": "Aiyatsbus",
+        "floor": "L1"
     },
     "Alice": {
+        "inherits": "Curse",
         "item": "Mamudoon",
         "skillCard": true,
         "arcana": "Death",
@@ -46,14 +51,18 @@ var personaMap = {
         "max": true
     },
     "Ame-no-Uzume": {
+        "inherits": "Almighty",
         "item": "Senryou Yakusha",
         "arcana": "Lovers",
         "level": 29,
         "stats": [15, 22, 19, 20, 18],
         "elems": ["-", "-", "ab", "-", "-", "-", "wk", "-", "-", "-"],
-        "skills": {"Bufula": 0, "Diarama": 0, "Divine Grace": 32, "Mazio": 0, "Shock Boost": 34, "Tentarafoo": 31}
+        "skills": {"Bufula": 0, "Diarama": 0, "Divine Grace": 32, "Mazio": 0, "Shock Boost": 34, "Tentarafoo": 31},
+        "area": "Chemdah",
+        "floor": "L6 & 7"
     },
     "Ananta": {
+        "inherits": "Nuclear",
         "item": "Hua Khon",
         "arcana": "Star",
         "level": 43,
@@ -71,6 +80,7 @@ var personaMap = {
         }
     },
     "Andras": {
+        "inherits": "Ice",
         "item": "Ice Break",
         "skillCard": true,
         "arcana": "Devil",
@@ -78,9 +88,12 @@ var personaMap = {
         "stats": [5, 9, 7, 10, 6],
         "elems": ["-", "wk", "wk", "rs", "-", "-", "-", "-", "-", "-"],
         "skills": {"Apt Pupil": 13, "Bufu": 0, "Ice Break": 15, "Mabufu": 14, "Rakunda": 0, "Tarukaja": 11},
-        "personality": "Timid"
+        "personality": "Timid",
+        "area": "Aiyatsbus",
+        "floor": "L5 & 6"
     },
     "Angel": {
+        "inherits": "Bless",
         "item": "Baisudi",
         "skillCard": true,
         "arcana": "Justice",
@@ -88,9 +101,12 @@ var personaMap = {
         "stats": [7, 9, 9, 9, 9],
         "elems": ["-", "-", "-", "-", "rs", "-", "-", "-", "nu", "wk"],
         "skills": {"Baisudi": 14, "Dazzler": 0, "Dekunda": 17, "Dia": 0, "Dodge Curse": 15, "Hama": 0, "Kouha": 13},
-        "personality": "Irritable"
+        "personality": "Irritable",
+        "area": "Aiyatsbus / Kaitul",
+        "floor": "L5 & 6 / L1-4"
     },
     "Anubis": {
+        "inherits": "Almighty",
         "item": "Makouha",
         "skillCard": true,
         "arcana": "Judgement",
@@ -106,9 +122,12 @@ var personaMap = {
             "Null Fear": 39,
             "Resist Bless": 41
         },
-        "personality": "Gloomy"
+        "personality": "Gloomy",
+        "area": "Akzeriyyuth",
+        "floor": "L10 & 11"
     },
     "Anzu": {
+        "inherits": "Wind",
         "item": "Dekaja",
         "skillCard": true,
         "arcana": "Hierophant",
@@ -116,9 +135,12 @@ var personaMap = {
         "stats": [14, 18, 15, 21, 14],
         "elems": ["-", "wk", "-", "-", "rs", "rp", "-", "wk", "-", "-"],
         "skills": {"Assault Dive": 27, "Dekaja": 28, "Garula": 0, "Masukukaja": 0, "Null Forget": 29, "Wind Break": 0},
-        "personality": "Irritable"
+        "personality": "Irritable",
+        "area": "Akzeriyyuth",
+        "floor": "L1-3, 5-7, 9-11"
     },
     "Apsaras": {
+        "inherits": "Ice",
         "item": "Freeze Boost",
         "skillCard": true,
         "arcana": "Priestess",
@@ -126,9 +148,12 @@ var personaMap = {
         "stats": [7, 11, 6, 10, 6],
         "elems": ["-", "-", "-", "rs", "wk", "-", "-", "-", "-", "-"],
         "skills": {"Bufu": 0, "Elec Wall": 14, "Ice Wall": 0, "Media": 13, "Rebellion": 0, "Wind Wall": 16},
-        "personality": "Upbeat"
+        "personality": "Upbeat",
+        "area": "Chemdah",
+        "floor": "L1-4"
     },
     "Ara Mitama": {
+        "inherits": "Nuclear",
         "item": "Freila",
         "skillCard": true,
         "arcana": "Chariot",
@@ -138,6 +163,7 @@ var personaMap = {
         "skills": {"Freila": 0, "Marakunda": 33, "Miracle Punch": 0, "Taunt": 0, "Rage Boost": 35, "Rebellion": 32}
     },
     "Arahabaki": {
+        "inherits": "Ailment",
         "item": "Tapsuan",
         "arcana": "Hermit",
         "level": 35,
@@ -151,9 +177,12 @@ var personaMap = {
             "Null Brainwash": 0,
             "Spirit Drain": 37
         },
-        "personality": "Gloomy"
+        "personality": "Gloomy",
+        "area": "Adyeshach",
+        "floor": "L1-4, 6-8, 10"
     },
     "Archangel": {
+        "inherits": "Bless",
         "item": "Dazzler",
         "skillCard": true,
         "arcana": "Justice",
@@ -161,9 +190,12 @@ var personaMap = {
         "stats": [13, 10, 13, 12, 7],
         "elems": ["-", "-", "-", "-", "wk", "-", "-", "-", "nu", "wk"],
         "skills": {"Dazzler": 0, "Hama": 0, "Vajra Blast": 21, "Makouha": 19, "Psi": 0, "Rebellion": 18},
-        "personality": "Irritable"
+        "personality": "Irritable",
+        "area": "Aiyatsbus",
+        "floor": "L5 & 6"
     },
     "Ardha": {
+        "inherits": "Almighty",
         "item": "Agneyastra",
         "skillCard": true,
         "arcana": "Temperance",
@@ -183,6 +215,7 @@ var personaMap = {
         "max": true
     },
     "Ariadne": {
+        "inherits": "Almighty",
         "item": "Red Yarn Ball",
         "arcana": "Fortune",
         "level": 30,
@@ -200,6 +233,7 @@ var personaMap = {
         "dlc": true
     },
     "Ariadne Picaro": {
+        "inherits": "Almighty",
         "item": "Auto-Mataru",
         "skillCard": true,
         "arcana": "Fortune",
@@ -218,6 +252,7 @@ var personaMap = {
         "dlc": true
     },
     "Arsène": {
+        "inherits": "Curse",
         "item": "Arsène's Cane",
         "arcana": "Fool",
         "level": 1,
@@ -226,6 +261,7 @@ var personaMap = {
         "skills": {"Cleave": 2, "Adverse Resolve": 7, "Dream Needle": 5, "Eiha": 1, "Sukunda": 4}
     },
     "Asterius": {
+        "inherits": "Almighty",
         "item": "Thunder Horns",
         "arcana": "Fortune",
         "level": 56,
@@ -243,6 +279,7 @@ var personaMap = {
         "dlc": true
     },
     "Asterius Picaro": {
+        "inherits": "Almighty",
         "item": "Gigantomachia",
         "skillCard": true,
         "arcana": "Fortune",
@@ -261,6 +298,7 @@ var personaMap = {
         "dlc": true
     },
     "Asura-Ou": {
+        "inherits": "Nuclear",
         "item": "Vajra",
         "arcana": "Sun",
         "level": 76,
@@ -279,6 +317,7 @@ var personaMap = {
         "max": true
     },
     "Atropos": {
+        "inherits": "Electric",
         "item": "Mazionga",
         "skillCard": true,
         "arcana": "Fortune",
@@ -296,6 +335,7 @@ var personaMap = {
         }
     },
     "Attis": {
+        "inherits": "Fire",
         "item": "Enduring Soul",
         "skillCard": true,
         "arcana": "Hanged Man",
@@ -314,6 +354,7 @@ var personaMap = {
         "max": true
     },
     "Baal": {
+        "inherits": "Wind",
         "item": "Yagrush",
         "arcana": "Emperor",
         "level": 75,
@@ -330,6 +371,7 @@ var personaMap = {
         }
     },
     "Baphomet": {
+        "inherits": "Almighty",
         "item": "Shock Boost",
         "skillCard": true,
         "arcana": "Devil",
@@ -344,9 +386,12 @@ var personaMap = {
             "Freeze Boost": 63,
             "Shock Boost": 62,
             "Ziodyne": 61
-        }
+        },
+        "area": "Sheriruth",
+        "floor": "L13 (after Palace 7)"
     },
     "Barong": {
+        "inherits": "Electric",
         "item": "Invigorate 2",
         "skillCard": true,
         "arcana": "Emperor",
@@ -360,9 +405,12 @@ var personaMap = {
             "Null Elec": 55,
             "Wage War": 0,
             "Ziodyne": 0
-        }
+        },
+        "area": "Sheriruth",
+        "floor": "L11 & 12 (after Palace 7)"
     },
     "Beelzebub": {
+        "inherits": "Curse",
         "item": "Fleur du Mal",
         "arcana": "Devil",
         "level": 84,
@@ -381,6 +429,7 @@ var personaMap = {
         "max": true
     },
     "Belial": {
+        "inherits": "Curse",
         "item": "Maragion",
         "skillCard": true,
         "arcana": "Devil",
@@ -398,6 +447,7 @@ var personaMap = {
         }
     },
     "Belphegor": {
+        "inherits": "Ice",
         "item": "Mabufula",
         "skillCard": true,
         "arcana": "Tower",
@@ -405,9 +455,12 @@ var personaMap = {
         "stats": [25, 27, 24, 23, 19],
         "elems": ["-", "-", "wk", "rs", "rs", "-", "-", "rs", "-", "rp"],
         "skills": {"Bufula": 0, "Dodge Fire": 0, "Ice Break": 39, "Mabufula": 41, "Concentrate": 44, "Null Rage": 38},
-        "personality": "Irritable"
+        "personality": "Irritable",
+        "area": "Adyeshach",
+        "floor": "L6-8, 10"
     },
     "Berith": {
+        "inherits": "Physical",
         "item": "Cleave",
         "skillCard": true,
         "arcana": "Hierophant",
@@ -415,9 +468,12 @@ var personaMap = {
         "stats": [8, 6, 7, 8, 5],
         "elems": ["-", "nu", "rs", "wk", "-", "-", "-", "-", "-", "-"],
         "skills": {"Cleave": 0, "Dodge Fire": 11, "Double Fangs": 10, "Rakukaja": 0, "Sledgehammer": 13},
-        "personality": "Irritable"
+        "personality": "Irritable",
+        "area": "Aiyatsbus",
+        "floor": "L5 & 6"
     },
     "Bicorn": {
+        "inherits": "Wind",
         "item": "Garu",
         "skillCard": true,
         "arcana": "Hermit",
@@ -425,9 +481,12 @@ var personaMap = {
         "stats": [5, 3, 3, 5, 3],
         "elems": ["-", "-", "-", "-", "wk", "-", "-", "-", "-", "rs"],
         "skills": {"Apt Pupil": 8, "Garu": 6, "Ice Wall": 7, "Lunge": 0, "Tarunda": 0},
-        "personality": "Irritable"
+        "personality": "Irritable",
+        "area": "Aiyatsbus",
+        "floor": "L1 & 2"
     },
     "Bishamonten": {
+        "inherits": "Nuclear",
         "item": "Mafreidyne",
         "skillCard": true,
         "arcana": "Hierophant",
@@ -445,6 +504,7 @@ var personaMap = {
         }
     },
     "Black Frost": {
+        "inherits": "Almighty",
         "item": "Naraka Whip",
         "arcana": "Fool",
         "level": 67,
@@ -462,6 +522,7 @@ var personaMap = {
         "note": "Request \"One Who Bullies Bullies\" must be cleared"
     },
     "Black Ooze": {
+        "inherits": "Curse",
         "item": "Stagnant Air",
         "skillCard": true,
         "arcana": "Moon",
@@ -477,9 +538,12 @@ var personaMap = {
             "Matarunda": 0,
             "Stagnant Air": 0
         },
-        "personality": "Irritable"
+        "personality": "Irritable",
+        "area": "Adyeshach",
+        "floor": "L1-4, 6"
     },
     "Black Rider": {
+        "inherits": "Curse",
         "item": "Bad Beat",
         "skillCard": true,
         "arcana": "Tower",
@@ -497,6 +561,7 @@ var personaMap = {
         }
     },
     "Bugs": {
+        "inherits": "Almighty",
         "item": "Bear Gloves",
         "arcana": "Fool",
         "level": 49,
@@ -515,6 +580,7 @@ var personaMap = {
         "note": "Request \"The Lovesick Cyberstalking Girl\" must be cleared"
     },
     "Byakko": {
+        "inherits": "Ice",
         "item": "Swift Strike",
         "skillCard": true,
         "arcana": "Temperance",
@@ -532,6 +598,7 @@ var personaMap = {
         }
     },
     "Cerberus": {
+        "inherits": "Fire",
         "item": "Agidyne",
         "skillCard": true,
         "arcana": "Chariot",
@@ -546,9 +613,12 @@ var personaMap = {
             "Rebellion": 56,
             "Regenerate 2": 58
         },
-        "personality": "Unknown"
+        "personality": "Unknown",
+        "area": "Sheriruth",
+        "floor": "L7-9 (after Palace 7)"
     },
     "Chernobog": {
+        "inherits": "Ailment",
         "item": "Deadly Fury",
         "skillCard": true,
         "arcana": "Death",
@@ -566,6 +636,7 @@ var personaMap = {
         }
     },
     "Chi You": {
+        "inherits": "Psy",
         "item": "Arms Master",
         "skillCard": true,
         "arcana": "Chariot",
@@ -585,6 +656,7 @@ var personaMap = {
         "max": true
     },
     "Choronzon": {
+        "inherits": "Curse",
         "item": "Maeiha",
         "skillCard": true,
         "arcana": "Magician",
@@ -601,9 +673,12 @@ var personaMap = {
             "Rainy Play": 33,
             "Rampage": 0
         },
-        "personality": "Timid"
+        "personality": "Timid",
+        "area": "Kaitul",
+        "floor": "L1-4"
     },
     "Clotho": {
+        "inherits": "Healing",
         "item": "Invigorate 1",
         "skillCard": true,
         "arcana": "Fortune",
@@ -636,9 +711,12 @@ var personaMap = {
             "Maragidyne": 0,
             "Maziodyne": 0
         },
-        "rare": true
+        "rare": true,
+        "area": "Sheriruth",
+        "floor": "L7-9. 11-13 (after Palace 7)"
     },
     "Cu Chulainn": {
+        "inherits": "Almighty",
         "item": "Charge",
         "skillCard": true,
         "arcana": "Star",
@@ -656,6 +734,7 @@ var personaMap = {
         }
     },
     "Cybele": {
+        "inherits": "Healing",
         "item": "Sabazios",
         "arcana": "Priestess",
         "level": 73,
@@ -673,6 +752,7 @@ var personaMap = {
         "max": true
     },
     "Daisoujou": {
+        "inherits": "Bless",
         "item": "Makouga",
         "skillCard": true,
         "arcana": "Hierophant",
@@ -690,6 +770,7 @@ var personaMap = {
         }
     },
     "Dakini": {
+        "inherits": "Physical",
         "item": "Deathbound",
         "skillCard": true,
         "arcana": "Empress",
@@ -705,9 +786,12 @@ var personaMap = {
             "Rising Slash": 0,
             "Rebellion": 54
         },
-        "personality": "Unknown"
+        "personality": "Unknown",
+        "area": "Sheriruth",
+        "floor": "L7-9 (after Palace 7)"
     },
     "Decarabia": {
+        "inherits": "Fire",
         "item": "Fire Boost",
         "skillCard": true,
         "arcana": "Fool",
@@ -723,9 +807,12 @@ var personaMap = {
             "Tetrakarn": 38,
             "Ominous Words": 0
         },
-        "personality": "Gloomy"
+        "personality": "Gloomy",
+        "area": "Adyeshach",
+        "floor": "L3, 4, 6-8"
     },
     "Dionysus": {
+        "inherits": "Psy",
         "item": "Thermopylae",
         "skillCard": true,
         "arcana": "Fool",
@@ -743,6 +830,7 @@ var personaMap = {
         }
     },
     "Dominion": {
+        "inherits": "Bless",
         "item": "Makougaon",
         "skillCard": true,
         "arcana": "Justice",
@@ -761,6 +849,7 @@ var personaMap = {
         "personality": "Unknown"
     },
     "Eligor": {
+        "inherits": "Fire",
         "item": "Tarukaja",
         "skillCard": true,
         "arcana": "Emperor",
@@ -775,7 +864,9 @@ var personaMap = {
             "Sukunda": 19,
             "Tarukaja": 0
         },
-        "personality": "Unknown"
+        "personality": "Unknown",
+        "area": "Chemdah",
+        "floor": "L3 & 4"
     },
     "Emperor's Amulet": {
         "item": "Emperor's Amulet",
@@ -793,9 +884,12 @@ var personaMap = {
             "Psiodyne": 0,
             "Ziodyne": 0
         },
-        "rare": true
+        "rare": true,
+        "area": "Sheriruth",
+        "floor": "L7-9, 11-13 (after Palace 7)"
     },
     "Phoenix": {
+        "inherits": "Nuclear",
         "item": "Nuke Boost",
         "skillCard": true,
         "arcana": "Hierophant",
@@ -805,6 +899,7 @@ var personaMap = {
         "skills": {"Diarama": 23, "Dream Needle": 0, "Freila": 0, "Nuke Boost": 27, "Recarm": 25}
     },
     "Flauros": {
+        "inherits": "Ailment",
         "item": "Shackles",
         "arcana": "Devil",
         "level": 25,
@@ -823,6 +918,7 @@ var personaMap = {
         "note": "Needs Strength cooperation rank 1 to be fused"
     },
     "Forneus": {
+        "inherits": "Psy",
         "item": "Masukunda",
         "skillCard": true,
         "arcana": "Hierophant",
@@ -838,9 +934,12 @@ var personaMap = {
             "Stagnant Air": 66,
             "Survival Trick": 65
         },
-        "personality": "Unknown"
+        "personality": "Unknown",
+        "area": "Sheriruth",
+        "floor": "L12 & 13 (after Palace 7)"
     },
     "Fortuna": {
+        "inherits": "Wind",
         "item": "Fast Heal",
         "skillCard": true,
         "arcana": "Fortune",
@@ -858,6 +957,7 @@ var personaMap = {
         }
     },
     "Futsunushi": {
+        "inherits": "Physical",
         "item": "Brave Blade",
         "skillCard": true,
         "arcana": "Magician",
@@ -877,6 +977,7 @@ var personaMap = {
         "max": true
     },
     "Fuu-Ki": {
+        "inherits": "Wind",
         "item": "Wind Boost",
         "skillCard": true,
         "arcana": "Star",
@@ -884,9 +985,12 @@ var personaMap = {
         "stats": [14, 17, 16, 15, 14],
         "elems": ["-", "-", "-", "-", "wk", "ab", "-", "-", "-", "-"],
         "skills": {"Dodge Wind": 26, "Garula": 0, "Resist Psy": 27, "Tarukaja": 0, "Tetra Break": 0, "Wind Boost": 25},
-        "personality": "Unknown"
+        "personality": "Unknown",
+        "area": "Kaitul",
+        "floor": "L8 & 9"
     },
     "Gabriel": {
+        "inherits": "Almighty",
         "item": "Mabufudyne",
         "skillCard": true,
         "arcana": "Temperance",
@@ -905,6 +1009,7 @@ var personaMap = {
         }
     },
     "Ganesha": {
+        "inherits": "Ailment",
         "item": "Miracle Punch",
         "skillCard": true,
         "arcana": "Sun",
@@ -920,9 +1025,12 @@ var personaMap = {
             "Rebellion": 0,
             "Tetraja": 55
         },
-        "personality": "Unknown"
+        "personality": "Unknown",
+        "area": "Sheriruth",
+        "floor": "L5, 7-9 (before Palace 7) / L3 & 4 (after Palace 7)"
     },
     "Garuda": {
+        "inherits": "Wind",
         "item": "Wind Amp",
         "skillCard": true,
         "arcana": "Star",
@@ -938,9 +1046,12 @@ var personaMap = {
             "Masukukaja": 54,
             "Wind Amp": 59
         },
-        "personality": "Unknown"
+        "personality": "Unknown",
+        "area": "Sheriruth",
+        "floor": "L12 (after Palace 7)"
     },
     "Genbu": {
+        "inherits": "Ice",
         "item": "Patra",
         "skillCard": true,
         "arcana": "Temperance",
@@ -950,6 +1061,7 @@ var personaMap = {
         "skills": {"Bufu": 0, "Defense Master": 12, "Mabufu": 10, "Patra": 8, "Rakunda": 0, "Resist Forget": 11}
     },
     "Girimehkala": {
+        "inherits": "Ailment",
         "item": "Marakunda",
         "skillCard": true,
         "arcana": "Moon",
@@ -957,9 +1069,12 @@ var personaMap = {
         "stats": [36, 24, 32, 32, 15],
         "elems": ["rp", "rp", "rs", "-", "-", "-", "-", "-", "wk", "nu"],
         "skills": {"Foul Breath": 46, "Marakunda": 0, "Mudoon": 0, "Repel Phys": 51, "Swift Strike": 0, "Wage War": 48},
-        "personality": "Gloomy"
+        "personality": "Gloomy",
+        "area": "Adyeshach",
+        "floor": "L4, 6-8, 10"
     },
     "Hanuman": {
+        "inherits": "Physical",
         "item": "Ruyi Jingu Bang",
         "arcana": "Star",
         "level": 64,
@@ -973,9 +1088,12 @@ var personaMap = {
             "Tempest Slash": 0,
             "Tetra Break": 67
         },
-        "personality": "Unknown"
+        "personality": "Unknown",
+        "area": "Sheriruth",
+        "floor": "L12 & 13 (after Palace 7)"
     },
     "Hariti": {
+        "inherits": "Electric",
         "item": "Spirit Drain",
         "skillCard": true,
         "arcana": "Empress",
@@ -995,6 +1113,7 @@ var personaMap = {
         "personality": "Unknown"
     },
     "Hecatoncheires": {
+        "inherits": "Psy",
         "item": "Endure",
         "skillCard": true,
         "arcana": "Hanged Man",
@@ -1012,6 +1131,7 @@ var personaMap = {
         }
     },
     "Hell Biker": {
+        "inherits": "Fire",
         "item": "Black Jacket",
         "arcana": "Death",
         "level": 39,
@@ -1029,6 +1149,7 @@ var personaMap = {
         }
     },
     "High Pixie": {
+        "inherits": "Healing",
         "item": "Diarama",
         "skillCard": true,
         "arcana": "Fool",
@@ -1036,7 +1157,9 @@ var personaMap = {
         "stats": [8, 14, 10, 13, 10],
         "elems": ["-", "wk", "-", "-", "rs", "rs", "-", "wk", "-", "-"],
         "skills": {"Diarama": 18, "Dormina": 0, "Garu": 0, "Magaru": 20, "Media": 0, "Taunt": 19},
-        "personality": "Irritable"
+        "personality": "Irritable",
+        "area": "Kaitul",
+        "floor": "L1-3"
     },
     "Hope Diamond": {
         "item": "Hope Diamond",
@@ -1054,9 +1177,12 @@ var personaMap = {
             "Invigorate 2": 0,
             "Regenerate 2": 0
         },
-        "rare": true
+        "rare": true,
+        "area": "Sheriruth",
+        "floor": "L7-9. 11-13 (after Palace 7)"
     },
     "Horus": {
+        "inherits": "Almighty",
         "item": "Kougaon",
         "skillCard": true,
         "arcana": "Sun",
@@ -1074,6 +1200,7 @@ var personaMap = {
         }
     },
     "Hua Po": {
+        "inherits": "Fire",
         "item": "Agilao",
         "skillCard": true,
         "arcana": "Hanged Man",
@@ -1081,9 +1208,12 @@ var personaMap = {
         "stats": [4, 10, 4, 8, 8],
         "elems": ["-", "wk", "rp", "wk", "-", "-", "-", "-", "-", "-"],
         "skills": {"Agi": 0, "Burn Boost": 15, "Dormina": 0, "Maragi": 13, "Resist Forget": 12, "Tarunda": 11},
-        "personality": "Upbeat"
+        "personality": "Upbeat",
+        "area": "Chemdah",
+        "floor": "L1-3"
     },
     "Incubus": {
+        "inherits": "Ailment",
         "item": "Dream Needle",
         "skillCard": true,
         "arcana": "Devil",
@@ -1091,9 +1221,12 @@ var personaMap = {
         "stats": [4, 6, 4, 5, 3],
         "elems": ["-", "wk", "-", "-", "rs", "-", "-", "-", "wk", "-"],
         "skills": {"Life Drain": 0, "Evil Touch": 0, "Dodge Curse": 9, "Eiha": 7, "Tarunda": 8},
-        "personality": "Timid"
+        "personality": "Timid",
+        "area": "Aiyatsbus",
+        "floor": "L2, 3 & 6"
     },
     "Inugami": {
+        "inherits": "Fire",
         "item": "Brain Shake",
         "skillCard": true,
         "arcana": "Hanged Man",
@@ -1109,9 +1242,12 @@ var personaMap = {
             "Pulinpa": 0,
             "Tarukaja": 0
         },
-        "personality": "Timid"
+        "personality": "Timid",
+        "area": "Chemdah",
+        "floor": "L4, 6 & 7"
     },
     "Ippon-Datara": {
+        "inherits": "Physical",
         "item": "Sledgehammer",
         "skillCard": true,
         "arcana": "Hermit",
@@ -1126,9 +1262,12 @@ var personaMap = {
             "Sledgehammer": 0,
             "Tarukaja": 0
         },
-        "personality": "Unknown"
+        "personality": "Unknown",
+        "area": "Chemdah",
+        "floor": "L1-4"
     },
     "Ishtar": {
+        "inherits": "Healing",
         "item": "Salvation",
         "skillCard": true,
         "arcana": "Lovers",
@@ -1147,6 +1286,7 @@ var personaMap = {
         "max": true
     },
     "Isis": {
+        "inherits": "Healing",
         "item": "Zionga",
         "skillCard": true,
         "arcana": "Priestess",
@@ -1162,9 +1302,12 @@ var personaMap = {
             "Sukukaja": 0,
             "Zionga": 29
         },
-        "personality": "Timid"
+        "personality": "Timid",
+        "area": "Akzeriyyuth",
+        "floor": "L5-7, 9-11"
     },
     "Izanagi": {
+        "inherits": "Almighty",
         "item": "White Headband",
         "arcana": "Fool",
         "level": 20,
@@ -1182,6 +1325,7 @@ var personaMap = {
         "dlc": true
     },
     "Izanagi Picaro": {
+        "inherits": "Almighty",
         "item": "Growth 3",
         "skillCard": true,
         "arcana": "Fool",
@@ -1200,24 +1344,31 @@ var personaMap = {
         "dlc": true
     },
     "Jack Frost": {
+        "inherits": "Ice",
         "item": "Frost Hood",
         "arcana": "Magician",
         "level": 11,
         "stats": [8, 9, 7, 9, 7],
         "elems": ["-", "-", "wk", "nu", "-", "-", "-", "-", "-", "-"],
         "skills": {"Baisudi": 0, "Bufu": 0, "Freeze Boost": 15, "Ice Break": 0, "Mabufu": 12, "Rakunda": 13},
-        "personality": "Timid"
+        "personality": "Timid",
+        "area": "Chemdah",
+        "floor": "L4 & 6"
     },
     "Jack-o'-Lantern": {
+        "inherits": "Fire",
         "item": "Pumpkin Bomb",
         "arcana": "Magician",
         "level": 2,
         "stats": [2, 3, 3, 3, 2],
         "elems": ["-", "wk", "ab", "wk", "-", "wk", "-", "-", "-", "-"],
         "skills": {"Agi": 0, "Dazzler": 5, "Sharp Student": 4, "Rakunda": 0, "Resist Sleep": 7},
-        "personality": "Gloomy"
+        "personality": "Gloomy",
+        "area": "Qimranut / Aiyatsbus",
+        "floor": "All / L1"
     },
     "Jatayu": {
+        "inherits": "Wind",
         "item": "Flash Bomb",
         "skillCard": true,
         "arcana": "Tower",
@@ -1235,6 +1386,7 @@ var personaMap = {
         }
     },
     "Jikokuten": {
+        "inherits": "Physical",
         "item": "Memory Blow",
         "skillCard": true,
         "arcana": "Temperance",
@@ -1252,6 +1404,7 @@ var personaMap = {
         }
     },
     "Kaguya": {
+        "inherits": "Almighty",
         "item": "Moonlight Robe",
         "arcana": "Moon",
         "level": 16,
@@ -1269,6 +1422,7 @@ var personaMap = {
         "dlc": true
     },
     "Kaguya Picaro": {
+        "inherits": "Almighty",
         "item": "Diarahan",
         "skillCard": true,
         "arcana": "Moon",
@@ -1287,6 +1441,7 @@ var personaMap = {
         "dlc": true
     },
     "Kaiwan": {
+        "inherits": "Almighty",
         "item": "Mapsio",
         "skillCard": true,
         "arcana": "Star",
@@ -1302,9 +1457,12 @@ var personaMap = {
             "Psio": 0,
             "Speed Master": 38
         },
-        "personality": "Timid"
+        "personality": "Timid",
+        "area": "Adyeshach",
+        "floor": "L10-12"
     },
     "Kali": {
+        "inherits": "Fire",
         "item": "Khamrai Tao",
         "arcana": "Empress",
         "level": 77,
@@ -1321,6 +1479,7 @@ var personaMap = {
         }
     },
     "Kelpie": {
+        "inherits": "Wind",
         "item": "Terror Claw",
         "skillCard": true,
         "arcana": "Strength",
@@ -1328,9 +1487,12 @@ var personaMap = {
         "stats": [5, 5, 5, 6, 4],
         "elems": ["-", "-", "-", "rs", "wk", "-", "-", "-", "-", "-"],
         "skills": {"Garu": 0, "Lunge": 0, "Resist Brainwash": 8, "Sukukaja": 9, "Terror Claw": 10},
-        "personality": "Upbeat"
+        "personality": "Upbeat",
+        "area": "Aiyatsbus",
+        "floor": "L3"
     },
     "Kikuri-Hime": {
+        "inherits": "Healing",
         "item": "Divine Grace",
         "skillCard": true,
         "arcana": "Priestess",
@@ -1338,9 +1500,12 @@ var personaMap = {
         "stats": [22, 31, 24, 28, 22],
         "elems": ["-", "-", "wk", "-", "-", "nu", "-", "-", "rs", "-"],
         "skills": {"Divine Grace": 45, "Energy Drop": 0, "Lullaby": 0, "Marakukaja": 0, "Mediarama": 41, "Tetraja": 43},
-        "personality": "Unknown"
+        "personality": "Unknown",
+        "area": "Sheriruth",
+        "floor": "L3-5 (before Palace 7) / L2 & 3 (after Palace 7)"
     },
     "Kin-Ki": {
+        "inherits": "Physical",
         "item": "Regenerate 1",
         "skillCard": true,
         "arcana": "Chariot",
@@ -1356,9 +1521,12 @@ var personaMap = {
             "Regenerate 1": 0,
             "Sledgehammer": 28
         },
-        "personality": "Gloomy"
+        "personality": "Gloomy",
+        "area": "Kaitul",
+        "floor": "L4, 5, 7-9"
     },
     "King Frost": {
+        "inherits": "Ice",
         "item": "King Frost Cape",
         "arcana": "Emperor",
         "level": 61,
@@ -1373,9 +1541,12 @@ var personaMap = {
             "Megaton Raid": 0,
             "Null Despair": 65
         },
-        "personality": "Unknown"
+        "personality": "Unknown",
+        "area": "Sheriruth",
+        "floor": "L8, 11, 12, 13 (after Palace 7)"
     },
     "Kodama": {
+        "inherits": "Ailment",
         "item": "Fear Boost",
         "skillCard": true,
         "arcana": "Star",
@@ -1391,7 +1562,9 @@ var personaMap = {
             "Resist Fear": 17,
             "Tarukaja": 14
         },
-        "personality": "Upbeat"
+        "personality": "Upbeat",
+        "area": "Aiyatsbus",
+        "floor": "L1-3"
     },
     "Koh-i-Noor": {
         "item": "Koh-i-Noor",
@@ -1409,9 +1582,12 @@ var personaMap = {
             "Dodge Psy": 0,
             "Dodge Wind": 0
         },
-        "rare": true
+        "rare": true,
+        "area": "Adyeshach",
+        "floor": "L1-4, 6-8, 10-12"
     },
     "Kohryu": {
+        "inherits": "Psy",
         "item": "Sudarshana",
         "arcana": "Hierophant",
         "level": 76,
@@ -1430,6 +1606,7 @@ var personaMap = {
         "max": true
     },
     "Koppa Tengu": {
+        "inherits": "Wind",
         "item": "Growth 1",
         "skillCard": true,
         "arcana": "Temperance",
@@ -1437,9 +1614,12 @@ var personaMap = {
         "stats": [7, 8, 8, 11, 6],
         "elems": ["-", "-", "-", "wk", "-", "rs", "-", "-", "wk", "-"],
         "skills": {"Snap": 0, "Garu": 0, "Growth 1": 12, "Taunt": 13, "Rage Boost": 14, "Wage War": 15},
-        "personality": "Upbeat"
+        "personality": "Upbeat",
+        "area": "Chemdah",
+        "floor": "L6 & 7"
     },
     "Koropokguru": {
+        "inherits": "Ice",
         "item": "Bufu",
         "skillCard": true,
         "arcana": "Hermit",
@@ -1447,9 +1627,12 @@ var personaMap = {
         "stats": [5, 8, 6, 9, 6],
         "elems": ["-", "rs", "wk", "rs", "-", "rs", "-", "-", "-", "-"],
         "skills": {"Bufu": 0, "Dodge Ice": 11, "Fire Wall": 13, "Mabufu": 14, "Makajam": 0, "Rakunda": 12},
-        "personality": "Timid"
+        "personality": "Timid",
+        "area": "Chemdah",
+        "floor": "L2 & 3"
     },
     "Koumokuten": {
+        "inherits": "Physical",
         "item": "Regenerate 2",
         "skillCard": true,
         "arcana": "Hermit",
@@ -1468,6 +1651,7 @@ var personaMap = {
         }
     },
     "Kumbhanda": {
+        "inherits": "Ailment",
         "item": "Rage Boost",
         "skillCard": true,
         "arcana": "Hermit",
@@ -1482,18 +1666,24 @@ var personaMap = {
             "Stagnant Air": 0,
             "Tempest Slash": 43,
             "Wage War": 0
-        }
+        },
+        "area": "Sheriruth",
+        "floor": "L8, 9, 11-13 (before Palace 7) / L4 & 5 (after Palace 7)"
     },
     "Kurama Tengu": {
+        "inherits": "Wind",
         "item": "Garudyne",
         "skillCard": true,
         "arcana": "Hermit",
         "level": 56,
         "stats": [34, 38, 34, 42, 27],
         "elems": ["-", "-", "-", "wk", "-", "rp", "-", "-", "rs", "rs"],
-        "skills": {"Brain Buster": 0, "Garudyne": 57, "Growth 3": 58, "Heat Wave": 0, "Magarudyne": 60, "Masukunda": 0}
+        "skills": {"Brain Buster": 0, "Garudyne": 57, "Growth 3": 58, "Heat Wave": 0, "Magarudyne": 60, "Masukunda": 0},
+        "area": "Sheriruth",
+        "floor": "L11 (after Palace 7)"
     },
     "Kushinada": {
+        "inherits": "Healing",
         "item": "Wind Wall",
         "skillCard": true,
         "arcana": "Lovers",
@@ -1508,9 +1698,12 @@ var personaMap = {
             "Mediarama": 0,
             "Null Sleep": 45,
             "Wind Wall": 46
-        }
+        },
+        "area": "Sheriruth",
+        "floor": "L5, 7-9 (before Palace 7) / L3 & 4 (after Palace 7)"
     },
     "Kushi Mitama": {
+        "inherits": "Healing",
         "item": "Forget Boost",
         "skillCard": true,
         "arcana": "Strength",
@@ -1528,6 +1721,7 @@ var personaMap = {
         }
     },
     "Lachesis": {
+        "inherits": "Ice",
         "item": "Ice Boost",
         "skillCard": true,
         "arcana": "Fortune",
@@ -1545,6 +1739,7 @@ var personaMap = {
         }
     },
     "Lakshmi": {
+        "inherits": "Healing",
         "item": "Life Aid",
         "skillCard": true,
         "arcana": "Fortune",
@@ -1563,6 +1758,7 @@ var personaMap = {
         "max": true
     },
     "Lamia": {
+        "inherits": "Fire",
         "item": "Despair Boost",
         "skillCard": true,
         "arcana": "Empress",
@@ -1578,9 +1774,12 @@ var personaMap = {
             "Rakukaja": 0,
             "Ominous Words": 27
         },
-        "personality": "Gloomy"
+        "personality": "Gloomy",
+        "area": "Akzeriyyuth",
+        "floor": "L3, 5-7, 9-11"
     },
     "Leanan Sidhe": {
+        "inherits": "Almighty",
         "item": "Recarm",
         "skillCard": true,
         "arcana": "Lovers",
@@ -1588,18 +1787,24 @@ var personaMap = {
         "stats": [9, 17, 12, 16, 10],
         "elems": ["-", "-", "wk", "-", "-", "rs", "rs", "-", "-", "-"],
         "skills": {"Eiga": 23, "Mamudo": 21, "Mapsi": 22, "Marin Karin": 20, "Psio": 0, "Rakunda": 0},
-        "personality": "Irritable"
+        "personality": "Irritable",
+        "area": "Kaitul",
+        "floor": "L3-5"
     },
     "Legion": {
+        "inherits": "Psy",
         "item": "Legion's Jail",
         "arcana": "Fool",
         "level": 38,
         "stats": [24, 24, 30, 23, 20],
         "elems": ["rs", "rs", "rs", "-", "-", "-", "rs", "-", "wk", "nu"],
         "skills": {"Life Drain": 0, "Negative Pile": 0, "Null Dizzy": 42, "Psio": 39, "Rampage": 0, "Tetra Break": 40},
-        "personality": "Unknown"
+        "personality": "Unknown",
+        "area": "Adyeshach",
+        "floor": "L1-4"
     },
     "Lilim": {
+        "inherits": "Ice",
         "item": "Lullaby",
         "skillCard": true,
         "arcana": "Devil",
@@ -1615,9 +1820,12 @@ var personaMap = {
             "Masukunda": 0,
             "Spirit Drain": 36
         },
-        "personality": "Gloomy"
+        "personality": "Gloomy",
+        "area": "Adyeshach",
+        "floor": "L6-8, 10-12"
     },
     "Lilith": {
+        "inherits": "Almighty",
         "item": "Mabufudyne",
         "skillCard": true,
         "arcana": "Moon",
@@ -1635,6 +1843,7 @@ var personaMap = {
         }
     },
     "Lucifer": {
+        "inherits": "Almighty",
         "item": "Tyrant Pistol",
         "arcana": "Star",
         "level": 93,
@@ -1654,6 +1863,7 @@ var personaMap = {
         "max": true
     },
     "Mada": {
+        "inherits": "Fire",
         "item": "Unshaken Will",
         "skillCard": true,
         "arcana": "Tower",
@@ -1673,6 +1883,7 @@ var personaMap = {
         "max": true
     },
     "Magatsu-Izanagi": {
+        "inherits": "Almighty",
         "item": "Black Headband",
         "arcana": "Tower",
         "level": 44,
@@ -1690,6 +1901,7 @@ var personaMap = {
         "dlc": true
     },
     "Magatsu-Izanagi Picaro": {
+        "inherits": "Almighty",
         "item": "Heat Riser",
         "skillCard": true,
         "arcana": "Tower",
@@ -1708,6 +1920,7 @@ var personaMap = {
         "dlc": true
     },
     "Makami": {
+        "inherits": "Nuclear",
         "item": "Makajam",
         "skillCard": true,
         "arcana": "Temperance",
@@ -1723,9 +1936,12 @@ var personaMap = {
             "Makajam": 18,
             "Resist Despair": 19
         },
-        "personality": "Upbeat"
+        "personality": "Upbeat",
+        "area": "Chemdah",
+        "floor": "L6 & 7"
     },
     "Mandrake": {
+        "inherits": "Electric",
         "item": "Energy Drop",
         "skillCard": true,
         "arcana": "Death",
@@ -1733,9 +1949,12 @@ var personaMap = {
         "stats": [2, 3, 3, 4, 4],
         "elems": ["-", "-", "wk", "-", "rs", "-", "-", "-", "-", "-"],
         "skills": {"Energy Drop": 0, "Lunge": 4, "Pulinpa": 0, "Skull Cracker": 7, "Sukunda": 5},
-        "personality": "Upbeat"
+        "personality": "Upbeat",
+        "area": "Qimranut / Aiyatsbus",
+        "floor": "All / L1"
     },
     "Mara": {
+        "inherits": "Fire",
         "item": "Maragidyne",
         "skillCard": true,
         "arcana": "Tower",
@@ -1753,6 +1972,7 @@ var personaMap = {
         }
     },
     "Matador": {
+        "inherits": "Psy",
         "item": "Garula",
         "skillCard": true,
         "arcana": "Death",
@@ -1762,6 +1982,7 @@ var personaMap = {
         "skills": {"Garula": 23, "Null Dizzy": 0, "Psi": 0, "Sukukaja": 0, "Swift Strike": 20, "Trigger Happy": 22}
     },
     "Melchizedek": {
+        "inherits": "Bless",
         "item": "Mahamaon",
         "skillCard": true,
         "arcana": "Justice",
@@ -1779,6 +2000,7 @@ var personaMap = {
         }
     },
     "Messiah": {
+        "inherits": "Almighty",
         "item": "Lucifer Guard",
         "arcana": "Judgement",
         "level": 81,
@@ -1797,6 +2019,7 @@ var personaMap = {
         "dlc": true
     },
     "Messiah Picaro": {
+        "inherits": "Almighty",
         "item": "Insta-Heal",
         "skillCard": true,
         "arcana": "Judgement",
@@ -1816,6 +2039,7 @@ var personaMap = {
         "dlc": true
     },
     "Metatron": {
+        "inherits": "Bless",
         "item": "Nataraja",
         "arcana": "Justice",
         "level": 89,
@@ -1835,6 +2059,7 @@ var personaMap = {
         "max": true
     },
     "Michael": {
+        "inherits": "Almighty",
         "item": "Judge of the Dead",
         "arcana": "Judgement",
         "level": 87,
@@ -1853,6 +2078,7 @@ var personaMap = {
         "note": "Needs Strength cooperation rank 5 to be fused"
     },
     "Mitra": {
+        "inherits": "Bless",
         "item": "Death Contract",
         "arcana": "Temperance",
         "level": 33,
@@ -1869,6 +2095,7 @@ var personaMap = {
         }
     },
     "Mithras": {
+        "inherits": "Nuclear",
         "item": "Petra Genetrix",
         "arcana": "Sun",
         "level": 39,
@@ -1882,9 +2109,12 @@ var personaMap = {
             "Tentarafoo": 0,
             "Tetra Break": 41
         },
-        "personality": "Gloomy"
+        "personality": "Gloomy",
+        "area": "Adyeshach",
+        "floor": "L11 & 12"
     },
     "Mokoi": {
+        "inherits": "Ailment",
         "item": "Dekunda",
         "skillCard": true,
         "arcana": "Death",
@@ -1899,9 +2129,12 @@ var personaMap = {
             "Skull Cracker": 0,
             "Tarukaja": 0
         },
-        "personality": "Gloomy"
+        "personality": "Gloomy",
+        "area": "Chemdah",
+        "floor": "L1-4"
     },
     "Moloch": {
+        "inherits": "Psy",
         "item": "Nuke Amp",
         "skillCard": true,
         "arcana": "Hanged Man",
@@ -1919,6 +2152,7 @@ var personaMap = {
         }
     },
     "Mot": {
+        "inherits": "Ailment",
         "item": "Concentrate",
         "skillCard": true,
         "arcana": "Death",
@@ -1935,6 +2169,7 @@ var personaMap = {
         }
     },
     "Mother Harlot": {
+        "inherits": "Ice",
         "item": "Claiomh Solais - Sable",
         "arcana": "Empress",
         "level": 80,
@@ -1952,6 +2187,7 @@ var personaMap = {
         "max": true
     },
     "Mothman": {
+        "inherits": "Electric",
         "item": "Foul Breath",
         "skillCard": true,
         "arcana": "Moon",
@@ -1966,9 +2202,12 @@ var personaMap = {
             "Skull Cracker": 0,
             "Tentarafoo": 35
         },
-        "personality": "Timid"
+        "personality": "Timid",
+        "area": "Adyeshach",
+        "floor": "L3, 4, 7, 8, 10"
     },
     "Naga": {
+        "inherits": "Electric",
         "item": "Elec Boost",
         "skillCard": true,
         "arcana": "Hermit",
@@ -1984,9 +2223,12 @@ var personaMap = {
             "Mazionga": 28,
             "Zionga": 0
         },
-        "personality": "Gloomy"
+        "personality": "Gloomy",
+        "area": "Akzeriyyuth",
+        "floor": "L2, 3, 5-7, 9"
     },
     "Narcissus": {
+        "inherits": "Ailment",
         "item": "Daffodils",
         "arcana": "Lovers",
         "level": 50,
@@ -2000,9 +2242,12 @@ var personaMap = {
             "Growth 3": 52,
             "Magarula": 0,
             "Mediarama": 54
-        }
+        },
+        "area": "Sheriruth",
+        "floor": "L7 & 8 (after Palace 7)"
     },
     "Nebiros": {
+        "inherits": "Curse",
         "item": "Eigaon",
         "skillCard": true,
         "arcana": "Devil",
@@ -2020,6 +2265,7 @@ var personaMap = {
         }
     },
     "Neko Shogun": {
+        "inherits": "Almighty",
         "item": "Catnap",
         "arcana": "Star",
         "level": 30,
@@ -2038,6 +2284,7 @@ var personaMap = {
         "note": "Needs Strength cooperation rank 1 to be fused"
     },
     "Nekomata": {
+        "inherits": "Ailment",
         "item": "Pawzooka",
         "arcana": "Magician",
         "level": 17,
@@ -2052,9 +2299,12 @@ var personaMap = {
             "Terror Claw": 0,
             "Wind Break": 20
         },
-        "personality": "Upbeat"
+        "personality": "Upbeat",
+        "area": "Kaitul",
+        "floor": "L2-4"
     },
     "Nigi Mitama": {
+        "inherits": "Healing",
         "item": "Me Patra",
         "skillCard": true,
         "arcana": "Temperance",
@@ -2064,6 +2314,7 @@ var personaMap = {
         "skills": {"Baisudi": 0, "Divine Grace": 22, "Makouha": 0, "Me Patra": 23, "Media": 0, "Rainy Play": 24}
     },
     "Norn": {
+        "inherits": "Almighty",
         "item": "Diarahan",
         "skillCard": true,
         "arcana": "Fortune",
@@ -2078,9 +2329,12 @@ var personaMap = {
             "Samarecarm": 57,
             "Tetraja": 56,
             "Ziodyne": 0
-        }
+        },
+        "area": "Sheriruth",
+        "floor": "L11-13 (before Palace 7) / L5 (after Palace 7)"
     },
     "Nue": {
+        "inherits": "Curse",
         "item": "Skull Cracker",
         "skillCard": true,
         "arcana": "Moon",
@@ -2096,9 +2350,12 @@ var personaMap = {
             "Pulinpa": 22,
             "Skull Cracker": 0
         },
-        "personality": "Irritable"
+        "personality": "Irritable",
+        "area": "Chemdah",
+        "floor": "L4"
     },
     "Obariyon": {
+        "inherits": "Physical",
         "item": "Lucky Punch",
         "skillCard": true,
         "arcana": "Fool",
@@ -2106,9 +2363,12 @@ var personaMap = {
         "stats": [7, 3, 9, 8, 4],
         "elems": ["rs", "-", "-", "-", "wk", "-", "-", "-", "-", "-"],
         "skills": {"Dekaja": 12, "Snap": 0, "Lucky Punch": 9, "Resist Fear": 10, "Sukunda": 0},
-        "personality": "Unknown"
+        "personality": "Unknown",
+        "area": "Aiyatsbus",
+        "floor": "L3, 5 & 6"
     },
     "Oberon": {
+        "inherits": "Electric",
         "item": "Elec Amp",
         "skillCard": true,
         "arcana": "Emperor",
@@ -2125,9 +2385,12 @@ var personaMap = {
             "Samarecarm": 71,
             "Ziodyne": 0
         },
-        "personality": "Unknown"
+        "personality": "Unknown",
+        "area": "Sheriruth",
+        "floor": "L13 (after Palace 7)"
     },
     "Odin": {
+        "inherits": "Electric",
         "item": "Wild Hunt",
         "arcana": "Emperor",
         "level": 82,
@@ -2145,6 +2408,7 @@ var personaMap = {
         "max": true
     },
     "Okuninushi": {
+        "inherits": "Psy",
         "item": "Official's Robe",
         "arcana": "Emperor",
         "level": 44,
@@ -2161,6 +2425,7 @@ var personaMap = {
         }
     },
     "Ongyo-Ki": {
+        "inherits": "Physical",
         "item": "Myriad Slashes",
         "skillCard": true,
         "arcana": "Hermit",
@@ -2180,6 +2445,7 @@ var personaMap = {
         "max": true
     },
     "Oni": {
+        "inherits": "Physical",
         "item": "Rampage",
         "skillCard": true,
         "arcana": "Strength",
@@ -2187,9 +2453,12 @@ var personaMap = {
         "stats": [17, 8, 16, 13, 10],
         "elems": ["rs", "rs", "-", "-", "-", "-", "-", "-", "-", "-"],
         "skills": {"Memory Blow": 23, "Sharp Student": 22, "Counter": 0, "Snap": 0, "Giant Slice": 21, "Rampage": 0},
-        "personality": "Upbeat"
+        "personality": "Upbeat",
+        "area": "Kaitul",
+        "floor": "L3-5, 8, 9"
     },
     "Onmoraki": {
+        "inherits": "Curse",
         "item": "Confuse Boost",
         "skillCard": true,
         "arcana": "Moon",
@@ -2197,7 +2466,9 @@ var personaMap = {
         "stats": [9, 12, 7, 10, 5],
         "elems": ["-", "wk", "rs", "-", "-", "-", "-", "-", "wk", "nu"],
         "skills": {"Agi": 13, "Ice Wall": 0, "Mudo": 0, "Confuse Boost": 15, "Pulinpa": 14, "Resist Fear": 17},
-        "personality": "Gloomy"
+        "personality": "Gloomy",
+        "area": "Chemdah",
+        "floor": "L3 & 4"
     },
     "Orlov": {
         "item": "Orlov",
@@ -2215,9 +2486,12 @@ var personaMap = {
             "Maragion": 0,
             "Mazionga": 0
         },
-        "rare": true
+        "rare": true,
+        "area": "Sheriruth",
+        "floor": "All (before Palace 7) / L1-5 (after Palace 7)"
     },
     "Orobas": {
+        "inherits": "Fire",
         "item": "Maragi",
         "skillCard": true,
         "arcana": "Hierophant",
@@ -2225,9 +2499,12 @@ var personaMap = {
         "stats": [11, 14, 15, 12, 6],
         "elems": ["-", "-", "-", "-", "-", "rs", "-", "-", "wk", "rs"],
         "skills": {"Dekaja": 0, "Fire Break": 20, "Makajamon": 21, "Maragi": 0, "Marakunda": 19, "Sukukaja": 0},
-        "personality": "Timid"
+        "personality": "Timid",
+        "area": "Kaitul",
+        "floor": "L1-3"
     },
     "Orpheus": {
+        "inherits": "Almighty",
         "item": "Hades Harp",
         "arcana": "Fool",
         "level": 26,
@@ -2245,6 +2522,7 @@ var personaMap = {
         "dlc": true
     },
     "Orpheus Picaro": {
+        "inherits": "Almighty",
         "item": "Agidyne",
         "skillCard": true,
         "arcana": "Fool",
@@ -2263,6 +2541,7 @@ var personaMap = {
         "dlc": true
     },
     "Orthrus": {
+        "inherits": "Fire",
         "item": "Burn Boost",
         "skillCard": true,
         "arcana": "Hanged Man",
@@ -2270,9 +2549,12 @@ var personaMap = {
         "stats": [16, 14, 14, 19, 7],
         "elems": ["-", "-", "ab", "wk", "-", "-", "-", "rs", "-", "-"],
         "skills": {"Agilao": 0, "Burn Boost": 22, "Dodge Ice": 0, "Double Fangs": 0, "Matarukaja": 26, "Rat Fang": 24},
-        "personality": "Irritable"
+        "personality": "Irritable",
+        "area": "Kaitul",
+        "floor": "L4, 5, 7-9"
     },
     "Ose": {
+        "inherits": "Ailment",
         "item": "Matarukaja",
         "skillCard": true,
         "arcana": "Fool",
@@ -2280,9 +2562,12 @@ var personaMap = {
         "stats": [32, 24, 25, 31, 21],
         "elems": ["-", "-", "rs", "-", "-", "-", "-", "-", "wk", "nu"],
         "skills": {"Counterstrike": 0, "Heat Wave": 47, "Matarukaja": 45, "Oni Kagura": 0, "Tempest Slash": 43},
-        "personality": "Unknown"
+        "personality": "Unknown",
+        "area": "Sheriruth",
+        "floor": "L1-5, 9 (before Palace 7) / L1-4 (after Palace 7)"
     },
     "Pale Rider": {
+        "inherits": "Curse",
         "item": "Megidola",
         "skillCard": true,
         "arcana": "Death",
@@ -2300,6 +2585,7 @@ var personaMap = {
         }
     },
     "Parvati": {
+        "inherits": "Psy",
         "item": "Psiodyne",
         "skillCard": true,
         "arcana": "Lovers",
@@ -2315,9 +2601,12 @@ var personaMap = {
             "Mapsiodyne": 59,
             "Psiodyne": 0
         },
-        "personality": "Unknown"
+        "personality": "Unknown",
+        "area": "Sheriruth",
+        "floor": "L9, 11, 12 (after Palace 7)"
     },
     "Pazuzu": {
+        "inherits": "Curse",
         "item": "Maeiga",
         "skillCard": true,
         "arcana": "Devil",
@@ -2335,6 +2624,7 @@ var personaMap = {
         }
     },
     "Pisaca": {
+        "inherits": "Curse",
         "item": "Headhunter Ladle",
         "arcana": "Death",
         "level": 29,
@@ -2349,9 +2639,12 @@ var personaMap = {
             "Rampage": 0,
             "Stagnant Air": 0
         },
-        "personality": "Unknown"
+        "personality": "Unknown",
+        "area": "Akzeriyyuth",
+        "floor": "L5-7, 9-11"
     },
     "Pixie": {
+        "inherits": "Electric",
         "item": "Dia",
         "skillCard": true,
         "arcana": "Lovers",
@@ -2359,9 +2652,12 @@ var personaMap = {
         "stats": [1, 3, 3, 4, 2],
         "elems": ["-", "wk", "-", "wk", "rs", "-", "-", "-", "rs", "wk"],
         "skills": {"Dia": 0, "Patra": 3, "Resist Confuse": 6, "Tarukaja": 5, "Zio": 0},
-        "personality": "Timid"
+        "personality": "Timid",
+        "area": "Qimranut / Aiyatsbus",
+        "floor": "All / L1 & 3"
     },
     "Power": {
+        "inherits": "Bless",
         "item": "Masukukaja",
         "skillCard": true,
         "arcana": "Justice",
@@ -2377,9 +2673,12 @@ var personaMap = {
             "Sukukaja": 0,
             "Swift Strike": 42
         },
-        "personality": "Unknown"
+        "personality": "Unknown",
+        "area": "Sheriruth",
+        "floor": "L1-5, 7 (before Palace 7) / L1-3 (after Palace 7)"
     },
     "Principality": {
+        "inherits": "Bless",
         "item": "Tetraja",
         "skillCard": true,
         "arcana": "Justice",
@@ -2389,15 +2688,19 @@ var personaMap = {
         "skills": {"Bless Boost": 34, "Mabaisudi": 32, "Makajamon": 0, "Makouga": 0, "Mediarama": 31, "Tetraja": 0}
     },
     "Queen Mab": {
+        "inherits": "Almighty",
         "item": "Masquerade Ribbon",
         "arcana": "Magician",
         "level": 43,
         "stats": [23, 35, 26, 30, 22],
         "elems": ["-", "-", "nu", "-", "rs", "wk", "-", "-", "-", "-"],
         "skills": {"Agidyne": 48, "Makajamon": 0, "Makara Break": 46, "Matarunda": 44, "Mazionga": 0, "Wind Wall": 0},
-        "personality": "Unknown"
+        "personality": "Unknown",
+        "area": "Sheriruth",
+        "floor": "L5, 7-9 (before Palace 7) / L3 & 4 (after Palace 7)"
     },
     "Quetzalcoatl": {
+        "inherits": "Wind",
         "item": "Regenerate 3",
         "skillCard": true,
         "arcana": "Sun",
@@ -2415,6 +2718,7 @@ var personaMap = {
         }
     },
     "Raja Naga": {
+        "inherits": "Electric",
         "item": "Ziodyne",
         "skillCard": true,
         "arcana": "Temperance",
@@ -2432,6 +2736,7 @@ var personaMap = {
         }
     },
     "Rakshasa": {
+        "inherits": "Physical",
         "item": "Mind Slice",
         "skillCard": true,
         "arcana": "Strength",
@@ -2447,9 +2752,12 @@ var personaMap = {
             "Tarukaja": 0,
             "Wind Wall": 0
         },
-        "personality": "Irritable"
+        "personality": "Irritable",
+        "area": "Kaitul",
+        "floor": "L5, 7-9"
     },
     "Rangda": {
+        "inherits": "Curse",
         "item": "Bloodbath",
         "skillCard": true,
         "arcana": "Magician",
@@ -2457,9 +2765,12 @@ var personaMap = {
         "stats": [28, 34, 30, 33, 26],
         "elems": ["rp", "rp", "nu", "-", "wk", "-", "-", "-", "wk", "nu"],
         "skills": {"Bloodbath": 0, "Counterstrike": 0, "Eigaon": 49, "Matarunda": 51, "Mudoon": 53, "Swift Strike": 0},
-        "personality": "Unknown"
+        "personality": "Unknown",
+        "area": "Sheriruth",
+        "floor": "L11-13 (before Palace 7) / L5 (after Palace 7)"
     },
     "Raphael": {
+        "inherits": "Almighty",
         "item": "Heat Riser",
         "skillCard": true,
         "arcana": "Lovers",
@@ -2477,6 +2788,7 @@ var personaMap = {
         }
     },
     "Red Rider": {
+        "inherits": "Psy",
         "item": "Psy Break",
         "skillCard": true,
         "arcana": "Tower",
@@ -2509,9 +2821,12 @@ var personaMap = {
             "Maragi": 0,
             "Mazio": 0
         },
-        "rare": true
+        "rare": true,
+        "area": "Qimranut / Aiyatsbus / Chemdah",
+        "floor": "All / L1-3, 5 & 6 / L1-4, 6 & 7"
     },
     "Saki Mitama": {
+        "inherits": "Healing",
         "item": "Rakukaja",
         "skillCard": true,
         "arcana": "Lovers",
@@ -2521,6 +2836,7 @@ var personaMap = {
         "skills": {"Bufu": 0, "Energy Drop": 0, "Growth 1": 7, "Rakukaja": 8, "Resist Dizzy": 10, "Wind Wall": 0}
     },
     "Sandalphon": {
+        "inherits": "Bless",
         "item": "Angelic Grace",
         "skillCard": true,
         "arcana": "Moon",
@@ -2538,6 +2854,7 @@ var personaMap = {
         "max": true
     },
     "Sandman": {
+        "inherits": "Wind",
         "item": "Sleep Boost",
         "skillCard": true,
         "arcana": "Magician",
@@ -2553,9 +2870,12 @@ var personaMap = {
             "Sleep Boost": 29,
             "Sukunda": 25
         },
-        "personality": "Irritable"
+        "personality": "Irritable",
+        "area": "Akzeriyyuth",
+        "floor": "L1-3"
     },
     "Sarasvati": {
+        "inherits": "Healing",
         "item": "Mediarama",
         "skillCard": true,
         "arcana": "Priestess",
@@ -2570,9 +2890,12 @@ var personaMap = {
             "Mediarama": 0,
             "Null Sleep": 51,
             "Tentarafoo": 0
-        }
+        },
+        "area": "Sheriruth",
+        "floor": "L7-9. 12 (after Palace 7)"
     },
     "Satan": {
+        "inherits": "Ice",
         "item": "Tantric Oath",
         "arcana": "Judgement",
         "level": 92,
@@ -2591,6 +2914,7 @@ var personaMap = {
         "max": true
     },
     "Satanael": {
+        "inherits": "Almighty",
         "item": "Paradise Lost",
         "arcana": "Fool",
         "level": 95,
@@ -2610,6 +2934,7 @@ var personaMap = {
         "note": "Only available on NG+"
     },
     "Scathach": {
+        "inherits": "Wind",
         "item": "Tempest Slash",
         "skillCard": true,
         "arcana": "Priestess",
@@ -2625,9 +2950,12 @@ var personaMap = {
             "Matarukaja": 48,
             "Tempest Slash": 0
         },
-        "personality": "Upbeat"
+        "personality": "Upbeat",
+        "area": "Adyeshach",
+        "floor": "L10-12"
     },
     "Seiryu": {
+        "inherits": "Ice",
         "item": "Amrita Drop",
         "skillCard": true,
         "arcana": "Temperance",
@@ -2645,6 +2973,7 @@ var personaMap = {
         }
     },
     "Setanta": {
+        "inherits": "Physical",
         "item": "Counter",
         "skillCard": true,
         "arcana": "Emperor",
@@ -2661,6 +2990,7 @@ var personaMap = {
         }
     },
     "Seth": {
+        "inherits": "Fire",
         "item": "One-shot Kill",
         "skillCard": true,
         "arcana": "Tower",
@@ -2679,6 +3009,7 @@ var personaMap = {
         "note": "Needs Strength cooperation rank 1 to be fused"
     },
     "Shiisaa": {
+        "inherits": "Electric",
         "item": "Mazio",
         "skillCard": true,
         "arcana": "Chariot",
@@ -2695,6 +3026,7 @@ var personaMap = {
         }
     },
     "Shiki-Ouji": {
+        "inherits": "Psy",
         "item": "Dormin Rush",
         "skillCard": true,
         "arcana": "Chariot",
@@ -2702,9 +3034,12 @@ var personaMap = {
         "stats": [16, 14, 15, 14, 11],
         "elems": ["nu", "nu", "-", "-", "-", "-", "-", "wk", "-", "nu"],
         "skills": {"Dekaja": 24, "Snap": 0, "Mapsi": 22, "Oni Kagura": 27, "Taunt": 0, "Psio": 26, "Tarukaja": 0},
-        "personality": "Irritable"
+        "personality": "Irritable",
+        "area": "Chemdah",
+        "floor": "L6 & 7"
     },
     "Shiva": {
+        "inherits": "Psy",
         "item": "Megido Fire",
         "arcana": "Judgement",
         "level": 82,
@@ -2722,6 +3057,7 @@ var personaMap = {
         "special": true
     },
     "Siegfried": {
+        "inherits": "Physical",
         "item": "Vorpal Blade",
         "skillCard": true,
         "arcana": "Strength",
@@ -2738,15 +3074,19 @@ var personaMap = {
         }
     },
     "Silky": {
+        "inherits": "Healing",
         "item": "Silk Dress",
         "arcana": "Priestess",
         "level": 6,
         "stats": [4, 7, 4, 5, 5],
         "elems": ["-", "-", "wk", "rs", "wk", "-", "-", "-", "-", "-"],
         "skills": {"Bufu": 0, "Sharp Student": 10, "Dia": 7, "Dormina": 0, "Patra": 9},
-        "personality": "Gloomy"
+        "personality": "Gloomy",
+        "area": "Aiyatsbus",
+        "floor": "L2, 3, 5 & 6"
     },
     "Skadi": {
+        "inherits": "Ice",
         "item": "Snow Queen's Whip",
         "arcana": "Priestess",
         "level": 55,
@@ -2760,9 +3100,12 @@ var personaMap = {
             "Null Despair": 0,
             "Repel Ice": 60,
             "Spirit Drain": 59
-        }
+        },
+        "area": "Sheriruth",
+        "floor": "L12 & 13 (before Palace 7) / L5 (after Palace 7)"
     },
     "Slime": {
+        "inherits": "Curse",
         "item": "Headbutt",
         "skillCard": true,
         "arcana": "Chariot",
@@ -2770,9 +3113,12 @@ var personaMap = {
         "stats": [9, 6, 11, 6, 5],
         "elems": ["rs", "-", "wk", "-", "-", "wk", "-", "-", "-", "-"],
         "skills": {"Evil Touch": 0, "Eiha": 11, "Fire Wall": 13, "Headbutt": 14, "Lunge": 0},
-        "personality": "Timid"
+        "personality": "Timid",
+        "area": "Qimranut / Aiyatsbus",
+        "floor": "All / L1, 2, 3, 6"
     },
     "Sraosha": {
+        "inherits": "Bless",
         "item": "Archangel Bra",
         "arcana": "Star",
         "level": 80,
@@ -2797,18 +3143,24 @@ var personaMap = {
         "stats": [20, 20, 20, 20, 20],
         "elems": ["nu", "nu", "nu", "nu", "nu", "nu", "nu", "nu", "nu", "wk"],
         "skills": {"Agilao": 0, "Bufula": 0, "Eiga": 0, "Freila": 0, "Garula": 0, "Kouga": 0, "Psio": 0, "Zionga": 0},
-        "rare": true
+        "rare": true,
+        "area": "Akzeriyyuth",
+        "floor": "L1-3, 5-7, 9-11"
     },
     "Succubus": {
+        "inherits": "Curse",
         "item": "Brain Shot",
         "arcana": "Moon",
         "level": 7,
         "stats": [4, 7, 5, 8, 4],
         "elems": ["-", "wk", "rs", "-", "-", "-", "-", "-", "wk", "nu"],
         "skills": {"Agi": 8, "Brainwash Boost": 11, "Dekaja": 10, "Marin Karin": 0, "Mudo": 12, "Rebellion": 0},
-        "personality": "Irritable"
+        "personality": "Irritable",
+        "area": "Aiyatsbus",
+        "floor": "L5 & 6"
     },
     "Sudama": {
+        "inherits": "Wind",
         "item": "Magaru",
         "skillCard": true,
         "arcana": "Hermit",
@@ -2823,9 +3175,12 @@ var personaMap = {
             "Lucky Punch": 0,
             "Magaru": 0,
             "Wind Wall": 21
-        }
+        },
+        "area": "Chemdah",
+        "floor": "L6 & 7"
     },
     "Sui-Ki": {
+        "inherits": "Ice",
         "item": "Mabufu",
         "skillCard": true,
         "arcana": "Moon",
@@ -2841,9 +3196,12 @@ var personaMap = {
             "Null Nuke": 26,
             "Wage War": 27
         },
-        "personality": "Unknown"
+        "personality": "Unknown",
+        "area": "Kaitul",
+        "floor": "L7-9"
     },
     "Surt": {
+        "inherits": "Fire",
         "item": "Fire Amp",
         "skillCard": true,
         "arcana": "Magician",
@@ -2860,6 +3218,7 @@ var personaMap = {
         }
     },
     "Suzaku": {
+        "inherits": "Nuclear",
         "item": "Mafrei",
         "skillCard": true,
         "arcana": "Sun",
@@ -2877,6 +3236,7 @@ var personaMap = {
         }
     },
     "Take-Minakata": {
+        "inherits": "Electric",
         "item": "Thunder Band",
         "arcana": "Hanged Man",
         "level": 29,
@@ -2890,9 +3250,12 @@ var personaMap = {
             "Mazionga": 30,
             "Zionga": 0
         },
-        "personality": "Gloomy"
+        "personality": "Gloomy",
+        "area": "Kaitul",
+        "floor": "L7-9"
     },
     "Thanatos": {
+        "inherits": "Almighty",
         "item": "Darkness Ring",
         "arcana": "Death",
         "level": 65,
@@ -2910,6 +3273,7 @@ var personaMap = {
         "dlc": true
     },
     "Thanatos Picaro": {
+        "inherits": "Almighty",
         "item": "Maeigaon",
         "skillCard": true,
         "arcana": "Death",
@@ -2943,9 +3307,12 @@ var personaMap = {
             "Tarukaja": 0,
             "Tarunda": 0
         },
-        "rare": true
+        "rare": true,
+        "area": "Kaitul",
+        "floor": "L1-5, 7-9"
     },
     "Thor": {
+        "inherits": "Electric",
         "item": "Mjolnir",
         "arcana": "Chariot",
         "level": 64,
@@ -2962,6 +3329,7 @@ var personaMap = {
         }
     },
     "Thoth": {
+        "inherits": "Nuclear",
         "item": "Growth 2",
         "skillCard": true,
         "arcana": "Emperor",
@@ -2977,9 +3345,12 @@ var personaMap = {
             "Taunt": 0,
             "Psy Wall": 39
         },
-        "personality": "Gloomy"
+        "personality": "Gloomy",
+        "area": "Akzeriyyuth",
+        "floor": "L6, 7, 9-11"
     },
     "Throne": {
+        "inherits": "Bless",
         "item": "Invigorate 3",
         "skillCard": true,
         "arcana": "Justice",
@@ -2999,6 +3370,7 @@ var personaMap = {
         "note": "Needs Strength cooperation rank 5 to be fused"
     },
     "Titania": {
+        "inherits": "Nuclear",
         "item": "Mediarahan",
         "skillCard": true,
         "arcana": "Empress",
@@ -3012,9 +3384,12 @@ var personaMap = {
             "Makara Break": 0,
             "Mediarahan": 61,
             "Nuke Amp": 60
-        }
+        },
+        "area": "Sheriruth",
+        "floor": "L8, 9, 11-13 (after Palace 7)"
     },
     "Trumpeter": {
+        "inherits": "Almighty",
         "item": "Debilitate",
         "skillCard": true,
         "arcana": "Judgement",
@@ -3034,6 +3409,7 @@ var personaMap = {
         "note": "Needs Strength cooperation rank 5 to be fused"
     },
     "Tsukiyomi": {
+        "inherits": "Almighty",
         "item": "Black Moon",
         "arcana": "Moon",
         "level": 50,
@@ -3051,6 +3427,7 @@ var personaMap = {
         "dlc": true
     },
     "Tsukiyomi Picaro": {
+        "inherits": "Almighty",
         "item": "Spell Master",
         "skillCard": true,
         "arcana": "Moon",
@@ -3069,6 +3446,7 @@ var personaMap = {
         "dlc": true
     },
     "Unicorn": {
+        "inherits": "Bless",
         "item": "Samarecarm",
         "skillCard": true,
         "arcana": "Hierophant",
@@ -3084,9 +3462,12 @@ var personaMap = {
             "Samarecarm": 41,
             "Swift Strike": 42
         },
-        "personality": "Unknown"
+        "personality": "Unknown",
+        "area": "Sheriruth",
+        "floor": "L1-4 (before Palace 7) / L1 & 2 (after Palace 7)"
     },
     "Uriel": {
+        "inherits": "Almighty",
         "item": "Heaven's Gate",
         "arcana": "Justice",
         "level": 81,
@@ -3103,6 +3484,7 @@ var personaMap = {
         }
     },
     "Valkyrie": {
+        "inherits": "Physical",
         "item": "Giant Slice",
         "skillCard": true,
         "arcana": "Strength",
@@ -3116,9 +3498,12 @@ var personaMap = {
             "Dodge Physical": 49,
             "Matarukaja": 47,
             "Rising Slash": 0
-        }
+        },
+        "area": "Sheriruth",
+        "floor": "L3-5, 7-9 (before Palace 7) / L2-4 (after Palace 7)"
     },
     "Vasuki": {
+        "inherits": "Ailment",
         "item": "Kuzuryu Gouhou",
         "arcana": "Hanged Man",
         "level": 68,
@@ -3137,6 +3522,7 @@ var personaMap = {
         "note": "Needs Strength cooperation rank 1 to be fused"
     },
     "Vishnu": {
+        "inherits": "Almighty",
         "item": "Riot Gun",
         "skillCard": true,
         "arcana": "Fool",
@@ -3156,6 +3542,7 @@ var personaMap = {
         "max": true
     },
     "White Rider": {
+        "inherits": "Curse",
         "item": "Triple Down",
         "skillCard": true,
         "arcana": "Chariot",
@@ -3174,6 +3561,7 @@ var personaMap = {
         }
     },
     "Yaksini": {
+        "inherits": "Ice",
         "item": "Vicious Strike",
         "skillCard": true,
         "arcana": "Empress",
@@ -3188,9 +3576,12 @@ var personaMap = {
             "Vicious Strike": 24,
             "Wage War": 0
         },
-        "personality": "Irritable"
+        "personality": "Irritable",
+        "area": "Kaitul",
+        "floor": "L3-5, 7"
     },
     "Yamata-no-Orochi": {
+        "inherits": "Ice",
         "item": "Oni Kagura",
         "skillCard": true,
         "arcana": "Judgement",
@@ -3207,6 +3598,7 @@ var personaMap = {
         }
     },
     "Yatagarasu": {
+        "inherits": "Fire",
         "item": "Black Wing Robe",
         "arcana": "Sun",
         "level": 57,
@@ -3223,6 +3615,7 @@ var personaMap = {
         }
     },
     "Yoshitsune": {
+        "inherits": "Physical",
         "item": "Usumidori",
         "arcana": "Tower",
         "level": 79,
@@ -3241,6 +3634,7 @@ var personaMap = {
         "note": "Needs Strength cooperation rank 5 to be fused"
     },
     "Yurlungur": {
+        "inherits": "Electric",
         "item": "Mirrirmina",
         "arcana": "Sun",
         "level": 42,
@@ -3257,6 +3651,7 @@ var personaMap = {
         }
     },
     "Zaou-Gongen": {
+        "inherits": "Fire",
         "item": "God's Hand",
         "skillCard": true,
         "arcana": "Strength",
@@ -3275,6 +3670,7 @@ var personaMap = {
         "max": true
     },
     "Zouchouten": {
+        "inherits": "Electric",
         "item": "Sharp Student",
         "skillCard": true,
         "arcana": "Strength",

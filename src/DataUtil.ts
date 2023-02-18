@@ -214,13 +214,15 @@ function getItem(itemName: string) {
     let itemData = [];
     let item = itemMap[itemName];
     itemData.push({
-        skillCard: item.skillCard,
         name: itemName,
         type: item.type,
         description: item.description
     })
 
     return itemData;
+}
+function getInheritance(inheritanceType: string) {
+    return inheritanceChart[inheritanceType];
 }
 
 function getSkillPersonaList(skill: SkillData): string {
