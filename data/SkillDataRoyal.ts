@@ -133,7 +133,7 @@ const skillMapRoyal: SkillMap = {
     },
     "Akashic Arts": {
         "cost": 20,
-        "effect": "Deal severe Phys damage to all foes 1-2 times.",
+        "effect": "Deal severe Phys damage to all foes 1-2 times with high critical.",
         "element": "phys",
         "unique": "Athena",
         "personas": { "Athena": 0, "Athena Picaro": 0 }
