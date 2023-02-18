@@ -9,6 +9,7 @@
         <span style='color: slateblue;' ng:show='persona.note'>{{persona.note}}</span>
         <span style='color: slateblue;' ng:show='persona.dlc'>This is a DLC persona!</span>
     </div>
+    <br>
     <div ng-if="persona.area"><h3>Mementos Location:</h3>
         Path of {{persona.area}}<br>Floor(s): {{persona.floor}}</div>
     
@@ -112,6 +113,7 @@
         </tbody>
     </table>
 
+    <div ng-if="persona.inherits">
     <h3>Inheritance</h3>
     <h4>Type: {{persona.inherits}}</h4>
     <table class="ui table unstackable striped mobile-hidden">
@@ -153,7 +155,7 @@
         </tr>
         </tbody>
     </table>
-
+    </div>
     <h3>Skills</h3>
     <table id="skillTable" class="ui table unstackable striped">
         <thead>

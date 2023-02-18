@@ -96,11 +96,13 @@ var PersonaController = /** @class */ (function () {
         this.$scope.persona.inheritanceHeader1 = inheritanceHeader.slice(0,6);
         this.$scope.persona.inheritanceHeader2 = inheritanceHeader.slice(6);
 
-        var inheritanceType = compediumEntry.inherits;
-        var inheritance = getInheritance(inheritanceType);
-        this.$scope.persona.inheritance = inheritance;
-        this.$scope.persona.inheritance1 = inheritance.slice(0,6);
-        this.$scope.persona.inheritance2 = inheritance.slice(6);
+        if(compediumEntry.inherits) {
+            var inheritanceType = compediumEntry.inherits;
+            var inheritance = getInheritance(inheritanceType);
+            this.$scope.persona.inheritance = inheritance;
+            this.$scope.persona.inheritance1 = inheritance.slice(0,6);
+            this.$scope.persona.inheritance2 = inheritance.slice(6);
+        }
     }
     PersonaController.prototype.paginateAndFilter = function (fusionFromTo, filterFunc) {
         if (fusionFromTo.pageNum < 0)

@@ -776,7 +776,6 @@ var personaMapRoyal = {
     },
     "Crystal Skull": {
         "rare": true,
-        "inherits": "Almighty",
         "item": "Crystal Skull",
         "itemr": "Crystal Skull R",
         "level": 50,
@@ -968,7 +967,6 @@ var personaMapRoyal = {
     },
     "Emperor's Amulet": {
         "rare": true,
-        "inherits": "Almighty",
         "item": "Emperor's Amulet",
         "itemr": "Emperor's Charm R",
         "level": 35,
@@ -1312,7 +1310,6 @@ var personaMapRoyal = {
     },
     "Hope Diamond": {
         "rare": true,
-        "inherits": "Almighty",
         "item": "Hope Diamond",
         "itemr": "Hope Diamond R",
         "level": 40,
@@ -1491,7 +1488,7 @@ var personaMapRoyal = {
         "stats": [2, 3, 3, 3, 2],
         "trait": "Thermal Conduct",
         "area": "Qimranut / Aiyatsbus",
-        "floor": "All / L1"
+        "floor": "Any / L1"
     },
     "Jatayu": {
         "inherits": "Wind",
@@ -1668,7 +1665,6 @@ var personaMapRoyal = {
     },
     "Koh-i-Noor": {
         "rare": true,
-        "inherits": "Almighty",
         "item": "Koh-i-Noor",
         "itemr": "Koh-i-Noor R",
         "level": 25,
@@ -2665,7 +2661,6 @@ var personaMapRoyal = {
     },
     "Orichalcum": {
         "rare": true,
-        "inherits": "Almighty",
         "item": "Orichalcum",
         "itemr": "Orichalcum R",
         "level": 60,
@@ -2689,7 +2684,6 @@ var personaMapRoyal = {
     },
     "Orlov": {
         "rare": true,
-        "inherits": "Almighty",
         "item": "Orlov",
         "itemr": "Orlov R",
         "level": 30,
@@ -2711,7 +2705,7 @@ var personaMapRoyal = {
         "stats": [30, 30, 30, 30, 30],
         "trait": "Ultimate Vessel",
         "area": "Sheriruth",
-        "floor": "All (before Palace 7) / L1-5 (after Palace 7)"
+        "floor": "Any (before Palace 7) / L1-5 (after Palace 7)"
     },
     "Orobas": {
         "inherits": "Fire",
@@ -2872,7 +2866,7 @@ var personaMapRoyal = {
         "stats": [1, 3, 3, 4, 2],
         "trait": "Static Electricity",
         "area": "Qimranut / Aiyatsbus",
-        "floor": "All / L1 & 3"
+        "floor": "Any / L1 & 3"
     },
     "Power": {
         "inherits": "Bless",
@@ -2938,7 +2932,6 @@ var personaMapRoyal = {
     },
     "Queen's Necklace": {
         "rare": true,
-        "inherits": "Almighty",
         "item": "Queen's Necklace",
         "itemr": "Queen's Necklace R",
         "level": 15,
@@ -3079,7 +3072,6 @@ var personaMapRoyal = {
     },
     "Regent": {
         "rare": true,
-        "inherits": "Almighty",
         "item": "Regent",
         "itemr": "Regent R",
         "level": 10,
@@ -3101,7 +3093,7 @@ var personaMapRoyal = {
         "stats": [10, 10, 10, 10, 10],
         "trait": "Ultimate Vessel",
         "area": "Qimranut / Aiyatsbus / Chemdah",
-        "floor": "All / L1-3, 5 & 6 / L1-4, 6 & 7"
+        "floor": "Any / L1-3, 5 & 6 / L1-4, 6 & 7"
     },
     "Saki Mitama": {
         "inherits": "Healing",
@@ -3418,7 +3410,7 @@ var personaMapRoyal = {
         "stats": [9, 6, 11, 6, 5],
         "trait": "Rare Antibody",
         "area": "Qimranut / Aiyatsbus",
-        "floor": "All / L1, 2, 3, 6"
+        "floor": "Any / L1, 2, 3, 6"
     },
     "Sraosha": {
         "special": true,
@@ -3442,7 +3434,6 @@ var personaMapRoyal = {
     },
     "Stone of Scone": {
         "rare": true,
-        "inherits": "Almighty",
         "item": "Stone of Scone",
         "itemr": "Stone of Scone R",
         "level": 20,

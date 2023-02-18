@@ -776,7 +776,6 @@ const personaMapRoyal: PersonaMap = {
     },
     "Crystal Skull": {
         "rare": true,
-        "inherits": "Almighty",
         "item": "Crystal Skull",
         "itemr": "Crystal Skull R",
         "level": 50,
@@ -968,7 +967,6 @@ const personaMapRoyal: PersonaMap = {
     },
     "Emperor's Amulet": {
         "rare": true,
-        "inherits": "Almighty",
         "item": "Emperor's Amulet",
         "itemr": "Emperor's Charm R",
         "level": 35,
@@ -1312,7 +1310,6 @@ const personaMapRoyal: PersonaMap = {
     },
     "Hope Diamond": {
         "rare": true,
-        "inherits": "Almighty",
         "item": "Hope Diamond",
         "itemr": "Hope Diamond R",
         "level": 40,
@@ -1668,7 +1665,6 @@ const personaMapRoyal: PersonaMap = {
     },
     "Koh-i-Noor": {
         "rare": true,
-        "inherits": "Almighty",
         "item": "Koh-i-Noor",
         "itemr": "Koh-i-Noor R",
         "level": 25,
@@ -2665,7 +2661,6 @@ const personaMapRoyal: PersonaMap = {
     },
     "Orichalcum": {
         "rare": true,
-        "inherits": "Almighty",
         "item": "Orichalcum",
         "itemr": "Orichalcum R",
         "level": 60,
@@ -2689,7 +2684,6 @@ const personaMapRoyal: PersonaMap = {
     },
     "Orlov": {
         "rare": true,
-        "inherits": "Almighty",
         "item": "Orlov",
         "itemr": "Orlov R",
         "level": 30,
@@ -2938,7 +2932,6 @@ const personaMapRoyal: PersonaMap = {
     },
     "Queen's Necklace": {
         "rare": true,
-        "inherits": "Almighty",
         "item": "Queen's Necklace",
         "itemr": "Queen's Necklace R",
         "level": 15,
@@ -3079,7 +3072,6 @@ const personaMapRoyal: PersonaMap = {
     },
     "Regent": {
         "rare": true,
-        "inherits": "Almighty",
         "item": "Regent",
         "itemr": "Regent R",
         "level": 10,
@@ -3442,7 +3434,6 @@ const personaMapRoyal: PersonaMap = {
     },
     "Stone of Scone": {
         "rare": true,
-        "inherits": "Almighty",
         "item": "Stone of Scone",
         "itemr": "Stone of Scone R",
         "level": 20,
