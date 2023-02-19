@@ -101,6 +101,20 @@ class PersonaController {
         // Note: skillList are skills in a sorted list for displaying with Angular.
         // It's different from the existing skills property which is a map.
         this.$scope.persona.skillList = getSkills(personaName);
+
+        //inheritance data
+        let inheritanceHeader = ["Physical", "Gun", "Fire", "Ice", "Electric", "Wind", "Psychic", "Nuclear", "Bless", "Curse", "Healing", "Ailment"];
+        this.$scope.persona.inheritanceHeader = inheritanceHeader;
+        this.$scope.persona.inheritanceHeader1 = inheritanceHeader.slice(0,6);
+        this.$scope.persona.inheritanceHeader2 = inheritanceHeader.slice(6);
+
+        if(compediumEntry.inherits) {
+            let inheritanceType = compediumEntry.inherits;
+            let inheritance = getInheritance(inheritanceType);
+            this.$scope.persona.inheritance = inheritance;
+            this.$scope.persona.inheritance1 = inheritance.slice(0,6);
+            this.$scope.persona.inheritance2 = inheritance.slice(6);
+        }
     }
 
     private paginateAndFilter(fusionFromTo: FusionDataModel, filterFunc) {

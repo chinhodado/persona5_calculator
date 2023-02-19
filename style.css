@@ -110,6 +110,9 @@ tr:hover td:last-child {
 .rp, .Repel { color: #fbbd08 !important; }
 .ab, .Absorb { color: #21ba45 !important; }
 
+.✓ { color: #31ce3e !important; }
+.✘ { color: #db2828 !important; }
+
 .left-border {
     border-left: 1px solid rgba(34,36,38,.1) !important;
 }

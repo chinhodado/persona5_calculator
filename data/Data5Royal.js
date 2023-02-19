@@ -330,7 +330,7 @@ var specialCombosRoyal = [
     { result: 'Satanael', sources: ["Arsène", "Anzu", "Ishtar", "Satan", "Lucifer", "Michael"] },
     { result: 'Seth', sources: ["Isis", "Anubis", "Thoth", "Horus"] },
     { result: 'Shiva', sources: ["Barong", "Rangda"] },
-    { result: 'Sraosha', sources: ["Mithra", "Mithras", "Melchizedek", "Lilith", "Gabriel"] },
+    { result: 'Sraosha', sources: ["Mitra", "Mithras", "Melchizedek", "Lilith", "Gabriel"] },
     { result: 'Tam Lin', sources: ["Cait Sith", "High Pixie", "Leanan Sidhe"] },
     { result: 'Trumpeter', sources: ["White Rider", "Red Rider", "Black Rider", "Pale Rider"] },
     { result: 'Vasuki', sources: ["Naga", "Ananta", "Raja Naga"] },
@@ -351,3 +351,19 @@ var dlcPersonaRoyal = [
     ["Izanagi-no-Okami", "Izanagi-no-Okami Picaro"],
     ["Raoul"]
 ];
+
+var inheritanceChartRoyal = {
+    //['physical', 'gun', 'fire', 'ice', 'electric', 'wind', 'psychic', 'nuclear', 'bless', 'curse', 'healing','ailment','almighty']
+    "Physical": ["✓","✓","✘","✘","✘","✘","✘","✘","✘","✘","✓","✓"],
+    "Fire":     ["✓","✓","✓","✘","✓","✓","✓","✓","✓","✓","✓","✓"],
+    "Ice":      ["✓","✓","✘","✓","✓","✓","✓","✓","✓","✓","✓","✓"],
+    "Electric": ["✓","✓","✓","✓","✓","✘","✓","✓","✓","✓","✓","✓"],
+    "Wind":     ["✓","✓","✓","✓","✘","✓","✓","✓","✓","✓","✓","✓"],
+    "Psy":      ["✓","✓","✓","✓","✓","✓","✓","✘","✓","✓","✓","✓"],
+    "Nuclear":  ["✓","✓","✓","✓","✓","✓","✘","✓","✓","✓","✓","✓"],
+    "Bless":    ["✘","✘","✓","✓","✓","✓","✓","✓","✓","✘","✓","✘"],
+    "Curse":    ["✘","✘","✓","✓","✓","✓","✓","✓","✘","✓","✘","✓"],
+    "Healing":  ["✘","✘","✓","✓","✓","✓","✓","✓","✓","✘","✓","✓"],
+    "Ailment":  ["✓","✓","✓","✓","✓","✓","✓","✓","✘","✓","✘","✓"],
+    "Almighty": ["✓","✓","✓","✓","✓","✓","✓","✓","✓","✓","✓","✓"]
+};

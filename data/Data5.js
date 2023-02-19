@@ -277,3 +277,19 @@ var specialCombos = [
 var dlcPersona = [["Orpheus", "Orpheus Picaro"], ["Izanagi", "Izanagi Picaro"], ["Thanatos", "Thanatos Picaro"],
     ["Magatsu-Izanagi", "Magatsu-Izanagi Picaro"], ["Kaguya", "Kaguya Picaro"], ["Ariadne", "Ariadne Picaro"],
     ["Asterius", "Asterius Picaro"], ["Tsukiyomi", "Tsukiyomi Picaro"], ["Messiah", "Messiah Picaro"]];
+
+    var inheritanceChart = {
+        //['physical', 'gun', 'fire', 'ice', 'electric', 'wind', 'psychic', 'nuclear', 'bless', 'curse', 'healing','ailment','almighty']
+        "Physical": ["✓","✓","✘","✘","✘","✘","✘","✘","✘","✘","✓","✓"],
+        "Fire":     ["✓","✓","✓","✘","✓","✓","✓","✓","✓","✓","✓","✓"],
+        "Ice":      ["✓","✓","✘","✓","✓","✓","✓","✓","✓","✓","✓","✓"],
+        "Electric": ["✓","✓","✓","✓","✓","✘","✓","✓","✓","✓","✓","✓"],
+        "Wind":     ["✓","✓","✓","✓","✘","✓","✓","✓","✓","✓","✓","✓"],
+        "Psy":      ["✓","✓","✓","✓","✓","✓","✓","✘","✓","✓","✓","✓"],
+        "Nuclear":  ["✓","✓","✓","✓","✓","✓","✘","✓","✓","✓","✓","✓"],
+        "Bless":    ["✘","✘","✓","✓","✓","✓","✓","✓","✓","✘","✓","✘"],
+        "Curse":    ["✘","✘","✓","✓","✓","✓","✓","✓","✘","✓","✘","✓"],
+        "Healing":  ["✘","✘","✓","✓","✓","✓","✓","✓","✓","✘","✓","✓"],
+        "Ailment":  ["✓","✓","✓","✓","✓","✓","✓","✓","✘","✓","✘","✓"],
+        "Almighty": ["✓","✓","✓","✓","✓","✓","✓","✓","✓","✓","✓","✓"]
+    };

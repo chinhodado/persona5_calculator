@@ -9,6 +9,10 @@
         <span style='color: slateblue;' ng:show='persona.note'>{{persona.note}}</span>
         <span style='color: slateblue;' ng:show='persona.dlc'>This is a DLC persona!</span>
     </div>
+    <br>
+    <div ng-if="persona.area"><h3>Mementos Location:</h3>
+        Path of {{persona.area}}<br>Floor(s): {{persona.floor}}</div>
+    
 
     <h3>Itemization</h3>
     <div ng:if='persona.item' style="margin-top:10px">
@@ -109,6 +113,50 @@
         </tbody>
     </table>
 
+    <br>
+    <div ng-if="persona.inherits">
+    <h3>Inheritance</h3>
+    <h4>Type: {{persona.inherits}}</h4>
+    <table class="ui table unstackable striped mobile-hidden">
+        <thead>
+        <tr>
+            <th ng:repeat="i in persona.inheritanceHeader">{{i}}</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td ng:repeat="i in persona.inheritance track by $index" class="{{i}}">{{i}}</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <!--split the table into 2 for mobile-->
+    <table class="ui table unstackable striped desktop-hidden">
+        <thead>
+        <tr>
+            <th ng:repeat="s in persona.inheritanceHeader1">{{s}}</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td ng:repeat="s in persona.inheritance1 track by $index" class="{{s}}">{{s}}</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <table class="ui table unstackable striped desktop-hidden">
+        <thead>
+        <tr>
+            <th ng:repeat="s in persona.inheritanceHeader2">{{s}}</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td ng:repeat="s in persona.inheritance2 track by $index" class="{{s}}">{{s}}</td>
+        </tr>
+        </tbody>
+    </table>
+    </div>
     <h3>Skills</h3>
     <table id="skillTable" class="ui table unstackable striped">
         <thead>
