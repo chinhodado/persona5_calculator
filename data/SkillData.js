@@ -2044,7 +2044,7 @@ var skillMap = {
     },
     "Mahamaon": {
         "cost": 3400,
-        "effect": "medium chance of instantly killing all foes.",
+        "effect": "Medium chance of instantly killing all foes.",
         "element": "bless",
         "fuse": "Melchizedek",
         "personas": {
@@ -2165,7 +2165,7 @@ var skillMap = {
     },
     "Mamudoon": {
         "cost": 3400,
-        "effect": "medium chance of instantly killing all foes.",
+        "effect": "Medium chance of instantly killing all foes.",
         "element": "curse",
         "fuse": "Alice",
         "personas": {
@@ -2622,7 +2622,7 @@ var skillMap = {
     },
     "Mudoon": {
         "cost": 1500,
-        "effect": "medium chance of instantly killing 1 foe.",
+        "effect": "Medium chance of instantly killing 1 foe.",
         "element": "curse",
         "personas": {
             "Anubis": 0,

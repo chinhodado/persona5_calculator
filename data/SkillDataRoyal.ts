@@ -2110,7 +2110,7 @@ const skillMapRoyal: SkillMap = {
         "personas": { "Lamia": 30, "Leanan Sidhe": 21, "Nue": 24, "Pisaca": 29 }
     },
     "Mamudoon": {
-        "effect": "medium chance of instantly killing all foes.",
+        "effect": "Medium chance of instantly killing all foes.",
         "cost": 2600,
         "element": "curse",
         "fuse": ["Chernobog"],
@@ -2524,7 +2524,7 @@ const skillMapRoyal: SkillMap = {
         "personas": { "Alice": 0, "Mother Harlot": 0, "Thanatos Picaro": 70 }
     },
     "Mudoon": {
-        "effect": "medium chance of instantly killing 1 foe.",
+        "effect": "Medium chance of instantly killing 1 foe.",
         "cost": 1200,
         "element": "curse",
         "personas": {
