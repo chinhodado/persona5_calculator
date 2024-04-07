@@ -9,7 +9,7 @@ interface SkillData {
     cost?: number;
     effect: string;
     element: "phys" | "gun" | "fire" | "ice" | "electric" | "wind" | "psy" | "nuclear" | "bless" | "curse" |
-        "almighty" | "ailment" | "support" | "passive" | "healing" | "trait";
+    "almighty" | "ailment" | "support" | "passive" | "healing" | "trait";
     personas?: {
         [name: string]: number;
     };
@@ -2073,7 +2073,7 @@ const skillMap: SkillMap = {
     },
     "Mahamaon": {
         "cost": 3400,
-        "effect": "medium chance of instantly killing all foes.",
+        "effect": "Medium chance of instantly killing all foes.",
         "element": "bless",
         "fuse": "Melchizedek",
         "personas": {
@@ -2194,7 +2194,7 @@ const skillMap: SkillMap = {
     },
     "Mamudoon": {
         "cost": 3400,
-        "effect": "medium chance of instantly killing all foes.",
+        "effect": "Medium chance of instantly killing all foes.",
         "element": "curse",
         "fuse": "Alice",
         "personas": {
@@ -2651,7 +2651,7 @@ const skillMap: SkillMap = {
     },
     "Mudoon": {
         "cost": 1500,
-        "effect": "medium chance of instantly killing 1 foe.",
+        "effect": "Medium chance of instantly killing 1 foe.",
         "element": "curse",
         "personas": {
             "Anubis": 0,
